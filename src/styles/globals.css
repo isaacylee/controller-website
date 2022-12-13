@@ -23,20 +23,41 @@
   --tw-color-primary-700: 3 105 161;
   --tw-color-primary-800: 7 89 133;
   --tw-color-primary-900: 12 74 110;
-  --color-primary-50: rgb(var(--tw-color-primary-50)); /* #f0f9ff */
-  --color-primary-100: rgb(var(--tw-color-primary-100)); /* #e0f2fe */
-  --color-primary-200: rgb(var(--tw-color-primary-200)); /* #bae6fd */
-  --color-primary-300: rgb(var(--tw-color-primary-300)); /* #7dd3fc */
-  --color-primary-400: rgb(var(--tw-color-primary-400)); /* #38bdf8 */
-  --color-primary-500: rgb(var(--tw-color-primary-500)); /* #0ea5e9 */
-  --color-primary-600: rgb(var(--tw-color-primary-600)); /* #0284c7 */
-  --color-primary-700: rgb(var(--tw-color-primary-700)); /* #0369a1 */
-  --color-primary-800: rgb(var(--tw-color-primary-800)); /* #075985 */
-  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #0c4a6e */
+  --color-primary-50: rgb(var(--tw-color-primary-50));
+  /* #f0f9ff */
+  --color-primary-100: rgb(var(--tw-color-primary-100));
+  /* #e0f2fe */
+  --color-primary-200: rgb(var(--tw-color-primary-200));
+  /* #bae6fd */
+  --color-primary-300: rgb(var(--tw-color-primary-300));
+  /* #7dd3fc */
+  --color-primary-400: rgb(var(--tw-color-primary-400));
+  /* #38bdf8 */
+  --color-primary-500: rgb(var(--tw-color-primary-500));
+  /* #0ea5e9 */
+  --color-primary-600: rgb(var(--tw-color-primary-600));
+  /* #0284c7 */
+  --color-primary-700: rgb(var(--tw-color-primary-700));
+  /* #0369a1 */
+  --color-primary-800: rgb(var(--tw-color-primary-800));
+  /* #075985 */
+  --color-primary-900: rgb(var(--tw-color-primary-900));
+  /* #0c4a6e */
   /* #endregion  /**======== Primary Color =========== */
 }
 
+.bgColorHeader {
+
+  background-image: url("https://uploads-ssl.webflow.com/62703f612bf4b6c4cf204b98/62718a882f5d950feaee2eb6_darktexture.jpg");
+  background-position: 0 0;
+  background-size: auto;
+}
+  /* background-color: #33333300; */
+  /* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg'); */
+ 
+
 @layer base {
+
   /* inter var - latin */
   @font-face {
     font-family: 'Inter';
@@ -57,6 +78,8 @@
   .h0 {
     @apply font-primary text-3xl font-bold md:text-5xl;
   }
+
+ 
 
   h1,
   .h1 {
@@ -87,6 +110,7 @@
   .p {
     @apply font-primary text-sm md:text-base;
   }
+
   /* #endregion  /**======== Typography =========== */
 
   .layout {
@@ -108,15 +132,14 @@
 @layer utilities {
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         var(--color-primary-400),
-        var(--color-primary-500)
-      );
+        var(--color-primary-500));
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
   }
+
   @media (prefers-reduced-motion: no-preference) {
     .animated-underline {
       transition: 0.3s ease;
@@ -124,6 +147,7 @@
         border-color;
     }
   }
+
   .animated-underline:hover,
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;

@@ -3,7 +3,7 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
-
+import Image from 'next/image';
 import { audits } from '../audits.json';
 
 /**
@@ -27,11 +27,25 @@ export default function HomePage() {
 
         <Seo />
 
-        <div className='relative bg-dark px-4 py-8 text-base text-sm md:px-32 md:px-0 md:py-32 md:text-white'>
+        <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
             <div className='z-10 mx-auto max-w-7xl text-white'>
-              <h2>Kenneth Mejia</h2>
-              <h2>Controller of Los Angeles</h2>
+              <div className='flex flex-row'>
+                <div className='my-auto'>
+                  {' '}
+                  <h2>Kenneth Mejia</h2>
+                  <h2>Controller of Los Angeles</h2>
+                </div>
+
+                <div className='ml-auto'>
+                  <Image
+                    src='/images/627836e7efcd351d09a5d8da_kenneth-blob-bio-2.png'
+                    alt=''
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -46,7 +60,7 @@ export default function HomePage() {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
 
-  // By returning { props: { posts } }, the Blog component
+  // By returning {props: {posts} }, the Blog component
   // will receive `posts` as a prop at build time
   return {
     props: {
