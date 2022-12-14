@@ -6,6 +6,7 @@ const navigation = [
   { name: 'Data', href: '/data', current: true },
   { name: 'Audits', href: '/audits', current: false },
   { name: 'Reports', href: '/reports', current: false },
+  { name: 'Budgets', href: '/budgets', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Events', href: '/events', current: false },
   { name: 'Press', href: '/press', current: false },
