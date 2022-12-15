@@ -56,6 +56,34 @@
   /* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg'); */
  
 
+<<<<<<< HEAD
+=======
+
+  /* google translate css */ 
+  .goog-te-gadget-icon {
+    display:none;
+  }
+  
+  
+  .goog-te-gadget-simple {
+      background-color: #ecebf0 !important;
+      border:0 !important;
+      font-size: 10pt;
+     font-weight:800;
+      display: inline-block;
+      padding:10px 10px !important;
+      cursor: pointer;
+      zoom: 1;
+  }
+  
+  .goog-te-gadget-simple  span {
+     color:#3e3065 !important;
+  
+  }
+
+
+/* ABOUT PAGE CSS */ 
+>>>>>>> 539be0308e258933df5a65ec0d17de108c4dfb18
 
 
 

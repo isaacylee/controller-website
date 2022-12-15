@@ -3,6 +3,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Fragment } from 'react';
 
+import Translate from '@/components/Translate';
+
 const navigation = [
   { name: 'Data', href: '/data', current: true },
   { name: 'Audits', href: '/audits', current: false },
@@ -39,6 +41,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
+
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex flex-shrink-0 items-center'>
                   <Link href='/'>
@@ -66,7 +69,25 @@ export default function Navbar() {
                         {item.name}
                       </a>
                     ))}
+                    <Translate />
                   </div>
+                  {/* Translate dropdown menu.*/}
+
+                  {/* <Menu>
+      <Menu.Button>Language</Menu.Button>
+      <Menu.Items>
+        {translateList.map((link) => (
+          <Menu.Item
+            as="a"
+            // key={link.code}
+            href={link.code}
+            className="ui-active:bg-blue-500 ui-active:text-white ui-not-active:bg-white ui-not-active:text-black"
+          >
+            {link.label}
+          </Menu.Item>
+        ))}
+      </Menu.Items>
+    </Menu> */}
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
