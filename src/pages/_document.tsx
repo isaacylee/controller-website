@@ -27,12 +27,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {false && (
-            <script
-              async
-              src='https://navbar.lacity.org/global_nav.js'
-            ></script>
-          )}
         </body>
       </Html>
     );
