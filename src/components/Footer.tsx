@@ -39,7 +39,7 @@ export default function Footer() {
       <div className='sm:flex sm:items-center sm:justify-between'>
         <span className='text-sm text-gray-500 sm:text-center '>
           © 2023{' '}
-          <a href='https://lacontroller.org' className='hover:underline'>
+          <a href='https://controller.lacity.gov' className='hover:underline'>
             Kenneth Mejia, Los Angeles City Controller
           </a>
           . All Rights Reserved.
