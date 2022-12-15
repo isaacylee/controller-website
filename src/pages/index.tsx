@@ -39,7 +39,7 @@ export default function HomePage() {
                   <h2>Controller of Los Angeles</h2>
                 </div>
 
-                <div className='left-118 right-20 top-10 flex space-x-3 md:absolute md:flex'>
+                <div className='absolute left-auto right-8 top-4 flex flex-row space-x-3'>
                   {/* flex ml-10 justify-center space-x-2 md:flex-row */}
 
                   {/* facebook */}

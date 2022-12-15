@@ -2,21 +2,22 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
+//todo add image
 const defaultMeta = {
   title: 'LAController - Kenneth Mejia',
-  siteName: 'LAController - Kenneth Mejia',
-  description:
-    'City of Los Angeles Controller, Kenneth Mejia. ',
+  siteName: 'Office of Kenneth Mejia, LA City Controller',
+  description: 'City of Los Angeles Controller, Kenneth Mejia. ',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   /** the url will be changing to lacontroller.gov... */
-  url: 'https://lacontroller.org',
+  url: 'https://controller.lacity.gov',
   type: 'website',
   robots: 'follow, index',
   /**
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
+
+  image: '',
 };
 
 type SeoProps = {
