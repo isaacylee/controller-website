@@ -29,7 +29,7 @@ export default function Audits(props: any) {
 
         <Seo />
 
-        <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:mx-16 lg:max-w-lg'>
+        <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h1>Audits & Reports</h1>
           <div className='md:hidden'>
             {audits.map((eachaudit: any, eachauditnum: number) => (
@@ -48,7 +48,7 @@ export default function Audits(props: any) {
           </div>
 
           <div className='hidden md:block'>
-            <div className='grid-col-3 grid lg:grid-cols-4'>
+            <div className='grid grid-cols-3 gap-x-6 gap-y-4 lg:grid-cols-3'>
               {audits.map((eachaudit: any, eachauditnum: number) => (
                 <div
                   key={eachauditnum}
@@ -77,11 +77,13 @@ export default function Audits(props: any) {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
 
-  // By returning {props: {posts} }, the Blog component
-  // will receive `posts` as a prop at build time
+  const newaudits = audits.map((eachItem: any) => {
+    delete eachItem.textofpage;
+    return eachItem;
+  });
   return {
     props: {
-      audits,
+      newaudits,
     },
   };
 }
