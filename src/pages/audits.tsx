@@ -79,6 +79,7 @@ export async function getStaticProps() {
 
   const newaudits = audits.map((eachItem: any) => {
     delete eachItem.textofpage;
+    delete eachItem.pdflink;
     return eachItem;
   });
   return {
