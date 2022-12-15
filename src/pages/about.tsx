@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
  
 import Seo from '@/components/Seo';
@@ -29,7 +30,8 @@ export default function About() {
 
         <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
-            <div className='max-w-2md z-10 mx-auto text-white'>
+          {/* max-w-2md z-10 mx-auto text-white */}
+            <div className='z-10 mx-auto max-w-7xl text-white'>
               <div className='flex flex-row'>
                 <div className='my-auto'>
                   {' '}
@@ -188,6 +190,7 @@ export default function About() {
 
         <div className='container px-4 py-8  md:max-w-sm md:px-0 lg:mx-16'></div>
       </Layout>
+      <Footer/>
     </>
   );
 }
