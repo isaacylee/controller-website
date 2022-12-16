@@ -58,32 +58,40 @@
 
 
   /* google translate css */ 
-  .goog-te-gadget-icon {
-    display:none;
-  }
   
-  
-  .goog-te-gadget-simple {
-      background-color: #ecebf0 !important;
-      border:0 !important;
-      font-size: 10pt;
-     font-weight:800;
-      display: inline-block;
-      padding:10px 10px !important;
-      cursor: pointer;
-      zoom: 1;
-  }
-  
-  .goog-te-gadget-simple  span {
-     color:#3e3065 !important;
-  
-  }
-
+   
 
 /* ABOUT PAGE CSS */ 
 
+.widget {
+  padding-bottom: 20px;
+}
+
 
  
+span a{
+  padding-right:13px;
+}
+a{
+ color:black;
+  text-decoration:none;
+}
+.navbar{
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+}
+.main-page{
+    margin-top:150px;
+  }
+
+.card{
+  text-align:center;
+   -webkit-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -98,14 +106,14 @@
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  /* content: '';
   position: absolute;
   width: 6px;
   background-color: white;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  margin-left: -3px; */
 }
 
 /* Container around content */

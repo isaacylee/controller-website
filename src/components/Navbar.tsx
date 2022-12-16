@@ -5,20 +5,26 @@ import { Fragment } from 'react';
 
 import Translate from '@/components/Translate';
 
+ 
+
 const navigation = [
+  { name: 'About', href: '/about', current: false },
   { name: 'Data', href: '/data', current: true },
   { name: 'Audits', href: '/audits', current: false },
   { name: 'Reports', href: '/reports', current: false },
   { name: 'Budgets', href: '/budgets', current: false },
-  { name: 'About', href: '/about', current: false },
-  { name: 'Events', href: '/events', current: false },
-  { name: 'Press', href: '/press', current: false },
+  // { name: 'Events', href: '/events', current: false },
+  // { name: 'Press', href: '/press', current: false },
   { name: 'Contact Us', href: '/contactus', current: false },
+
 ];
+
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
+
+
 
 export default function Navbar() {
   return (
@@ -69,25 +75,17 @@ export default function Navbar() {
                         {item.name}
                       </a>
                     ))}
-                    <Translate />
+                    {/* <Translate /> */}
+                  
+                          
+                  
+    
+
+                    
                   </div>
                   {/* Translate dropdown menu.*/}
 
-                  {/* <Menu>
-      <Menu.Button>Language</Menu.Button>
-      <Menu.Items>
-        {translateList.map((link) => (
-          <Menu.Item
-            as="a"
-            // key={link.code}
-            href={link.code}
-            className="ui-active:bg-blue-500 ui-active:text-white ui-not-active:bg-white ui-not-active:text-black"
-          >
-            {link.label}
-          </Menu.Item>
-        ))}
-      </Menu.Items>
-    </Menu> */}
+      
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
