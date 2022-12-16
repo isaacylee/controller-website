@@ -14,7 +14,7 @@ function classNames(...classes: any) {
 
 export default function Footer() {
   return (
-    <footer className='bg-white p-4 sm:p-6'>
+    <footer className='sticky top-[100vh] mt-auto bg-white p-4 sm:p-6'>
       {/* <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
             <a href="https://lacontroller.org/" className="flex items-center">

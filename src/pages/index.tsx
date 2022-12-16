@@ -1,7 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import * as React from 'react';
 
-import Footer from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
@@ -31,7 +31,7 @@ export default function HomePage() {
 
         <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
-            <div className='z-10 mx-auto max-w-7xl text-white'>
+            <div className='z-10 mx-auto text-white lg:max-w-6xl xl:max-w-7xl'>
               <div className='flex flex-row'>
                 <div className='my-auto'>
                   {' '}
@@ -120,7 +120,7 @@ export default function HomePage() {
 
                 <div className='ml-auto'>
                   <Image
-                    src='/images/627836e7efcd351d09a5d8da_kenneth-blob-bio-2.png'
+                    src='/images/ken-new-blob-big.png'
                     alt=''
                     width={500}
                     height={500}
@@ -131,9 +131,60 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className='container px-4 py-8  md:max-w-sm md:px-0 lg:mx-16'></div>
+        <div className='container mx-auto px-4 md:px-0'>
+          <h2 className='pt-8 pb-4'>
+            <Link href='/audits'>Audits & Reports</Link>
+          </h2>
+          <div className='grid grid-cols-3 gap-x-4 gap-y-4 md:grid-cols-4 lg:grid-cols-5'>
+            {audits.slice(0, 5).map((eachaudit: any, key) => (
+              <div
+                key={key}
+                className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200
+                ${key === 4 ? ' hidden md:block ' : ''}
+                ${key === 5 ? ' hidden lg:block ' : ''}`}
+              >
+                <a href={eachaudit.link}>
+                  <img src={eachaudit.image} className='w-full'></img>
+                  <div className=' px-2 py-2'>
+                    <p>
+                      {eachaudit.year} | <span>{eachaudit.dept}</span>
+                    </p>
+                    <p className='font-semibold'>{eachaudit.name}</p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/audits'>
+                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
+                  All Audits
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {audits.slice(0, 6).map((eachaudit: any, key) => (
+                <div
+                  key={key}
+                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100'
+                >
+                  <a href={eachaudit.link}>
+                    <div className=' px-2 py-2'>
+                      <p>
+                        {eachaudit.year} | <span>{eachaudit.dept}</span>
+                      </p>
+                      <p className='font-semibold'>{eachaudit.name}</p>
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </Layout>
-      <Footer />
     </>
   );
 }
@@ -141,13 +192,11 @@ export default function HomePage() {
 // This function gets called at build time
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const newaudits = audits
-    .map((eachItem: any) => {
-      delete eachItem.textofpage;
-      delete eachItem.pdflink;
-      return eachItem;
-    })
-    .slice(0, 10);
+  const newaudits = audits.slice(0, 7).map((eachItem: any) => {
+    delete eachItem.textofpage;
+    delete eachItem.pdflink;
+    return eachItem;
+  });
   // By returning {props: {posts} }, the Blog component
   // will receive `posts` as a prop at build time
   return {

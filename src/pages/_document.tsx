@@ -6,6 +6,7 @@ import Document, {
   NextScript,
 } from 'next/document';
 
+import Footer from '@/components/Footer';
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -24,9 +25,12 @@ class MyDocument extends Document {
             crossOrigin='anonymous'
           />
         </Head>
-        <body>
-          <Main />
+        <body className='flex min-h-screen  flex-col'>
+          <div className='flex-grow'>
+            <Main />
+          </div>
           <NextScript />
+          <Footer />
         </body>
       </Html>
     );

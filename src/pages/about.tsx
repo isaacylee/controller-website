@@ -31,7 +31,7 @@ export default function About() {
           <div className='background-1'>
             {/* max-w-2md z-10 mx-auto text-white */}
             <div className='z-10 mx-auto max-w-7xl text-white'>
-              <div className='mx-auto flex flex-row lg:max-w-3xl'>
+              <div className='mx-auto flex flex-row lg:max-w-4xl'>
                 <div className='my-auto'>
                   {' '}
                   <h2>About Kenneth Mejia</h2>
@@ -115,7 +115,7 @@ export default function About() {
                 </div>
                 <div className='ml-auto'>
                   <Image
-                    src='/images/627836e7efcd351d09a5d8da_kenneth-blob-bio-2.png'
+                    src='/images/ken-new-blob-big.png'
                     alt=''
                     width={500}
                     height={500}
