@@ -5711,6 +5711,13 @@
     "globalyzer" "0.1.0"
     "globrex" "^0.1.2"
 
+"title-case@^3.0.3":
+  "integrity" "sha512-e1zGYRvbffpcHIrnuqT0Dh+gEJtDaxDSoG4JAIpq4oDFyooziLBIiYQv0GBT4FUAnUop5uZ1hiIAj7oAF6sOCA=="
+  "resolved" "https://registry.npmjs.org/title-case/-/title-case-3.0.3.tgz"
+  "version" "3.0.3"
+  dependencies:
+    "tslib" "^2.0.3"
+
 "tmpl@1.0.5":
   "integrity" "sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw=="
   "resolved" "https://registry.npmjs.org/tmpl/-/tmpl-1.0.5.tgz"
@@ -5743,6 +5750,11 @@
   "version" "2.1.0"
   dependencies:
     "punycode" "^2.1.1"
+
+"true-case@^1.0.13":
+  "integrity" "sha512-IFEwYpe5cHWWIRXiiZlFIAyyn4fG4lDozuuZCbT95PxTjq4a/hKMtZX0tKtpSc6MOMo9O+s/pxkiMr+kbPaP1A=="
+  "resolved" "https://registry.npmjs.org/true-case/-/true-case-1.0.13.tgz"
+  "version" "1.0.13"
 
 "ts-node@>=9.0.0":
   "integrity" "sha512-TbIGS4xgJoX2i3do417KSaep1uRAW/Lu+WAL2doDHC0D6ummjirVOXU5/7aiZotbQ5p1Zp9tP7U6cYhA0O7M8A=="
@@ -5778,7 +5790,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   "version" "1.14.1"
 
-"tslib@^2.1.0", "tslib@^2.4.0":
+"tslib@^2.0.3", "tslib@^2.1.0", "tslib@^2.4.0":
   "integrity" "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz"
   "version" "2.4.0"

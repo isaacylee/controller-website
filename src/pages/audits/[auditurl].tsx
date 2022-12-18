@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { titleCase } from 'true-case';
 
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
@@ -11,8 +12,12 @@ export default function Audit(props: any) {
       <Navbar />
       <Seo />
       <main>
-        <div className='container'>
-          <h1>{props.audit.name}</h1>
+        <div className=' container mx-4 px-4 pb-3 pt-5 lg:mx-auto lg:max-w-7xl'>
+          <h1 className='font-sm'>{props.audit.name}</h1>
+          <h3>
+            <span className='font-normal'>{props.audit.year} </span>
+            {titleCase(props.audit.dept)}
+          </h3>
         </div>
       </main>
     </>
