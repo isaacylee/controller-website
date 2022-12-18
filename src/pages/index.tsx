@@ -143,7 +143,7 @@ export default function HomePage() {
                 ${key === 4 ? ' hidden md:block ' : ''}
                 ${key === 5 ? ' hidden lg:block ' : ''}`}
               >
-                <a href={eachaudit.link}>
+                <a href={`/audits/${eachaudit.link}`}>
                   <img src={eachaudit.image} className='w-full'></img>
                   <div className=' px-2 py-2'>
                     <p>
@@ -166,12 +166,12 @@ export default function HomePage() {
           </div>
           <div>
             <div className='rounded-lg  sm:hidden'>
-              {audits.slice(0, 6).map((eachaudit: any, key) => (
+              {audits.slice(0, 6).map((eachaudit: any, key: number) => (
                 <div
                   key={key}
                   className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100'
                 >
-                  <a href={eachaudit.link}>
+                  <a href={`/audits/${eachaudit.link}`}>
                     <div className=' px-2 py-2'>
                       <p>
                         {eachaudit.year} | <span>{eachaudit.dept}</span>
