@@ -6,7 +6,8 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { audits } from './../audits.json';
+import { audits } from '../audits.json';
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -18,6 +19,7 @@ import { audits } from './../audits.json';
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
+
 export default function About() {
   return (
     <>
@@ -29,7 +31,7 @@ export default function About() {
           <div className='background-1'>
             {/* max-w-2md z-10 mx-auto text-white */}
             <div className='z-10 mx-auto max-w-7xl text-white'>
-              <div className='mx-auto flex flex-row lg:max-w-4xl'>
+              <div className='mx-auto flex flex-row lg:max-w-3xl'>
                 <div className='my-auto'>
                   {' '}
                   <h2>About Kenneth Mejia</h2>
@@ -128,7 +130,7 @@ export default function About() {
           {/* <div className='leftTimeline containerTimeline'> */}
           {/* <div className='contentTimeline'> */}
 
-          <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative'>
+          <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-2'>
             The City Controller is the elected paymaster, auditor and chief
             accounting officer for the City of Los Angeles. Along with the Mayor
             and City Attorney, the Controller is one of three offices elected
@@ -167,56 +169,151 @@ export default function About() {
             Operations and Financial Reporting and Analysis.
           </p>
 
-          {/* modal box */}
+          {/* address */}
+          <div className='text-left md:relative md:py-4 md:text-center '>
+            <p className='content-center break-normal font-bold md:relative md:py-2'>
+              200 N. Main Street, Suite 300 Los Angeles, CA 90012
+            </p>
+            <p className='content-center break-normal font-bold md:relative'>
+              Phone: 213.978.7200,
+            </p>
+            <p className='content-center break-normal font-bold md:relative'>
+              Fax: 213.978.7211,
+            </p>
+            <p className='content-center break-normal font-bold md:relative'>
+              controller.mejia@lacity.org
+            </p>
+          </div>
+          <div className='grid grid-cols-3 gap-3'>
+            <div className='...md:relative md:py-2'>
+              {/* leadership */}
+              <p className='content-center break-normal font-bold underline-offset-8 md:relative md:py-2'>
+                Leadership
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Kenneth Mejia
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                LA City Controller
+              </p>
+              <p className='content-center break-normal  font-bold md:relative '>
+                Jane Nguyen
+              </p>
+              <p className='content-center break-normal  md:relative'>
+                Chief of Staff
+              </p>
+              <p className='content-center break-normal font-bold md:relative'>
+                Rick Cole
+              </p>
+              <p className='content-center break-normal md:relative'>
+                Chief Deputy Controller
+              </p>
+              <p className='content-center break-normal font-bold md:relative'>
+                Sergio Perez
+              </p>
+              <p className='content-center break-normal  md:relative'>
+                Chief of Accountability & Oversight
+              </p>
+            </div>
+            <div className='....md:relative md:py-2'>
+              {/* innovation */}
+              <p className='content-center  break-normal font-bold underline-offset-8 md:relative md:py-2'>
+                Innovation and Communications
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Kyler Chin
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Director of Technology & Innovation
+              </p>
+              <p className='content-center break-normal  font-bold md:relative '>
+                Diana Chang
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Director of Communications
+              </p>
+            </div>
+            <div className='...md:relative md:py-2'>
+              {/* Community Engagement */}
+              <p className='content-center break-normal font-bold underline-offset-8 md:relative md:py-2'>
+                Community Engagement
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Shekinah Deocares
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Director of Community Engagement
+              </p>
+            </div>
+            <div className='...md:relative md:py-2'>
+              {/* Government Affairs */}
+              <p className='content-center break-normal font-bold underline-offset-8 md:relative md:py-2'>
+                Government Affairs
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Michael Shear
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Director of Research & Government Affairs
+              </p>
+            </div>
+            <div className='...md:relative md:py-2'>
+              {' '}
+              {/* Executive Aides */}
+              <p className='content-center break-normal font-bold underline-offset-8 md:relative md:py-2'>
+                Executive Aides
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Jacky Rodarte
+              </p>
+              <p className='content-center break-normal   font-bold md:relative '>
+                Vincent de Vera
+              </p>
+            </div>
+          </div>
+          <div className='grid grid-cols-3 gap-3'>
+            <div className='...md:relative md:py-2'>
+              {' '}
+              <p className='content-center break-normal font-bold underline-offset-8'>
+                Payroll Operations
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                James Robinson
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Principal Deputy Controller
+              </p>
+            </div>
 
-          <div className='container-fluid'>
-            <div className='row'>
-              <div className='col-sm-3'>
-                <div className='card'>
-                  <div className='card-body'>
-                    <p className='card-text'>
-                      200 N. Main Street, Suite 300 Los Angeles, CA 90012 phone:
-                      213.978.7200, fax: 213.978.7211,
-                      controller.mejia@lacity.org
-                    </p>
-                    <h3>Leadership</h3>
-                    <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-2'>
-                      Kenneth Mejia LA City Controller
-                    </p>
-                    <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-2'>
-                      Jane Nguyen Chief of Staff
-                    </p>
-                    <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-2'>
-                      Rick Cole Chief Deputy Controller
-                    </p>
-                    <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-2'>
-                      Sergio Perez Chief of Accountability & Oversight
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className='...md:relative md:py-2'>
+              {' '}
+              {/* Audit Services */}
+              <p className='content-center break-normal font-bold underline-offset-8 md:relative'>
+                Audit Services
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Devang Panchal
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Director of Auditing
+              </p>
+            </div>
+            <div className='...md:relative md:py-2'>
+              {/* Management Services */}
+              <p className='content-center break-normal font-bold underline-offset-8 md:relative md:py-2'>
+                Management Services
+              </p>
+              <p className='content-center break-normal  font-bold md:relative'>
+                Jovonne Lavender
+              </p>
+              <p className='content-center break-normal   md:relative '>
+                Chief Management Analyst
+              </p>
             </div>
           </div>
 
-          <div className='break-normal'></div>
-
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='color:#41ffca;'
-            viewBox='0 0 24 24'
-            strokeWidth={1.5}
-            stroke='currentColor'
-            className='h-6 w-6'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z'
-            />
-          </svg>
-
-          <h1>Audit Services Division</h1>
-          <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-8'>
+          <h1 className='md:py-4'>Audit Services Division</h1>
+          <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-2'>
             The Audit Services Division of the Controller’s Office conducts
             scheduled audits, special audits, and audits requested by the City
             Council or City management. Audits determine if existing controls in
@@ -274,14 +371,6 @@ export default function About() {
 
           <div className='break-normal'></div>
 
-          <img
-            className='alignnone wp-image-598 md:py-5'
-            src='https://lacontroller.org/wp-content/uploads/2019/02/AccountingDivision_Icon.png'
-            alt=''
-            width='59'
-            height='57'
-            sizes='(max-width: 59px) 100vw, 59px'
-          ></img>
           <h1>Accounting Operations Division</h1>
           <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-8'>
             The Accounting Operations Division is responsible for paying
@@ -335,14 +424,6 @@ export default function About() {
 
           <div className='break-normal'></div>
 
-          <img
-            className='alignnone wp-image-598 md:py-5'
-            src='https://lacontroller.org/wp-content/uploads/2019/02/FinanceDivision_Icon.png'
-            alt=''
-            width='59'
-            height='57'
-            sizes='(max-width: 59px) 100vw, 59px'
-          ></img>
           <h1>Financial Analysis and Reporting Division</h1>
           <p className='text-black-500 dark:text-black-400 mb-3 font-light md:relative md:py-8'>
             The Financial Analysis and Reporting Division is responsible for
@@ -440,17 +521,12 @@ export default function About() {
               </div>
             </div> */}
         </div>
-        <div className='rightTimeline containerTimeline'>
-          <div className='contentTimeline'></div>
-        </div>
 
         <div className='contentTimeline'></div>
         {/* </div> */}
 
         <div className='containerTimeline px-4 py-8  md:max-w-sm md:px-0 lg:mx-16'></div>
       </Layout>
-
-      <Footer />
     </>
   );
 }

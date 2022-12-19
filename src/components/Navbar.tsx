@@ -5,8 +5,6 @@ import { Fragment } from 'react';
 
 import Translate from '@/components/Translate';
 
- 
-
 const navigation = [
   { name: 'About', href: '/about', current: false },
   { name: 'Data', href: '/data', current: true },
@@ -15,16 +13,12 @@ const navigation = [
   { name: 'Budgets', href: '/budgets', current: false },
   // { name: 'Events', href: '/events', current: false },
   // { name: 'Press', href: '/press', current: false },
-  { name: 'Contact Us', href: '/contactus', current: false },
-
+  { name: 'Contact Us', href: '/contact', current: false },
 ];
-
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
-
-
 
 export default function Navbar() {
   return (
@@ -76,16 +70,8 @@ export default function Navbar() {
                       </a>
                     ))}
                     {/* <Translate /> */}
-                  
-                          
-                  
-    
-
-                    
                   </div>
                   {/* Translate dropdown menu.*/}
-
-      
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>

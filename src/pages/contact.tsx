@@ -6,7 +6,7 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { audits } from './../audits.json';
+import { audits } from '../audits.json';
 
 /**
  * SVGR Support
@@ -114,7 +114,7 @@ export default function Contact() {
                 </div>
                 <div className='ml-auto'>
                   <Image
-                    src='/images/627836e7efcd351d09a5d8da_kenneth-blob-bio-2.png'
+                    src='/images/ken-new-blob-big.png'
                     alt=''
                     width={500}
                     height={500}
@@ -207,7 +207,6 @@ export default function Contact() {
                       <a
                         href='https://lacontroller.us17.list-manage.com/subscribe?u=0689bc999e6529efb2132dd1e&amp;id=90e45eb7e9'
                         target='_blank'
-                        rel='noreferrer'
                       >
                         here
                       </a>
@@ -234,18 +233,25 @@ export default function Contact() {
             </h2>
             <p className='p1'>
               <a
-                href='https://lacontroller.org/report-fraud-waste-and-abuse/'
+                href='https://cityoflaprod.service-now.com/fwa'
                 target='_blank'
-                rel='noreferrer'
               >
                 Report Waste, Fraud or Abuse
               </a>
             </p>
+            <p className='p1'>
+              <a
+                href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'
+                target='_blank'
+              >
+                Follow-Up Case
+              </a>
+            </p>
+
             <p>
               <a
                 href='https://lacontroller.org/public-records-request/'
                 target='_blank'
-                rel='noreferrer'
               >
                 Public Records Request
               </a>
@@ -263,7 +269,6 @@ export default function Contact() {
               <a
                 href='https://lacontroller.org/payroll-calendar/'
                 target='_blank'
-                rel='noreferrer'
               >
                 Payroll Calendar (City Employees Only)
               </a>
@@ -271,8 +276,6 @@ export default function Contact() {
           </div>
         </div>
       </footer>
-
-      <Footer />
     </>
   );
 }
