@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Fragment } from 'react';
 
-import Translate from '@/components/Translate';
+//import Translate from '@/components/Translate';
 
 const navigation = [
   { name: 'About', href: '/about', current: false },
