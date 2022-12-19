@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-const App = () => {
+import * as React from 'react';
+export default function Translate() {
   const googleTranslateElementInit = () => {
     new window.google.translate.TranslateElement(
       {
@@ -10,10 +11,10 @@ const App = () => {
     );
   };
   useEffect(() => {
-    var addScript = document.createElement('script');
+    const addScript = document.createElement('script');
     addScript.setAttribute(
       'src',
-      '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+      'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
     );
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
@@ -23,6 +24,4 @@ const App = () => {
       <div id='google_translate_element'></div>
     </>
   );
-};
-
-export default App;
+}
