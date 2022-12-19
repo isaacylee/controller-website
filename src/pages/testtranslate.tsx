@@ -1,8 +1,7 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
 export function Translate() {
-useEffect(() => {
-  
-}, [])
-
+  useEffect(() => {
+    console.log('hi');
+  }, []);
 }

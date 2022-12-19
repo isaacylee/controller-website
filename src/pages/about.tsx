@@ -5,9 +5,6 @@ import Footer from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
-
-import { audits } from '../audits.json';
-
 /**
  * SVGR Support
  * Caveat: No React Props Type.
