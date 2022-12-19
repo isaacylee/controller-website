@@ -5,6 +5,8 @@ import Footer from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
+
+import { audits } from './../audits.json';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -16,7 +18,6 @@ import Seo from '@/components/Seo';
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
-
 export default function About() {
   return (
     <>

@@ -27,7 +27,10 @@ export default function Audit(props: any) {
 export async function getServerSideProps(context: any) {
   const auditurl = context.params.auditurl;
 
-  const returnedaudit: any = auditsfull[auditurl];
+  //illegally cast to any type because nextjs doesnt recognize it
+  const auditsfullbroken: any = auditsfull;
+
+  const returnedaudit: any = auditsfullbroken[auditurl];
 
   if (returnedaudit == undefined) {
     return {

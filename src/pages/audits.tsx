@@ -6,7 +6,7 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { audits } from '../audits.json';
+import { audits } from './../audits.json';
 
 /**
  * SVGR Support
