@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import * as React from 'react';
 
-import Footer from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { audits } from './../audits.json';
+import { audits } from '../audits.json';
 
 /**
  * SVGR Support
@@ -115,7 +114,7 @@ export default function Contact() {
                 </div>
                 <div className='ml-auto'>
                   <Image
-                    src='/images/627836e7efcd351d09a5d8da_kenneth-blob-bio-2.png'
+                    src='/images/ken-new-blob-big.png'
                     alt=''
                     width={500}
                     height={500}
@@ -235,13 +234,23 @@ export default function Contact() {
             </h2>
             <p className='p1'>
               <a
-                href='https://lacontroller.org/report-fraud-waste-and-abuse/'
+                href='https://cityoflaprod.service-now.com/fwa'
                 target='_blank'
                 rel='noreferrer'
               >
                 Report Waste, Fraud or Abuse
               </a>
             </p>
+            <p className='p1'>
+              <a
+                href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Follow-Up Case
+              </a>
+            </p>
+
             <p>
               <a
                 href='https://lacontroller.org/public-records-request/'
@@ -272,8 +281,6 @@ export default function Contact() {
           </div>
         </div>
       </footer>
-
-      <Footer />
     </>
   );
 }
