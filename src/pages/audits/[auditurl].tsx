@@ -56,6 +56,14 @@ export default function Audit(props: auditinterface) {
                 </button>
               </Link>
             </div>
+
+            <div>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: props.audit.htmlofpage,
+                }}
+              ></div>
+            </div>
           </div>
         )}
       </main>

@@ -135,7 +135,7 @@ export default function HomePage(props: any) {
             <Link href='/audits'>Audits & Reports</Link>
           </h2>
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
-            {audits.slice(0, 5).map((eachaudit: any, key) => (
+            {audits.slice(0, 5).map((eachaudit: any, key: number) => (
               <div
                 key={key}
                 className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200
