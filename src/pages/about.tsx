@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import * as React from 'react';
 
-import Footer from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
@@ -20,10 +19,10 @@ import { audits } from '../audits.json';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
-export default function About() {
+export default function About(props: any) {
   return (
     <>
-      <Navbar />
+      <Navbar themeChanger={props.themeChanger} />
       <Layout>
         <Seo />
 

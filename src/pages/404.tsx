@@ -3,13 +3,14 @@ import { RiAlarmWarningFill } from 'react-icons/ri';
 
 import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
+import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-export default function NotFoundPage() {
+export default function NotFoundPage(props: any) {
   return (
     <Layout>
       <Seo templateTitle='Not Found' />
-
+      <Navbar themeChanger={props.themeChanger} />
       <main>
         <section className='bg-white'>
           <div className='layout flex min-h-[80vh] flex-col items-center justify-center text-center text-black'>

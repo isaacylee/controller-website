@@ -19,7 +19,7 @@ import { audits } from '../audits.json';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
-export default function Contact() {
+export default function Contact(props: any) {
   return (
     <>
       <Navbar />
@@ -36,7 +36,7 @@ export default function Contact() {
                   <h2>Contact The Controller's Office</h2>
                 </div>
 
-                <div className='left-118 right-20 top-10 flex space-x-3 md:absolute md:flex'>
+                <div className='left-118 right-20 top-10 flex space-x-3 text-white md:absolute md:flex'>
                   {/* flex ml-10 justify-center space-x-2 md:flex-row */}
 
                   {/* facebook */}
@@ -49,7 +49,6 @@ export default function Contact() {
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 320 512'
                       className='h-7 w-7'
-                      fill='color: #1877f2;'
                     >
                       <path
                         fill='currentColor'
@@ -67,7 +66,6 @@ export default function Contact() {
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 448 512'
                       className='h-7 w-7'
-                      fill='color: #c13584;'
                     >
                       <path
                         fill='currentColor'
@@ -84,7 +82,6 @@ export default function Contact() {
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 448 512'
                       className='h-7 w-7'
-                      fill='color: #6a76ac;'
                     >
                       <path
                         fill='currentColor'
@@ -103,7 +100,6 @@ export default function Contact() {
                       xmlns='http://www.w3.org/2000/svg'
                       viewBox='0 0 512 512'
                       className='h-7 w-7'
-                      fill='color: #1da1f2;'
                     >
                       <path
                         fill='currentColor'

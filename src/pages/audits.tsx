@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { titleCase } from 'true-case';
 
 import '@/styles/aboutstyles.module.css';
 
@@ -23,7 +24,7 @@ import { audits } from './../audits.json';
 export default function Audits(props: any) {
   return (
     <>
-      <Navbar />
+      <Navbar themeChanger={props.themeChanger} />
       <Layout>
         {/* <Seo templateTitle='Home' /> */}
 
@@ -39,7 +40,11 @@ export default function Audits(props: any) {
               >
                 <a href={`/audits/${eachaudit.link}`}>
                   <p>
-                    {eachaudit.year} | <span>{eachaudit.dept}</span>
+                    {eachaudit.year} |{' '}
+                    <span>
+                      {eachaudit.dept &&
+                        titleCase(eachaudit.dept).replace(/department/gi, '')}
+                    </span>
                   </p>
                   <p className='font-bold'>{eachaudit.name}</p>
                 </a>
@@ -58,7 +63,13 @@ export default function Audits(props: any) {
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
                       <p>
-                        {eachaudit.year} | <span>{eachaudit.dept}</span>
+                        {eachaudit.year} |{' '}
+                        <span>
+                          {titleCase(eachaudit.dept).replace(
+                            /( )?department/gi,
+                            ''
+                          )}
+                        </span>
                       </p>
                       <p className='font-bold'>{eachaudit.name}</p>
                     </div>

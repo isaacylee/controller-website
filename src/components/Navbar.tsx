@@ -3,6 +3,10 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Fragment } from 'react';
 
+import { ThemeContext } from '@/themeManager';
+
+import { ChangeColour } from './changeColour';
+
 //import Translate from '@/components/Translate';
 
 const navigation = [
@@ -20,19 +24,19 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Navbar() {
+export default function Navbar(props: any) {
   return (
     <Disclosure
       as='nav'
-      className='z-10 border-b border-gray-300 drop-shadow-sm'
+      className='relative z-50 border-b border-gray-300 drop-shadow-sm dark:bg-whosestreets dark:text-white'
     >
       {({ open }) => (
         <>
-          <div className='mx-auto  max-w-7xl px-2 drop-shadow-sm sm:px-6 lg:px-8'>
+          <div className='mx-auto max-w-7xl px-2 drop-shadow-sm sm:px-6 lg:px-8'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-[#80ffdc]  hover:text-black focus:outline-none'>
+                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-[#80ffdc]  hover:text-black focus:outline-none dark:bg-whosestreets dark:text-white dark:hover:text-gray-100'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
@@ -46,8 +50,13 @@ export default function Navbar() {
                 <div className='flex flex-shrink-0 items-center'>
                   <Link href='/'>
                     <img
-                      className='block h-8 w-auto'
+                      className='block h-8 w-auto dark:hidden'
                       src='/images/logo-elect.png'
+                      alt='Kenneth Mejia LA City Controller'
+                    />
+                    <img
+                      className='hidden h-8 w-auto dark:block'
+                      src='/images/KennethMejia-logo-white-elect.png'
                       alt='Kenneth Mejia LA City Controller'
                     />
                   </Link>
@@ -60,8 +69,8 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? 'text-gray-800'
-                            : 'text-gray-900 hover:text-black hover:underline',
+                            ? 'text-gray-800 dark:text-gray-100'
+                            : 'text-gray-900 hover:text-black hover:underline dark:text-white dark:hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -70,6 +79,9 @@ export default function Navbar() {
                       </a>
                     ))}
                     {/* <Translate /> */}
+                    <div className='align-right  ml-auto'>
+                      <ChangeColour />
+                    </div>
                   </div>
                   {/* Translate dropdown menu.*/}
                 </div>
@@ -86,7 +98,9 @@ export default function Navbar() {
                   as='a'
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-green-900 text-white' : 'text-gray-800 ',
+                    item.current
+                      ? 'bg-green-900 text-white'
+                      : 'text-gray-800 dark:text-gray-100',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
@@ -94,6 +108,36 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <ThemeContext.Consumer>
+                {(themeChanger) => (
+                  <div
+                    className='inline-flex rounded-md shadow-sm'
+                    role='group'
+                  >
+                    <button
+                      type='button'
+                      className='rounded-l-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
+                      onClick={themeChanger.makeLight}
+                    >
+                      Light
+                    </button>
+                    <button
+                      type='button'
+                      className='border-t border-b border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
+                      onClick={themeChanger.makeDark}
+                    >
+                      Dark
+                    </button>
+                    <button
+                      type='button'
+                      className='rounded-r-md border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
+                      onClick={themeChanger.makeSystem}
+                    >
+                      System
+                    </button>
+                  </div>
+                )}
+              </ThemeContext.Consumer>
             </div>
           </Disclosure.Panel>
         </>
