@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import * as React from 'react';
 
-import Footer from '@/components/Footer';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';

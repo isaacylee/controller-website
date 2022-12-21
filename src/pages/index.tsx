@@ -5,6 +5,7 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
+import Translate from '@/components/Translate';
 
 import { audits } from '../audits.json';
 
@@ -24,6 +25,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
+      {/* <Translate /> */}
       <Layout>
         {/* <Seo templateTitle='Home' /> */}
 
@@ -116,6 +118,7 @@ export default function HomePage() {
                       />
                     </svg>
                   </a>
+                  <Translate />
                 </div>
 
                 <div className='ml-auto'>

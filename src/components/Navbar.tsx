@@ -3,8 +3,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Fragment } from 'react';
 
-//import Translate from '@/components/Translate';
-
 const navigation = [
   { name: 'About', href: '/about', current: false },
   { name: 'Data', href: '/data', current: true },
@@ -52,6 +50,7 @@ export default function Navbar() {
                     />
                   </Link>
                 </div>
+
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
@@ -69,9 +68,7 @@ export default function Navbar() {
                         {item.name}
                       </a>
                     ))}
-                    {/* <Translate /> */}
                   </div>
-                  {/* Translate dropdown menu.*/}
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
