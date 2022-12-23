@@ -14,7 +14,7 @@ function classNames(...classes: any) {
 
 export default function Footer() {
   return (
-    <footer className='sticky top-[100vh] mt-auto bg-white p-4 sm:p-6'>
+    <footer className='sticky top-[100vh] mt-auto bg-white p-4 dark:bg-zinc-900 dark:text-gray-100 sm:p-6'>
       {/* <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
             <a href="https://lacontroller.org/" className="flex items-center">
@@ -35,9 +35,9 @@ export default function Footer() {
 
       {/* </div>
     </div> */}
-      <hr className='my-6 border-gray-200 sm:mx-auto  lg:my-8' />
+      <hr className='my-6 border-gray-200 dark:border-gray-800 sm:mx-auto  lg:my-8' />
       <div className='sm:flex sm:items-center sm:justify-between'>
-        <span className='text-sm text-gray-500 sm:text-center '>
+        <span className='text-sm text-gray-500 dark:text-gray-100 sm:text-center '>
           © 2023{' '}
           <a href='https://controller.lacity.gov' className='hover:underline'>
             Kenneth Mejia, Los Angeles City Controller

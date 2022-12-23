@@ -25,7 +25,7 @@ class MyDocument extends Document {
             crossOrigin='anonymous'
           />
         </Head>
-        <body className='flex min-h-screen  flex-col'>
+        <body className='flex min-h-screen  flex-col dark:bg-zinc-900'>
           <div className='flex-grow'>
             <Main />
           </div>
