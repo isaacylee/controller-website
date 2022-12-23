@@ -31,7 +31,7 @@ export default function Data(props: any) {
         <Seo />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h1>Data Stories & Map</h1>
+          <h1 className='pt-8 pb-4 dark:text-white'>Data Stories & Map</h1>
 
           <div className='md:hidden'>
             {data.map((eachaudit: any, eachauditnum: number) => (
@@ -56,7 +56,11 @@ export default function Data(props: any) {
                   key={eachauditnum}
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200'
                 >
-                  <a href={`${eachaudit.link}`}>
+                  <a
+                    href={`${eachaudit.link}`}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
                       <p>

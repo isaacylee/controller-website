@@ -56,10 +56,11 @@ export default function HomePage(props: any) {
           </div>
         </div>
 
-        <div className='container mx-auto px-4 md:px-0'>
-          <h2 className='pt-8 pb-4'>
-            <Link href='/audits'>Audits & Reports</Link>
-          </h2>
+        <div className='container mx-auto px-4 md:px-0 '>
+          <Link href='/audits'>
+            <h2 className='pt-8 pb-4 dark:text-white'> Audits & Reports</h2>
+          </Link>
+
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 5).map((eachaudit: any, key: number) => (
               <div
@@ -117,9 +118,11 @@ export default function HomePage(props: any) {
         </div>
         {/* Data stories list below */}
         <div className='container mx-auto px-4 md:px-0'>
-          <h2 className='pt-8 pb-4'>
-            <Link href='/data'>Data Stories & Map</Link>
-          </h2>
+          <Link href='/data'>
+            {' '}
+            <h2 className='pt-8 pb-4 dark:text-white'>Data Stories & Map</h2>
+          </Link>
+
           <div className='grid grid-cols-3 gap-x-4 gap-y-4 md:grid-cols-4 lg:grid-cols-5'>
             {data.slice(0, 5).map((eachaudit: any, key) => (
               <div
@@ -128,7 +131,7 @@ export default function HomePage(props: any) {
                 ${key === 4 ? ' hidden md:block ' : ''}
                 ${key === 5 ? ' hidden lg:block ' : ''}`}
               >
-                <a href={`${eachaudit.link}`}>
+                <a href={`${eachaudit.link}`} target='_blank' rel='noreferrer'>
                   <img src={eachaudit.image} className='w-full'></img>
                   <div className=' px-2 py-2'>
                     <p>
@@ -142,7 +145,7 @@ export default function HomePage(props: any) {
           </div>
           <div>
             <div className='flex flex-row'>
-              <Link href='/data'>
+              <Link href='/data' target='_blank' rel='noreferrer'>
                 <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
                   All Data
                 </div>
@@ -156,7 +159,11 @@ export default function HomePage(props: any) {
                   key={key}
                   className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100'
                 >
-                  <a href={`${eachaudit.link}`}>
+                  <a
+                    href={`${eachaudit.link}`}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <div className=' px-2 py-2'>
                       <p>
                         {eachaudit.year} | <span>{eachaudit.dept}</span>
