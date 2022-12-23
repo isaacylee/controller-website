@@ -48,7 +48,6 @@ export default function Footer() {
           . All Rights Reserved.
         </span>
         <div className='mt-4 flex space-x-6 sm:mt-0 sm:justify-center'>
-          {/* facebook */}
           <a
             href=' https://www.facebook.com/lacontroller'
             target='_blank'

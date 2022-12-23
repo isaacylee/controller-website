@@ -129,18 +129,16 @@ export default function Contact(props: any) {
                 </h2>
                 <ul className='text-gray-500 dark:text-gray-400'>
                   <li className='mb-4'>
-                    <p className='text-gray-500 dark:text-gray-400'>
+                    <p className='dark:text-white'>
                       Sign up for our newsletter{' '}
                       <a
                         href='https://lacontroller.us17.list-manage.com/subscribe?u=0689bc999e6529efb2132dd1e&amp;id=90e45eb7e9'
                         target='_blank'
                         rel='noreferrer'
                       >
-                        <p className='text-gray-500 dark:text-gray-400'>
-                          {' '}
-                          here.
-                        </p>
+                        here
                       </a>
+                      .
                     </p>
                   </li>
                 </ul>
@@ -166,15 +164,17 @@ export default function Contact(props: any) {
                 href='https://cityoflaprod.service-now.com/fwa'
                 target='_blank'
                 rel='noreferrer'
+                className='dark:text-white'
               >
                 Report Waste, Fraud or Abuse
               </a>
             </p>
-            <p className=' p1'>
+            <p className='p1'>
               <a
                 href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'
                 target='_blank'
                 rel='noreferrer'
+                className='dark:text-white'
               >
                 Follow-Up Case
               </a>
@@ -185,6 +185,7 @@ export default function Contact(props: any) {
                 href='https://lacontroller.org/public-records-request/'
                 target='_blank'
                 rel='noreferrer'
+                className='dark:text-white'
               >
                 Public Records Request
               </a>
@@ -194,6 +195,7 @@ export default function Contact(props: any) {
                 href='https://www.lacity.org/'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='dark:text-white'
               >
                 City of Los Angeles Website
               </a>
@@ -203,6 +205,7 @@ export default function Contact(props: any) {
                 href='https://lacontroller.org/payroll-calendar/'
                 target='_blank'
                 rel='noreferrer'
+                className='dark:text-white'
               >
                 Payroll Calendar (City Employees Only)
               </a>
