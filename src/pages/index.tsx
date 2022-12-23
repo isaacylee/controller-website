@@ -5,6 +5,7 @@ import { titleCase } from 'true-case';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
+import Translate from '@/components/Translate';
 
 import { audits } from '../audits.json';
 
@@ -23,7 +24,8 @@ import { audits } from '../audits.json';
 export default function HomePage(props: any) {
   return (
     <>
-      <Navbar themeChanger={props.themeChanger} />
+      <Navbar />
+      {/* <Translate /> */}
       <Layout>
         {/* <Seo templateTitle='Home' /> */}
 
@@ -116,6 +118,7 @@ export default function HomePage(props: any) {
                       />
                     </svg>
                   </a>
+                  <Translate />
                 </div>
 
                 <div className='ml-auto'>
