@@ -1,0 +1,306 @@
+{
+  "data": [
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2022/11/Visualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg",
+      "name": "Visualizing Nine Years of Audits, Reports and Data Stories",
+      "year": "2022",
+      "dept": "Dashboard",
+      "link": "https://lacontroller.org/data-stories-and-maps/visualizing-nine-years-of-audits-reports-and-data-stories/"
+    },
+
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/09/lafd-banner-thumbnail.png",
+      "name": "Get Ready, L.A.",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/get-ready-la/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/09/great-wall-of-los-angelesa-352.jpg",
+      "name": "Unidos: Latinx en Los Angeles",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/latinx-los-angeles/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2022/08/Cost-of-Living-Thumbnail-352x241-.jpg",
+      "name": "L.A.'s Cost of Living Crisis",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/l-a-s-cost-of-living-crisis/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/06/LGBTQ-Pride-2021_thumb_352x241.jpg",
+      "name": "LGBTQ+ Pride, Progress and Perseverence ",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/lgbtq-pride-progress-and-perseverance/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/08/lahsa_352.jpg",
+      "name": "Homelessness and Housing Hub",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/homelessness-and-housing-hub/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/food-for-californians-352x241-1.jpg",
+      "name": "Free Food in California",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/food-for-californians/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/Tax-Prep-352x241-1.jpg",
+      "name": "Free Tax Prep Los Angeles",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/free-tax-prep/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2022/03/los-angeles-skyline_352x241.jpg",
+      "name": "Inside L.A. City Finances",
+      "year": "2022",
+      "dept": "Dashboard",
+      "link": "https://lacontroller.org/data-stories-and-maps/city-finances-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2022/02/homelessness_la_352x241.jpg",
+      "name": "The Problems and Progress of Prop. HHH Story Map",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/problems-and-progress-of-prop-hhh-story-map/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/02/Watts_towers_352x241.jpg",
+      "name": "Black History Is L.A. History",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/black-history-la/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2022/01/Griffith-Observatory-sunset_352x241.jpg",
+      "name": "City Activities Dashboard",
+      "year": "2022",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/city-activities/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/12/los_angeles_city-properties_352x241.jpg",
+      "name": "City Properties Available for Homeless Housing and Services",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/city-owned-properties-map/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/12/holiday-budgeting-tips_352x241.jpg",
+      "name": "Holiday Financial Tips",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/holiday-financial-tips/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/11/Broken-sidewalk-352x241-1.jpg",
+      "name": "Sidewalk Repair Requests Dashboard",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/sidewalks-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/10/Food-insecurity_352x241.jpg",
+      "name": "Hunger for Solutions to Food Insecurity",
+      "year": "2021",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/food-insecurity/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/08/covid-testing_mayor-garcetti_352x241.jpg",
+      "name": "LAFD COVID-19 Labor Costs Dashboard",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/lafd-overtime-covid-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/08/ARP-graph_no-words_no-numbers-copy_352x241.jpg",
+      "name": "How the American Rescue Plan is Impacting L.A.",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/federal-funds-impacting-la/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/06/LGBTQ-Pride-2021_thumb_352x241.jpg",
+      "name": "LGBTQ+ Pride: Toward Equity & Equity",
+      "year": "2021",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/lgbtq-equality-and-equity/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/12/Covid-spending-tracker-thumb.jpg",
+      "name": "COVID-19 Spending Tracker",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/covidspending/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/04/covid-dash-352x241-1.png",
+      "name": "COVID-19 Dashboard",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/covid-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/03/illegal-dumping_352x241.jpg",
+      "name": "Illegal Dumping Dashboard",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/illegal-dumping-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/03/311_352x241.jpg",
+      "name": "311 Dashboard",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/311-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2021/02/1_crowd-young-elderly-men-women-tr.jpg",
+      "name": "City Workforce Dashboard",
+      "year": "2021",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/city-workforce-dashboard/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/11/Equity-Index-screenshot-352x241-1-e1605218811434.jpg",
+      "name": "A Great Divide: L.A. Equity Index",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/equityindex/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/10/Outdoor-dining-2_352x241.jpg",
+      "name": "Getting Main St. Back on Its Feet: Small Biz Resources",
+      "year": "2020",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/smallbusinessguide/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/09/ID-docs-352x241-1.jpg",
+      "name": "Be Prepared: How to Build a Financial First Aid Kit",
+      "year": "2020",
+      "dept": "Resource",
+      "link": "https://lacontroller.org/data-stories-and-maps/financialfirstaidkit/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/09/homelessness-part-2_no-names_cropped354x241.jpg",
+      "name": "Meeting the Moment to Advance Prop. HHH",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/hhhactionplan/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/joblosses2_smaller.jpg",
+      "name": "COVID-19 Job Losses In L.A.",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/job-losses/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/06/architecture-buildings-business-car-331990_352.jpg",
+      "name": "Small Business Microloan Tracker",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/microloans/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/engineering_geology-scaled-e1592331519392.jpg",
+      "name": "A More Modern Approach to City-Owned Art",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/a-more-modern-approach-to-city-owned-art/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/wall-las-memorias_small.jpg",
+      "name": "LGBTQ+ Pride & Power",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/prideandpower/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2020/04/Stimulus-checks.jpg",
+      "name": "Stimulus Checks in Los Angeles",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/stimulus-checks/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/816d69c601c696e12a96f4ef723f-1448801.jpgd_.jpg",
+      "name": "Food Pantries Across L.A. County",
+      "year": "2020",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/food-pantries-across-l-a-county/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/power-lines-fires.jpeg",
+      "name": "Sparking DWP's Wildfire Prevention Strategy",
+      "year": "2019",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/wildfire-map/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/09/Vermont-Rendering-Final-1.jpg",
+      "name": "The High Cost of Homeless Housing",
+      "year": "2019",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/hhh-map/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/08/Summer-Fun-in-LA-pic.png",
+      "name": "Summer Fun in L.A.",
+      "year": "2019",
+      "dept": "MAP, Data Report",
+      "link": "https://lacontroller.org/data-stories-and-maps/summer-fun-in-l-a/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/07/girlsMajors2018.jpg",
+      "name": "Youth Programs ",
+      "year": "2019",
+      "dept": "Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/youth-programs/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/06/Property-Panel-352-e1560817645925.png",
+      "name": "Property Panel",
+      "year": "2019",
+      "dept": "Property Map",
+      "link": "https://lacontroller.org/data-stories-and-maps/propertypanel/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/06/LGBTQ-City-Hall-Data-Story.jpg",
+      "name": "LGBTQ+ Resources",
+      "year": "2019",
+      "dept": "Map, Data Report",
+      "link": "https://lacontroller.org/data-stories-and-maps/lgbtq-resource-map/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/02/affordable-housing-data-story.png",
+      "name": "Affordable Housing: Incentives and Oversight",
+      "year": "2017",
+      "dept": "Map, Data Report",
+      "link": "https://lacontroller.org/data-stories-and-maps/lgbtq-resource-map/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/02/parking-tickets-data-story.png",
+      "name": "Street Talk: Parking Tickets in LA",
+      "year": "2017",
+      "dept": "MAP, Data Report",
+      "link": "https://lacontroller.org/data-stories-and-maps/street-talk-parking-tickets-in-la/"
+    },
+    {
+      "image": "https://lacontroller.org/wp-content/uploads/2019/06/noise.1.jpg",
+      "name": "Ready for Take Off?",
+      "year": "2017",
+      "dept": "Map, Data Report",
+      "link": "https://lacontroller.org/data-stories-and-maps/ready-for-take-off/"
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import Seo from '@/components/Seo';
 import Translate from '@/components/Translate';
 
 import { audits } from '../audits.json';
+import { data } from '../data.json';
 
 /**
  * SVGR Support
@@ -189,6 +190,60 @@ export default function HomePage(props: any) {
                   All Audits
                 </div>
               </Link>
+            </div>
+          </div>
+        </div>
+        {/* Data stories list below */}
+        <div className='container mx-auto px-4 md:px-0'>
+          <h2 className='pt-8 pb-4'>
+            <Link href='/data'>Data Stories & Map</Link>
+          </h2>
+          <div className='grid grid-cols-3 gap-x-4 gap-y-4 md:grid-cols-4 lg:grid-cols-5'>
+            {data.slice(0, 5).map((eachaudit: any, key) => (
+              <div
+                key={key}
+                className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200
+                ${key === 4 ? ' hidden md:block ' : ''}
+                ${key === 5 ? ' hidden lg:block ' : ''}`}
+              >
+                <a href={`${eachaudit.link}`}>
+                  <img src={eachaudit.image} className='w-full'></img>
+                  <div className=' px-2 py-2'>
+                    <p>
+                      {eachaudit.year} | <span>{eachaudit.dept}</span>
+                    </p>
+                    <p className='font-semibold'>{eachaudit.name}</p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/data'>
+                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
+                  All Data
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {audits.slice(0, 6).map((eachaudit: any, key: number) => (
+                <div
+                  key={key}
+                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100'
+                >
+                  <a href={`${eachaudit.link}`}>
+                    <div className=' px-2 py-2'>
+                      <p>
+                        {eachaudit.year} | <span>{eachaudit.dept}</span>
+                      </p>
+                      <p className='font-semibold'>{eachaudit.name}</p>
+                    </div>
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </div>
