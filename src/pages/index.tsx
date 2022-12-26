@@ -58,7 +58,9 @@ export default function HomePage(props: any) {
 
         <div className='container mx-auto px-4 md:px-0'>
           <h2 className='pt-8 pb-4'>
-            <Link href='/audits'>Audits & Reports</Link>
+            <Link href='/audits'>
+              <span className='dark:bg-gray-50'>Audits & Reports</span>
+            </Link>
           </h2>
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 5).map((eachaudit: any, key: number) => (
@@ -91,7 +93,7 @@ export default function HomePage(props: any) {
               {audits.slice(0, 6).map((eachaudit: any, key: number) => (
                 <div
                   key={key}
-                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100'
+                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100 dark:bg-gray-800 dark:text-gray-100'
                 >
                   <a href={`/audits/${eachaudit.link}`}>
                     <div className=' px-2 py-2'>
@@ -117,20 +119,20 @@ export default function HomePage(props: any) {
         </div>
         {/* Data stories list below */}
         <div className='container mx-auto px-4 md:px-0'>
-          <h2 className='pt-8 pb-4'>
+          <h2 className='pt-8 pb-4 dark:text-gray-50'>
             <Link href='/data'>Data Stories & Map</Link>
           </h2>
           <div className='grid grid-cols-3 gap-x-4 gap-y-4 md:grid-cols-4 lg:grid-cols-5'>
             {data.slice(0, 5).map((eachaudit: any, key) => (
               <div
                 key={key}
-                className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200
+                className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-100
                 ${key === 4 ? ' hidden md:block ' : ''}
                 ${key === 5 ? ' hidden lg:block ' : ''}`}
               >
                 <a href={`${eachaudit.link}`}>
                   <img src={eachaudit.image} className='w-full'></img>
-                  <div className=' px-2 py-2'>
+                  <div className=' px-2 py-2  dark:text-gray-100'>
                     <p>
                       {eachaudit.year} | <span>{eachaudit.dept}</span>
                     </p>
@@ -154,7 +156,7 @@ export default function HomePage(props: any) {
               {audits.slice(0, 6).map((eachaudit: any, key: number) => (
                 <div
                   key={key}
-                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100'
+                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100  dark:bg-gray-800 dark:text-gray-100'
                 >
                   <a href={`${eachaudit.link}`}>
                     <div className=' px-2 py-2'>

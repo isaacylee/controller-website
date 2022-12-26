@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import Translate from '@/components/Translate';
 export function SocialPageSeries() {
   return (
     <div className='absolute left-auto right-8 top-4 flex flex-row space-x-3 text-white'>
@@ -80,7 +79,6 @@ export function SocialPageSeries() {
           />
         </svg>
       </a>
-      <Translate />
     </div>
   );
 }

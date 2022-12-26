@@ -3,6 +3,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Fragment } from 'react';
 
+import NewTranslate from '@/components/NewTranslate';
+
 import { ThemeContext } from '@/themeManager';
 
 import { ChangeColour } from './changeColour';
@@ -83,6 +85,7 @@ export default function Navbar(props: any) {
                     <div className='align-right  ml-auto'>
                       <ChangeColour />
                     </div>
+                    <NewTranslate />
                   </div>
                 </div>
               </div>
