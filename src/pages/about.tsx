@@ -140,6 +140,12 @@ export default function About(props: any) {
               <p className='content-center break-normal  md:relative'>
                 Chief of Accountability & Oversight
               </p>
+              <p className='content-center break-normal font-bold md:relative'>
+                Rahoof (Wally) Oyewole
+              </p>
+              <p className='content-center break-normal  md:relative'>
+                Chief Financial Officer
+              </p>
             </div>
             <div className='....md:relative md:py-2'>
               {/* innovation */}
