@@ -2,13 +2,14 @@ import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
 
+import { data } from '@/data.json';
+
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 import { SocialPageSeries } from '@/components/SocialPageSeries';
 
-import { audits } from '../audits.json';
-import { data } from '../data.json';
+import { audits } from '@/audits.json';
 
 /**
  * SVGR Support
@@ -104,12 +105,11 @@ export default function HomePage(props: any) {
           </div>
         </div>
 
-        <div className='container mx-auto px-4 md:px-0'>
-          <h2 className='pt-8 pb-4'>
-            <Link href='/audits'>
-              <span className='dark:text-gray-50'>Audits & Reports</span>
-            </Link>
-          </h2>
+        <div className='container mx-auto px-4 md:px-0 '>
+          <Link href='/audits'>
+            <h2 className='pt-8 pb-4 dark:text-white'> Audits & Reports</h2>
+          </Link>
+
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 5).map((eachaudit: any, key: number) => (
               <BigCard
@@ -148,9 +148,11 @@ export default function HomePage(props: any) {
         </div>
         {/* Data stories list below */}
         <div className='container mx-auto px-4 md:px-0'>
-          <h2 className='pt-8 pb-4 dark:text-gray-50'>
+          <h2 className=''>
             <Link href='/data'>
-              <span className='dark:text-gray-50'>Data Stories & Map</span>
+              <span className='pt-8 pb-4 dark:text-white'>
+                Data Stories & Map
+              </span>
             </Link>
           </h2>
           <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
@@ -182,7 +184,7 @@ export default function HomePage(props: any) {
           </div>
           <div>
             <div className='flex flex-row'>
-              <Link href='/data'>
+              <Link href='/data' target='_blank' rel='noreferrer'>
                 <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
                   All Data
                 </div>
