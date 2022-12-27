@@ -10,6 +10,7 @@ import Seo from '@/components/Seo';
 import { SocialPageSeries } from '@/components/SocialPageSeries';
 
 import { audits } from '@/audits.json';
+import { finance } from '@/financeindex.json';
 
 /**
  * SVGR Support
@@ -114,7 +115,7 @@ export default function HomePage(props: any) {
             {audits.slice(0, 5).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
-                link={eachaudit.link}
+                link={`/audits/${eachaudit.link}`}
                 image={eachaudit.image}
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
@@ -127,7 +128,49 @@ export default function HomePage(props: any) {
               {audits.slice(0, 6).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={eachaudit.link}
+                  link={`/audits/${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/audits'>
+                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
+                  All Audits
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className='container mx-auto px-4 md:px-0 '>
+          <Link href='/reports'>
+            <h2 className='pt-8 pb-4 dark:text-white'>Financial Reports</h2>
+          </Link>
+
+          <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
+            {finance.slice(0, 5).map((eachaudit: any, key: number) => (
+              <BigCard
+                key={key}
+                link={`/reports/${eachaudit.link}`}
+                image={eachaudit.image}
+                year={eachaudit.year}
+                dept={titleCase(eachaudit.dept)}
+                name={eachaudit.name}
+              />
+            ))}
+          </div>
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {finance.slice(0, 6).map((eachaudit: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={`/reports/${eachaudit.link}`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
@@ -159,7 +202,7 @@ export default function HomePage(props: any) {
             {data.slice(0, 5).map((eachaudit: any, key) => (
               <BigCard
                 key={key}
-                link={eachaudit.link}
+                link={`${eachaudit.link}`}
                 image={eachaudit.image}
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
@@ -173,7 +216,7 @@ export default function HomePage(props: any) {
               {data.slice(0, 5).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={eachaudit.link}
+                  link={`${eachaudit.link}`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
