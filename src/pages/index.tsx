@@ -39,7 +39,7 @@ function LineCard(props: any) {
       key={props.key}
       className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100 dark:border-gray-300 dark:bg-gray-800 dark:text-gray-100'
     >
-      <a href={`/audits/${props.link}`} className=' dark:text-gray-50'>
+      <a href={`${props.link}`} className=' dark:text-gray-50'>
         <div className=' px-2 py-2  dark:text-gray-50'>
           <p>
             {props.year} | <span>{props.dept}</span>
