@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "controller-website",
+      "script": "bun",
+      "args": "run start"
+    }
+  ]
+}
