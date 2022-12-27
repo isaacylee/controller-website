@@ -1,3 +1,4 @@
+// eslint-disable-next-line simple-import-sort/imports
 import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
@@ -11,7 +12,7 @@ import { SocialPageSeries } from '@/components/SocialPageSeries';
 
 import { audits } from '@/audits.json';
 import { finance } from '@/financeindex.json';
-
+import { budgets } from '@/budget.json';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -189,6 +190,51 @@ export default function HomePage(props: any) {
             </div>
           </div>
         </div>
+        {/* Budgets */}
+        <div className='container mx-auto px-4 md:px-0'>
+          <h2 className=''>
+            <Link href='/budgets'>
+              <span className='pt-8 pb-4 dark:text-white'>Budgets</span>
+            </Link>
+          </h2>
+          <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
+            {budgets.slice(0, 5).map((eachaudit: any, key) => (
+              <BigCard
+                key={key}
+                link={`${eachaudit.link}`}
+                image={eachaudit.image}
+                year={eachaudit.year}
+                dept={titleCase(eachaudit.dept)}
+                name={eachaudit.name}
+              />
+            ))}
+          </div>
+
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {data.slice(0, 5).map((eachaudit: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={`${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/data' target='_blank' rel='noreferrer'>
+                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
+                  All Budgets
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Data stories list below */}
         <div className='container mx-auto px-4 md:px-0'>
           <h2 className=''>
