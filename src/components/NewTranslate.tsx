@@ -13,18 +13,21 @@ export default function NewTranslate() {
       '#google_translate_element'
     ) as HTMLElement | null;
 
+    const selectInside = document.querySelector(
+      '#google_translate_element > div'
+    ) as HTMLElement | null;
+
     if (AttrRemovedRef.current === false) {
-      if (topTranslateElement) {
+      if (topTranslateElement && selectInside) {
         console.log('element found');
         if (topTranslateElement.innerText.includes('Powered by')) {
           console.log('includes powered by, removing!');
-          topTranslateElement.innerHTML = topTranslateElement.innerHTML.replace(
-            'Powered by',
-            ''
-          );
+          // selectInside.innerHTML = selectInside.innerHTML.replace(
+          //  'Powered by',
+          // ''
+          //);
           console.log('removed!');
           AttrRemovedRef.current = true;
-          console.log('changed state');
         }
       }
     }
@@ -48,7 +51,11 @@ export default function NewTranslate() {
     removeAttribution();
 
     const stopId = setInterval(() => {
-      removeAttribution();
+      if (AttrRemovedRef.current === false) {
+        removeAttribution();
+      } else {
+        clearInterval(stopId);
+      }
     }, 200);
 
     return () => {

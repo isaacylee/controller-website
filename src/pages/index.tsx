@@ -22,6 +22,54 @@ import { data } from '../data.json';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
+interface bigcardprops {
+  key: number;
+  link: string;
+  image: string;
+  year: string;
+  dept?: any;
+  name: string;
+}
+
+function LineCard(props: any) {
+  return (
+    <div
+      key={props.key}
+      className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100 dark:border-gray-300 dark:bg-gray-800 dark:text-gray-100'
+    >
+      <a href={`/audits/${props.link}`} className=' dark:text-gray-50'>
+        <div className=' px-2 py-2  dark:text-gray-50'>
+          <p>
+            {props.year} | <span>{props.dept}</span>
+          </p>
+          <p className='font-semibold'>{props.name}</p>
+        </div>
+      </a>
+    </div>
+  );
+}
+
+function BigCard(props: bigcardprops) {
+  return (
+    <div
+      key={props.key}
+      className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-100
+    ${props.key === 4 ? ' hidden md:block ' : ''}
+    ${props.key === 5 ? ' hidden lg:block ' : ''}`}
+    >
+      <a href={`${props.link}`}>
+        <img src={props.image} className='w-full'></img>
+        <div className=' px-2 py-2  dark:text-gray-100'>
+          <p>
+            {props.year} | <span>{props.dept}</span>
+          </p>
+          <p className='font-semibold'>{props.name}</p>
+        </div>
+      </a>
+    </div>
+  );
+}
+
 export default function HomePage(props: any) {
   return (
     <>
@@ -59,51 +107,32 @@ export default function HomePage(props: any) {
         <div className='container mx-auto px-4 md:px-0'>
           <h2 className='pt-8 pb-4'>
             <Link href='/audits'>
-              <span className='dark:bg-gray-50'>Audits & Reports</span>
+              <span className='dark:text-gray-50'>Audits & Reports</span>
             </Link>
           </h2>
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 5).map((eachaudit: any, key: number) => (
-              <div
+              <BigCard
                 key={key}
-                className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200
-                ${key === 4 ? ' hidden md:block ' : ''}
-                ${key === 5 ? ' hidden lg:block ' : ''}`}
-              >
-                <a href={`/audits/${eachaudit.link}`}>
-                  <img src={eachaudit.image} className='w-full'></img>
-                  <div className=' px-2 py-2'>
-                    <p>
-                      {eachaudit.year} |{' '}
-                      <span>
-                        {titleCase(eachaudit.dept).replace(
-                          /( )?department/gi,
-                          ''
-                        )}
-                      </span>
-                    </p>
-                    <p className='font-semibold'>{eachaudit.name}</p>
-                  </div>
-                </a>
-              </div>
+                link={eachaudit.link}
+                image={eachaudit.image}
+                year={eachaudit.year}
+                dept={titleCase(eachaudit.dept)}
+                name={eachaudit.name}
+              />
             ))}
           </div>
           <div>
             <div className='rounded-lg  sm:hidden'>
               {audits.slice(0, 6).map((eachaudit: any, key: number) => (
-                <div
+                <LineCard
                   key={key}
-                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100 dark:bg-gray-800 dark:text-gray-100'
-                >
-                  <a href={`/audits/${eachaudit.link}`}>
-                    <div className=' px-2 py-2'>
-                      <p>
-                        {eachaudit.year} | <span>{eachaudit.dept}</span>
-                      </p>
-                      <p className='font-semibold'>{eachaudit.name}</p>
-                    </div>
-                  </a>
-                </div>
+                  link={eachaudit.link}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
               ))}
             </div>
           </div>
@@ -120,27 +149,36 @@ export default function HomePage(props: any) {
         {/* Data stories list below */}
         <div className='container mx-auto px-4 md:px-0'>
           <h2 className='pt-8 pb-4 dark:text-gray-50'>
-            <Link href='/data'>Data Stories & Map</Link>
+            <Link href='/data'>
+              <span className='dark:text-gray-50'>Data Stories & Map</span>
+            </Link>
           </h2>
-          <div className='grid grid-cols-3 gap-x-4 gap-y-4 md:grid-cols-4 lg:grid-cols-5'>
+          <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
             {data.slice(0, 5).map((eachaudit: any, key) => (
-              <div
+              <BigCard
                 key={key}
-                className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-100
-                ${key === 4 ? ' hidden md:block ' : ''}
-                ${key === 5 ? ' hidden lg:block ' : ''}`}
-              >
-                <a href={`${eachaudit.link}`}>
-                  <img src={eachaudit.image} className='w-full'></img>
-                  <div className=' px-2 py-2  dark:text-gray-100'>
-                    <p>
-                      {eachaudit.year} | <span>{eachaudit.dept}</span>
-                    </p>
-                    <p className='font-semibold'>{eachaudit.name}</p>
-                  </div>
-                </a>
-              </div>
+                link={eachaudit.link}
+                image={eachaudit.image}
+                year={eachaudit.year}
+                dept={titleCase(eachaudit.dept)}
+                name={eachaudit.name}
+              />
             ))}
+          </div>
+
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {data.slice(0, 5).map((eachaudit: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={eachaudit.link}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
           </div>
           <div>
             <div className='flex flex-row'>
@@ -149,25 +187,6 @@ export default function HomePage(props: any) {
                   All Data
                 </div>
               </Link>
-            </div>
-          </div>
-          <div>
-            <div className='rounded-lg  sm:hidden'>
-              {audits.slice(0, 6).map((eachaudit: any, key: number) => (
-                <div
-                  key={key}
-                  className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100  dark:bg-gray-800 dark:text-gray-100'
-                >
-                  <a href={`${eachaudit.link}`}>
-                    <div className=' px-2 py-2'>
-                      <p>
-                        {eachaudit.year} | <span>{eachaudit.dept}</span>
-                      </p>
-                      <p className='font-semibold'>{eachaudit.name}</p>
-                    </div>
-                  </a>
-                </div>
-              ))}
             </div>
           </div>
         </div>

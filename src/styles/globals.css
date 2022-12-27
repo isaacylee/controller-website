@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+.goog-logo-link {
+  display:none !important;
+} 
+  
+.goog-te-gadget{
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+.goog-te-combo {
+  color: black !important;
+  border-radius: 100px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+
+}
+
+.dark .goog-te-combo {
+  color: white !important;
+  background-color: #111111;
+}
+
 .firstsplash {
   filter: contrast(170%) brightness(1000%) invert(100%);
   background: linear-gradient(0deg, rgba(65, 255, 202, 1), rgba(0, 0, 0, 0)),

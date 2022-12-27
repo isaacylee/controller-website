@@ -1,7 +1,7 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 import NewTranslate from '@/components/NewTranslate';
 
@@ -26,7 +26,43 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
 }
 
+function getWindowDimensions() {
+  if (typeof window != 'undefined') {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  } else {
+    return {
+      width: 0,
+      height: 0,
+    };
+  }
+}
+
+export function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    if (typeof window != 'undefined') {
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
+  return windowDimensions;
+}
+
 export default function Navbar(props: any) {
+  const { height, width } = useWindowDimensions();
+
   return (
     <Disclosure
       as='nav'
@@ -64,7 +100,7 @@ export default function Navbar(props: any) {
                   </Link>
                 </div>
 
-                <div className='hidden sm:ml-6 sm:block'>
+                <div className='hidden sm:ml-6 md:block'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
                       <a
@@ -85,7 +121,7 @@ export default function Navbar(props: any) {
                     <div className='align-right  ml-auto'>
                       <ChangeColour />
                     </div>
-                    <NewTranslate />
+                    {width >= 768 && <NewTranslate />}
                   </div>
                 </div>
               </div>
@@ -93,7 +129,7 @@ export default function Navbar(props: any) {
             </div>
           </div>
 
-          <Disclosure.Panel className='sm:hidden'>
+          <Disclosure.Panel className='md:hidden'>
             <div className='space-y-1 px-2 pt-2 pb-3'>
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -142,6 +178,7 @@ export default function Navbar(props: any) {
                 )}
               </ThemeContext.Consumer>
             </div>
+            {width < 768 && <NewTranslate />}
           </Disclosure.Panel>
         </>
       )}
