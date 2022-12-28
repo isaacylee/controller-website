@@ -40,7 +40,6 @@ export default function Budgets(props: any) {
                 className='mb-2 rounded-lg bg-gray-200 px-2 py-2'
               >
                 <a href={`${eachaudit.link}`}>
-                  <p>{eachaudit.name}</p>
                   <p className='font-bold'>{eachaudit.name}</p>
                 </a>
               </div>
@@ -61,9 +60,7 @@ export default function Budgets(props: any) {
                   >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
-                      <p>
-                        {eachaudit.year} | <span>{eachaudit.dept}</span>
-                      </p>
+                      <p></p>
                       <p className='font-bold'>{eachaudit.name}</p>
                     </div>
                   </a>
