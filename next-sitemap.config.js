@@ -11,6 +11,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/payroll-calendar/',
+        destination: '/payrollcalendar/',
+        permanent: true,
+      },
+      {
         source: '/fraud_hotline/',
         destination: '/report-fraud-waste-and-abuse/',
         permanent: true,
