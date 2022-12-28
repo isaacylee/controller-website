@@ -51,7 +51,7 @@ export default function About(props: any) {
             </div>
           </div>
         </div>
-        <br></br>
+
         <div className=' timeline mt-10 px-4 dark:text-gray-300'>
           {/* <div className='leftTimeline containerTimeline'> */}
           {/* <div className='contentTimeline'> */}

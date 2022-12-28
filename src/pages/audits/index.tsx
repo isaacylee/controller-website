@@ -31,8 +31,8 @@ export default function Audits(props: any) {
 
         <Seo />
 
-        <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl '>
-          <h1 className='dark:text-white'>Audits & Reports</h1>
+        <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
+          <h1>Audits & Reports</h1>
 
           <div className='md:hidden'>
             {audits.map((eachaudit: any, eachauditnum: number) => (
