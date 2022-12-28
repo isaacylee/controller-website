@@ -6,7 +6,7 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { budget } from '/root/controller-website/src/budget.json';
+import { budget } from '@/budget.json';
 
 /**
  * SVGR Support
