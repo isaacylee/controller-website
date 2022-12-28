@@ -19,4 +19,4 @@ RUN npm install --save-dev
 RUN npm run build
 
 # Run the web service on container startup.
-CMD [ "npm", "run cloudrunstart" ]
+CMD [ "npm", "run", "cloudrunstart" ]
