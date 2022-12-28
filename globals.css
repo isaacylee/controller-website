@@ -8,6 +8,9 @@
     url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
+.kirbybutton {
+  @apply w-content rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black;
+}
 @import url('https://fonts.cdnfonts.com/css/neue-kabel');
 
 :root {
@@ -47,55 +50,47 @@
 }
 
 .bgColorHeader {
-
-  background-image: url("https://uploads-ssl.webflow.com/62703f612bf4b6c4cf204b98/62718a882f5d950feaee2eb6_darktexture.jpg");
+  background-image: url('https://uploads-ssl.webflow.com/62703f612bf4b6c4cf204b98/62718a882f5d950feaee2eb6_darktexture.jpg');
   background-position: 0 0;
   background-size: auto;
 }
-  /* background-color: #33333300; */
-  /* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg'); */
- 
+/* background-color: #33333300; */
+/* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg'); */
 
+/* google translate css */
 
-  /* google translate css */ 
-  
-   
-
-/* ABOUT PAGE CSS */ 
+/* ABOUT PAGE CSS */
 
 .widget {
   padding-bottom: 20px;
 }
 
+span a {
+  padding-right: 13px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.navbar {
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+}
+.main-page {
+  margin-top: 150px;
+}
 
- 
-span a{
-  padding-right:13px;
-}
-a{
- color:black;
-  text-decoration:none;
-}
-.navbar{
-  -webkit-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
-}
-.main-page{
-    margin-top:150px;
-  }
-
-.card{
-  text-align:center;
-   -webkit-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
+.card {
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
 }
 
 * {
   box-sizing: border-box;
 }
- 
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -123,11 +118,9 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
   background-color: inherit;
   width: 50%;
 }
- 
+
 /* The circles on the timeline */
 .containerTimeline::after {
-
- 
   /* content: '';
   position: absolute;
   width: 25px;
@@ -152,7 +145,7 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
 
 /* Add arrows to the left container (pointing right) */
 .leftTimeline::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 22px;
@@ -166,7 +159,7 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
 
 /* Add arrows to the right container (pointing left) */
 .rightTimeline::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 22px;
@@ -195,40 +188,39 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+    left: 31px;
   }
-  
+
   /* Full-width containers */
   .containerTimeline {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .containerTimeline::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
-  .leftTimeline::after, .rightTimeline::after {
-  left: 15px;
+  .leftTimeline::after,
+  .rightTimeline::after {
+    left: 15px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .rightTimeline {
-  left: 0%;
+    left: 0%;
   }
 }
 
-
-
 @layer base {
-
   /* inter var - latin */
+
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -248,8 +240,6 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
   .h0 {
     @apply font-primary text-3xl font-bold md:text-5xl;
   }
-
- 
 
   h1,
   .h1 {
@@ -302,9 +292,11 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
 @layer utilities {
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
-      linear-gradient(to right,
+      linear-gradient(
+        to right,
         var(--color-primary-400),
-        var(--color-primary-500));
+        var(--color-primary-500)
+      );
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;

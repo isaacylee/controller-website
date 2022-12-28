@@ -50,14 +50,6 @@ export default function NewTranslate() {
 
     removeAttribution();
 
-    const stopId = setInterval(() => {
-      if (AttrRemovedRef.current === false) {
-        removeAttribution();
-      } else {
-        clearInterval(stopId);
-      }
-    }, 200);
-
     return () => {
       document.body.removeChild(bruh);
       document.body.removeChild(script);

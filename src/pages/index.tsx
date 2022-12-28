@@ -34,6 +34,9 @@ interface bigcardprops {
   name: string;
 }
 
+const kirbybutton =
+  'w-content rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black';
+
 function LineCard(props: any) {
   return (
     <div
@@ -217,9 +220,7 @@ export default function HomePage(props: any) {
           <div>
             <div className='flex flex-row'>
               <Link href='/audits'>
-                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
-                  All Audits
-                </div>
+                <div className={`${kirbybutton}`}>All Audits</div>
               </Link>
             </div>
           </div>
@@ -259,9 +260,7 @@ export default function HomePage(props: any) {
           <div>
             <div className='flex flex-row'>
               <Link href='/audits'>
-                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
-                  All Audits
-                </div>
+                <div className={`${kirbybutton}`}>All Audits</div>
               </Link>
             </div>
           </div>
@@ -273,39 +272,19 @@ export default function HomePage(props: any) {
               <span className='pt-8 pb-4 dark:text-white'>Budgets</span>
             </Link>
           </h2>
-          <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
-            {budget.slice(0, 5).map((eachaudit: any, key: number) => (
-              <BigCard
-                key={key}
-                link={`${eachaudit.link}`}
-                image={eachaudit.image}
-                year={eachaudit.year}
-                dept={titleCase(eachaudit.dept)}
-                name={eachaudit.name}
-              />
+
+          <div className='flex flex-row flex-wrap'>
+            {budget.map((eachbudget: any, key: number) => (
+              <Link href={`${eachbudget.link}`} key={key}>
+                <div className=''>{eachbudget.name}</div>
+              </Link>
             ))}
           </div>
 
           <div>
-            <div className='rounded-lg  sm:hidden'>
-              {budget.slice(0, 5).map((eachitem: any, key: number) => (
-                <LineCard
-                  key={key}
-                  link={`${eachitem.link}`}
-                  image={eachitem.image}
-                  year={eachitem.year}
-                  dept={titleCase(eachitem.dept)}
-                  name={eachitem.name}
-                />
-              ))}
-            </div>
-          </div>
-          <div>
             <div className='flex flex-row'>
               <Link href='/budgets' target='_blank' rel='noreferrer'>
-                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
-                  All Budgets
-                </div>
+                <div className={`${kirbybutton}`}>All Budgets</div>
               </Link>
             </div>
           </div>
@@ -350,9 +329,7 @@ export default function HomePage(props: any) {
           <div>
             <div className='flex flex-row'>
               <Link href='/data' target='_blank' rel='noreferrer'>
-                <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
-                  All Data
-                </div>
+                <div className={`${kirbybutton}`}>All Data</div>
               </Link>
             </div>
           </div>
