@@ -76,19 +76,3 @@ export default function Budgets(props: any) {
     </>
   );
 }
-
-// This function gets called at build time
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts
-
-  const newaudits = budget.map((eachItem: any) => {
-    delete eachItem.textofpage;
-    delete eachItem.pdflink;
-    return eachItem;
-  });
-  return {
-    props: {
-      newaudits,
-    },
-  };
-}

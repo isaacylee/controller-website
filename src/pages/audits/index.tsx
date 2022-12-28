@@ -7,7 +7,7 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { audits } from '@/audits.json';
+import { audits } from '@/auditsindex.json';
 
 /**
  * SVGR Support
@@ -89,15 +89,9 @@ export default function Audits(props: any) {
 // This function gets called at build time
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-
-  const newaudits = audits.map((eachItem: any) => {
-    delete eachItem.textofpage;
-    delete eachItem.pdflink;
-    return eachItem;
-  });
   return {
     props: {
-      newaudits,
+      audits,
     },
   };
 }

@@ -10,9 +10,9 @@ import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 import { SocialPageSeries } from '@/components/SocialPageSeries';
 
-import { audits } from '@/audits.json';
+import { audits } from '@/auditsindex.json';
 import { finance } from '@/financeindex.json';
-import { budgets } from '@/budget.json';
+import { budget } from '@/budget.json';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -198,7 +198,7 @@ export default function HomePage(props: any) {
             </Link>
           </h2>
           <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
-            {budgets.slice(0, 5).map((eachaudit: any, key) => (
+            {budget.slice(0, 5).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
                 link={`${eachaudit.link}`}
@@ -212,14 +212,14 @@ export default function HomePage(props: any) {
 
           <div>
             <div className='rounded-lg  sm:hidden'>
-              {data.slice(0, 5).map((eachaudit: any, key: number) => (
+              {budget.slice(0, 5).map((eachitem: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachaudit.link}`}
-                  image={eachaudit.image}
-                  year={eachaudit.year}
-                  dept={titleCase(eachaudit.dept)}
-                  name={eachaudit.name}
+                  link={`${eachitem.link}`}
+                  image={eachitem.image}
+                  year={eachitem.year}
+                  dept={titleCase(eachitem.dept)}
+                  name={eachitem.name}
                 />
               ))}
             </div>
@@ -289,11 +289,7 @@ export default function HomePage(props: any) {
 // This function gets called at build time
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
-  const newaudits = audits.slice(0, 7).map((eachItem: any) => {
-    delete eachItem.textofpage;
-    delete eachItem.pdflink;
-    return eachItem;
-  });
+  const newaudits = audits.slice(0, 7);
   // By returning {props: {posts} }, the Blog component
   // will receive `posts` as a prop at build time
   return {
