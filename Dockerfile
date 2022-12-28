@@ -10,10 +10,9 @@ WORKDIR /usr/app
 COPY . .
 
 # Install production dependencies.
-# If you add a package-lock.json, speed your build by switching to 'npm ci'.
-RUN npm ci --only=production
 
-RUN npm install husky --global
+# If you add a package-lock.json, speed your build by switching to 'npm ci'.
+RUN npm install --save-dev
 
 # Copy local code to the container image.
 
