@@ -13,6 +13,8 @@ COPY . .
 # If you add a package-lock.json, speed your build by switching to 'npm ci'.
 RUN npm ci --only=production
 
+RUN npm install husky --global
+
 # Copy local code to the container image.
 
 RUN npm run build
