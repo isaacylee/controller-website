@@ -6,7 +6,7 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { budget } from '/root/controller-website/src/budget.json';
+import { budgets } from '@/budget.json';
 
 /**
  * SVGR Support
@@ -34,7 +34,7 @@ export default function Budgets(props: any) {
           <h1 className='pt-8 pb-4 dark:text-white'>Budgets</h1>
 
           <div className='md:hidden'>
-            {budget.map((eachaudit: any, eachauditnum: number) => (
+            {budgets.map((eachaudit: any, eachauditnum: number) => (
               <div
                 key={eachauditnum}
                 className='mb-2 rounded-lg bg-gray-200 px-2 py-2'
@@ -49,7 +49,7 @@ export default function Budgets(props: any) {
 
           <div className='hidden md:block'>
             <div className='grid grid-cols-3 gap-x-6 gap-y-4 lg:grid-cols-3'>
-              {budget.map((eachaudit: any, eachauditnum: number) => (
+              {budgets.map((eachaudit: any, eachauditnum: number) => (
                 <div
                   key={eachauditnum}
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200'
@@ -61,9 +61,7 @@ export default function Budgets(props: any) {
                   >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
-                      <p>
-                        {eachaudit.year} | <span>{eachaudit.dept}</span>
-                      </p>
+                      <p></p>
                       <p className='font-bold'>{eachaudit.name}</p>
                     </div>
                   </a>
@@ -81,14 +79,14 @@ export default function Budgets(props: any) {
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
 
-  const newaudits = budget.map((eachItem: any) => {
+  const newbudgets = budgets.map((eachItem: any) => {
     delete eachItem.textofpage;
     delete eachItem.pdflink;
     return eachItem;
   });
   return {
     props: {
-      newaudits,
+      newbudgets,
     },
   };
 }
