@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
 
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
+import OpenDataSeries from '@/components/opendataseries';
 import Seo from '@/components/Seo';
 
 import { data } from './../data.json';
@@ -20,6 +22,9 @@ import { data } from './../data.json';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
+const kirbybutton =
+  'w-content rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black';
+
 export default function Data(props: any) {
   return (
     <>
@@ -31,6 +36,18 @@ export default function Data(props: any) {
         <Seo />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
+          <h2 className='pt-8 pb-4 dark:text-white'>Financial Data</h2>
+
+          <OpenDataSeries />
+
+          <div className='flex flex-row pt-2'>
+            <Link href='https://controllerdata.lacity.org/browse?limitTo=datasets'>
+              <div>
+                <div className={`${kirbybutton}`}>All Datasets</div>
+              </div>
+            </Link>
+          </div>
+
           <h1 className='pt-8 pb-4 dark:text-white'>Data Stories & Map</h1>
 
           <div className='md:hidden'>

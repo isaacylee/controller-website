@@ -60,7 +60,6 @@ export default function Budgets(props: any) {
                   >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
-                      <p></p>
                       <p className='font-bold'>{eachaudit.name}</p>
                     </div>
                   </a>
