@@ -302,7 +302,7 @@ export default function HomePage(props: any) {
           </div>
           <div>
             <div className='flex flex-row'>
-              <Link href='/data' target='_blank' rel='noreferrer'>
+              <Link href='/budgets' target='_blank' rel='noreferrer'>
                 <div className='w-content rounded-full bg-black px-4 py-2 font-bold text-white'>
                   All Budgets
                 </div>
