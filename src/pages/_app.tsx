@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import { useEffect, useState } from 'react';
 import * as React from 'react';
+import TagManager from 'react-gtm-module';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
@@ -13,7 +14,15 @@ import { ThemeContext } from './../themeManager';
  * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
  */
 
+const tagManagerArgs = {
+  gtmId: 'G-EPEH5SFW1V',
+};
+
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
+  });
+
   useEffect(() => {
     const htmlSelected = document.querySelector('html');
     if (htmlSelected) {
