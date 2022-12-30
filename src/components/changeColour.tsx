@@ -3,10 +3,24 @@ import * as React from 'react';
 
 import { ThemeContext } from '@/themeManager';
 
+function ThemeIndicator(props: any) {
+  return (
+    <ThemeContext.Consumer>
+      {(themeChanger: any) =>
+        themeChanger.currentColour === props.match ? (
+          <div className='my-auto mr-2 inline-block h-2 w-2 rounded-full bg-green-500'></div>
+        ) : (
+          <div className='my-auto mr-2 inline-block h-2 w-2 rounded-full'></div>
+        )
+      }
+    </ThemeContext.Consumer>
+  );
+}
+
 export function ChangeColour() {
   return (
     <ThemeContext.Consumer>
-      {(themeChanger) => (
+      {(themeChanger: any) => (
         <Popover className='relative '>
           <Popover.Button>
             <div className='rounded-full px-2 py-2 text-gray-900 drop-shadow-md  dark:text-gray-200'>
@@ -27,7 +41,7 @@ export function ChangeColour() {
             </div>
           </Popover.Button>
 
-          <Popover.Panel className='absolute right-0 top-10 z-20 rounded-lg bg-gray-100 text-gray-900 dark:bg-slate-900'>
+          <Popover.Panel className='absolute right-0 top-10 z-20 rounded-lg bg-gray-100 text-black dark:bg-slate-900'>
             <div className='z-20'>
               <div
                 className='border px-2 py-1 dark:border-gray-600 dark:text-white'
@@ -35,7 +49,11 @@ export function ChangeColour() {
                   themeChanger.makeLight();
                 }}
               >
-                Light
+                <div className='flex flex-row'>
+                  {' '}
+                  <ThemeIndicator match='light' />
+                  Light
+                </div>
               </div>
               <div
                 onClick={() => {
@@ -43,7 +61,10 @@ export function ChangeColour() {
                 }}
                 className='border px-2 py-1 dark:border-gray-600 dark:text-white'
               >
-                Dark
+                <div className='flex flex-row'>
+                  <ThemeIndicator match='dark' />
+                  Dark
+                </div>
               </div>
               <div
                 onClick={() => {
@@ -51,7 +72,10 @@ export function ChangeColour() {
                 }}
                 className='border px-2 py-1 dark:border-gray-600 dark:text-white'
               >
-                System
+                <div className='flex flex-row'>
+                  <ThemeIndicator match='system' />
+                  System
+                </div>
               </div>
             </div>
           </Popover.Panel>
