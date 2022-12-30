@@ -21,11 +21,12 @@ export default function OpenDataSeries() {
   const datalinks = [
     {
       name: 'Payroll',
-      link: 'http://lacity.payroll.finance.socrata.com/#!/year/2022/',
+      link: 'https://lacity.payroll.finance.socrata.com/#!/year/2022/',
     },
     {
       name: 'Checkbook',
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
+      updated: 'Dec 5, 2022',
     },
     {
       name: 'Budget',
