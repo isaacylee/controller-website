@@ -20,6 +20,10 @@
 
 }
 
+.hiddenmobiletranslate .goog-te-combo {
+  display: none !important;
+}
+
 .dark .goog-te-combo {
   color: white !important;
   background-color: #111111;
@@ -339,6 +343,12 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
   /* Class to adjust with sticky footer */
   .min-h-main {
     @apply min-h-[calc(100vh-56px)];
+  }
+}
+
+@layer components {
+  .frontpageh2section {
+    @apply pt-2 md:pt-6 pb-4 dark:text-white;
   }
 }
 

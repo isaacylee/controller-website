@@ -42,7 +42,7 @@ function LineCard(props: any) {
   return (
     <div
       key={props.key}
-      className='mb-2 w-full  max-w-xs rounded-lg border border-gray-500 bg-gray-100 dark:border-gray-300 dark:bg-zinc-800 dark:text-gray-100'
+      className='mb-2 w-full  max-w-sm rounded-lg border border-gray-500 bg-gray-100 dark:border-gray-300 dark:bg-zinc-800 dark:text-gray-100'
     >
       <a href={`${props.link}`} className=' dark:text-gray-50'>
         <div className=' px-2 py-2  dark:text-gray-50'>
@@ -112,7 +112,7 @@ export default function HomePage(props: any) {
         </div>
         <br></br>
         <div className='container mx-auto px-4 '>
-          <h2 className='pt-8 pb-4 dark:text-white'>Financial Data</h2>
+          <h2 className='frontpageh2section'>Financial Data</h2>
 
           <OpenDataSeries />
 
@@ -126,7 +126,7 @@ export default function HomePage(props: any) {
         </div>
         <div className='container mx-auto px-4  '>
           <Link href='/audits'>
-            <h2 className='pt-8 pb-4 dark:text-white'> Audits & Reports</h2>
+            <h2 className='frontpageh2section'> Audits & Reports</h2>
           </Link>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
@@ -204,10 +204,10 @@ export default function HomePage(props: any) {
           </div>
         </div>
         {/* Budgets */}
-        <div className='container mx-auto px-4 pt-8 '>
+        <div className='container mx-auto px-4 pt-2 lg:pt-6'>
           <h2 className=''>
             <Link href='/budgets'>
-              <span className='pt-8 pb-8 dark:text-white'>Budgets</span>
+              <span className='frontpageh2section'>Budgets</span>
             </Link>
           </h2>
 
@@ -244,9 +244,7 @@ export default function HomePage(props: any) {
         <div className='container mx-auto px-4 '>
           <h2 className=''>
             <Link href='/data'>
-              <span className='pt-8 pb-4 dark:text-white'>
-                Data Stories & Map
-              </span>
+              <span className='frontpageh2section'>Data Stories & Maps</span>
             </Link>
           </h2>
           <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>

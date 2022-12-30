@@ -62,7 +62,7 @@ export function useWindowDimensions() {
 
 export default function Navbar(props: any) {
   const { height, width } = useWindowDimensions();
-
+  const [mobiletranslateopen, setMobileTranslateOpen] = useState(false);
   return (
     <Disclosure
       as='nav'
@@ -74,7 +74,12 @@ export default function Navbar(props: any) {
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-[#80ffdc]  hover:text-black focus:outline-none dark:bg-whosestreets dark:text-white dark:hover:text-gray-100'>
+                <Disclosure.Button
+                  onClick={() => {
+                    setMobileTranslateOpen(false);
+                  }}
+                  className='inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-[#80ffdc]  hover:text-black focus:outline-none dark:bg-whosestreets dark:text-white dark:hover:text-gray-100'
+                >
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
@@ -100,8 +105,8 @@ export default function Navbar(props: any) {
                   </Link>
                 </div>
 
-                <div className='hidden sm:ml-6 md:block'>
-                  <div className='flex space-x-4'>
+                <div className='hidden sm:ml-4 sm:block lg:ml-6'>
+                  <div className='flex gap-x-3 lg:gap-x-4'>
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -110,7 +115,7 @@ export default function Navbar(props: any) {
                           item.current
                             ? 'text-gray-800 dark:text-gray-100'
                             : 'text-gray-900 hover:text-black hover:underline dark:text-white dark:hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          'rounded-md px-2 py-2 text-sm font-medium lg:px-3'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -125,7 +130,31 @@ export default function Navbar(props: any) {
                   </div>
                 </div>
               </div>
-              <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
+              <div className='absolute inset-y-0 right-0 flex items-center pr-2 dark:text-white sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
+              <button
+                onClick={() => {
+                  setMobileTranslateOpen(!mobiletranslateopen);
+                }}
+                className='md:hidden '
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='mr-1 h-6 w-6'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802'
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className={`${mobiletranslateopen ? 'md:hidden' : 'hidden'}`}>
+              {width < 768 && <NewTranslate />}
             </div>
           </div>
 
@@ -178,7 +207,6 @@ export default function Navbar(props: any) {
                 )}
               </ThemeContext.Consumer>
             </div>
-            {width < 768 && <NewTranslate />}
           </Disclosure.Panel>
         </>
       )}
