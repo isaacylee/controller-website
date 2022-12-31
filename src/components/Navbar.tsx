@@ -157,6 +157,7 @@ export default function Navbar(props: any) {
                 onClick={() => {
                   setMobileTranslateOpen(!mobiletranslateopen);
                 }}
+                aria-label='Open Translate Selector'
                 className='py-4 px-4 md:hidden'
               >
                 <svg
