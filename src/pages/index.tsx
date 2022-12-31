@@ -103,7 +103,7 @@ export default function HomePage(props: any) {
                 <div className='ml-auto'>
                   <Image
                     src='/images/ken-new-blob-big.png'
-                    alt='Portrait of Kenneth Mejia with blob design'
+                    alt='Portrait of Kenneth Mejia'
                     className='w-96 lg:w-[500px]'
                     sizes='(max-width: 1023px) 24rem,
               500px'
