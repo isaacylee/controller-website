@@ -52,12 +52,12 @@ export default function Audits(props: any) {
               {audits.map((eachaudit: any, eachauditnum: number) => (
                 <div
                   key={eachauditnum}
-                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200'
+                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
                 >
                   <a href={`/audits/${eachaudit.link}`}>
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
-                      <p>
+                      <p className='dark:text-white'>
                         {eachaudit.year} |{' '}
                         <span>
                           {titleCase(eachaudit.dept).replace(
@@ -66,7 +66,9 @@ export default function Audits(props: any) {
                           )}
                         </span>
                       </p>
-                      <p className='font-bold'>{eachaudit.name}</p>
+                      <p className='font-bold dark:text-white'>
+                        {eachaudit.name}
+                      </p>
                     </div>
                   </a>
                 </div>

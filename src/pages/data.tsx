@@ -4,6 +4,7 @@ import * as React from 'react';
 import '@/styles/aboutstyles.module.css';
 
 import Layout from '@/components/layout/Layout';
+import LineItem from '@/components/LineItem';
 import Navbar from '@/components/Navbar';
 import OpenDataSeries from '@/components/opendataseries';
 import Seo from '@/components/Seo';
@@ -51,18 +52,14 @@ export default function Data(props: any) {
           <h1 className='pt-8 pb-4 dark:text-white'>Data Stories & Map</h1>
 
           <div className='md:hidden'>
-            {data.map((eachaudit: any, eachauditnum: number) => (
-              <div
-                key={eachauditnum}
-                className='mb-2 rounded-lg bg-gray-200 px-2 py-2'
-              >
-                <a href={`${eachaudit.link}`}>
-                  <p>
-                    {eachaudit.year} | <span>{eachaudit.dept}</span>
-                  </p>
-                  <p className='font-bold'>{eachaudit.name}</p>
-                </a>
-              </div>
+            {data.map((eachdata: any, eachdatanum: number) => (
+              <LineItem
+                key={eachdatanum}
+                dept={eachdata.dept}
+                link={`${eachdata.link}`}
+                name={eachdata.name}
+                year={eachdata.year}
+              />
             ))}
           </div>
 
@@ -71,7 +68,7 @@ export default function Data(props: any) {
               {data.map((eachaudit: any, eachauditnum: number) => (
                 <div
                   key={eachauditnum}
-                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200'
+                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
                 >
                   <a
                     href={`${eachaudit.link}`}
@@ -80,10 +77,12 @@ export default function Data(props: any) {
                   >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
-                      <p>
+                      <p className='dark:text-white'>
                         {eachaudit.year} | <span>{eachaudit.dept}</span>
                       </p>
-                      <p className='font-bold'>{eachaudit.name}</p>
+                      <p className='font-bold dark:text-white'>
+                        {eachaudit.name}
+                      </p>
                     </div>
                   </a>
                 </div>

@@ -13,6 +13,7 @@ import { SocialPageSeries } from '@/components/SocialPageSeries';
 import { audits } from '@/auditsindex.json';
 import { finance } from '@/financeindex.json';
 import { budget } from '@/budget.json';
+import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 /**
  * SVGR Support
@@ -100,10 +101,12 @@ export default function HomePage(props: any) {
                 <SocialPageSeries />
 
                 <div className='ml-auto'>
-                  <img
+                  <Image
                     src='/images/ken-new-blob-big.png'
-                    alt=''
+                    alt='Portrait of Kenneth Mejia with blob design'
                     className='w-96 lg:w-[500px]'
+                    sizes='(max-width: 1023px) 24rem,
+              500px'
                   />
                 </div>
               </div>

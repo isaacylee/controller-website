@@ -52,12 +52,12 @@ export default function ReportsIndex(props: any) {
               {finance.map((eachreport: any, eachreportnum: number) => (
                 <div
                   key={eachreportnum}
-                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200'
+                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200  dark:bg-zinc-800 dark:text-white'
                 >
                   <a href={`/reports/${eachreport.link}`}>
                     <img src={eachreport.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
-                      <p>
+                      <p className='dark:text-white'>
                         {eachreport.year} |{' '}
                         <span>
                           {titleCase(eachreport.dept).replace(
@@ -66,7 +66,9 @@ export default function ReportsIndex(props: any) {
                           )}
                         </span>
                       </p>
-                      <p className='font-bold'>{eachreport.name}</p>
+                      <p className='font-bold dark:text-white'>
+                        {eachreport.name}
+                      </p>
                     </div>
                   </a>
                 </div>
