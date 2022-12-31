@@ -1,5 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useEffect, useState } from 'react';
 
@@ -114,12 +115,12 @@ export default function Navbar(props: any) {
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex flex-shrink-0 items-center'>
                   <Link href='/'>
-                    <img
+                    <Image
                       className='block h-8 w-auto dark:hidden'
                       src='/images/logo-elect.png'
                       alt='Kenneth Mejia LA City Controller'
                     />
-                    <img
+                    <Image
                       className='hidden h-8 w-auto dark:block'
                       src='/images/KennethMejia-logo-white-elect.png'
                       alt='Kenneth Mejia LA City Controller'
