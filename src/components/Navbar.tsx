@@ -11,15 +11,21 @@ import { ChangeColour } from './changeColour';
 
 //import Translate from '@/components/Translate';
 
-const navigation = [
-  { name: 'About', href: '/about', current: false },
-  { name: 'Data', href: '/data', current: true },
-  { name: 'Audits', href: '/audits', current: false },
-  { name: 'Reports', href: '/reports', current: false },
-  { name: 'Budgets', href: '/budgets', current: false },
+interface newiteminterface {
+  name: string;
+  href: string;
+  current: boolean;
+}
+
+const navigation: any = [
+  { name: 'About', href: '/about' },
+  { name: 'Data', href: '/data' },
+  { name: 'Audits', href: '/audits' },
+  { name: 'Reports', href: '/reports' },
+  { name: 'Budgets', href: '/budgets' },
   // { name: 'Events', href: '/events', current: false },
   // { name: 'Press', href: '/press', current: false },
-  { name: 'Contact Us', href: '/contact', current: false },
+  { name: 'Contact Us', href: '/contact' },
 ];
 
 function classNames(...classes: any) {
@@ -63,6 +69,22 @@ export function useWindowDimensions() {
 export default function Navbar(props: any) {
   const { height, width } = useWindowDimensions();
   const [mobiletranslateopen, setMobileTranslateOpen] = useState(false);
+
+  const navarraycurrent = () => {
+    return navigation.map((item: any) => {
+      if (typeof window !== 'undefined') {
+        if (item.href === window.location.pathname) {
+          item['current'] = true;
+        } else {
+          item['current'] = false;
+        }
+      } else {
+        item['current'] = false;
+      }
+
+      return item;
+    });
+  };
   return (
     <Disclosure
       as='nav'
@@ -107,7 +129,7 @@ export default function Navbar(props: any) {
 
                 <div className='hidden sm:ml-4 sm:block lg:ml-6'>
                   <div className='flex gap-x-3 lg:gap-x-4'>
-                    {navigation.map((item) => (
+                    {navarraycurrent().map((item: newiteminterface) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -135,7 +157,7 @@ export default function Navbar(props: any) {
                 onClick={() => {
                   setMobileTranslateOpen(!mobiletranslateopen);
                 }}
-                className='py-4 px-6 md:hidden'
+                className='py-4 px-4 md:hidden'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -160,7 +182,7 @@ export default function Navbar(props: any) {
 
           <Disclosure.Panel className='md:hidden'>
             <div className='space-y-1 px-2 pt-2 pb-3'>
-              {navigation.map((item) => (
+              {navarraycurrent().map((item: newiteminterface) => (
                 <Disclosure.Button
                   key={item.name}
                   as='a'

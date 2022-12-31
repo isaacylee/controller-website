@@ -4,6 +4,7 @@ import { titleCase } from 'true-case';
 import '@/styles/aboutstyles.module.css';
 
 import Layout from '@/components/layout/Layout';
+import LineItem from '@/components/LineItem';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
@@ -31,26 +32,18 @@ export default function Audits(props: any) {
 
         <Seo />
 
-        <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
+        <div className=' flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h1 className='dark:text-white'>Audits & Reports</h1>
 
           <div className='md:hidden'>
             {audits.map((eachaudit: any, eachauditnum: number) => (
-              <div
+              <LineItem
                 key={eachauditnum}
-                className='mb-2 rounded-lg bg-gray-200 px-2 py-2'
-              >
-                <a href={`/audits/${eachaudit.link}`}>
-                  <p>
-                    {eachaudit.year} |{' '}
-                    <span>
-                      {eachaudit.dept &&
-                        titleCase(eachaudit.dept).replace(/department/gi, '')}
-                    </span>
-                  </p>
-                  <p className='font-bold'>{eachaudit.name}</p>
-                </a>
-              </div>
+                dept={eachaudit.dept}
+                link={`/audits/${eachaudit.link}`}
+                name={eachaudit.name}
+                year={eachaudit.year}
+              />
             ))}
           </div>
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
@@ -7,7 +8,6 @@ import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
 import { budget } from '@/budget.json';
-
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -31,41 +31,16 @@ export default function Budgets(props: any) {
         <Seo />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h1 className='pt-8 pb-4 dark:text-white'>Budgets</h1>
+          <h1 className='py-2 dark:text-white sm:pt-4 sm:pb-2'>Budgets</h1>
 
-          <div className='md:hidden'>
-            {budget.map((eachaudit: any, eachauditnum: number) => (
-              <div
-                key={eachauditnum}
-                className='mb-2 rounded-lg bg-gray-200 px-2 py-2'
-              >
-                <a href={`${eachaudit.link}`}>
-                  <p className='font-bold'>{eachaudit.name}</p>
-                </a>
-              </div>
-            ))}
-          </div>
-
-          <div className='hidden md:block'>
-            <div className='grid grid-cols-3 gap-x-6 gap-y-4 lg:grid-cols-3'>
-              {budget.map((eachaudit: any, eachauditnum: number) => (
-                <div
-                  key={eachauditnum}
-                  className='mb-2 w-full max-w-xs rounded-lg bg-gray-200'
-                >
-                  <a
-                    href={`${eachaudit.link}`}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <img src={eachaudit.image} className='w-full'></img>
-                    <div className=' px-2 py-2'>
-                      <p className='font-bold'>{eachaudit.name}</p>
-                    </div>
-                  </a>
+          <div className='grid grid-cols-3 gap-x-3 gap-y-3 sm:flex sm:flex-row sm:flex-wrap '>
+            {budget.map((eachbudget: any, key: number) => (
+              <Link href={`${eachbudget.link}`} key={key}>
+                <div className='rounded-full bg-blue-900 py-2 px-4 font-semibold text-white dark:bg-blue-900 dark:text-white'>
+                  <p className='mx-auto'>{eachbudget.name}</p>
                 </div>
-              ))}
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
       </Layout>

@@ -4,6 +4,7 @@ import { titleCase } from 'true-case';
 import '@/styles/aboutstyles.module.css';
 
 import Layout from '@/components/layout/Layout';
+import LineItem from '@/components/LineItem';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
@@ -36,21 +37,13 @@ export default function ReportsIndex(props: any) {
 
           <div className='md:hidden'>
             {finance.map((eachreport: any, eachreportnum: number) => (
-              <div
+              <LineItem
                 key={eachreportnum}
-                className='mb-2 rounded-lg bg-gray-200 px-2 py-2'
-              >
-                <a href={`/audits/${eachreport.link}`}>
-                  <p>
-                    {eachreport.year} |{' '}
-                    <span>
-                      {eachreport.dept &&
-                        titleCase(eachreport.dept).replace(/department/gi, '')}
-                    </span>
-                  </p>
-                  <p className='font-bold'>{eachreport.name}</p>
-                </a>
-              </div>
+                dept={eachreport.dept}
+                link={`/reports/${eachreport.link}`}
+                name={eachreport.name}
+                year={eachreport.year}
+              />
             ))}
           </div>
 
