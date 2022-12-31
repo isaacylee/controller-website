@@ -307,18 +307,7 @@ export default function About(props: any) {
             authorized by ordinance, pre- and post-audit approval, and release
             of City funds. This division is comprised of the following sections:
           </p>
-          <h3>Funds and Appropriations Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
-            The Funds and Appropriations Section is responsible for budgetary
-            control of all City funds authorized by ordinance, the Mayor and
-            City Council. The section verifies the availability of funds before
-            releasing expenditures for all City departments. This section also
-            sets up the budget appropriations within the City’s General Ledger
-            in accordance with the approved budget. It reviews, analyzes and
-            audits all journal entries to ensure compliance with the City
-            Charter, Administrative Code and Generally Accepted Accounting
-            Principles.
-          </p>
+
           <h3>Fiscal Oversight and Support Section</h3>
           <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
             Fiscal Oversight and Support is responsible for the review and
@@ -426,6 +415,18 @@ export default function About(props: any) {
             The FMS group provides support, reporting, and troubleshooting for
             approximately 2,000 users, along with project management for FMS
             upgrades and enhancements.
+          </p>
+          <h3>Funds and Appropriations Section</h3>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+            The Funds and Appropriations Section is responsible for budgetary
+            control of all City funds authorized by ordinance, the Mayor and
+            City Council. The section verifies the availability of funds before
+            releasing expenditures for all City departments. This section also
+            sets up the budget appropriations within the City’s General Ledger
+            in accordance with the approved budget. It reviews, analyzes and
+            audits all journal entries to ensure compliance with the City
+            Charter, Administrative Code and Generally Accepted Accounting
+            Principles.
           </p>
           <h3>Open Data Section</h3>
           <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
