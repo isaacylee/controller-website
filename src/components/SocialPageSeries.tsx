@@ -10,6 +10,7 @@ export function SocialPageSeries() {
         href=' https://www.facebook.com/lacontroller'
         target='_blank'
         rel='noreferrer'
+        aria-label='Facebook'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -29,6 +30,7 @@ export function SocialPageSeries() {
         href=' https://www.instagram.com/lacontroller'
         target='_blank'
         rel='noreferrer'
+        aria-label='Instagram'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -47,6 +49,7 @@ export function SocialPageSeries() {
         href=' https://www.tiktok.com/@lacontroller'
         target='_blank'
         rel='noreferrer'
+        aria-label='TikTok'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -65,6 +68,7 @@ export function SocialPageSeries() {
       <a
         href='https://twitter.com/lacontroller'
         target='_blank'
+        aria-label='Twitter'
         rel='noreferrer'
       >
         <svg

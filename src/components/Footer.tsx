@@ -52,6 +52,7 @@ export default function Footer() {
             href=' https://www.facebook.com/lacontroller'
             target='_blank'
             rel='noreferrer'
+            aria-label='Facebook'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -71,6 +72,7 @@ export default function Footer() {
             href=' https://www.instagram.com/lacontroller'
             target='_blank'
             rel='noreferrer'
+            aria-label='Instagram'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -89,6 +91,7 @@ export default function Footer() {
             href=' https://www.tiktok.com/@lacontroller'
             target='_blank'
             rel='noreferrer'
+            aria-label='TikTok'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -108,6 +111,7 @@ export default function Footer() {
             href='https://twitter.com/lacontroller'
             target='_blank'
             rel='noreferrer'
+            aria-label='Twitter'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
