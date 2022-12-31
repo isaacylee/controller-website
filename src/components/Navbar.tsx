@@ -70,7 +70,7 @@ export default function Navbar(props: any) {
     >
       {({ open }) => (
         <>
-          <div className='mx-auto max-w-7xl px-2 drop-shadow-sm sm:px-6 lg:px-8'>
+          <div className='mx-auto max-w-7xl pl-2 drop-shadow-sm sm:px-6 md:px-2 lg:px-8'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
@@ -130,12 +130,12 @@ export default function Navbar(props: any) {
                   </div>
                 </div>
               </div>
-              <div className='absolute inset-y-0 right-0 flex items-center pr-2 dark:text-white sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
+              <div className='absolute inset-y-0 right-0 flex items-center dark:text-white sm:static sm:inset-auto sm:ml-6 sm:pr-0'></div>
               <button
                 onClick={() => {
                   setMobileTranslateOpen(!mobiletranslateopen);
                 }}
-                className='md:hidden '
+                className='py-4 px-6 md:hidden'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
