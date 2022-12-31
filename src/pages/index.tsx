@@ -106,7 +106,10 @@ export default function HomePage(props: any) {
                     alt='Portrait of Kenneth Mejia'
                     className='w-96 lg:w-[500px]'
                     sizes='(max-width: 1023px) 24rem,
+                    
               500px'
+                    height={440}
+                    width={500}
                   />
                 </div>
               </div>

@@ -39,9 +39,13 @@ export default function About(props: any) {
                 <div className='ml-auto'>
                   <Image
                     src='/images/ken-new-blob-big.png'
-                    alt=''
+                    alt='Portrait of Kenneth Mejia'
+                    className='w-96 lg:w-[500px]'
+                    sizes='(max-width: 1023px) 24rem,
+                    
+              500px'
+                    height={440}
                     width={500}
-                    height={500}
                   />
                 </div>
               </div>

@@ -124,6 +124,8 @@ export default function Navbar(props: any) {
                       className='hidden h-8 w-auto dark:block'
                       src='/images/KennethMejia-logo-white-elect.png'
                       alt='Kenneth Mejia LA City Controller'
+                      height={32}
+                      width={72}
                     />
                   </Link>
                 </div>
