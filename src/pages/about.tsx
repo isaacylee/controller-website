@@ -444,18 +444,7 @@ export default function About(props: any) {
           {/* </div> */}
         </div>
 
-        <div className='leftTimeline containerTimeline'>
-          {/* <div className='contentTimeline'>
-              <div className='h-70 -bottom-10 right-0 w-96 md:absolute'>
-                <img src='https://uploads-ssl.webflow.com/62703f612bf4b6c4cf204b98/62783ca09c10c930020cf312_kenneth-toydrive.png' />
-              </div>
-            </div> */}
-        </div>
-
-        <div className='contentTimeline'></div>
         {/* </div> */}
-
-        <div className='containerTimeline px-4 py-8  md:max-w-sm md:px-0 lg:mx-16'></div>
       </Layout>
     </>
   );
