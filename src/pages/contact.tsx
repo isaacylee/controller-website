@@ -164,7 +164,7 @@ export default function Contact(props: any) {
 
             <p>
               <a
-                href='https://lacontroller.org/public-records-request/'
+                href='/public-records-request/'
                 target='_blank'
                 rel='noreferrer'
                 className='dark:text-white'
@@ -184,7 +184,7 @@ export default function Contact(props: any) {
             </p>
             <p>
               <a
-                href='https://lacontroller.org/payroll-calendar/'
+                href='/payrollcalendar/'
                 target='_blank'
                 rel='noreferrer'
                 className='dark:text-white'
