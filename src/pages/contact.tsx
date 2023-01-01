@@ -124,24 +124,6 @@ export default function Contact(props: any) {
                     <p>213.978.7250</p>
                   </li>
                 </ul>
-                <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
-                  Newsletter
-                </h2>
-                <ul className='text-gray-500 dark:text-gray-400'>
-                  <li className='mb-4'>
-                    <p className='dark:text-white'>
-                      Sign up for our newsletter{' '}
-                      <a
-                        href='https://lacontroller.us17.list-manage.com/subscribe?u=0689bc999e6529efb2132dd1e&amp;id=90e45eb7e9'
-                        target='_blank'
-                        rel='noreferrer'
-                      >
-                        here
-                      </a>
-                      .
-                    </p>
-                  </li>
-                </ul>
               </ul>
             </ul>
           </div>

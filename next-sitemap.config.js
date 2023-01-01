@@ -16,6 +16,16 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/financial-reports/:path',
+        destination: '/reports/:path',
+        permanent: true,
+      },
+      {
+        source: '/audits-and-reviews/:path',
+        destination: '/audits/:path',
+        permanent: true,
+      },
+      {
         source: '/fraud_hotline/',
         destination: '/report-fraud-waste-and-abuse/',
         permanent: true,
