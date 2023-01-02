@@ -48,4 +48,8 @@ jobs:
             --region $CLOUD_RUN_REGION \
             --allow-unauthenticated \
             --quiet \
-            --memory 2Gi
+            --memory 2Gi \
+            --cpu 2
+      - name: Clear Load Balancer Cache Async
+        if: $LOAD_BALANCER_NAME != null
+        run: gcloud compute url-maps invalidate-cdn-cache $LOAD_BALANCER_NAME --path "/*" --async
