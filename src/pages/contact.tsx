@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import * as React from 'react';
 
+import ImportantLinksSection from '@/components/ImportantLinksSection';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
@@ -137,62 +138,10 @@ export default function Contact(props: any) {
               </li>
             </ul>
           </div>
-          <div>
-            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
-              Related Links
-            </h2>
-            <p className='p1'>
-              <a
-                href='https://cityoflaprod.service-now.com/fwa'
-                target='_blank'
-                rel='noreferrer'
-                className='dark:text-white'
-              >
-                Report Waste, Fraud or Abuse
-              </a>
-            </p>
-            <p className='p1'>
-              <a
-                href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'
-                target='_blank'
-                rel='noreferrer'
-                className='dark:text-white'
-              >
-                Follow-Up Case
-              </a>
-            </p>
+        </div>
 
-            <p>
-              <a
-                href='/public-records-request/'
-                target='_blank'
-                rel='noreferrer'
-                className='dark:text-white'
-              >
-                Public Records Request
-              </a>
-            </p>
-            <p>
-              <a
-                href='https://www.lacity.org/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='dark:text-white'
-              >
-                City of Los Angeles Website
-              </a>
-            </p>
-            <p>
-              <a
-                href='/payrollcalendar/'
-                target='_blank'
-                rel='noreferrer'
-                className='dark:text-white'
-              >
-                City Employee Payroll Calendar
-              </a>
-            </p>
-          </div>
+        <div className=' container mx-auto mt-4 bg-zinc-50 px-4 py-4 dark:bg-zinc-800'>
+          <ImportantLinksSection />
         </div>
       </footer>
     </>

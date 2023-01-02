@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import * as React from 'react';
 
+import ImportantLinksSection from '@/components/ImportantLinksSection';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
@@ -31,7 +32,7 @@ export default function About(props: any) {
               <div className='mx-auto flex flex-row lg:max-w-3xl'>
                 <div className='my-auto'>
                   {' '}
-                  <h2>About Kenneth Mejia</h2>
+                  <h2>About Our Office</h2>
                   {/* <h2>Controller of Los Angeles</h2> */}
                 </div>
 
@@ -44,7 +45,7 @@ export default function About(props: any) {
                     sizes='(max-width: 1023px) 24rem,
                     
               500px'
-                     priority={true}
+                    priority={true}
                     unoptimized={true}
                     height={440}
                     width={500}
@@ -448,6 +449,10 @@ export default function About(props: any) {
           </p>
 
           {/* </div> */}
+        </div>
+
+        <div className=' container mx-auto mt-4 bg-zinc-50 px-4 py-4 dark:bg-zinc-800'>
+          <ImportantLinksSection />
         </div>
 
         {/* </div> */}

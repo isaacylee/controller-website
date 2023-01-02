@@ -291,7 +291,7 @@ export default function HomePage(props: any) {
           </div>
         </div>
 
-        <div className=' container mx-auto mt-4 bg-emerald-200 px-4 py-4 dark:bg-zinc-800'>
+        <div className=' container mx-auto mt-4 bg-zinc-50 px-4 py-4 dark:bg-zinc-800'>
           <ImportantLinksSection />
         </div>
 
