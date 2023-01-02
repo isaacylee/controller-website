@@ -13,7 +13,7 @@ import { SocialPageSeries } from '@/components/SocialPageSeries';
 import { audits } from '@/auditsindex.json';
 import { finance } from '@/financeindex.json';
 import { budget } from '@/budget.json';
-import from 'next/image';
+import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 /**
  * SVGR Support
@@ -106,7 +106,6 @@ export default function HomePage(props: any) {
                     alt='Portrait of Kenneth Mejia'
                     className='w-96 lg:w-[500px]'
                     sizes='(max-width: 1023px) 24rem,
-                    
               500px'
                     priority={true}
                     unoptimized={true}
