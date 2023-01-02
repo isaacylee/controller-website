@@ -7,12 +7,12 @@ const links = [
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSd3rORdW5vums-qtmLVc5BOZpxmPZAkstJViuFfWtbr2JoR7Q/viewform',
   },
   {
-  name: "🤝 Sign Up as an Org",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSeokErCNI_hztn8Xrv8TtAfzx0DOwQH1x-RKXRK592cgFiVVQ/viewform"
+    name: '🤝 Sign Up as an Org',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSeokErCNI_hztn8Xrv8TtAfzx0DOwQH1x-RKXRK592cgFiVVQ/viewform',
   },
-    {
-  name: "🏢 Join our Community Hub",
-    url: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1vZq0Z4v56jQHspbxb5Mt3YP_1leQoq6nMlFmf_Qx65r9c6wBy4D6TY4QOlYb6cEWDt9gQnIMz"
+  {
+    name: '🏢 Join our Community Hub',
+    url: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1vZq0Z4v56jQHspbxb5Mt3YP_1leQoq6nMlFmf_Qx65r9c6wBy4D6TY4QOlYb6cEWDt9gQnIMz',
   },
   {
     name: '📰 Signup for Updates',

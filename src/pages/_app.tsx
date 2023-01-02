@@ -53,28 +53,30 @@ function MyApp({ Component, pageProps }: AppProps) {
         setCurrentColour(tosetcolour);
       }
 
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        if (bodySelected) {
-          bodySelected.classList.add('dark');
-          bodySelected.classList.add('dark:bg-bruhdark');
-          bodySelected.classList.add('dark:bg-bruhdark');
-        }
+      if (typeof window != undefined) {
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+          localStorage.theme === 'dark' ||
+          (!('theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          if (bodySelected) {
+            bodySelected.classList.add('dark');
+            bodySelected.classList.add('dark:bg-bruhdark');
+            bodySelected.classList.add('dark:bg-bruhdark');
+          }
 
-        if (htmlSelected) {
-          htmlSelected.classList.add('dark');
-        }
-      } else {
-        if (bodySelected) {
-          bodySelected.classList.remove('dark');
-        }
+          if (htmlSelected) {
+            htmlSelected.classList.add('dark');
+          }
+        } else {
+          if (bodySelected) {
+            bodySelected.classList.remove('dark');
+          }
 
-        if (htmlSelected) {
-          htmlSelected.classList.remove('dark');
+          if (htmlSelected) {
+            htmlSelected.classList.remove('dark');
+          }
         }
       }
     }

@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useEffect, useState } from 'react';
 
-
 import NewTranslate from '@/components/NewTranslate';
 
 import { ThemeContext } from '@/themeManager';
@@ -120,8 +119,8 @@ export default function Navbar(props: any) {
                       className='block h-8 w-auto dark:hidden'
                       src='/images/logo-elect.png'
                       alt='Kenneth Mejia LA City Controller'
-                       priority={true}
-                    unoptimized={true}
+                      priority={true}
+                      unoptimized={true}
                     />
                     <Image
                       className='hidden h-8 w-auto dark:block'
@@ -129,8 +128,8 @@ export default function Navbar(props: any) {
                       alt='Kenneth Mejia LA City Controller'
                       height={32}
                       width={72}
-                       priority={true}
-                    unoptimized={true}
+                      priority={true}
+                      unoptimized={true}
                     />
                   </Link>
                 </div>

@@ -5,7 +5,6 @@ const nextConfig = {
     dirs: ['src'],
   },
 
-  
   reactStrictMode: true,
   swcMinify: true,
 
