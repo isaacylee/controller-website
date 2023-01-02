@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const defaultMeta = {
   title: 'LAController - Kenneth Mejia',
   siteName: 'Office of Kenneth Mejia, LA City Controller',
-  description: 'City of Los Angeles Controller, Kenneth Mejia. ',
+  description: 'City of Los Angeles Controller, Kenneth Mejia.',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   /** the url will be changing to lacontroller.gov... */
   url: 'https://controller.lacity.gov',
@@ -60,7 +60,7 @@ export default function Seo(props: SeoProps) {
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
       {/* // !STARTERCONF Remove or change to your handle */}
-      {/* <meta name='twitter:site' content='@th_clarence' /> */}
+      <meta name='twitter:site' content='@lacontroller' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />

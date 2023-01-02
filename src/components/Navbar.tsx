@@ -119,6 +119,8 @@ export default function Navbar(props: any) {
                       className='block h-8 w-auto dark:hidden'
                       src='/images/logo-elect.png'
                       alt='Kenneth Mejia LA City Controller'
+                      height={32}
+                      width={72}
                       priority={true}
                       unoptimized={true}
                     />
@@ -160,28 +162,29 @@ export default function Navbar(props: any) {
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center dark:text-white sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-              <button
-                onClick={() => {
-                  setMobileTranslateOpen(!mobiletranslateopen);
-                }}
-                aria-label='Open Translate Selector'
-                className='py-4 px-4 md:hidden'
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth={1.5}
-                  stroke='currentColor'
-                  className='mr-1 h-6 w-6'
+                <button
+                  onClick={() => {
+                    setMobileTranslateOpen(!mobiletranslateopen);
+                  }}
+                  aria-label='Open Translate Selector'
+                  className='py-4 px-4 md:hidden'
                 >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802'
-                  />
-                </svg>
-              </button></div>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='mr-1 h-6 w-6'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802'
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
             <div className={`${mobiletranslateopen ? 'md:hidden' : 'hidden'}`}>
               {width < 768 && <NewTranslate />}
