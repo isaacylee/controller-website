@@ -44,6 +44,8 @@ export default function About(props: any) {
                     sizes='(max-width: 1023px) 24rem,
                     
               500px'
+                     priority={true}
+                    unoptimized={true}
                     height={440}
                     width={500}
                   />

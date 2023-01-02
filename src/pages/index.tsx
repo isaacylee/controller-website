@@ -13,7 +13,7 @@ import { SocialPageSeries } from '@/components/SocialPageSeries';
 import { audits } from '@/auditsindex.json';
 import { finance } from '@/financeindex.json';
 import { budget } from '@/budget.json';
-import Image from 'next/image';
+import from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 /**
  * SVGR Support
@@ -108,6 +108,8 @@ export default function HomePage(props: any) {
                     sizes='(max-width: 1023px) 24rem,
                     
               500px'
+                    priority={true}
+                    unoptimized={true}
                     height={440}
                     width={500}
                   />
