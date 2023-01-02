@@ -15,6 +15,7 @@ import { finance } from '@/financeindex.json';
 import { budget } from '@/budget.json';
 import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
+import ImportantLinksSection from '@/components/ImportantLinksSection';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -288,6 +289,10 @@ export default function HomePage(props: any) {
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className=' container mx-auto mt-4 bg-emerald-200 px-4 py-4 dark:bg-zinc-800'>
+          <ImportantLinksSection />
         </div>
 
         <div></div>
