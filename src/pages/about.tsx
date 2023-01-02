@@ -103,10 +103,10 @@ export default function About(props: any) {
               200 N. Main Street, Suite 300 Los Angeles, CA 90012
             </p>
             <p className='content-center break-normal font-bold md:relative'>
-              Phone: 213.978.7200,
+              Phone: 213.978.7200
             </p>
             <p className='content-center break-normal font-bold md:relative'>
-              Fax: 213.978.7211,
+              Fax: 213.978.7211
             </p>
             <p className='content-center break-normal font-bold md:relative'>
               controller.mejia@lacity.org
