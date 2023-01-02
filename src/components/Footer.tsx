@@ -47,7 +47,7 @@ export default function Footer() {
           </a>
           . All Rights Reserved.
         </span>
-        <div className='mt-4 flex space-x-6 text-black dark:text-[#41ffca] sm:mt-0 sm:justify-center'>
+        <div className='mt-4 flex space-x-6 text-black dark:text-mejito sm:mt-0 sm:justify-center'>
           <a
             href=' https://www.facebook.com/lacontroller'
             target='_blank'
@@ -57,7 +57,7 @@ export default function Footer() {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 320 512'
-              className='h-7 w-7'
+              className='h-7 w-7 dark:text-mejito'
               fill='currentColor'
             >
               <path
@@ -77,7 +77,7 @@ export default function Footer() {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 448 512'
-              className='h-7 w-7'
+              className='h-7 w-7 dark:text-mejito'
               fill='currentColor'
             >
               <path
@@ -96,7 +96,7 @@ export default function Footer() {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 448 512'
-              className='h-7 w-7'
+              className='h-7 w-7 dark:text-mejito'
               fill='currentColor'
             >
               <path
@@ -116,7 +116,7 @@ export default function Footer() {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 512 512'
-              className='h-7 w-7'
+              className='h-7 w-7 dark:text-mejito'
               fill='currentColor'
             >
               <path

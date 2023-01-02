@@ -26,6 +26,7 @@ module.exports = {
         },
         dark: '#222222',
         whosestreets: '#212121',
+        mejito: '#41ffca',
       },
       keyframes: {
         flicker: {
