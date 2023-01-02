@@ -31,9 +31,7 @@ export default function About(props: any) {
             <div className='z-10 mx-auto max-w-7xl text-white'>
               <div className='mx-auto flex flex-row lg:max-w-3xl'>
                 <div className='my-auto'>
-                  {' '}
                   <h2>About Our Office</h2>
-                  {/* <h2>Controller of Los Angeles</h2> */}
                 </div>
 
                 <SocialPageSeries />
