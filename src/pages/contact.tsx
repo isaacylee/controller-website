@@ -189,7 +189,7 @@ export default function Contact(props: any) {
                 rel='noreferrer'
                 className='dark:text-white'
               >
-                Payroll Calendar (City Employees Only)
+                City Employee Payroll Calendar
               </a>
             </p>
           </div>

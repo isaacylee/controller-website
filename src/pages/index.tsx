@@ -220,7 +220,7 @@ export default function HomePage(props: any) {
           <div className='flex flex-row flex-wrap gap-x-3 gap-y-3 pt-4 lg:hidden'>
             {budget.slice(0, 6).map((eachbudget: any, key: number) => (
               <Link href={`${eachbudget.link}`} key={key}>
-                <div className='rounded-full bg-blue-900 py-2 px-4 font-semibold text-white dark:bg-blue-900 dark:text-white'>
+                <div className='rounded-full bg-[#41ffca] py-2 px-4 font-semibold text-white dark:text-black'>
                   {eachbudget.name}
                 </div>
               </Link>
@@ -230,7 +230,7 @@ export default function HomePage(props: any) {
           <div className='hidden flex-row flex-wrap gap-x-3 gap-y-3 pt-4 lg:flex'>
             {budget.slice(0, 9).map((eachbudget: any, key: number) => (
               <Link href={`${eachbudget.link}`} key={key}>
-                <div className='rounded-full bg-blue-900 py-2 px-4 font-semibold text-white dark:bg-blue-900 dark:text-white'>
+                <div className='rounded-full bg-[#41ffca] py-2 px-4 font-semibold text-white  dark:text-black'>
                   {eachbudget.name}
                 </div>
               </Link>

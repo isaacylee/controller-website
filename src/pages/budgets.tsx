@@ -36,7 +36,7 @@ export default function Budgets(props: any) {
           <div className='grid grid-cols-3 gap-x-3 gap-y-3 sm:flex sm:flex-row sm:flex-wrap '>
             {budget.map((eachbudget: any, key: number) => (
               <Link href={`${eachbudget.link}`} key={key}>
-                <div className='rounded-full bg-blue-900 py-2 px-4 font-semibold text-white dark:bg-blue-900 dark:text-white'>
+                <div className='rounded-full bg-[#41ffca] py-2 px-4 font-semibold text-white dark:text-black'>
                   <p className='mx-auto'>{eachbudget.name}</p>
                 </div>
               </Link>
