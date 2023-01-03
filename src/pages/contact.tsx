@@ -61,10 +61,10 @@ export default function Contact(props: any) {
       <footer className='bg-white dark:bg-gray-900'>
         <div className='grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4'>
           <div>
-            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
+            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
               Office
             </h2>
-            <ul className='text-gray-500 dark:text-gray-400'>
+            <ul className='text-gray-500 dark:text-gray-100'>
               <li className='mb-4'>
                 <p>200 N. Main Street, Suite 300</p>
               </li>
@@ -95,32 +95,32 @@ export default function Contact(props: any) {
             </ul>
           </div>
           <div>
-            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
+            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
               Financial Analysis and Reporting
             </h2>
-            <ul className='text-gray-500 dark:text-gray-400'>
+            <ul className='text-gray-500 dark:text-gray-100'>
               <li className='mb-4'>
                 <p>213.978.7300</p>
               </li>
-              <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
+              <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
                 Accounting Operations
               </h2>
-              <ul className='text-gray-500 dark:text-gray-400'>
+              <ul className='text-gray-500 dark:text-gray-100'>
                 <li className='mb-4'>
                   <p>213.978.7292</p>
                 </li>
-                <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
+                <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
                   Audit Services
                 </h2>
-                <ul className='text-gray-500 dark:text-gray-400'>
+                <ul className='text-gray-500 dark:text-gray-100'>
                   <li className='mb-4'>
                     <p>213.978.7500</p>
                   </li>
                 </ul>
-                <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
+                <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
                   Management Services
                 </h2>
-                <ul className='text-gray-500 dark:text-gray-400'>
+                <ul className='text-gray-500 dark:text-gray-100'>
                   <li className='mb-4'>
                     <p>213.978.7250</p>
                   </li>
@@ -129,10 +129,10 @@ export default function Contact(props: any) {
             </ul>
           </div>
           <div>
-            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-400'>
+            <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
               Office Hours
             </h2>
-            <ul className='text-gray-500 dark:text-gray-400'>
+            <ul className='text-gray-500 dark:text-gray-100'>
               <li className='mb-4'>
                 <p>Monday-Friday 9am-5pm</p>
               </li>
