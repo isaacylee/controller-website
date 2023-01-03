@@ -245,7 +245,7 @@ export default function PayrollCalendar(props: any) {
           </h1>
 
           <div>
-            <div className='flex flex-row flex-wrap justify-between gap-x-4 gap-y-2'>
+            <div className='flex flex-row flex-wrap gap-x-4 gap-y-2'>
               <DatesLegendItem
                 colorstring='bg-yellow-500 dark:bg-yellow-500 dark:text-black'
                 label='Holiday'
