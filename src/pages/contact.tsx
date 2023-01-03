@@ -140,7 +140,7 @@ export default function Contact(props: any) {
           </div>
         </div>
 
-        <div className=' container mx-auto mt-4 bg-zinc-50 px-4 py-4 dark:bg-zinc-800'>
+        <div className=' container mx-auto mt-4  px-4 py-4 '>
           <ImportantLinksSection />
         </div>
       </footer>
