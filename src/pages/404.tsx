@@ -12,8 +12,8 @@ export default function NotFoundPage(props: any) {
       <Seo templateTitle='Not Found' />
       <Navbar themeChanger={props.themeChanger} />
       <main>
-        <section className='bg-white'>
-          <div className='layout flex min-h-[80vh] flex-col items-center justify-center text-center text-black'>
+        <section className='bg-white dark:bg-whosestreets'>
+          <div className='layout flex min-h-[80vh] flex-col items-center justify-center text-center text-black dark:text-white'>
             {false && (
               <RiAlarmWarningFill
                 size={60}
@@ -29,7 +29,7 @@ export default function NotFoundPage(props: any) {
             <h1 className='mt-8 text-4xl md:text-6xl'>
               Uh oh! The corgi couldn't fetch the page!
             </h1>
-            <ArrowLink className='mt-4 md:text-lg' href='/'>
+            <ArrowLink className='mt-4 dark:text-white md:text-lg' href='/'>
               Back to Home
             </ArrowLink>
           </div>
