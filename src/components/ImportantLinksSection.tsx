@@ -30,7 +30,7 @@ export default function ImportantLinksSection(props: any) {
         <Link href={link.url} key={key}>
           <a
             className='text-lg font-bold text-black underline dark:text-white'
-            href={link.name}
+            href={link.url}
             target='_blank'
             rel='noreferrer'
           >
