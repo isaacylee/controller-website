@@ -31,7 +31,7 @@ export default function About(props: any) {
         <div className=' bgColorHeader relative px-8 px-4 pt-8 text-base text-sm  md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
             {/* max-w-2md z-10 mx-auto text-white */}
-            <div className='z-10 mx-auto max-w-7xl text-white'>
+            <div className='z-10 mx-4 max-w-7xl text-white lg:mx-auto'>
               <div className='mx-auto flex flex-row lg:max-w-3xl'>
                 <div className='my-auto'>
                   <h2>About Our Office</h2>

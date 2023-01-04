@@ -26,7 +26,7 @@ const navigation: any = [
   { name: 'Budgets', href: '/budgets' },
   // { name: 'Events', href: '/events', current: false },
   // { name: 'Press', href: '/press', current: false },
-  { name: 'Contact Us', href: '/contact' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 function classNames(...classes: any) {
@@ -93,7 +93,7 @@ export default function Navbar(props: any) {
     >
       {({ open }) => (
         <>
-          <div className='mx-auto max-w-7xl pl-2 drop-shadow-sm sm:px-6 md:px-2 lg:px-8'>
+          <div className='mx-auto max-w-7xl pl-2 drop-shadow-sm sm:px-4 md:px-2 lg:px-8'>
             <div className='relative flex h-16 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
                 {/* Mobile menu button*/}
@@ -167,7 +167,7 @@ export default function Navbar(props: any) {
                     setMobileTranslateOpen(!mobiletranslateopen);
                   }}
                   aria-label='Open Translate Selector'
-                  className='py-4 px-4 md:hidden'
+                  className='py-4 px-4 sm:px-0 sm:pt-3 sm:pb-4 md:hidden'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
