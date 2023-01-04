@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
@@ -49,8 +50,12 @@ export default function FraudWasteAndAbuse(props: any) {
           </p>
 
           <div className='mt-1 flex flex-row gap-x-2'>
-            <div className={kirbybutton}>New Report</div>
-            <div className={kirbybutton}>Follow Up on your Case</div>
+            <Link href='https://snow.lacity.org/fwa'>
+              <div className={kirbybutton}>New Report</div>
+            </Link>
+            <Link href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'>
+              <div className={kirbybutton}>Follow Up on your Case</div>
+            </Link>
           </div>
 
           <div className='mt-2 dark:text-white'>

@@ -27,7 +27,12 @@ module.exports = {
       },
       {
         source: '/fraud_hotline/',
-        destination: '/report-fraud-waste-and-abuse/',
+        destination: '/fwa/',
+        permanent: true,
+      },
+      {
+        source: '/report-fraud-waste-and-abuse/',
+        destination: '/fwa/',
         permanent: true,
       },
       {
