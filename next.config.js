@@ -1,30 +1,28 @@
 /** @type {import('next').NextConfig} */
 /** @type {import('next').NextConfig} */
 
-
-
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
-    value: 'on'
+    value: 'on',
   },
   {
     key: 'Strict-Transport-Security',
-    value: 'max-age=63072000; includeSubDomains; preload'
+    value: 'max-age=63072000; includeSubDomains; preload',
   },
   {
     key: 'X-XSS-Protection',
-    value: '1; mode=block'
+    value: '1; mode=block',
   },
   {
     key: 'X-Frame-Options',
-    value: 'SAMEORIGIN'
+    value: 'DENY',
   },
   {
     key: 'X-Content-Type-Options',
-    value: 'nosniff'
-  }
-]
+    value: 'nosniff',
+  },
+];
 
 const nextConfig = {
   async headers() {
@@ -34,7 +32,7 @@ const nextConfig = {
         source: '/:path*',
         headers: securityHeaders,
       },
-    ]
+    ];
   },
   eslint: {
     dirs: ['src'],
