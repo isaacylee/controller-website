@@ -23,7 +23,10 @@ export default function About(props: any) {
     <>
       <Navbar themeChanger={props.themeChanger} />
       <Layout>
-        <Seo />
+        <Seo
+          title='About Our Office & Team'
+          description="Meet our team and learn about our office's functions and responsibilities."
+        />
 
         <div className=' bgColorHeader relative px-8 px-4 pt-8 text-base text-sm  md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
