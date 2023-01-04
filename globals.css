@@ -9,8 +9,9 @@
 }
 
 .kirbybutton {
-  @apply w-content rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black;
+  @apply w-content dark: rounded-full bg-black bg-white px-4 py-2 font-bold text-white dark:text-black;
 }
+
 @import url('https://fonts.cdnfonts.com/css/neue-kabel');
 
 :root {
@@ -54,6 +55,7 @@
   background-position: 0 0;
   background-size: auto;
 }
+
 /* background-color: #33333300; */
 /* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg'); */
 
@@ -68,15 +70,18 @@
 span a {
   padding-right: 13px;
 }
+
 a {
   color: black;
   text-decoration: none;
 }
+
 .navbar {
   -webkit-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
 }
+
 .main-page {
   margin-top: 150px;
 }
@@ -238,37 +243,45 @@ a {
 
   /* #region  /**=========== Typography =========== */
   .h0 {
-    @apply font-primary text-3xl font-bold md:text-5xl;
+    @apply md: font-primary text-3xl text-5xl font-bold;
   }
 
   h1,
   .h1 {
-    @apply font-primary text-2xl font-bold md:text-4xl;
+    @apply md: font-primary text-2xl text-4xl font-bold;
     font-family: 'Neue Kabel', sans-serif;
     font-family: 'Neue Kabel', sans-serif;
   }
 
   h2,
   .h2 {
-    @apply font-primary text-xl font-bold md:text-3xl;
+    @apply md: font-primary text-xl text-3xl font-bold;
     font-family: 'Neue Kabel', sans-serif;
   }
 
   h3,
   .h3 {
-    @apply font-primary text-lg font-bold md:text-2xl;
+    @apply md: font-primary text-lg text-2xl font-bold;
     font-family: 'Neue Kabel', sans-serif;
+  }
+
+  .kirbybutton {
+    @apply w-content dark: rounded-full bg-black bg-white px-4 py-2 font-bold text-white dark:text-black;
   }
 
   h4,
   .h4 {
-    @apply font-primary text-base font-bold md:text-lg;
+    @apply md: font-primary text-base text-lg font-bold;
     font-family: 'Neue Kabel', sans-serif;
+  }
+
+  body {
+    overflow-x: clip;
   }
 
   body,
   .p {
-    @apply font-primary text-sm md:text-base;
+    @apply md: font-primary text-sm text-base;
   }
 
   /* #endregion  /**======== Typography =========== */
@@ -280,7 +293,7 @@ a {
   }
 
   .bg-dark a.custom-link {
-    @apply border-gray-200 hover:border-gray-200/0;
+    @apply hover: border-gray-200 border-gray-200/0;
   }
 
   /* Class to adjust with sticky footer */

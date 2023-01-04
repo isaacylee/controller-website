@@ -7,8 +7,6 @@ import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 import { SocialPageSeries } from '@/components/SocialPageSeries';
 
-import { audits } from '../audits.json';
-
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -146,17 +144,4 @@ export default function Contact(props: any) {
       </footer>
     </>
   );
-}
-
-// This function gets called at build time
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts
-
-  // By returning {props: {posts} }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      audits,
-    },
-  };
 }
