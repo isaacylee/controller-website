@@ -30,7 +30,10 @@ export default function Audits(props: any) {
       <Layout>
         {/* <Seo templateTitle='Home' /> */}
 
-        <Seo />
+        <Seo
+          title='Audits'
+          description='Audits performed by the Controller since 2016.'
+        />
 
         <div className=' flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h1 className='dark:text-white'>Audits & Reports</h1>

@@ -25,7 +25,7 @@ export default function Report(props: auditinterface) {
   return (
     <>
       <Navbar />
-      <Seo />
+      <Seo title={props.report.name} />
       <main className=' dark:bg-zinc-900'>
         {props.report && (
           <div className=' container mx-4 px-4 pb-3 pt-5  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>

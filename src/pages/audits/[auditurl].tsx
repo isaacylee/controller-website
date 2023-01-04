@@ -25,7 +25,12 @@ export default function Audit(props: auditinterface) {
   return (
     <>
       <Navbar />
-      <Seo />
+      <Seo
+        title={props.audit.name}
+        description={`Audit of ${titleCase(props.audit.dept).replace(
+          /( )?department/gi
+        )} ${props.audit.year}`}
+      />
       <main className=' dark:bg-zinc-900'>
         {props.audit && (
           <div className=' container mx-4 px-4 pb-3 pt-5  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
