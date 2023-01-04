@@ -40,6 +40,11 @@ module.exports = {
         destination: 'https://wpstaticarchive.lacontroller.io/wp-content/:path',
         permanent: true,
       },
+      {
+        source: '/4118',
+        destination: 'https://4118.lacontroller.io',
+        permanent: true,
+      },
     ];
   },
   // !STARTERCONF Change the siteUrl
