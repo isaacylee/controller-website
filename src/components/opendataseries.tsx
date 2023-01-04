@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import * as React from 'react';
 
+const kirbybutton =
+  'w-content rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black';
+
 function EachDataButton(props: any) {
   return (
     <div>
@@ -9,6 +12,18 @@ function EachDataButton(props: any) {
           <a href={props.link} target='_blank' rel='noopener noreferrer'>
             <div className='rounded-lg bg-gray-200 px-2 py-2 dark:bg-zinc-800 dark:text-gray-100 '>
               <h3>{props.name}</h3>
+              <div className='flex w-full flex-row gap-x-1'>
+                {props.tags.includes('socrata') && (
+                  <div className='rounded-full bg-gray-300 bg-zinc-700 px-2 py-0.5 text-black dark:text-white'>
+                    Socrata
+                  </div>
+                )}
+                {props.tags.includes('buggy') && (
+                  <div className='rounded-full bg-amber-300 bg-amber-900 px-2 py-0.5 text-amber-800 dark:text-amber-300'>
+                    ⚠️ Contains Bugs
+                  </div>
+                )}
+              </div>
               <p className=''>
                 Last Updated{' '}
                 <span className='font-semibold'>
@@ -24,6 +39,7 @@ function EachDataButton(props: any) {
               <p className=''>
                 Data Since <span className='font-semibold'>{props.since}</span>
               </p>
+              <button className={kirbybutton}>View Data</button>
             </div>
           </a>
         </div>
