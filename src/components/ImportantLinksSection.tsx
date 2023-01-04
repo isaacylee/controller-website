@@ -19,7 +19,10 @@ const links = [
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSfr1ndu5UaX3IPaxWi30tEpw3J7ZMB5d8HdKC9Uhg9IniIH5w/viewform',
   },
   { name: '📅 Payroll Calendar', url: '/payrollcalendar/' },
-  { name: '📝 Public Records Request', url: '/public-records-request/' },
+  {
+    name: '📝 Public Records Request',
+    url: 'https://recordsrequest.lacity.org/requests/new?dept_id=1219',
+  },
   { name: '🚨 Report Fraud, Waste, or Abuse', url: '/fwa/' },
 ];
 
