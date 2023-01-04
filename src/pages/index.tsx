@@ -133,9 +133,7 @@ export default function HomePage(props: any) {
           </div>
         </div>
         <div className='container mx-auto px-4  '>
-          <Link href='/audits'>
-            <h2 className='frontpageh2section'> Audits & Reports</h2>
-          </Link>
+          <h2 className='frontpageh2section'> Audits & Reports</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 5).map((eachaudit: any, key: number) => (
@@ -173,9 +171,7 @@ export default function HomePage(props: any) {
         </div>
 
         <div className='container mx-auto px-4  '>
-          <Link href='/reports'>
-            <h2 className='pt-8 pb-4 dark:text-white'>Financial Reports</h2>
-          </Link>
+          <h2 className='pt-8 pb-4 dark:text-white'>Financial Reports</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {finance.slice(0, 5).map((eachaudit: any, key: number) => (
@@ -214,9 +210,7 @@ export default function HomePage(props: any) {
         {/* Budgets */}
         <div className='container mx-auto px-4 pt-2 lg:pt-6'>
           <h2 className=''>
-            <Link href='/budgets'>
-              <span className='frontpageh2section'>Budgets</span>
-            </Link>
+            <span className='frontpageh2section'>Budgets</span>
           </h2>
 
           <div className='flex flex-row flex-wrap gap-x-3 gap-y-3 pt-4 lg:hidden'>
@@ -251,9 +245,7 @@ export default function HomePage(props: any) {
         {/* Data stories list below */}
         <div className='container mx-auto px-4 '>
           <h2 className=''>
-            <Link href='/data'>
-              <span className='frontpageh2section'>Data Stories & Maps</span>
-            </Link>
+            <span className='frontpageh2section'>Data Stories & Maps</span>
           </h2>
           <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
             {data.slice(0, 5).map((eachaudit: any, key) => (
