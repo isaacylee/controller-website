@@ -14,12 +14,12 @@ function EachDataButton(props: any) {
               <h3>{props.name}</h3>
               <div className='flex w-full flex-row gap-x-1'>
                 {props.tags.includes('socrata') && (
-                  <div className='rounded-full bg-gray-300 px-2 py-0.5 text-black dark:bg-zinc-700 dark:text-white'>
+                  <div className='rounded-full bg-gray-100 px-2 py-0.5 text-black dark:bg-zinc-700 dark:text-white'>
                     Socrata
                   </div>
                 )}
                 {props.tags.includes('buggy') && (
-                  <div className='rounded-full bg-amber-700 px-2 py-0.5 dark:bg-amber-900 dark:text-amber-200 dark:text-amber-300'>
+                  <div className='rounded-full bg-red-900 px-2 py-0.5 text-red-200 dark:bg-amber-900 dark:text-amber-300'>
                     ⚠️ Contains Bugs
                   </div>
                 )}
