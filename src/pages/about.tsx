@@ -119,7 +119,7 @@ export default function About(props: any) {
           {/*BRUH OKAY THE CONTACTS GO HERE */}
 
           <h1 className='md:py-4'>Audit Services Division</h1>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-2'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-2'>
             The Audit Services Division of the Controller’s Office conducts
             scheduled audits, special audits, and audits requested by the City
             Council or City management. Audits determine if existing controls in
@@ -132,7 +132,7 @@ export default function About(props: any) {
             audits:
           </p>
           <h3>Financial and Compliance Audits</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             Financial-related audits determine whether financial information is
             presented in accordance with established or stated criteria, and
             whether the internal control structure over financial reporting and
@@ -141,14 +141,14 @@ export default function About(props: any) {
             observations and reviews of departmental bank accounts.
           </p>
           <h3>Performance Audits</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             Performance and operational audits of City departments and programs
             are mandated by the City Charter, and assess whether government
             programs or functions are efficiently and effectively achieving
             their goals.
           </p>
           <h3>Special Analysis and Reviews</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             These are different types of reports that do various things, such as
             tracking the implementation status of audit recommendations as
             asserted by management, follow-up audits to independently ensure
@@ -160,14 +160,14 @@ export default function About(props: any) {
             reviews for selected contracts.
           </p>
           <h3>Fraud, Waste and Abuse Unit</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-4'>
             The City of Los Angeles aims to be as transparent and efficient as
             possible, going above and beyond to protect taxpayers’ assets and
             preserve government integrity. Critical to these efforts is tracking
             reports of fraud, waste and abuse of City resources, a core function
             of the Controller’s office for 15 years.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             Since its creation, the Controller’s Fraud, Waste and Abuse Unit has
             sought to identify, stop and, ultimately, prevent the misuse of City
             resources by employees and others. This is done through a 24-hour
@@ -178,7 +178,7 @@ export default function About(props: any) {
           <div className='break-normal'></div>
 
           <h1>Accounting Operations Division</h1>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Accounting Operations Division is responsible for paying
             employees and vendors, budgetary control of all City funds as
             authorized by ordinance, pre- and post-audit approval, and release
@@ -186,7 +186,7 @@ export default function About(props: any) {
           </p>
 
           <h3>Fiscal Oversight and Support Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             Fiscal Oversight and Support is responsible for the review and
             approval of demands (payments) against the City Treasury. The
             section establishes Citywide policies and procedures regarding
@@ -197,7 +197,7 @@ export default function About(props: any) {
             Purchasing Card programs.
           </p>
           <h3>Payroll Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Payroll Section is the central payroll-processing unit for the
             City of Los Angeles. It ensures that the City processes its payroll
             and pays its employees in a timely manner and in accordance with the
@@ -208,7 +208,7 @@ export default function About(props: any) {
             enhancements and updates.
           </p>
           <h3>Paymaster Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Paymaster Section is responsible for the security, control and
             disbursement of all warrants (checks) for City vendors, workers’
             compensation and payroll. This section is also responsible for
@@ -220,7 +220,7 @@ export default function About(props: any) {
           <div className='break-normal'></div>
 
           <h1>Financial Analysis and Reporting Division</h1>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Financial Analysis and Reporting Division is responsible for
             producing federal, state and local financial compliance reports, and
             providing financial reports and forecasts to the City Council and
@@ -229,7 +229,7 @@ export default function About(props: any) {
             division:
           </p>
           <h3>GAAP Compliance Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             Produces the City’s Annual Financial Report (AFR) in accordance with
             Generally Accepted Accounting Practices (GAAP) and in compliance
             with accounting standards set by the Government Accounting Standards
@@ -241,7 +241,7 @@ export default function About(props: any) {
             Departments as well as training and guidance.
           </p>
           <h3>General Accounting Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The General Accounting Section tracks, forecasts and reports on City
             receipts, cash flows, debt levels and the status of the Reserve
             Fund. The section prepares the Controller’s annual March 1 revenue
@@ -251,7 +251,7 @@ export default function About(props: any) {
             Improvement Corporation of Los Angeles.
           </p>
           <h3>Single Audit Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Single Audit Section produces the Single Audit in support of
             $426 million in grants awarded to the City each year, in compliance
             with the Federal Single Audit Act of 1984, the Single Audit
@@ -259,7 +259,7 @@ export default function About(props: any) {
             Circular A-133.
           </p>
           <h3>Cost Allocation Plan (CAP) Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Cost Allocation Plan Section produces the City’s
             federally-approved Cost Allocation Plan. The CAP shows how indirect
             costs — pensions and benefits, central services, and department
@@ -271,7 +271,7 @@ export default function About(props: any) {
             annually.
           </p>
           <h3>Check Reconciliation Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             This section reconciles all warrants issued against warrants paid,
             taking into account all adjustments. The Check Reconciliation
             Section protects the City by ensuring that the banks only honor the
@@ -281,20 +281,20 @@ export default function About(props: any) {
             checks.
           </p>
           <h3>Financial Management System Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Financial Management System Section (FMS) is the City’s
             financial system of record and integrated to the business processes
             of virtually all aspects of the Controller’s office. FMS provides
             four major functions and a business intelligence tool for the City
             of Los Angeles.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The FMS group provides support, reporting, and troubleshooting for
             approximately 2,000 users, along with project management for FMS
             upgrades and enhancements.
           </p>
           <h3>Funds and Appropriations Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Funds and Appropriations Section is responsible for budgetary
             control of all City funds authorized by ordinance, the Mayor and
             City Council. The section verifies the availability of funds before
@@ -306,7 +306,7 @@ export default function About(props: any) {
             Principles.
           </p>
           <h3>Open Data Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
             The Controller’s Open Data section develops, implements, supports
             and maintains Control Panel L.A., and collaborates with other City
             and proprietary departments to publish financial information related
