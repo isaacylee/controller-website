@@ -52,8 +52,8 @@ export default function OpenDataSeries() {
   const datalinks = [
     {
       name: 'Payroll',
-      link: 'https://lacity.payroll.finance.socrata.com/#!/year/2022/',
-      tags: ['socrata', 'buggy'],
+      link: 'https://lacity-2.payroll.socrata.com/',
+      tags: ['socrata'],
       lastupdated: '2022-12-30',
       since: '2013',
     },
