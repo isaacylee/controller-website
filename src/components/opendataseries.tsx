@@ -22,11 +22,12 @@ export default function OpenDataSeries() {
     {
       name: 'Payroll',
       link: 'https://lacity.payroll.finance.socrata.com/#!/year/2022/',
+      lastupdated: '2022-12-30',
     },
     {
       name: 'Checkbook',
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
-      updated: 'Dec 5, 2022',
+      lastupdated: '2023-01-03',
     },
     {
       name: 'Budget',
