@@ -25,7 +25,10 @@ export default function FraudWasteAndAbuse(props: any) {
     <>
       <Navbar />
       <Layout>
-        <Seo />
+        <Seo
+          title='Report Fraud, Waste, and Abuse'
+          description='Send a report to the FWA Unit or learn more about types of fraud.'
+        />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-4 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h2 className='pt-8 pb-2 dark:text-white'>
