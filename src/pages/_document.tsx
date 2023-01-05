@@ -9,7 +9,7 @@ import Document, {
 import Footer from '@/components/Footer';
 
 const insertwhateverburningthisis =
-  "@media (prefers-color-scheme: dark) {.dontburnmyeyesoutplz {background: '#121212';}}";
+  "@media (prefers-color-scheme: dark) {.dontburnmyeyesoutplz:{background:'#121212';}}";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
