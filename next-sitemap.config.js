@@ -36,6 +36,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/wtf/',
+        destination: '/fwa/',
+        permanent: true,
+      },
+      {
         source: '/wp-content/:path',
         destination: 'https://wpstaticarchive.lacontroller.io/wp-content/:path',
         permanent: true,
