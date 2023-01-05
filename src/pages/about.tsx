@@ -18,6 +18,20 @@ import { SocialPageSeries } from '@/components/SocialPageSeries';
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
+interface profilecardprops {
+  name: string;
+  title: string;
+}
+
+function ProfileCard(props: profilecardprops) {
+  return (
+    <div className='rounded-lg border border-gray-300 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-zinc-800'>
+      <p className='font-semibold text-white'>{props.name}</p>
+      <p className='text-white'>{props.title}</p>
+    </div>
+  );
+}
+
 export default function About(props: any) {
   return (
     <>
@@ -57,17 +71,17 @@ export default function About(props: any) {
           </div>
         </div>
 
-        <div className='timeline mt-10 px-4 pt-4 dark:text-gray-300'>
+        <div className='timeline mt-10 px-4 pt-4 dark:text-gray-100'>
           {/* <div className='leftTimeline containerTimeline'> */}
           {/* <div className='contentTimeline'> */}
 
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:py-2'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:py-2'>
             The City Controller is the elected paymaster, auditor and chief
             accounting officer for the City of Los Angeles. Along with the Mayor
             and City Attorney, the Controller is one of three offices elected
             every four years by citywide popular vote.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             In 1878, the position was created as the City Auditor, becoming an
             elected office in 1889. The 1925 City Charter changed the name of
             the position to City Controller. In 2000, a City Charter update
@@ -76,21 +90,21 @@ export default function About(props: any) {
             effectiveness.
           </p>
 
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             Kenneth Mejia is the City’s 20th Controller, elected in November
             2022. Controller Mejia oversees a team of more than 160 employees
             who conduct independent audits, manage the City’s payroll and
             spending, report on the City’s finances, and provide City metrics
             and data online.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             In order to fulfill the Controller’s Charter-mandated functions, the
             City Controller’s office has three major divisions – Audit Services,
             Accounting Operations, and Financial Reporting and Analysis – in
             addition to Executive Office and Management Services leadership and
             staff.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             The Executive Office supports the Controller with staff dedicated to
             communications and innovation, scheduling and office operations,
             community engagement and government affairs. Management Services is
@@ -118,8 +132,89 @@ export default function About(props: any) {
 
           {/*BRUH OKAY THE CONTACTS GO HERE */}
 
+          <h2 className='mt-4 mb-2'>Our Team</h2>
+          <div className='mb-4 grid grid-cols-1 dark:text-gray-100 sm:grid-cols-2 '>
+            <div className='flex flex-col gap-y-8'>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl dark:text-gray-100'>Leadership</p>
+                <ProfileCard name='Kenneth Mejia' title='LA City Controller' />
+                <ProfileCard name='Jane Nguyen' title='Chief of Staff' />
+                <ProfileCard name='Rick Cole' title='Chief Deputy Controller' />
+                <ProfileCard
+                  name='Sergio Perez'
+                  title='Chief of Accountability & Oversight'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>
+                  Financial Analysis and Reporting Division
+                </p>
+                <ProfileCard
+                  name='Rahoof (Wally) Oyewole'
+                  title='Chief Financial Officer/Director of Financial Analysis and Reporting'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Accounting Operations Division</p>
+                <ProfileCard
+                  name='James Robinson'
+                  title='Chief Operations Officer/Principal Deputy Controller'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Audit Services Division</p>
+                <ProfileCard
+                  name='Devang Panchal'
+                  title='Director of Auditing'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Management Services Division</p>
+                <ProfileCard
+                  name='Jovonne Lavender'
+                  title='Chief Management Analyst'
+                />
+              </div>
+            </div>
+            <div className='flex flex-col gap-y-8'>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl dark:text-gray-100'>
+                  Innovation and Communications
+                </p>
+                <ProfileCard
+                  name='Kyler Chin'
+                  title='Director of Technology & Innovation'
+                />
+                <ProfileCard
+                  name='Diana Chang'
+                  title='Director of Communications'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Community Engagement</p>
+                <ProfileCard
+                  name='Shekinah Deocares'
+                  title='Director of Community Engagement'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Government Affairs</p>
+                <ProfileCard
+                  name='Michael Shear'
+                  title='Director of Research & Government Affairs'
+                />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Executive Aides</p>
+                <ProfileCard name='Jacky Rodarte' title='' />
+                <ProfileCard name='Vincent de Vera' title='' />
+              </div>
+            </div>
+            <div></div>
+          </div>
+
           <h1 className='md:py-4'>Audit Services Division</h1>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-2'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-2'>
             The Audit Services Division of the Controller’s Office conducts
             scheduled audits, special audits, and audits requested by the City
             Council or City management. Audits determine if existing controls in
@@ -132,7 +227,7 @@ export default function About(props: any) {
             audits:
           </p>
           <h3>Financial and Compliance Audits</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             Financial-related audits determine whether financial information is
             presented in accordance with established or stated criteria, and
             whether the internal control structure over financial reporting and
@@ -141,14 +236,14 @@ export default function About(props: any) {
             observations and reviews of departmental bank accounts.
           </p>
           <h3>Performance Audits</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             Performance and operational audits of City departments and programs
             are mandated by the City Charter, and assess whether government
             programs or functions are efficiently and effectively achieving
             their goals.
           </p>
           <h3>Special Analysis and Reviews</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             These are different types of reports that do various things, such as
             tracking the implementation status of audit recommendations as
             asserted by management, follow-up audits to independently ensure
@@ -160,14 +255,14 @@ export default function About(props: any) {
             reviews for selected contracts.
           </p>
           <h3>Fraud, Waste and Abuse Unit</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-4'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-4'>
             The City of Los Angeles aims to be as transparent and efficient as
             possible, going above and beyond to protect taxpayers’ assets and
             preserve government integrity. Critical to these efforts is tracking
             reports of fraud, waste and abuse of City resources, a core function
             of the Controller’s office for 15 years.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             Since its creation, the Controller’s Fraud, Waste and Abuse Unit has
             sought to identify, stop and, ultimately, prevent the misuse of City
             resources by employees and others. This is done through a 24-hour
@@ -178,7 +273,7 @@ export default function About(props: any) {
           <div className='break-normal'></div>
 
           <h1>Accounting Operations Division</h1>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Accounting Operations Division is responsible for paying
             employees and vendors, budgetary control of all City funds as
             authorized by ordinance, pre- and post-audit approval, and release
@@ -186,7 +281,7 @@ export default function About(props: any) {
           </p>
 
           <h3>Fiscal Oversight and Support Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             Fiscal Oversight and Support is responsible for the review and
             approval of demands (payments) against the City Treasury. The
             section establishes Citywide policies and procedures regarding
@@ -197,7 +292,7 @@ export default function About(props: any) {
             Purchasing Card programs.
           </p>
           <h3>Payroll Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Payroll Section is the central payroll-processing unit for the
             City of Los Angeles. It ensures that the City processes its payroll
             and pays its employees in a timely manner and in accordance with the
@@ -208,7 +303,7 @@ export default function About(props: any) {
             enhancements and updates.
           </p>
           <h3>Paymaster Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Paymaster Section is responsible for the security, control and
             disbursement of all warrants (checks) for City vendors, workers’
             compensation and payroll. This section is also responsible for
@@ -220,7 +315,7 @@ export default function About(props: any) {
           <div className='break-normal'></div>
 
           <h1>Financial Analysis and Reporting Division</h1>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Financial Analysis and Reporting Division is responsible for
             producing federal, state and local financial compliance reports, and
             providing financial reports and forecasts to the City Council and
@@ -229,7 +324,7 @@ export default function About(props: any) {
             division:
           </p>
           <h3>GAAP Compliance Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             Produces the City’s Annual Financial Report (AFR) in accordance with
             Generally Accepted Accounting Practices (GAAP) and in compliance
             with accounting standards set by the Government Accounting Standards
@@ -241,7 +336,7 @@ export default function About(props: any) {
             Departments as well as training and guidance.
           </p>
           <h3>General Accounting Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The General Accounting Section tracks, forecasts and reports on City
             receipts, cash flows, debt levels and the status of the Reserve
             Fund. The section prepares the Controller’s annual March 1 revenue
@@ -251,7 +346,7 @@ export default function About(props: any) {
             Improvement Corporation of Los Angeles.
           </p>
           <h3>Single Audit Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Single Audit Section produces the Single Audit in support of
             $426 million in grants awarded to the City each year, in compliance
             with the Federal Single Audit Act of 1984, the Single Audit
@@ -259,7 +354,7 @@ export default function About(props: any) {
             Circular A-133.
           </p>
           <h3>Cost Allocation Plan (CAP) Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Cost Allocation Plan Section produces the City’s
             federally-approved Cost Allocation Plan. The CAP shows how indirect
             costs — pensions and benefits, central services, and department
@@ -271,7 +366,7 @@ export default function About(props: any) {
             annually.
           </p>
           <h3>Check Reconciliation Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             This section reconciles all warrants issued against warrants paid,
             taking into account all adjustments. The Check Reconciliation
             Section protects the City by ensuring that the banks only honor the
@@ -281,20 +376,20 @@ export default function About(props: any) {
             checks.
           </p>
           <h3>Financial Management System Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Financial Management System Section (FMS) is the City’s
             financial system of record and integrated to the business processes
             of virtually all aspects of the Controller’s office. FMS provides
             four major functions and a business intelligence tool for the City
             of Los Angeles.
           </p>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The FMS group provides support, reporting, and troubleshooting for
             approximately 2,000 users, along with project management for FMS
             upgrades and enhancements.
           </p>
           <h3>Funds and Appropriations Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Funds and Appropriations Section is responsible for budgetary
             control of all City funds authorized by ordinance, the Mayor and
             City Council. The section verifies the availability of funds before
@@ -306,7 +401,7 @@ export default function About(props: any) {
             Principles.
           </p>
           <h3>Open Data Section</h3>
-          <p className='mb-3 font-light text-black dark:text-gray-300 md:relative md:pb-8'>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
             The Controller’s Open Data section develops, implements, supports
             and maintains Control Panel L.A., and collaborates with other City
             and proprietary departments to publish financial information related
