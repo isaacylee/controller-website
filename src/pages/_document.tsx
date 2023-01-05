@@ -28,7 +28,9 @@ class MyDocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
-          <style>{insertwhateverburningthisis}</style>
+          <style
+            dangerouslySetInnerHTML={{ __html: insertwhateverburningthisis }}
+          ></style>
         </Head>
 
         <body className='dontburnmyeyesoutplz flex  min-h-screen flex-col dark:bg-zinc-900'>
