@@ -26,8 +26,8 @@ interface profilecardprops {
 function ProfileCard(props: profilecardprops) {
   return (
     <div className='rounded-lg border border-gray-300 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-zinc-800'>
-      <p className='font-semibold text-white'>{props.name}</p>
-      <p className='text-white'>{props.title}</p>
+      <p className='font-semibold text-black dark:text-white'>{props.name}</p>
+      <p className='text-black dark:text-white'>{props.title}</p>
     </div>
   );
 }
