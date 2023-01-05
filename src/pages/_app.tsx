@@ -34,6 +34,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const [currentColour, setCurrentColour] = useState<string>('system');
 
+  const dontburnmyeyes = () => {
+    const bodySelected = document.querySelector('body');
+
+    if (bodySelected) {
+      bodySelected.classList.remove('dontburnmyeyesoutplz');
+    }
+  };
+
   function updateSystem() {
     let tosetcolour = 'system';
 
@@ -72,7 +80,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         } else {
           if (bodySelected) {
             bodySelected.classList.remove('dark');
-            bodySelected.classList.remove('dontburnmyeyesoutplz');
+            dontburnmyeyes();
           }
 
           if (htmlSelected) {
@@ -88,12 +96,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     // Whenever the user explicitly chooses light mode
     localStorage.theme = 'light';
     updateSystem();
-
-    const bodySelected = document.querySelector('body');
-
-    if (bodySelected) {
-      bodySelected.classList.remove('dontburnmyeyesoutplz');
-    }
+    dontburnmyeyes();
   }
 
   function makeDark() {
@@ -108,11 +111,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     console.log('make sys');
     localStorage.removeItem('theme');
     updateSystem();
-    const bodySelected = document.querySelector('body');
-
-    if (bodySelected) {
-      bodySelected.classList.remove('dontburnmyeyesoutplz');
-    }
+    dontburnmyeyes();
   }
 
   updateSystem();
