@@ -133,7 +133,7 @@ export default function About(props: any) {
           {/*BRUH OKAY THE CONTACTS GO HERE */}
 
           <h2 className='mt-4 mb-2'>Our Team</h2>
-          <div className='mb-4 grid grid-cols-1 dark:text-gray-100 sm:grid-cols-2 '>
+          <div className='mb-4 grid grid-cols-1 gap-x-4 dark:text-gray-100 sm:grid-cols-2 '>
             <div className='flex flex-col gap-y-8'>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl dark:text-gray-100'>Leadership</p>

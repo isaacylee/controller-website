@@ -72,6 +72,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         } else {
           if (bodySelected) {
             bodySelected.classList.remove('dark');
+            bodySelected.classList.remove('dontburnmyeyesoutplz');
           }
 
           if (htmlSelected) {
@@ -87,6 +88,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     // Whenever the user explicitly chooses light mode
     localStorage.theme = 'light';
     updateSystem();
+
+    const bodySelected = document.querySelector('body');
+
+    if (bodySelected) {
+      bodySelected.classList.remove('dontburnmyeyesoutplz');
+    }
   }
 
   function makeDark() {
@@ -101,6 +108,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     console.log('make sys');
     localStorage.removeItem('theme');
     updateSystem();
+    const bodySelected = document.querySelector('body');
+
+    if (bodySelected) {
+      bodySelected.classList.remove('dontburnmyeyesoutplz');
+    }
   }
 
   updateSystem();
