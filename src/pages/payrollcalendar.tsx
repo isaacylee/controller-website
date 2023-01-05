@@ -269,7 +269,7 @@ export default function PayrollCalendar(props: any) {
             </div>
           </div>
 
-          <div className='sm:mx-4 sm:grid sm:grid-cols-2 sm:gap-8 lg:mx-0 lg:grid-cols-3'>
+          <div className='mt-2 sm:mx-4 sm:grid sm:grid-cols-2 sm:gap-8 lg:mx-0 lg:grid-cols-3'>
             {calendar.length != 0 &&
               calendar.map((month, monthindex: number) => (
                 <div key={monthindex} className=''>
