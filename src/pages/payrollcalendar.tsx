@@ -130,7 +130,9 @@ const endofpayperiodsreference: any = {
 export function DatesLegendItem(props: any) {
   return (
     <div className='flex flex-row flex-nowrap'>
-      <div className={`h-5 w-5 rounded-full ${props.colorstring} `}></div>
+      <div
+        className={`h-5 w-5 rounded-full ${props.colorstring} printcolour `}
+      ></div>
 
       <div className='ml-2  print:text-black'>{props.label}</div>
     </div>
