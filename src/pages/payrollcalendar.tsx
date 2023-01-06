@@ -343,7 +343,7 @@ export default function PayrollCalendar(props: any) {
                           ) : (
                             <div
                               key={dayindex}
-                              className={`flex flex h-7 w-7 items-center justify-center rounded-full ${givecolourstringfromdate(
+                              className={`flex h-7 w-7 items-center justify-center rounded-full ${givecolourstringfromdate(
                                 monthindex + 1,
                                 day
                               )}`}
@@ -367,7 +367,7 @@ export default function PayrollCalendar(props: any) {
                           )
                         )}
 
-                        <div className='h-7 w-7 font-bold'>
+                        <div className='flex h-7 w-7 justify-center font-bold'>
                           {weekline[6] !== 0 &&
                             endofpayperiodstring(
                               monthindex + 1,
