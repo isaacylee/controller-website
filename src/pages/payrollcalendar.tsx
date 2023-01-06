@@ -1,5 +1,4 @@
 import c from 'calendar';
-import monthnpm from 'month';
 import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
@@ -315,6 +314,7 @@ export default function PayrollCalendar(props: any) {
                 colorstring='bg-blue-500 dark:bg-blue-500 dark:text-black'
                 label='End of Pay Period'
               />
+              [PP] Period Number
             </div>
           </div>
 
@@ -323,7 +323,12 @@ export default function PayrollCalendar(props: any) {
               calendar.map((month, monthindex: number) => (
                 <div key={monthindex} className=''>
                   <h3 className='w-full text-center'>
-                    {monthnpm(monthindex + 1)}
+                    {new Date(`2022-${monthindex + 1}-15`).toLocaleDateString(
+                      'default',
+                      {
+                        month: 'long',
+                      }
+                    )}
                   </h3>
                   <div className='mx-auto pt-2'>
                     {month.map((weekline, weeklineindex) => (
