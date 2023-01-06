@@ -130,7 +130,7 @@ const endofpayperiodsreference: any = {
 export function DatesLegendItem(props: any) {
   return (
     <div className='flex flex-row flex-nowrap'>
-      <div className={`h-5 w-5 rounded-full ${props.colorstring}`}></div>
+      <div className={`h-5 w-5 rounded-full ${props.colorstring} `}></div>
 
       <div className='ml-2'>{props.label}</div>
     </div>
@@ -226,15 +226,15 @@ export default function PayrollCalendar(props: any) {
 
     switch (category) {
       case 'holiday':
-        return 'bg-yellow-500 dark:bg-yellow-500 dark:text-black';
+        return 'bg-yellow-500 dark:bg-yellow-500 dark:text-black printcolour ';
       case 'excess':
-        return 'bg-purple-500 dark:bg-purple-500 dark:text-black';
+        return 'bg-purple-500 dark:bg-purple-500 dark:text-black printcolour ';
       case 'nodeduction':
-        return 'bg-red-500 dark:bg-red-500 dark:text-black';
+        return 'bg-red-500 dark:bg-red-500 dark:text-black printcolour ';
       case 'endofpay':
-        return 'bg-blue-500 dark:bg-blue-500 dark:text-black';
+        return 'bg-blue-500 dark:bg-blue-500 dark:text-black printcolour ';
       case 'payday':
-        return 'bg-green-500 dark:bg-green-500 dark:text-black';
+        return 'bg-green-500 dark:bg-green-500 dark:text-black printcolour';
       default:
         return '';
     }
@@ -361,7 +361,7 @@ export default function PayrollCalendar(props: any) {
                           ) : (
                             <div
                               key={dayindex}
-                              className={`flex h-7 w-7 items-center justify-center rounded-full ${givecolourstringfromdate(
+                              className={`printcolour flex h-7 w-7 items-center justify-center rounded-full ${givecolourstringfromdate(
                                 monthindex + 1,
                                 day
                               )}`}
