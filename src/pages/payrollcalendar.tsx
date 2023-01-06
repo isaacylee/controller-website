@@ -132,7 +132,7 @@ export function DatesLegendItem(props: any) {
     <div className='flex flex-row flex-nowrap'>
       <div className={`h-5 w-5 rounded-full ${props.colorstring} `}></div>
 
-      <div className='ml-2'>{props.label}</div>
+      <div className='ml-2  print:text-black'>{props.label}</div>
     </div>
   );
 }
@@ -288,11 +288,13 @@ export default function PayrollCalendar(props: any) {
 
         <Seo title='Payroll Calendar - Los Angeles Controller' />
 
-        <div className='mx-2 flex w-full flex-col px-4 py-2 dark:text-white sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl  xl:max-w-4xl'>
-          <div className='flex flex-row gap-x-2 pt-2  pb-4'>
-            <h1 className='dark:text-white'>Payroll Calendar {selectedYear}</h1>
+        <div className='mx-2 flex w-full flex-col px-4 py-2   dark:text-white print:text-black  print:text-black sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl  xl:max-w-4xl'>
+          <div className='flex flex-row gap-x-2 pt-2  pb-4  print:text-black '>
+            <h1 className='dark:text-white  print:text-black'>
+              Payroll Calendar {selectedYear}
+            </h1>
             <Link download={true} href='/2023payroll.pdf'>
-              <button className='my-auto rounded-full bg-black p-1.5 text-white dark:bg-white dark:text-black md:p-2'>
+              <button className='my-auto rounded-full bg-black p-1.5 text-white dark:bg-white dark:text-black print:hidden  md:p-2'>
                 <svg className='l-4 h-4' viewBox='0 0 24 24'>
                   <path
                     fill='currentColor'
@@ -372,7 +374,7 @@ export default function PayrollCalendar(props: any) {
                                 }-${day}`}
                               >
                                 <p
-                                  className='m-auto'
+                                  className='m-auto print:text-black'
                                   aria-label={getAriaOfDate(
                                     monthindex + 1,
                                     day
@@ -385,7 +387,7 @@ export default function PayrollCalendar(props: any) {
                           )
                         )}
 
-                        <div className='flex h-7 w-7 justify-center font-bold'>
+                        <div className='flex h-7 w-7 justify-center font-bold  print:text-black'>
                           {weekline[6] !== 0 &&
                             endofpayperiodstring(
                               monthindex + 1,
