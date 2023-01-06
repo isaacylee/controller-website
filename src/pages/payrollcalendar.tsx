@@ -330,7 +330,8 @@ export default function PayrollCalendar(props: any) {
                 label='End of Pay Period'
               />
               <p>
-                <span className='font-bold'>[PP]</span> Pay Period
+                <span className='font-bold print:text-black'>[PP]</span> Pay
+                Period
               </p>
             </div>
           </div>
