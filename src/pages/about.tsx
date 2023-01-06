@@ -421,6 +421,54 @@ export default function About(props: any) {
             information.
           </p>
 
+          <div className='break-normal'></div>
+
+          <h1>Management Services</h1>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
+            The Management Services Division is responsible for all
+            administrative aspects of the Controller’s Office, including all
+            departmental personnel, payroll, budgeting, accounting, facilities
+            management, and emergency preparedness tasks. The Division also
+            provides administrative support to the Executive Office and works
+            closely with Office management to accomplish division and
+            departmental goals.
+          </p>
+          <h3>Personnel, Budgeting, Accounting and Procurement</h3>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
+            Management Services handles all Office personnel matters including
+            the hiring and onboarding of new employees, employee development,
+            workers’ compensation, labor relations, training, and discipline.
+            The division also administers and manages the payroll for Controller
+            employees and ensures they are paid correctly. The Division also
+            prepares and submits the department’s annual budget request prepared
+            through collaboration with Divisions on resources needed to support
+            departmental programs, expenditure tracking and control, revenue
+            projections, and performance metrics. The Division also oversees
+            Controller accounting functions including accounts receivable and
+            payable, departmental financial report preparation, and ordering and
+            issuing all employee supplies and equipment. Management Services
+            facilitates procurement of professional services, technology and
+            equipment. Duties include project scoping, RFP/RFQ development,
+            RFP/RFQ process administration, contract negotiations, contract
+            administration (30+ contracts), procurement recommendations and
+            compliance with City procurement policies.{' '}
+          </p>
+          <h3>Facilities Management, Records and Technical Support</h3>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:pb-8'>
+            Management Services also oversees all technical support services for
+            the Controller’s Office including maintenance of the Controller’s
+            Internet and Intranet websites, and coordination of computers,
+            phones, servers, e-mails, and financial system security for
+            department employees. The Division handles all Controller
+            facilities-related tasks including maintenance and construction
+            requests, contracted facilities services, and coordination with
+            building security and General Services Division (GSD) on security
+            requests and access control. The division also manages the
+            Controller’s records including record storage facilities, retrieval
+            of records, and destruction of files based upon retention schedule,
+            and the Office’s California Public Records Act (CPRA) requests.
+          </p>
+
           {/* </div> */}
         </div>
 
