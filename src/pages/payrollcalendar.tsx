@@ -96,6 +96,37 @@ const importantdates: any = {
   },
 };
 
+const endofpayperiodsreference: any = {
+  '2023': {
+    '01-14': '15',
+    '01-28': '16',
+    '02-11': '17',
+    '02-25': '18',
+    '03-11': '19',
+    '03-25': '20',
+    '04-08': '21',
+    '04-22': '22',
+    '05-06': '23',
+    '05-20': '24',
+    '06-03': '25',
+    '06-17': '26',
+    '07-01': '1',
+    '07-15': '2',
+    '07-29': '3',
+    '08-12': '4',
+    '08-26': '5',
+    '09-09': '6',
+    '09-23': '7',
+    '10-07': '8',
+    '10-21': '9',
+    '11-04': '10',
+    '11-18': '11',
+    '12-02': '12',
+    '12-16': '13',
+    '12-30': '14',
+  },
+};
+
 export function DatesLegendItem(props: any) {
   return (
     <div className='flex flex-row flex-nowrap'>
@@ -145,6 +176,26 @@ export default function PayrollCalendar(props: any) {
     const category = listofimportantdates[stringmonth][stringday];
 
     return category;
+  }
+
+  function endofpayperiodstring(month: number, day: number) {
+    const yeartoref = endofpayperiodsreference[String(selectedYear)];
+
+    const stringmonth = ('0' + month).slice(-2);
+
+    const stringday = ('0' + day).slice(-2);
+
+    const refstring = `${stringmonth}-${stringday}`;
+
+    console.log('ref string', refstring);
+
+    const answer = yeartoref[refstring];
+
+    if (answer) {
+      return answer;
+    } else {
+      return '';
+    }
   }
 
   function getAriaOfDate(month: number, day: number) {
@@ -278,7 +329,7 @@ export default function PayrollCalendar(props: any) {
                     {month.map((weekline, weeklineindex) => (
                       <div
                         key={weeklineindex}
-                        className='grid grid-cols-7 content-center'
+                        className='grid grid-cols-8 content-center'
                       >
                         {weekline.map((day, dayindex) =>
                           day === 0 ? (
@@ -315,6 +366,21 @@ export default function PayrollCalendar(props: any) {
                             </div>
                           )
                         )}
+
+                        <div className='h-7 w-7 font-bold'>
+                          {weekline[6] !== 0 && (
+                            <>
+                              <span>[</span>
+                              <span>
+                                {endofpayperiodstring(
+                                  monthindex + 1,
+                                  weekline[6]
+                                )}
+                              </span>
+                              <span>]</span>
+                            </>
+                          )}
+                        </div>
                       </div>
                     ))}
                   </div>
