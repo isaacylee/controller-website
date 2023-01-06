@@ -314,7 +314,9 @@ export default function PayrollCalendar(props: any) {
                 colorstring='bg-blue-500 dark:bg-blue-500 dark:text-black'
                 label='End of Pay Period'
               />
-              <p>[PP] Pay Period</p>
+              <p>
+                <span className='font-bold'>[PP]</span> Pay Period
+              </p>
             </div>
           </div>
 
