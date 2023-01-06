@@ -22,11 +22,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3.3.0
 
+      - name: Authenticate Google Cloud
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: ${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT }}
+
+
       # This step is where our service account will be authenticated
       - uses: google-github-actions/setup-gcloud@v1.0.1
         with:
           project_id: ${{ secrets.CLOUD_RUN_PROJECT_NAME }}
-          service_account_key: ${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT }}
           service_account_email: ${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT_EMAIL }}
 
       - name: Enable the necessary APIs and enable docker auth
