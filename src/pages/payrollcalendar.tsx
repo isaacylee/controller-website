@@ -368,18 +368,22 @@ export default function PayrollCalendar(props: any) {
                         )}
 
                         <div className='h-7 w-7 font-bold'>
-                          {weekline[6] !== 0 && (
-                            <>
-                              <span>[</span>
-                              <span>
-                                {endofpayperiodstring(
-                                  monthindex + 1,
-                                  weekline[6]
-                                )}
-                              </span>
-                              <span>]</span>
-                            </>
-                          )}
+                          {weekline[6] !== 0 &&
+                            endofpayperiodstring(
+                              monthindex + 1,
+                              weekline[6]
+                            ) && (
+                              <>
+                                <span>[</span>
+                                <span>
+                                  {endofpayperiodstring(
+                                    monthindex + 1,
+                                    weekline[6]
+                                  )}
+                                </span>
+                                <span>]</span>
+                              </>
+                            )}
                         </div>
                       </div>
                     ))}
