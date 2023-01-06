@@ -1,4 +1,5 @@
 import c from 'calendar';
+import Link from 'next/link';
 import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
@@ -288,9 +289,19 @@ export default function PayrollCalendar(props: any) {
         <Seo title='Payroll Calendar - Los Angeles Controller' />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 dark:text-white sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl  xl:max-w-4xl'>
-          <h1 className='pt-8 pb-4 dark:text-white'>
-            Payroll Calendar {selectedYear}
-          </h1>
+          <div className='flex-rowpt-8 flex gap-x-2   pb-4'>
+            <h1 className='dark:text-white'>Payroll Calendar {selectedYear}</h1>
+            <Link download={true} href='/payrollcalendar_2023_v2.pdf'>
+              <button className='rounded-full bg-black p-1.5 text-white md:p-2'>
+                <svg className='l-4 h-4' viewBox='0 0 24 24'>
+                  <path
+                    fill='currentColor'
+                    d='M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z'
+                  />
+                </svg>
+              </button>
+            </Link>
+          </div>
 
           <div>
             <div className='flex flex-row flex-wrap gap-x-4 gap-y-2'>
