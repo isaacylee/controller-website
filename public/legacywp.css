@@ -1,0 +1,8 @@
+.entry-content img.alignright,
+.entry-content .wp-caption.alignright {
+  margin-right: 0;
+}
+
+.alignright {
+  float: right;
+}

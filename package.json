@@ -31,6 +31,7 @@
     "google-translate-api": "^2.3.0",
     "jquery": "^3.6.3",
     "jsdom": "^21.0.0",
+    "legacystyles": "^1.0.0",
     "month": "^2.0.1",
     "next": "^13.0.7",
     "next-i18next": "^13.0.2",

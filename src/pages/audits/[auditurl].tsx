@@ -1,5 +1,6 @@
 import jquerylib from 'jquery';
 import jsdom from 'jsdom';
+import Head from 'next/head';
 import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
@@ -31,28 +32,35 @@ export default function Audit(props: auditinterface) {
         "[style='position:absolute;top:0;left:0;right:0;bottom:0;border:0;padding:0;margin:0']"
       )
       .forEach((eachElement) => {
-        eachElement.remove();
+        if (eachElement.parentElement) {
+          if (eachElement.parentElement.querySelector('iframe[src]')) {
+            eachElement.remove();
+          }
+        }
       });
 
     document.querySelectorAll('iframe:not([src])').forEach((eachElement) => {
-      eachElement.remove();
+      if (eachElement.parentElement) {
+        if (eachElement.parentElement.querySelector('iframe[src]')) {
+          eachElement.remove();
+        }
+      }
     });
   };
 
   React.useEffect(() => {
     removeloadingissuesontableau();
 
-    setTimeout(() => {
+    setInterval(() => {
       removeloadingissuesontableau();
     }, 1000);
-
-    setTimeout(() => {
-      removeloadingissuesontableau();
-    }, 4000);
   }, []);
 
   return (
     <>
+      <Head>
+        <link rel='stylesheet' href='/legacywp.css' />
+      </Head>
       <Navbar />
       <Seo
         title={props.audit.name}
