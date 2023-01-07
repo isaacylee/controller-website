@@ -4,6 +4,7 @@ import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
 
+import { cleanthehtml } from '@/components/cleanthehtmlforprevpages';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
@@ -102,7 +103,7 @@ export async function getServerSideProps(context: any) {
 
   const cleanedobject = {
     ...returnedaudit,
-    htmlofpage: cleanedhtml,
+    htmlofpage: cleanthehtml(cleanedhtml),
   };
 
   if (returnedaudit == undefined) {
@@ -112,12 +113,7 @@ export async function getServerSideProps(context: any) {
   } else {
     return {
       props: {
-        audit: cleanedobject
-          .replace(
-            /https:\/\/(www.)?lacontroller.org\/wp-content\//g,
-            'https://wpstaticarchive.lacontroller.io/wp-content/'
-          )
-          .replace(/https:\/\/(www.)?lacontroller.org\//g, '/'),
+        audit: cleanedobject,
       },
     };
   }
