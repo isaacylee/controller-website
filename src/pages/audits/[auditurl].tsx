@@ -25,6 +25,32 @@ interface auditinterface {
 }
 
 export default function Audit(props: auditinterface) {
+  const removeloadingissuesontableau = () => {
+    document
+      .querySelectorAll(
+        "[style='position:absolute;top:0;left:0;right:0;bottom:0;border:0;padding:0;margin:0']"
+      )
+      .forEach((eachElement) => {
+        eachElement.remove();
+      });
+
+    document.querySelectorAll('iframe:not([src])').forEach((eachElement) => {
+      eachElement.remove();
+    });
+  };
+
+  React.useEffect(() => {
+    removeloadingissuesontableau();
+
+    setTimeout(() => {
+      removeloadingissuesontableau();
+    }, 1000);
+
+    setTimeout(() => {
+      removeloadingissuesontableau();
+    }, 4000);
+  }, []);
+
   return (
     <>
       <Navbar />
