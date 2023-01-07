@@ -4,7 +4,8 @@ export function cleanthehtml(htmlstring: string) {
       /https:\/\/(www.)?lacontroller.org\/wp-content\//g,
       'https://wpstaticarchive.lacontroller.io/wp-content/'
     )
-    .replace(/https:\/\/(www.)?lacontroller.org\//g, '/');
+    .replace(/https:\/\/(www.)?lacontroller.org\//g, '/')
+    .replace(/style="height: 3399px;"/gi, '');
 
   const tableaustring =
     '<script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>';
