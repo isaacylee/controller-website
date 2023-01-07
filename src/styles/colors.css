@@ -725,3 +725,7 @@
   --color-primary-900: rgb(var(--tw-color-primary-900));
   /* #0f172a */
 }
+
+.dark a {
+  color: #41ffca;
+}
