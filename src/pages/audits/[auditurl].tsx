@@ -1,3 +1,5 @@
+import jquerylib from 'jquery';
+import jsdom from 'jsdom';
 import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
@@ -84,6 +86,25 @@ export async function getServerSideProps(context: any) {
 
   const returnedaudit: any = auditsfullbroken[auditurl];
 
+  const dom = new jsdom.JSDOM(returnedaudit.htmlofpage);
+
+  const $: any = jquerylib(dom.window);
+
+  $('img[data-lazy-src]').each((elementindex: number, element: any) => {
+    console.log(element);
+
+    $(element).attr('src', $(element).attr('data-lazy-src'));
+
+    $(element).attr('srcset', $(element).attr('data-lazy-srcset'));
+  });
+
+  const cleanedhtml = dom.serialize();
+
+  const cleanedobject = {
+    ...returnedaudit,
+    htmlofpage: cleanedhtml,
+  };
+
   if (returnedaudit == undefined) {
     return {
       notFound: true,
@@ -91,7 +112,12 @@ export async function getServerSideProps(context: any) {
   } else {
     return {
       props: {
-        audit: returnedaudit,
+        audit: cleanedobject
+          .replace(
+            /https:\/\/(www.)?lacontroller.org\/wp-content\//g,
+            'https://wpstaticarchive.lacontroller.io/wp-content/'
+          )
+          .replace(/https:\/\/(www.)?lacontroller.org\//g, '/'),
       },
     };
   }

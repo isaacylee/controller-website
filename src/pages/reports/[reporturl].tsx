@@ -1,3 +1,5 @@
+import jquerylib from 'jquery';
+import jsdom from 'jsdom';
 import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
@@ -85,12 +87,28 @@ export async function getServerSideProps(context: any) {
 
   delete returnedreport.textofpage;
 
+  const dom = new jsdom.JSDOM(returnedreport.htmlofpage);
+
+  const $: any = jquerylib(dom.window);
+
+  $('img[data-lazy-src]').each((elementindex: number, element: any) => {
+    console.log(element);
+
+    $(element).attr('src', $(element).attr('data-lazy-src'));
+
+    $(element).attr('srcset', $(element).attr('data-lazy-srcset'));
+  });
+
+  const cleanedhtml = dom.serialize();
+
   const returnedreportcleaned = {
     ...returnedreport,
-    htmlofpage: returnedreport.htmlofpage.replace(
-      /https:\/\/(www.)?lacontroller.org\//g,
-      '/'
-    ),
+    htmlofpage: cleanedhtml
+      .replace(
+        /https:\/\/(www.)?lacontroller.org\/wp-content\//g,
+        'https://wpstaticarchive.lacontroller.io/wp-content/'
+      )
+      .replace(/https:\/\/(www.)?lacontroller.org\//g, '/'),
   };
 
   if (returnedreport == undefined) {
