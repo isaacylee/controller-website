@@ -39,6 +39,12 @@ function EachDataButton(props: any) {
               <p className=''>
                 Data Since <span className='font-semibold'>{props.since}</span>
               </p>
+              <p className=''>
+                Size <span className='font-semibold'>{props.size}</span>
+              </p>
+              <p className=''>
+                Rows <span className='font-semibold'>{props.rowcount}</span>
+              </p>
               <button className={kirbybutton}>View Data</button>
             </div>
           </a>
@@ -56,12 +62,16 @@ export default function OpenDataSeries() {
       tags: ['socrata'],
       lastupdated: '2022-12-30',
       since: '2013',
+      size: '122 MB',
+      rowcount: '748K',
     },
     {
       name: 'Checkbook',
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
       tags: ['socrata'],
       lastupdated: '2023-01-03',
+      size: '4GB',
+      rowcount: '7.93M',
       since: '2012',
     },
     {
@@ -70,12 +80,16 @@ export default function OpenDataSeries() {
       tags: ['socrata'],
       lastupdated: '2022-11-07',
       since: '2012',
+      size: '39.6MB',
+      rowcount: '195K',
     },
     {
       name: 'Revenue',
       link: 'https://controllerdata.lacity.org/browse?category=Revenue',
       tags: ['socrata'],
       lastupdated: '2022-12-28',
+      rowcount: '30.3K',
+      size: '4.2MB',
       since: '2012',
     },
   ];
@@ -90,6 +104,8 @@ export default function OpenDataSeries() {
           lastupdated={eachlink.lastupdated}
           since={eachlink.since}
           tags={eachlink.tags}
+          size={eachlink.size}
+          rowcount={eachlink.rowcount}
         />
       ))}
     </div>
