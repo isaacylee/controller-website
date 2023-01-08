@@ -99,12 +99,11 @@ export default function Audit(props: auditinterface) {
               </Link>
             </div>
 
-            <div>
+            <div className='legacycontentgal max-w-3xl'>
               <div
                 dangerouslySetInnerHTML={{
                   __html: props.audit.htmlofpage,
                 }}
-                className='legacycontentgal max-w-3xl'
               ></div>
             </div>
           </div>

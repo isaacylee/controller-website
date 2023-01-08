@@ -200,7 +200,7 @@ export default function Navbar(props: any) {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-green-900 text-white'
+                      ? 'bg-green-900 text-white dark:text-white'
                       : 'text-gray-800 dark:text-gray-100',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}

@@ -29,6 +29,10 @@
   border-color: '#dfdfdf';
 }
 
+.dark .legacycontentgal a:not([data-vc-accordion]) {
+  color: #41ffca;
+}
+
 .dark a[data-vc-accordion] {
   color: #ffffff;
 }

@@ -97,7 +97,7 @@ export default function Report(props: auditinterface) {
               </Link>
             </div>
 
-            <div>
+            <div className='legacycontentgal'>
               <div
                 dangerouslySetInnerHTML={{
                   __html: props.report.htmlofpage,
