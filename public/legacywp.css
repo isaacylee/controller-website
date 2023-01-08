@@ -6,3 +6,25 @@
 .alignright {
   float: right;
 }
+
+.legacycontentgal p {
+  margin-bottom: 30px;
+}
+
+.legacycontentgal table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.legacycontentgal th {
+  border: 1px solid;
+}
+
+.legacycontentgal td {
+  border: 1px solid;
+  padding: 8px 8px 8px 8px;
+}
+
+.dark .legacycontentgal table {
+  border-color: '#dfdfdf';
+}

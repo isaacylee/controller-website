@@ -104,6 +104,7 @@ export default function Audit(props: auditinterface) {
                 dangerouslySetInnerHTML={{
                   __html: props.audit.htmlofpage,
                 }}
+                className='legacycontentgal max-w-3xl'
               ></div>
             </div>
           </div>
