@@ -726,7 +726,7 @@
   /* #0f172a */
 }
 
-.dark a {
+.dark a:not("[data-vc-accordion]") {
   color: #41ffca;
 }
 
