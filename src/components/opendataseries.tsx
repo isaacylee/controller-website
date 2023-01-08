@@ -39,12 +39,14 @@ function EachDataButton(props: any) {
               <p className=''>
                 Data Since <span className='font-semibold'>{props.since}</span>
               </p>
-              <p className=''>
-                Size <span className='font-semibold'>{props.size}</span>
-              </p>
-              <p className=''>
-                Rows <span className='font-semibold'>{props.rowcount}</span>
-              </p>
+              <div className='flex flex-row gap-x-2'>
+                <p className=''>
+                  Size <span className='font-semibold'>{props.size}</span>
+                </p>
+                <p className=''>
+                  Rows <span className='font-semibold'>{props.rowcount}</span>
+                </p>
+              </div>
               <button className={kirbybutton}>View Data</button>
             </div>
           </a>
