@@ -35,7 +35,7 @@ const importantdates: any = {
       '11-24',
       '12-25',
     ],
-    excess: ['01-11'],
+    excess: ['01-25'],
     nodeduction: ['05-31', '11-29'],
     endofpay: [
       //every other saturday of 2023
@@ -70,7 +70,7 @@ const importantdates: any = {
     payday: [
       //every other wednesday of 2023 except for the excess sick pays and no deduction pays
 
-      '01-25',
+      '01-11',
       '02-08',
       '02-22',
       '03-08',
