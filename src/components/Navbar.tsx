@@ -116,7 +116,7 @@ export default function Navbar(props: any) {
                 <div className='flex flex-shrink-0 items-center'>
                   <Link href='/'>
                     <Image
-                      className='block h-8 w-auto dark:hidden'
+                      className='block h-8 w-auto dark:hidden print:block'
                       src='/images/logo-elect.png'
                       alt='Kenneth Mejia LA City Controller'
                       height={32}
@@ -125,7 +125,7 @@ export default function Navbar(props: any) {
                       unoptimized={true}
                     />
                     <Image
-                      className='hidden h-8 w-auto dark:block'
+                      className='hidden h-8 w-auto dark:block print:hidden'
                       src='/images/KennethMejia-logo-white-elect.png'
                       alt='Kenneth Mejia LA City Controller'
                       height={32}
