@@ -295,7 +295,12 @@ export default function PayrollCalendar(props: any) {
             <h1 className='dark:text-white  print:text-black'>
               Payroll Calendar {selectedYear}
             </h1>
-            <Link download={true} href='/2023payroll.pdf'>
+            <Link
+              download={true}
+              href='/payroll2023v2.pdf'
+              target='_blank'
+              referrerPolicy='no-referrer'
+            >
               <button className='my-auto rounded-full bg-black p-1.5 text-white dark:bg-white dark:text-black print:hidden  md:p-2'>
                 <svg className='l-4 h-4' viewBox='0 0 24 24'>
                   <path
@@ -336,7 +341,12 @@ export default function PayrollCalendar(props: any) {
             </div>
           </div>
 
-          <div className='mt-2 print:grid-cols-3 sm:mx-4 sm:grid sm:grid-cols-2 sm:gap-8 lg:mx-0 lg:grid-cols-3'>
+          <div
+            className={
+              `mt-2 sm:mx-4 sm:grid sm:grid-cols-2 sm:gap-8 lg:mx-0 lg:grid-cols-3` +
+              '  print:grid-cols-3 '
+            }
+          >
             {calendar.length != 0 &&
               calendar.map((month, monthindex: number) => (
                 <div key={monthindex} className=''>
