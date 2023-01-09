@@ -30,7 +30,10 @@ export default function ReportsIndex(props: any) {
       <Layout>
         {/* <Seo templateTitle='Home' /> */}
 
-        <Seo />
+        <Seo
+          title='Financial Reports'
+          description='Financial Reports as mandated by the Charter since 2013'
+        />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h1 className='dark:text-gray-50'>Financial Reports</h1>

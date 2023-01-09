@@ -1,7 +1,11 @@
+import jquerylib from 'jquery';
+import jsdom from 'jsdom';
+import Head from 'next/head';
 import Link from 'next/link';
 import * as React from 'react';
 import { titleCase } from 'true-case';
 
+import { cleanthehtml } from '@/components/cleanthehtmlforprevpages';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
@@ -22,10 +26,46 @@ interface auditinterface {
 }
 
 export default function Report(props: auditinterface) {
+  const removeloadingissuesontableau = () => {
+    document
+      .querySelectorAll(
+        "[style='position:absolute;top:0;left:0;right:0;bottom:0;border:0;padding:0;margin:0']"
+      )
+      .forEach((eachElement) => {
+        if (eachElement.parentElement) {
+          if (eachElement.parentElement.querySelector('iframe[src]')) {
+            eachElement.remove();
+          }
+        }
+      });
+
+    document.querySelectorAll('iframe:not([src])').forEach((eachElement) => {
+      if (eachElement.parentElement) {
+        if (eachElement.parentElement.querySelector('iframe[src]')) {
+          eachElement.remove();
+        }
+      }
+    });
+  };
+
+  React.useEffect(() => {
+    removeloadingissuesontableau();
+
+    setInterval(() => {
+      removeloadingissuesontableau();
+    }, 500);
+  }, []);
+
   return (
     <>
+      <Head>
+        <link rel='stylesheet' href='/legacywp.css' />
+      </Head>
       <Navbar />
-      <Seo />
+      <Seo
+        title={props.report.name}
+        description={`Financial Report for ${props.report.year}`}
+      />
       <main className=' dark:bg-zinc-900'>
         {props.report && (
           <div className=' container mx-4 px-4 pb-3 pt-5  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
@@ -57,7 +97,7 @@ export default function Report(props: auditinterface) {
               </Link>
             </div>
 
-            <div>
+            <div className='legacycontentgal'>
               <div
                 dangerouslySetInnerHTML={{
                   __html: props.report.htmlofpage,
@@ -82,12 +122,23 @@ export async function getServerSideProps(context: any) {
 
   delete returnedreport.textofpage;
 
+  const dom = new jsdom.JSDOM(returnedreport.htmlofpage);
+
+  const $: any = jquerylib(dom.window);
+
+  $('img[data-lazy-src]').each((elementindex: number, element: any) => {
+    console.log(element);
+
+    $(element).attr('src', $(element).attr('data-lazy-src'));
+
+    $(element).attr('srcset', $(element).attr('data-lazy-srcset'));
+  });
+
+  const cleanedhtml = dom.serialize();
+
   const returnedreportcleaned = {
     ...returnedreport,
-    htmlofpage: returnedreport.htmlofpage.replace(
-      /https:\/\/(www.)?lacontroller.org\//g,
-      '/'
-    ),
+    htmlofpage: cleanthehtml(cleanedhtml),
   };
 
   if (returnedreport == undefined) {

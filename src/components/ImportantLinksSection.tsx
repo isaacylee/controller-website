@@ -15,7 +15,7 @@ const links = [
     url: 'https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1vZq0Z4v56jQHspbxb5Mt3YP_1leQoq6nMlFmf_Qx65r9c6wBy4D6TY4QOlYb6cEWDt9gQnIMz',
   },
   {
-    name: '📰 Signup for Updates',
+    name: '📰 Sign up for Newsletters/Texts',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSfr1ndu5UaX3IPaxWi30tEpw3J7ZMB5d8HdKC9Uhg9IniIH5w/viewform',
   },
   { name: '📅 Payroll Calendar', url: '/payrollcalendar/' },

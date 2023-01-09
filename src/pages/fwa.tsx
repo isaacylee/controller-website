@@ -25,10 +25,13 @@ export default function FraudWasteAndAbuse(props: any) {
     <>
       <Navbar />
       <Layout>
-        <Seo />
+        <Seo
+          title='Report Fraud, Waste, and Abuse'
+          description='Send a report to the FWA Unit or learn more about types of fraud.'
+        />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-4 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h2 className='pt-8 pb-2 dark:text-white'>
+          <h2 className='pt-4 pb-2 dark:text-white sm:pt-8'>
             Report Fraud, Waste, and Abuse
           </h2>
 
@@ -58,30 +61,30 @@ export default function FraudWasteAndAbuse(props: any) {
             </Link>
           </div>
 
-          <div className='mt-2 dark:text-white'>
+          <div className='mt-8 dark:text-white'>
             {' '}
             <h2>Examples of Types of Fraud, Waste and Abuse</h2>
-            <h3>Accounting Fraud</h3>
+            <h3 className='mt-4'>Accounting Fraud</h3>
             <p>
               Alteration, destruction, or omission of records in order to
               misstate financial performance or transactions. For example, an
               employee enters false information into a City financial or
               accounting system.
             </p>
-            <h3>Bribery or Kickbacks</h3>
+            <h3 className='mt-2'>Bribery or Kickbacks</h3>
             <p>
               When a person gives something of value to a public employee in
               order to improperly affect that individual’s official actions and
               receive some type of preferential treatment. For example, paying a
               City employee to obtain a contract with the City.
             </p>
-            <h3>Contractor Fraud</h3>
+            <h3 className='mt-2'>Contractor Fraud</h3>
             <p>
               Fraud committed by a City contractor where the City is the victim.
               For example, a contractor bills the City for services it never
               provided or inflates the value of its services.
             </p>
-            <h3>Contractor Fraud</h3>
+            <h3 className='mt-2'>Contractor Fraud</h3>
             <p>
               Waste – The extravagant or excessive expenditure of City funds
               above and beyond the level that is reasonably required to meet the
@@ -96,30 +99,30 @@ export default function FraudWasteAndAbuse(props: any) {
               not otherwise lawful. For example, using City computers to work on
               one’s personal business.
             </p>
-            <h3>Contractor Selection Concerns</h3>
+            <h3 className='mt-2'>Contractor Selection Concerns</h3>
             <p>
               Allegation of unfair awarding of a contract or selection of a
               contractor. For example, an employee awards a contract without
               following City or departmental contracting policies.
             </p>
-            <h3>Falsified Records</h3>
+            <h3 className='mt-2'>Falsified Records</h3>
             <p>
               Altering records from their original state to a falsified
               condition. For example, an employee submits a falsified invoice in
               order to receive reimbursement.
             </p>
-            <h3>Payroll Fraud</h3>
+            <h3 className='mt-2'>Payroll Fraud</h3>
             <p>
               Manipulating the time or payroll system to receive payment not
               earned. For example, an employee records overtime not worked in
               order to receive additional pay.
             </p>
-            <h3>Theft of City Resources</h3>
+            <h3 className='mt-2'>Theft of City Resources</h3>
             <p>
               Taking, using or misappropriating City resources without
               permission. For example, using City equipment for personal use.
             </p>
-            <h2 className='mt-2'>Report Other Types of Allegations</h2>
+            <h2 className='mt-4'>Report Other Types of Allegations</h2>
             <p>
               Reports may contain several different types of allegations,
               including allegations within and outside of the Controller’s FWA
@@ -127,7 +130,7 @@ export default function FraudWasteAndAbuse(props: any) {
               these other types of allegations, but they may be referred to the
               department with specific jurisdiction over the allegations.
             </p>
-            <h3>City Ethics Commission</h3>
+            <h3 className='mt-4'>City Ethics Commission</h3>
             <p>
               The Ethics Commission has the authority to investigate violations
               of state and City laws regarding campaign financing, lobbying,
@@ -144,7 +147,7 @@ export default function FraudWasteAndAbuse(props: any) {
                 ethics.lacity.org/enforcement/#reportaviolation
               </a>
             </p>
-            <h3>Discrimination and Harassment</h3>
+            <h3 className='mt-2'>Discrimination and Harassment</h3>
             <p>
               The Personnel Department Office of Workplace Equity is responsible
               for investigating violations of the Equitable Workplace Standards
@@ -167,7 +170,7 @@ export default function FraudWasteAndAbuse(props: any) {
               </a>
               .
             </p>
-            <h3>Utility Scam</h3>
+            <h3 className='mt-2'>Utility Scam</h3>
             <p>
               When scammers pose as utility workers, either over the phone or in
               person, with the goal of swindling money from unsuspecting
@@ -198,7 +201,7 @@ export default function FraudWasteAndAbuse(props: any) {
               card or any form of cryptocurrency over the phone to avoid service
               disconnection.
             </p>
-            <h3>Workers’ Compensation Fraud</h3>
+            <h3 className='mt-2'>Workers’ Compensation Fraud</h3>
             <p>
               Workers’ compensation fraud involves providing false or misleading
               information to obtain workers’ compensation benefits to which a
@@ -213,7 +216,7 @@ export default function FraudWasteAndAbuse(props: any) {
                 (213) 473-9050
               </a>
             </p>
-            <h3>Utility Tampering or Theft</h3>
+            <h3 className='mt-2'>Utility Tampering or Theft</h3>
             <p>
               Stealing or inappropriately tampering with City water or utility
               services. To make a report, contact LADWP at{' '}
