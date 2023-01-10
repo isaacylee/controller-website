@@ -78,9 +78,9 @@ export default function OpenDataSeries() {
     },
     {
       name: 'All City Funds',
-      link: 'https://controllerdata.lacity.org/Audits-and-Reports/All-City-Funds/ej7u-di9z',
+      link: 'https://controllerdata.lacity.org/Audits-and-Reports/All-City-Funds/ej7u-di9z/data',
       tags: ['socrata'],
-      lastupdated: '2022-01-2023',
+      lastupdated: '2023-01-09',
       since: '2014',
       size: '575KB',
       rowcount: '840',
