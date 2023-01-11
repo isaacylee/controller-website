@@ -1,13 +1,19 @@
 {
   "data": [
     {
+      "image": "https://data.mejiaforcontroller.com/affordablehousingpic.png",
+      "name": "Affordable Housing Covenants - 2010 to 2021",
+      "year": "2022",
+      "dept": "Map",
+      "link": "https://housing.lacontroller.io/"
+    },
+    {
       "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/11/Visualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg",
       "name": "Visualizing Nine Years of Audits, Reports and Data Stories",
       "year": "2022",
       "dept": "Dashboard",
       "link": "https://public.tableau.com/views/VisualizingControllerGalperinsWork/AuditsFinancialReportsandDataStories?:language=en-US&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&publish=yes&:origin=viz_share_link "
     },
-
     {
       "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2019/09/lafd-banner-thumbnail.png",
       "name": "Get Ready, L.A.",
