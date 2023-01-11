@@ -141,12 +141,42 @@ export function DatesLegendItem(props: any) {
 
 export default function PayrollCalendar(props: any) {
   const [selectedYear, setSelectedYear] = React.useState<number>(2023);
+  const [todaysDate, setTodaysDate] = React.useState<string>('');
   const [calendar, setCalendar] = React.useState<Array<Array<Array<number>>>>(
     []
   );
   const [listofimportantdates, setListofimportantdates] = React.useState<any>(
     {}
   );
+
+  function setCurrentDate() {
+    // current datetime string in America/Chicago timezone
+    const la_datetime_str = new Date().toLocaleString('en-US', {
+      timeZone: 'America/Los_Angeles',
+    });
+
+    // create new Date object
+    const date_la = new Date(la_datetime_str);
+
+    // year as (YYYY) format
+    const year = date_la.getFullYear();
+
+    // month as (MM) format
+    const month = ('0' + (date_la.getMonth() + 1)).slice(-2);
+
+    // date as (DD) format
+    const date = ('0' + date_la.getDate()).slice(-2);
+
+    // date time in YYYY-MM-DD format
+    const date_time = year + '-' + month + '-' + date;
+
+    // "2021-03-22"
+    console.log(date_time);
+
+    if (todaysDate !== date_time) {
+      setTodaysDate(date_time);
+    }
+  }
 
   function generateCalendar() {
     const cal = new c.Calendar();
@@ -178,6 +208,19 @@ export default function PayrollCalendar(props: any) {
     const category = listofimportantdates[stringmonth][stringday];
 
     return category;
+  }
+
+  function checkiftodaysdate(month: number, day: number) {
+    const stringmonth = ('0' + month).slice(-2);
+    const stringday = ('0' + day).slice(-2);
+
+    const todaysdatecheck = `${selectedYear}-${stringmonth}-${stringday}`;
+
+    if (todaysDate === todaysdatecheck) {
+      return ' border-2 border-black dark:border-white';
+    } else {
+      return ' ';
+    }
   }
 
   function endofpayperiodstring(month: number, day: number) {
@@ -274,6 +317,10 @@ export default function PayrollCalendar(props: any) {
   React.useEffect(() => {
     indexOfDates();
     generateCalendar();
+
+    setInterval(() => {
+      setCurrentDate();
+    }, 1000);
   }, []);
 
   React.useEffect(() => {
@@ -379,7 +426,7 @@ export default function PayrollCalendar(props: any) {
                               className={`printcolour flex h-7 w-7 items-center justify-center rounded-full ${givecolourstringfromdate(
                                 monthindex + 1,
                                 day
-                              )}`}
+                              )}  ${checkiftodaysdate(monthindex + 1, day)}`}
                             >
                               <time
                                 dateTime={`${selectedYear}-${
