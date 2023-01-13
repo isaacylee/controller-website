@@ -358,7 +358,11 @@ export default function PayrollCalendar(props: any) {
               </button>
             </Link>
           </div>
-
+          <p className='text-green-500 underline dark:text-mejito'>
+            <Link href='/legacy-Payroll-Calendar-2023.pdf'>
+              Print Old Version
+            </Link>
+          </p>
           <div>
             <div className='flex flex-row flex-wrap gap-x-4 gap-y-2'>
               <DatesLegendItem
@@ -471,9 +475,6 @@ export default function PayrollCalendar(props: any) {
                 </div>
               ))}
           </div>
-          <Link href='/legacy-Payroll-Calendar-2023.pdf'>
-            <p className='text-mejito underline'>Deprecated Payroll Calendar</p>
-          </Link>
         </div>
       </Layout>
     </>
