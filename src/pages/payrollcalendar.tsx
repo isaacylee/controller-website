@@ -358,8 +358,11 @@ export default function PayrollCalendar(props: any) {
               </button>
             </Link>
           </div>
-          <p className='text-green-500 underline dark:text-mejito'>
-            <Link href='/legacy-Payroll-Calendar-2023.pdf'>
+          <p className='text-green-500 underline dark:text-mejito '>
+            <Link
+              href='/legacy-Payroll-Calendar-2023.pdf'
+              className='text-green-500 dark:text-mejito'
+            >
               Print Old Version
             </Link>
           </p>
