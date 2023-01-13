@@ -338,7 +338,7 @@ export default function PayrollCalendar(props: any) {
         <Seo title='Payroll Calendar - Los Angeles Controller' />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2   dark:text-white print:text-black  print:text-black sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl  xl:max-w-4xl'>
-          <div className='flex flex-row gap-x-2 pt-2  pb-4  print:text-black '>
+          <div className='flex flex-row gap-x-2 pt-2  pb-2  print:text-black '>
             <h1 className='dark:text-white  print:text-black'>
               Payroll Calendar {selectedYear}
             </h1>
@@ -358,10 +358,10 @@ export default function PayrollCalendar(props: any) {
               </button>
             </Link>
           </div>
-          <p className='text-green-500 underline dark:text-mejito '>
+          <p className='text-green-900 underline dark:text-mejito '>
             <Link
               href='/legacy-Payroll-Calendar-2023.pdf'
-              className='text-green-500 dark:text-mejito'
+              className='font-semibold text-green-500 dark:text-mejito'
             >
               Print Old Version
             </Link>
