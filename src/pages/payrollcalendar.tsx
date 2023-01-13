@@ -471,6 +471,9 @@ export default function PayrollCalendar(props: any) {
                 </div>
               ))}
           </div>
+          <Link href='/legacy-Payroll-Calendar-2023.pdf'>
+            <p className='text-mejito underline'>Deprecated Payroll Calendar</p>
+          </Link>
         </div>
       </Layout>
     </>
