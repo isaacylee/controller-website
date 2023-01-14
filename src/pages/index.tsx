@@ -136,7 +136,7 @@ export default function HomePage(props: any) {
           <h2 className='frontpageh2section'> Audits & Reports</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
-            {audits.slice(0, 5).map((eachaudit: any, key: number) => (
+            {audits.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
                 link={`/audits/${eachaudit.link}`}
@@ -146,6 +146,18 @@ export default function HomePage(props: any) {
                 name={eachaudit.name}
               />
             ))}
+            <div className='hidden lg:block'>
+              {audits.slice(4, 5).map((eachaudit: any, key: number) => (
+                <BigCard
+                  key={key}
+                  link={`/audits/${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
           </div>
           <div>
             <div className='rounded-lg  md:hidden'>
