@@ -208,26 +208,26 @@ export default function HomePage(props: any) {
                 />
               ))}
             </div>
-            <div>
-              <div className='rounded-lg  md:hidden'>
-                {finance.slice(0, 6).map((eachaudit: any, key: number) => (
-                  <LineCard
-                    key={key}
-                    link={`/reports/${eachaudit.link}`}
-                    image={eachaudit.image}
-                    year={eachaudit.year}
-                    dept={titleCase(eachaudit.dept)}
-                    name={eachaudit.name}
-                  />
-                ))}
-              </div>
+          </div>
+          <div>
+            <div className='rounded-lg  md:hidden'>
+              {finance.slice(0, 6).map((eachaudit: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={`/reports/${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
             </div>
-            <div>
-              <div className='flex flex-row'>
-                <Link href='/audits'>
-                  <div className={`${kirbybutton}`}>All Financial Reports</div>
-                </Link>
-              </div>
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/audits'>
+                <div className={`${kirbybutton}`}>All Financial Reports</div>
+              </Link>
             </div>
           </div>
         </div>
@@ -294,27 +294,27 @@ export default function HomePage(props: any) {
                 />
               ))}
             </div>
+          </div>
 
-            <div>
-              <div className='rounded-lg  sm:hidden'>
-                {data.slice(0, 5).map((eachaudit: any, key: number) => (
-                  <LineCard
-                    key={key}
-                    link={`${eachaudit.link}`}
-                    image={eachaudit.image}
-                    year={eachaudit.year}
-                    dept={titleCase(eachaudit.dept)}
-                    name={eachaudit.name}
-                  />
-                ))}
-              </div>
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {data.slice(0, 5).map((eachaudit: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={`${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
             </div>
-            <div>
-              <div className='flex flex-row'>
-                <Link href='/data' target='_blank' rel='noreferrer'>
-                  <div className={`${kirbybutton}`}>All Data Stories</div>
-                </Link>
-              </div>
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/data' target='_blank' rel='noreferrer'>
+                <div className={`${kirbybutton}`}>All Data Stories</div>
+              </Link>
             </div>
           </div>
 
