@@ -71,9 +71,9 @@ export default function OpenDataSeries() {
       name: 'Checkbook',
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
       tags: ['socrata'],
-      lastupdated: '2023-01-03',
+      lastupdated: '2023-01-3',
       size: '4GB',
-      rowcount: '7.93M',
+      rowcount: '7.96M',
       since: '2012',
     },
     {
