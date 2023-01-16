@@ -72,7 +72,7 @@ export default function OpenDataSeries() {
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
       tags: ['socrata'],
       lastupdated: '2023-01-13',
-      size: '4GB',
+      size: '4.58GB',
       rowcount: '7.96M',
       since: '2012',
     },
