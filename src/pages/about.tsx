@@ -211,6 +211,9 @@ export default function About(props: any) {
                   name='Michael Shear'
                   title='Director of Research & Government Affairs'
                 />
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Accountability and Oversight</p>
                 <ProfileCard
                   name='Ashley Bennett'
                   title='Director of Homelessness'
