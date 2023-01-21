@@ -27,10 +27,8 @@ interface profilecardprops {
 }
 
 function ProfileCard(props: profilecardprops) {
-  const pickStringToUseForName = () => {
+  const getLocaleToUse = () => {
     let localeToUse = 'en';
-
-    let stringtouse = props.name;
 
     const browserLocales =
       navigator.languages === undefined
@@ -53,14 +51,33 @@ function ProfileCard(props: profilecardprops) {
           }
         }
       }
+    }
 
-      //okay now set the string
-      if (props.i18noptions[localeToUse]) {
-        stringtouse = props.i18noptions[localeToUse];
-      }
+    return localeToUse;
+  };
+
+  const pickStringToUseForName = () => {
+    const localeToUse = getLocaleToUse();
+
+    let stringtouse = props.name;
+
+    //okay now set the string
+    if (props.i18noptions[localeToUse]) {
+      stringtouse = props.i18noptions[localeToUse];
     }
 
     return stringtouse;
+  };
+
+  const noTranslate = () => {
+    const localeToUse = getLocaleToUse();
+
+    //okay now set the string
+    if (props.i18noptions[localeToUse]) {
+      return 'no';
+    } else {
+      return 'yes';
+    }
   };
 
   return (
@@ -71,7 +88,12 @@ function ProfileCard(props: profilecardprops) {
         )}
       </div>
       <div className='px-3 py-2 '>
-        <p className='font-semibold text-black dark:text-white'>{props.name}</p>
+        <p
+          className='font-semibold text-black dark:text-white'
+          translate={noTranslate()}
+        >
+          {pickStringToUseForName()}
+        </p>
         <p className='text-black dark:text-white'>{props.title}</p>
       </div>
     </div>
