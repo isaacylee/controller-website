@@ -22,9 +22,47 @@ interface profilecardprops {
   name: string;
   title: string;
   picture?: string;
+  i18noptions?: any;
+  notranslate?: boolean;
 }
 
 function ProfileCard(props: profilecardprops) {
+  const pickStringToUseForName = () => {
+    let localeToUse = 'en';
+
+    let stringtouse = props.name;
+
+    const browserLocales =
+      navigator.languages === undefined
+        ? [navigator.language]
+        : navigator.languages;
+
+    if (props.i18noptions) {
+      if (props.i18noptions[browserLocales[0]]) {
+        localeToUse = browserLocales[0];
+      }
+
+      const htmlelem = document.querySelector('html');
+
+      if (htmlelem) {
+        const htmlselectorlang = htmlelem.getAttribute('lang');
+
+        if (htmlselectorlang) {
+          if (props.i18noptions[htmlselectorlang]) {
+            localeToUse = htmlselectorlang;
+          }
+        }
+      }
+
+      //okay now set the string
+      if (props.i18noptions[localeToUse]) {
+        stringtouse = props.i18noptions[localeToUse];
+      }
+    }
+
+    return stringtouse;
+  };
+
   return (
     <div className='flex flex-row rounded-lg border border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-zinc-800'>
       <div className=''>
@@ -192,6 +230,14 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Kyler Chin'
                   title='Director of Technology & Innovation'
+                  i18noptions={{
+                    'zh-CN': '陈启生 (Kyler Chin)',
+                    zh: '陈启生 (Kyler Chin)',
+                    'zh-TW': '陳啟生 (Kyler Chin)',
+                    'zh-HK': '陳啟生 (Kyler Chin)',
+                    ko: '친 카이라 (Kyler Chin)',
+                    'ko-KO': '친 카이라 (Kyler Chin)',
+                  }}
                 />
                 <ProfileCard
                   name='Diana Chang'
@@ -218,6 +264,12 @@ export default function About(props: any) {
                   name='Ashley Bennett'
                   title='Director of Homelessness'
                 />
+                {false && (
+                  <ProfileCard
+                    name='Dinah M. Manning'
+                    title='Director of Public Safety'
+                  />
+                )}
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Executive Aides</p>
