@@ -31,9 +31,11 @@ function ProfileCard(props: profilecardprops) {
     let localeToUse = 'en';
 
     const browserLocales =
-      navigator.languages === undefined
-        ? [navigator.language]
-        : navigator.languages;
+      typeof navigator !== 'undefined'
+        ? navigator.languages === undefined
+          ? [navigator.language]
+          : navigator.languages
+        : ['en'];
 
     if (props.i18noptions) {
       if (props.i18noptions[browserLocales[0]]) {
