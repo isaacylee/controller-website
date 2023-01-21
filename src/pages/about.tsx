@@ -28,34 +28,37 @@ interface profilecardprops {
 
 function ProfileCard(props: profilecardprops) {
   const getLocaleToUse = () => {
-    let localeToUse = 'en';
+    if (typeof navigator === 'object') {
+      let localeToUse = 'en';
 
-    const browserLocales =
-      typeof navigator !== 'undefined'
-        ? navigator.languages === undefined
-          ? [navigator.language]
-          : navigator.languages
-        : ['en'];
+      const browserLocales =
+        typeof navigator !== 'undefined'
+          ? navigator.languages === undefined
+            ? [navigator.language]
+            : navigator.languages
+          : ['en'];
 
-    if (props.i18noptions) {
-      if (props.i18noptions[browserLocales[0]]) {
-        localeToUse = browserLocales[0];
-      }
+      if (props.i18noptions) {
+        if (props.i18noptions[browserLocales[0]]) {
+          localeToUse = browserLocales[0];
+        }
 
-      const htmlelem = document.querySelector('html');
+        const htmlelem = document.querySelector('html');
 
-      if (htmlelem) {
-        const htmlselectorlang = htmlelem.getAttribute('lang');
+        if (htmlelem) {
+          const htmlselectorlang = htmlelem.getAttribute('lang');
 
-        if (htmlselectorlang) {
-          if (props.i18noptions[htmlselectorlang]) {
-            localeToUse = htmlselectorlang;
+          if (htmlselectorlang) {
+            if (props.i18noptions[htmlselectorlang]) {
+              localeToUse = htmlselectorlang;
+            }
           }
         }
       }
+      return localeToUse;
+    } else {
+      return 'en';
     }
-
-    return localeToUse;
   };
 
   const pickStringToUseForName = () => {
@@ -63,22 +66,26 @@ function ProfileCard(props: profilecardprops) {
 
     let stringtouse = props.name;
 
-    //okay now set the string
-    if (props.i18noptions[localeToUse]) {
-      stringtouse = props.i18noptions[localeToUse];
-    }
+    if (props.i18noptions) {
+      //okay now set the string
+      if (props.i18noptions[localeToUse]) {
+        stringtouse = props.i18noptions[localeToUse];
+      }
 
-    return stringtouse;
+      return stringtouse;
+    }
   };
 
   const noTranslate = () => {
     const localeToUse = getLocaleToUse();
 
     //okay now set the string
-    if (props.i18noptions[localeToUse]) {
-      return 'no';
-    } else {
-      return 'yes';
+    if (props.i18noptions) {
+      if (props.i18noptions[localeToUse]) {
+        return 'no';
+      } else {
+        return 'yes';
+      }
     }
   };
 
