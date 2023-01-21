@@ -27,6 +27,14 @@ interface profilecardprops {
 }
 
 function ProfileCard(props: profilecardprops) {
+  const [lang, setLang] = React.useState('en');
+
+  React.useEffect(() => {
+    setInterval(() => {
+      setLang(getLocaleToUse());
+    }, 1000);
+  });
+
   const getLocaleToUse = () => {
     if (typeof navigator === 'object') {
       let localeToUse = 'en';
@@ -71,20 +79,23 @@ function ProfileCard(props: profilecardprops) {
       if (props.i18noptions[localeToUse]) {
         stringtouse = props.i18noptions[localeToUse];
       }
-
-      return stringtouse;
     }
+    return stringtouse;
   };
 
   const noTranslate = () => {
-    const localeToUse = getLocaleToUse();
+    if (props.notranslate === true) {
+      return 'no';
+    } else {
+      const localeToUse = getLocaleToUse();
 
-    //okay now set the string
-    if (props.i18noptions) {
-      if (props.i18noptions[localeToUse]) {
-        return 'no';
-      } else {
-        return 'yes';
+      //okay now set the string
+      if (props.i18noptions) {
+        if (props.i18noptions[localeToUse]) {
+          return 'no';
+        } else {
+          return 'yes';
+        }
       }
     }
   };
