@@ -52,7 +52,7 @@ export default function Audits(props: any) {
 
           <div className='hidden md:block'>
             <div className='grid grid-cols-3 gap-x-6 gap-y-4 lg:grid-cols-3'>
-              {audits.map((eachaudit: any, eachauditnum: number) => (
+              {props.audits.map((eachaudit: any, eachauditnum: number) => (
                 <div
                   key={eachauditnum}
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
@@ -64,7 +64,7 @@ export default function Audits(props: any) {
                         {eachaudit.year} |{' '}
                         <span>
                           {titleCase(eachaudit.dept).replace(
-                            /( )?department/gi,
+                            /( )?department( of)?/gi,
                             ''
                           )}
                         </span>

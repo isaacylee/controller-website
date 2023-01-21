@@ -41,8 +41,9 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/wp-content/:path',
-        destination: 'https://wpstaticarchive.lacontroller.io/wp-content/:path',
+        source: '/wp-content/:slug*',
+        destination:
+          'https://wpstaticarchive.lacontroller.io/wp-content/:slug*',
         permanent: true,
       },
       {

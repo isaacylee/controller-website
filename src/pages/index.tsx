@@ -136,7 +136,7 @@ export default function HomePage(props: any) {
           <h2 className='frontpageh2section'> Audits & Reports</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
-            {audits.slice(0, 5).map((eachaudit: any, key: number) => (
+            {audits.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
                 link={`/audits/${eachaudit.link}`}
@@ -146,6 +146,18 @@ export default function HomePage(props: any) {
                 name={eachaudit.name}
               />
             ))}
+            <div className='hidden lg:block'>
+              {audits.slice(4, 5).map((eachaudit: any, key: number) => (
+                <BigCard
+                  key={key}
+                  link={`/audits/${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
           </div>
           <div>
             <div className='rounded-lg  md:hidden'>
@@ -174,7 +186,7 @@ export default function HomePage(props: any) {
           <h2 className='pt-8 pb-4 dark:text-white'>Financial Reports</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
-            {finance.slice(0, 5).map((eachaudit: any, key: number) => (
+            {finance.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
                 link={`/reports/${eachaudit.link}`}
@@ -184,6 +196,18 @@ export default function HomePage(props: any) {
                 name={eachaudit.name}
               />
             ))}
+            <div className='hidden lg:block'>
+              {finance.slice(4, 5).map((eachaudit: any, key: number) => (
+                <BigCard
+                  key={key}
+                  link={`/audits/${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
           </div>
           <div>
             <div className='rounded-lg  md:hidden'>
@@ -248,7 +272,7 @@ export default function HomePage(props: any) {
             <span className='frontpageh2section'>Data Stories & Maps</span>
           </h2>
           <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
-            {data.slice(0, 5).map((eachaudit: any, key) => (
+            {data.slice(0, 4).map((eachaudit: any, key) => (
               <BigCard
                 key={key}
                 link={`${eachaudit.link}`}
@@ -258,6 +282,18 @@ export default function HomePage(props: any) {
                 name={eachaudit.name}
               />
             ))}
+            <div className='hidden lg:block'>
+              {data.slice(4, 5).map((eachaudit: any, key: number) => (
+                <BigCard
+                  key={key}
+                  link={`/audits/${eachaudit.link}`}
+                  image={eachaudit.image}
+                  year={eachaudit.year}
+                  dept={titleCase(eachaudit.dept)}
+                  name={eachaudit.name}
+                />
+              ))}
+            </div>
           </div>
 
           <div>
@@ -281,17 +317,17 @@ export default function HomePage(props: any) {
               </Link>
             </div>
           </div>
-        </div>
 
-        <div className=' container mx-auto mt-4 bg-zinc-50 px-4 py-4 dark:bg-zinc-800'>
-          <ImportantLinksSection />
-        </div>
+          <div className=' container mx-auto mt-4 bg-zinc-50 px-4 py-4 dark:bg-zinc-800'>
+            <ImportantLinksSection />
+          </div>
 
-        <div className='container mx-auto mt-2 px-4 py-2 text-gray-800 dark:text-gray-300'>
-          The City of Los Angeles is within the traditional territory of the
-          Tongva people, who continue to shine a light here in this city, past
-          and present. We are grateful to the Tongva tribe and honour their land
-          itself.
+          <div className='container mx-auto mt-2 px-4 py-2 text-gray-800 dark:text-gray-300'>
+            The City of Los Angeles is within the traditional territory of the
+            Tongva people, who continue to shine a light here in this city, past
+            and present. We are grateful to the Tongva tribe and honour their
+            land itself.
+          </div>
         </div>
       </Layout>
     </>
