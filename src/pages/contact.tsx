@@ -56,7 +56,7 @@ export default function Contact(props: any) {
 
       {/* contact form footer like */}
 
-      <footer className='bg-white dark:bg-gray-900'>
+      <main className='bg-white dark:bg-gray-900'>
         <div className='grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4'>
           <div>
             <h2 className='mb-6 text-sm font-semibold uppercase text-gray-500 dark:text-gray-100'>
@@ -137,11 +137,7 @@ export default function Contact(props: any) {
             </ul>
           </div>
         </div>
-
-        <div className=' container mx-auto mt-4  px-4 py-4 '>
-          <ImportantLinksSection />
-        </div>
-      </footer>
+      </main>
     </>
   );
 }
