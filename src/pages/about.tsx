@@ -29,10 +29,27 @@ interface profilecardprops {
 function ProfileCard(props: profilecardprops) {
   const [lang, setLang] = React.useState('en');
 
+  const intervalRef = React.useRef<any>(null);
+
   React.useEffect(() => {
-    setInterval(() => {
+    const handleScroll = (event: any) => {
+      setLang(getLocaleToUse());
+    };
+
+    if (typeof window != 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+    }
+
+    intervalRef.current = setInterval(() => {
       setLang(getLocaleToUse());
     }, 1000);
+
+    return () => {
+      if (typeof window != 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+        if (intervalRef.current) clearInterval(intervalRef.current);
+      }
+    };
   });
 
   const getLocaleToUse = () => {
