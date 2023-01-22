@@ -27,8 +27,11 @@ interface profilecardprops {
 }
 
 function ProfileCard(props: profilecardprops) {
-  const [lang, setLang] = React.useState('en');
+  const idNumberForProfileCard = React.useRef(
+    String(Math.floor(Math.random() * 1000000000))
+  );
 
+  const [lang, setLang] = React.useState('en');
   const intervalRef = React.useRef<any>(null);
 
   React.useEffect(() => {
@@ -36,13 +39,29 @@ function ProfileCard(props: profilecardprops) {
       setLang(getLocaleToUse());
     };
 
-    if (typeof window != 'undefined') {
+    if (typeof window != 'undefined' && props.i18noptions) {
       window.addEventListener('scroll', handleScroll);
     }
 
-    intervalRef.current = setInterval(() => {
-      setLang(getLocaleToUse());
-    }, 1000);
+    if (props.i18noptions) {
+      intervalRef.current = setInterval(() => {
+        setLang(getLocaleToUse());
+        const selectedId = document.getElementById(
+          idNumberForProfileCard.current
+        );
+
+        if (props.i18noptions[getLocaleToUse()]) {
+          if (selectedId) {
+            selectedId.innerHTML = pickStringToUseForName();
+            selectedId.setAttribute('translate', noTranslate());
+          }
+        }
+      }, 300);
+
+      setTimeout(() => {
+        setLang(getLocaleToUse());
+      }, 1000);
+    }
 
     return () => {
       if (typeof window != 'undefined') {
@@ -97,6 +116,9 @@ function ProfileCard(props: profilecardprops) {
         stringtouse = props.i18noptions[localeToUse];
       }
     }
+
+    console.log('rerender string to use', stringtouse, Date.now());
+
     return stringtouse;
   };
 
@@ -113,6 +135,8 @@ function ProfileCard(props: profilecardprops) {
         } else {
           return 'yes';
         }
+      } else {
+        return 'yes';
       }
     }
   };
@@ -128,6 +152,7 @@ function ProfileCard(props: profilecardprops) {
         <p
           className='font-semibold text-black dark:text-white'
           translate={noTranslate()}
+          id={idNumberForProfileCard.current}
         >
           {pickStringToUseForName()}
         </p>
@@ -294,8 +319,16 @@ export default function About(props: any) {
                     zh: '陈启生 (Kyler Chin)',
                     'zh-TW': '陳啟生 (Kyler Chin)',
                     'zh-HK': '陳啟生 (Kyler Chin)',
+                    'zh-MO': '陳啟生 (Kyler Chin)',
+                    'zh-SG': '陈启生 (Kyler Chin)',
+                    'zh-MY': '陈启生 (Kyler Chin)',
+                    'zh-Hans': '陈启生 (Kyler Chin)',
+                    'zh-Hant': '陳啟生 (Kyler Chin)',
                     ko: '친 카이라 (Kyler Chin)',
                     'ko-KO': '친 카이라 (Kyler Chin)',
+                    'ko-KR': '친 카이라 (Kyler Chin)',
+                    'ja-JP': 'チン・カイラ (Kyler Chin)',
+                    ja: 'チン・カイラ (Kyler Chin)',
                   }}
                 />
                 <ProfileCard
@@ -333,7 +366,14 @@ export default function About(props: any) {
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Executive Aides</p>
                 <ProfileCard name='Jacky Rodarte' title='' />
-                <ProfileCard name='Vincent de Vera' title='' />
+                <ProfileCard
+                  name='Vincent de Vera'
+                  i18noptions={{
+                    ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                    'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                  }}
+                  title=''
+                />
               </div>
             </div>
             <div></div>
