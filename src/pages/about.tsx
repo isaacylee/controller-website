@@ -334,6 +334,16 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Diana Chang'
                   title='Director of Communications'
+                  i18noptions={{
+                    'zh-TW': '張良美 (Diana Chang)',
+                    'zh-HK': '張良美 (Diana Chang)',
+                    'zh-MO': '張良美 (Diana Chang)',
+                    'zh-SG': '张良美 (Diana Chang)',
+                    'zh-MY': '张良美 (Diana Chang)',
+                    'zh-Hans': '张良美 (Diana Chang)',
+                    'zh-Hant': '張良美 (Diana Chang)',
+                    zh: '張良美 (Diana Chang)',
+                  }}
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
