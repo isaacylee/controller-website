@@ -367,12 +367,20 @@ export default function About(props: any) {
                   name='Ashley Bennett'
                   title='Director of Homelessness'
                 />
-                {false && (
+                
                   <ProfileCard
                     name='Dinah M. Manning'
                     title='Director of Public Safety'
                   />
-                )}
+                
+              </div>
+              <div className='flex flex-col gap-y-2'>
+                <p className='text-xl'>Financial Transparency</p>
+                <ProfileCard
+                  name='Maria Rosas'
+                  title='Deputy Controller of Finance'
+                />
+               
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Executive Aides</p>
