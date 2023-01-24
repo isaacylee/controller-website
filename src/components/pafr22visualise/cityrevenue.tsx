@@ -1,7 +1,10 @@
 //import d3 from 'd3';
+import * as Plot from '@observablehq/plot';
 import * as d3 from 'd3';
 import * as React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+
+//import { Plot } from '../tooltipsPlot/tooltips';
 
 function responsivefy(svg: any) {
   // container will be the DOM element
@@ -41,8 +44,35 @@ function responsivefy(svg: any) {
   }
 }
 
+function darkModeTheSvg(element: any) {
+  if (element) {
+    const svgelem = element.querySelector('svg');
+
+    if (svgelem) {
+      const svgStyle = svgelem.querySelector('style');
+
+      const getclassname = svgelem.getAttribute('class');
+
+      if (svgStyle) {
+        svgStyle.innerHTML =
+          svgStyle.innerHTML +
+          `\n\n .dark ${getclassname} {
+          background-color: #212121;
+          color: white;
+        }`;
+      }
+    } else {
+      console.log('no svg element');
+    }
+  } else {
+    console.log('no element');
+  }
+}
+
 export default function CityRevenue(props: any) {
   //import the csv table from /csvsforpafr22/1totalcityrevenue.csv
+
+  const rev2 = useRef<any>();
 
   useEffect(() => {
     d3.csv('/csvsforpafr22/1totalcityrevenue.csv').then((data: any) => {
@@ -55,24 +85,63 @@ export default function CityRevenue(props: any) {
         };
       });
 
-      console.log(cleanthedata);
-
       // Initialize a SVG area. Note that the width is not specified yet, since unknown
 
-      d3.select('#rev-1')
-        .append('svg')
-        .attr('width', 500)
-        .attr('height', 600)
-        .call(responsivefy);
+      d3.csv('/csvsforpafr22/city-revenue-summed-by-activity-type.csv').then(
+        (data: any) => {
+          const asdf = data.map((d: any) => {
+            return {
+              ...d,
+              'Sum of Revenue': parseInt(d['Sum of Revenue']),
+            };
+          });
+
+          const facetedRev = Plot.plot({
+            color: {
+              legend: true,
+              background: '#212121',
+              color: 'white',
+            },
+            height: 600,
+            y: {
+              tickFormat: 's',
+              label: 'Revenue',
+            },
+            facet: {
+              data: asdf,
+              y: 'Activity Type',
+            },
+            marks: [
+              Plot.barY(asdf, {
+                x: 'Year',
+                y: 'Sum of Revenue',
+                title: (elems: any) =>
+                  `${(parseInt(elems['Sum of Revenue']) / 10e8).toFixed(2)}B`,
+                fill: 'Activity Type',
+              }),
+              Plot.ruleY([0]),
+            ],
+          });
+
+          rev2.current.append(facetedRev);
+          //darkModeTheSvg(rev2.current);
+
+          const darkstyle = document.createElement('style');
+          darkstyle.innerHTML =
+            '.dark svg[class^="plot-"] {background-color: transparent; color: white;}';
+
+          rev2.current.append(darkstyle);
+        }
+      );
     });
   }, []);
 
   return (
     <div className='city-revenue'>
+      <h4>Revenues Stacked</h4>
+      <div id='rev-2' ref={rev2}></div>
       <h4>Each Revenue Source over Time</h4>
       <div id='rev-1'></div>
-      <h4>Revenues Stacked</h4>
-      <div id='rev-2'></div>
     </div>
   );
 }

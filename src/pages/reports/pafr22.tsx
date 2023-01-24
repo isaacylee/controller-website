@@ -14,7 +14,7 @@ export default function pafr22(props: any) {
       />
       <Layout>
         <div className='flex flex-col py-2 dark:text-white'>
-          <div className='container mx-4 px-4 pb-3 pt-5  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             {' '}
             <h1 className='2xl dark:text-white'>
               Popular Annual Financial Report FY22
@@ -118,7 +118,7 @@ export default function pafr22(props: any) {
             {/* Add Visual - Demographic and Economic Data */}
             {/* Add Visual - Principal Employers */}
           </div>
-          <div className='container mx-4 px-4 pb-3 pt-5  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <h2 className='mt-3'>City Organization</h2>
 
             <p className='mt-2 lg:max-w-5xl'>
@@ -173,7 +173,7 @@ export default function pafr22(props: any) {
               </p>
             </div>
           </div>
-          <div className='container mx-4 px-4 pb-3 pt-5  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <h1 className='mt-3'>Management's Discussion and Analysis</h1>
 
             <p className='mt-2 lg:max-w-5xl'>
@@ -183,7 +183,7 @@ export default function pafr22(props: any) {
             </p>
           </div>
 
-          <div className='container mx-4 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+          <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <h3 className='mt-3'>FY 22 City Revenues $20.0 billion</h3>
             {/* Add Visual - City Revenues */}
             <CityRevenue />
