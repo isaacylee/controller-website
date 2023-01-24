@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import * as React from 'react';
 
 function classNames(...classes: any) {
@@ -7,6 +6,7 @@ function classNames(...classes: any) {
 
 export default function NewTranslate() {
   const AttrRemovedRef = React.useRef(false);
+  const onlyruntranslateonce = React.useRef(false);
 
   const removeAttribution = () => {
     const topTranslateElement = document.querySelector(
@@ -33,28 +33,29 @@ export default function NewTranslate() {
     }
   };
 
-  useEffect(() => {
-    const script = document.createElement('script');
-
-    script.src =
-      'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    script.async = true;
-
-    const bruh = document.createElement('script');
-
-    bruh.innerText =
-      "function googleTranslateElementInit() {new window.google.translate.TranslateElement({pageLanguage: 'en' },'google_translate_element');}";
-
-    document.body.appendChild(bruh);
-    document.body.appendChild(script);
-
+  React.useEffect(() => {
     removeAttribution();
 
-    return () => {
-      document.body.removeChild(bruh);
-      document.body.removeChild(script);
-    };
+    //create script
+    const script = document.createElement('script');
+    script.innerHTML = `function googleTranslateElementInit()
+    {
+      new window.google.translate.TranslateElement(
+        { pageLanguage: 'en' },
+        'google_translate_element'
+      )
+    }`;
+
+    document.body.append(script);
   }, []);
 
-  return <div id='google_translate_element'></div>;
+  return (
+    <div id='googleparent' suppressHydrationWarning={true}>
+      <div id='google_translate_element' suppressHydrationWarning={true}></div>
+      <script
+        src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+        async={true}
+      ></script>
+    </div>
+  );
 }

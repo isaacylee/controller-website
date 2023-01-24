@@ -23,7 +23,10 @@ export function ChangeColour() {
       {(themeChanger: any) => (
         <Popover className='relative '>
           <Popover.Button>
-            <div className='rounded-full px-2 py-2 text-gray-900 drop-shadow-md  dark:text-gray-200'>
+            <div
+              className='rounded-full px-2 py-2 text-gray-900 drop-shadow-md  dark:text-gray-200'
+              suppressHydrationWarning={true}
+            >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'

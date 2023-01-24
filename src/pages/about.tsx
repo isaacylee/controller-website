@@ -335,6 +335,7 @@ export default function About(props: any) {
                   name='Diana Chang'
                   title='Director of Communications'
                   i18noptions={{
+                    'zh-CN': '张良美 (Diana Chang)',
                     'zh-TW': '張良美 (Diana Chang)',
                     'zh-HK': '張良美 (Diana Chang)',
                     'zh-MO': '張良美 (Diana Chang)',
