@@ -327,8 +327,8 @@ export default function About(props: any) {
                     ko: '친 카이라 (Kyler Chin)',
                     'ko-KO': '친 카이라 (Kyler Chin)',
                     'ko-KR': '친 카이라 (Kyler Chin)',
-                    'ja-JP': 'チン・カイラ (Kyler Chin)',
-                    ja: 'チン・カイラ (Kyler Chin)',
+                    'ja-JP': 'カイラ・チン (Kyler Chin)',
+                    ja: 'カイラ・チン (Kyler Chin)',
                   }}
                 />
                 <ProfileCard
@@ -367,12 +367,11 @@ export default function About(props: any) {
                   name='Ashley Bennett'
                   title='Director of Homelessness'
                 />
-                
-                  <ProfileCard
-                    name='Dinah M. Manning'
-                    title='Director of Public Safety'
-                  />
-                
+
+                <ProfileCard
+                  name='Dinah M. Manning'
+                  title='Director of Public Safety'
+                />
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Financial Transparency</p>
@@ -380,7 +379,6 @@ export default function About(props: any) {
                   name='Maria Rosas'
                   title='Deputy Controller of Finance'
                 />
-               
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Executive Aides</p>
