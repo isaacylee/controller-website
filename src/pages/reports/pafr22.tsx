@@ -151,19 +151,25 @@ export default function pafr22(props: any) {
               section.
             </p>
 
-            <div className='rounded-lg border-4 border-mejito bg-mejito bg-opacity-30 px-2 py-2 dark:bg-opacity-20 lg:max-w-5xl'>
+            <div className='mt-2 rounded-lg border-4 border-mejito bg-mejito bg-opacity-30 px-2 py-2 dark:bg-opacity-20 lg:max-w-5xl'>
               {/* Pick of sherlock killa of the left side insert here later */}
-              <img src='/sherlockcorgi.png' className='float-left' />
+              <img
+                src='/sherlockcorgi.png'
+                className='float-left mb-1 mr-1 w-32'
+              />
               <p>
                 In the visualisations below, The Business Type Funds refers to
                 proprietary departments, which operate the business-like
                 activities of the government. Los Angeles's proprietary
                 departments are the Department of Water and Power, Los Angeles
                 World Airports, Convention Center, and the Harbor Department.
+                These departments collect revenue directly from the users of
+                their services.
                 <br />
                 <br />
                 Government funds refer to the core functions of the city, such
                 as Police, Fire, Transportation, Libraries, Rec & Parks, etc.
+                This money comes from the general fund.
               </p>
             </div>
           </div>
