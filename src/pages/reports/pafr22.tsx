@@ -3,6 +3,7 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
+import { Credit } from '@/components/pafr22visualise/credit';
 import Seo from '@/components/Seo';
 export default function pafr22(props: any) {
   return (
@@ -131,7 +132,8 @@ export default function pafr22(props: any) {
               resources for the budgetary departments and offices of the City.
               The City Controller and City Attorney are independently elected
               citywide.
-              <br /><br />
+              <br />
+              <br />
               The City has 46 departments, bureaus, commissions and offices, 39
               of which have their operating funds annually budgeted by the City
               Council. The Department of Water and Power, Harbor Department, and
@@ -139,7 +141,8 @@ export default function pafr22(props: any) {
               control of boards appointed by the Mayor and confirmed by the City
               Council. Several other departments are fiscally independent or
               under the control of independent boards.
-              <br /><br />
+              <br />
+              <br />
               Public services provided by the City include police, fire and
               paramedics, residential refuse collection and disposal, wastewater
               collection and treatment, street maintenance and traffic
@@ -189,6 +192,8 @@ export default function pafr22(props: any) {
             {/* Add Visual - City Revenues */}
             <CityRevenue />
           </div>
+          <h3 className='mt-3'>Credit Ratings by Various Agencies over Time</h3>
+          <Credit />
         </div>
       </Layout>
     </>
