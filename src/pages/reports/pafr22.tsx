@@ -214,6 +214,13 @@ export default function pafr22(props: any) {
               for the debt payments and the additional debt will not cause the
               ratio to exceed 7.5%, or there is no guaranteed revenue stream but
               the 6% ceiling shall not be exceeded for more than one year.
+              <br />
+              <br />
+              For 2022, the ratios were{' '}
+              <span className='font-bold'>4.7% for overall debt</span> and{' '}
+              <span className='font-bold'>
+                3.0% for non-voter approved debt.
+              </span>
             </p>
           </div>
         </div>
