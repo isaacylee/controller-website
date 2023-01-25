@@ -7,6 +7,7 @@ import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
+import { GeneralExpenditures } from '@/components/pafr22visualise/generalexpen';
 import Seo from '@/components/Seo';
 export default function pafr22(props: any) {
   return (
@@ -325,6 +326,133 @@ export default function pafr22(props: any) {
                 </ul>
               </div>
             </div>
+
+            <h3>
+              Net Position: $28.5 billion, $3.4 billion (13.6%) increase from FY
+              21
+            </h3>
+            <p>
+              The net position of $28.5 billion consisted of:
+              <br />
+              <br />
+              <span className='font-bold'>
+                Net investment in capital assets:
+              </span>{' '}
+              $22.3 billion, including land, building, infrastructure and
+              equipment, less accumulated depreciation and outstanding debt,
+              deferred outflows and deferred inflows of resources related to
+              acquisition, construction or improvements ($6.5 billion in
+              governmental activities and $15.8 billion in business-type
+              activities). This is an increase of $306.6 million over FY 21.
+              <br />
+              <br />
+              <span className='font-bold'>
+                Net investment in capital assets:
+              </span>{' '}
+              $6.1 billion, which represents external restrictions imposed by
+              creditors, grantors, contributors, laws of other governments,
+              constitutional provisions or enabling legislation ($4.3 billion in
+              governmental activities and $1.8 billion in business-type
+              activities). This is an increase of $158.2 million over FY 21.
+              <br />
+              <br />
+              <span className='font-bold'>Restricted net position:</span> $114.4
+              million is the net amount of the governmental deficit of
+              $5.2billion and $5.4 billion in unrestricted net position in its
+              business activities. Compared to FY21, the overall unrestricted
+              position increased by $2.9 million, primarily due to a combination
+              of reduction in governmental deficit by $2.3 million and an
+              increased in business-type of 653.2 million.
+              <br />
+              <br />
+              The City’s net position is illustrated in the table below:
+            </p>
+            {/*Net Pos Generally */}
+            <h2 className='mt-3'>General Fund</h2>
+            <p>
+              The General Fund is the general operating fund of the City and
+              includes transactions of the Reserve Fund and other accounts that
+              have General Fund type activity for generally accepted accounting
+              principles reporting purposes.
+              <br />
+              <br />
+              On June 30, 2022, the General Fund reported a total fund balance
+              of $1.5 billion, composed of $66.5 million nonspendable; $85.1
+              million committed; $724.3 million assigned for general government
+              purposes; and $621.8 million unassigned.
+              <br />
+              <br />
+              <span className='font-bold'>
+                In FY 22, General Fund revenues exceeded expenses by $408.3
+                million.
+              </span>
+            </p>
+            <h2 className='mt-3'>Revenues</h2>
+            <h4 className='font-bold'>
+              FY 22 Total General Fund Revenues: $6.2 billion, 8.8% increase
+              from FY 21
+            </h4>
+            {/*Revenues  vis */}
+            {/* revenues text */}
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Property Taxes</span>, which
+                represent 40.4% of General Fund revenue, increased by $90.5
+                million (3.8%), primarily due to growth in secured property tax
+                and VLF Replacement of $84.5 million.
+              </li>
+              <li>
+                Economy-sensitive revenues rebounded in FY22 as the economy
+                reopened from the pandemic shutdown:{' '}
+                <span className='font-bold'>Sales tax</span> increased by $132.0
+                million (23.5%) as a result of improvement in local economic
+                activity, while <span className='font-bold'>business tax</span>{' '}
+                grew by $70.4 million (10.3%) due to growth in non-cannabis
+                offset by a decrease in legal recreational cannabis.
+              </li>
+              <li>
+                <span className='font-bold'>Utility users’ tax</span> revenues
+                posted an increase of $21.5 million (3.5%), as growth in gas
+                users tax and electrical users taxes, offset the modest decline
+                in communications users tax. Gas user taxes contributed $17.1
+                million of the increase in this category primarily due to the
+                historic spike in natural gas price during much of the fiscal
+                year.
+              </li>
+              <li>
+                Other tax revenues were up by $256.6 million or 49.2%, primarily
+                due to increases of 128.7 million in{' '}
+                <span className='font-bold'>Transient Occupancy Tax</span>,
+                $39.7million in{' '}
+                <span className='font-bold'>Parking Occupancy Tax</span>{' '}
+                receipts and $62.3 million in Documentary Transfer Tax due to
+                home price appreciation during FY22.
+              </li>
+              <li>
+                <span className='font-bold'>Licenses and permits</span> revenues
+                were up by $2.1 million (7.2%), due to recovery of filming
+                permit fees from pandemic low.
+              </li>
+              <li>
+                Charges for services provided to Enterprise Fund totaled $17.6
+                million or 4.9% lower than prior fiscal year.
+              </li>
+              <li>
+                <span className='font-bold'>Net investment earnings</span> and
+                other revenues decreased by $88.2 million, due to decreases in
+                investment earnings and change in the fair market value of
+                investments.
+              </li>
+            </ul>
+            <br />
+            <br />
+            <h2 className='mt-3'>Expenses</h2>
+            <h4 className='font-bold'>
+              FY 22 General Fund Expenses: $5.8 billion, $465.6 million (8.8%)
+              increase over FY 21
+            </h4>
+            {/*Expenses  vis */}
+            <GeneralExpenditures />
           </div>
         </div>
       </Layout>
