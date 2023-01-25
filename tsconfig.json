@@ -24,7 +24,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/tooltipsPlot/tooltips.bruh"
+    "src/components/tooltipsPlot/tooltips.bruh",
+    "src/__tests__/pages/pafr22.test.tsx.off"
   ],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]

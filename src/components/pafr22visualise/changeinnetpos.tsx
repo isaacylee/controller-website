@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect } from 'react';
 export function Changeinnetpos() {
-  const [selectedYear, setSelectedYear] = React.useState(50);
+  const [selectedYear, setSelectedYear] = React.useState(2022);
   const refOfLoadedData = React.useRef<any>(null);
 
   const refOfBoxToChange = React.useRef<any>(null);
@@ -73,6 +73,8 @@ export function Changeinnetpos() {
         type='range'
         value={selectedYear}
         onChange={handleRangeChange}
+        min={2016}
+        max={2022}
         className='h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 dark:bg-gray-700'
       ></input>
       <br />
