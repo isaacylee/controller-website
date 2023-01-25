@@ -46,6 +46,11 @@ export function Changeinnetpos() {
       height: 300,
     },
     {
+      screen: 800,
+      width: 700,
+      height: 300,
+    },
+    {
       screen: 1000,
       width: 700,
       height: 400,
