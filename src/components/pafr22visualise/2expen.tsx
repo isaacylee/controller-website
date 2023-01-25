@@ -19,7 +19,8 @@ export function Expenditures() {
             legend: true,
           },
           y: {
-            tickFormat: '$s',
+            tickFormat: (tick: any) =>
+              d3.format('0.1s')(tick).replace('G', 'B'),
           },
           facet: {
             data: totalcityexpenditures1clean,

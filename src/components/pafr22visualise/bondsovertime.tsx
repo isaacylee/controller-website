@@ -7,11 +7,22 @@ import { getHeightPlot, getWidthPlot } from './processwidthandheight';
 export function BondsOverTime() {
   const bondsovertimeref = useRef<any>(null);
 
+  const [innerwidth, setinnerwidth] = React.useState<number>(
+    typeof window != 'undefined' ? window.innerWidth : 1000
+  );
+
+  const [data, setData] = React.useState<any>(null);
+
   const sizes = [
     {
       screen: 350,
       width: 300,
       height: 250,
+    },
+    {
+      screen: 500,
+      width: 400,
+      height: 300,
     },
     {
       screen: 750,
@@ -25,53 +36,77 @@ export function BondsOverTime() {
     },
   ];
 
+  const renderChart = () => {
+    if (data) {
+      const bondeddebtandlongtermnotespayable = data;
+
+      const bondeddebtandlongtermnotespayablecleaned =
+        bondeddebtandlongtermnotespayable.filter(
+          (eachItem: any) => eachItem.Total != null
+        );
+
+      const bondeddebtandlongtermnotespayablecleanedtotals =
+        bondeddebtandlongtermnotespayablecleaned.filter(
+          (eachItem: any) => eachItem['Activity Type'] === 'Governmental'
+        );
+
+      const plotforbondsovertimeelem = Plot.plot({
+        width: getWidthPlot(sizes),
+        height: getHeightPlot(sizes),
+        color: {
+          legend: true,
+        },
+        y: {
+          tickFormat: (tick: any) => d3.format('0.1s')(tick).replace('G', 'B'),
+        },
+        marks: [
+          Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
+            x: 'Fiscal Year',
+            fill: 'Activity Type',
+            y: 'Value',
+          }),
+          Plot.lineY(bondeddebtandlongtermnotespayablecleanedtotals, {
+            x: 'Fiscal Year',
+            y: 'Total',
+          }),
+          Plot.textY(bondeddebtandlongtermnotespayablecleanedtotals, {
+            x: 'Fiscal Year',
+            y: 'Total',
+            text: 'Total',
+          }),
+          Plot.ruleY([0]),
+        ],
+      });
+
+      if (bondsovertimeref.current) {
+        console.log('current ref', bondsovertimeref.current);
+        bondsovertimeref.current.innerHTML = '';
+        bondsovertimeref.current.append(plotforbondsovertimeelem);
+      }
+    }
+  };
+
+  React.useEffect(() => {
+    renderChart();
+  }, [innerwidth]);
+
+  React.useEffect(() => {
+    renderChart();
+  }, [data]);
+
   useEffect(() => {
     d3.csv('/csvsforpafr22/4bondeddebtandlongtermnotespayable.csv').then(
       (bondeddebtandlongtermnotespayable: any) => {
-        const bondeddebtandlongtermnotespayablecleaned =
-          bondeddebtandlongtermnotespayable.filter(
-            (eachItem: any) => eachItem.Total != null
-          );
-
-        const bondeddebtandlongtermnotespayablecleanedtotals =
-          bondeddebtandlongtermnotespayablecleaned.filter(
-            (eachItem: any) => eachItem['Activity Type'] === 'Governmental'
-          );
-
-        const plotforbondsovertimeelem = Plot.plot({
-          width: getWidthPlot(sizes),
-          height: getHeightPlot(sizes),
-          color: {
-            legend: true,
-          },
-          y: {
-            tickFormat: 's',
-          },
-          marks: [
-            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
-              x: 'Fiscal Year',
-              fill: 'Activity Type',
-              y: 'Value',
-            }),
-            Plot.lineY(bondeddebtandlongtermnotespayablecleanedtotals, {
-              x: 'Fiscal Year',
-              y: 'Total',
-            }),
-            Plot.textY(bondeddebtandlongtermnotespayablecleanedtotals, {
-              x: 'Fiscal Year',
-              y: 'Total',
-              text: 'Total',
-            }),
-            Plot.ruleY([0]),
-          ],
-        });
-
-        if (bondsovertimeref.current) {
-          console.log('current ref', bondsovertimeref.current);
-          bondsovertimeref.current.append(plotforbondsovertimeelem);
-        }
+        setData(bondeddebtandlongtermnotespayable);
       }
     );
+
+    if (typeof window !== 'undefined') {
+      addEventListener('resize', () => {
+        setinnerwidth(window.innerWidth);
+        return true;
+      });
+    }
   }, []);
 
   return <div ref={bondsovertimeref}></div>;

@@ -15,6 +15,10 @@ export function Changeinnetpos() {
 
   const [tablefiltered, setTablefiltered] = React.useState<any>({});
 
+  const [innerwidth, setinnerwidth] = React.useState<number>(
+    typeof window != 'undefined' ? window.innerWidth : 1000
+  );
+
   const handleRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedYear(parseInt(event.target.value));
     console.log('changed to', parseInt(event.target.value));
@@ -25,6 +29,16 @@ export function Changeinnetpos() {
       screen: 350,
       width: 300,
       height: 250,
+    },
+    {
+      screen: 500,
+      width: 400,
+      height: 200,
+    },
+    {
+      screen: 600,
+      width: 500,
+      height: 300,
     },
     {
       screen: 750,
@@ -147,6 +161,20 @@ export function Changeinnetpos() {
   useEffect(() => {
     renderChart();
   }, [data]);
+
+  useEffect(() => {
+    renderChart();
+  }, [innerwidth]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      addEventListener('resize', () => {
+        console.log('resize triggered');
+        setinnerwidth(window.innerWidth);
+        return true;
+      });
+    }
+  }, []);
 
   useEffect(() => {
     renderChart();

@@ -92,7 +92,7 @@ export default function CityRevenue(props: any) {
         },
         height: 600,
         y: {
-          tickFormat: 's',
+          tickFormat: (tick: any) => d3.format('0.1s')(tick).replace('G', 'B'),
           label: 'Revenue',
         },
         facet: {
