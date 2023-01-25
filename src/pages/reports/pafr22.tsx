@@ -220,7 +220,18 @@ export default function pafr22(props: any) {
               <span className='font-bold'>4.7% for overall debt</span> and{' '}
               <span className='font-bold'>
                 3.0% for non-voter approved debt.
+              </span>{' '}
+              <br />
+              <br />
+              Of the{' '}
+              <span className='font-bold'>
+                $34.9 billion long-term bonds and notes payable, $751.7 million
+                were General Obligation bonds.
               </span>
+              <br />
+              <br />
+              As of June 30, 2022, the City is in compliance with its Debt
+              Policies.
             </p>
           </div>
         </div>
