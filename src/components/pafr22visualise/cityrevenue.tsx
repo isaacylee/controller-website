@@ -73,67 +73,89 @@ export default function CityRevenue(props: any) {
   //import the csv table from /csvsforpafr22/1totalcityrevenue.csv
 
   const rev2 = useRef<any>();
+  const rev1 = useRef<any>();
 
   useEffect(() => {
     d3.csv('/csvsforpafr22/1totalcityrevenue.csv').then((data: any) => {
       console.log(data);
 
-      const cleanthedata = data.map((d: any) => {
+      const totalcityrevenue1 = data.map((d: any) => {
         return {
           ...d,
           Revenue: parseInt(d['Revenue']),
         };
       });
 
-      // Initialize a SVG area. Note that the width is not specified yet, since unknown
+      const revenuesplitbyactivity = Plot.plot({
+        color: {
+          legend: true,
+        },
+        height: 600,
+        y: {
+          tickFormat: 's',
+          label: 'Revenue',
+        },
+        facet: {
+          data: totalcityrevenue1,
+          y: 'Activity Type',
+        },
+        marks: [
+          Plot.barY(totalcityrevenue1, {
+            x: 'Year',
+            y: 'Revenue',
+            fill: 'Activity',
+          }),
+          Plot.ruleY([0]),
+        ],
+      });
 
-      d3.csv('/csvsforpafr22/city-revenue-summed-by-activity-type.csv').then(
-        (data: any) => {
-          const asdf = data.map((d: any) => {
-            return {
-              ...d,
-              'Sum of Revenue': parseInt(d['Sum of Revenue']),
-            };
-          });
-
-          const facetedRev = Plot.plot({
-            color: {
-              legend: true,
-              background: '#212121',
-              color: 'white',
-            },
-            height: 600,
-            y: {
-              tickFormat: 's',
-              label: 'Revenue',
-            },
-            facet: {
-              data: asdf,
-              y: 'Activity Type',
-            },
-            marks: [
-              Plot.barY(asdf, {
-                x: 'Year',
-                y: 'Sum of Revenue',
-                title: (elems: any) =>
-                  `${(parseInt(elems['Sum of Revenue']) / 10e8).toFixed(2)}B`,
-                fill: 'Activity Type',
-              }),
-              Plot.ruleY([0]),
-            ],
-          });
-
-          rev2.current.append(facetedRev);
-          //darkModeTheSvg(rev2.current);
-
-          const darkstyle = document.createElement('style');
-          darkstyle.innerHTML =
-            '.dark svg[class^="plot-"] {background-color: transparent; color: white;}';
-
-          rev2.current.append(darkstyle);
-        }
-      );
+      if (rev1.current) {
+        rev1.current.append(revenuesplitbyactivity);
+      }
     });
+
+    d3.csv('/csvsforpafr22/city-revenue-summed-by-activity-type.csv').then(
+      (data: any) => {
+        const asdf = data.map((d: any) => {
+          return {
+            ...d,
+            'Sum of Revenue': parseInt(d['Sum of Revenue']),
+          };
+        });
+
+        const facetedRev = Plot.plot({
+          color: {
+            legend: true,
+            background: '#212121',
+            color: 'white',
+          },
+          height: 500,
+          y: {
+            tickFormat: 's',
+            label: 'Revenue',
+          },
+          marks: [
+            Plot.barY(asdf, {
+              x: 'Year',
+              y: 'Sum of Revenue',
+              title: (elems: any) =>
+                `${(parseInt(elems['Sum of Revenue']) / 10e8).toFixed(2)}B`,
+              fill: 'Activity Type',
+            }),
+            Plot.ruleY([0]),
+          ],
+        });
+
+        rev2.current.append(facetedRev);
+        //darkModeTheSvg(rev2.current);
+
+        const darkstyle = document.createElement('style');
+        darkstyle.innerHTML =
+          '.dark svg[class^="plot-"] {background-color: transparent; color: white;}';
+
+        rev2.current.append(darkstyle);
+      }
+    );
   }, []);
 
   return (
@@ -141,7 +163,7 @@ export default function CityRevenue(props: any) {
       <h4>Revenues Stacked</h4>
       <div id='rev-2' ref={rev2}></div>
       <h4>Each Revenue Source over Time</h4>
-      <div id='rev-1'></div>
+      <div id='rev-1' ref={rev1}></div>
     </div>
   );
 }

@@ -192,8 +192,30 @@ export default function pafr22(props: any) {
             {/* Add Visual - City Revenues */}
             <CityRevenue />
           </div>
-          <h3 className='mt-3'>Credit Ratings by Various Agencies over Time</h3>
-          <Credit />
+          <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+            <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
+            <h4>$37.3 billion, 9.0% increase from FY 21</h4>
+
+            <h3 className='mt-3'>Credit Ratings by Rating Agencies</h3>
+            <Credit />
+
+            <p className='mt-4 lg:max-w-5xl'>
+              The City has established guidelines for the structure and
+              management of the City’s debt, which include target and ceiling
+              levels for certain debt ratios to be used for financial planning
+              purposes and restrictions on the types of items that can be
+              financed, limiting financing only to those items with a useful
+              life of six years or more. In accordance with this policy, the
+              ratio of annual debt payments cannot exceed 15% of General Fund
+              revenues for voter-approved and non-voter approved debt overall,
+              and cannot exceed 6% of General Fund revenues for non-voter
+              approved debt alone. The 6% ceiling for non-voter approved debt
+              may be exceeded only if there is a guaranteed new revenue stream
+              for the debt payments and the additional debt will not cause the
+              ratio to exceed 7.5%, or there is no guaranteed revenue stream but
+              the 6% ceiling shall not be exceeded for more than one year.
+            </p>
+          </div>
         </div>
       </Layout>
     </>
