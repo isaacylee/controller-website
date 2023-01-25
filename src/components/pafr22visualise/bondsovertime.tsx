@@ -41,9 +41,15 @@ export function BondsOverTime() {
       const bondeddebtandlongtermnotespayable = data;
 
       const bondeddebtandlongtermnotespayablecleaned =
-        bondeddebtandlongtermnotespayable.filter(
-          (eachItem: any) => eachItem.Total != null
-        );
+        bondeddebtandlongtermnotespayable
+          .filter((eachItem: any) => eachItem.Total != null)
+          .map((eachItem: any) => {
+            return {
+              ...eachItem,
+              Total: parseInt(eachItem.Total),
+              Value: parseInt(eachItem.Value),
+            };
+          });
 
       const bondeddebtandlongtermnotespayablecleanedtotals =
         bondeddebtandlongtermnotespayablecleaned.filter(
@@ -72,7 +78,8 @@ export function BondsOverTime() {
           Plot.textY(bondeddebtandlongtermnotespayablecleanedtotals, {
             x: 'Fiscal Year',
             y: 'Total',
-            text: 'Total',
+            text: (bruh: any) => (bruh['Total'] / 10e8).toFixed(1),
+            dy: -10,
           }),
           Plot.ruleY([0]),
         ],

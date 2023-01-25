@@ -131,7 +131,8 @@ export default function CityRevenue(props: any) {
           },
           height: 500,
           y: {
-            tickFormat: 's',
+            tickFormat: (tick: any) =>
+              d3.format('0.1s')(tick).replace('G', 'B'),
             label: 'Revenue',
           },
           marks: [
