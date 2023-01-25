@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
+import { Expenditures } from '@/components/pafr22visualise/2expen';
 import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
@@ -192,6 +193,9 @@ export default function pafr22(props: any) {
             <h3 className='mt-3'>FY 22 City Revenues $20.0 billion</h3>
             {/* Add Visual - City Revenues */}
             <CityRevenue />
+
+            <h3 className='mt-3'>FY 22 Total Expenses: $16.6 billion</h3>
+            <Expenditures />
           </div>
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
