@@ -2,6 +2,8 @@ import * as Plot from '@observablehq/plot';
 import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect } from 'react';
+
+import { getHeightPlot, getWidthPlot } from './processwidthandheight';
 export function Changeinnetpos() {
   const [selectedYear, setSelectedYear] = React.useState(2022);
   const refOfLoadedData = React.useRef<any>(null);
@@ -9,11 +11,32 @@ export function Changeinnetpos() {
   const refOfBoxToChange = React.useRef<any>(null);
 
   const [data, setData] = React.useState<any>(null);
+  const [dataOriginal, setDataOriginal] = React.useState<any>(null);
+
+  const [tablefiltered, setTablefiltered] = React.useState<any>({});
 
   const handleRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedYear(parseInt(event.target.value));
     console.log('changed to', parseInt(event.target.value));
   };
+
+  const sizes = [
+    {
+      screen: 350,
+      width: 300,
+      height: 250,
+    },
+    {
+      screen: 750,
+      width: 600,
+      height: 300,
+    },
+    {
+      screen: 1000,
+      width: 700,
+      height: 400,
+    },
+  ];
 
   useEffect(() => {
     d3.csv('/csvsforpafr22/3changeinnetpositiononly.csv').then(
@@ -23,7 +46,44 @@ export function Changeinnetpos() {
         setData(changeinnetpositiononly);
       }
     );
+
+    d3.csv('/csvsforpafr22/3changeinnetposition.csv').then(
+      (changeinnetposition: any) => {
+        setDataOriginal(changeinnetposition);
+      }
+    );
   }, []);
+
+  const processEachValueIntoText = (value: any) => {
+    let neg = false;
+
+    if (value < 0) {
+      neg = true;
+    }
+  };
+
+  const filterTable = (data: any, selectedYear: number) => {
+    if (dataOriginal) {
+      const changeinnetposyear = dataOriginal.filter(
+        (eachItem: any) => eachItem.Year == String(selectedYear)
+      );
+
+      const tables: any = {};
+
+      changeinnetposyear.forEach((eachItem: any) => {
+        if (tables[eachItem['Account Activity']] == undefined) {
+          tables[eachItem['Account Activity']] = {};
+        }
+
+        tables[eachItem['Account Activity']][eachItem['Business Type']] =
+          eachItem['Value'];
+      });
+
+      setTablefiltered(tables);
+
+      console.log('tables', tables);
+    }
+  };
 
   const renderChart = () => {
     console.log('data is ', refOfLoadedData.current);
@@ -46,6 +106,8 @@ export function Changeinnetpos() {
       */
 
       const finishedPlotElement = Plot.plot({
+        width: getWidthPlot(sizes),
+        height: getHeightPlot(sizes),
         color: {
           domain: ['loss', 'gain'],
           range: ['#f43f53', greenvaluetopick],

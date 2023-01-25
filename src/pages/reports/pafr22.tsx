@@ -289,8 +289,8 @@ export default function pafr22(props: any) {
               deferred inflows of resources. <br />
             </p>
 
-            <div className='md:flex md:flex-row md:gap-x-2'>
-              <div className='mr-2 rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
+            <div className='mt-2 gap-y-2 md:flex md:flex-row md:gap-x-3'>
+              <div className=' rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
                 Total City Assets: $87.4 billion.
                 <br />
                 Deferred Outflows of Resources: $3.8 billion.
@@ -307,7 +307,7 @@ export default function pafr22(props: any) {
                   <li>Capital assets (land, buildings and infrastructure)</li>
                 </ul>
               </div>
-              <div className='mr-2 rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800   md:w-1/2'>
+              <div className='rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800   md:w-1/2'>
                 Total City Liabilities: $51.3 billion. <br />
                 Deferred Inflows of Resources: $11.4 billion.
                 <br />
