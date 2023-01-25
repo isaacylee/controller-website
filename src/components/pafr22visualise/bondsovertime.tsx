@@ -34,6 +34,11 @@ export function BondsOverTime() {
       width: 800,
       height: 500,
     },
+    {
+      screen: 1200,
+      width: 1000,
+      height: 550,
+    },
   ];
 
   const renderChart = () => {

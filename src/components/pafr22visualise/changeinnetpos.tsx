@@ -50,6 +50,11 @@ export function Changeinnetpos() {
       width: 700,
       height: 400,
     },
+    {
+      screen: 1200,
+      width: 1000,
+      height: 400,
+    },
   ];
 
   useEffect(() => {
