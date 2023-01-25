@@ -8,6 +8,11 @@ const createJestConfig = nextJest({
 
 // Add any custom config to be passed to Jest
 const customJestConfig = {
+  transformIgnorePatterns: [
+    'node_modules/(?!(jest-)?react-native|@react-native-community|@react-native-picker)',
+    'node_modules/@observablehq/plot/*',
+  ],
+
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
 
