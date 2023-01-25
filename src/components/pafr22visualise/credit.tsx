@@ -66,7 +66,7 @@ export function Credit() {
 
   return (
     <>
-      <div className='lg:grid lg:grid-cols-2'>
+      <div className='md:grid-cols-2 lg:grid'>
         {creditdata &&
           Object.entries(creditdata).map((eachbond: any, keynumber: number) => (
             <div key={keynumber} className='mt-2'>

@@ -14,6 +14,11 @@ export function BondsOverTime() {
             (eachItem: any) => eachItem.Total != null
           );
 
+        const bondeddebtandlongtermnotespayablecleanedtotals =
+          bondeddebtandlongtermnotespayablecleaned.filter(
+            (eachItem: any) => eachItem['Activity Type'] === 'Governmental'
+          );
+
         const plotforbondsovertimeelem = Plot.plot({
           color: {
             legend: true,
@@ -21,21 +26,21 @@ export function BondsOverTime() {
           y: {
             tickFormat: 's',
           },
-          facet: {
-            data: bondeddebtandlongtermnotespayablecleaned,
-            y: 'Activity Type',
-          },
           marks: [
             Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
               x: 'Fiscal Year',
               fill: 'Activity Type',
-              y: 'Total',
-              opacity: 0.5,
-            }),
-            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
-              x: 'Fiscal Year',
-              fill: 'Activity Type',
               y: 'Value',
+            }),
+            Plot.lineY(bondeddebtandlongtermnotespayablecleanedtotals, {
+              x: 'Fiscal Year',
+              y: 'Total',
+            }),
+            Plot.textY(bondeddebtandlongtermnotespayablecleanedtotals, {
+              x: 'Fiscal Year',
+              y: 'Total',
+              text: 'Total',
+              dx: 10,
             }),
             Plot.ruleY([0]),
           ],

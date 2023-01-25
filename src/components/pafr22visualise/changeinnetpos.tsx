@@ -34,9 +34,22 @@ export function Changeinnetpos() {
       );
       console.log('filteredData', changeinnetposyear);
 
+      const greenvaluetopick = '#22c55e';
+
+      const querybody = document.querySelector('body');
+      /*
+
+      if (querybody) {
+        if (querybody.classList.contains('dark')) {
+        }
+      }
+      */
+
       const finishedPlotElement = Plot.plot({
         color: {
-          legend: true,
+          domain: ['loss', 'gain'],
+          range: ['#f43f53', greenvaluetopick],
+          pivot: 0,
         },
         y: {
           domain: [
@@ -54,11 +67,14 @@ export function Changeinnetpos() {
           domain: [-200000, 500000],
         },
         marks: [
-          Plot.barX(changeinnetposyear, { x: 'Value', y: 'Business Type' }),
+          Plot.barX(changeinnetposyear, {
+            x: 'Value',
+            y: 'Business Type',
+            fill: (d: any) => (d.Value >= 0 ? 'gain' : 'loss'),
+          }),
           Plot.ruleX([0]),
         ],
       });
-
       if (refOfBoxToChange.current) {
         refOfBoxToChange.current.innerHTML = '';
         refOfBoxToChange.current.append(finishedPlotElement);

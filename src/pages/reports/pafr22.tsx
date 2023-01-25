@@ -198,6 +198,46 @@ export default function pafr22(props: any) {
             <h3 className='mt-3'>FY 22 Total Expenses: $16.6 billion</h3>
             <Expenditures />
           </div>
+
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+            <p className='mt-4 lg:max-w-5xl'>
+              Total revenues of governmental activities were $10.2 billion,
+              while total expenses were $7.8 billion. Of the $7.8 billion total
+              expenses, 40.3% was funded by taxes and other general revenues,
+              and the remaining 59.7% was funded by program revenues and
+              available net position. Program revenues are resources obtained
+              from parties outside of the City and charges for services between
+              the governmental and business-type activities. Total expenses
+              decreased by $1.7 billion or 18.0% compared to FY 21. Expenses
+              decreased in the following functional areas: general government by
+              $209.6 million, protections of persons and property by $1.4
+              billion, public works by $73.9 million, health and sanitation by
+              $125.3 million, transportation by $13.5 million, and interest on
+              long-term debt by $1.6 million; offset by increases of cultural
+              and recreational services of $9.3 million and community
+              development of $77.6 million.
+            </p>
+
+            <h2>Business-Type Activities</h2>
+            <p className='mt-4 lg:max-w-5xl'>
+              The $9.0 billion combined operating revenues of the City’s six
+              business-type activities were $1.6 billion more than the $7.4
+              billion combined operating costs.
+            </p>
+
+            <h2> Business-Type Activities: Change in Net Position</h2>
+            <p className='mt-4 lg:max-w-5xl'>
+              Enterprise funds are used to report the functions presented as
+              business-type activities in the government-wide financial
+              statements, they are generally used to account for services for
+              which the City charges customers – either outside customers or
+              other departments/funds of the City. All of the City’s enterprise
+              funds, except the convention center, are considered major funds.
+              The operating results of the City’s six enterprise funds are
+              reflected in the change in net position statement below.
+            </p>
+            <Changeinnetpos />
+          </div>
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
             <h4>$37.3 billion, 9.0% increase from FY 21</h4>
@@ -247,12 +287,44 @@ export default function pafr22(props: any) {
               financial position of the City – assets and deferred outflows of
               resources minus <span className='font-bold'>liabilities</span> and
               deferred inflows of resources. <br />
-              <br />
-              Total City Assets: $87.4 billion. Deferred Outflows of Resources:
-              $3.8 billion.{' '}
-              <span className='font-bold'>Total: $91.2 billion.</span>
             </p>
-            <Changeinnetpos />
+
+            <div className='md:flex md:flex-row md:gap-x-2'>
+              <div className='mr-2 rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
+                Total City Assets: $87.4 billion.
+                <br />
+                Deferred Outflows of Resources: $3.8 billion.
+                <br />
+                <span className='font-bold'>Total: $91.2 Billion.</span>
+                <br />
+                <br />
+                <p className='font-bold'>
+                  Assets represent what the City owns:
+                </p>
+                <ul className='list-disc px-4'>
+                  <li>Cash and pooled investments</li>
+                  <li>Receivables</li>
+                  <li>Capital assets (land, buildings and infrastructure)</li>
+                </ul>
+              </div>
+              <div className='mr-2 rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800   md:w-1/2'>
+                Total City Liabilities: $51.3 billion. <br />
+                Deferred Inflows of Resources: $11.4 billion.
+                <br />
+                <span className='font-bold'>Total: $62.7 billion.</span>
+                <br />
+                <br />
+                <p className='font-bold'>
+                  Liabilities represent what the City owes:
+                </p>
+                <ul className='list-disc  px-4'>
+                  <li>Bonds and notes</li>
+                  <li>Claims and judgments</li>
+                  <li>Unearned revenue</li>
+                  <li>Accounts payable and accrued expenses</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>
