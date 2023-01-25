@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
+import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import Seo from '@/components/Seo';
@@ -195,7 +196,7 @@ export default function pafr22(props: any) {
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
             <h4>$37.3 billion, 9.0% increase from FY 21</h4>
-
+            <BondsOverTime />
             <h3 className='mt-3'>Credit Ratings by Rating Agencies</h3>
             <Credit />
 
