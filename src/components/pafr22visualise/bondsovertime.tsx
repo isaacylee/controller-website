@@ -1,17 +1,17 @@
-//import d3 from 'd3';
 import * as Plot from '@observablehq/plot';
+import d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
 export function BondsOverTime() {
-  const bondsovertimeref = useRef(null);
+  const bondsovertimeref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     d3.csv('/csvsforpafr22/4bondeddebtandlongtermnotespayable.csv').then(
       (bondeddebtandlongtermnotespayable: any) => {
         const bondeddebtandlongtermnotespayablecleaned =
           bondeddebtandlongtermnotespayable.filter(
-            (eachItem) => eachItem.Total != null
+            (eachItem: any) => eachItem.Total != null
           );
 
         const plotforbondsovertimeelem = Plot.plot({
