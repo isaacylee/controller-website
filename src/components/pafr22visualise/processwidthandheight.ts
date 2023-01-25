@@ -20,7 +20,11 @@ export function getHeightPlot(sizes: Array<any>): number {
 
     sizes.forEach((size) => {
       if (size.screen <= window.innerWidth) {
-        finalnumber = size.height;
+        if (size.height > window.innerHeight) {
+          finalnumber = window.innerHeight - 40;
+        } else {
+          finalnumber = size.height;
+        }
       }
     });
 

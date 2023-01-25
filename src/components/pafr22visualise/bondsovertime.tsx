@@ -3,8 +3,27 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
+import { getHeightPlot, getWidthPlot } from './processwidthandheight';
 export function BondsOverTime() {
   const bondsovertimeref = useRef<any>(null);
+
+  const sizes = [
+    {
+      screen: 350,
+      width: 300,
+      height: 250,
+    },
+    {
+      screen: 750,
+      width: 700,
+      height: 400,
+    },
+    {
+      screen: 1000,
+      width: 800,
+      height: 500,
+    },
+  ];
 
   useEffect(() => {
     d3.csv('/csvsforpafr22/4bondeddebtandlongtermnotespayable.csv').then(
@@ -20,6 +39,8 @@ export function BondsOverTime() {
           );
 
         const plotforbondsovertimeelem = Plot.plot({
+          width: getWidthPlot(sizes),
+          height: getHeightPlot(sizes),
           color: {
             legend: true,
           },
@@ -40,7 +61,6 @@ export function BondsOverTime() {
               x: 'Fiscal Year',
               y: 'Total',
               text: 'Total',
-              dx: 10,
             }),
             Plot.ruleY([0]),
           ],
