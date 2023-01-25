@@ -2,12 +2,17 @@ import * as Plot from '@observablehq/plot';
 import * as d3 from 'd3';
 import * as React from 'react';
 import { useRef } from 'react';
+
 export function Expenditures() {
   const expenref = useRef<any>(null);
 
   React.useEffect(() => {
     d3.csv('/csvsforpafr22/2totalcityexpenditures.csv').then(
       (totalcityexpenditures1: any) => {
+        const totalcityexpenditures1clean = totalcityexpenditures1.filter(
+          (e: any) => e.Value != null
+        );
+
         const expenelement = Plot.plot({
           color: {
             legend: true,
@@ -16,11 +21,11 @@ export function Expenditures() {
             tickFormat: '$s',
           },
           facet: {
-            data: totalcityexpenditures1,
+            data: totalcityexpenditures1clean,
             y: 'Activity Type',
           },
           marks: [
-            Plot.barY(totalcityexpenditures1, {
+            Plot.barY(totalcityexpenditures1clean, {
               x: 'Year',
               y: 'Value',
               fill: 'Activity',

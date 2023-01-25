@@ -35,7 +35,7 @@ export function BondsOverTime() {
             Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
               x: 'Fiscal Year',
               fill: 'Activity Type',
-              y1: 'Value',
+              y: 'Value',
             }),
             Plot.ruleY([0]),
           ],
