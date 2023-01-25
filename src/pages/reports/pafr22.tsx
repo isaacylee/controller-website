@@ -235,6 +235,19 @@ export default function pafr22(props: any) {
               Policies.
             </p>
           </div>
+          <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+            <h2>Net Position</h2>
+            <p className='mt-2 lg:max-w-5xl'>
+              The <span className='font-bold'>net position</span> is the
+              financial position of the City – assets and deferred outflows of
+              resources minus <span className='font-bold'>liabilities</span> and
+              deferred inflows of resources. <br />
+              <br />
+              Total City Assets: $87.4 billion. Deferred Outflows of Resources:
+              $3.8 billion.{' '}
+              <span className='font-bold'>Total: $91.2 billion.</span>
+            </p>
+          </div>
         </div>
       </Layout>
     </>

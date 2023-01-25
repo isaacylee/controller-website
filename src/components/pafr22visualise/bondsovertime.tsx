@@ -1,10 +1,10 @@
 import * as Plot from '@observablehq/plot';
-import d3 from 'd3';
+import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
 export function BondsOverTime() {
-  const bondsovertimeref = useRef<HTMLDivElement>(null);
+  const bondsovertimeref = useRef<any>(null);
 
   useEffect(() => {
     d3.csv('/csvsforpafr22/4bondeddebtandlongtermnotespayable.csv').then(
@@ -26,13 +26,13 @@ export function BondsOverTime() {
             y: 'Activity Type',
           },
           marks: [
-            Plot.areaY(bondeddebtandlongtermnotespayablecleaned, {
+            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
               x: 'Fiscal Year',
               fill: 'Activity Type',
               y: 'Total',
               opacity: 0.5,
             }),
-            Plot.areaY(bondeddebtandlongtermnotespayablecleaned, {
+            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
               x: 'Fiscal Year',
               fill: 'Activity Type',
               y1: 'Value',
@@ -42,6 +42,7 @@ export function BondsOverTime() {
         });
 
         if (bondsovertimeref.current) {
+          console.log('current ref', bondsovertimeref.current);
           bondsovertimeref.current.append(plotforbondsovertimeelem);
         }
       }

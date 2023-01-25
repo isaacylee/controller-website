@@ -146,14 +146,16 @@ export default function CityRevenue(props: any) {
           ],
         });
 
-        rev2.current.append(facetedRev);
-        //darkModeTheSvg(rev2.current);
+        if (rev2.current) {
+          rev2.current.append(facetedRev);
+          //darkModeTheSvg(rev2.current);
 
-        const darkstyle = document.createElement('style');
-        darkstyle.innerHTML =
-          '.dark svg[class^="plot-"] {background-color: transparent; color: white;}';
+          const darkstyle = document.createElement('style');
+          darkstyle.innerHTML =
+            '.dark svg[class^="plot-"] {background-color: transparent; color: white;}';
 
-        rev2.current.append(darkstyle);
+          rev2.current.append(darkstyle);
+        }
       }
     );
   }, []);
