@@ -8,22 +8,29 @@ export function Changeinnetpos() {
 
   const refOfBoxToChange = React.useRef<any>(null);
 
+  const [data, setData] = React.useState<any>(null);
+
   const handleRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedYear(parseInt(event.target.value));
+    console.log('changed to', parseInt(event.target.value));
   };
 
   useEffect(() => {
-    d3.csv('/pafr22visualise/3changeinnetpositiononly.csv').then(
+    d3.csv('/csvsforpafr22/3changeinnetpositiononly.csv').then(
       (changeinnetpositiononly: any) => {
+        console.log('recieved', changeinnetpositiononly);
         refOfLoadedData.current = changeinnetpositiononly;
+        setData(changeinnetpositiononly);
       }
     );
   }, []);
 
-  useEffect(() => {
-    if (refOfLoadedData.current) {
-      const changeinnetposyear = refOfLoadedData.current.filter(
-        (eachItem: any) => eachItem.FiscalYear == selectedYear
+  const renderChart = () => {
+    console.log('data is ', refOfLoadedData.current);
+    console.log('data2 is ', data);
+    if (data) {
+      const changeinnetposyear = data.filter(
+        (eachItem: any) => eachItem.Year == String(selectedYear)
       );
       console.log('filteredData', changeinnetposyear);
 
@@ -57,6 +64,14 @@ export function Changeinnetpos() {
         refOfBoxToChange.current.append(finishedPlotElement);
       }
     }
+  };
+
+  useEffect(() => {
+    renderChart();
+  }, [data]);
+
+  useEffect(() => {
+    renderChart();
   }, [selectedYear]);
 
   return (
@@ -75,7 +90,7 @@ export function Changeinnetpos() {
         onChange={handleRangeChange}
         min={2016}
         max={2022}
-        className='h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 dark:bg-gray-700'
+        className='h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 dark:bg-gray-700 sm:max-w-md'
       ></input>
       <br />
       <div ref={refOfBoxToChange} />
