@@ -14,6 +14,7 @@ export function Expenditures() {
         );
 
         const expenelement = Plot.plot({
+          height: 650,
           color: {
             legend: true,
           },

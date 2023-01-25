@@ -4,6 +4,7 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import { Expenditures } from '@/components/pafr22visualise/2expen';
 import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
+import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import Seo from '@/components/Seo';
@@ -251,6 +252,7 @@ export default function pafr22(props: any) {
               $3.8 billion.{' '}
               <span className='font-bold'>Total: $91.2 billion.</span>
             </p>
+            <Changeinnetpos />
           </div>
         </div>
       </Layout>
