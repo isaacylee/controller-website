@@ -23,7 +23,7 @@ export default function pafr22(props: any) {
         image='https://controller.lacity.gov/images/pafrthumbnail3.png'
       />
       <Layout>
-        <div className='flex flex-col py-2 dark:text-white'>
+        <div className='flex flex-col pb-2 dark:text-white'>
           <div
             className=''
             style={{
