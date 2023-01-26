@@ -109,7 +109,8 @@ export default function pafr22(props: any) {
                 revenues, including Governmental and Business-Type activities,
                 were approximately $20.0 billion, an 8.7 percent increase over
                 FY 2020-21.
-                <br /><br />
+                <br />
+                <br />
                 <ul className='list-disc pl-4'>
                   <li>
                     Total City revenues, including Governmental and
@@ -383,16 +384,16 @@ export default function pafr22(props: any) {
               and the remaining 59.7% was funded by program revenues and
               available net position. Program revenues are resources obtained
               from parties outside of the City and charges for services between
-              the governmental and business-type activities. 
+              the governmental and business-type activities.
               <br />
               <br />
-              Total expenses decreased by $1.7 billion or 18.0% compared to FY 21.
-              Expenses decreased in the following functional areas: general government
-              by $209.6 million, protections of persons and property by $1.4
-              billion, public works by $73.9 million, health and sanitation by
-              $125.3 million, transportation by $13.5 million, and interest on
-              long-term debt by $1.6 million; offset by increases of cultural
-              and recreational services of $9.3 million and community
+              Total expenses decreased by $1.7 billion or 18.0% compared to FY
+              21. Expenses decreased in the following functional areas: general
+              government by $209.6 million, protections of persons and property
+              by $1.4 billion, public works by $73.9 million, health and
+              sanitation by $125.3 million, transportation by $13.5 million, and
+              interest on long-term debt by $1.6 million; offset by increases of
+              cultural and recreational services of $9.3 million and community
               development of $77.6 million.
               <br />
               <br />
@@ -426,7 +427,9 @@ export default function pafr22(props: any) {
             <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
             <h4>$37.3 billion, 9.0% increase from FY 21</h4>
             <BondsOverTime />
-            <h3 className='mt-3'>Ratings of the City's Debts by Rating Agencies</h3>
+            <h3 className='mt-3'>
+              Ratings of the City's Debts by Rating Agencies
+            </h3>
             <Credit />
 
             <p className='mt-4 lg:max-w-5xl'>
@@ -469,8 +472,9 @@ export default function pafr22(props: any) {
             <p className='mt-2 lg:max-w-5xl'>
               The <span className='font-bold'>net position</span> is the
               financial position of the City – assets and deferred outflows of
-              resources <span className='font-bold'>minus</span> liabilities
-              and deferred inflows of resources. <br /><br />
+              resources <span className='font-bold'>minus</span> liabilities and
+              deferred inflows of resources. <br />
+              <br />
             </p>
 
             <div className='mt-2 gap-y-2 md:flex md:flex-row md:gap-x-3'>
@@ -583,10 +587,10 @@ export default function pafr22(props: any) {
             {/* revenues text */}
             <ul className='list-disc'>
               <li>
-                <span className='font-bold'>Tax Revenues</span>, increased by 
-                $571.0 million or 11.9% from FY 21 due primarily to property 
-                tax growth. Taxes accounted for $5.4 billion (86.8%) of 
-                General Fund revenue.
+                <span className='font-bold'>Tax Revenues</span>, increased by
+                $571.0 million or 11.9% from FY 21 due primarily to property tax
+                growth. Taxes accounted for $5.4 billion (86.8%) of General Fund
+                revenue.
               </li>
               <li>
                 <span className='font-bold'>Property Taxes</span>, which
@@ -637,7 +641,7 @@ export default function pafr22(props: any) {
                 investments.
               </li>
             </ul>
-            
+
             <br />
             <h2 className='mt-3'>General Fund Expenses</h2>
             <h4 className='font-bold'>
