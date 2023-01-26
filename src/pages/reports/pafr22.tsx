@@ -71,9 +71,6 @@ export default function pafr22(props: any) {
             <div className='lg:max-w-5xl'>
               <h2>A Letter from City Controller Kenneth Mejia</h2>
               <p>
-                Honorable Karen Bass, Mayor
-                <br />
-                Honorable Members of the Council of the City of Los Angeles
                 <br />
                 Community Members of the City of Los Angeles
                 <br />
@@ -112,7 +109,7 @@ export default function pafr22(props: any) {
                 revenues, including Governmental and Business-Type activities,
                 were approximately $20.0 billion, an 8.7 percent increase over
                 FY 2020-21.
-                <br />
+                <br /><br />
                 <ul className='list-disc pl-4'>
                   <li>
                     Total City revenues, including Governmental and
@@ -370,7 +367,7 @@ export default function pafr22(props: any) {
           </div>
 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>FY 22 City Revenues $20.0 billion</h3>
+            <h3 className='mt-3'>FY 22 Total Revenues: $20.0 billion</h3>
             {/* Add Visual - City Revenues */}
             <CityRevenue />
 
@@ -386,15 +383,19 @@ export default function pafr22(props: any) {
               and the remaining 59.7% was funded by program revenues and
               available net position. Program revenues are resources obtained
               from parties outside of the City and charges for services between
-              the governmental and business-type activities. Total expenses
-              decreased by $1.7 billion or 18.0% compared to FY 21. Expenses
-              decreased in the following functional areas: general government by
-              $209.6 million, protections of persons and property by $1.4
+              the governmental and business-type activities. 
+              <br />
+              <br />
+              Total expenses decreased by $1.7 billion or 18.0% compared to FY 21.
+              Expenses decreased in the following functional areas: general government
+              by $209.6 million, protections of persons and property by $1.4
               billion, public works by $73.9 million, health and sanitation by
               $125.3 million, transportation by $13.5 million, and interest on
               long-term debt by $1.6 million; offset by increases of cultural
               and recreational services of $9.3 million and community
               development of $77.6 million.
+              <br />
+              <br />
             </p>
 
             <h2>Business-Type Activities</h2>
@@ -402,6 +403,8 @@ export default function pafr22(props: any) {
               The $9.0 billion combined operating revenues of the City’s six
               business-type activities were $1.6 billion more than the $7.4
               billion combined operating costs.
+              <br />
+              <br />
             </p>
 
             <h2> Business-Type Activities: Change in Net Position</h2>
@@ -414,6 +417,8 @@ export default function pafr22(props: any) {
               funds, except the convention center, are considered major funds.
               The operating results of the City’s six enterprise funds are
               reflected in the change in net position statement below.
+              <br />
+              <br />
             </p>
             <Changeinnetpos />
           </div>
@@ -421,7 +426,7 @@ export default function pafr22(props: any) {
             <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
             <h4>$37.3 billion, 9.0% increase from FY 21</h4>
             <BondsOverTime />
-            <h3 className='mt-3'>Credit Ratings by Rating Agencies</h3>
+            <h3 className='mt-3'>Ratings of the City's Debts by Rating Agencies</h3>
             <Credit />
 
             <p className='mt-4 lg:max-w-5xl'>
@@ -464,8 +469,8 @@ export default function pafr22(props: any) {
             <p className='mt-2 lg:max-w-5xl'>
               The <span className='font-bold'>net position</span> is the
               financial position of the City – assets and deferred outflows of
-              resources minus <span className='font-bold'>liabilities</span> and
-              deferred inflows of resources. <br />
+              resources <span className='font-bold'>minus</span> liabilities
+              and deferred inflows of resources. <br /><br />
             </p>
 
             <div className='mt-2 gap-y-2 md:flex md:flex-row md:gap-x-3'>
@@ -575,6 +580,12 @@ export default function pafr22(props: any) {
             <GeneralRevenue />
             {/* revenues text */}
             <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Tax Revenues</span>, increased by 
+                $571.0 million or 11.9% from FY 21 due primarily to property 
+                tax growth. Taxes accounted for $5.4 billion (86.8%) of 
+                General Fund revenue
+              </li>
               <li>
                 <span className='font-bold'>Property Taxes</span>, which
                 represent 40.4% of General Fund revenue, increased by $90.5
