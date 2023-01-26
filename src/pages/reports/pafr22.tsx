@@ -251,6 +251,7 @@ export default function pafr22(props: any) {
             </p>
             {/* Add Visual - Demographic and Economic Data */}
             {/* Add Visual - Principal Employers */}
+            <br /> <br />
             <Employers />
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
@@ -523,6 +524,7 @@ export default function pafr22(props: any) {
               from FY 21
             </h4>
             {/*Revenues  vis */}
+
             <GeneralRevenue />
             {/* revenues text */}
             <ul className='list-disc'>
