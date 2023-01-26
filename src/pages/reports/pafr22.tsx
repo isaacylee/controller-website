@@ -61,6 +61,7 @@ export default function pafr22(props: any) {
                 href='/acfr22.pdf'
                 target='_blank'
                 rel='noreferrer noopener'
+                className='text-green-800 underline dark:text-mejito'
               >
                 Click here for the full FY2022 Annual Comprehensive Financial
                 Report
