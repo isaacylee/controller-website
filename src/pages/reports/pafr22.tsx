@@ -34,9 +34,14 @@ export default function pafr22(props: any) {
               backgroundPosition: 'bottom',
             }}
           >
-            <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-              <h1 className='mb-4 ml-2 bg-black bg-opacity-60 px-2 px-2 text-2xl dark:text-white sm:px-4 sm:py-4'>
-                Popular Annual Financial Report FY22
+            <div className=' container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+              <div className='xl:mt-64'>
+                <span className='xl:py-1'></span>
+              </div>
+              <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 lg:mb-96 lg:mt-96 xl:mb-32'>
+                <span className='rounded-lg bg-black bg-opacity-60 px-1 py-1'>
+                  Popular Annual Financial Report FY22
+                </span>
               </h1>
             </div>
           </div>
@@ -51,7 +56,7 @@ export default function pafr22(props: any) {
               graphs measuring how the City serves residents.
             </p>
             <br />
-            <p className='text-green-800 underline dark:text-mejito'>
+            <p className='text-green-800 underline dark:text-[#41ffca]'>
               <Link
                 href='/acfr22.pdf'
                 target='_blank'
