@@ -306,13 +306,9 @@ export function Changeinnetpos() {
 
   return (
     <div>
-      <label
-        htmlFor='default-range'
-        className='mb-2 block text-sm font-medium text-gray-900 dark:text-white'
-      >
-        Selected Year
+      <label htmlFor='default-range' className=''>
+        Currently selected year: {selectedYear}
       </label>
-      <p>Currently selected year: {selectedYear}</p>
       <input
         id='default-range'
         type='range'
