@@ -51,10 +51,10 @@ export function Employers() {
         'Employer',
         '22 Employees',
         '22 Rank',
-        '13 % of Total Employment',
+        '13 % of Total',
         '13 Employees',
         '13 Rank',
-        '13 % of Total Employment',
+        '13 % of Total',
       ];
       renderChart(data, columns);
       return true;
