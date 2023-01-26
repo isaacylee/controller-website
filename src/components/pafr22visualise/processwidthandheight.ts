@@ -1,14 +1,13 @@
 export function getWidthPlot(sizes: Array<any>): number {
   if (typeof window != 'undefined') {
     let finalnumber = 500;
-
     sizes.forEach((size) => {
       if (size.fullscreen === true) {
         finalnumber = window.innerWidth - 40;
-      }
-
-      if (size.screen <= window.innerWidth) {
-        finalnumber = size.width;
+      } else {
+        if (size.screen <= window.innerWidth) {
+          finalnumber = size.width;
+        }
       }
     });
 

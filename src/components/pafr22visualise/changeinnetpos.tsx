@@ -31,25 +31,28 @@ export function Changeinnetpos() {
       screen: 350,
       width: 300,
       height: 250,
+      fullscreen: true,
     },
     {
       screen: 500,
       width: 400,
       height: 200,
+      fullscreen: true,
     },
     {
       screen: 600,
       width: 500,
       height: 300,
+      fullscreen: true,
     },
     {
       screen: 750,
-      width: 600,
+      width: 650,
       height: 300,
     },
     {
       screen: 800,
-      width: 700,
+      width: 750,
       height: 300,
     },
     {

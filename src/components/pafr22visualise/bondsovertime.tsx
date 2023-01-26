@@ -18,15 +18,19 @@ export function BondsOverTime() {
       screen: 350,
       width: 300,
       height: 250,
+
+      fullscreen: true,
     },
     {
       screen: 500,
       width: 400,
       height: 300,
+
+      fullscreen: true,
     },
     {
       screen: 750,
-      width: 700,
+      width: 750,
       height: 400,
     },
     {

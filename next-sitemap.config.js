@@ -11,6 +11,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/pafr22',
+        destination: '/reports/pafr22',
+        permanent: true,
+      },
+      {
         source: '/payroll-calendar/',
         destination: '/payrollcalendar/',
         permanent: true,
