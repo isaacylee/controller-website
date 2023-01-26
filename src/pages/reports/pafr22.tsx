@@ -24,9 +24,23 @@ export default function pafr22(props: any) {
       />
       <Layout>
         <div className='flex flex-col py-2 dark:text-white'>
+          <div
+            className=''
+            style={{
+              //url
+              background: 'url(/images/acfr-coverphoto.png)',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'bottom',
+            }}
+          >
+            <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+              <h1 className='mb-4 ml-2 bg-black bg-opacity-60 px-2 px-2 text-2xl dark:text-white sm:px-4 sm:py-4'>
+                Popular Annual Financial Report FY22
+              </h1>
+            </div>
+          </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-            <div></div>
-
             <br />
             <p>
               LA City Controller Kenneth Mejia releases the Annual Comprehensive
