@@ -226,7 +226,7 @@ export function Changeinnetpos() {
             {
               x: 'Value',
               y: 'Business Type',
-              dx: 10,
+              dx: 20,
               text: (d: any) => processEachValueIntoText(d.Value),
             }
           ),
@@ -235,7 +235,7 @@ export function Changeinnetpos() {
             {
               x: 'Value',
               y: 'Business Type',
-              dx: -10,
+              dx: -20,
               text: (d: any) => processEachValueIntoText(d.Value),
             }
           ),
