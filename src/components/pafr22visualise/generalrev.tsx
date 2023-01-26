@@ -43,7 +43,7 @@ export function GeneralRevenue() {
         }
       }
     );
-  });
+  }, []);
 
   return <div ref={expenref}></div>;
 }
