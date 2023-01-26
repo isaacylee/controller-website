@@ -26,6 +26,132 @@ export default function pafr22(props: any) {
               Popular Annual Financial Report FY22
             </h1>{' '}
             <br />
+            <div className='lg:max-w-5xl'>
+              <h2>A Letter from City Controller Kenneth Mejia, CPA</h2>
+              <p>
+                Honorable Karen Bass, Mayor
+                <br />
+                Honorable Members of the Council of the City of Los Angeles
+                <br />
+                Community Members of the City of Los Angeles
+                <br />
+                <br />
+                As the new Controller for the City of Los Angeles, our Office
+                has the Charter responsibility to prepare and publish the City's
+                Annual Comprehensive Financial Report (ACFR) of the City for the
+                fiscal year ended June 30, 2022.
+                <br />
+                <br />
+                We live in tumultuous times. The residents and businesses of Los
+                Angeles have endured a once-in-a-century pandemic that upended
+                lives and livelihoods throughout the City, falling hardest on
+                the most vulnerable. Rising rents and housing prices have
+                increased housing insecurity for tens of thousands of tenants
+                and fueled a homelessness emergency. The impacts of the
+                pandemic, inflation and international conflicts continue to
+                disrupt supply chains around the world.
+                <br />
+                <br />
+                Amid deepening economic and political divides, Los Angeles is at
+                the epicenter of these and even larger challenges, including the
+                "planetary red alert" of climate change. Angelenos in the last
+                election voted for change. It is our responsibility to respond
+                with transparency and accountability. <br />
+                <br />
+                The ACFR provides a report on revenues and expenses for all the
+                City's funds, including the Harbor, Airports and Department of
+                Water and Power and a snapshot of the fiscal condition of the
+                City as it ended the fiscal year on June 30 of 2022. Total City
+                revenues, including Governmental and Business-Type activities,
+                were approximately $20.0 billion, an 8.7 percent increase over
+                FY 2020-21.
+                <br />
+                <ul className='list-disc pl-4'>
+                  <li>
+                    Total City revenues, including Governmental and
+                    Business-Type activities, were approximately $20.0 billion,
+                    an 8.7 percent increase over FY 2020-21.
+                  </li>
+                  <li>
+                    {' '}
+                    Total City expenses including Governmental and Business-Type
+                    activities, were approximately $16.6 billion, a decrease of
+                    4.5 percent from FY 2020-21.
+                  </li>
+                  <li>
+                    The aggregate fund balances of the City's governmental funds
+                    were $7.3 billion, a net increase of $857.4 million from
+                    June 30, 2021.
+                  </li>
+                  <li>
+                    The Reserve Fund cash balance began FY 2022-23 at $601.7
+                    million or 8.1 percent of General Fund Budget, down from an
+                    all-time high of $647.0 million at the beginning of Fiscal
+                    Year 2021-22.
+                  </li>
+                  <li>
+                    The City's bonded debt and long-term notes payable as of
+                    June 30, 2022, totaled $37.3 billion, an increase of $3.1
+                    billion from the prior year's balance of $34.2 billion.
+                  </li>
+                  <li>
+                    The largest General Fund departmental expenditures
+                    (including encumbrances) went to Police ($1.8 billion); Fire
+                    ($780.2 million); and Sanitation ($330.6 million).
+                  </li>
+                </ul>
+                <br />
+                While the City is currently in a stable fiscal position,
+                significant challenges lie ahead. The almost $2.0 billion in
+                one-time revenue from the federal government available during
+                the last two years has largely been spent. Retirement Plans'
+                adverse investment returns during Fiscal Year 2021-22 will
+                increase future pension costs, which now consume more than 15%
+                of the General Fund budget. Increased labor costs put a further
+                strain on resources to maintain and improve services to our
+                residents. There is also universal recognition of the need to
+                spend more to house the more than 42,000 unhoused residents of
+                our community. Finally, Los Angeles has underinvested for
+                decades in maintaining its capital and human infrastructure -
+                which will come under intense test from the impacts of climate
+                change.
+                <br />
+                <br />
+                All this impels us to "link arms" (as Mayor Karen Bass has
+                advocated) to undertake the difficult, long-term changes that
+                will not only ensure financial stability, but address the urgent
+                need to make Los Angeles a more equitable and sustainable city.
+                We pledge that the Office of the Controller will be a
+                collaborative partner in meeting those shared challenges.
+                <br />
+                <br />I would like to acknowledge the professional and dedicated
+                staff of the Financial Analysis and Reporting Division of the
+                Controller's Office for the preparation of this report. I would
+                also like to express my appreciation to other staff of the
+                Office for their assistance and contributions, as well as other
+                professional contributors citywide.
+                <br />
+                <br />
+              </p>
+              <p>
+                Respectfully submitted,
+                <br />
+                <img
+                  src='/images/sig-light.png'
+                  aria-label="Kenneth Mejia\'s Signature"
+                  className='w-64 dark:hidden'
+                />
+                <img
+                  src='/images/sig-dark.png'
+                  aria-label="Kenneth Mejia\'s Signature"
+                  className='hidden w-64 dark:block'
+                />
+                Kenneth Mejia, CPA
+                <br />
+                Los Angeles City Controller
+              </p>
+            </div>
+            <br />
             <h2>About Popular Annual Financial Reporting</h2>
             <p className='mt-2  lg:max-w-5xl'>
               The Government Finance Officers Association of the United States
