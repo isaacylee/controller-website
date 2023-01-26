@@ -511,6 +511,8 @@ export default function pafr22(props: any) {
             </div>
 
             <h3>
+              <br />
+              <br />
               Net Position: $28.5 billion, $3.4 billion (13.6%) increase from FY
               21
             </h3>
@@ -570,7 +572,7 @@ export default function pafr22(props: any) {
                 million.
               </span>
             </p>
-            <h2 className='mt-3'>Revenues</h2>
+            <h2 className='mt-3'>General Fund Revenues</h2>
             <h4 className='font-bold'>
               FY 22 Total General Fund Revenues: $6.2 billion, 8.8% increase
               from FY 21
@@ -584,7 +586,7 @@ export default function pafr22(props: any) {
                 <span className='font-bold'>Tax Revenues</span>, increased by 
                 $571.0 million or 11.9% from FY 21 due primarily to property 
                 tax growth. Taxes accounted for $5.4 billion (86.8%) of 
-                General Fund revenue
+                General Fund revenue.
               </li>
               <li>
                 <span className='font-bold'>Property Taxes</span>, which
@@ -635,9 +637,9 @@ export default function pafr22(props: any) {
                 investments.
               </li>
             </ul>
+            
             <br />
-            <br />
-            <h2 className='mt-3'>Expenses</h2>
+            <h2 className='mt-3'>General Fund Expenses</h2>
             <h4 className='font-bold'>
               FY 22 General Fund Expenses: $5.8 billion, $465.6 million (8.8%)
               increase over FY 21
@@ -651,7 +653,7 @@ export default function pafr22(props: any) {
                   Salaries and Benefits increased by $319.1 million (9.3%)
                 </span>
                 , due to payment of excess sick and overtime payouts, and
-                one-time bonuses to certain labour organizations and increased
+                one-time bonuses to certain labor organizations and increased
                 pension contribution.
               </li>
               <li>
