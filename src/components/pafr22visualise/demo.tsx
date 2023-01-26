@@ -1,10 +1,10 @@
 import * as d3 from 'd3';
 import * as React from 'react';
 
-export function Employers() {
+export function Demographics() {
   const renderChart = (data: any, columns: string[]) => {
     const table = d3
-      .select('#employerchart')
+      .select('#demograchart')
       .append('table')
       .attr('class', 'divide-y divide-gray-200 dark:divide-gray-500');
     const thead = table
@@ -47,15 +47,15 @@ export function Employers() {
     return table;
   };
   React.useEffect(() => {
-    d3.csv('/csvsforpafr22/employers-1.csv').then((data: any) => {
+    d3.csv('/csvsforpafr22/demogra.csv').then((data: any) => {
       const columns = [
-        'Employer',
-        '22 Employees',
-        '22 Rank',
-        '13 % of Total',
-        '13 Employees',
-        '13 Rank',
-        '13 % of Total',
+        'Fiscal Year',
+        'Estimated Population',
+        'Personal Income (in thousands)',
+        'Personal Income Per Capita',
+        'Median Age',
+        'Public School Enrollment',
+        'Unemployment Rate',
       ];
       renderChart(data, columns);
       return true;
@@ -64,8 +64,8 @@ export function Employers() {
 
   return (
     <div>
-      <h3>Top Employers in Los Angeles County 2022 vs 2013</h3>
-      <div id='employerchart' className='overflow-x-auto'></div>
+      <h3>City of LA Demographics</h3>
+      <div id='demograchart' className='overflow-x-auto'></div>
     </div>
   );
 }
