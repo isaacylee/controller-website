@@ -221,6 +221,24 @@ export function Changeinnetpos() {
             y: 'Business Type',
             fill: (d: any) => (d.Value >= 0 ? 'gain' : 'loss'),
           }),
+          Plot.textX(
+            changeinnetposyear.filter((d: any) => d.Value > 0),
+            {
+              x: 'Value',
+              y: 'Business Type',
+              dx: 10,
+              text: (d: any) => processEachValueIntoText(d.Value),
+            }
+          ),
+          Plot.textX(
+            changeinnetposyear.filter((d: any) => d.Value < 0),
+            {
+              x: 'Value',
+              y: 'Business Type',
+              dx: -10,
+              text: (d: any) => processEachValueIntoText(d.Value),
+            }
+          ),
           Plot.ruleX([0]),
         ],
       });
@@ -308,9 +326,9 @@ export function Changeinnetpos() {
       <div ref={refOfBoxToChange} />
       {tablefiltered && (
         <div className='flex flex-col' key='key'>
-          <div className='overflow-hidden border-b border-gray-200 shadow dark:border-gray-700 sm:rounded-lg'>
+          <div className=' overflow-x-auto  border-b border-gray-200 shadow dark:border-gray-700 sm:rounded-lg'>
             <table className='min-w-full divide-y divide-gray-200 dark:divide-gray-500'>
-              <thead className='bg-gray-50 dark:bg-gray-800'>
+              <thead className='bg-gray-50 text-sm dark:bg-gray-800 sm:text-base'>
                 <th>Type of Transaction</th>
                 <th>Airports</th>
                 <th>Harbor</th>
@@ -325,7 +343,7 @@ export function Changeinnetpos() {
                   //.sort((a, b) => a[0].localeCompare(b[0]))
                   .map((bruh: Array<any>) => (
                     <tr key={bruh[0]}>
-                      <td className='px-2'>{bruh[0]}</td>
+                      <td className='px-1 sm:px-2'>{bruh[0]}</td>
                       <td>{bruh[1]['Airports']}</td>
                       <td>{bruh[1]['Harbor']}</td>
                       <td>{bruh[1]['Power']}</td>
