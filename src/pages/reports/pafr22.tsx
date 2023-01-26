@@ -7,6 +7,7 @@ import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
+import { Employers } from '@/components/pafr22visualise/employers';
 import { GeneralExpenditures } from '@/components/pafr22visualise/generalexpen';
 import { GeneralRevenue } from '@/components/pafr22visualise/generalrev';
 import Seo from '@/components/Seo';
@@ -250,6 +251,7 @@ export default function pafr22(props: any) {
             </p>
             {/* Add Visual - Demographic and Economic Data */}
             {/* Add Visual - Principal Employers */}
+            <Employers />
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <h2 className='mt-3'>City Organization</h2>
