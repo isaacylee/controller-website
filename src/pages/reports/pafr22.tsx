@@ -39,6 +39,11 @@ export default function pafr22(props: any) {
                 Community Members of the City of Los Angeles
                 <br />
                 <br />
+                <img
+                  className='float-right ml-2 mb-2 w-48 sm:ml-4 sm:mb-4 sm:w-64'
+                  src='/images/cropped-kenneth.jpg'
+                  alt='Portrait of Kenneth Mejia'
+                />
                 As the new Controller for the City of Los Angeles, our Office
                 has the Charter responsibility to prepare and publish the City's
                 Annual Comprehensive Financial Report (ACFR) of the City for the
