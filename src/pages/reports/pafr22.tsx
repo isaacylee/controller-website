@@ -17,6 +17,7 @@ export default function pafr22(props: any) {
       <Seo
         title='Popular Annual Financial Report FY22'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
+        image='https://controller.lacity.gov/images/pafrthumbnail2.png'
       />
       <Layout>
         <div className='flex flex-col py-2 dark:text-white'>
@@ -27,7 +28,7 @@ export default function pafr22(props: any) {
             </h1>{' '}
             <br />
             <div className='lg:max-w-5xl'>
-              <h2>A Letter from City Controller Kenneth Mejia, CPA</h2>
+              <h2>A Letter from City Controller Kenneth Mejia</h2>
               <p>
                 Honorable Karen Bass, Mayor
                 <br />
@@ -146,7 +147,7 @@ export default function pafr22(props: any) {
                   aria-label="Kenneth Mejia\'s Signature"
                   className='hidden w-64 dark:block'
                 />
-                Kenneth Mejia, CPA
+                Kenneth Mejia
                 <br />
                 Los Angeles City Controller
               </p>
