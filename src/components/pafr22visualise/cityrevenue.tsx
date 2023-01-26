@@ -165,7 +165,7 @@ export default function CityRevenue(props: any) {
     <div className='city-revenue'>
       <h4>Revenues Stacked</h4>
       <div id='rev-2' ref={rev2}></div>
-      <h4>Each Revenue Source over Time</h4>
+      <h4>Each Revenue Source Breakdown</h4>
       <div id='rev-1' ref={rev1}></div>
     </div>
   );
