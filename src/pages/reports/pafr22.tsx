@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
@@ -19,15 +20,33 @@ export default function pafr22(props: any) {
       <Seo
         title='Popular Annual Financial Report FY22'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/pafrthumbnail2.png'
+        image='https://controller.lacity.gov/images/pafrthumbnail3.png'
       />
       <Layout>
         <div className='flex flex-col py-2 dark:text-white'>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-            {' '}
-            <h1 className='2xl dark:text-white'>
-              Popular Annual Financial Report FY22
-            </h1>{' '}
+            <div></div>
+
+            <br />
+            <p>
+              LA City Controller Kenneth Mejia releases the Annual Comprehensive
+              Financial Report (ACFR) each January to provide a complete picture
+              of the City’s finances. This website contains the Popular Annual
+              Financial Report (PAFR), a summary of the ACFR that presents the
+              information in a more accessible format, along with charts and
+              graphs measuring how the City serves residents.
+            </p>
+            <br />
+            <p className='text-green-800 underline dark:text-mejito'>
+              <Link
+                href='/acfr22.pdf'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                Click here for the full FY2022 Annual Comprehensive Financial
+                Report
+              </Link>
+            </p>
             <br />
             <div className='lg:max-w-5xl'>
               <h2>A Letter from City Controller Kenneth Mejia</h2>
