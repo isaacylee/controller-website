@@ -78,11 +78,43 @@ export function Changeinnetpos() {
     );
   }, []);
 
+  function nFormatter(num: number, digits: number) {
+    const lookup = [
+      { value: 1, symbol: '' },
+      { value: 1e3, symbol: 'k' },
+      { value: 1e6, symbol: 'M' },
+      { value: 1e9, symbol: 'G' },
+      { value: 1e12, symbol: 'T' },
+      { value: 1e15, symbol: 'P' },
+      { value: 1e18, symbol: 'E' },
+    ];
+    const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+    const item = lookup
+      .slice()
+      .reverse()
+      .find(function (item) {
+        return num >= item.value;
+      });
+    return item
+      ? (num / item.value).toFixed(digits).replace(rx, '$1') + item.symbol
+      : '0';
+  }
+
   const processEachValueIntoText = (value: any) => {
     let neg = false;
 
     if (value < 0) {
       neg = true;
+    }
+
+    const absolute = Math.abs(value);
+
+    const text = nFormatter(absolute, 1);
+
+    if (neg) {
+      return `$(${text})`;
+    } else {
+      return `$${text}`;
     }
   };
 
@@ -100,7 +132,7 @@ export function Changeinnetpos() {
         }
 
         tables[eachItem['Account Activity']][eachItem['Business Type']] =
-          eachItem['Value'];
+          processEachValueIntoText(eachItem['Value']);
       });
 
       setTablefiltered(tables);
@@ -210,6 +242,46 @@ export function Changeinnetpos() {
       ></input>
       <br />
       <div ref={refOfBoxToChange} />
+      {tablefiltered && (
+        <div className='flex flex-col' key='key'>
+          <div className='overflow-hidden border-b border-gray-200 shadow dark:border-gray-700 sm:rounded-lg'>
+            <table className='min-w-full divide-y divide-gray-200 dark:divide-gray-700'>
+              <thead className='bg-gray-50 dark:bg-gray-800'>
+                <th></th>
+                <th>Airports</th>
+                <th>Harbor</th>
+                <th>Power</th>
+                <th>Water</th>
+                <th>Sewer</th>
+                <th>Convention Center</th>
+                <th>Total</th>
+              </thead>
+              <tbody className='divide-y divide-gray-200 bg-white dark:divide-gray-700 dark:bg-gray-900'>
+                {Object.entries(tablefiltered).map((bruh: Array<any>) => (
+                  <tr key={bruh[0]}>
+                    <td>{bruh[0]}</td>
+                    <td>{bruh[1]['Airports']}</td>
+                    <td>{bruh[1]['Harbor']}</td>
+                    <td>{bruh[1]['Power']}</td>
+                    <td>{bruh[1]['Water']}</td>
+                    <td>{bruh[1]['Sewer']}</td>
+                    <td>{bruh[1]['Convention Center']}</td>
+                    {/*Total all depts */}
+                    <td>
+                      {bruh[1]['Airports'] +
+                        bruh[1]['Harbor'] +
+                        bruh[1]['Power'] +
+                        bruh[1]['Water'] +
+                        bruh[1]['Sewer'] +
+                        bruh[1]['Convention Center']}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

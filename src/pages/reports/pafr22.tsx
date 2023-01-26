@@ -453,6 +453,35 @@ export default function pafr22(props: any) {
             </h4>
             {/*Expenses  vis */}
             <GeneralExpenditures />
+            <br />
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Salaries and Benefits increased by $319.1 million (9.3%)
+                </span>
+                , due to payment of excess sick and overtime payouts, and
+                one-time bonuses to certain labour organizations and increased
+                pension contribution.
+              </li>
+              <li>
+                Economy-sensitive revenues rebounded in FY22 as the economy
+                reopened from the pandemic shutdown:{' '}
+                <span className='font-bold'>
+                  Capital outlays increased by $24.8 million (9.2%),
+                </span>{' '}
+                attributed to increase in right-to-use lease contracts and
+                progression of capital projects.
+              </li>
+              <li>
+                <span className='font-bold'>
+                  Contractual services, operating equipment, and supplies went
+                  up by $53.6 million (4.4%),
+                </span>{' '}
+                due to increased fuel and utility costs as well increased costs
+                from inflationary pressure on other materials and commodity
+                prices.
+              </li>
+            </ul>
           </div>
         </div>
       </Layout>

@@ -9,9 +9,14 @@ export function GeneralExpenditures() {
   React.useEffect(() => {
     d3.csv('/csvsforpafr22/8fygeneralfundtotalexpenditures.csv').then(
       (totalcityexpenditures1: any) => {
-        const totalcityexpenditures1clean = totalcityexpenditures1.filter(
-          (e: any) => e.Value != null
-        );
+        const totalcityexpenditures1clean = totalcityexpenditures1
+          .filter((e: any) => e.Value != null)
+          .map((e: any) => {
+            return {
+              ...e,
+              Value: parseInt(e.Value) * 1000,
+            };
+          });
 
         const expenelement = Plot.plot({
           height: 650,
