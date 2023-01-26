@@ -42,7 +42,7 @@ export function Expenditures() {
         }
       }
     );
-  });
+  }, []);
 
   return <div ref={expenref}></div>;
 }
