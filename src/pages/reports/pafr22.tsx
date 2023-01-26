@@ -8,6 +8,7 @@ import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import { GeneralExpenditures } from '@/components/pafr22visualise/generalexpen';
+import { GeneralRevenue } from '@/components/pafr22visualise/generalrev';
 import Seo from '@/components/Seo';
 export default function pafr22(props: any) {
   return (
@@ -393,6 +394,7 @@ export default function pafr22(props: any) {
               from FY 21
             </h4>
             {/*Revenues  vis */}
+            <GeneralRevenue />
             {/* revenues text */}
             <ul className='list-disc'>
               <li>
