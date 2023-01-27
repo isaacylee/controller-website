@@ -359,13 +359,12 @@ export default function pafr22(props: any) {
                 These include general government, police, fire and paramedics, public
                 works, health and sanitation (other than sewer services), transportation,
                 cultural and recreational services, and community development.
-                                <br />
+                <br />
                 <br />
                 Business-Type Activities: Functions and services provided to 
                 the general public, that are intended to recover all or a portion of 
                 their costs through user fees and charges. These include airports, 
                 harbor, power, water, sewer and convention center services.
-                
                 <br />
                 <br />
                 Net Position: The difference between the value of what the City 
