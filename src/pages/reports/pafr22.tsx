@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import { Expenditures } from '@/components/pafr22visualise/2expen';
 import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
+import { ChangeinnetposGen } from '@/components/pafr22visualise/changeinnetposgen';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import { Demographics } from '@/components/pafr22visualise/demo';
@@ -477,7 +478,7 @@ export default function pafr22(props: any) {
               <br />
             </p>
 
-            <div className='mt-2 gap-y-2 md:flex md:flex-row md:gap-x-3'>
+            <div className='mt-2 flex flex-col gap-y-2 md:flex-row md:gap-x-3'>
               <div className=' rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
                 Total City Assets: $87.4 billion.
                 <br />
@@ -555,6 +556,7 @@ export default function pafr22(props: any) {
               <br />
               <br />
               The City’s net position is illustrated in the table below:
+              <ChangeinnetposGen />
             </p>
             {/*Net Pos Generally */}
             <h2 className='mt-3'>General Fund</h2>
