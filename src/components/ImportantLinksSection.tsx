@@ -24,6 +24,10 @@ const links = [
     url: 'https://recordsrequest.lacity.org/requests/new?dept_id=1219',
   },
   { name: '🚨 Report Fraud, Waste, or Abuse', url: '/fwa/' },
+  {
+    name: '💸 Collections Board of Review',
+    url: '/collectionsboard/',
+  },
 ];
 
 export default function ImportantLinksSection(props: any) {
