@@ -351,27 +351,26 @@ export default function pafr22(props: any) {
                 className='float-left mb-1 mr-1 w-32'
               />
               <p>
-                Key Terms For Your Understanding:
+              <h2 className='mt-3'>Key Terms</h2>
                 <br />
                 <br />
-                Governmental Activities: These are functions of the City that 
+                Governmental Activities: Functions of the City that 
                 are primarily supported by taxes and intergovernmental revenues. 
-                The governmental activities of the City include general government, 
-                police, fire and paramedics, public works, health and sanitation 
-                (other than sewer services), transportation, cultural and recreational 
-                services, and community development 
+                These include general government, police, fire and paramedics, public
+                works, health and sanitation (other than sewer services), transportation,
+                cultural and recreational services, and community development.
+                                <br />
                 <br />
-                <br />
-                Business-Type Activities: These are functions and services provided to 
+                Business-Type Activities: Functions and services provided to 
                 the general public, that are intended to recover all or a portion of 
-                their costs through user fees and charges. The business-type activities 
-                of the City include airports, harbor, power, water, sewer and convention 
-                center services.
+                their costs through user fees and charges. These include airports, 
+                harbor, power, water, sewer and convention center services.
+                
                 <br />
                 <br />
-                Net Position: this is the difference between the value of what the City 
+                Net Position: The difference between the value of what the City 
                 owns minus the value of what the City owes. One can look at net position 
-                as the City’s net worth.
+                as the City’s "net worth."
                 <br />
                 <br />
                 General Fund: The main operating fund of the City, which is used to finance 
