@@ -72,7 +72,7 @@ export function BondsOverTime() {
           legend: true,
         },
         y: {
-          tickFormat: (tick: any) => d3.format('0.1s')(tick).replace('G', 'B'),
+          tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
         },
         marks: [
           Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
