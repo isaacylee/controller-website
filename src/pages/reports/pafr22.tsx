@@ -200,6 +200,14 @@ export default function pafr22(props: any) {
             <br />
             <h2>About Popular Annual Financial Reporting</h2>
             <p className='mt-2  lg:max-w-5xl'>
+              <img
+                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-64'
+                src='/images/award21pafr.png'
+              ></img>
+              <img
+                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-64'
+                src='award21pafr-dark.png'
+              />
               The Government Finance Officers Association of the United States
               and Canada (GFOA) has given an Award for Outstanding Achievement
               in Popular Annual Financial Reporting to the City of Los Angeles
