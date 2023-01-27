@@ -201,11 +201,11 @@ export default function pafr22(props: any) {
             <h2>About Popular Annual Financial Reporting</h2>
             <p className='mt-2  lg:max-w-5xl'>
               <img
-                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-64'
+                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48'
                 src='/images/award21pafr.png'
               ></img>
               <img
-                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-64'
+                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48'
                 src='/images/award21pafr-dark.png'
               />
               The Government Finance Officers Association of the United States
@@ -351,35 +351,40 @@ export default function pafr22(props: any) {
                 className='float-left mb-1 mr-1 w-32'
               />
               <p>
-              <h2 className='mt-3'>Key Terms</h2>
-                
-              <span className='font-bold'>Governmental Activities:</span> Functions of the City that 
-                are primarily supported by taxes and intergovernmental revenues. 
-                These include general government, police, fire and paramedics, public
-                works, health and sanitation (other than sewer services), transportation,
-                cultural and recreational services, and community development.
+                <h2 className='mt-3'>Key Terms</h2>
+                <span className='font-bold'>Governmental Activities:</span>{' '}
+                Functions of the City that are primarily supported by taxes and
+                intergovernmental revenues. These include general government,
+                police, fire and paramedics, public works, health and sanitation
+                (other than sewer services), transportation, cultural and
+                recreational services, and community development.
                 <br />
                 <br />
-                <span className='font-bold'>Business-Type Activities:</span> Functions and services provided to 
-                the general public, that are intended to recover all or a portion of 
-                their costs through user fees and charges. These include airports, 
-                harbor, power, water, sewer and convention center services.
+                <span className='font-bold'>
+                  Business-Type Activities:
+                </span>{' '}
+                Functions and services provided to the general public, that are
+                intended to recover all or a portion of their costs through user
+                fees and charges. These include airports, harbor, power, water,
+                sewer and convention center services.
                 <br />
                 <br />
-                <span className='font-bold'>Net Position:</span> The difference between the value of what the City 
-                owns minus the value of what the City owes. One can look at net position 
-                as the City’s "net worth."
+                <span className='font-bold'>Net Position:</span> The difference
+                between the value of what the City owns minus the value of what
+                the City owes. One can look at net position as the City’s "net
+                worth."
                 <br />
                 <br />
-                <span className='font-bold'>General Fund:</span> The main operating fund of the City, which is used to finance 
-                general government operations. 
+                <span className='font-bold'>General Fund:</span> The main
+                operating fund of the City, which is used to finance general
+                government operations.
                 <br />
                 <br />
-                <span className='font-bold'>Capital Assets:</span> These include land, buildings, facilities, equipment and 
-                infrastructure that the City owns. The City uses these capital assets to 
-                provide services to its citizens; consequently, these assets are not 
+                <span className='font-bold'>Capital Assets:</span> These include
+                land, buildings, facilities, equipment and infrastructure that
+                the City owns. The City uses these capital assets to provide
+                services to its citizens; consequently, these assets are not
                 available for future spending.
-                
               </p>
             </div>
           </div>
