@@ -60,26 +60,30 @@ export default function CollectionsBoard(props: any) {
             October at 9:00 am in the Controller’s office.
           </p>
 
-          <div className='grid grid-cols-3 gap-x-3 gap-y-3 sm:flex sm:flex-row sm:flex-wrap '>
-            {collections.map((eachmeeting: any, key: number) => (
-              <tr className='' key={key}>
-                <td>{eachmeeting.date}</td>
+          <div className=' '>
+            <table>
+              <tbody>
+                {collections.map((eachmeeting: any, key: number) => (
+                  <tr className='dark:text-white' key={key}>
+                    <td>{eachmeeting.date}</td>
 
-                <td>
-                  <Link href={eachmeeting.agenda}>Agenda</Link>
-                </td>
-
-                {eachmeeting.minutes ? (
-                  <td>
                     <td>
-                      <Link href={eachmeeting.minutes}>Minutes</Link>
+                      <Link href={eachmeeting.agenda}>Agenda</Link>
                     </td>
-                  </td>
-                ) : (
-                  <td></td>
-                )}
-              </tr>
-            ))}
+
+                    {eachmeeting.minutes ? (
+                      <td>
+                        <td>
+                          <Link href={eachmeeting.minutes}>Minutes</Link>
+                        </td>
+                      </td>
+                    ) : (
+                      <td></td>
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </Layout>
