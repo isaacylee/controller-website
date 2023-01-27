@@ -60,7 +60,7 @@ export default function CollectionsBoard(props: any) {
             October at 9:00 am in the Controller’s office.
           </p>
 
-          <div className=' '>
+          <div className='mt-3 '>
             <table>
               <tbody>
                 {collections.map((eachmeeting: any, key: number) => (
