@@ -8,6 +8,7 @@ import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
 import collections from '@/collectionsboard.json';
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -19,6 +20,12 @@ import collections from '@/collectionsboard.json';
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
+
+/*
+
+Copied from the original site using this 
+https://gist.github.com/kylerchin/cecf448ee67c57d3b05b4b25593d0c59
+*/
 
 export default function CollectionsBoard(props: any) {
   return (
