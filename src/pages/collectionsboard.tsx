@@ -65,16 +65,26 @@ export default function CollectionsBoard(props: any) {
               <tbody>
                 {collections.map((eachmeeting: any, key: number) => (
                   <tr className='dark:text-white' key={key}>
-                    <td>{eachmeeting.date}</td>
+                    <td className='px-1'>{eachmeeting.date}</td>
 
-                    <td>
-                      <Link href={eachmeeting.agenda}>Agenda</Link>
+                    <td className='px-1'>
+                      <Link
+                        href={eachmeeting.agenda}
+                        className='text-green-700 dark:text-mejito'
+                      >
+                        Agenda
+                      </Link>
                     </td>
 
                     {eachmeeting.minutes ? (
                       <td>
-                        <td>
-                          <Link href={eachmeeting.minutes}>Minutes</Link>
+                        <td className='px-1'>
+                          <Link
+                            href={eachmeeting.minutes}
+                            className='text-green-700 dark:text-mejito'
+                          >
+                            Minutes
+                          </Link>
                         </td>
                       </td>
                     ) : (
