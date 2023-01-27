@@ -352,31 +352,30 @@ export default function pafr22(props: any) {
               />
               <p>
               <h2 className='mt-3'>Key Terms</h2>
-                <br />
-                <br />
-                Governmental Activities: Functions of the City that 
+                
+              <span className='font-bold'>Governmental Activities:</span> Functions of the City that 
                 are primarily supported by taxes and intergovernmental revenues. 
                 These include general government, police, fire and paramedics, public
                 works, health and sanitation (other than sewer services), transportation,
                 cultural and recreational services, and community development.
                 <br />
                 <br />
-                Business-Type Activities: Functions and services provided to 
+                <span className='font-bold'>Business-Type Activities:</span> Functions and services provided to 
                 the general public, that are intended to recover all or a portion of 
                 their costs through user fees and charges. These include airports, 
                 harbor, power, water, sewer and convention center services.
                 <br />
                 <br />
-                Net Position: The difference between the value of what the City 
+                <span className='font-bold'>Net Position:</span> The difference between the value of what the City 
                 owns minus the value of what the City owes. One can look at net position 
                 as the City’s "net worth."
                 <br />
                 <br />
-                General Fund: The main operating fund of the City, which is used to finance 
+                <span className='font-bold'>General Fund:</span> The main operating fund of the City, which is used to finance 
                 general government operations. 
                 <br />
                 <br />
-                Capital Assets: These include land, buildings, facilities, equipment and 
+                <span className='font-bold'>Capital Assets:</span> These include land, buildings, facilities, equipment and 
                 infrastructure that the City owns. The City uses these capital assets to 
                 provide services to its citizens; consequently, these assets are not 
                 available for future spending.
