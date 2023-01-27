@@ -206,7 +206,7 @@ export default function pafr22(props: any) {
               ></img>
               <img
                 className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-64'
-                src='award21pafr-dark.png'
+                src='/images/award21pafr-dark.png'
               />
               The Government Finance Officers Association of the United States
               and Canada (GFOA) has given an Award for Outstanding Achievement
