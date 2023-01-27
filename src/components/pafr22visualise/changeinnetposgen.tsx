@@ -2,6 +2,8 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect } from 'react';
 
+import { processEachValueIntoText } from '@/components/utils';
+
 export function ChangeinnetposGen() {
   const [selectedYear, setSelectedYear] = React.useState(2022);
   const refOfLoadedData = React.useRef<any>(null);
@@ -61,44 +63,6 @@ export function ChangeinnetposGen() {
     );
   }, []);
 
-  function nFormatter(num: number, digits: number) {
-    const lookup = [
-      { value: 1, symbol: '' },
-      { value: 1e3, symbol: 'k' },
-      { value: 1e6, symbol: 'M' },
-      { value: 1e9, symbol: 'B' },
-      { value: 1e12, symbol: 'T' },
-    ];
-    const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-    const item = lookup
-      .slice()
-      .reverse()
-      .find(function (item) {
-        return num >= item.value;
-      });
-    return item
-      ? (num / item.value).toFixed(digits).replace(rx, '$1') + item.symbol
-      : '0';
-  }
-
-  const processEachValueIntoText = (value: any) => {
-    let neg = false;
-
-    if (value < 0) {
-      neg = true;
-    }
-
-    const absolute = Math.abs(value);
-
-    const text = nFormatter(absolute, 1);
-    console.log('value', value, 'result', text);
-    if (neg) {
-      return `$(${text})`;
-    } else {
-      return `$${text}`;
-    }
-  };
-
   const columns = [
     'Category',
     'Description',
@@ -109,9 +73,18 @@ export function ChangeinnetposGen() {
 
   const filterTable = () => {
     if (dataOriginal) {
-      const changeinnetposyear = dataOriginal.filter(
-        (eachItem: any) => eachItem.Year == String(selectedYear)
-      );
+      const changeinnetposyear = dataOriginal
+        .filter((eachItem: any) => eachItem.Year == String(selectedYear))
+        .map((eachItem: any) => {
+          return {
+            ...eachItem,
+            'Business-Type': processEachValueIntoText(
+              eachItem['Business-Type']
+            ),
+            Governmental: processEachValueIntoText(eachItem['Governmental']),
+            Total: processEachValueIntoText(eachItem['Total']),
+          };
+        });
 
       console.log(
         'change in net pos generally year for table',
@@ -164,7 +137,7 @@ export function ChangeinnetposGen() {
         })
         .enter()
         .append('td')
-        .attr('class', '')
+        .attr('class', 'text-sm sm:text-base px-1 md:px-2')
         .text(function (d: any) {
           return d.value;
         });
@@ -235,8 +208,9 @@ export function ChangeinnetposGen() {
         onChange={handleRangeChange}
         min={2016}
         max={2022}
-        className='h-2 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 dark:bg-gray-700 sm:max-w-md'
+        className='h-3 w-full cursor-pointer appearance-none rounded-lg bg-gray-200 dark:bg-gray-700 sm:max-w-md'
       ></input>
+      <br />
       <br />
       <div id='netposgen'></div>
     </div>
