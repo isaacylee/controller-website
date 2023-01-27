@@ -77,7 +77,7 @@ export default function pafr22(props: any) {
                 <br />
                 <br />
                 <img
-                  className='float-right ml-2 mb-2 w-48 sm:ml-4 sm:mb-4 sm:w-64'
+                  className='float-right ml-2 mb-2 w-32 sm:ml-4 sm:mb-4 sm:w-64'
                   src='/images/cropped-kenneth.jpg'
                   alt='Portrait of Kenneth Mejia'
                 />
