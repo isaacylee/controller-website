@@ -106,10 +106,7 @@ export default function pafr22(props: any) {
                 The ACFR provides a report on revenues and expenses for all the
                 City's funds, including the Harbor, Airports and Department of
                 Water and Power and a snapshot of the fiscal condition of the
-                City as it ended the fiscal year on June 30 of 2022. Total City
-                revenues, including Governmental and Business-Type activities,
-                were approximately $20.0 billion, an 8.7 percent increase over
-                FY 2020-21.
+                City as it ended the fiscal year on June 30 of 2022. 
                 <br />
                 <br />
                 <ul className='list-disc pl-4'>
@@ -434,7 +431,7 @@ export default function pafr22(props: any) {
             <p className='mt-4 lg:max-w-5xl'>
               The $9.0 billion combined operating revenues of the City’s six
               business-type activities were $1.6 billion more than the $7.4
-              billion combined operating costs.
+              billion combined operating expenses.
               <br />
               <br />
             </p>
@@ -489,7 +486,7 @@ export default function pafr22(props: any) {
               <br />
               Of the{' '}
               <span className='font-bold'>
-                $34.9 billion long-term bonds and notes payable, $751.7 million
+                $37.3 billion long-term bonds and notes payable, $751.7 million
                 were General Obligation bonds.
               </span>
               <br />
@@ -567,7 +564,7 @@ export default function pafr22(props: any) {
               <br />
               <br />
               <span className='font-bold'>
-                Net investment in capital assets:
+                Restricted net position:
               </span>{' '}
               $6.1 billion, which represents external restrictions imposed by
               creditors, grantors, contributors, laws of other governments,
@@ -576,9 +573,9 @@ export default function pafr22(props: any) {
               activities). This is an increase of $158.2 million over FY 21.
               <br />
               <br />
-              <span className='font-bold'>Restricted net position:</span> $114.4
+              <span className='font-bold'>Unrestricted net position:</span> $114.4
               million is the net amount of the governmental deficit of
-              $5.2billion and $5.4 billion in unrestricted net position in its
+              $5.2 billion and $5.4 billion in unrestricted net position in its
               business activities. Compared to FY21, the overall unrestricted
               position increased by $2.9 million, primarily due to a combination
               of reduction in governmental deficit by $2.3 million and an
@@ -610,7 +607,7 @@ export default function pafr22(props: any) {
             </p>
             <h2 className='mt-3'>General Fund Revenues</h2>
             <h4 className='font-bold'>
-              FY 22 Total General Fund Revenues: $6.2 billion, 8.8% increase
+              FY 22 Total General Fund Revenues: $6.2 billion, $498.5 million 8.8% increase
               from FY 21
             </h4>
             {/*Revenues  vis */}
@@ -649,12 +646,12 @@ export default function pafr22(props: any) {
                 year.
               </li>
               <li>
-                Other tax revenues were up by $256.6 million or 49.2%, primarily
+              <span className='font-bold'>Other tax revenues</span> were up by $256.6 million or 49.2%, primarily
                 due to increases of 128.7 million in{' '}
                 <span className='font-bold'>Transient Occupancy Tax</span>,
                 $39.7million in{' '}
                 <span className='font-bold'>Parking Occupancy Tax</span>{' '}
-                receipts and $62.3 million in Documentary Transfer Tax due to
+                receipts and $62.3 million in <span className='font-bold'>Documentary Transfer Tax</span> due to
                 home price appreciation during FY22.
               </li>
               <li>
@@ -663,12 +660,12 @@ export default function pafr22(props: any) {
                 permit fees from pandemic low.
               </li>
               <li>
-                Charges for services provided to Enterprise Fund totaled $17.6
+              <span className='font-bold'>Charges for services</span> provided to Enterprise Fund totaled $17.6
                 million or 4.9% lower than prior fiscal year.
               </li>
               <li>
                 <span className='font-bold'>Net investment earnings</span> and
-                other revenues decreased by $88.2 million, due to decreases in
+                <span className='font-bold'>other revenues</span> decreased by $88.2 million, due to decreases in
                 investment earnings and change in the fair market value of
                 investments.
               </li>
@@ -696,7 +693,7 @@ export default function pafr22(props: any) {
                 Economy-sensitive revenues rebounded in FY22 as the economy
                 reopened from the pandemic shutdown:{' '}
                 <span className='font-bold'>
-                  Capital outlays increased by $24.8 million (9.2%),
+                  Capital outlays increased by $24.8 million (85.1%),
                 </span>{' '}
                 attributed to increase in right-to-use lease contracts and
                 progression of capital projects.
