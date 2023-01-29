@@ -47,7 +47,7 @@ export function GeneralRevenue() {
           {
             fill: '#ffffff',
             opacity: 0.5,
-            'stroke-width': '3px',
+            'stroke-width': '4px',
             stroke: '#41ffca',
           }
         );
