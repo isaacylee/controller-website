@@ -35,3 +35,30 @@ export const processEachValueIntoText = (value: any) => {
     return `$${text}`;
   }
 };
+
+interface processintomorevalueopt {
+  value: number;
+  digits: number;
+}
+
+export const processEachValueIntoTextMore = (
+  options: processintomorevalueopt
+) => {
+  const { value, digits } = options;
+
+  let neg = false;
+
+  if (value < 0) {
+    neg = true;
+  }
+
+  const absolute = Math.abs(value);
+
+  const text = nFormatter(absolute, digits);
+  //  console.log('value', value, 'result', text);
+  if (neg) {
+    return `$(${text})`;
+  } else {
+    return `$${text}`;
+  }
+};

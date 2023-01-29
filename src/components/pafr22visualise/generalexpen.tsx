@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useRef } from 'react';
 
 import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
-import { processEachValueIntoText } from '@/components/utils';
+import { processEachValueIntoTextMore } from '@/components/utils';
 
 export function GeneralExpenditures() {
   const expenref = useRef<any>(null);
@@ -37,7 +37,10 @@ export function GeneralExpenditures() {
                 y: 'Value',
                 fill: 'Expenditure',
                 title: (elem: any) =>
-                  `${elem.Expenditure} ${processEachValueIntoText(elem.Value)}`,
+                  `${elem.Expenditure} ${processEachValueIntoTextMore({
+                    value: elem.Value,
+                    digits: 2,
+                  })}`,
               }),
               Plot.ruleY([0]),
             ],
