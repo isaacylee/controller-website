@@ -44,13 +44,13 @@ Year,Activity Type,Activity,Revenue Type,Revenue
 2018,Governmental,Unrestricted Grants and Contributions,General Revenues,22053000
 2018,Governmental,Unrestricted Investment Earnings,General Revenues,7142000
 2018,Governmental,Other Revenues,General Revenues,57051000
-2019,Business-Type,Capital Grants and Contributions,Program Revenues,144066000
 2019,Business-Type,Charges for Services,Program Revenues,8114768000
-2019,Business-Type,Other Revenues,General Revenues,489891000
+2019,Business-Type,Capital Grants and Contributions,Program Revenues,144066000
 2019,Business-Type,Unrestricted Investment Earnings,General Revenues,281122000
-2019,Governmental,Capital Grants and Contributions,Program Revenues,136649000
+2019,Business-Type,Other Revenues,General Revenues,489891000
 2019,Governmental,Charges for Services,Program Revenues,2195352000
 2019,Governmental,Operating Grants and Contributions,Program Revenues,1697057000
+2019,Governmental,Capital Grants and Contributions,Program Revenues,136649000
 2019,Governmental,Property Taxes,General Revenues,2251463000
 2019,Governmental,Utility Users' Taxes,General Revenues,621192000
 2019,Governmental,Business Taxes,General Revenues,607786000
