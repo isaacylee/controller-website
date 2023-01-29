@@ -278,28 +278,27 @@ export default function pafr22(props: any) {
               faces difficult decisions on how to continue the programming those
               funds made possible while simultaneously facing potential
               increased cost and lower receipts arising from the impact of
-              rising interest rates. 
+              rising interest rates.
               <br />
               <br />
-              Higher mortgage interest rates have led to
-              declining real estate sales volume and decreasing prices, which
-              would impact documentary tax receipt, a key revenue source for the
-              City. In its Second Financial Status Report issued on December 1,
-              2022, the Chief Administrative Officer reported that declining
-              sales have already resulted in $23 million in documentary transfer
-              tax receipts shortfall during the first four months of fiscal year
-              2023. Voters in the last election passed Measure ULA, which
-              increases the tax to provide revenue. More worrisome is that sales
-              volume is expected to continue to slide. According to the
-              California Association of Realtors’ October 2022 forecast, sales
-              volume is expected to decline by 7.2 percent and prices are
-              expected to decrease by 8.8 percent in 2023. This would likely
-              result in increasing monthly shortfalls and lower year-end
-              documentary receipts. In addition, the increasing probability of a
-              recession, the unresolved war abroad, global supply chain issues,
-              and energy costs contribute to downward economic pressures which
-              could negatively affect other economically sensitive revenue
-              sources.
+              Higher mortgage interest rates have led to declining real estate
+              sales volume and decreasing prices, which would impact documentary
+              tax receipt, a key revenue source for the City. In its Second
+              Financial Status Report issued on December 1, 2022, the Chief
+              Administrative Officer reported that declining sales have already
+              resulted in $23 million in documentary transfer tax receipts
+              shortfall during the first four months of fiscal year 2023. Voters
+              in the last election passed Measure ULA, which increases the tax
+              to provide revenue. More worrisome is that sales volume is
+              expected to continue to slide. According to the California
+              Association of Realtors’ October 2022 forecast, sales volume is
+              expected to decline by 7.2 percent and prices are expected to
+              decrease by 8.8 percent in 2023. This would likely result in
+              increasing monthly shortfalls and lower year-end documentary
+              receipts. In addition, the increasing probability of a recession,
+              the unresolved war abroad, global supply chain issues, and energy
+              costs contribute to downward economic pressures which could
+              negatively affect other economically sensitive revenue sources.
             </p>
             {/* Add Visual - Demographic and Economic Data */}
             {/* Add Visual - Principal Employers */}
@@ -413,9 +412,9 @@ export default function pafr22(props: any) {
               while total expenses were $7.8 billion. Of the $7.8 billion total
               expenses, 40.3% was funded by taxes and other general revenues,
               and the remaining 59.7% was funded by program revenues and
-              transfers from business-type funds. Program revenues are resources obtained
-              from parties outside of the City and charges for services between
-              the governmental and business-type activities.
+              transfers from business-type funds. Program revenues are resources
+              obtained from parties outside of the City and charges for services
+              between the governmental and business-type activities.
               <br />
               <br />
               Total expenses decreased by $1.7 billion or 18.0% compared to FY
@@ -690,8 +689,9 @@ export default function pafr22(props: any) {
                   Salaries and Benefits increased by $319.1 million (9.3%)
                 </span>
                 , due to payment of excess sick and overtime payouts, and
-                one-time bonuses to certain labor organizations for a portion of deferred compensation adjustments and increased
-                pension contribution.
+                one-time bonuses to certain labor organizations for a portion of
+                deferred compensation adjustments and increased pension
+                contribution.
               </li>
               <li>
                 Economy-sensitive revenues rebounded in FY22 as the economy
