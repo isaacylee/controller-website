@@ -35,6 +35,18 @@ export function hover(tip: any, pos: any, text: any) {
 
   const bbox = tip.node().getBBox();
 
+  let hasdark = false;
+
+  if (typeof document != 'undefined') {
+    const body = document.querySelector('body');
+
+    if (body) {
+      if (body.classList.contains('dark')) {
+        hasdark = true;
+      }
+    }
+  }
+
   // Add a rectangle (as background)
   tip
     .append('rect')
@@ -42,7 +54,7 @@ export function hover(tip: any, pos: any, text: any) {
     .attr('x', bbox.x - side_padding)
     .attr('width', bbox.width + side_padding * 2)
     .attr('height', bbox.height + vertical_padding * 2)
-    .style('fill', 'white')
+    .style('fill', `${hasdark ? '#111827' : 'white'}`)
     .style('stroke', '#d3d3d3')
     .lower();
 }

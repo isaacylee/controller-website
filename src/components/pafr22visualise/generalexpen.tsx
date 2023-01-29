@@ -42,7 +42,12 @@ export function GeneralExpenditures() {
               Plot.ruleY([0]),
             ],
           }),
-          { fill: 'gray', opacity: 0.5, 'stroke-width': '3px', stroke: 'red' }
+          {
+            fill: 'white',
+            opacity: 0.5,
+            'stroke-width': '3px',
+            stroke: '#41ffca',
+          }
         );
 
         if (expenref.current) {
