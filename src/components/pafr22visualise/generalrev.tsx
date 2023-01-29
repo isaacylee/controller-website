@@ -28,7 +28,7 @@ export function GeneralRevenue() {
           },
           marks: [
             Plot.barY(totalcityexpenditures1clean, {
-              x: 'FY',
+              x: 'Fiscal Year',
               y: 'Value',
               fill: 'Revenue',
             }),
