@@ -5,7 +5,7 @@ export function Employers() {
   const columnsshown = [
     'Employer',
     '2022 Employees',
-    '22 Rank',
+    'Rank',
     '% of Total',
     '2013 Employees',
     "'Rank",
