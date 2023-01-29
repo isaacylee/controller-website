@@ -8,7 +8,7 @@ export function Employers() {
     'Rank',
     '% of Total',
     '2013 Employees',
-    "'Rank",
+    'Rank',
     '% of Total',
   ];
 
