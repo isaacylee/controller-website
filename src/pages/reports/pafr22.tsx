@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import { Expenditures } from '@/components/pafr22visualise/2expen';
 import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
+import { ChangeinnetposGen } from '@/components/pafr22visualise/changeinnetposgen';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import { Demographics } from '@/components/pafr22visualise/demo';
@@ -76,7 +77,7 @@ export default function pafr22(props: any) {
                 <br />
                 <br />
                 <img
-                  className='float-right ml-2 mb-2 w-48 sm:ml-4 sm:mb-4 sm:w-64'
+                  className='float-right ml-2 mb-2 w-32 sm:ml-4 sm:mb-4 sm:w-64'
                   src='/images/cropped-kenneth.jpg'
                   alt='Portrait of Kenneth Mejia'
                 />
@@ -199,6 +200,14 @@ export default function pafr22(props: any) {
             <br />
             <h2>About Popular Annual Financial Reporting</h2>
             <p className='mt-2  lg:max-w-5xl'>
+              <img
+                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
+                src='/images/award21pafr.png'
+              ></img>
+              <img
+                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
+                src='/images/award21pafr-dark.png'
+              />
               The Government Finance Officers Association of the United States
               and Canada (GFOA) has given an Award for Outstanding Achievement
               in Popular Annual Financial Reporting to the City of Los Angeles
@@ -342,18 +351,40 @@ export default function pafr22(props: any) {
                 className='float-left mb-1 mr-1 w-32'
               />
               <p>
-                In the visualisations below, The Business Type Funds refers to
-                proprietary departments, which operate the business-like
-                activities of the government. Los Angeles's proprietary
-                departments are the Department of Water and Power, Los Angeles
-                World Airports, Convention Center, and the Harbor Department.
-                These departments collect revenue directly from the users of
-                their services.
+                <h2 className='mt-3'>Key Terms</h2>
+                <span className='font-bold'>Governmental Activities:</span>{' '}
+                Functions of the City that are primarily supported by taxes and
+                intergovernmental revenues. These include general government,
+                police, fire and paramedics, public works, health and sanitation
+                (other than sewer services), transportation, cultural and
+                recreational services, and community development.
                 <br />
                 <br />
-                Government funds refer to the core functions of the city, such
-                as Police, Fire, Transportation, Libraries, Rec & Parks, etc.
-                This money comes from the general fund.
+                <span className='font-bold'>
+                  Business-Type Activities:
+                </span>{' '}
+                Functions and services provided to the general public, that are
+                intended to recover all or a portion of their costs through user
+                fees and charges. These include airports, harbor, power, water,
+                sewer and convention center services.
+                <br />
+                <br />
+                <span className='font-bold'>Net Position:</span> The difference
+                between the value of what the City owns minus the value of what
+                the City owes. One can look at net position as the City’s "net
+                worth."
+                <br />
+                <br />
+                <span className='font-bold'>General Fund:</span> The main
+                operating fund of the City, which is used to finance general
+                government operations.
+                <br />
+                <br />
+                <span className='font-bold'>Capital Assets:</span> These include
+                land, buildings, facilities, equipment and infrastructure that
+                the City owns. The City uses these capital assets to provide
+                services to its citizens; consequently, these assets are not
+                available for future spending.
               </p>
             </div>
           </div>
@@ -477,7 +508,7 @@ export default function pafr22(props: any) {
               <br />
             </p>
 
-            <div className='mt-2 gap-y-2 md:flex md:flex-row md:gap-x-3'>
+            <div className='mt-2 flex flex-col gap-y-2 md:flex-row md:gap-x-3'>
               <div className=' rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
                 Total City Assets: $87.4 billion.
                 <br />
@@ -555,6 +586,7 @@ export default function pafr22(props: any) {
               <br />
               <br />
               The City’s net position is illustrated in the table below:
+              <ChangeinnetposGen />
             </p>
             {/*Net Pos Generally */}
             <h2 className='mt-3'>General Fund</h2>
