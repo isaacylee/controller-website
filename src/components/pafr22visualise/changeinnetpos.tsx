@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect } from 'react';
 
+import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 import { processEachValueIntoText } from '@/components/utils';
 
 import { getHeightPlot, getWidthPlot } from './processwidthandheight';
@@ -22,6 +23,9 @@ export function Changeinnetpos() {
   const [innerwidth, setinnerwidth] = React.useState<number>(
     typeof window != 'undefined' ? window.innerWidth : 1000
   );
+
+  console.log('plot', Plot);
+  console.log('addTooltips', addTooltips);
 
   const handleRangeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedYear(parseInt(event.target.value));

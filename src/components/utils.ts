@@ -28,7 +28,7 @@ export const processEachValueIntoText = (value: any) => {
   const absolute = Math.abs(value);
 
   const text = nFormatter(absolute, 1);
-  console.log('value', value, 'result', text);
+  //  console.log('value', value, 'result', text);
   if (neg) {
     return `$(${text})`;
   } else {
