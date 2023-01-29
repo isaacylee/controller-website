@@ -50,6 +50,8 @@ export function hover(tip: any, pos: any, text: any) {
 //   addTooltips(plot(options), plotinputoptions.tooltip)};
 
 export function addTooltips(chart: any, styles: any) {
+  console.log('chart in the tooltip attempt', chart);
+
   const stroke_styles = { stroke: 'blue', 'stroke-width': 3 };
   const fill_styles = { fill: 'blue', opacity: 0.5 };
 
@@ -69,7 +71,11 @@ export function addTooltips(chart: any, styles: any) {
 
   if (svgs.size() > 1) {
     if (typeof svgs._groups != 'undefined') {
-      const selectiond3forpop = [...svgs._groups[0]].pop();
+      // const selectiond3forpop = [...svgs._groups[0]].pop();
+
+      const selectiond3forpop: any = [...svgs._groups[0]].slice(-1)[0];
+
+      console.log('selectiond3forpop', selectiond3forpop);
 
       wrapper = d3.select(selectiond3forpop);
 
@@ -107,7 +113,10 @@ export function addTooltips(chart: any, styles: any) {
 
   // Add the event listeners
   d3.select(chart).classed(id, true); // using a class selector so that it doesn't overwrite the ID
-  wrapper.selectAll('title').each((allthetitles: any) => {
+
+  console.log('wrapper selectAll Title result', wrapper.selectAll('title'));
+
+  wrapper.selectAll('title')._groups[0].forEach((allthetitles: any) => {
     console.log('all the titles', allthetitles);
 
     // Get the text out of the title, set it as an attribute on the parent, and remove it
@@ -157,11 +166,27 @@ export function addTooltips(chart: any, styles: any) {
   wrapper.on('touchstart', () => tip.selectAll('*').remove());
 
   // Define the styles
+  /*
+
   chart.appendChild(`<style>
   .${id} .has-title { cursor: pointer;  pointer-events: all; }
   .${id} .has-title:hover { ${Object.entries(styles)
     .map(([key, value]) => `${key}: ${value};`)
     .join(' ')} }`);
+
+  */
+
+  //make a style element
+  const stylefortooltip = document.createElement('style');
+
+  //set inner html
+  stylefortooltip.innerHTML = `<style>
+    .${id} .has-title { cursor: pointer;  pointer-events: all; }
+    .${id} .has-title:hover { ${Object.entries(styles)
+    .map(([key, value]) => `${key}: ${value};`)
+    .join(' ')} }`;
+
+  chart.appendChild(stylefortooltip);
 
   return chart;
 }
