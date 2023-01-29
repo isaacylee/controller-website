@@ -278,7 +278,10 @@ export default function pafr22(props: any) {
               faces difficult decisions on how to continue the programming those
               funds made possible while simultaneously facing potential
               increased cost and lower receipts arising from the impact of
-              rising interest rates. Higher mortgage interest rates have led to
+              rising interest rates. 
+              <br />
+              <br />
+              Higher mortgage interest rates have led to
               declining real estate sales volume and decreasing prices, which
               would impact documentary tax receipt, a key revenue source for the
               City. In its Second Financial Status Report issued on December 1,
@@ -410,7 +413,7 @@ export default function pafr22(props: any) {
               while total expenses were $7.8 billion. Of the $7.8 billion total
               expenses, 40.3% was funded by taxes and other general revenues,
               and the remaining 59.7% was funded by program revenues and
-              available net position. Program revenues are resources obtained
+              transfers from business-type funds. Program revenues are resources obtained
               from parties outside of the City and charges for services between
               the governmental and business-type activities.
               <br />
@@ -577,8 +580,8 @@ export default function pafr22(props: any) {
               million is the net amount of the governmental deficit of
               $5.2 billion and $5.4 billion in unrestricted net position in its
               business activities. Compared to FY21, the overall unrestricted
-              position increased by $2.9 million, primarily due to a combination
-              of reduction in governmental deficit by $2.3 million and an
+              position increased by $2.9 billion, primarily due to a combination
+              of reduction in governmental deficit by $2.3 billion and an
               increased in business-type of 653.2 million.
               <br />
               <br />
@@ -686,7 +689,7 @@ export default function pafr22(props: any) {
                   Salaries and Benefits increased by $319.1 million (9.3%)
                 </span>
                 , due to payment of excess sick and overtime payouts, and
-                one-time bonuses to certain labor organizations and increased
+                one-time bonuses to certain labor organizations for a portion of deferred compensation adjustments and increased
                 pension contribution.
               </li>
               <li>
