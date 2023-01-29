@@ -106,7 +106,7 @@ export default function pafr22(props: any) {
                 The ACFR provides a report on revenues and expenses for all the
                 City's funds, including the Harbor, Airports and Department of
                 Water and Power and a snapshot of the fiscal condition of the
-                City as it ended the fiscal year on June 30 of 2022. 
+                City as it ended the fiscal year on June 30 of 2022.
                 <br />
                 <br />
                 <ul className='list-disc pl-4'>
@@ -563,18 +563,16 @@ export default function pafr22(props: any) {
               activities). This is an increase of $306.6 million over FY 21.
               <br />
               <br />
-              <span className='font-bold'>
-                Restricted net position:
-              </span>{' '}
-              $6.1 billion, which represents external restrictions imposed by
+              <span className='font-bold'>Restricted net position:</span> $6.1
+              billion, which represents external restrictions imposed by
               creditors, grantors, contributors, laws of other governments,
               constitutional provisions or enabling legislation ($4.3 billion in
               governmental activities and $1.8 billion in business-type
               activities). This is an increase of $158.2 million over FY 21.
               <br />
               <br />
-              <span className='font-bold'>Unrestricted net position:</span> $114.4
-              million is the net amount of the governmental deficit of
+              <span className='font-bold'>Unrestricted net position:</span>{' '}
+              $114.4 million is the net amount of the governmental deficit of
               $5.2 billion and $5.4 billion in unrestricted net position in its
               business activities. Compared to FY21, the overall unrestricted
               position increased by $2.9 million, primarily due to a combination
@@ -607,8 +605,8 @@ export default function pafr22(props: any) {
             </p>
             <h2 className='mt-3'>General Fund Revenues</h2>
             <h4 className='font-bold'>
-              FY 22 Total General Fund Revenues: $6.2 billion, $498.5 million 8.8% increase
-              from FY 21
+              FY 22 Total General Fund Revenues: $6.2 billion, $498.5 million
+              8.8% increase from FY 21
             </h4>
             {/*Revenues  vis */}
 
@@ -646,13 +644,15 @@ export default function pafr22(props: any) {
                 year.
               </li>
               <li>
-              <span className='font-bold'>Other tax revenues</span> were up by $256.6 million or 49.2%, primarily
-                due to increases of 128.7 million in{' '}
+                <span className='font-bold'>Other tax revenues</span> were up by
+                $256.6 million or 49.2%, primarily due to increases of 128.7
+                million in{' '}
                 <span className='font-bold'>Transient Occupancy Tax</span>,
                 $39.7million in{' '}
                 <span className='font-bold'>Parking Occupancy Tax</span>{' '}
-                receipts and $62.3 million in <span className='font-bold'>Documentary Transfer Tax</span> due to
-                home price appreciation during FY22.
+                receipts and $62.3 million in{' '}
+                <span className='font-bold'>Documentary Transfer Tax</span> due
+                to home price appreciation during FY22.
               </li>
               <li>
                 <span className='font-bold'>Licenses and permits</span> revenues
@@ -660,14 +660,15 @@ export default function pafr22(props: any) {
                 permit fees from pandemic low.
               </li>
               <li>
-              <span className='font-bold'>Charges for services</span> provided to Enterprise Fund totaled $17.6
-                million or 4.9% lower than prior fiscal year.
+                <span className='font-bold'>Charges for services</span> provided
+                to Enterprise Fund totaled $17.6 million or 4.9% lower than
+                prior fiscal year.
               </li>
               <li>
                 <span className='font-bold'>Net investment earnings</span> and
-                <span className='font-bold'>other revenues</span> decreased by $88.2 million, due to decreases in
-                investment earnings and change in the fair market value of
-                investments.
+                <span className='font-bold'>other revenues</span> decreased by
+                $88.2 million, due to decreases in investment earnings and
+                change in the fair market value of investments.
               </li>
             </ul>
 
