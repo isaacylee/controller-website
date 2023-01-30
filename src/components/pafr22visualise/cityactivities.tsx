@@ -202,6 +202,10 @@ export function CityActivities() {
     renderAllChartsForDepartment();
   }, [selectedDepartment]);
 
+  React.useEffect(() => {
+    renderAllChartsForDepartment();
+  }, [innerwidth]);
+
   return (
     <>
       <div className='flex flex-wrap gap-x-2 gap-y-1'>
