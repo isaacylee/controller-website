@@ -6,7 +6,8 @@ import { useRef } from 'react';
 import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 import { processEachValueIntoTextMore } from '@/components/utils';
 export function Expenditures() {
-  const expenref = useRef<any>(null);
+  const expenrefbis = useRef<any>(null);
+  const expenrefgov = useRef<any>(null);
 
   const stacked = useRef<any>(null);
 
@@ -20,6 +21,7 @@ export function Expenditures() {
           },
           y: {
             tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
+            grid: true,
           },
           x: { label: 'Fiscal Year' },
           marks: [
@@ -45,8 +47,8 @@ export function Expenditures() {
       );
 
       if (stacked.current) {
-        console.log('current ref', expenref.current);
-        expenref.current.append(expenelementstacked);
+        console.log('current ref', stacked.current);
+        stacked.current.append(expenelementstacked);
       }
     });
 
@@ -56,7 +58,15 @@ export function Expenditures() {
           (e: any) => e.Value != null
         );
 
-        const expenelement = addTooltips(
+        const businessexpen = totalcityexpenditures1clean.filter(
+          (bruhh: any) => bruhh['Activity Type'] === 'Business-Type'
+        );
+
+        const govexpen = totalcityexpenditures1clean.filter(
+          (bruhh: any) => bruhh['Activity Type'] === 'Governmental'
+        );
+
+        const expenelementbis = addTooltips(
           Plot.plot({
             height: 650,
             color: {
@@ -65,14 +75,11 @@ export function Expenditures() {
             y: {
               tickFormat: (tick: any) =>
                 d3.format('0.1s')(tick).replace('G', 'B'),
+              grid: true,
             },
             x: { label: 'Fiscal Year' },
-            facet: {
-              data: totalcityexpenditures1clean,
-              y: 'Activity Type',
-            },
             marks: [
-              Plot.barY(totalcityexpenditures1clean, {
+              Plot.barY(businessexpen, {
                 x: 'Year',
                 y: 'Value',
                 fill: 'Activity',
@@ -93,9 +100,48 @@ export function Expenditures() {
           }
         );
 
-        if (expenref.current) {
-          console.log('current ref', expenref.current);
-          expenref.current.append(expenelement);
+        const expenelementgov = addTooltips(
+          Plot.plot({
+            height: 650,
+            color: {
+              legend: true,
+            },
+            y: {
+              tickFormat: (tick: any) =>
+                d3.format('0.1s')(tick).replace('G', 'B'),
+              grid: true,
+            },
+            x: { label: 'Fiscal Year' },
+            marks: [
+              Plot.barY(govexpen, {
+                x: 'Year',
+                y: 'Value',
+                fill: 'Activity',
+                title: (elem: any) =>
+                  `${elem.Activity} ${processEachValueIntoTextMore({
+                    value: elem.Value,
+                    digits: 3,
+                  })}`,
+              }),
+              Plot.ruleY([0]),
+            ],
+          }),
+          {
+            fill: '#ffffff',
+            opacity: 0.5,
+            'stroke-width': '4px',
+            stroke: '#41ffca',
+          }
+        );
+
+        if (expenrefbis.current) {
+          console.log('current ref', expenrefbis.current);
+          expenrefbis.current.append(expenelementbis);
+        }
+
+        if (expenelementgov) {
+          console.log('current ref', expenrefgov.current);
+          expenrefgov.current.append(expenelementgov);
         }
       }
     );
@@ -103,10 +149,13 @@ export function Expenditures() {
 
   return (
     <div>
-      <h4>Expenses Stacked</h4>
+      <h4>Expenditures Stacked</h4>
       <div ref={stacked}></div>
-      <h4>Each Expenses Source Breakdown</h4>
-      <div ref={expenref}></div>
+      <h4>Each Expenditures Source Breakdown</h4>
+      <h5>Business-Type</h5>
+      <div ref={expenrefbis}></div>
+      <h5>Governmental</h5>
+      <div ref={expenrefgov}></div>
     </div>
   );
 }
