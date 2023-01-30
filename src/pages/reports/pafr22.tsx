@@ -43,7 +43,8 @@ export default function pafr22(props: any) {
               <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
                   Popular Annual Financial Report FY22
-                </span>
+                </span><br>
+                </br><span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-lg italic'>A summary of the City of Los Angeles Annual Comprehensive Financial Report for Fiscal Year ended June 30, 2022.</span>
               </h1>
             </div>
           </div>
@@ -249,7 +250,7 @@ export default function pafr22(props: any) {
               <br />
               At the beginning of fiscal year 2022, as COVID-19 vaccine became
               widely available and the economy reopened, the unemployment in the
-              City of Los Angeles began its steady decline from 7.2% in October
+              City of Los Angeles began its steady decline from 7.2 percent in October
               2021 to 4.6 percent as of October 2022. With the improving economy
               throughout fiscal 2022, most economic sensitive revenue rebounded.
               The improvement in revenue along with the federal assistance
@@ -629,8 +630,7 @@ export default function pafr22(props: any) {
                 and VLF Replacement of $84.5 million.
               </li>
               <li>
-                Economy-sensitive revenues rebounded in FY22 as the economy
-                reopened from the pandemic shutdown:{' '}
+              
                 <span className='font-bold'>Sales tax</span> increased by $132.0
                 million (23.5%) as a result of improvement in local economic
                 activity, while <span className='font-bold'>business tax</span>{' '}
