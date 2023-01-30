@@ -23,7 +23,7 @@ export function Expenditures() {
             tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
             grid: true,
           },
-          x: { label: 'Fiscal Year' },
+          x: { label: 'Fiscal Year', type: 'band' },
           marks: [
             Plot.barY(sumexpend, {
               x: 'Year',
@@ -77,7 +77,7 @@ export function Expenditures() {
                 d3.format('0.1s')(tick).replace('G', 'B'),
               grid: true,
             },
-            x: { label: 'Fiscal Year' },
+            x: { label: 'Fiscal Year', type: 'band' },
             marks: [
               Plot.barY(businessexpen, {
                 x: 'Year',
@@ -111,7 +111,7 @@ export function Expenditures() {
                 d3.format('0.1s')(tick).replace('G', 'B'),
               grid: true,
             },
-            x: { label: 'Fiscal Year' },
+            x: { label: 'Fiscal Year', type: 'band' },
             marks: [
               Plot.barY(govexpen, {
                 x: 'Year',

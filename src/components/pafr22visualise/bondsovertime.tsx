@@ -75,6 +75,9 @@ export function BondsOverTime() {
           color: {
             legend: true,
           },
+          x: {
+            type: 'band',
+          },
           y: {
             tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
             grid: true,
