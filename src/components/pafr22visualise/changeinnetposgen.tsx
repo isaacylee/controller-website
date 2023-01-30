@@ -71,6 +71,14 @@ export function ChangeinnetposGen() {
     'Total',
   ];
 
+  let headcolumns = columns;
+
+  if (typeof window != 'undefined') {
+    if (window.innerWidth < 640) {
+      headcolumns = ['Category', 'Desc.', 'Business', 'Gov.', 'Total'];
+    }
+  }
+
   const filterTable = () => {
     if (dataOriginal) {
       const changeinnetposyear = dataOriginal
@@ -114,7 +122,7 @@ export function ChangeinnetposGen() {
       thead
         .append('tr')
         .selectAll('th')
-        .data(columns)
+        .data(headcolumns)
         .enter()
         .append('th')
         .attr('class', 'px-2 text-wrap max-w-xs')
@@ -167,33 +175,6 @@ export function ChangeinnetposGen() {
   useEffect(() => {
     filterTable();
   }, [selectedYear]);
-
-  const OrderLederWay = (arrayofentries: any) => {
-    const sorted: Array<any> = [];
-
-    const orderspecified = [
-      'Operating Revenues',
-      'Operating Expenses',
-      'Operating Income (Loss)',
-      'Net Nonoperating Revenues (Expenses)',
-      'Capital Contributions',
-      'Transfers Out',
-      'Special Item',
-      'Extraordinary Item',
-      'Change in Net Position',
-    ];
-
-    orderspecified.forEach((eachItem: any) => {
-      const found = arrayofentries.find(
-        (eachItem2: any) => eachItem2[0] == eachItem
-      );
-      if (found) {
-        sorted.push(found);
-      }
-    });
-
-    return sorted;
-  };
 
   return (
     <div>

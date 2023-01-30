@@ -1,5 +1,9 @@
 function isvalidnumber(value: string) {
-  return !isNaN(Number(value));
+  if (value === '' || value === null || value === undefined) {
+    return false;
+  } else {
+    return !isNaN(Number(value));
+  }
 }
 
 export function processcsvcityactivities(csvinput: Array<any>) {

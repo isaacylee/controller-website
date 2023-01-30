@@ -39,6 +39,7 @@ export const processEachValueIntoText = (value: any) => {
 interface processintomorevalueopt {
   value: number;
   digits: number;
+  dollarsign?: boolean;
 }
 
 export const processEachValueIntoTextMore = (
@@ -56,9 +57,20 @@ export const processEachValueIntoTextMore = (
 
   const text = nFormatter(absolute, digits);
   //  console.log('value', value, 'result', text);
-  if (neg) {
-    return `$(${text})`;
+
+  let returnstring = '';
+
+  if (options.dollarsign === false) {
+    returnstring += '';
   } else {
-    return `$${text}`;
+    returnstring += '$';
   }
+
+  if (neg) {
+    returnstring += `(${text})`;
+  } else {
+    returnstring += `${text}`;
+  }
+
+  return returnstring;
 };
