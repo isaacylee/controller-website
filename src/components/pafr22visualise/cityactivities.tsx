@@ -146,6 +146,7 @@ export function CityActivities() {
               y: {
                 tickFormat: (tick: any) =>
                   d3.format('~s')(tick).replace('G', 'B'),
+                label: eachMetric['UOM DESCRIPTION'],
               },
             });
 
