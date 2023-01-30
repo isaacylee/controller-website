@@ -154,8 +154,12 @@ export function CityActivities() {
                       digits: 1,
                       dollarsign: false,
                     }),
-                  dy: (d: any, i: any) =>
-                    innerwidth < 640 ? (i % 2 === 0 ? 20 : -20) : -15,
+                  dy: (d: any) =>
+                    innerwidth < 640
+                      ? Number(d.year) % 2 === 0
+                        ? -15
+                        : 15
+                      : -15,
                 }),
               ],
               y: {

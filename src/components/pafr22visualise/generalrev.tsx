@@ -25,6 +25,7 @@ export function GeneralRevenue() {
             height: 650,
             color: {
               legend: true,
+              scheme: 'paired',
             },
             x: {
               type: 'band',

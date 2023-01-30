@@ -1,6 +1,13 @@
 {
   "finance": [
     {
+      "image": "https://controller.lacity.gov/images/acfr22cover_Page_001.png",
+      "name": "Annual Comprehensive Financial Report FY22",
+      "year": "2023",
+      "dept": "Financial Report",
+      "link": "/reports/pafr22"
+    },
+    {
       "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/10/2021-22-Prelim-Financial-Report-Thumbnail-scaled.jpg",
       "name": "Preliminary Financial Report FY22",
       "year": "2022",
