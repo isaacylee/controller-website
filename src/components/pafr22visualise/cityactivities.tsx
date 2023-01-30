@@ -145,22 +145,46 @@ export function CityActivities() {
                   y: 'value',
                 }),
 
-                Plot.text(arrayofmetric, {
-                  x: 'year',
-                  y: 'value',
-                  text: (d: any) =>
-                    processEachValueIntoTextMore({
-                      value: d.value,
-                      digits: 1,
-                      dollarsign: false,
-                    }),
-                  dy: (d: any) =>
-                    innerwidth < 640
-                      ? Number(d.year) % 2 === 0
-                        ? -15
-                        : 15
-                      : -15,
-                }),
+                Plot.text(
+                  arrayofmetric.filter((eachItem) => {
+                    if (innerwidth < 640) {
+                      return true;
+                    } else {
+                      return Number(eachItem.year) % 2 === 0;
+                    }
+                  }),
+                  {
+                    x: 'year',
+                    y: 'value',
+                    text: (d: any) =>
+                      processEachValueIntoTextMore({
+                        value: d.value,
+                        digits: 1,
+                        dollarsign: false,
+                      }),
+                    dy: -15,
+                  }
+                ),
+                Plot.text(
+                  arrayofmetric.filter((eachItem) => {
+                    if (innerwidth < 640) {
+                      return false;
+                    } else {
+                      return Number(eachItem.year) % 2 === 1;
+                    }
+                  }),
+                  {
+                    x: 'year',
+                    y: 'value',
+                    text: (d: any) =>
+                      processEachValueIntoTextMore({
+                        value: d.value,
+                        digits: 1,
+                        dollarsign: false,
+                      }),
+                    dy: 15,
+                  }
+                ),
               ],
               y: {
                 tickFormat: (tick: any) =>
