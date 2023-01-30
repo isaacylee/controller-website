@@ -2,7 +2,7 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect } from 'react';
 
-import { processEachValueIntoText } from '@/components/utils';
+import { formatBillions } from '@/components/utils';
 
 export function ChangeinnetposGen() {
   const [selectedYear, setSelectedYear] = React.useState(2022);
@@ -86,11 +86,9 @@ export function ChangeinnetposGen() {
         .map((eachItem: any) => {
           return {
             ...eachItem,
-            'Business-Type': processEachValueIntoText(
-              eachItem['Business-Type']
-            ),
-            Governmental: processEachValueIntoText(eachItem['Governmental']),
-            Total: processEachValueIntoText(eachItem['Total']),
+            'Business-Type': formatBillions(eachItem['Business-Type']),
+            Governmental: formatBillions(eachItem['Governmental']),
+            Total: formatBillions(eachItem['Total']),
           };
         });
 

@@ -48,6 +48,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/payroll-calendar',
+        destination: '/payrollcalendar/',
+        permanent: true,
+      },
+      {
         source: '/financial-reports/:path',
         destination: '/reports/:path',
         permanent: true,

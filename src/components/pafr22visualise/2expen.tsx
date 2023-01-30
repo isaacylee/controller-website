@@ -21,7 +21,7 @@ export function Expenditures() {
           y: {
             tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
           },
-          x: {label:"Fiscal Year"},
+          x: { label: 'Fiscal Year' },
           marks: [
             Plot.barY(sumexpend, {
               x: 'Year',
@@ -66,7 +66,7 @@ export function Expenditures() {
               tickFormat: (tick: any) =>
                 d3.format('0.1s')(tick).replace('G', 'B'),
             },
-            x: {label:"Fiscal Year"},
+            x: { label: 'Fiscal Year' },
             facet: {
               data: totalcityexpenditures1clean,
               y: 'Activity Type',

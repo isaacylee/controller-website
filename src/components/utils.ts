@@ -36,6 +36,19 @@ export const processEachValueIntoText = (value: any) => {
   }
 };
 
+export function formatBillions(value: any) {
+  const numberinput = Number(value);
+
+  const floatofbillions = numberinput / 1e9;
+
+  const isnegative = floatofbillions < 0;
+
+  if (isnegative) {
+    return `$(${Math.abs(floatofbillions).toFixed(1)}B)`;
+  } else {
+    return `$${floatofbillions.toFixed(1)}B`;
+  }
+}
 interface processintomorevalueopt {
   value: number;
   digits: number;

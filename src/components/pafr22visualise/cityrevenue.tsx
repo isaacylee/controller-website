@@ -97,7 +97,7 @@ export default function CityRevenue(props: any) {
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
           label: 'Revenue',
         },
-        x: {label:"Fiscal Year"},
+        x: { label: 'Fiscal Year' },
         facet: {
           data: totalcityrevenue1,
           y: 'Activity Type',
@@ -151,7 +151,7 @@ export default function CityRevenue(props: any) {
                 d3.format('~s')(tick).replace('G', 'B'),
               label: 'Revenue',
             },
-            x: {label:"Fiscal Year"},
+            x: { label: 'Fiscal Year' },
             marks: [
               Plot.barY(asdf, {
                 x: 'Year',
