@@ -103,9 +103,9 @@ export function Expenditures() {
 
   return (
     <div>
-      <h4>Expenditures Stacked</h4>
+      <h4>Expenses Stacked</h4>
       <div ref={stacked}></div>
-      <h4>Each Expenditures Source Breakdown</h4>
+      <h4>Each Expenses Source Breakdown</h4>
       <div ref={expenref}></div>
     </div>
   );
