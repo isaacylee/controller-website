@@ -186,6 +186,7 @@ export function Changeinnetpos() {
           label: '$ Change',
           tickFormat: '$s',
           domain: [-200000000, 500000000],
+          grid: true,
         },
         marks: [
           Plot.barX(changeinnetposyear, {

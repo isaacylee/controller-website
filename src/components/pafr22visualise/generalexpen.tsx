@@ -30,6 +30,7 @@ export function GeneralExpenditures() {
             y: {
               tickFormat: (tick: any) =>
                 d3.format('~s')(tick).replace('G', 'B'),
+              grid: true,
             },
             marks: [
               Plot.barY(totalcityexpenditures1clean, {
