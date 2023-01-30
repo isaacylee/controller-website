@@ -155,7 +155,7 @@ export function CityActivities() {
                       dollarsign: false,
                     }),
                   dy: (d: any, i: any) =>
-                    innerwidth < 640 ? (i % 2 === 0 ? -12 : 12) : -15,
+                    innerwidth < 640 ? (i % 2 === 0 ? 20 : -20) : -15,
                 }),
               ],
               y: {

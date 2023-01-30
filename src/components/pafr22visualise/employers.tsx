@@ -49,7 +49,7 @@ export function Employers() {
       })
       .enter()
       .append('td')
-      .attr('class', '')
+      .attr('class', 'tabular-nums')
       .text(function (d: any) {
         return d.value;
       });
