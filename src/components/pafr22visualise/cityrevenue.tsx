@@ -88,41 +88,40 @@ export default function CityRevenue(props: any) {
         };
       });
 
-      const revenuesplitbyactivity = addTooltips(
-        Plot.plot({
-          color: {
-            legend: true,
-          },
-          height: 600,
-          y: {
-            tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
-            label: 'Revenue',
-          },
-          facet: {
-            data: totalcityrevenue1,
-            y: 'Activity Type',
-          },
-          marks: [
-            Plot.barY(totalcityrevenue1, {
-              x: 'Year',
-              y: 'Revenue',
-              fill: 'Activity',
-              title: (elem: any) =>
-                `${elem.Activity} ${processEachValueIntoTextMore({
-                  value: elem.Value,
-                  digits: 2,
-                })}`,
-            }),
-            Plot.ruleY([0]),
-          ],
-        }),
-        {
-          fill: '#ffffff',
-          opacity: 0.5,
-          'stroke-width': '4px',
-          stroke: '#41ffca',
-        }
-      );
+      const plotthen = Plot.plot({
+        color: {
+          legend: true,
+        },
+        height: 600,
+        y: {
+          tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
+          label: 'Revenue',
+        },
+        facet: {
+          data: totalcityrevenue1,
+          y: 'Activity Type',
+        },
+        marks: [
+          Plot.barY(totalcityrevenue1, {
+            x: 'Year',
+            y: 'Revenue',
+            fill: 'Activity',
+            title: (elem: any) =>
+              `${elem.Activity} ${processEachValueIntoTextMore({
+                value: elem.Revenue,
+                digits: 2,
+              })}`,
+          }),
+          Plot.ruleY([0]),
+        ],
+      });
+
+      const revenuesplitbyactivity = addTooltips(plotthen, {
+        fill: '#ffffff',
+        opacity: 0.5,
+        'stroke-width': '4px',
+        stroke: '#41ffca',
+      });
 
       if (rev1.current) {
         rev1.current.append(revenuesplitbyactivity);
@@ -156,7 +155,9 @@ export default function CityRevenue(props: any) {
                 x: 'Year',
                 y: 'Sum of Revenue',
                 title: (elems: any) =>
-                  `${(parseInt(elems['Sum of Revenue']) / 10e8).toFixed(2)}B`,
+                  `${elems['Activity Type']} ${(
+                    parseInt(elems['Sum of Revenue']) / 10e8
+                  ).toFixed(2)}B`,
                 fill: 'Activity Type',
               }),
               Plot.ruleY([0]),

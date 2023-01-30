@@ -101,12 +101,14 @@ export function addTooltips(chart: any, styles: any) {
   // Set pointer events to visibleStroke if the fill is none (e.g., if its a line)
   wrapper.selectAll('path').each((data: any, index: any, nodes: any) => {
     // For line charts, set the pointer events to be visible stroke
-    if (
-      d3.select(nodes).attr('fill') === null ||
-      d3.select(nodes).attr('fill') === 'none'
-    ) {
-      d3.select(nodes).style('pointer-events', 'visibleStroke');
-      if (styles === undefined) styles = stroke_styles;
+    if (d3.select(nodes)) {
+      if (
+        d3.select(nodes).attr('fill') === null ||
+        d3.select(nodes).attr('fill') === 'none'
+      ) {
+        d3.select(nodes).style('pointer-events', 'visibleStroke');
+        if (styles === undefined) styles = stroke_styles;
+      }
     }
   });
 

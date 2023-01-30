@@ -3,7 +3,6 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
-import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 import { processEachValueIntoTextMore } from '@/components/utils';
 
 import { getHeightPlot, getWidthPlot } from './processwidthandheight';
@@ -68,7 +67,8 @@ export function BondsOverTime() {
           (eachItem: any) => eachItem['Activity Type'] === 'Governmental'
         );
 
-      const plotforbondsovertimeelem = addTooltips(
+      const plotforbondsovertimeelem =
+        // addTooltips(
         Plot.plot({
           width: getWidthPlot(sizes),
           height: getHeightPlot(sizes),
@@ -101,14 +101,14 @@ export function BondsOverTime() {
             }),
             Plot.ruleY([0]),
           ],
-        }),
-        {
-          fill: '#ffffff',
-          opacity: 0.5,
-          'stroke-width': '4px',
-          stroke: '#41ffca',
-        }
-      );
+        });
+      // {
+      //      fill: '#ffffff',
+      //       opacity: 0.5,
+      //       'stroke-width': '4px',
+      //       stroke: '#41ffca',
+      //     }
+      //   );
 
       if (bondsovertimeref.current) {
         console.log('current ref', bondsovertimeref.current);
