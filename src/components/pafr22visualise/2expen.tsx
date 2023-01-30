@@ -31,7 +31,7 @@ export function Expenditures() {
               fill: 'Activity Type',
               title: (elem: any) =>
                 `${elem['Activity Type']} ${processEachValueIntoTextMore({
-                  value: elem.Value,
+                  value: elem['Sum of Value'],
                   digits: 3,
                 })}`,
             }),
