@@ -45,7 +45,7 @@ export default function pafr22(props: any) {
                   Popular Annual Financial Report FY22
                 </span>
                 <br></br>
-                <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-lg italic'>
+                <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-base italic sm:text-lg'>
                   A summary of the City of Los Angeles Annual Comprehensive
                   Financial Report for Fiscal Year ended June 30, 2022.
                 </span>
@@ -698,7 +698,6 @@ export default function pafr22(props: any) {
                 contribution.
               </li>
               <li>
-            
                 <span className='font-bold'>
                   Capital outlays increased by $24.8 million (85.1%),
                 </span>{' '}
