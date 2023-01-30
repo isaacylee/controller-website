@@ -84,7 +84,7 @@ export function BondsOverTime() {
               fill: 'Activity Type',
               y: 'Value',
               title: (elem: any) =>
-                `${elem.Revenue} ${processEachValueIntoTextMore({
+                `${elem['Activity Type']} ${processEachValueIntoTextMore({
                   value: elem.Value,
                   digits: 2,
                 })}`,
