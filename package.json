@@ -17,7 +17,8 @@
     "format": "prettier -w .",
     "format:check": "prettier -c .",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@datadog/browser-rum": "^4.28.1",
@@ -66,6 +67,7 @@
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "autoprefixer": "^10.4.13",
+    "cypress": "^12.4.1",
     "eslint": "^8.29.0",
     "eslint-config-next": "^13.0.7",
     "eslint-config-prettier": "^8.5.0",
