@@ -2,6 +2,16 @@ import * as d3 from 'd3';
 import * as React from 'react';
 
 export function Employers() {
+  const columnsshown = [
+    'Employer',
+    '2022 Employees',
+    'Rank',
+    '% of Total',
+    '2013 Employees',
+    'Rank',
+    '% of Total',
+  ];
+
   const renderChart = (data: any, columns: string[]) => {
     const table = d3
       .select('#employerchart')
@@ -20,7 +30,7 @@ export function Employers() {
     thead
       .append('tr')
       .selectAll('th')
-      .data(columns)
+      .data(columnsshown)
       .enter()
       .append('th')
       .attr('class', 'px-2 text-wrap max-w-xs')
@@ -52,7 +62,7 @@ export function Employers() {
         'Employer',
         '22 Employees',
         '22 Rank',
-        '13 % of Total',
+        '22 % of Total',
         '13 Employees',
         '13 Rank',
         '13 % of Total',

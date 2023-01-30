@@ -4,6 +4,8 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
+import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
+import { processEachValueIntoTextMore } from '@/components/utils';
 //import { Plot } from '../tooltipsPlot/tooltips';
 
 function responsivefy(svg: any) {
@@ -86,7 +88,7 @@ export default function CityRevenue(props: any) {
         };
       });
 
-      const revenuesplitbyactivity = Plot.plot({
+      const plotthen = Plot.plot({
         color: {
           legend: true,
         },
@@ -95,6 +97,7 @@ export default function CityRevenue(props: any) {
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
           label: 'Revenue',
         },
+        x: { label: 'Fiscal Year' },
         facet: {
           data: totalcityrevenue1,
           y: 'Activity Type',
@@ -104,9 +107,21 @@ export default function CityRevenue(props: any) {
             x: 'Year',
             y: 'Revenue',
             fill: 'Activity',
+            title: (elem: any) =>
+              `${elem.Activity} ${processEachValueIntoTextMore({
+                value: elem.Revenue,
+                digits: 2,
+              })}`,
           }),
           Plot.ruleY([0]),
         ],
+      });
+
+      const revenuesplitbyactivity = addTooltips(plotthen, {
+        fill: '#ffffff',
+        opacity: 0.5,
+        'stroke-width': '4px',
+        stroke: '#41ffca',
       });
 
       if (rev1.current) {
@@ -123,29 +138,40 @@ export default function CityRevenue(props: any) {
           };
         });
 
-        const facetedRev = Plot.plot({
-          color: {
-            legend: true,
-            background: '#212121',
-            color: 'white',
-          },
-          height: 500,
-          y: {
-            tickFormat: (tick: any) =>
-              d3.format('0.1s')(tick).replace('G', 'B'),
-            label: 'Revenue',
-          },
-          marks: [
-            Plot.barY(asdf, {
-              x: 'Year',
-              y: 'Sum of Revenue',
-              title: (elems: any) =>
-                `${(parseInt(elems['Sum of Revenue']) / 10e8).toFixed(2)}B`,
-              fill: 'Activity Type',
-            }),
-            Plot.ruleY([0]),
-          ],
-        });
+        const facetedRev = addTooltips(
+          Plot.plot({
+            color: {
+              legend: true,
+              background: '#212121',
+              color: 'white',
+            },
+            height: 500,
+            y: {
+              tickFormat: (tick: any) =>
+                d3.format('~s')(tick).replace('G', 'B'),
+              label: 'Revenue',
+            },
+            x: { label: 'Fiscal Year' },
+            marks: [
+              Plot.barY(asdf, {
+                x: 'Year',
+                y: 'Sum of Revenue',
+                title: (elems: any) =>
+                  `${elems['Activity Type']} ${(
+                    parseInt(elems['Sum of Revenue']) / 10e8
+                  ).toFixed(2)}B`,
+                fill: 'Activity Type',
+              }),
+              Plot.ruleY([0]),
+            ],
+          }),
+          {
+            fill: '#ffffff',
+            opacity: 0.5,
+            'stroke-width': '4px',
+            stroke: '#41ffca',
+          }
+        );
 
         if (rev2.current) {
           rev2.current.append(facetedRev);

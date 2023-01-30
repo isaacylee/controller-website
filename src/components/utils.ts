@@ -28,7 +28,7 @@ export const processEachValueIntoText = (value: any) => {
   const absolute = Math.abs(value);
 
   const text = nFormatter(absolute, 1);
-  console.log('value', value, 'result', text);
+  //  console.log('value', value, 'result', text);
   if (neg) {
     return `$(${text})`;
   } else {
@@ -49,3 +49,41 @@ export function formatBillions(value: any) {
     return `$${floatofbillions.toFixed(1)}B`;
   }
 }
+interface processintomorevalueopt {
+  value: number;
+  digits: number;
+  dollarsign?: boolean;
+}
+
+export const processEachValueIntoTextMore = (
+  options: processintomorevalueopt
+) => {
+  const { value, digits } = options;
+
+  let neg = false;
+
+  if (value < 0) {
+    neg = true;
+  }
+
+  const absolute = Math.abs(value);
+
+  const text = nFormatter(absolute, digits);
+  //  console.log('value', value, 'result', text);
+
+  let returnstring = '';
+
+  if (options.dollarsign === false) {
+    returnstring += '';
+  } else {
+    returnstring += '$';
+  }
+
+  if (neg) {
+    returnstring += `(${text})`;
+  } else {
+    returnstring += `${text}`;
+  }
+
+  return returnstring;
+};

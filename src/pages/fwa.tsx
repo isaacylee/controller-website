@@ -42,6 +42,7 @@ export default function FraudWasteAndAbuse(props: any) {
             and abuse that relate to or impact City resources can be made to the
             Controller’s Fraud Hotline.
             <br />
+            <br />
             Otherwise, report personal fraud, waste or abuse to LAPD at{' '}
             <a
               href='https://lapdonline.org/file-a-police-report/'
@@ -84,19 +85,20 @@ export default function FraudWasteAndAbuse(props: any) {
               For example, a contractor bills the City for services it never
               provided or inflates the value of its services.
             </p>
-            <h3 className='mt-2'>Contractor Fraud</h3>
+            <h3 className='mt-2'>Waste</h3>
             <p>
-              Waste – The extravagant or excessive expenditure of City funds
-              above and beyond the level that is reasonably required to meet the
-              needs of the City, or the consumption or use of City resources
-              that is not knowingly authorized. For example, wasteful purchasing
-              of items that end up unused.
-              <br />
-              <br />
-              Abuse – The improper use of City resources in a manner contrary to
-              law or City policy, or the improper use of one’s position for
-              private gain or advantage for themselves or any other person where
-              not otherwise lawful. For example, using City computers to work on
+              The extravagant or excessive expenditure of City funds above and
+              beyond the level that is reasonably required to meet the needs of
+              the City, or the consumption or use of City resources that is not
+              knowingly authorized. For example, wasteful purchasing of items
+              that end up unused.
+            </p>
+            <h3 className='mt-2'>Abuse</h3>
+            <p>
+              The improper use of City resources in a manner contrary to law or
+              City policy, or the improper use of one’s position for private
+              gain or advantage for themselves or any other person where not
+              otherwise lawful. For example, using City computers to work on
               one’s personal business.
             </p>
             <h3 className='mt-2'>Contractor Selection Concerns</h3>
@@ -137,7 +139,13 @@ export default function FraudWasteAndAbuse(props: any) {
               governmental ethics, misuse of City position and conflicts of
               interest. In addition, the Ethics Commission has jurisdiction to
               investigate whistleblower retaliation. Information about each of
-              those areas of law is available at ethics.lacity.org.
+              those areas of law is available at{' '}
+              <a
+                href='https://ethics.lacity.org'
+                className='text-green-700 underline dark:text-mejito'
+              >
+                ethics.lacity.org
+              </a>
               <br />
               To make a report, contact the City Ethics Commission at{' '}
               <a
@@ -176,7 +184,7 @@ export default function FraudWasteAndAbuse(props: any) {
               person, with the goal of swindling money from unsuspecting
               individuals.
               <br />
-              contact LADWP Security Services at{' '}
+              To make a report, contact LADWP Security Services at{' '}
               <a
                 href='tel:+12133673373'
                 className='text-green-700 underline dark:text-mejito'

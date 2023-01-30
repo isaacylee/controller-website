@@ -3,6 +3,9 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useRef } from 'react';
 
+import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
+import { processEachValueIntoTextMore } from '@/components/utils';
+
 export function GeneralExpenditures() {
   const expenref = useRef<any>(null);
 
@@ -18,23 +21,37 @@ export function GeneralExpenditures() {
             };
           });
 
-        const expenelement = Plot.plot({
-          height: 650,
-          color: {
-            legend: true,
-          },
-          y: {
-            tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
-          },
-          marks: [
-            Plot.barY(totalcityexpenditures1clean, {
-              x: 'FY',
-              y: 'Value',
-              fill: 'Expenditure',
-            }),
-            Plot.ruleY([0]),
-          ],
-        });
+        const expenelement = addTooltips(
+          Plot.plot({
+            height: 650,
+            color: {
+              legend: true,
+            },
+            y: {
+              tickFormat: (tick: any) =>
+                d3.format('~s')(tick).replace('G', 'B'),
+            },
+            marks: [
+              Plot.barY(totalcityexpenditures1clean, {
+                x: 'Fiscal Year',
+                y: 'Value',
+                fill: 'Expenditure',
+                title: (elem: any) =>
+                  `${elem.Expenditure} ${processEachValueIntoTextMore({
+                    value: elem.Value,
+                    digits: 2,
+                  })}`,
+              }),
+              Plot.ruleY([0]),
+            ],
+          }),
+          {
+            fill: 'white',
+            opacity: 0.5,
+            'stroke-width': '3px',
+            stroke: '#41ffca',
+          }
+        );
 
         if (expenref.current) {
           console.log('current ref', expenref.current);

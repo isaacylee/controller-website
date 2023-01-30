@@ -3,6 +3,8 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
+import { processEachValueIntoTextMore } from '@/components/utils';
+
 import { getHeightPlot, getWidthPlot } from './processwidthandheight';
 export function BondsOverTime() {
   const bondsovertimeref = useRef<any>(null);
@@ -65,34 +67,48 @@ export function BondsOverTime() {
           (eachItem: any) => eachItem['Activity Type'] === 'Governmental'
         );
 
-      const plotforbondsovertimeelem = Plot.plot({
-        width: getWidthPlot(sizes),
-        height: getHeightPlot(sizes),
-        color: {
-          legend: true,
-        },
-        y: {
-          tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
-        },
-        marks: [
-          Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
-            x: 'Fiscal Year',
-            fill: 'Activity Type',
-            y: 'Value',
-          }),
-          Plot.lineY(bondeddebtandlongtermnotespayablecleanedtotals, {
-            x: 'Fiscal Year',
-            y: 'Total',
-          }),
-          Plot.textY(bondeddebtandlongtermnotespayablecleanedtotals, {
-            x: 'Fiscal Year',
-            y: 'Total',
-            text: (bruh: any) => (bruh['Total'] / 10e8).toFixed(1),
-            dy: -10,
-          }),
-          Plot.ruleY([0]),
-        ],
-      });
+      const plotforbondsovertimeelem =
+        // addTooltips(
+        Plot.plot({
+          width: getWidthPlot(sizes),
+          height: getHeightPlot(sizes),
+          color: {
+            legend: true,
+          },
+          y: {
+            tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
+          },
+          marks: [
+            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
+              x: 'Fiscal Year',
+              fill: 'Activity Type',
+              y: 'Value',
+              title: (elem: any) =>
+                `${elem['Activity Type']} ${processEachValueIntoTextMore({
+                  value: elem.Value,
+                  digits: 2,
+                })}`,
+            }),
+            Plot.lineY(bondeddebtandlongtermnotespayablecleanedtotals, {
+              x: 'Fiscal Year',
+              y: 'Total',
+            }),
+            Plot.textY(bondeddebtandlongtermnotespayablecleanedtotals, {
+              x: 'Fiscal Year',
+              y: 'Total',
+              text: (bruh: any) => (bruh['Total'] / 10e8).toFixed(2),
+              dy: -10,
+            }),
+            Plot.ruleY([0]),
+          ],
+        });
+      // {
+      //      fill: '#ffffff',
+      //       opacity: 0.5,
+      //       'stroke-width': '4px',
+      //       stroke: '#41ffca',
+      //     }
+      //   );
 
       if (bondsovertimeref.current) {
         console.log('current ref', bondsovertimeref.current);
@@ -125,5 +141,5 @@ export function BondsOverTime() {
     }
   }, []);
 
-  return <div ref={bondsovertimeref}></div>;
+  return <div ref={bondsovertimeref} id='bondschart4pafr'></div>;
 }
