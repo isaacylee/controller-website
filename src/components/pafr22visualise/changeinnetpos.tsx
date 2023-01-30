@@ -313,13 +313,15 @@ export function Changeinnetpos() {
                   //.sort((a, b) => a[0].localeCompare(b[0]))
                   .map((bruh: Array<any>) => (
                     <tr key={bruh[0]}>
-                      <td className='px-1 sm:px-2'>{bruh[0]}</td>
-                      <td>{bruh[1]['Airports']}</td>
-                      <td>{bruh[1]['Harbor']}</td>
-                      <td>{bruh[1]['Power']}</td>
-                      <td>{bruh[1]['Water']}</td>
-                      <td>{bruh[1]['Sewer']}</td>
-                      <td>{bruh[1]['Convention Center']}</td>
+                      <td className='px-1 tabular-nums sm:px-2'>{bruh[0]}</td>
+                      <td className='tabular-nums'>{bruh[1]['Airports']}</td>
+                      <td className='tabular-nums'>{bruh[1]['Harbor']}</td>
+                      <td className='tabular-nums'>{bruh[1]['Power']}</td>
+                      <td className='tabular-nums'>{bruh[1]['Water']}</td>
+                      <td className='tabular-nums'>{bruh[1]['Sewer']}</td>
+                      <td className='tabular-nums'>
+                        {bruh[1]['Convention Center']}
+                      </td>
                       {/*Total all depts */}
                       <td>
                         {processEachValueIntoText(masterSumTable[bruh[0]])}

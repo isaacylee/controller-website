@@ -123,7 +123,7 @@ export function ChangeinnetposGen() {
         .data(headcolumns)
         .enter()
         .append('th')
-        .attr('class', 'px-2 text-wrap max-w-xs')
+        .attr('class', 'px-2 text-wrap max-w-xs tabular-nums')
         .text((d: any) => {
           return d;
         });
@@ -143,7 +143,7 @@ export function ChangeinnetposGen() {
         })
         .enter()
         .append('td')
-        .attr('class', 'text-sm sm:text-base px-1 md:px-2')
+        .attr('class', 'text-sm sm:text-base px-1 md:px-2 tabular-nums')
         .text(function (d: any) {
           return d.value;
         });
