@@ -3,6 +3,7 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
+import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 import { processEachValueIntoTextMore } from '@/components/utils';
 
 import { getHeightPlot, getWidthPlot } from './processwidthandheight';
@@ -67,8 +68,7 @@ export function BondsOverTime() {
           (eachItem: any) => eachItem['Activity Type'] === 'Governmental'
         );
 
-      const plotforbondsovertimeelem =
-        // addTooltips(
+      const plotforbondsovertimeelem = addTooltips(
         Plot.plot({
           width: getWidthPlot(sizes),
           height: getHeightPlot(sizes),
@@ -83,16 +83,6 @@ export function BondsOverTime() {
             grid: true,
           },
           marks: [
-            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
-              x: 'Fiscal Year',
-              fill: 'Activity Type',
-              y: 'Value',
-              title: (elem: any) =>
-                `${elem['Activity Type']} ${processEachValueIntoTextMore({
-                  value: elem.Value,
-                  digits: 2,
-                })}`,
-            }),
             Plot.lineY(bondeddebtandlongtermnotespayablecleanedtotals, {
               x: 'Fiscal Year',
               y: 'Total',
@@ -103,16 +93,26 @@ export function BondsOverTime() {
               text: (bruh: any) => (bruh['Total'] / 10e8).toFixed(2),
               dy: -10,
             }),
+            Plot.barY(bondeddebtandlongtermnotespayablecleaned, {
+              x: 'Fiscal Year',
+              fill: 'Activity Type',
+              y: 'Value',
+              title: (elem: any) =>
+                `${elem['Activity Type']} ${processEachValueIntoTextMore({
+                  value: elem.Value,
+                  digits: 2,
+                })}`,
+            }),
             Plot.ruleY([0]),
           ],
-        });
-      // {
-      //      fill: '#ffffff',
-      //       opacity: 0.5,
-      //       'stroke-width': '4px',
-      //       stroke: '#41ffca',
-      //     }
-      //   );
+        }),
+        {
+          fill: '#ffffff',
+          opacity: 0.5,
+          'stroke-width': '4px',
+          stroke: '#41ffca',
+        }
+      );
 
       if (bondsovertimeref.current) {
         console.log('current ref', bondsovertimeref.current);
