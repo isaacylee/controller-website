@@ -131,6 +131,7 @@ export function CityActivities() {
               x: {
                 tickFormat: (tick: any) =>
                   innerWidth < 640 ? `'` + tick.slice(-2) : tick,
+                type: 'band',
               },
 
               marks: [
