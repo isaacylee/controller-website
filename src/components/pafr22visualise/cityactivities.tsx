@@ -25,6 +25,10 @@ export function CityActivities() {
   const [selectedDepartment, setSelectedDepartment] =
     React.useState<string>('Aging');
 
+  const [innerwidth, setinnerwidth] = React.useState<number>(
+    typeof window != 'undefined' ? window.innerWidth : 1000
+  );
+
   const [listofdepartments, setlistofdepartments] = React.useState<string[]>(
     []
   );
@@ -34,6 +38,10 @@ export function CityActivities() {
   );
 
   React.useEffect(() => {
+    addEventListener('resize', () => {
+      setinnerwidth(window.innerWidth);
+    });
+
     d3.csv('/csvsforpafr22/9cityactivities.csv').then((data: any) => {
       setCleaneddataset(processcsvcityactivities(data));
 
@@ -120,6 +128,11 @@ export function CityActivities() {
             const theplotforthischart = Plot.plot({
               width: getWidthPlot(sizes),
               height: getHeightPlot(sizes),
+              x: {
+                tickFormat: (tick: any) =>
+                  innerWidth < 640 ? `'` + tick.slice(-2) : tick,
+              },
+
               marks: [
                 Plot.line(arrayofmetric, {
                   x: 'year',
@@ -141,13 +154,15 @@ export function CityActivities() {
                       digits: 1,
                       dollarsign: false,
                     }),
-                  dy: -15,
+                  dy: (d: any, i: any) =>
+                    innerwidth < 640 ? (i % 2 === 0 ? -12 : 12) : -15,
                 }),
               ],
               y: {
                 tickFormat: (tick: any) =>
                   d3.format('~s')(tick).replace('G', 'B'),
                 label: eachMetric['UOM DESCRIPTION'],
+                grid: true,
               },
             });
 
