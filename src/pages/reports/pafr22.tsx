@@ -7,6 +7,7 @@ import { Expenditures } from '@/components/pafr22visualise/2expen';
 import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
 import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
 import { ChangeinnetposGen } from '@/components/pafr22visualise/changeinnetposgen';
+import { CityActivities } from '@/components/pafr22visualise/cityactivities';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import { Demographics } from '@/components/pafr22visualise/demo';
@@ -712,6 +713,16 @@ export default function pafr22(props: any) {
                 prices.
               </li>
             </ul>
+
+            <br />
+            <h2 className='mt-3'>City Activities</h2>
+            <br />
+            <p>
+              The charts represents performance metrics reported across
+              departments. Switch departments using the picker below.
+            </p>
+            <br />
+            <CityActivities />
           </div>
         </div>
       </Layout>

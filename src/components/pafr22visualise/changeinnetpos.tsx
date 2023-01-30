@@ -180,6 +180,7 @@ export function Changeinnetpos() {
             'Water',
             'Sewer',
           ],
+          label: '',
         },
         x: {
           label: '$ Change',

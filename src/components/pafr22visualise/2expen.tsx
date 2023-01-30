@@ -12,23 +12,36 @@ export function Expenditures() {
 
   React.useEffect(() => {
     d3.csv('/csvsforpafr22/2expend-sum.csv').then((sumexpend: any) => {
-      const expenelementstacked = Plot.plot({
-        height: 500,
-        color: {
-          legend: true,
-        },
-        y: {
-          tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
-        },
-        marks: [
-          Plot.barY(sumexpend, {
-            x: 'Year',
-            y: 'Sum of Value',
-            fill: 'Activity Type',
-          }),
-          Plot.ruleY([0]),
-        ],
-      });
+      const expenelementstacked = addTooltips(
+        Plot.plot({
+          height: 500,
+          color: {
+            legend: true,
+          },
+          y: {
+            tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
+          },
+          marks: [
+            Plot.barY(sumexpend, {
+              x: 'Year',
+              y: 'Sum of Value',
+              fill: 'Activity Type',
+              title: (elem: any) =>
+                `${elem['Activity Type']} ${processEachValueIntoTextMore({
+                  value: elem.Value,
+                  digits: 3,
+                })}`,
+            }),
+            Plot.ruleY([0]),
+          ],
+        }),
+        {
+          fill: '#ffffff',
+          opacity: 0.5,
+          'stroke-width': '4px',
+          stroke: '#41ffca',
+        }
+      );
 
       if (stacked.current) {
         console.log('current ref', expenref.current);
@@ -64,7 +77,7 @@ export function Expenditures() {
                 title: (elem: any) =>
                   `${elem.Activity} ${processEachValueIntoTextMore({
                     value: elem.Value,
-                    digits: 2,
+                    digits: 3,
                   })}`,
               }),
               Plot.ruleY([0]),
