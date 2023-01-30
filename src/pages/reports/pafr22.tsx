@@ -695,8 +695,7 @@ export default function pafr22(props: any) {
                 contribution.
               </li>
               <li>
-                Economy-sensitive revenues rebounded in FY22 as the economy
-                reopened from the pandemic shutdown:{' '}
+            
                 <span className='font-bold'>
                   Capital outlays increased by $24.8 million (85.1%),
                 </span>{' '}
