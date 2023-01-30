@@ -84,6 +84,7 @@ export function CityActivities() {
             screen: 750,
             width: 650,
             height: 300,
+            fullscreen: true,
           },
           {
             screen: 800,
