@@ -148,7 +148,7 @@ export function CityActivities() {
 
                 Plot.text(
                   arrayofmetric.filter((eachItem) => {
-                    if (innerwidth < 640) {
+                    if (innerwidth > 640) {
                       return true;
                     } else {
                       return Number(eachItem.year) % 2 === 0;
@@ -168,7 +168,7 @@ export function CityActivities() {
                 ),
                 Plot.text(
                   arrayofmetric.filter((eachItem) => {
-                    if (innerwidth < 640) {
+                    if (innerwidth > 640) {
                       return false;
                     } else {
                       return Number(eachItem.year) % 2 === 1;
