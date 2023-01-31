@@ -65,5 +65,9 @@ export function GeneralExpenditures() {
     );
   }, []);
 
-  return <></>;
+  return (
+    <>
+      <div ref={expenref}></div>
+    </>
+  );
 }
