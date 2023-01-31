@@ -188,9 +188,17 @@ export function CityActivities() {
                 ),
               ],
               y: {
-                tickFormat: (tick: any) =>
-                  d3.format('~s')(tick).replace('G', 'B'),
-                label: eachMetric['UOM DESCRIPTION'],
+                tickFormat: (tick: any) => {
+                  if (Math.abs(Number(tick)) < 1) {
+                    return tick;
+                  } else {
+                    return d3.format('~s')(tick).replace('G', 'B');
+                  }
+                },
+
+                label: `${eachMetric['UOM'] ? `${eachMetric['UOM']} ` : ''} ${
+                  eachMetric['UOM DESCRIPTION']
+                }`,
                 grid: true,
               },
             });
