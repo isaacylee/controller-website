@@ -6,7 +6,7 @@ Y,Capital Asset,Protection of Persons and Property,Fire,,Fire apparatus,#,,413,4
 Y,Capital Asset,Protection of Persons and Property,Police,,Patrol units,#,,1402,1415,1358,1382,1380,1347,1345,1374,1374,1374,1374,1374,1374,1374,1374,1374,1276,1276,,,
 Y,Capital Asset,Protection of Persons and Property,Police,,Police stations,#,,29,29,29,29,29,29,29,28,29,29,29,29,28,26,25,21,21,21,,,
 Y,Capital Asset,Protection of Persons and Property,Police,,Police training centers,#,,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,,
-Y,Capital Asset,Public Works,Bureau of Engineering,,Bridges,#,,516,512,512,512,515,515,515,517,517,514,508,508,508,509,507,507,533,533,533,,
+Y,Capital Asset,Public Works,Bureau of Engineering,,Number of Bridges,#,,516,512,512,512,515,515,515,517,517,514,508,508,508,509,507,507,533,533,533,,
 Y,Capital Asset,Public Works,Bureau of Street Lighting,"System Operation, Maintenance and Repair",Street lights,#,,211437,205025,223000,223000,220000,219000,220000,210662,209397,207384,206757,204750,204000,207000,206000,231402,221113,218248,242000,This indicator is no longer in use,
 Y,Capital Asset,Public Works,Street Services,,Streets,#,of centerline miles,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6489,6493,,,
 Y,Capital Asset,Health and Sanitation,Sanitation,,Refuse collection trucks,#,,735,738,726,707,727,709,697,698,701,750,750,732,742,744,744,725,705,751,,,
