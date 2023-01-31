@@ -3,13 +3,13 @@ import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
 
+import { data } from '@/data.json';
+
 import Layout from '@/components/layout/Layout';
 import LineItem from '@/components/LineItem';
 import Navbar from '@/components/Navbar';
 import OpenDataSeries from '@/components/opendataseries';
 import Seo from '@/components/Seo';
-
-import { data } from './../data.json';
 
 /**
  * SVGR Support

@@ -2,11 +2,11 @@ import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
 
+import { data } from '@/data.json';
+
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
-
-import { data } from './../data.json';
 
 /**
  * SVGR Support
@@ -37,7 +37,7 @@ export default function Animalservices(props: any) {
         />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h1></h1>
+          <h1>Animal Services</h1>
           <br />
         </div>
       </Layout>
