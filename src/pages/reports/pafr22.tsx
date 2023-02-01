@@ -723,6 +723,9 @@ export default function pafr22(props: any) {
               departments. Switch departments using the picker below.
             </p>
             <br />
+          </div>
+
+          <div className='container mx-0 pb-3  dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <CityActivities />
           </div>
         </div>

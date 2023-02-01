@@ -208,7 +208,8 @@ export function CityActivities() {
             ptag.innerHTML = eachMetric['OPERATING INDICATOR / ASSET'];
 
             //set class
-            ptag.className = 'text-lg font-semibold dark:text-white';
+            ptag.className =
+              'text-lg font-semibold dark:text-white px-4 sm:px-0';
             divforplots.append(ptag);
             divforplots.append(theplotforthischart);
 
