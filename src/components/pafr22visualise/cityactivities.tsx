@@ -72,14 +72,26 @@ export function CityActivities() {
         const sizes = [
           {
             screen: 350,
-            width: 300,
+            width: 340,
             height: 250,
+            fullscreen: true,
+          },
+          {
+            screen: 380,
+            width: 375,
+            height: 270,
+            fullscreen: true,
+          },
+          {
+            screen: 400,
+            width: 390,
+            height: 270,
             fullscreen: true,
           },
           {
             screen: 500,
             width: 400,
-            height: 200,
+            height: 270,
             fullscreen: true,
           },
           {
