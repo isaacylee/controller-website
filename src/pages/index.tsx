@@ -322,12 +322,7 @@ export default function HomePage(props: any) {
             <ImportantLinksSection />
           </div>
 
-          <div className='container mx-auto mt-2 px-4 py-2 text-gray-800 dark:text-gray-300'>
-            The City of Los Angeles is within the traditional territory of the
-            Tongva people, who continue to shine a light here in this city, past
-            and present. We are grateful to the Tongva tribe and honour their
-            land itself.
-          </div>
+          
         </div>
       </Layout>
     </>
