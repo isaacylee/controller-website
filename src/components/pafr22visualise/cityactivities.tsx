@@ -123,6 +123,18 @@ export function CityActivities() {
           },
         ];
 
+        let colourfilltouse = '#22d3ee';
+
+        const selectbody = document.querySelector('body');
+
+        if (selectbody) {
+          if (selectbody.classList.contains('dark')) {
+            colourfilltouse = '#22d3ee';
+          } else {
+            colourfilltouse = '#164e63';
+          }
+        }
+
         const listofplots = Object.values(selecteddepartmentsdata)
           .filter((eachmetric: any) => eachmetric.constant === false)
           .map((eachMetric: any) => {
@@ -189,6 +201,9 @@ export function CityActivities() {
                   {
                     x: 'year',
                     y: 'value',
+                    fill: (d: any) => {
+                      return colourfilltouse;
+                    },
                     text: (d: any) =>
                       processEachValueIntoTextMore({
                         value: d.value,

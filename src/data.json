@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://github.com/Mejia-For-Controller/cdn/blob/main/thumbnailforparksmap2-min_50-min.png?raw=true",
+      "name": "Parks and Dog Parks | Map and Land Analysis",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://parks.lacontroller.io/"
+    },
+    {
       "image": "https://data.mejiaforcontroller.com/affordablehousingpic.png",
       "name": "Affordable Housing Covenants - 2010 to 2021",
       "year": "2022",
