@@ -1,7 +1,28 @@
 [
   {
+    "agenda": "/collections/agenda-2021-01-25.pdf",
+    "date": "Wednesday, January 25, 2023",
+    "minutes": "/collections/minutes-2023-01-25.pdf"
+  },
+  {
+    "agenda": "/collections/agenda-2021-10-26.pdf",
+    "date": "Wednesday, October 26, 2022",
+    "minutes": "/collections/minutes-2022-10-26.pdf"
+  },
+  {
+    "agenda": "/collections/agenda-2021-07-27.pdf",
+    "date": "Wednesday, July 27, 2022",
+    "minutes": "/collections/minutes-2022-07-27.pdf"
+  },
+  {
+    "agenda": "/collections/agenda-2022-04-27.pdf",
+    "date": "Wednesday, April 27, 2022",
+    "minutes": "/collections/minutes-2022-04-27.pdf"
+  },
+  {
     "agenda": "https://lacontroller.org/wp-content/uploads/2022/01/CBOR-Agenda-January-26-2022.pdf",
-    "date": "Wednesday, January 26, 2022"
+    "date": "Wednesday, January 26, 2022",
+    "minutes": "/collections/minutes-2022-01-26.pdf"
   },
   {
     "agenda": "https://lacontroller.org/wp-content/uploads/2021/10/BOR-Agenda-October-27-2021.pdf",
