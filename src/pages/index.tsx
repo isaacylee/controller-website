@@ -35,6 +35,7 @@ interface bigcardprops {
   year: string;
   dept?: any;
   name: string;
+  alt: string;
 }
 
 const kirbybutton =
@@ -67,7 +68,7 @@ function BigCard(props: bigcardprops) {
     ${props.key === 5 ? ' hidden lg:block ' : ''}`}
     >
       <a href={`${props.link}`}>
-        <img src={props.image} className='w-full'></img>
+        <img src={props.image} className='w-full' alt={props.alt}></img>
         <div className=' px-2 py-2  dark:text-gray-100'>
           <p>
             {props.year} | <span>{props.dept}</span>
@@ -144,6 +145,7 @@ export default function HomePage(props: any) {
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
               />
             ))}
             <div className='hidden lg:block'>
@@ -155,6 +157,7 @@ export default function HomePage(props: any) {
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
                 />
               ))}
             </div>
@@ -194,6 +197,7 @@ export default function HomePage(props: any) {
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
               />
             ))}
             <div className='hidden lg:block'>
@@ -205,6 +209,7 @@ export default function HomePage(props: any) {
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
                 />
               ))}
             </div>
@@ -280,6 +285,7 @@ export default function HomePage(props: any) {
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
               />
             ))}
             <div className='hidden lg:block'>
@@ -291,6 +297,7 @@ export default function HomePage(props: any) {
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
                 />
               ))}
             </div>

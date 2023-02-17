@@ -3,15 +3,6 @@ import * as React from 'react';
 
 const links = [
   {
-    name: '🤔 Send Us Your Questions',
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSd3rORdW5vums-qtmLVc5BOZpxmPZAkstJViuFfWtbr2JoR7Q/viewform',
-  },
-  {
-    name: '🤝 Sign Up as an Org',
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSeokErCNI_hztn8Xrv8TtAfzx0DOwQH1x-RKXRK592cgFiVVQ/viewform',
-  },
-
-  {
     name: '📰 Sign up for Newsletters/Texts',
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSfr1ndu5UaX3IPaxWi30tEpw3J7ZMB5d8HdKC9Uhg9IniIH5w/viewform',
   },
