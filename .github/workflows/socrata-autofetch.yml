@@ -9,7 +9,7 @@ on:
       - main
 
   schedule:
-    - cron: '* * * * 0,15,30,45'
+    - cron: '0,15,30,45 * * * *'
 
 jobs:
   build-and-deploy:
