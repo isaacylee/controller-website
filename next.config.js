@@ -39,6 +39,11 @@ const nextConfig = {
           'https://lacontroller.maps.arcgis.com/apps/Cascade/index.html?appid=b6d7907c118d4ea2a1dd96bc0425633d',
       },
       {
+        source: '/controlpanel-la/',
+        permanent: true,
+        destination: '/data',
+      },
+      {
         source: '/pafr22',
         destination: '/reports/pafr22',
         permanent: true,

@@ -10,29 +10,42 @@ export function Animalintake() {
   React.useEffect(() => {
     d3.csv('/csvanimalservices/animalintake2022.csv').then(
       (animaldata: any) => {
-        const cleanedanimaldata = animaldata.map((eachItem:any) => {return {
-          ...eachItem,
-          Month: new Date(eachItem.Month)
-        }})
+        const cleanedanimaldata = animaldata.map((eachItem: any) => {
+          return {
+            ...eachItem,
+            Month: new Date(eachItem.Month),
+          };
+        });
 
         const expenelement = addTooltips(
           Plot.plot({
             height: 1500,
             facet: {
-              data: cleanedanimaldata, y: "Animal"
+              data: cleanedanimaldata,
+              y: 'Animal',
             },
-           x: {
-              tickFormat: (x:any) => new Date(x).toLocaleString("en-US", {
-            year: "2-digit",
-            month: "numeric",
-              })
+            x: {
+              tickFormat: (x: any) =>
+                new Date(x).toLocaleString('en-US', {
+                  year: '2-digit',
+                  month: 'numeric',
+                }),
             },
             marks: [
-              Plot.barY(cleanedanimaldata, {x: "Month", y: "Intake Amt", fill: "Animal"}),
+              Plot.barY(cleanedanimaldata, {
+                x: 'Month',
+                y: 'Intake Amt',
+                fill: 'Animal',
+              }),
               Plot.ruleY([0]),
-              Plot.text(cleanedanimaldata,{x: "Month", y: "Intake Amt",text: "Intake Amt",dy: -6})
+              Plot.text(cleanedanimaldata, {
+                x: 'Month',
+                y: 'Intake Amt',
+                text: 'Intake Amt',
+                dy: -6,
+              }),
             ],
-            color: {legend: true}
+            color: { legend: true },
           }),
           {
             fill: '#ffffff',
