@@ -44,6 +44,11 @@ const nextConfig = {
         destination: '/data',
       },
       {
+        source: '/report-fraud-waste-and-abuse',
+        destination: '/fwa',
+        permanent: true,
+      },
+      {
         source: '/pafr22',
         destination: '/reports/pafr22',
         permanent: true,
