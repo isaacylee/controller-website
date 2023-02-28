@@ -1,0 +1,33 @@
+name: Socrata Refresh Stats
+
+#username StrawberryToastLosAngeles
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+  schedule:
+    - cron: '* * * * 0,15,30,45'
+
+jobs:
+  build-and-deploy:
+    name: Setup, Build, and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch from Socrata
+        run: node scripttofetchtimeofupdate.js
+
+      - name: Delete extra files
+        run: rm -rf tempfile-*
+
+      - name: Commit files
+        run: |-
+          git config --local user.name actions-user
+          git config --local user.email "actions@github.com"
+          if ! git diff --exit-code; then
+              git add your/files/here
+              git commit -am "GH Action Files added $(date)"
+              git push -f origin main
+          fi
