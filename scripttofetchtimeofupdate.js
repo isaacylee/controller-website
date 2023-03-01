@@ -132,7 +132,7 @@ function fetchall() {
                       );
 
                       fs.writeFileSync(
-                        __dirname + '/opendatasizes.json',
+                        __dirname + '/src/opendatasizes.json',
                         JSON.stringify(listofsitestowrite)
                       );
                     }

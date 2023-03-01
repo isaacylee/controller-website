@@ -29,6 +29,7 @@
     "@reduxjs/toolkit": "^1.9.1",
     "@types/d3": "^7.4.0",
     "@types/google-translate-api": "^2.3.2",
+    "byte-size": "^8.1.0",
     "calendar": "^0.1.1",
     "clsx": "^1.2.1",
     "d3": "^7.8.2",
