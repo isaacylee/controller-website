@@ -66,7 +66,7 @@ function fetchall() {
           console.log('rowCount', rowCount);
 
           const thingtoset = {
-            rowCount: rowCount,
+            rowCount: Number(rowCount),
             lastUpdatedAt: jsonsocrata.view.lastUpdatedAt,
             createdAt: jsonsocrata.view.createdAt,
             id: site.id,
