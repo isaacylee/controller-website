@@ -36,7 +36,7 @@ jobs:
           git config --local user.name actions-user
           git config --local user.email "actions@github.com"
           if ! git diff --exit-code; then
-              git add your/files/here
-              git commit -am "GH Action Files added $(date)"
+              git add .
+              git commit -am "Updating Socrata Autofetch $(date)"
               git push -f origin main
           fi
