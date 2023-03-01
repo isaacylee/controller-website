@@ -16,7 +16,12 @@ const ranges = [
 function formatNumber(n: number) {
   for (let i = 0; i < ranges.length; i++) {
     if (n >= ranges[i].divider) {
-      return (n / ranges[i].divider).toString() + ranges[i].suffix;
+      const numbersOfDigitsToShow = n / ranges[i].divider > 99 ? 0 : 1;
+
+      return (
+        (n / ranges[i].divider).toFixed(numbersOfDigitsToShow).toString() +
+        ranges[i].suffix
+      );
     }
   }
   return n.toString();
@@ -51,11 +56,26 @@ function EachDataButton(props: any) {
                 Last Updated{' '}
                 <span className='font-semibold'>
                   <time dateTime={props.lastupdated}>
-                    {new Date(props.lastupdated).toLocaleDateString('default', {
-                      year: 'numeric',
-                      month: 'short',
-                      day: 'numeric',
-                    })}
+                    <>
+                      {new Date(props.lastupdated).toLocaleDateString(
+                        'default',
+                        {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric',
+                        }
+                      )}{' '}
+                      <span className='font-normal'>
+                        {new Date(props.lastupdated).toLocaleTimeString(
+                          'default',
+                          {
+                            hour: 'numeric',
+                            minute: 'numeric',
+                            hour12: false,
+                          }
+                        )}
+                      </span>
+                    </>
                   </time>
                 </span>
               </p>
@@ -71,7 +91,10 @@ function EachDataButton(props: any) {
                   </span>
                 </p>
                 <p className=''>
-                  Rows <span className='font-semibold'>{props.rowcount}</span>
+                  Rows{' '}
+                  <span className='font-semibold'>
+                    {formatNumber(props.rowcount)}
+                  </span>
                 </p>
               </div>
             </div>
