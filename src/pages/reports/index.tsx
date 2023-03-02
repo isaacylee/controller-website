@@ -43,7 +43,9 @@ export default function ReportsIndex(props: any) {
               <LineItem
                 key={eachreportnum}
                 dept={eachreport.dept}
-                link={`/reports/${eachreport.link}`}
+                link={`${eachreport.pre === false ? '' : '/reports/'}${
+                  eachreport.link
+                }`}
                 name={eachreport.name}
                 year={eachreport.year}
               />
@@ -57,7 +59,11 @@ export default function ReportsIndex(props: any) {
                   key={eachreportnum}
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200  dark:bg-zinc-800 dark:text-white'
                 >
-                  <a href={`/reports/${eachreport.link}`}>
+                  <a
+                    href={`${eachreport.pre === false ? ':' : '/reports/'}${
+                      eachreport.link
+                    }`}
+                  >
                     <img src={eachreport.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
                       <p className='dark:text-white'>

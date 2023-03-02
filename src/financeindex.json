@@ -1,6 +1,15 @@
 {
   "finance": [
     {
+      "image": "https://controller.lacity.gov/images/revforecastcover.jpg",
+      "name": "Revenue Forecast Report for Fiscal Years 2023-2024",
+      "year": "2023",
+      "dept": "Financial Report",
+      "link": "/revenueforecast2024.pdf",
+      "pre": false,
+      "alt": "Cover photo Revenue Forecast Report, Background Subway Train Stairs with corgi"
+    },
+    {
       "image": "https://controller.lacity.gov/images/acfr22cover_Page_001.png",
       "name": "Annual Comprehensive Financial Report FY22",
       "year": "2023",
