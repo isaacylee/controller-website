@@ -66,10 +66,10 @@ function fetchall() {
           console.log('rowCount', rowCount);
 
           const thingtoset = {
-            rowCount: Number(rowCount),
-            lastUpdatedAt: jsonsocrata.view.lastUpdatedAt,
             createdAt: jsonsocrata.view.createdAt,
             id: site.id,
+            lastUpdatedAt: jsonsocrata.view.lastUpdatedAt,
+            rowCount: Number(rowCount),
           };
 
           listofsitestowrite[site.id] = thingtoset;
@@ -111,6 +111,12 @@ function fetchall() {
 
                   listofsitestowrite[site.id] = thingtoset;
 
+                  listofsitestowrite[site.id] = Object.fromEntries(
+                    Object.entries(listofsitestowrite[site.id]).sort((a, b) => {
+                      return a[0] > b[0] ? 1 : -1;
+                    })
+                  );
+
                   console.log(
                     'Object.values(listofsitestowrite).length',
                     Object.values(listofsitestowrite).length
@@ -131,9 +137,15 @@ function fetchall() {
                         'done downloading all csvs! writing file now'
                       );
 
+                      const cleanedlistofsites = Object.fromEntries(
+                        Object.entries(listofsitestowrite).sort((a, b) => {
+                          return a[0] > b[0] ? 1 : -1;
+                        })
+                      );
+
                       fs.writeFileSync(
                         __dirname + '/src/opendatasizes.json',
-                        JSON.stringify(listofsitestowrite)
+                        JSON.stringify(cleanedlistofsites)
                       );
                     }
                   }
