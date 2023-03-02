@@ -60,7 +60,7 @@ export default function ReportsIndex(props: any) {
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200  dark:bg-zinc-800 dark:text-white'
                 >
                   <a
-                    href={`${eachreport.pre === false ? ':' : '/reports/'}${
+                    href={`${eachreport.pre === false ? '' : '/reports/'}${
                       eachreport.link
                     }`}
                   >

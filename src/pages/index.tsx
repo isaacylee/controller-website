@@ -192,7 +192,7 @@ export default function HomePage(props: any) {
             {finance.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
-                link={`${eachaudit.pre === false ? ':' : '/reports/'}${
+                link={`${eachaudit.pre === false ? '' : '/reports/'}${
                   eachaudit.link
                 }`}
                 image={eachaudit.image}
@@ -206,7 +206,7 @@ export default function HomePage(props: any) {
               {finance.slice(4, 5).map((eachaudit: any, key: number) => (
                 <BigCard
                   key={key}
-                  link={`${eachaudit.pre === false ? ':' : '/reports/'}${
+                  link={`${eachaudit.pre === false ? '' : '/reports/'}${
                     eachaudit.link
                   }`}
                   image={eachaudit.image}
@@ -223,7 +223,7 @@ export default function HomePage(props: any) {
               {finance.slice(0, 6).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachaudit.pre === false ? ':' : '/reports/'}${
+                  link={`${eachaudit.pre === false ? '' : '/reports/'}${
                     eachaudit.link
                   }`}
                   image={eachaudit.image}
