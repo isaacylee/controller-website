@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://4118.lacontroller.io/preview-3.png",
+      "name": "41.18 Zones - Interactive Map",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://4118.lacontroller.io/"
+    },
+    {
       "image": "https://github.com/Mejia-For-Controller/cdn/blob/main/thumbnailforparksmap2-min_50-min.png?raw=true",
       "name": "Parks and Dog Parks | Map and Land Analysis",
       "year": "2023",
