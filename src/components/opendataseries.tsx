@@ -2,6 +2,7 @@ import byteSize from 'byte-size';
 import Link from 'next/link';
 import * as React from 'react';
 
+import checkbookinfo from '@/checkbookfilesize.json';
 import datainfo from '@/opendatasizes.json';
 
 const ranges = [
@@ -121,7 +122,7 @@ export default function OpenDataSeries() {
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
       tags: ['socrata'],
       lastupdated: datainfo.checkbook.lastUpdatedAt,
-      size: 4_580_000_000,
+      size: checkbookinfo.checkbooklastupdated[0].filesize,
       rowcount: datainfo.checkbook.rowCount,
       since: '2012',
     },
