@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://unhouseddeaths.lacontroller.io/deaths-map.png",
+      "name": "Unhoused Deaths in Los Angeles",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://unhouseddeaths.lacontroller.io/"
+    },
+    {
       "image": "https://4118.lacontroller.io/preview-3.png",
       "name": "41.18 Zones - Interactive Map",
       "year": "2023",
