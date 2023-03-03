@@ -90,7 +90,7 @@ export default function Footer() {
           </a>
           {/* tiktok */}
           <a
-            href=' https://www.tiktok.com/@lacontroller'
+            href='https://www.tiktok.com/@lacontrollermejia'
             target='_blank'
             rel='noreferrer'
             aria-label='TikTok'

@@ -42,3 +42,4 @@ src/styles/**
 src/styles/globals.css
 src/styles
 src/opendatasizes.json
+src/checkbookfilesize.json
