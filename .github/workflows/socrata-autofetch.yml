@@ -40,6 +40,5 @@ jobs:
           if ! git diff --exit-code; then
               git add .
               git commit -am "Updating Socrata Autofetch $(date)"
-              git remote set-url origin
               git push -f https://$GITTOKEN:$GITTOKEN@github.com/LosAngelesController/controller-website.git main
           fi
