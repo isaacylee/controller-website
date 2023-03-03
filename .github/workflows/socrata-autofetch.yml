@@ -32,11 +32,14 @@ jobs:
         run: rm -rf tempfile-*
 
       - name: Commit files
+        env: # Or as an environment variable
+          GITTOKEN: ${{ secrets.SOCRATAAUTOGIT }}
         run: |-
-          git config --local user.name actions-user
-          git config --local user.email "actions@github.com"
+          git config --local user.name StrawberryToastLosAngeles
+          git config --local user.email "126627495+StrawberryToastLosAngeles@users.noreply.github.com"
           if ! git diff --exit-code; then
               git add .
               git commit -am "Updating Socrata Autofetch $(date)"
-              git push -f origin main
+              git remote set-url origin
+              git push -f https://$GITTOKEN:$GITTOKEN@github.com/LosAngelesController/controller-website.git main
           fi
