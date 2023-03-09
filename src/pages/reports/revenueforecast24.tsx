@@ -33,7 +33,7 @@ export default function pafr22(props: any) {
               </div>
               <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
-                  Revenue Forcast
+                  Revenue Forecast
                 </span>
                 <br></br>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-base italic sm:text-lg'>
@@ -66,7 +66,7 @@ export default function pafr22(props: any) {
                 rel='noreferrer noopener'
                 className='text-green-800 underline dark:text-mejito'
               >
-                Click here to read the full FY 2024 Revenue Forcast Report
+                Click here to read the full FY 2024 Revenue Forecast Report
               </Link>
             </p>
             <br />
