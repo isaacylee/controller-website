@@ -37,10 +37,7 @@ export function CurrentRevListSources(props: any) {
         .data(headcolumns)
         .enter()
         .append('th')
-        .attr(
-          'class',
-          'px-2 text-wrap max-w-xs tabular-nums align-right text-right'
-        )
+        .attr('class', 'px-2 text-wrap max-w-xs ')
         .text((d: any) => {
           return d;
         });
@@ -62,7 +59,7 @@ export function CurrentRevListSources(props: any) {
           return columns.map(function (column) {
             if (
               (column === 'actual' ||
-                column === 'estimate' ||
+                column === 'estimated' ||
                 column === 'projected') &&
               parseInt(row[column])
             ) {
@@ -82,7 +79,9 @@ export function CurrentRevListSources(props: any) {
           'class',
           (d: any) =>
             `text-sm sm:text-base px-1 md:px-2  ${
-              !Number.isNaN(d.value) ? 'tabular-nums' : ''
+              !Number.isNaN(d.value)
+                ? 'tabular-nums align-right text-right'
+                : ''
             } `
         )
         .text(function (d: any) {
