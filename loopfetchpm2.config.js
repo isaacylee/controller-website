@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'loopfetch',
-      script: 'bun loopfetch.js',
+      script: 'bun loopfetch.ts',
     },
   ],
 };
