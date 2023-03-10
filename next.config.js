@@ -44,6 +44,11 @@ const nextConfig = {
         destination: '/data',
       },
       {
+        source: '/controlpanel-la',
+        permanent: true,
+        destination: '/data',
+      },
+      {
         source: '/report-fraud-waste-and-abuse',
         destination: '/fwa',
         permanent: true,
