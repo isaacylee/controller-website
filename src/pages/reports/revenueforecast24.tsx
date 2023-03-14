@@ -223,9 +223,10 @@ o Revenue by Fund Type
               Obligation Bonds (GOB). The remaining debt service covers the
               Municipal Improvement Corporation of Los Angeles (MICLA), the
               Wastewater system, the Solid Waste Resources Programs, and
-              Site-Specific Tax Revenue Debt. In total, debt service is projected to
-              be 4.01 percent of projected 2023-24 General Fund receipts, well
-              under the 15 percent limit set by the City’s Debt Policy.
+              Site-Specific Tax Revenue Debt. In total, debt service is
+              projected to be 4.01 percent of projected 2023-24 General Fund
+              receipts, well under the 15 percent limit set by the City’s Debt
+              Policy.
             </p>
           </div>
         </div>
