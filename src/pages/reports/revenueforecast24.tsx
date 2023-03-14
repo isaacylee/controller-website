@@ -116,6 +116,7 @@ o Revenue by Fund Type
               fiscal year by 7.9%, and revenues from licenses, permits, fees and
               fines will fall by 0.7%.
               <br />
+              <br />
               <h3>Measure ULA</h3>
               <p>
                 Effective April 1, 2023, a new transfer tax, United to House LA
@@ -132,6 +133,7 @@ o Revenue by Fund Type
                 operation of housing.
               </p>
               <br />
+          
               <p>
                 While the voters overwhelmingly passed Measure ULA in November
                 2022 election, the constitutionality of the Measure is currently
@@ -141,6 +143,7 @@ o Revenue by Fund Type
                 have on the overall real estate market in the City of Los
                 Angeles, and the existing General Fund documentary transfer tax
                 revenue.
+                <br />
                 <br />
               </p>
               <h3>FY 2024 Projection</h3>
@@ -154,6 +157,7 @@ o Revenue by Fund Type
                 and how harshly the Fed reacts. Our projection for the upcoming
                 year assumes that the economy will slow down in fiscal year
                 2024, but no recession.
+                <br />
                 <br />
               </p>
             </div>
@@ -212,6 +216,7 @@ o Revenue by Fund Type
               link arms to make the City’s budget more transparent and help
               frame the needed community dialogue to ensure it more effectively
               reflects the vital priorities of a changing city.
+              <br />
               <br />
             </p>
             <h2>Debt</h2>
