@@ -33,13 +33,10 @@ export default function pafr22(props: any) {
               </div>
               <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
-                  Revenue Forecast
+                  Revenue Forecast 2023-2024 Web Summary
                 </span>
                 <br></br>
-                <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-base italic sm:text-lg'>
-                  A summary of the City of Los Angeles Annual Comprehensive
-                  Financial Report for Fiscal Year ended June 30, 2022.
-                </span>
+                
               </h1>
             </div>
           </div>
