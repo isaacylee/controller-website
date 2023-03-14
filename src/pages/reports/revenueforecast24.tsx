@@ -68,7 +68,7 @@ export default function pafr22(props: any) {
             <br />
             <div className='lg:max-w-5xl'>
               <p>
-                <br />
+                
                 Explore actual receipts for fiscal year 2022, projected revenues
                 and their sources for fiscal years 2023 and 2024, and compare
                 last year’s revenues to the estimates for this and next fiscal
