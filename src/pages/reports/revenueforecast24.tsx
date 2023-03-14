@@ -92,6 +92,7 @@ o Revenue by Fund Type
             <br />
             <div className='lg:max-w-5xl'>
               <h2>Revenue</h2>
+              <br />
               <h3>FY 2023 Estimate</h3>
               The City’s adopted budget for this fiscal year 2023, totals $11.76
               billion. General Fund Revenues represent 63% of that ($7.45
@@ -117,6 +118,7 @@ o Revenue by Fund Type
               occupancy tax receipts from short-term rentals will fall this
               fiscal year by 7.9%, and revenues from licenses, permits, fees and
               fines will fall by 0.7%.
+              <br />
               <h3>Measure ULA</h3>
               <p>
                 Effective April 1, 2023, a new transfer tax, United to House LA
@@ -142,6 +144,7 @@ o Revenue by Fund Type
                 have on the overall real estate market in the City of Los
                 Angeles, and the existing General Fund documentary transfer tax
                 revenue.
+                <br />
               </p>
               <h3>FY 2024 Prediction</h3>
               <p>
@@ -154,6 +157,7 @@ o Revenue by Fund Type
                 and how harshly the Fed reacts. Our projection for the upcoming
                 year assumes that the economy will slow down in fiscal year
                 2024, but no recession.
+                <br />
               </p>
             </div>
             <HistoricalRevAll></HistoricalRevAll>
@@ -211,6 +215,7 @@ o Revenue by Fund Type
               link arms to make the City’s budget more transparent and help
               frame the needed community dialogue to ensure it more effectively
               reflects the vital priorities of a changing city.
+              <br />
             </p>
             <h2>Debt</h2>
             <p>
