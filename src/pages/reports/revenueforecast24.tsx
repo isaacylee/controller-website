@@ -68,7 +68,6 @@ export default function pafr22(props: any) {
             <br />
             <div className='lg:max-w-5xl'>
               <p>
-                
                 Explore actual receipts for fiscal year 2022, projected revenues
                 and their sources for fiscal years 2023 and 2024, and compare
                 last year’s revenues to the estimates for this and next fiscal
@@ -132,7 +131,6 @@ o Revenue by Fund Type
                 operation of housing.
               </p>
               <br />
-          
               <p>
                 While the voters overwhelmingly passed Measure ULA in November
                 2022 election, the constitutionality of the Measure is currently
