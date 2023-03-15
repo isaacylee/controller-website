@@ -313,7 +313,7 @@ export default function About(props: any) {
                 </p>
                 <ProfileCard
                   name='Kyler Chin'
-                  title='Director of Technology & Innovation'
+                  title='Director of Technology Innovation'
                   i18noptions={{
                     'zh-CN': '陈启生 (Kyler Chin)',
                     zh: '陈启生 (Kyler Chin)',
