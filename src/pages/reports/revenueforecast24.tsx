@@ -34,13 +34,9 @@ export default function pafr22(props: any) {
               </div>
               <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
-                  Revenue Forecast
+                  Revenue Forecast 2023-2024 Web Summary
                 </span>
                 <br></br>
-                <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-base italic sm:text-lg'>
-                  A summary of the City of Los Angeles Annual Comprehensive
-                  Financial Report for Fiscal Year ended June 30, 2022.
-                </span>
               </h1>
             </div>
           </div>
@@ -73,7 +69,6 @@ export default function pafr22(props: any) {
             <br />
             <div className='lg:max-w-5xl'>
               <p>
-                <br />
                 Explore actual receipts for fiscal year 2022, projected revenues
                 and their sources for fiscal years 2023 and 2024, and compare
                 last year’s revenues to the estimates for this and next fiscal
@@ -93,6 +88,7 @@ o Revenue by Fund Type
             <br />
             <div className='lg:max-w-5xl'>
               <h2>Revenue</h2>
+              <br />
               <h3>FY 2023 Estimate</h3>
               The City's adopted budget for this fiscal year 2023, totals $11.76
               billion. General Fund Revenues represent 63% of that ($7.45
@@ -118,6 +114,8 @@ o Revenue by Fund Type
               occupancy tax receipts from short-term rentals will fall this
               fiscal year by 7.9%, and revenues from licenses, permits, fees and
               fines will fall by 0.7%.
+              <br />
+              <br />
               <h3>Measure ULA</h3>
               <p>
                 Effective April 1, 2023, a new transfer tax, United to House LA
@@ -143,8 +141,10 @@ o Revenue by Fund Type
                 have on the overall real estate market in the City of Los
                 Angeles, and the existing General Fund documentary transfer tax
                 revenue.
+                <br />
+                <br />
               </p>
-              <h3>FY 2024 Prediction</h3>
+              <h3>FY 2024 Projection</h3>
               <p>
                 The future remains uncertain, and it is difficult to predict the
                 direction of the economy. Economists differ on the likelihood of
@@ -155,6 +155,8 @@ o Revenue by Fund Type
                 and how harshly the Fed reacts. Our projection for the upcoming
                 year assumes that the economy will slow down in fiscal year
                 2024, but no recession.
+                <br />
+                <br />
               </p>
             </div>
             <HistoricalRevAll></HistoricalRevAll>
@@ -212,6 +214,8 @@ o Revenue by Fund Type
               link arms to make the City's budget more transparent and help
               frame the needed community dialogue to ensure it more effectively
               reflects the vital priorities of a changing city.
+              <br />
+              <br />
             </p>
             <h2>Debt</h2>
             <p>
@@ -223,9 +227,10 @@ o Revenue by Fund Type
               Obligation Bonds (GOB). The remaining debt service covers the
               Municipal Improvement Corporation of Los Angeles (MICLA), the
               Wastewater system, the Solid Waste Resources Programs, and
-              Site-Specific Tax Revenue Debt. In d, debt service is projected to
-              be 4.01 percent of projected 2023-24 General Fund receipts, well
-              under the 15 percent limit set by the City's Debt Policy.
+              Site-Specific Tax Revenue Debt. In total, debt service is
+              projected to be 4.01 percent of projected 2023-24 General Fund
+              receipts, well under the 15 percent limit set by the City’s Debt
+              Policy.
             </p>
             <Debt />
           </div>
