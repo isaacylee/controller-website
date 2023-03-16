@@ -25,6 +25,20 @@ const listofsites = [
 
 function fetchall() {
   listofsites.forEach(async (site) => {
+    //read into map of id to filesize if file exists, if not, set zeros to all
+    const mapofidtofilesize = new Map();
+    if (fs.existsSync(__dirname + '/src/opendatasizes.json')) {
+      const file = fs.readFileSync(__dirname + '/src/opendatasizes.json');
+      const json = JSON.parse(file);
+      Object.keys(json).forEach((key) => {
+        mapofidtofilesize.set(key, json[key].csvsize);
+      });
+    } else {
+      listofsites.forEach((site) => {
+        mapofidtofilesize.set(site.id, 0);
+      });
+    }
+
     await fetch(site.url)
       .then((response) => response.text())
       .then(async (data) => {
@@ -106,7 +120,22 @@ function fetchall() {
                     console.log('delete the file');
                   });
 
-                  thingtoset.csvsize = fileSizeInBytes;
+                  if (fileSizeInBytes === mapofidtofilesize.get(site.id)) {
+                    thingtoset.csvsize = fileSizeInBytes;
+                  } else {
+                    //if the difference is more than 1024 bytes, write the new size
+                    if (
+                      Math.abs(
+                        fileSizeInBytes - mapofidtofilesize.get(site.id)
+                      ) > 1024
+                    ) {
+                      thingtoset.csvsize = fileSizeInBytes;
+                    } else {
+                      //otherwise, keep the old size
+                      thingtoset.csvsize = mapofidtofilesize.get(site.id);
+                    }
+                  }
+
                   console.log(thingtoset);
 
                   listofsitestowrite[site.id] = thingtoset;
