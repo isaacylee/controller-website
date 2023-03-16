@@ -54,7 +54,7 @@ export function Debt(props: any) {
 
       const stackabledata: Array<any> = [];
 
-      datacleaned.forEach((element) => {
+      datacleaned.forEach((element: any) => {
         stackabledata.push({
           'Fiscal Year': element['Fiscal Year'],
           Type: 'Debt Service Requirement-Non-Voter Approved',
