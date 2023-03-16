@@ -4,6 +4,7 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import { CurrentRevListSources } from '@/components/revenue24/CurrentRevListSources';
+import { Debt } from '@/components/revenue24/Debt';
 import { HistoricalRevAll } from '@/components/revenue24/HistoricalRevAll';
 import Seo from '@/components/Seo';
 export default function pafr22(props: any) {
@@ -13,7 +14,7 @@ export default function pafr22(props: any) {
       <Seo
         title='Revenue Forecast for Fiscal Year 2024'
         description='Forecast & Visualizations of Revenue for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/pafrthumbnail3.png'
+        image='https://controller.lacity.gov/images/thumbnail-reve-forecast.png'
       />
       <Layout>
         <div className='flex flex-col pb-2 dark:text-white'>
@@ -93,12 +94,12 @@ o Revenue by Fund Type
             <div className='lg:max-w-5xl'>
               <h2>Revenue</h2>
               <h3>FY 2023 Estimate</h3>
-              The City’s adopted budget for this fiscal year 2023, totals $11.76
+              The City's adopted budget for this fiscal year 2023, totals $11.76
               billion. General Fund Revenues represent 63% of that ($7.45
               billion), while the rest, close to $4.31 billion, comes from
               numerous special purpose funds and available balances. The economy
               has remained resilient despite earlier fears of an imminent
-              recession. However, the California’s economic outlook for the
+              recession. However, the California's economic outlook for the
               remainder of the fiscal year remains uncertain, and mainly depends
               on national economic policy. Our Estimates were based on current
               trends with no recession scenario. We estimate the General Fund
@@ -170,12 +171,12 @@ o Revenue by Fund Type
             <br />
             <p>
               Expenses are on track to increase considerably next fiscal year.
-              The scope of Mayor Bass’ homeless emergency efforts to fund
+              The scope of Mayor Bass' homeless emergency efforts to fund
               temporary housing and spur construction of additional permanent
               housing is unknown, but will undoubtedly require major funding.
               The City continues to operate with chronically high levels of
               staff vacancies. While this mitigates expenses, it is
-              unsustainable across nearly every one of the City’s mission
+              unsustainable across nearly every one of the City's mission
               critical services Failure to invest in the skills and
               effectiveness of the workforce will further degrade efficiency and
               effectiveness of city services to the community.
@@ -184,10 +185,10 @@ o Revenue by Fund Type
             <p>
               Existing deferred commitments to staff compensation as well as
               upcoming contract negotiations taking place in an inflationary job
-              market put increased pressure on the City’s ability to live within
+              market put increased pressure on the City's ability to live within
               its means. Moreover, the poor performance of pension investments
               in the current economic climate will trigger ongoing increases in
-              pension obligations, which already consume fully 15% of the City’s
+              pension obligations, which already consume fully 15% of the City's
               General Fund budget.
             </p>
             <br />
@@ -207,25 +208,26 @@ o Revenue by Fund Type
               investing in 21st Century infrastructure cannot be solved in a
               single budget year. They will require long-term strategic
               collaboration between the Mayor, Council, labor and the people of
-              Los Angeles. The Controller’s Office pledges our commitment to
-              link arms to make the City’s budget more transparent and help
+              Los Angeles. The Controller's Office pledges our commitment to
+              link arms to make the City's budget more transparent and help
               frame the needed community dialogue to ensure it more effectively
               reflects the vital priorities of a changing city.
             </p>
             <h2>Debt</h2>
             <p>
-              The estimated debt service requirement for 2023-24 on the City’s
+              The estimated debt service requirement for 2023-24 on the City's
               long-term debt is $553.5 million, which is $3.3 million more than
               2022-23 due to new General Obligation Bonds, Series 2022-A. A
               total of $138.0 million of this sum is for principal and interest
-              payments on the City’s $1.0 billion in outstanding General
+              payments on the City's $1.0 billion in outstanding General
               Obligation Bonds (GOB). The remaining debt service covers the
               Municipal Improvement Corporation of Los Angeles (MICLA), the
               Wastewater system, the Solid Waste Resources Programs, and
               Site-Specific Tax Revenue Debt. In d, debt service is projected to
               be 4.01 percent of projected 2023-24 General Fund receipts, well
-              under the 15 percent limit set by the City’s Debt Policy.
+              under the 15 percent limit set by the City's Debt Policy.
             </p>
+            <Debt />
           </div>
         </div>
       </Layout>
