@@ -7,7 +7,7 @@ describe('404', () => {
   it('renders a heading', () => {
     render(<NotFoundPage />);
 
-    const heading = screen.getByText(/The corgi couldn't fetch the page!/i);
+    const heading = screen.getByText(/The corgi couldn't find the page!/i);
 
     expect(heading).toBeInTheDocument();
   });
