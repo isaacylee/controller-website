@@ -1,6 +1,14 @@
 {
   "audits": [
     {
+      "image": "https://controller.lacity.gov/images/animalcover.png",
+      "dept": "Animal Services",
+      "name": "LA Animal Services Shelter Operations & Care",
+      "year": "2023",
+      "link": "https://controller-website-5mli35gg5a-uw.a.run.app/laas_transparency_report.pdf",
+      "pre": false
+    },
+    {
       "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/12/LAWA-IEA-Thumbnail-scaled.jpg",
       "name": "Industrial, Economic and Administrative Survey of the Los Angeles World Airports",
       "year": "2022",
