@@ -27,8 +27,9 @@ export default function NotFoundPage(props: any) {
             ></img>
 
             <h1 className='mt-8 text-lg sm:text-4xl md:text-6xl'>
-              Uh oh! The corgi couldn't fetch the page!
+              Uh oh! The corgi couldn't find the page!
             </h1>
+            <h2 className=''>404 Error</h2>
             <ArrowLink className='mt-4 dark:text-white md:text-lg' href='/'>
               Back to Home
             </ArrowLink>
