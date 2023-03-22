@@ -2,6 +2,8 @@ import * as Plot from '@observablehq/plot';
 import * as d3 from 'd3';
 import * as React from 'react';
 
+import { processEachValueIntoTextMore } from '@/components/utils';
+
 export function HistoricalRevAll(props: any) {
   const generalbox = React.useRef<any>(null);
   const specialbox = React.useRef<any>(null);
@@ -61,6 +63,45 @@ export function HistoricalRevAll(props: any) {
                     item['Fiscal Year'] <= 2022
                 ),
                 { x: 'Fiscal Year', y: 'Sum of Amount', stroke: 'Type' }
+              ),
+              //add text
+              Plot.text(
+                removeIndividalFundsLol1.filter(
+                  (item: any) =>
+                    item.Type === 'Receipts' &&
+                    item.Category === input &&
+                    item['Fiscal Year'] <= 2022
+                ),
+                {
+                  x: 'Fiscal Year',
+                  y: 'Sum of Amount',
+                  dx: 5,
+                  dy: 30,
+                  fill: 'Type',
+                  text: (elem: any) =>
+                    `${processEachValueIntoTextMore({
+                      value: elem['Sum of Amount'],
+                      digits: 2,
+                    })}`,
+                }
+              ),
+              Plot.text(
+                removeIndividalFundsLol1.filter(
+                  (item: any) =>
+                    item.Type === 'Budget' && item.Category === input
+                ),
+                {
+                  x: 'Fiscal Year',
+                  y: 'Sum of Amount',
+                  dx: 5,
+                  dy: -20,
+                  fill: 'Type',
+                  text: (elem: any) =>
+                    `${processEachValueIntoTextMore({
+                      value: elem['Sum of Amount'],
+                      digits: 2,
+                    })}`,
+                }
               ),
             ],
             color: { scheme: 'set1', type: 'categorical', legend: true },
