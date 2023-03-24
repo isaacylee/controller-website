@@ -43,7 +43,9 @@ export default function Audits(props: any) {
               <LineItem
                 key={eachauditnum}
                 dept={eachaudit.dept}
-                link={`/audits/${eachaudit.link}`}
+                link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                  eachaudit.link
+                }`}
                 name={eachaudit.name}
                 year={eachaudit.year}
               />

@@ -140,7 +140,9 @@ export default function HomePage(props: any) {
             {audits.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
-                link={`/audits/${eachaudit.link}`}
+                link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                  eachaudit.link
+                }`}
                 image={eachaudit.image}
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
@@ -152,7 +154,9 @@ export default function HomePage(props: any) {
               {audits.slice(4, 5).map((eachaudit: any, key: number) => (
                 <BigCard
                   key={key}
-                  link={`/audits/${eachaudit.link}`}
+                  link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                    eachaudit.link
+                  }`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
@@ -181,7 +185,7 @@ export default function HomePage(props: any) {
           <div>
             <div className='flex flex-row'>
               <Link href='/audits'>
-                <div className={`${kirbybutton}`}>All Audits</div>
+                <div className={`${kirbybutton}`}>All Audits & Reports</div>
               </Link>
             </div>
           </div>
