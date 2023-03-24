@@ -167,7 +167,9 @@ export default function HomePage(props: any) {
               {audits.slice(0, 6).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`/audits/${eachaudit.link}`}
+                  link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                    eachaudit.link
+                  }`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
