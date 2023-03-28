@@ -145,7 +145,12 @@ function ProfileCard(props: profilecardprops) {
     <div className='flex flex-row rounded-lg border border-gray-300 bg-gray-100 dark:border-gray-600 dark:bg-zinc-800'>
       <div className=''>
         {props.picture && (
-          <Image src={props.picture} alt={'Profile picture of ' + props.name} />
+          <Image
+            src={props.picture}
+            alt={'Profile picture of ' + props.name}
+            width='150'
+            height='200'
+          />
         )}
       </div>
       <div className='px-3 py-2 '>
@@ -267,12 +272,26 @@ export default function About(props: any) {
             <div className='flex flex-col gap-y-8'>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl dark:text-gray-100'>Leadership</p>
-                <ProfileCard name='Kenneth Mejia' title='LA City Controller' />
-                <ProfileCard name='Jane Nguyen' title='Chief of Staff' />
-                <ProfileCard name='Rick Cole' title='Chief Deputy Controller' />
+                <ProfileCard
+                  name='Kenneth Mejia'
+                  title='LA City Controller'
+                  picture='/images/staff/KennethMejia.jpg'
+                />
+
+                <ProfileCard
+                  name='Jane Nguyen'
+                  title='Chief of Staff'
+                  picture='/images/staff/JaneNguyen-ChiefofStaff.jpg'
+                />
+                <ProfileCard
+                  name='Rick Cole'
+                  title='Chief Deputy Controller'
+                  picture='/images/staff/RickCole-ChiefDeputyController.jpg'
+                />
                 <ProfileCard
                   name='Sergio Perez'
                   title='Chief of Accountability & Oversight'
+                  picture='/images/staff/Sergio_Perez_ChiefAccountability.jpeg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -282,6 +301,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Rahoof (Wally) Oyewole'
                   title='Chief Financial Officer/Director of Financial Analysis and Reporting'
+                  picture='/images/staff/WallyOyewole-CFO.jpg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -289,6 +309,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='James Robinson'
                   title='Chief Operations Officer/Principal Deputy Controller'
+                  picture='/images/staff/JamesRobinson-PrincipalDeputyController.jpeg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -296,6 +317,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Devang Panchal'
                   title='Director of Auditing'
+                  picture='/images/staff/DevangPanchal-DirectorAuditing.jpg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -303,6 +325,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Jovonne Lavender'
                   title='Chief Management Analyst'
+                  picture='/images/staff/JovonneLavender-ChiefMgmtAnalyst.jpg'
                 />
               </div>
             </div>
@@ -334,6 +357,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Diana Chang'
                   title='Director of Communications'
+                  picture='/images/staff/DianaChang-DirComms.jpg'
                   i18noptions={{
                     'zh-CN': '张良美 (Diana Chang)',
                     'zh-TW': '張良美 (Diana Chang)',
@@ -353,6 +377,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Michael Shear'
                   title='Director of Research & Government Affairs'
+                  picture='/images/staff/MikeShear-DirectorOfResearch.jpg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -360,11 +385,13 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Ashley Bennett'
                   title='Director of Homelessness'
+                  picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
                 />
 
                 <ProfileCard
                   name='Dinah M. Manning'
                   title='Director of Public Safety'
+                  picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -372,13 +399,19 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Maria Rosas'
                   title='Deputy Controller of Finance'
+                  picture='/images/staff/MariaRosas-DeputyControllerFinance.JPG'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Executive Aides</p>
-                <ProfileCard name='Jacky Rodarte' title='' />
+                <ProfileCard
+                  name='Jacky Rodarte'
+                  title=''
+                  picture='/images/staff/JackyRodarte-ExecAide.jpg'
+                />
                 <ProfileCard
                   name='Vincent de Vera'
+                  picture='/images/staff/VincentdeVera-ExecAide.jpg'
                   i18noptions={{
                     ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                     'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
