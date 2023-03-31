@@ -1,6 +1,14 @@
 {
   "audits": [
     {
+      "pre": false,
+      "image": "/singaudits2022.jpg",
+      "name": "FY 2022 Single Audit Reports",
+      "year": "2023",
+      "dept": "Single Audits",
+      "link": "/22-single-audit-reports.pdf"
+    },
+    {
       "image": "https://controller.lacity.gov/images/animalcover.png",
       "dept": "Animal Services",
       "name": "LA Animal Services Shelter Operations & Care",
