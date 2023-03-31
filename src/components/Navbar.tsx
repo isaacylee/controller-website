@@ -21,8 +21,8 @@ interface newiteminterface {
 const navigation: any = [
   { name: 'About', href: '/about' },
   { name: 'Data', href: '/data' },
-  { name: 'Audits', href: '/audits' },
-  { name: 'Reports', href: '/reports' },
+  { name: 'Audits/Reports', href: '/audits' },
+  { name: 'Financials', href: '/reports' },
   { name: 'Budgets', href: '/budgets' },
   // { name: 'Events', href: '/events', current: false },
   // { name: 'Press', href: '/press', current: false },
