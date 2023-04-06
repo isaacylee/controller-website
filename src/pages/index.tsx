@@ -304,7 +304,7 @@ export default function HomePage(props: any) {
               {data.slice(4, 5).map((eachaudit: any, key: number) => (
                 <BigCard
                   key={key}
-                  link={`/audits/${eachaudit.link}`}
+                  link={`${eachaudit.link}`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}

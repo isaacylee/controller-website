@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/laas_banner.png?alt=media&token=d9ef3cd0-ad10-4599-9641-4a0c935168e0",
+      "name": "LAAS Spay Neuter & Shelter",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://spayneuter.lacontroller.io/"
+    },
+    {
       "image": "https://unhouseddeaths.lacontroller.io/deaths-map.png",
       "name": "Unhoused Deaths in Los Angeles",
       "year": "2023",
@@ -22,7 +29,7 @@
       "link": "https://parks.lacontroller.io/"
     },
     {
-      "image": "https://data.mejiaforcontroller.com/affordablehousingpic.png",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/affortablehousing.png?alt=media&token=d234dcc1-05b1-428a-ae67-5aea647768ce",
       "name": "Affordable Housing Covenants - 2010 to 2021",
       "year": "2022",
       "dept": "Map",
