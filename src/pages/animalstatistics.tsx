@@ -5,6 +5,7 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
+import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 
 import { orderofcharts } from '@/animalcharts.json';
 import animalstatisticsschema from '@/animalstatisticsschema.json';
@@ -87,20 +88,39 @@ export default function AnimalStatistics() {
           console.log('datareference.data', datareference.data);
 
           //make d3 chart here
-          const chartdom = Plot.plot({
-            color: {
-              legend: true,
-              scheme: 'tableau10',
-            },
-            marks: [
-              Plot.barY(datareference.data, {
-                y: 'amount',
-                x: 'month',
-                fill: eachchart.colourby,
-              }),
-              Plot.ruleY([0]),
-            ],
-          });
+          const chartdom = addTooltips(
+            Plot.plot({
+              color: {
+                legend: true,
+                scheme: 'tableau10',
+              },
+              x: {
+                //set to band
+                type: 'band',
+              },
+              marks: [
+                Plot.barY(datareference.data, {
+                  y: 'amount',
+                  x: 'month',
+                  fill: eachchart.colourby,
+                  title: (elem: any) => {
+                    if (elem.animal && elem.shelter) {
+                      return `${elem.animal} - ${elem.shelter} - ${elem.amount}`;
+                    } else {
+                      return elem.amount;
+                    }
+                  },
+                }),
+                Plot.ruleY([0]),
+              ],
+            }),
+            {
+              fill: '#ffffff',
+              opacity: 0.5,
+              stroke: '#41ffca',
+              'stroke-width': 1,
+            }
+          );
 
           insertdiv?.appendChild(chartdom);
         } else {
