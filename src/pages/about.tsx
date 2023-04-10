@@ -335,24 +335,8 @@ export default function About(props: any) {
                   Innovation and Communications
                 </p>
                 <ProfileCard
-                  name='Kyler Chin'
-                  title='Director of Technology Innovation'
-                  i18noptions={{
-                    'zh-CN': '陈启生 (Kyler Chin)',
-                    zh: '陈启生 (Kyler Chin)',
-                    'zh-TW': '陳啟生 (Kyler Chin)',
-                    'zh-HK': '陳啟生 (Kyler Chin)',
-                    'zh-MO': '陳啟生 (Kyler Chin)',
-                    'zh-SG': '陈启生 (Kyler Chin)',
-                    'zh-MY': '陈启生 (Kyler Chin)',
-                    'zh-Hans': '陈启生 (Kyler Chin)',
-                    'zh-Hant': '陳啟生 (Kyler Chin)',
-                    ko: '친 카이라 (Kyler Chin)',
-                    'ko-KO': '친 카이라 (Kyler Chin)',
-                    'ko-KR': '친 카이라 (Kyler Chin)',
-                    'ja-JP': 'カイラ・チン (Kyler Chin)',
-                    ja: 'カイラ・チン (Kyler Chin)',
-                  }}
+                  name='Vartan Arzumanyan'
+                  title='Technology Deputy'
                 />
                 <ProfileCard
                   name='Diana Chang'
@@ -393,6 +377,16 @@ export default function About(props: any) {
                   title='Director of Public Safety'
                   picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
                 />
+
+                <ProfileCard
+                  name='Vincent de Vera'
+                  picture='/images/staff/VincentdeVera-ExecAide.jpg'
+                  i18noptions={{
+                    ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                    'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                  }}
+                  title='Director of Special Projects'
+                />
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Financial Transparency</p>
@@ -408,15 +402,6 @@ export default function About(props: any) {
                   name='Jacky Rodarte'
                   title=''
                   picture='/images/staff/JackyRodarte-ExecAide.jpg'
-                />
-                <ProfileCard
-                  name='Vincent de Vera'
-                  picture='/images/staff/VincentdeVera-ExecAide.jpg'
-                  i18noptions={{
-                    ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
-                    'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
-                  }}
-                  title=''
                 />
               </div>
             </div>
