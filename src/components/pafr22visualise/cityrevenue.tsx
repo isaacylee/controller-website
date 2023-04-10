@@ -4,9 +4,11 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
+//import { Plot } from '../tooltipsPlot/tooltips';
 import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 import { processEachValueIntoTextMore } from '@/components/utils';
-//import { Plot } from '../tooltipsPlot/tooltips';
+
+import { insertDarkModed3 } from '../darkmodethesvg';
 
 function responsivefy(svg: any) {
   // container will be the DOM element
@@ -43,31 +45,6 @@ function responsivefy(svg: any) {
     const w = parseInt(container.style('width'));
     svg.attr('width', w);
     svg.attr('height', Math.round(w / aspect));
-  }
-}
-
-function darkModeTheSvg(element: any) {
-  if (element) {
-    const svgelem = element.querySelector('svg');
-
-    if (svgelem) {
-      const svgStyle = svgelem.querySelector('style');
-
-      const getclassname = svgelem.getAttribute('class');
-
-      if (svgStyle) {
-        svgStyle.innerHTML =
-          svgStyle.innerHTML +
-          `\n\n .dark ${getclassname} {
-          background-color: #212121;
-          color: white;
-        }`;
-      }
-    } else {
-      console.log('no svg element');
-    }
-  } else {
-    console.log('no element');
   }
 }
 
@@ -180,11 +157,7 @@ export default function CityRevenue(props: any) {
           rev2.current.append(facetedRev);
           //darkModeTheSvg(rev2.current);
 
-          const darkstyle = document.createElement('style');
-          darkstyle.innerHTML =
-            '.dark svg[class^="plot-"] {background-color: transparent; color: white;}';
-
-          rev2.current.append(darkstyle);
+          rev2.current.append(insertDarkModed3());
         }
       }
     );

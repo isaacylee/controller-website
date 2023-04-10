@@ -1,0 +1,79 @@
+{
+  "orderofcharts": [
+    {
+      "title": "Animal Population",
+      "data": "animalpopulation",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Dogs Walked",
+      "data": "dogswalked",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Outcome for Animals",
+      "data": "outcomeforanimals",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Adoptions",
+      "data": "adoptions",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Animals Sent to Foster",
+      "data": "animalssenttofoster",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Intake By Type",
+      "data": "intakebytype",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Intake By Animal",
+      "data": "intakebyanimal",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Euthanasia",
+      "data": "euthanasia",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Non-Live Outcome",
+      "data": "nonliveoutcome",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Save Rate",
+      "data": "saverate",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Volunteer Shifts Worked",
+      "data": "numberofvolshiftsworked",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Number of Unique Volunteers",
+      "data": "numberofuniqvol",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Volunteer Hours Worked",
+      "data": "numberofvolhours",
+      "colourby": "shelter"
+    },
+    {
+      "title": "Spay Neuter Certificates Issued",
+      "data": "spayneutercerts",
+      "colourby": "type"
+    },
+    {
+      "title": "Spay Neuter Surgeries",
+      "data": "spayneutersurgeries",
+      "colourby": "shelter"
+    }
+  ]
+}
