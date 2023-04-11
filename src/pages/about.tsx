@@ -334,12 +334,7 @@ export default function About(props: any) {
                 <p className='text-xl dark:text-gray-100'>
                   Innovation and Communications
                 </p>
-                <ProfileCard
-                  name='Vartan Arzumanyan'
-                  title='Technology Deputy'
-                  picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
-                />
-                <ProfileCard
+                       <ProfileCard
                   name='Diana Chang'
                   title='Director of Communications'
                   picture='/images/staff/DianaChang-DirComms.jpg'
@@ -355,6 +350,12 @@ export default function About(props: any) {
                     zh: '張良美 (Diana Chang)',
                   }}
                 />
+                <ProfileCard
+                  name='Vartan Arzumanyan'
+                  title='Technology Deputy'
+                  picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
+                />
+          
               </div>
 
               <div className='flex flex-col gap-y-2'>
