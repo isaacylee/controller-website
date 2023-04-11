@@ -337,6 +337,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Vartan Arzumanyan'
                   title='Technology Deputy'
+                  picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
                 />
                 <ProfileCard
                   name='Diana Chang'
@@ -397,7 +398,7 @@ export default function About(props: any) {
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
-                <p className='text-xl'>Executive Aide</p>
+                <p className='text-xl'>Executive Aides</p>
                 <ProfileCard
                   name='Jacky Rodarte'
                   title=''
