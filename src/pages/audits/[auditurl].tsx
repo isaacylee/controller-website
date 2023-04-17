@@ -17,6 +17,8 @@ interface eachaudit {
   dept: string;
   link: string;
   pdflink: string;
+  englink: string;
+  spanishlink: string;
   textofpage: string;
   htmlofpage: string;
 }
@@ -84,10 +86,20 @@ export default function Audit(props: auditinterface) {
             <div className='flex flex-row gap-x-2'>
               <Link href={props.audit.pdflink}>
                 <button className='rounded-full bg-black px-3 py-1 font-semibold text-white'>
-                  View PDF
+                  View Full Audit
                 </button>
               </Link>
-              <Link download={true} href={props.audit.pdflink}>
+              <Link href={props.audit.englink}>
+                <button className='rounded-full bg-black px-3 py-1 font-semibold text-white'>
+                  View English Summary
+                </button>
+              </Link>
+              <Link href={props.audit.spanishlink}>
+                <button className='rounded-full bg-black px-3 py-1 font-semibold text-white'>
+                  View Spanish Summary
+                </button>
+              </Link>
+              {/* <Link download={true} href={props.audit.pdflink}>
                 <button className='rounded-full bg-black p-1.5 text-white md:p-2'>
                   <svg className='l-4 h-4' viewBox='0 0 24 24'>
                     <path
@@ -96,7 +108,7 @@ export default function Audit(props: auditinterface) {
                     />
                   </svg>
                 </button>
-              </Link>
+              </Link> */}
             </div>
 
             <div className='legacycontentgal max-w-3xl'>

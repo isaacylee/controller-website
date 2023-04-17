@@ -2,6 +2,14 @@
   "audits": [
     {
       "pre": false,
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/tree-audit-cover4.jpg?alt=media&token=19951e63-0298-4e51-8a46-3816db590837",
+      "name": "L.A. Tree Trimming & Maintenance Audit - Follow-up",
+      "year": "2023",
+      "dept": "Public Works - Bureau of Street Services",
+      "link": "/audits/tree-audit-followup/"
+    },
+    {
+      "pre": false,
       "image": "/singaudits2022.jpg",
       "name": "FY 2022 Single Audit Reports",
       "year": "2023",
