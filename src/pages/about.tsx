@@ -356,30 +356,33 @@ export default function About(props: any) {
                   />
                 </div>
 
-                <p className='text-xl dark:text-gray-100'>
-                  Innovation and Communications
-                </p>
-                <ProfileCard
-                  name='Diana Chang'
-                  title='Director of Communications'
-                  picture='/images/staff/DianaChang-DirComms.jpg'
-                  i18noptions={{
-                    'zh-CN': '张良美 (Diana Chang)',
-                    'zh-TW': '張良美 (Diana Chang)',
-                    'zh-HK': '張良美 (Diana Chang)',
-                    'zh-MO': '張良美 (Diana Chang)',
-                    'zh-SG': '张良美 (Diana Chang)',
-                    'zh-MY': '张良美 (Diana Chang)',
-                    'zh-Hans': '张良美 (Diana Chang)',
-                    'zh-Hant': '張良美 (Diana Chang)',
-                    zh: '張良美 (Diana Chang)',
-                  }}
-                />
-                <ProfileCard
-                  name='Vartan Arzumanyan'
-                  title='Technology Deputy'
-                  picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
-                />
+                <div className='flex flex-col gap-y-2'>
+                  <p className='text-xl dark:text-gray-100'>Communications</p>
+                  <ProfileCard
+                    name='Diana Chang'
+                    title='Director of Communications'
+                    picture='/images/staff/DianaChang-DirComms.jpg'
+                    i18noptions={{
+                      'zh-CN': '张良美 (Diana Chang)',
+                      'zh-TW': '張良美 (Diana Chang)',
+                      'zh-HK': '張良美 (Diana Chang)',
+                      'zh-MO': '張良美 (Diana Chang)',
+                      'zh-SG': '张良美 (Diana Chang)',
+                      'zh-MY': '张良美 (Diana Chang)',
+                      'zh-Hans': '张良美 (Diana Chang)',
+                      'zh-Hant': '張良美 (Diana Chang)',
+                      zh: '張良美 (Diana Chang)',
+                    }}
+                  />
+                </div>
+                <div className='flex flex-col gap-y-2'>
+                  <p className='text-xl'>Technology</p>
+                  <ProfileCard
+                    name='Vartan Arzumanyan'
+                    title='Technology Deputy'
+                    picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
+                  />
+                </div>
               </div>
 
               <div className='flex flex-col gap-y-2'>
