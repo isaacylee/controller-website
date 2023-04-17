@@ -353,7 +353,7 @@ export default function About(props: any) {
                   title='Director of Special Projects'
                 />
               </div>
-            <div className='flex flex-col gap-y-8'>
+    
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl dark:text-gray-100'>
                   Communications
