@@ -355,7 +355,7 @@ export default function About(props: any) {
                     title='Director of Special Projects'
                   />
                 </div>
-
+                <br></br>
                 <div className='flex flex-col gap-y-2'>
                   <p className='text-xl dark:text-gray-100'>Communications</p>
                   <ProfileCard
@@ -375,6 +375,7 @@ export default function About(props: any) {
                     }}
                   />
                 </div>
+                <br></br>
                 <div className='flex flex-col gap-y-2'>
                   <p className='text-xl'>Technology</p>
                   <ProfileCard
