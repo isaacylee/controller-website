@@ -329,33 +329,35 @@ export default function About(props: any) {
                 />
               </div>
             </div>
-            <div className='flex flex-col gap-y-2'>
-                <p className='text-xl'>Accountability and Oversight</p>
-                <ProfileCard
-                  name='Ashley Bennett'
-                  title='Director of Homelessness'
-                  picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
-                />
-
-                <ProfileCard
-                  name='Dinah M. Manning'
-                  title='Director of Public Safety'
-                  picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
-                />
-
-                <ProfileCard
-                  name='Vincent de Vera'
-                  picture='/images/staff/VincentdeVera-ExecAide.jpg'
-                  i18noptions={{
-                    ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
-                    'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
-                  }}
-                  title='Director of Special Projects'
-                />
-              </div>
+            <div className='flex flex-col gap-y-8'>
               <div className='flex flex-col gap-y-2'>
+                <div className='flex flex-col gap-y-2'>
+                  <p className='text-xl'>Accountability and Oversight</p>
+                  <ProfileCard
+                    name='Ashley Bennett'
+                    title='Director of Homelessness'
+                    picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
+                  />
+
+                  <ProfileCard
+                    name='Dinah M. Manning'
+                    title='Director of Public Safety'
+                    picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
+                  />
+
+                  <ProfileCard
+                    name='Vincent de Vera'
+                    picture='/images/staff/VincentdeVera-ExecAide.jpg'
+                    i18noptions={{
+                      ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                      'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                    }}
+                    title='Director of Special Projects'
+                  />
+                </div>
+
                 <p className='text-xl dark:text-gray-100'>
-                  Communications
+                  Innovation and Communications
                 </p>
                 <ProfileCard
                   name='Diana Chang'
@@ -373,15 +375,13 @@ export default function About(props: any) {
                     zh: '張良美 (Diana Chang)',
                   }}
                 />
-              </div>
-              <div className='flex flex-col gap-y-2'>
-                <p className='text-xl'>Technology</p>
                 <ProfileCard
                   name='Vartan Arzumanyan'
                   title='Technology Deputy'
                   picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
                 />
               </div>
+
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Government Affairs</p>
                 <ProfileCard
@@ -390,7 +390,7 @@ export default function About(props: any) {
                   picture='/images/staff/MikeShear-DirectorOfResearch.jpg'
                 />
               </div>
-             
+
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Financial Transparency</p>
                 <ProfileCard
