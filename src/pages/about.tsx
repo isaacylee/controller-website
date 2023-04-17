@@ -353,7 +353,6 @@ export default function About(props: any) {
                   title='Director of Special Projects'
                 />
               </div>
-    
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl dark:text-gray-100'>
                   Communications
@@ -374,7 +373,6 @@ export default function About(props: any) {
                     zh: '張良美 (Diana Chang)',
                   }}
                 />
-              
               </div>
               <div className='flex flex-col gap-y-2'>
                 <p className='text-xl'>Technology</p>
