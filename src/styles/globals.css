@@ -139,7 +139,7 @@ span a{
   padding-right:13px;
 }
 a{
- color:black;
+ /* color:black; */
   text-decoration:none;
 }
 .navbar{
