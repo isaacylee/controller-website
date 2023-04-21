@@ -1,13 +1,7 @@
 {
   "data": [
 
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/budget-banner.png?alt=media&token=f17c1ffa-ec2c-4005-a0a5-2ba3053a06e1",
-      "name": "City Of LA Budget",
-      "year": "2023",
-      "dept": "Charts",
-      "link": "https://budget.lacontroller.io/"
-    },
+
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/laas_banner.png?alt=media&token=d9ef3cd0-ad10-4599-9641-4a0c935168e0",
       "name": "LAAS Spay Neuter & Shelter",
