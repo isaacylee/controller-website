@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@datadog/browser-rum": "^4.28.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@google-cloud/translate": "^7.0.4",
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",
@@ -35,6 +36,7 @@
     "d3": "^7.8.2",
     "d3-svg-legend": "^2.25.6",
     "edit-json-file": "^1.7.0",
+    "font-awesome-icons": "^1.6.0",
     "google-translate-api": "^2.3.0",
     "jquery": "^3.6.3",
     "jsdom": "^21.0.0",
