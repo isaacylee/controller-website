@@ -127,6 +127,10 @@ a[href="https://translate.google.com"] {
   
   }
 
+  .light-bg {
+    background-color: #222;
+  }
+
 /* ABOUT PAGE CSS */ 
 
 .widget {
