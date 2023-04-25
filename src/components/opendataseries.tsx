@@ -55,17 +55,17 @@ function EachDataButton(props: any) {
       <Link href={props.link}>
         <div className='w-full'>
           <a href={props.link} target='_blank' rel='noopener noreferrer'>
-            <div className='rounded-lg  px-2 py-2 dark:bg-zinc-800 dark:bg-zinc-800 dark:text-gray-100 '>
+            <div className='newBgColor   rounded-lg px-2 py-0.5 text-white dark:bg-zinc-700 dark:text-white '>
               {props.icon && (
                 <div className='relative mb-4 h-16 w-16'>
-                  <div
+                  {/* <div
                     className='relative mb-4 h-16 w-16'
                     style={{
                       backgroundColor: props.darkModeEnabled
-                        ? 'gray'
-                        : 'transparent',
+                        ? 'bg-gray-700'
+                        : 'bg-gray-100',
                     }}
-                  ></div>
+                  ></div> */}
 
                   <Image
                     src={props.icon}
@@ -169,7 +169,7 @@ export default function OpenDataSeries() {
   ];
 
   return (
-    <div className='dark-bg grid grid-cols-1 gap-y-4 gap-x-4 sm:grid-cols-2 lg:grid-cols-4'>
+    <div className='##27272a #sm:grid-cols-2 grid grid-cols-1 gap-y-4 gap-x-4 lg:grid-cols-4'>
       {datalinks.map((eachlink: any, eachlinknum: number) => (
         <EachDataButton
           key={eachlinknum}
