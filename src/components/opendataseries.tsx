@@ -91,33 +91,7 @@ function EachDataButton(props: any) {
                 )}
               </div>
               <br></br>
-              {/* <p className=''>
-                Last Updated{' '}
-                <span className='font-semibold'>
-                  <time dateTime={props.lastupdated}>
-                    <>
-                      {new Date(props.lastupdated).toLocaleDateString(
-                        'default',
-                        {
-                          year: 'numeric',
-                          month: 'short',
-                          day: 'numeric',
-                        }
-                      )}{' '}
-                      <span className='font-normal'>
-                        {new Date(props.lastupdated).toLocaleTimeString(
-                          'default',
-                          {
-                            hour: 'numeric',
-                            minute: 'numeric',
-                            hour12: false,
-                          }
-                        )}
-                      </span>
-                    </>
-                  </time>
-                </span>
-              </p> */}
+     
             </div>
           </a>
         </div>
