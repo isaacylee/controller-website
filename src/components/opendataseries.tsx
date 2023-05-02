@@ -75,7 +75,9 @@ function EachDataButton(props: any) {
                   />
                 </div>
               )}
+
               <h3 className='font-heavy text-lg'>{props.name}</h3>
+              {/* <br></br> */}
               <div className='flex w-full flex-row gap-x-1'>
                 {props.tags.includes('socrata') && (
                   <div className='rounded-full bg-gray-100 px-2 py-0.5 text-black dark:bg-zinc-700 dark:text-white'>
@@ -88,7 +90,8 @@ function EachDataButton(props: any) {
                   </div>
                 )}
               </div>
-              <p className=''>
+              <br></br>
+              {/* <p className=''>
                 Last Updated{' '}
                 <span className='font-semibold'>
                   <time dateTime={props.lastupdated}>
@@ -114,7 +117,7 @@ function EachDataButton(props: any) {
                     </>
                   </time>
                 </span>
-              </p>
+              </p> */}
             </div>
           </a>
         </div>
