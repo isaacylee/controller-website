@@ -8,8 +8,6 @@ import cityFundsIcon from '@/components/icons/funding.png';
 import payrollIcon from '@/components/icons/payroll.png';
 import revenueIcon from '@/components/icons/revenue.png';
 
-import datainfo from '@/opendatasizes.json';
-
 const ranges = [
   { divider: 1e18, suffix: 'E' },
   { divider: 1e15, suffix: 'P' },
@@ -91,7 +89,6 @@ function EachDataButton(props: any) {
                 )}
               </div>
               <br></br>
-     
             </div>
           </a>
         </div>
@@ -107,7 +104,7 @@ export default function OpenDataSeries() {
 
       link: 'https://lacity-2.payroll.socrata.com/',
       tags: ['socrata'],
-      lastupdated: datainfo.payroll.lastUpdatedAt,
+      // lastupdated: datainfo.payroll.lastUpdatedAt,
       //  since: '2013',
       // size: datainfo.payroll.csvsize,
       //   rowcount: datainfo.payroll.rowCount,
@@ -117,7 +114,7 @@ export default function OpenDataSeries() {
       name: 'Checkbook',
       link: 'https://lacity.spending.socrata.com/#!/year/2022/',
       tags: ['socrata'],
-      lastupdated: datainfo.checkbook.lastUpdatedAt,
+      // lastupdated: datainfo.checkbook.lastUpdatedAt,
       //  size: checkbookinfo.checkbooklastupdated[0].filesize,
       //  rowcount: datainfo.checkbook.rowCount,
       //  since: '2012',
@@ -127,7 +124,7 @@ export default function OpenDataSeries() {
       name: 'All City Funds',
       link: 'https://controllerdata.lacity.org/Audits-and-Reports/All-City-Funds/ej7u-di9z/data',
       tags: ['socrata'],
-      lastupdated: datainfo.cityfunds.lastUpdatedAt,
+      // lastupdated: datainfo.cityfunds.lastUpdatedAt,
       //  since: '2014',
       // size: datainfo.cityfunds.csvsize,
       // rowcount: datainfo.cityfunds.rowCount,
@@ -137,7 +134,7 @@ export default function OpenDataSeries() {
       name: 'Revenue',
       link: 'https://controllerdata.lacity.org/browse?category=Revenue',
       tags: ['socrata'],
-      lastupdated: datainfo.revenue.lastUpdatedAt,
+      // lastupdated: datainfo.revenue.lastUpdatedAt,
       //  rowcount: datainfo.revenue.rowCount,
       // size: datainfo.revenue.csvsize,
       //  since: '2012',
