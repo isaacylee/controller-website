@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/trans_animal_banner.png?alt=media&token=1a098234-8b03-402b-b290-0ea9ac701424",
+      "name": "LA Animal Services Transparency Charts",
+      "year": "2023",
+      "dept": "Charts",
+      "link": "https://laascharts.lacontroller.io/"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/banner-budget.png?alt=media&token=29c9bdbb-c597-4e6a-97b5-026b9c41ad1b",
       "name": "City Of LA Budget",
       "year": "2023",
