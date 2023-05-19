@@ -86,7 +86,7 @@ export default function Audit(props: auditinterface) {
             <div className='flex flex-row gap-x-2'>
               <Link href={props.audit.pdflink}>
                 <button className='rounded-full bg-black px-3 py-1 font-semibold text-white'>
-                  View Full Audit
+                  View Full Report
                 </button>
               </Link>
             </div>
