@@ -25,7 +25,17 @@
   print-color-adjust: exact !important;
 }
 
- 
+@media (max-width: 1040px) {
+  .mobile-image-container {
+    margin-top: 235px; /* Adjust the value as needed */
+  
+  }
+}
+@media (max-width: 749px) {
+  .mobile-image-containers {
+    margin-top: 235px; /* Adjust the value as needed */
+  }
+}
 
 .hiddenmobiletranslate .goog-te-combo {
   display: none !important;

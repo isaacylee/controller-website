@@ -97,7 +97,7 @@ export default function HomePage(props: any) {
                 <div className='w-1/2'>
                   <h2>Kenneth Mejia, CPA</h2>
                   <h2>City Controller of Los Angeles</h2>
-                  <div className='mt-52 mt-auto md:mt-0 md:mt-0'>
+                  <div className='mobile-image-containers mt-52 mt-auto md:mt-0 md:mt-0'>
                     <Image
                       src='/images/killa-website2.png'
                       alt='Portrait of Killa'
@@ -113,12 +113,12 @@ export default function HomePage(props: any) {
                 </div>
                 <div className='w-1/2'>
                   <SocialPageSeries />
-                  <div className='mt-auto mt-52 md:mt-0 md:mt-0'>
+                  <div className='mobile-image-container mt-52 mt-auto md:mt-0 md:mt-0'>
                     <Image
                       src='/images/ken-new-blob-big.png'
                       alt='Portrait of Kenneth Mejia'
-                      className='w-full md:w-96 lg:w-[500px]'
-                      sizes='(max-width: 640px) 100vw, 24rem'
+                      className='w-96 lg:w-[500px]'
+                      sizes='(max-width: 1023px) 100vw, 24rem'
                       priority={true}
                       unoptimized={true}
                       height={440}
