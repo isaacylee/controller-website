@@ -93,44 +93,32 @@ export default function HomePage(props: any) {
         <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
             <div className='z-10 mx-auto pl-2 pr-0 text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
-              <div className='flex justify-between'>
-                <div className='w-1/2'>
+              <div className='flex flex-row'>
+                <div className='my-auto'>
+                  {' '}
                   <h2>Kenneth Mejia, CPA</h2>
                   <h2>City Controller of Los Angeles</h2>
-                  <div className='mobile-image-containers mt-52 mt-auto md:mt-0 md:mt-0'>
-                    <Image
-                      src='/images/killa-website2.png'
-                      alt='Portrait of Killa'
-                      className='w-96 lg:w-[500px]'
-                      sizes='(max-width: 1023px) 24rem, 500px'
-                      priority={true}
-                      unoptimized={true}
-                      height={440}
-                      width={500}
-                      // style={{ marginTop: '180px !important' }}
-                    />
-                  </div>
                 </div>
-                <div className='w-1/2'>
-                  <SocialPageSeries />
-                  <div className='mobile-image-container mt-52 mt-auto md:mt-0 md:mt-0'>
-                    <Image
-                      src='/images/ken-new-blob-big.png'
-                      alt='Portrait of Kenneth Mejia'
-                      className='w-96 lg:w-[500px]'
-                      sizes='(max-width: 1023px) 100vw, 24rem'
-                      priority={true}
-                      unoptimized={true}
-                      height={440}
-                      width={500}
-                    />
-                  </div>
+
+                <SocialPageSeries />
+
+                <div className='ml-auto'>
+                  <Image
+                    src='/images/ken-new-blob-big.png'
+                    alt='Portrait of Kenneth Mejia'
+                    className='w-96 lg:w-[500px]'
+                    sizes='(max-width: 1023px) 24rem,
+              500px'
+                    priority={true}
+                    unoptimized={true}
+                    height={440}
+                    width={500}
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <br></br>
         <div className='container mx-auto px-4 '>
           <h2 className='frontpageh2section'>Financial Data</h2>
