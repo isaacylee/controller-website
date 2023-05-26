@@ -27,13 +27,13 @@
 
 @media (max-width: 1040px) {
   .mobile-image-container {
-    margin-top: 235px; /* Adjust the value as needed */
+    margin-top: 235px !important; /* Adjust the value as needed */
   
   }
 }
-@media (max-width: 749px) {
+@media (max-width: 1040px) {
   .mobile-image-containers {
-    margin-top: 235px; /* Adjust the value as needed */
+    margin-top: 290px !important; /* Adjust the value as needed */
   }
 }
 

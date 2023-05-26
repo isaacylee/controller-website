@@ -107,7 +107,7 @@ export default function HomePage(props: any) {
                       unoptimized={true}
                       height={440}
                       width={500}
-                      style={{ marginTop: '150px' }}
+                      // style={{ marginTop: '180px !important' }}
                     />
                   </div>
                 </div>
