@@ -93,32 +93,44 @@ export default function HomePage(props: any) {
         <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
             <div className='z-10 mx-auto pl-2 pr-0 text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
-              <div className='flex flex-row'>
-                <div className='my-auto'>
-                  {' '}
-                  <h2>Kenneth Mejia</h2>
-                  <h2>Controller of Los Angeles</h2>
+              <div className='flex justify-between'>
+                <div className='w-1/2'>
+                  <h2>Kenneth Mejia, CPA</h2>
+                  <h2>City Controller of Los Angeles</h2>
+                  <div className='mt-52 mt-auto md:mt-0 md:mt-0'>
+                    <Image
+                      src='/images/killa-website2.png'
+                      alt='Portrait of Killa'
+                      className='w-96 lg:w-[500px]'
+                      sizes='(max-width: 1023px) 24rem, 500px'
+                      priority={true}
+                      unoptimized={true}
+                      height={440}
+                      width={500}
+                      style={{ marginTop: '150px' }}
+                    />
+                  </div>
                 </div>
-
-                <SocialPageSeries />
-
-                <div className='ml-auto'>
-                  <Image
-                    src='/images/ken-new-blob-big.png'
-                    alt='Portrait of Kenneth Mejia'
-                    className='w-96 lg:w-[500px]'
-                    sizes='(max-width: 1023px) 24rem,
-              500px'
-                    priority={true}
-                    unoptimized={true}
-                    height={440}
-                    width={500}
-                  />
+                <div className='w-1/2'>
+                  <SocialPageSeries />
+                  <div className='mt-auto mt-52 md:mt-0 md:mt-0'>
+                    <Image
+                      src='/images/ken-new-blob-big.png'
+                      alt='Portrait of Kenneth Mejia'
+                      className='w-full md:w-96 lg:w-[500px]'
+                      sizes='(max-width: 640px) 100vw, 24rem'
+                      priority={true}
+                      unoptimized={true}
+                      height={440}
+                      width={500}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <br></br>
         <div className='container mx-auto px-4 '>
           <h2 className='frontpageh2section'>Financial Data</h2>
@@ -286,7 +298,7 @@ export default function HomePage(props: any) {
         {/* Data stories list below */}
         <div className='container mx-auto px-4 '>
           <h2 className=''>
-            <span className='frontpageh2section'>Data Stories & Maps</span>
+            <span className='frontpageh2section'>Data Sites</span>
           </h2>
           <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
             {data.slice(0, 4).map((eachaudit: any, key) => (
@@ -332,7 +344,7 @@ export default function HomePage(props: any) {
           <div>
             <div className='flex flex-row'>
               <Link href='/data' target='_blank' rel='noreferrer'>
-                <div className={`${kirbybutton}`}>All Data Stories</div>
+                <div className={`${kirbybutton}`}>All Data Sites</div>
               </Link>
             </div>
           </div>
