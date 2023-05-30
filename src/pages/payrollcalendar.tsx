@@ -345,7 +345,7 @@ export default function PayrollCalendar(props: any) {
             </h1>
             <Link
               download={true}
-              href='/PayrollCalendar23v3.pdf'
+              href='payrollv3.pdf'
               target='_blank'
               referrerPolicy='no-referrer'
             >
