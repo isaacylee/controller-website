@@ -8,6 +8,7 @@ import { data } from '@/data.json';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
+import { SocialPageSeries } from '@/components/SocialPageSeries';
 
 import { audits } from '@/auditsindex.json';
 import { finance } from '@/financeindex.json';
@@ -15,7 +16,6 @@ import { budget } from '@/budget.json';
 import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 import ImportantLinksSection from '@/components/ImportantLinksSection';
-import { SocialPageSeries } from '@/components/SocialPageSeries';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -92,51 +92,6 @@ export default function HomePage(props: any) {
 
         <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
-            <div className='-10 pl-2-0 mx-auto text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
-              <div className='flex justify-center'>
-                <div className='lg:w-1/ w-full pt-20 md:pt-0'>
-                  <h2>Kenneth Mejia, CPA</h2>
-                  <h2>City Controller of Los Angeles</h2>
-                  <SocialPageSeries />
-                  <div className='mt-24 ml-auto'>
-                    {' '}
-                    {/* Added mt-4 class here */}
-                    <Image
-                      src='/images/killa-website2.png'
-                      alt='Portrait of Killa'
-                      className='w-full md:w-96 lg:w-[500px]'
-                      sizes='(max-width: 1023px) 100vw, 500px'
-                      priority={true}
-                      unoptimized={true}
-                      height={900}
-                      width={500}
-                      style={{ marginTop: '7rem' }}
-                    />
-                  </div>
-                </div>
-
-                <div className='mt-28 flex w-full items-center justify-center md:mt-0 md:w-1/2'>
-                  <div className='ml-auto'>
-                    <Image
-                      src='/images/ken-new-blob-big.png'
-                      alt='Portrait of Kenneth Mejia'
-                      className='md:w-100 w-full lg:w-[500px]'
-                      sizes='(max-width: 1023px) 100vw, 500px'
-                      priority={true}
-                      unoptimized={true}
-                      height={900}
-                      width={500}
-                      style={{ marginTop: '4rem' }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
-          <div className='background-1'>
             <div className='z-10 mx-auto pl-2 pr-0 text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
               <div className='flex flex-row'>
                 <div className='my-auto'>
@@ -163,7 +118,7 @@ export default function HomePage(props: any) {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <br></br>
         <div className='container mx-auto px-4 '>
           <h2 className='frontpageh2section'>Financial Data</h2>
