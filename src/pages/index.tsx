@@ -15,6 +15,7 @@ import { budget } from '@/budget.json';
 import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 import ImportantLinksSection from '@/components/ImportantLinksSection';
+import { SocialPageSeries } from '@/components/SocialPageSeries';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -97,6 +98,7 @@ export default function HomePage(props: any) {
                     <h2>Kenneth Mejia, CPA</h2>
                     <h2>City Controller of Los Angeles</h2>
                   </div>
+                  <SocialPageSeries />
                   <div className='ml-auto mt-24 items-end'>
                     <Image
                       src='/images/killa-website2.png'
@@ -128,6 +130,7 @@ export default function HomePage(props: any) {
             </div>
           </div>
         </div>
+
         {/* <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
             <div className='-10 pl-2-0 mx-auto text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
