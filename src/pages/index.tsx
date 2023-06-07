@@ -110,6 +110,7 @@ export default function HomePage(props: any) {
                       unoptimized={true}
                       height={900}
                       width={500}
+                      style={{ marginTop: '8rem !important' }}
                     />
                   </div>
                 </div>
