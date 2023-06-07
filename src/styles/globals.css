@@ -115,16 +115,24 @@ a[href="https://translate.google.com"] {
   background-size: auto;
 }
   /* background-color: #33333300; */
-  /* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg'); */
+  /* background-image: url('/images/controller-website/public/images/62718a882f5d950feaee2eb6_darktexture.jpg');  
  
   @media (max-width: 480px) {
     .mt-5 {
-      margin-top: 7rem !important;
+      margin-top: 8rem !important;
     }
   
   }
+  @media (max-width: 480px) {
+    .mt-8{
+      margin-top: 9rem !important;
+    }
   
-
+  }
+  .mt-8{
+    margin-top: 9rem !important;
+  }
+*/
   /* google translate css */ 
   
   .goog-te-gadget-icon {

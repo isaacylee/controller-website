@@ -98,9 +98,7 @@ export default function HomePage(props: any) {
                   <h2>Kenneth Mejia, CPA</h2>
                   <h2>City Controller of Los Angeles</h2>
                   <SocialPageSeries />
-                  <div className='ml-auto mt-8 md:mt-16'>
-                    {' '}
-                    {/* Increased margin-top for desktop */}
+                  <div className='ml-auto mt-5'>
                     <Image
                       src='/images/killa-website2.png'
                       alt='Portrait of Killa'
