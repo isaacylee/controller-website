@@ -90,17 +90,17 @@ export default function HomePage(props: any) {
 
         <Seo />
 
-        <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
+        <div className='bgColorHeader px4 relative pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
             <div className='-10 pl-2-0 mx-auto text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
               <div className='flex justify-center'>
-                <div className='lg:w-1/ w-full pt-20 md:pt-0'>
+                <div className='lg:w-1/ pt20 w-full md:pt-0'>
                   <h2>Kenneth Mejia, CPA</h2>
                   <h2>City Controller of Los Angeles</h2>
                   <SocialPageSeries />
-                  <div className='ml-auto mt-8 md:mt-16'>
+                  <div className='sm:mt-18 lg:mt-21 ml-auto mt-5'>
                     {' '}
-                    {/* Increased margin-top for desktop */}
+                    {/* Added margin-top for desktop */}
                     <Image
                       src='/images/killa-website2.png'
                       alt='Portrait of Killa'
@@ -115,7 +115,9 @@ export default function HomePage(props: any) {
                 </div>
 
                 <div className='mt-20 flex w-full items-center justify-center md:mt-0 md:w-1/2'>
-                  <div className='ml-auto mt-5'>
+                  <div className='sm:mt-18 lg:mt-21 ml-auto mt-5'>
+                    {' '}
+                    {/* Increased margin-top for smaller devices */}
                     <Image
                       src='/images/ken-new-blob-big.png'
                       alt='Portrait of Kenneth Mejia'
