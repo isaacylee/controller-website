@@ -99,7 +99,7 @@ export default function HomePage(props: any) {
                     <h2>City Controller of Los Angeles</h2>
                   </div>
                   <SocialPageSeries />
-                  <div className='ml-auto mt-24 items-end'>
+                  <div className='ml-auto mt-24 items-end '>
                     <Image
                       src='/images/killa-website2.png'
                       alt='Portrait of Killa'
