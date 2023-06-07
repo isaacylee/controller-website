@@ -19,26 +19,29 @@
   margin-bottom: 0px !important;
 
 }
-@media (max-width: 2340px) {
-.mt-5 {
-  margin-top: 4rem;
-}
-}
+
+
 .printcolour {
   -webkit-print-color-adjust: exact !important;
   print-color-adjust: exact !important;
 }
-.lg\:mt-21 {
-  margin-top: 6.5rem !important;
+@media (max-width: 2340px) {
+  .mt-5 {
+    margin-top: 5.25 !important;
+  }
 }
 
-@media (max-width: 2340px) {
-  .lg\:mt-10 {
-    margin-top: 6.5rem;
+@media (max-width: 1040px) {
+  .mobile-image-container {
+    margin-top: 290px !important; /* Adjust the value as needed */
   
   }
 }
- 
+@media (max-width: 1040px) {
+  .mobile-image-containers {
+    margin-top: 290px !important; /* Adjust the value as needed */
+  }
+}
 
 .hiddenmobiletranslate .goog-te-combo {
   display: none !important;
