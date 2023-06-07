@@ -8,12 +8,14 @@ import { data } from '@/data.json';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
-import { SocialPageSeries } from '@/components/SocialPageSeries';
 
 import { audits } from '@/auditsindex.json';
+import { finance } from '@/financeindex.json';
 import { budget } from '@/budget.json';
 import Image from 'next/image';
+import OpenDataSeries from '@/components/opendataseries';
 import ImportantLinksSection from '@/components/ImportantLinksSection';
+import { SocialPageSeries } from '@/components/SocialPageSeries';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -96,9 +98,9 @@ export default function HomePage(props: any) {
                   <h2>Kenneth Mejia, CPA</h2>
                   <h2>City Controller of Los Angeles</h2>
                   <SocialPageSeries />
-                  <div className='mt-24 ml-auto'>
+                  <div className='ml-auto mt-8 md:mt-16'>
                     {' '}
-                    {/* Added mt-4 class here */}
+                    {/* Increased margin-top for desktop */}
                     <Image
                       src='/images/killa-website2.png'
                       alt='Portrait of Killa'
@@ -108,13 +110,12 @@ export default function HomePage(props: any) {
                       unoptimized={true}
                       height={900}
                       width={500}
-                      style={{ marginTop: '7rem' }}
                     />
                   </div>
                 </div>
 
-                <div className='mt-28 flex w-full items-center justify-center md:mt-0 md:w-1/2'>
-                  <div className='ml-auto'>
+                <div className='mt-20 flex w-full items-center justify-center md:mt-0 md:w-1/2'>
+                  <div className='ml-auto mt-5'>
                     <Image
                       src='/images/ken-new-blob-big.png'
                       alt='Portrait of Kenneth Mejia'
@@ -124,7 +125,6 @@ export default function HomePage(props: any) {
                       unoptimized={true}
                       height={900}
                       width={500}
-                      style={{ marginTop: '4rem' }}
                     />
                   </div>
                 </div>
@@ -161,7 +161,7 @@ export default function HomePage(props: any) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <br></br>
         <div className='container mx-auto px-4 '>
           <h2 className='frontpageh2section'>Financial Data</h2>
