@@ -52,7 +52,7 @@ export default function Data(props: any) {
             </Link>
           </div>
 
-          <h1 className='pt-8 pb-4 dark:text-white'>Data Stories & Map</h1>
+          <h1 className='pt-8 pb-4 dark:text-white'>Data Sites</h1>
 
           <div className='md:hidden'>
             {data.map((eachdata: any, eachdatanum: number) => (

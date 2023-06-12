@@ -89,6 +89,48 @@ export default function HomePage(props: any) {
         {/* <Seo templateTitle='Home' /> */}
 
         <Seo />
+        {/* 
+        <div className='bgColorHeader relative pt-4 text-base text-sm md:pt-12 md:text-white'>
+          <div className='background-1'>
+            <div className='pl-2-0 z-10 mx-auto text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
+              <div className='flex'>
+                <div className='w-full flex-col pt-2 md:pt-0'>
+                  <div>
+                    <h2>Kenneth Mejia, CPA</h2>
+                    <h2>City Controller of Los Angeles</h2>
+                  </div>
+                  <SocialPageSeries />
+                  <div className='ml-auto mt-24 items-end '>
+                    <Image
+                      src='/images/killa-website2.png'
+                      alt='Portrait of Killa'
+                      className='w-full md:w-96 lg:w-[500px]'
+                      sizes='(max-width: 1023px) 100vw, 500px'
+                      priority={true}
+                      unoptimized={true}
+                      height={900}
+                      width={500}
+                    />
+                  </div>
+                </div>
+                <div className='mt-20 flex w-full items-end md:mt-0 md:w-1/2'>
+                  <div className='ml-auto mt-5'>
+                    <Image
+                      src='/images/ken-new-blob-big.png'
+                      alt='Portrait of Kenneth Mejia'
+                      className='md:w-100 w-full lg:w-[500px]'
+                      sizes='(max-width: 1023px) 100vw, 500px'
+                      priority={true}
+                      unoptimized={true}
+                      height={900}
+                      width={500}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
 
         <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
