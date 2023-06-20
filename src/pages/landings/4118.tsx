@@ -41,7 +41,7 @@ export default function Data(props: any) {
  
 <center>
   <img src="/images/4118/main.png" width="600" height="500" 
-  alt="A bar chart called 'Case Submission Method' for year ended Dec 31, 2022. Web and Phone are the biggest bars. Web is 53% and phone is 39%. Other is 8%" />
+  alt="An image of the map. It shows Los Angeles with borders dividing each Council District. A filter allows users to filter by Race, Year, CD#, Arrest, and Time.  " />
 </center>
 </div>
 <br />
@@ -82,7 +82,7 @@ This map shows details of arrests under<br></br> <b> LA Municipal Code 41.18,
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"}}><b>Summary and Analysis</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/numberOf.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/numberOf.png" width="400" height="600" alt="A bar chart showing the number of 41.18 arrests 2012-2022. 2012-2018 are all in the thousands. 2017 is the highest bar, showing 5,738 arrests. 2019-2022 show much lower numbers than previous years - these numbers are in the hundreds. Arrests in 2020 are the lowest, at 340, and have been rising each year since. 2021 had 568 arrests, and 2022 had 853 arrests. The source of data is the Los Angeles Police Department." />
 </center>
 <br></br>
 <center> 
@@ -105,7 +105,7 @@ This map shows details of arrests under<br></br> <b> LA Municipal Code 41.18,
  
 <center>
   <img src="/images/4118/byRace.png" width="400" height="600" 
-  alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  alt="A donut chart of 41.18 Arrests by Race. The largest segment is Black, at 42.5%, or 15,654 arrests. The second largest segment is White, at 34.0%, or 12,495 arrests. 3rd largest is Hispanic/Latin, at 20.5% or 7,552 arrests. Other is 2.4% at 887 arrests. Asian is 0.5% at 198 arrests. American Indian/Alaskan Native is 0.0% at 9 arrests. Pacific Islander is 0.0% at 4 arrests.  The source of data and race categories are by the Los Angeles Police Department.  " />
 </center>
 <br />
 <center> 
@@ -124,7 +124,7 @@ This map shows details of arrests under<br></br> <b> LA Municipal Code 41.18,
 </p></strong></center>
  <br></br>
  <center>
-  <img src="/images/4118/byCD.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/byCD.png" width="400" height="600" alt="Bar Chart of 41.18 Arrests by Council District, Jan 2012 to May 2023. There are 15 council districts. Three Council Districts show substantially taller bars than the other 12 Council Districts. Of the three highest bars: Council District 14 has by far the tallest bar, representing 18,972 arrests. Council District 11 has 5,961 arrests, and CD13 has 5,206 arrests. All 12 other council districts have fewer than 1000 arrests. Source of Data is LAPD." />
 </center>
    <br></br>
    <center> 
@@ -146,7 +146,7 @@ All other Council Districts had less than 3% of arrests each .
 </p></center>
 <br></br>
  <center>
-  <img src="/images/4118/byType.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/byType.png" width="400" height="600" alt="Donut Chart of 41.18 Arrests by Type, Jan 2012-May 2023. It shows 84% Misdemeanors and 16% Infractions. Source of Data is LAPD." />
 </center>
  <br></br>
  <center> 
@@ -162,7 +162,7 @@ up to 6 months of imprisonment & a fine of up to $1,000.
 </p> </center>
 <br></br>
 <center>
-  <img src="/images/4118/bySex.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/bySex.png" width="400" height="600" alt="Donut Chart of 41.18 Arrests by Sex, Jan 2012-May 2023. It shows 73% Male and 27% Female.  Source of Data is LAPD." />
 </center>
 <br></br>
 <center> 
@@ -181,67 +181,67 @@ The general population of the City of LA is 49% male and 51% female.
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2012</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2012.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2012.png" width="400" height="600" alt="A graphic showing the map filtered to show 2012 only. Total Arrests: 4,096. Arrests are most concentrated in Downtown LA, Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2013</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2013.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2013.png" width="400" height="600" alt="A graphic showing the map filtered to show 2013 only. Total Arrests: 5,411. Arrests are most concentrated in Downtown LA, Hollywood, Venice, and a small part of South LA. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica" }}><b>2014</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2014.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2014.png" width="400" height="600" alt="A graphic showing the map filtered to show 2014 only. Total Arrests: 4,583. Arrests are most concentrated in Downtown LA, Hollywood, Venice, and a few small parts of South LA. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2015</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2015.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2015.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2015 only. Total Arrests: 4,742. Arrests are most concentrated in Downtown LA, and Hollywood, Venice, and a few small parts of South LA. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2016</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2016.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2016.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2016 only. Total Arrests: 5,438 Arrests are most concentrated in Downtown LA, and Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2017</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2017.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2017.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2017 only. Total Arrests: 5,738 Arrests are most concentrated in Downtown LA, and Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2018</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2018.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2018.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2018 only. Total Arrests: 3,456. Arrests are most concentrated in Downtown LA, and Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2019</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2019.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2019.png" width="400" height="600" alt="  A graphic showing the map filtered to show 2019 only. Total Arrests: 887 Arrests are most concentrated in Skid Row and Venice. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2020</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2020.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2020.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2020 only. Total Arrests: 340. Arrests are not as highly concentrated for 2020 as other years. There is some more intensity in Venice than other areas of this year’s map. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2021</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2021.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2021.png" width="400" height="600" alt="  A graphic showing the map filtered to show 2021 only. Total Arrests: 568. Arrests are most concentrated in West Los Angeles. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2022</b></h1></center>
 <br></br>
 <center>
-  <img src="/images/4118/2022.png" width="400" height="600" alt="A bar chart called 'Reporter Anonymity' for year ended Dec 31, 2022. Anonymous is 62%. Not Anonymous is 38%" />
+  <img src="/images/4118/2022.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2022 only. Total Arrests: 853. Arrests are most concentrated in Chatsworth, Westlake-MacArthur Park, and West Los Angeles. Data Source is LAPD" />
 </center>
 <center><hr style={{height: "2px", width: "50%"}}></hr></center>
     </>
