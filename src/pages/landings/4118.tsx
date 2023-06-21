@@ -40,7 +40,7 @@ export default function Data(props: any) {
 
  
           <center>
-  <a href="https://4118-map.vercel.app/" target="_blank" rel="noopener noreferrer">
+  <a href="https://4118arrests.lacontroller.io" target="_blank" rel="noopener noreferrer">
     <img src="/images/4118/main.png" width="600" height="500" alt="An image of the map. It shows Los Angeles with borders dividing each Council District. A filter allows users to filter by Race, Year, CD#, Arrest, and Time." />
   </a>
 </center>
@@ -49,7 +49,7 @@ export default function Data(props: any) {
 <br />
 
 <center><a
-  href="https://4118-map.vercel.app/"
+  href="https://4118arrests.lacontroller.io"
   target="_blank"
   style={{
     backgroundColor: "#41ffca",
