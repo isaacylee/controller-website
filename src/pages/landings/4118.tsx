@@ -39,10 +39,12 @@ export default function Data(props: any) {
    
 
  
-<center>
-  <img src="/images/4118/main.png" width="600" height="500" 
-  alt="An image of the map. It shows Los Angeles with borders dividing each Council District. A filter allows users to filter by Race, Year, CD#, Arrest, and Time.  " />
+          <center>
+  <a href="https://4118-map.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="/images/4118/main.png" width="600" height="500" alt="An image of the map. It shows Los Angeles with borders dividing each Council District. A filter allows users to filter by Race, Year, CD#, Arrest, and Time." />
+  </a>
 </center>
+
 </div>
 <br />
 
@@ -73,108 +75,145 @@ export default function Data(props: any) {
 
 <br></br>
 
-<center> <p className=' dark:text-white' style={{ fontFamily: "Helvetica" }}>
-This map shows details of arrests under<br></br> <b> LA Municipal Code 41.18,
- which criminalizes sitting,<br></br> lying, & sleeping, or placing personal
-  property in the public right-of-way in certain instances.</b>
-</p></center>
+<div>
+  <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    This map shows details of arrests under <b>LA Municipal Code 41.18, which criminalizes sitting, lying, & sleeping, or placing personal property in the public right-of-way in certain instances.</b>
+  </p>
+</div>
 <br></br>
-<center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"}}><b>Summary and Analysis</b></h1></center>
+<div>
+  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Summary and Analysis</b></h3>
+</div>
+<br></br>
+<br></br>
+<div>
+ <center>  <img src="/images/4118/numberOf.png" width="400" height="600" 
+ alt="A bar chart showing the number of 41.18 arrests 2012-2022. 2012-2018 are all in the thousands. 2017 is the highest bar, showing 5,738 arrests. 2019-2022 show much lower numbers than previous years - these numbers are in the hundreds. Arrests in 2020 are the lowest, at 340, and have been rising each year since. 2021 had 568 arrests, and 2022 had 853 arrests. The source of data is the Los Angeles Police Department." />
+</center>
+</div>
+<br></br>
+<br></br>
+<div>
+  <strong>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>From 2012-2022, LAPD made over 36,000 41.18 arrests.</span>
+  </strong>
+</div>
+<br />
+<div>
+  <strong>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>📅 Average arrests/year:<br></br>2012-2018: 4,781 <br></br>2019-2022: 662</span>
+  </strong>
+</div>
+<br />
+<div>
+  <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>The drop in arrests followed the 2018 court ruling in the case<br></br>
+    Martin v. Boise, barring cities from enforcing anti-camping laws without offering adequate shelter.</span>
+</div>
+<br />
+<center>
+<div>
+  
+  <img src="/images/4118/byRace.png" width="400" height="600" alt="A donut chart of 41.18 Arrests by Race. The largest segment is Black, at 42.5%, or 15,654 arrests. The second largest segment is White, at 34.0%, or 12,495 arrests. 3rd largest is Hispanic/Latin, at 20.5% or 7,552 arrests. Other is 2.4% at 887 arrests. Asian is 0.5% at 198 arrests. American Indian/Alaskan Native is 0.0% at 9 arrests. Pacific Islander is 0.0% at 4 arrests. The source of data and race categories are by the Los Angeles Police Department." />
+</div>
+</center>
+<br></br>
+<div>
+  <strong>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Race:<br></br>Black: 43% <br></br>White: 34% <br></br>Hispanic/Latin: 21%<br></br>Other: 2%</span>
+  </strong>
+</div>
+<br></br>
+<div>
+   
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>LA Population by Race:<br></br>Black: 8% <br></br>White: 29% <br></br>Hispanic/Latin: 48%<br></br>Other: 15%</span>
+ 
+</div>
+<br></br>
+<br></br>
+<div>
+  <strong>
+    <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+      43% of those arrested were Black.<br></br> Black people are only 8% of the general population of the City of LA.
+    </p>
+  </strong>
+</div>
 <br></br>
 <center>
-  <img src="/images/4118/numberOf.png" width="400" height="600" alt="A bar chart showing the number of 41.18 arrests 2012-2022. 2012-2018 are all in the thousands. 2017 is the highest bar, showing 5,738 arrests. 2019-2022 show much lower numbers than previous years - these numbers are in the hundreds. Arrests in 2020 are the lowest, at 340, and have been rising each year since. 2021 had 568 arrests, and 2022 had 853 arrests. The source of data is the Los Angeles Police Department." />
-</center>
-<br></br>
-<center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>From 2012-2022, LAPD made over 36,000 41.18 arrests.</span>
-</strong></center>
-<br />
-<center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>📅 Average arrests/year:<br></br>2012-2018: 4,781 <br></br>2019-2022: 662</span>
-</strong>
-</center>
-<br />
- <center> 
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>The drop in arrests followed the 2018 court ruling in the case<br></br>
-   Martin v. Boise, barring cities from enforcing anti-camping laws without offering adequate shelter.</span>
- 
-</center>
-<br />
- 
-<center>
-  <img src="/images/4118/byRace.png" width="400" height="600" 
-  alt="A donut chart of 41.18 Arrests by Race. The largest segment is Black, at 42.5%, or 15,654 arrests. The second largest segment is White, at 34.0%, or 12,495 arrests. 3rd largest is Hispanic/Latin, at 20.5% or 7,552 arrests. Other is 2.4% at 887 arrests. Asian is 0.5% at 198 arrests. American Indian/Alaskan Native is 0.0% at 9 arrests. Pacific Islander is 0.0% at 4 arrests.  The source of data and race categories are by the Los Angeles Police Department.  " />
-</center>
-<br />
-<center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Race:<br></br>Black: 43% <br></br>White: 34% <br></br>Hispanic/Latin: 21%<br></br>Other: 2%</span>
-</strong>
-</center>
-<br></br>
-<center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica" }}>LA Population by Race:<br></br>Black: 8% <br></br>White: 29% <br></br>Hispanic/Latin: 48%<br></br>Other: 15%</span>
-</strong>
-</center>
-<center> <strong> <p className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>
-43% of those arrested were Black.<br></br> Black people are only 8% of the general population of the City of LA.
-</p></strong></center>
- <br></br>
- <center>
+<div>
   <img src="/images/4118/byCD.png" width="400" height="600" alt="Bar Chart of 41.18 Arrests by Council District, Jan 2012 to May 2023. There are 15 council districts. Three Council Districts show substantially taller bars than the other 12 Council Districts. Of the three highest bars: Council District 14 has by far the tallest bar, representing 18,972 arrests. Council District 11 has 5,961 arrests, and CD13 has 5,206 arrests. All 12 other council districts have fewer than 1000 arrests. Source of Data is LAPD." />
-</center>
-   <br></br>
-   <center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>41.18 Arrests by Council District:</span>
-</strong></center>
-<br></br>
- 
-<center> <strong> <p className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>
-Over 50% of 41.18 arrests were in Council District 14 (includes Skid Row, DTLA).
-</p></strong></center>
-<br></br>
-<center> <strong> <p className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>
-16% of arrests were in CD11 (includes Venice), and 14% of arrests were in CD13 (includes Hollywood).  
-</p></strong></center>
-<br></br>
-<center>   <p className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>
-All other Council Districts had less than 3% of arrests each .
-</p></center>
-<br></br>
- <center>
-  <img src="/images/4118/byType.png" width="400" height="600" alt="Donut Chart of 41.18 Arrests by Type, Jan 2012-May 2023. It shows 84% Misdemeanors and 16% Infractions. Source of Data is LAPD." />
-</center>
- <br></br>
- <center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Type:<br></br>Misdemeanors: 84% <br></br>Infractions: 16% </span>
-</strong>
+</div>
 </center>
 <br></br>
-<center>   <p className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>
-41.18 violations can be cited as either infractions or misdemeanors. <br></br>
-Infractions can lead to a fine of up to $2,500.<br></br> Misdemeanors can result in 
-up to 6 months of imprisonment & a fine of up to $1,000.
-</p> </center>
 <br></br>
-<center>
-  <img src="/images/4118/bySex.png" width="400" height="600" alt="Donut Chart of 41.18 Arrests by Sex, Jan 2012-May 2023. It shows 73% Male and 27% Female.  Source of Data is LAPD." />
-</center>
+<div>
+  <strong>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Council District:</span>
+  </strong>
+</div>
+<br></br>
+<div>
+  <strong>
+    <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+      Over 50% of 41.18 arrests were in Council District 14 (includes Skid Row, DTLA).
+    </p>
+  </strong>
+</div>
+<br></br>
+<div>
+  <strong>
+    <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+      16% of arrests were in CD11 (includes Venice), and 14% of arrests were in CD13 (includes Hollywood).
+    </p>
+  </strong>
+</div>
+<br></br>
+<div>
+  <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    All other Council Districts had less than 3% of arrests each.
+  </p>
+</div>
 <br></br>
 <center> 
-<strong>
-  <span className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>41.18 Arrests by Sex:<br></br>73% of those arrested were male.  <br></br>27% were female. <br></br></span>
-</strong>
+<div>
+  <img src="/images/4118/byType.png" width="400" height="600" alt="Donut Chart of 41.18 Arrests by Type, Jan 2012-May 2023. It shows 84% Misdemeanors and 16% Infractions. Source of Data is LAPD." />
+</div>
 </center>
+<br></br>
+<br></br>
+<div>
+  <strong>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Type:<br></br>Misdemeanors: 84% <br></br>Infractions: 16% </span>
+  </strong>
+</div>
+<br></br>
+<br></br>
+<div>
+  <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    41.18 violations can be cited as either infractions or misdemeanors. <br></br>
+    Infractions can lead to a fine of up to $2,500.<br></br> Misdemeanors can result in a fine plus up to 6 months in jail.
+  </p>
+</div>
+<br></br>
+
+<center> 
+<div>
+  <img src="/images/4118/bySex.png" width="400" height="600" alt="Donut Chart of 41.18 Arrests by Sex, Jan 2012-May 2023. It shows 73% Male and 27% Female. Source of Data is LAPD." />
+</div>
+</center>
+<br></br>
+<div>
+  <strong>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Sex:<br></br>73% of those arrested were male. <br></br>27% were female. <br></br></span>
+  </strong>
+</div>
 <br>
 </br>
-<center>   <p className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}>
-The general population of the City of LA is 49% male and 51% female.
-</p></center>
+<div>
+  <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    The general population of the City of LA is 49% male and 51% female.
+  </p>
+</div>
+
 <br></br>
 <center><hr style={{height: "2px", width: "50%"}}></hr></center>
 <br></br>
@@ -184,11 +223,13 @@ The general population of the City of LA is 49% male and 51% female.
   <img src="/images/4118/2012.png" width="400" height="600" alt="A graphic showing the map filtered to show 2012 only. Total Arrests: 4,096. Arrests are most concentrated in Downtown LA, Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
+<br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2013</b></h1></center>
 <br></br>
 <center>
   <img src="/images/4118/2013.png" width="400" height="600" alt="A graphic showing the map filtered to show 2013 only. Total Arrests: 5,411. Arrests are most concentrated in Downtown LA, Hollywood, Venice, and a small part of South LA. Data Source is LAPD" />
 </center>
+<br></br>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica" }}><b>2014</b></h1></center>
 <br></br>
@@ -196,11 +237,13 @@ The general population of the City of LA is 49% male and 51% female.
   <img src="/images/4118/2014.png" width="400" height="600" alt="A graphic showing the map filtered to show 2014 only. Total Arrests: 4,583. Arrests are most concentrated in Downtown LA, Hollywood, Venice, and a few small parts of South LA. Data Source is LAPD" />
 </center>
 <br></br>
+<br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2015</b></h1></center>
 <br></br>
 <center>
   <img src="/images/4118/2015.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2015 only. Total Arrests: 4,742. Arrests are most concentrated in Downtown LA, and Hollywood, Venice, and a few small parts of South LA. Data Source is LAPD" />
 </center>
+<br></br>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2016</b></h1></center>
 <br></br>
@@ -208,11 +251,13 @@ The general population of the City of LA is 49% male and 51% female.
   <img src="/images/4118/2016.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2016 only. Total Arrests: 5,438 Arrests are most concentrated in Downtown LA, and Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
+<br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2017</b></h1></center>
 <br></br>
 <center>
   <img src="/images/4118/2017.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2017 only. Total Arrests: 5,738 Arrests are most concentrated in Downtown LA, and Hollywood, and Venice. Data Source is LAPD" />
 </center>
+<br></br>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2018</b></h1></center>
 <br></br>
@@ -220,25 +265,31 @@ The general population of the City of LA is 49% male and 51% female.
   <img src="/images/4118/2018.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2018 only. Total Arrests: 3,456. Arrests are most concentrated in Downtown LA, and Hollywood, and Venice. Data Source is LAPD" />
 </center>
 <br></br>
+<br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2019</b></h1></center>
 <br></br>
 <center>
   <img src="/images/4118/2019.png" width="400" height="600" alt="  A graphic showing the map filtered to show 2019 only. Total Arrests: 887 Arrests are most concentrated in Skid Row and Venice. Data Source is LAPD" />
 </center>
 <br></br>
+<br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2020</b></h1></center>
+<br></br>
 <br></br>
 <center>
   <img src="/images/4118/2020.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2020 only. Total Arrests: 340. Arrests are not as highly concentrated for 2020 as other years. There is some more intensity in Venice than other areas of this year’s map. Data Source is LAPD" />
 </center>
 <br></br>
+<br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2021</b></h1></center>
+<br></br>
 <br></br>
 <center>
   <img src="/images/4118/2021.png" width="400" height="600" alt="  A graphic showing the map filtered to show 2021 only. Total Arrests: 568. Arrests are most concentrated in West Los Angeles. Data Source is LAPD" />
 </center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2022</b></h1></center>
+<br></br>
 <br></br>
 <center>
   <img src="/images/4118/2022.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2022 only. Total Arrests: 853. Arrests are most concentrated in Chatsworth, Westlake-MacArthur Park, and West Los Angeles. Data Source is LAPD" />
