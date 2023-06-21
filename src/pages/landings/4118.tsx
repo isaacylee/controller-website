@@ -74,16 +74,20 @@ export default function Data(props: any) {
 </a></center>
 
 <br></br>
-
+<center> 
 <div>
   <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-    This map shows details of arrests under <b>LA Municipal Code 41.18, which criminalizes sitting, lying, & sleeping, or placing personal property in the public right-of-way in certain instances.</b>
+    This map shows details of arrests under <b>LA Municipal Code 41.18, <br></br>which criminalizes sitting, 
+      lying, & sleeping, or placing personal property in the public right-of-way in certain instances.</b>
   </p>
 </div>
+</center>
 <br></br>
+<center> 
 <div>
   <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Summary and Analysis</b></h3>
 </div>
+</center>
 <br></br>
 <br></br>
 <div>
@@ -93,22 +97,28 @@ export default function Data(props: any) {
 </div>
 <br></br>
 <br></br>
+<center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>From 2012-2022, LAPD made over 36,000 41.18 arrests.</span>
   </strong>
 </div>
+</center>
 <br />
+<center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>📅 Average arrests/year:<br></br>2012-2018: 4,781 <br></br>2019-2022: 662</span>
   </strong>
 </div>
+</center>
 <br />
+<center> 
 <div>
   <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>The drop in arrests followed the 2018 court ruling in the case<br></br>
     Martin v. Boise, barring cities from enforcing anti-camping laws without offering adequate shelter.</span>
 </div>
+</center>
 <br />
 <center>
 <div>
@@ -117,19 +127,24 @@ export default function Data(props: any) {
 </div>
 </center>
 <br></br>
+<center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Race:<br></br>Black: 43% <br></br>White: 34% <br></br>Hispanic/Latin: 21%<br></br>Other: 2%</span>
   </strong>
 </div>
+</center>
 <br></br>
+<center> 
 <div>
    
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>LA Population by Race:<br></br>Black: 8% <br></br>White: 29% <br></br>Hispanic/Latin: 48%<br></br>Other: 15%</span>
  
 </div>
+</center>
 <br></br>
 <br></br>
+<center> 
 <div>
   <strong>
     <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
@@ -137,6 +152,7 @@ export default function Data(props: any) {
     </p>
   </strong>
 </div>
+</center>
 <br></br>
 <center>
 <div>
@@ -145,12 +161,15 @@ export default function Data(props: any) {
 </center>
 <br></br>
 <br></br>
+<center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Council District:</span>
   </strong>
 </div>
+</center>
 <br></br>
+<center> 
 <div>
   <strong>
     <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
@@ -158,7 +177,9 @@ export default function Data(props: any) {
     </p>
   </strong>
 </div>
+</center>
 <br></br>
+<center> 
 <div>
   <strong>
     <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
@@ -166,12 +187,15 @@ export default function Data(props: any) {
     </p>
   </strong>
 </div>
+</center>
 <br></br>
+<center> 
 <div>
   <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     All other Council Districts had less than 3% of arrests each.
   </p>
 </div>
+</center>
 <br></br>
 <center> 
 <div>
@@ -180,19 +204,23 @@ export default function Data(props: any) {
 </center>
 <br></br>
 <br></br>
+<center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Type:<br></br>Misdemeanors: 84% <br></br>Infractions: 16% </span>
   </strong>
 </div>
+</center>
 <br></br>
 <br></br>
+<center> 
 <div>
   <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     41.18 violations can be cited as either infractions or misdemeanors. <br></br>
     Infractions can lead to a fine of up to $2,500.<br></br> Misdemeanors can result in a fine plus up to 6 months in jail.
   </p>
 </div>
+</center>
 <br></br>
 
 <center> 
@@ -201,18 +229,21 @@ export default function Data(props: any) {
 </div>
 </center>
 <br></br>
+<center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>41.18 Arrests by Sex:<br></br>73% of those arrested were male. <br></br>27% were female. <br></br></span>
   </strong>
 </div>
+</center>
 <br>
 </br>
+<center> 
 <div>
   <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     The general population of the City of LA is 49% male and 51% female.
   </p>
-</div>
+</div></center>
 
 <br></br>
 <center><hr style={{height: "2px", width: "50%"}}></hr></center>
