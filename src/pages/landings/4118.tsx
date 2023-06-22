@@ -40,9 +40,11 @@ export default function Data(props: any) {
 
  
           <center>
-  <a href="https://4118arrests.lacontroller.io" target="_blank" rel="noopener noreferrer">
-    <img src="/images/4118/main.png" width="600" height="500" alt="An image of the map. It shows Los Angeles with borders dividing each Council District. A filter allows users to filter by Race, Year, CD#, Arrest, and Time." />
-  </a>
+<a href="https://4118arrests.lacontroller.io" target="_blank" rel="noopener noreferrer">
+  <img src="/images/4118/year-animated-gif.gif" width="400" height="600" alt="An animated gif of each year of the map, from 2012-2022, along with percentages of arrests by race. For 2012-2018, there are a lot more total arrests and they are most concentrated in Downtown LA, Hollywood, and Venice. For 2019-2022, total arrests are down from previous years.  For 2012-2017, the percentage of those arrested who are Black is always between 40 to 50%. In 2018 the percentage of those arrested who are Black goes down each year. By 2022 Black people make up 19% of those arrested. From 2012-2017, White people make up about 30% of those arrested each year. Starting in 2018, White people makeup about 40% of those arrested each year. Hispanic/Latin people make up between 15-25% of those arrested each year from 2012-2019, and then arrests start rising in 2020 - they make up 38% of those arrested in 2022. 
+  The areas that are most concentrated with the highest total arrests vary - in 2019 Skid Row and Venice have higher arrests. In 2020 Venice has higher arrests. In 2019 and 2020, West Los Angeles has higher arrests. In 2020, Chatsworth and Westlake-MacArthur Park have higher arrests too. 
+  The Source of Data is LAPD." />  
+  </a> 
 </center>
 
 </div>
@@ -246,7 +248,8 @@ export default function Data(props: any) {
 </div></center>
 
 <br></br>
-<center><hr style={{height: "2px", width: "50%"}}></hr></center>
+
+{/* <center><hr style={{height: "2px", width: "50%"}}></hr></center>
 <br></br>
 <center><h1 className=' dark:text-white' style={{ fontFamily: "Helvetica"  }}><b>2012</b></h1></center>
 <br></br>
@@ -325,7 +328,7 @@ export default function Data(props: any) {
 <center>
   <img src="/images/4118/2022.png" width="400" height="600" alt=" A graphic showing the map filtered to show 2022 only. Total Arrests: 853. Arrests are most concentrated in Chatsworth, Westlake-MacArthur Park, and West Los Angeles. Data Source is LAPD" />
 </center>
-<center><hr style={{height: "2px", width: "50%"}}></hr></center>
+<center><hr style={{height: "2px", width: "50%"}}></hr></center> */}
     </>
   );
 }
