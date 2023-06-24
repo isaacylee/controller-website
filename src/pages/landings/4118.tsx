@@ -125,7 +125,7 @@ export default function Data(props: any) {
 <center>
 <div>
   
-  <img src="/images/4118/byRace.png" width="400" height="600" alt="A donut chart of 41.18 Arrests by Race. The largest segment is Black, at 42.5%, or 15,654 arrests. The second largest segment is White, at 34.0%, or 12,495 arrests. 3rd largest is Hispanic/Latin, at 20.5% or 7,552 arrests. Other is 2.4% at 887 arrests. Asian is 0.5% at 198 arrests. American Indian/Alaskan Native is 0.0% at 9 arrests. Pacific Islander is 0.0% at 4 arrests. The source of data and race categories are by the Los Angeles Police Department." />
+  <img src="/images/4118/forRace.png" width="400" height="600" alt="A donut chart of 41.18 Arrests by Race. The largest segment is Black, at 42.5%, or 15,654 arrests. The second largest segment is White, at 34.0%, or 12,495 arrests. 3rd largest is Hispanic/Latin, at 20.5% or 7,552 arrests. Other is 2.4% at 887 arrests. Asian is 0.5% at 198 arrests. American Indian/Alaskan Native is 0.0% at 9 arrests. Pacific Islander is 0.0% at 4 arrests. The source of data and race categories are by the Los Angeles Police Department." />
 </div>
 </center>
 <br></br>
