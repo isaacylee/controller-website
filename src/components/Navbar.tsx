@@ -25,7 +25,7 @@ const navigation: any = [
   { name: 'Financials', href: '/reports' },
   { name: 'Budgets', href: '/budgets' },
   // { name: 'Events', href: '/events', current: false },
-  // { name: 'Press', href: '/press', current: false },
+  { name: 'Press', href: '/press', current: false },
   { name: 'Contact', href: '/contact' },
 ];
 
