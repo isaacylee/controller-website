@@ -1,6 +1,15 @@
 {
   "finance": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2Fidlespecialfunds.jpg?alt=media&token=69d117cb-df34-4ec4-85b1-f20d28fcebfd",
+      "name": "Leveraging Idle Special Funds 2023 ",
+      "year": "2023",
+      "dept": "Financial Report",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2FFinal_Special_Funds_Report-2023.pdf?alt=media&token=5e628268-7878-4ac4-8990-fe6aedf18abb",
+      "pre": false,
+      "alt": "Cover photo Leveraging Idle Special Funds 2023"
+    },
+    {
       "image": "https://controller.lacity.gov/images/revforecastcover.jpg",
       "name": "Revenue Forecast Report for Fiscal Years 2023-2024",
       "year": "2023",
