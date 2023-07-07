@@ -36,21 +36,9 @@
       "dept": "Map",
       "link": "https://spayneuter.lacontroller.io/"
     },
-    {
-      "image": "https://unhouseddeaths.lacontroller.io/deaths-map.png",
-      "name": "Unhoused Deaths in Los Angeles",
-      "year": "2023",
-      "dept": "Map",
-      "link": "https://unhouseddeaths.lacontroller.io/"
-    },
+ 
 
-    {
-      "image": "https://github.com/Mejia-For-Controller/cdn/blob/main/thumbnailforparksmap2-min_50-min.png?raw=true",
-      "name": "Parks and Dog Parks | Map and Land Analysis",
-      "year": "2023",
-      "dept": "Map",
-      "link": "https://parks.lacontroller.io/"
-    },
+    
 
     {
       "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/11/Visualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg",
