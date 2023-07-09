@@ -211,11 +211,11 @@ export default function About(props: any) {
           {/* <div className='contentTimeline'> */}
 
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:py-2'>
-            Kenneth Mejia is the City’s 20th Controller, elected in November
+            Kenneth Mejia is the 20th City Controller, elected in November
             2022 with 513,288 votes. Controller Mejia oversees a team of more than 160 employees
             who conduct independent audits and investigations, manage the City’s accounting, payroll, and
             spending, report on the City’s finances, and provide transparency on City operations, policies, metrics,
-            and data online.            
+            and data.            
           </p>
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             The City Controller is the elected paymaster, auditor and chief
