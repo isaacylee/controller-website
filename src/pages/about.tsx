@@ -211,11 +211,19 @@ export default function About(props: any) {
           {/* <div className='contentTimeline'> */}
 
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:py-2'>
+            Kenneth Mejia is the City’s 20th Controller, elected in November
+            2022 with 513,288 votes. Controller Mejia oversees a team of more than 160 employees
+            who conduct independent audits and investigations, manage the City’s accounting, payroll, and
+            spending, report on the City’s finances, and provide transparency on City operations, policies, metrics,
+            and data online.            
+          </p>
+          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             The City Controller is the elected paymaster, auditor and chief
             accounting officer for the City of Los Angeles. Along with the Mayor
             and City Attorney, the Controller is one of three offices elected
-            every four years by citywide popular vote.
+            every four years by citywide popular vote.            
           </p>
+
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             In 1878, the position was created as the City Auditor, becoming an
             elected office in 1889. The 1925 City Charter changed the name of
@@ -223,14 +231,6 @@ export default function About(props: any) {
             granted the Controller the power to conduct performance audits of
             City departments, allowing an examination of departmental
             effectiveness.
-          </p>
-
-          <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
-            Kenneth Mejia is the City’s 20th Controller, elected in November
-            2022 with 513,288 votes. Controller Mejia oversees a team of more than 160 employees
-            who conduct independent audits and investigations, manage the City’s accounting, payroll, and
-            spending, report on the City’s finances, and provide transparency on City operations, policies, metrics,
-            and data online.
           </p>
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             In order to fulfill the Controller’s Charter-mandated functions, the
