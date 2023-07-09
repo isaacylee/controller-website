@@ -227,9 +227,9 @@ export default function About(props: any) {
 
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             Kenneth Mejia is the City’s 20th Controller, elected in November
-            2022. Controller Mejia oversees a team of more than 160 employees
-            who conduct independent audits, manage the City’s payroll and
-            spending, report on the City’s finances, and provide City metrics
+            2022 with 513,288 votes. Controller Mejia oversees a team of more than 160 employees
+            who conduct independent audits and investigations, manage the City’s accounting, payroll, and
+            spending, report on the City’s finances, and provide transparency on City operations, policies, metrics,
             and data online.
           </p>
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
@@ -241,12 +241,12 @@ export default function About(props: any) {
           </p>
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             The Executive Office supports the Controller with staff dedicated to
-            communications and innovation, scheduling and office operations,
-            community engagement and government affairs. Management Services is
+            accountability and oversight, financial transparency, research, technology and innovation,
+            government affairs, communications, and community engagement. Management Services is
             responsible for all aspects of personnel, departmental payroll,
             budgeting, accounting and facility management for the Controller’s
             office. Below is a closer look at Audit Services, Accounting
-            Operations and Financial Reporting and Analysis.
+            Operations, and Financial Reporting and Analysis.
           </p>
 
           {/* address */}
