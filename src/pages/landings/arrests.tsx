@@ -51,7 +51,7 @@ export default function Data(props: any) {
 <br />
 
 <center><a
-  href=""
+  href="https://2022arrests.lacontroller.io/"
   target="_blank"
   style={{
     backgroundColor: "#41ffca",
@@ -99,11 +99,10 @@ export default function Data(props: any) {
 </center>
 <br></br>
 <br></br>
-{/* <div>
- <center>  <img src="/images/4118/numberOf.png" width="400" height="600" 
- alt="A bar chart showing the number of 41.18 arrests 2012-2022. 2012-2018 are all in the thousands. 2017 is the highest bar, showing 5,738 arrests. 2019-2022 show much lower numbers than previous years - these numbers are in the hundreds. Arrests in 2020 are the lowest, at 340, and have been rising each year since. 2021 had 568 arrests, and 2022 had 853 arrests. The source of data is the Los Angeles Police Department." />
-</center>
-</div> */}
+<div className="image-container">
+  <img src="/images/arrests/lapdarrests-race.png" width="400" height="600" alt="" />
+  <img src="/images/arrests/lapopulation.png" width="400" height="600" alt="" />
+</div>
 <br></br>
 <br></br>
 <center> 
@@ -111,14 +110,24 @@ export default function Data(props: any) {
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     <ul>
-      <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population </li>
-      <li>Brown & Black people = 78.25% of all arrests from 2019-2022</li>
-      <li>Brown & Black people = 58.1% of the LA County population (per 2020 Census data)</li>
+      <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li>
+      <li>Brown & Black people = 78.26% of all arrests from 2019-2022</li>
+      <li>Brown & Black people = 56% of the LA County population (per 2020 Census data)</li>
       </ul> 
 </span>
-  </strong>
+  </strong> 
 </div>
 </center>
+<div className="image-container">
+  <img src="/images/arrests/lapdarrestsCD-2019.png" width="400" height="600" alt="" />
+  <img src="/images/arrests/lapdarrestsCD-2020.png" width="400" height="600" alt="" />
+
+</div>
+
+<div className="image-container">
+<img src="/images/arrests/lapdarrestsCD-2021.png" width="400" height="600" alt="" />
+  <img src="/images/arrests/lapdarrestsCD-2022.png" width="400" height="600" alt="" />
+</div>
 <br />
 <center> 
 <div>
@@ -141,19 +150,24 @@ export default function Data(props: any) {
 <br />
 <center> 
 <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>Arrest Type</span></center>
-{/* <center>
- 
-<div>
-  
-  <img src="/images/4118/forRace.png" width="400" height="600" alt="A donut chart of 41.18 Arrests by Race. The largest segment is Black, at 42.5%, or 15,654 arrests. The second largest segment is White, at 34.0%, or 12,495 arrests. 3rd largest is Hispanic/Latin, at 20.5% or 7,552 arrests. Other is 2.4% at 887 arrests. Asian is 0.5% at 198 arrests. American Indian/Alaskan Native is 0.0% at 9 arrests. Pacific Islander is 0.0% at 4 arrests. The source of data and race categories are by the Los Angeles Police Department." />
+<center>
+<div className="image-container">
+<img src="/images/arrests/lapdarrests-type2019.png" width="400" height="600" alt="" />
+  <img src="/images/arrests/lapdarrests-type2020.png" width="400" height="600" alt="" />
 </div>
-</center> */}
+<div className="image-container">
+<img src="/images/arrests/lapdarrests-type2021.png" width="400" height="600" alt="" />
+  <img src="/images/arrests/lapdarrests-type2022.png" width="400" height="600" alt="" />
+</div>
+  
+  </center>
 <br></br>
 <center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-    The LAPD arrest types fall into five categories identified by the LAPD: (1) felony, <br></br>(2) misdemeanor, (3) infractions, (4) dependent, and (5) other. 
+    The LAPD arrest types fall into five categories identified by the LAPD: (1) felony, <br></br>(2)
+     misdemeanor, (3) infractions, (4) dependent, and (5) other. 
 </span>
   </strong>
 </div>
@@ -195,13 +209,23 @@ export default function Data(props: any) {
       <li>2022: 30,431 misdemeanor & infraction arrests vs. 30,378 felony arrests</li>
       </ul> 
       <br></br>
-      <p className='dark:text-white' style={{fontFamily: "Helvetica"}}>Each year, the LAPD arrests hundreds of minors
-       under the “dependent”* category, <br></br>which includes children who are taken into <br></br>custody because their parent or 
-       guardian has been accused of abuse, neglect, or <br></br>endangerment, and children who are deemed to be runaways or 
-       beyond parental control. 
+      <p className='dark:text-white' style={{fontFamily: "Helvetica"}}>According to LAPD data, <br></br>
+      they make over 400 arrests each year in the “dependent” category. <br></br>This category includes children who 
+      are taken into custody because<br></br> their parent or guardian has been accused of abuse, neglect, <br></br>or endangerment,
+       as well as children <br></br> who are deemed to be runaways or beyond parental control. 
+
 </p>
+<br></br>
+<p className='dark:text-white' style={{fontFamily: "Helvetica"}}>The data available is unclear about the 
+nature of these interactions, <br></br> but raises questions about the frequency that children and youth are coming into 
+contact with the LAPD. 
+ <br></br>
+   
+
+</p>
+<br></br>
 <ul>
-      <li>2019:	464 Dependent arrests </li>
+      <li>2019: 464 Dependent arrests </li>
       <li>2020:	429 Dependent arrests</li>
       <li>2021:	422 Dependent arrests</li>
       <li>2022:	545 Dependent arrests  </li>
