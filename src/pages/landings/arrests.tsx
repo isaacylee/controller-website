@@ -191,7 +191,8 @@ export default function Data(props: any) {
 <div>
   <strong>
     <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-    LAPD arrests more people for misdemeanor and infraction offenses than for felonies.
+    LAPD makes more arrests for misdemeanor and infraction offenses than for felonies.
+
 
     </p>
   </strong>
@@ -202,6 +203,8 @@ export default function Data(props: any) {
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+ 
+
     <ul>
       <li>2019: 55,954 misdemeanor & infraction arrests vs. 33,663 felony arrests </li>
       <li>2020: 34,659 misdemeanor & infraction arrests vs. 31,015 felony arrests</li>
