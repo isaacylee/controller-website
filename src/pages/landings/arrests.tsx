@@ -32,20 +32,20 @@ export default function Data(props: any) {
        
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h2 className='pt-8 pb-4 dark:text-white'>Arrests Maps (2019-2022) </h2>
+          <h2 className='pt-8 pb-4 dark:text-white'>LAPD Arrest Maps & Analysis (2019-22)
+ </h2>
 
-       
+ <center>
+<a href="https://2022arrests.lacontroller.io/" target="_blank" rel="noopener noreferrer">
+  <img src="/images/arrests/lapdarrests timelapse GIF.GIF" width="400" height="600" 
+  alt="An animated gif of the map, showing each year, 2019 through 2022. Arrests appear to decrease significantly between 2019 and 2020, and then further decrease slightly each year over the following years." />  
+  </a> 
+</center>
 
    
 
  
-          {/* <center>
-<a href="https://4118arrests.lacontroller.io" target="_blank" rel="noopener noreferrer">
-  <img src="/images/4118/year-animated-gif.gif" width="400" height="600" alt="An animated gif of each year of the map, from 2012-2022, along with percentages of arrests by race. For 2012-2018, there are a lot more total arrests and they are most concentrated in Downtown LA, Hollywood, and Venice. For 2019-2022, total arrests are down from previous years.  For 2012-2017, the percentage of those arrested who are Black is always between 40 to 50%. In 2018 the percentage of those arrested who are Black goes down each year. By 2022 Black people make up 19% of those arrested. From 2012-2017, White people make up about 30% of those arrested each year. Starting in 2018, White people makeup about 40% of those arrested each year. Hispanic/Latin people make up between 15-25% of those arrested each year from 2012-2019, and then arrests start rising in 2020 - they make up 38% of those arrested in 2022. 
-  The areas that are most concentrated with the highest total arrests vary - in 2019 Skid Row and Venice have higher arrests. In 2020 Venice has higher arrests. In 2019 and 2020, West Los Angeles has higher arrests. In 2020, Chatsworth and Westlake-MacArthur Park have higher arrests too. 
-  The Source of Data is LAPD." />  
-  </a> 
-</center> */}
+     
 
 </div>
 <br />
@@ -99,34 +99,47 @@ export default function Data(props: any) {
 </center>
 <br></br>
 <br></br>
-<div className="image-container">
-  <img src="/images/arrests/lapdarrests-race.png" width="400" height="600" alt="" />
-  <img src="/images/arrests/lapopulation.png" width="400" height="600" alt="" />
+<center> 
+<div>
+  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Race</b></h3>
 </div>
-<br></br>
-<br></br>
+</center>
+<div className="image-container">
+  <img src="/images/arrests/lapdarrests-race.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Race, 2019-2022. The tallest bar is Hispanic/Latino, at 51%. Next is Black, at 27%, then White at 16%, then Other at 5%. Total arrests for each of the following 4 race categories are not more than 0%: Asian, Pacific Islander, Unknown, and American Indian/Alaskan Native. The Source of Data is LAPD." />
+  <img src="/images/arrests/lapopulation.png" width="400" height="600" alt="A bar chart of Los Angeles Population by Race.  Hispanic/Latino is 48%.  Black is 8%. White is 29%. Other is 0%.  Asian is 12%, Pacific Islander is 0%, 2+ races is 3%, and American Indian/Alaskan Native is 0%. Source of Data is American Community Survey, 2021 5-Year Estimate." />
+</div>
+ 
 <center> 
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     <ul>
       <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li>
+      <br></br>
       <li>Brown & Black people = 78.26% of all arrests from 2019-2022</li>
+      <br></br>
       <li>Brown & Black people = 56% of the LA County population (per 2020 Census data)</li>
       </ul> 
 </span>
   </strong> 
 </div>
+ 
+</center>
+<br></br>
+<center> 
+<div>
+  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Council Districts</b></h3>
+</div>
 </center>
 <div className="image-container">
-  <img src="/images/arrests/lapdarrestsCD-2019.png" width="400" height="600" alt="" />
-  <img src="/images/arrests/lapdarrestsCD-2020.png" width="400" height="600" alt="" />
+  <img src="/images/arrests/lapdarrestsCD-2019.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2019. There are 15 Council Districts. Council District 14 has a much higher number of arrests than any other district, with around 14,000 arrests. There are several other Council Districts with around 7,000 to 9,000 arrests (CDs 1, 6, 8, 9, 13), The rest of the Council Districts have fewer than around 5,000 to 6,000 arrests. CDs 5 and 12 in particular have the fewest number of arrests, at around 2,500 arrests each. Source of data is LAPD." />
+  <img src="/images/arrests/lapdarrestsCD-2020.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2020. There are fewer arrests overall compared to 2019. There are 15 Council Districts. Council District 14 has the highest number of arrests, at around 7,500 arrests,  but is also fairly close in number of arrests to districts 8 and 9, which are around 6,000 arrests.  CDs 1, 6, 10, 11, and 13 each have around 5,000 arrests. The rest of the Council Districts have much fewer than 5,000  arrests. CDs 5 and 12 have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD." />
 
 </div>
 
 <div className="image-container">
-<img src="/images/arrests/lapdarrestsCD-2021.png" width="400" height="600" alt="" />
-  <img src="/images/arrests/lapdarrestsCD-2022.png" width="400" height="600" alt="" />
+<img src="/images/arrests/lapdarrestsCD-2021.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2021. There are still fewer arrests overall compared to 2019. There are 15 Council Districts. Council Districts  8 and 14 have the highest number of arrests, at around 6,000  arrests,  and are also fairly close in number of arrests to districts 9, and 11 which are also close to 6,000 arrests.  CDs 1, 6, and 13 each have around 5,000 arrests. The rest of the Council Districts havemuch fewer than 5,000  arrests. CDs 5 and 12 again have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD." />
+  <img src="/images/arrests/lapdarrestsCD-2022.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2022. There are still fewer arrests overall compared to 2019. There are 15 Council Districts. Council Districts 14, 8, and 1 have the highest number of arrests, at around 5,000 to 6,000  arrests,  and are also fairly close in number of arrests to districts 6, 9,  11, and 13 which are also close to 5,000 arrests. The rest of the Council Districts havemuch fewer than 5,000  arrests. CDs 4 and 5 have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD. " />
 </div>
 <br />
 <center> 
@@ -149,15 +162,18 @@ export default function Data(props: any) {
 </center> */}
 <br />
 <center> 
-<span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>Arrest Type</span></center>
+<div>
+  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Arrest Type</b></h3>
+</div>
+</center>
 <center>
 <div className="image-container">
-<img src="/images/arrests/lapdarrests-type2019.png" width="400" height="600" alt="" />
-  <img src="/images/arrests/lapdarrests-type2020.png" width="400" height="600" alt="" />
+<img src="/images/arrests/lapdarrests-type2019.png" width="400" height="600" alt="A donut chart of LAPD Arrests by Type, 2019. There are 2 categories: There’s Felony, and there’s Misdemeanor & Infraction. The bigger category is Misdemeanor & Infraction at 55,954, or 62.4%. Felony is 33,663, or 37.6%. Source of Data is LAPD. " />
+  <img src="/images/arrests/lapdarrests-type2020.png" width="400" height="600" alt="A donut chart of LAPD Arrests by Type, 2020. There are 2 categories: There’s Felony, and there’s Misdemeanor & Infraction. The slightly bigger category is Misdemeanor & Infraction at 34,659, or 52.8%. Felony is 31,015, or 47.2%. Source of Data is LAPD. " />
 </div>
 <div className="image-container">
-<img src="/images/arrests/lapdarrests-type2021.png" width="400" height="600" alt="" />
-  <img src="/images/arrests/lapdarrests-type2022.png" width="400" height="600" alt="" />
+<img src="/images/arrests/lapdarrests-type2021.png" width="400" height="600" alt="A donut chart of LAPD Arrests by Type, 2021. There are 2 categories: There’s Felony, and there’s Misdemeanor & Infraction. They are almost even.Misdemeanor & Infraction is marginally bigger at 33,179, or 50.4%. Felony is 32,597, or 49.6%. Source of Data is LAPD." />
+  <img src="/images/arrests/lapdarrests-type2022.png" width="400" height="600" alt="A donut chart of LAPD Arrests by Type, 2021. There are 2 categories: There’s Felony, and there’s Misdemeanor & Infraction. They are even.Misdemeanor & Infraction is marginally bigger at 30,431, or 50%. Felony is 30,378, or 50%. Source of Data is LAPD. " />
 </div>
   
   </center>
