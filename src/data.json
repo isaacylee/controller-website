@@ -37,6 +37,21 @@
       "link": "https://spayneuter.lacontroller.io/"
     },
  
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/laas_banner.png?alt=media&token=d9ef3cd0-ad10-4599-9641-4a0c935168e0",
+      "name": "LAAS Spay Neuter & Shelter",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://spayneuter.lacontroller.io/"
+    },
+
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/unhoused.png?alt=media&token=bedc82ec-6232-47da-9731-1543bac5995d",
+      "name": "Unhoused Deaths in Los Angeles",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://unhouseddeaths.lacontroller.io/"
+    },
 
     
 

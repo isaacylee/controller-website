@@ -36,7 +36,7 @@ export default function Data(props: any) {
  </h2>
 
  <center>
-<a href="https://2022arrests.lacontroller.io/" target="_blank" rel="noopener noreferrer">
+<a href="https://arrests.lacontroller.io/" target="_blank" rel="noopener noreferrer">
   <img src="/images/arrests/lapdarrests timelapse GIF.GIF" width="400" height="600" 
   alt="An animated gif of the map, showing each year, 2019 through 2022. Arrests appear to decrease significantly between 2019 and 2020, and then further decrease slightly each year over the following years." />  
   </a> 
@@ -51,7 +51,7 @@ export default function Data(props: any) {
 <br />
 
 <center><a
-  href="https://2022arrests.lacontroller.io/"
+  href="https://arrests.lacontroller.io/"
   target="_blank"
   style={{
     backgroundColor: "#41ffca",
