@@ -14,7 +14,18 @@
 .goog-logo-link {
   display:none !important;
 } 
-  
+
+.image-container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
 .goog-te-gadget{
   color: transparent !important;
   font-size: 0 !important;
