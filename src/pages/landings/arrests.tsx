@@ -36,7 +36,7 @@ export default function Data(props: any) {
  </h2>
 
  
-<div className="image-container " style={{ display: "flex", alignItems: "center" }}>
+<div className="image-container mobile-left-align" style={{ display: "flex", alignItems: "center" }}>
   <img
   
     src="/images/arrests/lapdarrests timelapse GIF.GIF"
@@ -45,8 +45,8 @@ export default function Data(props: any) {
     height="600"
     style={{ float: "left", marginRight: "20px" }}
   />
-  <div className='mobile-left-align' style={{ flex: "1" }}>
-    <p className="dark:text-white" style={{ fontFamily: "Helvetica" }}>
+  <div style={{ flex: "1" }}>
+    <p className="dark:text-white mobile-left-align" style={{ fontFamily: "Helvetica" }}>
       This map shows locations and details of the nearly 300,000 arrests the Los Angeles Police Department
       made between 2019 and 2022. <br />
       Users can navigate the map and filter by race, Council District,
@@ -189,18 +189,42 @@ export default function Data(props: any) {
 </center>
 <br></br>
 <center> 
+<div>
+  <strong>
+    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
+      <p className='mobile-left-align'>Under California law, a felony is a crime that is punishable with death, by imprisonment in the 
+state prison, or . . . by imprisonment in a county jail under [certain provisions]. Every other crime or public offense is a misdemeanor except those offenses 
+that are classified as infractions. <br></br>Misdemeanors and
+infractions carry varying degrees of financial and incarceration consequences.
+
+          </p>
+ <br></br>
+         {/* <p className='mobile-left-align'>
+         Every other crime or public offense is a misdemeanor except those offenses 
+that are classified as infractions. <br></br>Misdemeanors and
+infractions carry varying degrees of financial and incarceration consequences.
+         </p> */}
+ 
+</span>
+  </strong> 
+</div>
+ 
+</center>
+{/* <center> 
 <div className='mobile-left-align'>
    
-    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
- 
-Under California law, a felony is a crime that is punishable with death, by imprisonment in the  <br></br>
-state prison, or . . . by imprisonment in a county jail under [certain provisions]. <br></br>Every other crime or public offense is a misdemeanor except those offenses 
-<br></br> that are classified as infractions. Misdemeanors and
-infractions carry varying <br></br>degrees of financial and incarceration consequences.
-</span>
+<p className='dark:text-white' style={{fontFamily: "Helvetica"}}> <br></br>
+Under California law, a felony is a crime that is punishable with death, by imprisonment in the 
+state prison, or . . . by imprisonment in a county jail under [certain provisions]. 
+Every other crime or public offense is a misdemeanor except those offenses 
+that are classified as infractions. Misdemeanors and
+infractions carry varying degrees of financial and incarceration consequences.
+
+</p>
+  
  
 </div>
-</center>
+</center> */}
 <br></br>
 <br></br>
 <center> 
