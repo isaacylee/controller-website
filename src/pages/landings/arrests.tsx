@@ -58,6 +58,7 @@ export default function Data(props: any) {
     </p>
     <br></br>
     <br></br>
+    <center> 
     <a
   href="https://arrests.lacontroller.io/"
   target="_blank"
@@ -68,10 +69,10 @@ export default function Data(props: any) {
     color: "#000000",
     // display: "block",
     fontFamily: "Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif",
-    fontSize: "24px",
+    fontSize: "18px", /* Updated font size */
     fontWeight: "normal",
     fontStyle: "normal",
-    padding: "16px 28px",
+    padding: "10px 20px", /* Updated padding values */
     textDecoration: "none",
     minWidth: "20px",
     textAlign: "center",
@@ -81,7 +82,9 @@ export default function Data(props: any) {
   rel="noreferrer"
 >
   Click Here to Open the Map
-</a> 
+</a></center>
+
+
   </div>
 </div>
 </div>
