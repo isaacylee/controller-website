@@ -192,10 +192,7 @@ export default function Data(props: any) {
 <div>
    
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
-
-
-        
-
+ 
 Under California law, a felony is a crime that is punishable with death, by imprisonment in the  <br></br>
 state prison, or . . . by imprisonment in a county jail under [certain provisions]. <br></br>Every other crime or public offense is a misdemeanor except those offenses 
 <br></br> that are classified as infractions. Misdemeanors and
@@ -224,11 +221,11 @@ infractions carry varying <br></br>degrees of financial and incarceration conseq
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
  
 
-    <ul>
-      <li>2019: 55,954 misdemeanor & infraction arrests vs. 33,663 felony arrests </li>
-      <li>2020: 34,659 misdemeanor & infraction arrests vs. 31,015 felony arrests</li>
-      <li>2021: 33,179 misdemeanor & infraction arrests vs. 32,597 felony arrests</li>
-      <li>2022: 30,431 misdemeanor & infraction arrests vs. 30,378 felony arrests</li>
+    <ul className='mobile-left-align'>
+      <li className='mobile-left-align'>2019: 55,954 misdemeanor & infraction arrests vs. 33,663 felony arrests </li>
+      <li className='mobile-left-align'>2020: 34,659 misdemeanor & infraction arrests vs. 31,015 felony arrests</li>
+      <li className='mobile-left-align'>2021: 33,179 misdemeanor & infraction arrests vs. 32,597 felony arrests</li>
+      <li className='mobile-left-align'>2022: 30,431 misdemeanor & infraction arrests vs. 30,378 felony arrests</li>
       </ul> 
       <br></br>
       <div>
@@ -248,11 +245,11 @@ but raises questions about the frequency that children and youth are coming into
 
 </p>
 <br></br>
-<ul>
-      <li>2019: 464 Dependent arrests </li>
-      <li>2020: 429 Dependent arrests</li>
-      <li>2021: 422 Dependent arrests</li>
-      <li>2022: 545 Dependent arrests</li>
+<ul className='mobile-left-align'>
+      <li className='mobile-left-align'>2019: 464 Dependent arrests </li>
+      <li className='mobile-left-align'>2020: 429 Dependent arrests</li>
+      <li className='mobile-left-align'>2021: 422 Dependent arrests</li>
+      <li className='mobile-left-align'>2022: 545 Dependent arrests</li>
       </ul> 
  
 </span>
