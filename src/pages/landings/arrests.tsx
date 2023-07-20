@@ -193,7 +193,7 @@ export default function Data(props: any) {
   <strong>
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
       <p className='mobile-left-align'>Under California law, a felony is a crime that is punishable with death, by imprisonment in the 
-state prison, or . . . by imprisonment in a county jail under [certain provisions]. Every other crime or public offense is a misdemeanor except those offenses 
+state prison, <br></br>or . . . by imprisonment in a county jail under [certain provisions]. Every other crime or public offense is a  misdemeanor except those offenses 
 that are classified as infractions. <br></br>Misdemeanors and
 infractions carry varying degrees of financial and incarceration consequences.
 
