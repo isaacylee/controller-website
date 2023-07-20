@@ -35,22 +35,34 @@ export default function Data(props: any) {
           <h2 className='pt-8 pb-4 dark:text-white'>LAPD Arrest Maps & Analysis (2019-22)
  </h2>
 
- <center>
+ {/* <center>
 <a href="https://arrests.lacontroller.io/" target="_blank" rel="noopener noreferrer">
   <img src="/images/arrests/lapdarrests timelapse GIF.GIF" width="400" height="600" 
   alt="An animated gif of the map, showing each year, 2019 through 2022. Arrests appear to decrease significantly between 2019 and 2020, and then further decrease slightly each year over the following years." />  
   </a> 
-</center>
-
-   
-
- 
-     
-
-</div>
-<br />
-
-<center><a
+</center> */}
+<div style={{ display: "flex", alignItems: "center" }}>
+  <img
+    src="/images/arrests/lapdarrests timelapse GIF.GIF"
+    alt="An animated gif of the map, showing each year, 2019 through 2022. Arrests appear to decrease significantly between 2019 and 2020, and then further decrease slightly each year over the following years."
+    width="400"
+    height="600"
+    style={{ float: "left", marginRight: "20px" }}
+  />
+  <div style={{ flex: "1" }}>
+    <p className="dark:text-white" style={{ fontFamily: "Helvetica" }}>
+      This map shows locations and details of the nearly 300,000 arrests the Los Angeles Police Department
+      made between 2019 and 2022. <br />
+      Users can navigate the map and filter by race, Council District,
+      LAPD Division, and arrest type.
+      <br />
+      <br />
+      The data was obtained from the Los Angeles Police Department, but marks the <br />
+      first time the data has been made accessible and mapped for the public without limitations.
+    </p>
+    <br></br>
+    <br></br>
+    <a
   href="https://arrests.lacontroller.io/"
   target="_blank"
   style={{
@@ -65,7 +77,7 @@ export default function Data(props: any) {
     fontStyle: "normal",
     padding: "16px 28px",
     textDecoration: "none",
-    minWidth: "30px",
+    minWidth: "20px",
     textAlign: "center",
     direction: "ltr",
     letterSpacing: "0px"
@@ -73,25 +85,13 @@ export default function Data(props: any) {
   rel="noreferrer"
 >
   Click Here to Open the Map
-</a></center>
-
-<br></br>
-<center> 
-<div>
-  <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-  This map shows locations and details of the nearly 300,000 arrests the Los Angeles Police Department
-   made between 2019 and 2022. <br></br>Users can navigate the map and filter by race, Council District, 
-   LAPD Division, and arrest type.
-   <br></br>
-   <br></br>
-   The data was obtained from the Los Angeles Police Department, but marks the <br></br>
-   first time the data has been made accessible and mapped for the public without limitations. 
-
- 
-  </p>
+</a> 
+  </div>
 </div>
-</center>
-<br></br>
+</div>
+ 
+ 
+ <br></br>
 <center> 
 <div>
   <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Summary and Analysis</b></h3>
@@ -113,11 +113,15 @@ export default function Data(props: any) {
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+      <p>As the map highlights, Brown and Black people are arrested at a disproportionate rate,<br></br>making up an average of
+         78.26% of all arrests over the past four years (2019-2022) <br></br>despite being only 56% of the LA County population 
+         according to 2020 Census data. </p>
+         <br></br>
     <ul>
-      <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li>
+      {/* <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li> */}
       <br></br>
       <li>Brown & Black people = 78.26% of all arrests from 2019-2022</li>
-      <br></br>
+     
       <li>Brown & Black people = 56% of the LA County population (per 2020 Census data)</li>
       </ul> 
 </span>
@@ -145,10 +149,11 @@ export default function Data(props: any) {
 <center> 
 <div>
   <strong>
+
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     For almost every year, Council District 14 leads all other districts for the total number of arrests. In 2021, 
     <br></br>
-    it came in second to Council District 8 by a difference of only 3 arrests.
+    it came in second to Council District 8 by a difference of only three arrests.
 </span>
   </strong>
 </div>
@@ -182,7 +187,7 @@ export default function Data(props: any) {
 <div>
   <strong>
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-    The LAPD arrest types fall into five categories identified by the LAPD: (1) felony, <br></br>(2)
+    The LAPD arrest types fall into five categories identified by the LAPD: <br></br>(1) felony, (2)
      misdemeanor, (3) infractions, (4) dependent, and (5) other. 
 </span>
   </strong>
@@ -193,10 +198,14 @@ export default function Data(props: any) {
 <div>
    
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-    Under California law, a felony is a crime that is punishable with death, by imprisonment in the <br></br>
-    state prison, or . . . by imprisonment in a county jail under [certain provisions]. <br></br>Every other crime or 
-    public offense is a misdemeanor except those offenses<br></br> that are classified as infractions. Misdemeanors and 
-    infractions carry varying <br></br>degrees of financial and incarceration consequences.
+
+
+        
+
+Under California law, a felony is a crime that is punishable with death, by imprisonment in the  <br></br>
+state prison, or . . . by imprisonment in a county jail under [certain provisions]. <br></br>Every other crime or public offense is a misdemeanor except those offenses 
+<br></br> that are classified as infractions. Misdemeanors and
+infractions carry varying <br></br>degrees of financial and incarceration consequences.
 </span>
  
 </div>
@@ -205,13 +214,13 @@ export default function Data(props: any) {
 <br></br>
 <center> 
 <div>
-  <strong>
+ 
     <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     LAPD makes more arrests for misdemeanor and infraction offenses than for felonies.
 
 
     </p>
-  </strong>
+   
 </div>
 </center>
 <br></br>
@@ -228,27 +237,30 @@ export default function Data(props: any) {
       <li>2022: 30,431 misdemeanor & infraction arrests vs. 30,378 felony arrests</li>
       </ul> 
       <br></br>
-      <p className='dark:text-white' style={{fontFamily: "Helvetica"}}>According to LAPD data, <br></br>
-      they make over 400 arrests each year in the “dependent” category. <br></br>This category includes children who 
-      are taken into custody because<br></br> their parent or guardian has been accused of abuse, neglect, <br></br>or endangerment,
-       as well as children <br></br> who are deemed to be runaways or beyond parental control. 
+      <div>
+  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Dependent Arrests</b></h3>
+</div>
+      <p className='dark:text-white' style={{fontFamily: "Helvetica"}}> <br></br>
+      According to LAPD data, they make over 400 arrests each year in the “dependent” category. <br></br>
+      This category includes children who are taken into custody because their parent or <br></br>guardian 
+      has been accused of abuse, neglect, <br></br> or endangerment, as well as children who are deemed to be 
+      runaways or <br></br> beyond parental control. 
 
 </p>
-<br></br>
-<p className='dark:text-white' style={{fontFamily: "Helvetica"}}>The data available is unclear about the 
-nature of these interactions, <br></br> but raises questions about the frequency that children and youth are coming into 
-contact with the LAPD. 
- <br></br>
-   
+ 
+<p className='dark:text-white' style={{fontFamily: "Helvetica"}}> <br></br>
+The data available is unclear about the nature of these interactions, <br></br>
+but raises questions about the frequency that children and youth are coming into contact with the LAPD. 
 
 </p>
 <br></br>
 <ul>
       <li>2019: 464 Dependent arrests </li>
-      <li>2020:	429 Dependent arrests</li>
-      <li>2021:	422 Dependent arrests</li>
-      <li>2022:	545 Dependent arrests  </li>
+      <li>2020: 429 Dependent arrests</li>
+      <li>2021: 422 Dependent arrests</li>
+      <li>2022: 545 Dependent arrests</li>
       </ul> 
+ 
 </span>
   </strong>
 </div>
