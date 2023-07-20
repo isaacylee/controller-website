@@ -255,7 +255,7 @@ infractions carry varying degrees of financial and incarceration consequences.
       <div>
   <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Dependent Arrests</b></h3>
 </div>
-      <p className='dark:text-white' style={{fontFamily: "Helvetica"}}> <br></br>
+      <p className='dark:text-white mobile-left-align' style={{fontFamily: "Helvetica"}}> <br></br>
       According to LAPD data, they make over 400 arrests each year in the “dependent” category. <br></br>
       This category includes children who are taken into custody because their parent or <br></br>guardian 
       has been accused of abuse, neglect, <br></br> or endangerment, as well as children who are deemed to be 
