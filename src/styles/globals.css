@@ -21,6 +21,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width: 600px) {
+  .mobile-left-align {
+    text-align: left;
+  }
+}
 
 .image-container img {
   max-width: 100%;

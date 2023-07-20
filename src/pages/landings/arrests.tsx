@@ -180,7 +180,7 @@ export default function Data(props: any) {
 <center> 
 <div>
   <strong>
-    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
     The LAPD arrest types fall into five categories identified by the LAPD: <br></br>(1) felony, (2)
      misdemeanor, (3) infractions, (4) dependent, and (5) other. 
 </span>
@@ -191,7 +191,7 @@ export default function Data(props: any) {
 <center> 
 <div>
    
-    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
 
 
         
@@ -209,7 +209,7 @@ infractions carry varying <br></br>degrees of financial and incarceration conseq
 <center> 
 <div>
  
-    <p className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    <p className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
     LAPD makes more arrests for misdemeanor and infraction offenses than for felonies.
 
 
@@ -221,7 +221,7 @@ infractions carry varying <br></br>degrees of financial and incarceration conseq
 <center> 
 <div>
   <strong>
-    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
  
 
     <ul>
@@ -232,7 +232,7 @@ infractions carry varying <br></br>degrees of financial and incarceration conseq
       </ul> 
       <br></br>
       <div>
-  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Dependent Arrests</b></h3>
+  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Dependent Arrests</b></h3>
 </div>
       <p className='dark:text-white' style={{fontFamily: "Helvetica"}}> <br></br>
       According to LAPD data, they make over 400 arrests each year in the “dependent” category. <br></br>
@@ -242,7 +242,7 @@ infractions carry varying <br></br>degrees of financial and incarceration conseq
 
 </p>
  
-<p className='dark:text-white' style={{fontFamily: "Helvetica"}}> <br></br>
+<p className='dark:text-white mobile-left-align' style={{fontFamily: "Helvetica"}}> <br></br>
 The data available is unclear about the nature of these interactions, <br></br>
 but raises questions about the frequency that children and youth are coming into contact with the LAPD. 
 
