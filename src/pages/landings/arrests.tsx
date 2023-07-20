@@ -32,11 +32,11 @@ export default function Data(props: any) {
        
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h2 className='pt-8 pb-4 dark:text-white'>LAPD Arrest Maps & Analysis (2019-22)
+          <h2 className='pt-8 pb-4 dark:text-white mobile-left-align'>LAPD Arrest Maps & Analysis (2019-22)
  </h2>
 
  
-<div className="image-container" style={{ display: "flex", alignItems: "center" }}>
+<div className="image-container " style={{ display: "flex", alignItems: "center" }}>
   <img
   
     src="/images/arrests/lapdarrests timelapse GIF.GIF"
@@ -45,7 +45,7 @@ export default function Data(props: any) {
     height="600"
     style={{ float: "left", marginRight: "20px" }}
   />
-  <div style={{ flex: "1" }}>
+  <div className='mobile-left-align' style={{ flex: "1" }}>
     <p className="dark:text-white" style={{ fontFamily: "Helvetica" }}>
       This map shows locations and details of the nearly 300,000 arrests the Los Angeles Police Department
       made between 2019 and 2022. <br />
@@ -93,14 +93,14 @@ export default function Data(props: any) {
  <br></br>
 <center> 
 <div>
-  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Summary and Analysis</b></h3>
+  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Summary and Analysis</b></h3>
 </div>
 </center>
 <br></br>
 <br></br>
 <center> 
 <div>
-  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Race</b></h3>
+  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Race</b></h3>
 </div>
 </center>
 <div className="image-container">
@@ -111,12 +111,12 @@ export default function Data(props: any) {
 <center> 
 <div>
   <strong>
-    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
-      <p>As the map highlights, Brown and Black people are arrested at a disproportionate rate,<br></br>making up an average of
+    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
+      <p className='mobile-left-align'>As the map highlights, Brown and Black people are arrested at a disproportionate rate,<br></br>making up an average of
          78.26% of all arrests over the past four years (2019-2022) <br></br>despite being only 56% of the LA County population 
          according to 2020 Census data. </p>
          <br></br>
-    <ul>
+    <ul className='mobile-left-align'>
       {/* <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li> */}
       <br></br>
       <li>Brown & Black people = 78.26% of all arrests from 2019-2022</li>
@@ -131,7 +131,7 @@ export default function Data(props: any) {
 <br></br>
 <center> 
 <div>
-  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Council Districts</b></h3>
+  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Council Districts</b></h3>
 </div>
 </center>
 <div className="image-container">
@@ -146,10 +146,10 @@ export default function Data(props: any) {
 </div>
 <br />
 <center> 
-<div>
+<div className='mobile-left-align'>
   <strong>
 
-    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
+    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
     For almost every year, Council District 14 leads all other districts for the total number of arrests. In 2021, 
     <br></br>
     it came in second to Council District 8 by a difference of only three arrests.
@@ -162,7 +162,7 @@ export default function Data(props: any) {
 <br />
 <center> 
 <div>
-  <h3 className='dark:text-white' style={{ fontFamily: "Helvetica" }}><b>Arrest Type</b></h3>
+  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Arrest Type</b></h3>
 </div>
 </center>
 <center>
@@ -178,9 +178,9 @@ export default function Data(props: any) {
   </center>
 <br></br>
 <center> 
-<div>
+<div className='mobile-left-align'>
   <strong>
-    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     The LAPD arrest types fall into five categories identified by the LAPD: <br></br>(1) felony, (2)
      misdemeanor, (3) infractions, (4) dependent, and (5) other. 
 </span>
@@ -189,9 +189,9 @@ export default function Data(props: any) {
 </center>
 <br></br>
 <center> 
-<div>
+<div className='mobile-left-align'>
    
-    <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
+    <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
  
 Under California law, a felony is a crime that is punishable with death, by imprisonment in the  <br></br>
 state prison, or . . . by imprisonment in a county jail under [certain provisions]. <br></br>Every other crime or public offense is a misdemeanor except those offenses 
