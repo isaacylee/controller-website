@@ -35,14 +35,10 @@ export default function Data(props: any) {
           <h2 className='pt-8 pb-4 dark:text-white'>LAPD Arrest Maps & Analysis (2019-22)
  </h2>
 
- {/* <center>
-<a href="https://arrests.lacontroller.io/" target="_blank" rel="noopener noreferrer">
-  <img src="/images/arrests/lapdarrests timelapse GIF.GIF" width="400" height="600" 
-  alt="An animated gif of the map, showing each year, 2019 through 2022. Arrests appear to decrease significantly between 2019 and 2020, and then further decrease slightly each year over the following years." />  
-  </a> 
-</center> */}
-<div style={{ display: "flex", alignItems: "center" }}>
+ 
+<div className="image-container" style={{ display: "flex", alignItems: "center" }}>
   <img
+  
     src="/images/arrests/lapdarrests timelapse GIF.GIF"
     alt="An animated gif of the map, showing each year, 2019 through 2022. Arrests appear to decrease significantly between 2019 and 2020, and then further decrease slightly each year over the following years."
     width="400"
@@ -159,12 +155,7 @@ export default function Data(props: any) {
 </div>
 </center>
 <br />
-{/* <center> 
-<div>
-  <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>The drop in arrests followed the 2018 court ruling in the case<br></br>
-    Martin v. Boise, barring cities from enforcing anti-camping laws without offering adequate shelter.</span>
-</div>
-</center> */}
+ 
 <br />
 <center> 
 <div>
