@@ -6,6 +6,8 @@ import { data } from '@/data.json';
 
 import Navbar from '@/components/Navbar';
 
+
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -17,6 +19,8 @@ import Navbar from '@/components/Navbar';
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
+
+
 
 const kirbybutton =
   'w-content rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black';
@@ -110,7 +114,7 @@ export default function Data(props: any) {
  
 <center> 
 <div>
-  <strong>
+  
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
       <p className='mobile-left-align'>As the map highlights, Brown and Black people are arrested at a disproportionate rate,<br></br>making up an average of
          78.26% of all arrests over the past four years (2019-2022) <br></br>despite being only 56% of the LA County population 
@@ -124,7 +128,7 @@ export default function Data(props: any) {
       <li>Brown & Black people = 56% of the LA County population (per 2020 Census data)</li>
       </ul> 
 </span>
-  </strong> 
+  
 </div>
  
 </center>
@@ -147,14 +151,14 @@ export default function Data(props: any) {
 <br />
 <center> 
 <div className='mobile-left-align'>
-  <strong>
+ 
 
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
     For almost every year, Council District 14 leads all other districts for the total number of arrests. In 2021, 
     <br></br>
     it came in second to Council District 8 by a difference of only three arrests.
 </span>
-  </strong>
+ 
 </div>
 </center>
 <br />
@@ -179,18 +183,18 @@ export default function Data(props: any) {
 <br></br>
 <center> 
 <div className='mobile-left-align'>
-  <strong>
+ 
     <span className='dark:text-white' style={{ fontFamily: "Helvetica" }}>
     The LAPD arrest types fall into five categories identified by the LAPD: <br></br>(1) felony, (2)
      misdemeanor, (3) infractions, (4) dependent, and (5) other. 
 </span>
-  </strong>
+ 
 </div>
 </center>
 <br></br>
 <center> 
 <div>
-  <strong>
+  
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
       <p className='mobile-left-align'>Under California law, a felony is a crime that is punishable with death, by imprisonment in the 
 state prison, <br></br>or . . . by imprisonment in a county jail under [certain provisions]. Every other crime or public offense is a  misdemeanor except those offenses 
@@ -206,7 +210,7 @@ infractions carry varying degrees of financial and incarceration consequences.
          </p> */}
  
 </span>
-  </strong> 
+ 
 </div>
  
 </center>
@@ -241,7 +245,7 @@ infractions carry varying degrees of financial and incarceration consequences.
 <br></br>
 <center> 
 <div>
-  <strong>
+ 
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
  
 
@@ -277,7 +281,7 @@ but raises questions about the frequency that children and youth are coming into
       </ul> 
  
 </span>
-  </strong>
+ 
 </div>
 </center>
  
