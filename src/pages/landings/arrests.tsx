@@ -39,6 +39,29 @@ export default function Data(props: any) {
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h2 className='pt-8 pb-4 dark:text-white mobile-left-align'>LAPD Arrest Maps & Analysis (2019-22)
  </h2>
+ <a
+    href="#spanish_translation"
+    style={{
+      backgroundColor: "#41ffca",
+      borderRadius: "8px",
+      border: "2px solid #000000",
+      color: "#000000",
+      // display: "block",
+      fontFamily: "Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      fontSize: "18px",
+      fontWeight: "normal",
+      fontStyle: "normal",
+      padding: "10px 20px", /* Updated padding values */
+      textDecoration: "none",
+      minWidth: "20px",
+      textAlign: "center",
+      direction: "ltr",
+      letterSpacing: "0px",
+      width: "150px" /* Custom width for the button */
+    }}
+  >
+    Traducción en Español
+  </a>
 
  
 <div className="image-container mobile-left-align" style={{ display: "flex", alignItems: "center" }}>
@@ -53,12 +76,12 @@ export default function Data(props: any) {
   <div style={{ flex: "1" }}>
     <p className="dark:text-white mobile-left-align" style={{ fontFamily: "Helvetica" }}>
       This map shows locations and details of the nearly 300,000 arrests the Los Angeles Police Department
-      made between 2019 and 2022. <br />
+      made between 2019 and 2022. <br /><br />
       Users can navigate the map and filter by race, Council District,
       LAPD Division, and arrest type.
       <br />
       <br />
-      The data was obtained from the Los Angeles Police Department, but marks the <br />
+      The data was obtained from the Los Angeles Police Department, but marks the 
       first time the data has been made accessible and mapped for the public without limitations.
     </p>
     <br></br>
@@ -121,7 +144,7 @@ export default function Data(props: any) {
       <p className='mobile-left-align'>As the map highlights, Brown and Black people are arrested at a disproportionate rate,<br></br>making up an average of
          78.26% of all arrests over the past four years (2019-2022) <br></br>despite being only 56% of the LA City population 
          according to 2020 Census data. </p>
-         <br></br>
+        
     <ul className='mobile-left-align'>
       {/* <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li> */}
       <br></br>
@@ -214,7 +237,7 @@ that are classified as infractions. <br></br>Misdemeanors and
 infractions carry varying degrees of financial and incarceration consequences.
 
           </p>
- <br></br>
+ 
          {/* <p className='mobile-left-align'>
          Every other crime or public offense is a misdemeanor except those offenses 
 that are classified as infractions. <br></br>Misdemeanors and
@@ -241,7 +264,7 @@ infractions carry varying degrees of financial and incarceration consequences.
  
 </div>
 </center> */}
-<br></br>
+ 
 <br></br>
 <center> 
 <div>
@@ -300,6 +323,7 @@ but raises questions about the frequency that children and youth are coming into
 <br></br>
 <hr></hr>
 
+<div id='spanish_translation'> 
 <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <h2 className='pt-8 pb-4 dark:text-white mobile-left-align'>Mapas y Análisis de Arrestos de LAPD (2019-2022) 
 
@@ -363,7 +387,7 @@ Abrir el Mapa
  <br></br>
 <center> 
 <div>
-  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Resumen y Analisis</b></h3>
+  <h3 className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}><b>Resumen y Análisis</b></h3>
 </div>
 </center>
 <br></br>
@@ -387,7 +411,7 @@ Abrir el Mapa
      <br></br> a pesar de ser solo 56% de la población de la ciudad de Los Ángeles, segun los datos del Censo de 2020.
 
          </p>
-         <br></br>
+         
     <ul className='mobile-left-align'>
       {/* <li>Brown and Black people are arrested at a disproportionate rate relative to the overall population  </li> */}
       <br></br>
@@ -484,7 +508,7 @@ Abrir el Mapa
 
 
           </p>
- <br></br>
+ 
          {/* <p className='mobile-left-align'>
          Every other crime or public offense is a misdemeanor except those offenses 
 that are classified as infractions. <br></br>Misdemeanors and
@@ -512,7 +536,7 @@ infractions carry varying degrees of financial and incarceration consequences.
 </div>
 </center> */}
 <br></br>
-<br></br>
+ 
 <center> 
 <div>
  
@@ -568,6 +592,7 @@ la frecuencia con la que los niños y jóvenes entran en contacto con el Departa
  
 </div>
 </center>
+</div>
     </>
   );
 }
