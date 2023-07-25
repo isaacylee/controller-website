@@ -37,31 +37,40 @@ export default function Data(props: any) {
        
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h2 className='pt-8 pb-4 dark:text-white mobile-left-align'>LAPD Arrest Maps & Analysis (2019-22)
- </h2>
- <a
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <h2
+    className='pt-8 pb-4 dark:text-white mobile-left-align'
+    style={{ flex: '1' }}
+  >
+    LAPD Arrest Maps & Analysis <span style={{ marginLeft: '5px' }}>(2019-22)</span>
+  </h2>
+  <a
     href="#spanish_translation"
     style={{
-      backgroundColor: "#41ffca",
-      borderRadius: "8px",
-      border: "2px solid #000000",
-      color: "#000000",
-      // display: "block",
+      backgroundColor: '#41ffca',
+      borderRadius: '8px',
+      border: '2px solid #000000',
+      color: '#000000',
       fontFamily: "Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif",
-      fontSize: "18px",
-      fontWeight: "normal",
-      fontStyle: "normal",
-      padding: "10px 20px", /* Updated padding values */
-      textDecoration: "none",
-      minWidth: "20px",
-      textAlign: "center",
-      direction: "ltr",
-      letterSpacing: "0px",
-      width: "150px" /* Custom width for the button */
+      fontSize: '18px',
+      fontWeight: 'normal',
+      fontStyle: 'normal',
+      padding: '10px 10px',
+      textDecoration: 'none',
+      minWidth: '20px',
+      textAlign: 'center',
+      direction: 'ltr',
+      letterSpacing: '0px',
+      width: '150px',
     }}
   >
     Traducción en Español
   </a>
+</div>
+<br></br>
+
+
+
 
  
 <div className="image-container mobile-left-align" style={{ display: "flex", alignItems: "center" }}>
