@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
@@ -522,8 +523,8 @@ infractions carry varying degrees of financial and incarceration consequences.
 </div>
       <p className='dark:text-white mobile-left-align' style={{fontFamily: "Helvetica"}}> <br></br>
       Según los datos de LAPD, realizan más de 400 arrestos cada año en la categoría de “dependientes”.  <br></br>
-      Esta categoría incluye niños detenidos porque sus padres o guardián han sido acusados ​​de abuso,<br></br>
-      negligencia o peligro, así como niños que se consideran fugitivos o fuera del control de los padres.
+      Esta categoría incluye niños detenidos porque sus padres o guardián han sido acusados<br></br>
+    ​de abuso, negligencia o peligro, así como niños que se consideran fugitivos o fuera del control de los padres.
 
 
 </p>
