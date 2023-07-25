@@ -118,7 +118,7 @@ export default function Data(props: any) {
   
     <span className='dark:text-white mobile-left-align' style={{ fontFamily: "Helvetica" }}>
       <p className='mobile-left-align'>As the map highlights, Brown and Black people are arrested at a disproportionate rate,<br></br>making up an average of
-         78.26% of all arrests over the past four years (2019-2022) <br></br>despite being only 56% of the LA County population 
+         78.26% of all arrests over the past four years (2019-2022) <br></br>despite being only 56% of the LA City population 
          according to 2020 Census data. </p>
          <br></br>
     <ul className='mobile-left-align'>
@@ -126,7 +126,7 @@ export default function Data(props: any) {
       <br></br>
       <li>Brown & Black people = 78.26% of all arrests from 2019-2022</li>
      
-      <li>Brown & Black people = 56% of the LA County population (per 2020 Census data)</li>
+      <li>Brown & Black people = 56% of the LA City population (per 2020 Census data)</li>
       </ul> 
 </span>
   
