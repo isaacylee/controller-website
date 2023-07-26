@@ -162,6 +162,17 @@ export default function Data(props: any) {
       <li>Brown & Black people = 56% of the LA City population (per 2020 Census data)</li>
       </ul> 
 </span>
+
+<div className="image-container">
+  <img src="/images/arrests/lapdarrests-race-2019.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2019. There are 15 Council Districts. Council District 14 has a much higher number of arrests than any other district, with around 14,000 arrests. There are several other Council Districts with around 7,000 to 9,000 arrests (CDs 1, 6, 8, 9, 13), The rest of the Council Districts have fewer than around 5,000 to 6,000 arrests. CDs 5 and 12 in particular have the fewest number of arrests, at around 2,500 arrests each. Source of data is LAPD." />
+  <img src="/images/arrests/lapdarrests-race-2020.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2020. There are fewer arrests overall compared to 2019. There are 15 Council Districts. Council District 14 has the highest number of arrests, at around 7,500 arrests,  but is also fairly close in number of arrests to districts 8 and 9, which are around 6,000 arrests.  CDs 1, 6, 10, 11, and 13 each have around 5,000 arrests. The rest of the Council Districts have much fewer than 5,000  arrests. CDs 5 and 12 have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD." />
+
+</div>
+
+<div className="image-container">
+<img src="/images/arrests/lapdarrests-race-2021.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2021. There are still fewer arrests overall compared to 2019. There are 15 Council Districts. Council Districts  8 and 14 have the highest number of arrests, at around 6,000  arrests,  and are also fairly close in number of arrests to districts 9, and 11 which are also close to 6,000 arrests.  CDs 1, 6, and 13 each have around 5,000 arrests. The rest of the Council Districts havemuch fewer than 5,000  arrests. CDs 5 and 12 again have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD." />
+  <img src="/images/arrests/lapdarrests-race-2022.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2022. There are still fewer arrests overall compared to 2019. There are 15 Council Districts. Council Districts 14, 8, and 1 have the highest number of arrests, at around 5,000 to 6,000  arrests,  and are also fairly close in number of arrests to districts 6, 9,  11, and 13 which are also close to 5,000 arrests. The rest of the Council Districts havemuch fewer than 5,000  arrests. CDs 4 and 5 have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD. " />
+</div>
   
 </div>
  
@@ -429,8 +440,21 @@ Abrir el Mapa
       <li>Gente morena y negra o afrodescendiente = 56% de la población de la ciudad de Los Ángeles (según datos del Censo de 2020)</li>
       </ul> 
 </span>
+
+<div className="image-container">
+  <img src="/images/arrests/spanish/Sp-lapdarrests-race-2019.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2019. There are 15 Council Districts. Council District 14 has a much higher number of arrests than any other district, with around 14,000 arrests. There are several other Council Districts with around 7,000 to 9,000 arrests (CDs 1, 6, 8, 9, 13), The rest of the Council Districts have fewer than around 5,000 to 6,000 arrests. CDs 5 and 12 in particular have the fewest number of arrests, at around 2,500 arrests each. Source of data is LAPD." />
+  <img src="/images/arrests/spanish/Sp-lapdarrests-race-2020.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2020. There are fewer arrests overall compared to 2019. There are 15 Council Districts. Council District 14 has the highest number of arrests, at around 7,500 arrests,  but is also fairly close in number of arrests to districts 8 and 9, which are around 6,000 arrests.  CDs 1, 6, 10, 11, and 13 each have around 5,000 arrests. The rest of the Council Districts have much fewer than 5,000  arrests. CDs 5 and 12 have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD." />
+
+</div>
+
+<div className="image-container">
+<img src="/images/arrests/spanish/Sp-lapdarrests-race-2021.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2021. There are still fewer arrests overall compared to 2019. There are 15 Council Districts. Council Districts  8 and 14 have the highest number of arrests, at around 6,000  arrests,  and are also fairly close in number of arrests to districts 9, and 11 which are also close to 6,000 arrests.  CDs 1, 6, and 13 each have around 5,000 arrests. The rest of the Council Districts havemuch fewer than 5,000  arrests. CDs 5 and 12 again have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD." />
+  <img src="/images/arrests/spanish/Sp-lapdarrests-race-2022.png" width="400" height="600" alt="A bar chart of LAPD Arrests by Council District, 2022. There are still fewer arrests overall compared to 2019. There are 15 Council Districts. Council Districts 14, 8, and 1 have the highest number of arrests, at around 5,000 to 6,000  arrests,  and are also fairly close in number of arrests to districts 6, 9,  11, and 13 which are also close to 5,000 arrests. The rest of the Council Districts havemuch fewer than 5,000  arrests. CDs 4 and 5 have the fewest number of arrests, at under 2,500 arrests each. Source of data is LAPD. " />
+</div>
   
 </div>
+  
+{/* </div> */}
  
 </center>
 <br></br>
