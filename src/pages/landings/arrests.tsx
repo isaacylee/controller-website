@@ -94,6 +94,10 @@ export default function Data(props: any) {
       first time the data has been made accessible and mapped for the public without limitations.
     </p>
     <br></br>
+    <p className="dark:text-white mobile-left-align" style={{ fontFamily: "Helvetica" }}>
+    Arrests are triggered by allegations of criminal acts that may or may not have occurred.
+</p>
+    <br></br>
     <br></br>
     <center> 
     <a
@@ -370,6 +374,10 @@ but raises questions about the frequency that children and youth are coming into
       la primera vez que la información ha sido accesible y cartografiada para el público sin limitaciones.
 
     </p>
+    <br></br>
+    <p className="dark:text-white mobile-left-align" style={{ fontFamily: "Helvetica" }}>
+    Los arrestos son basados en denuncias de actos criminales que pueden o no haber ocurrido.
+</p>
     <br></br>
     <br></br>
     <center> 
