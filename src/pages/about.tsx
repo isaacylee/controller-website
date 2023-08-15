@@ -380,9 +380,10 @@ export default function About(props: any) {
                   <p className='text-xl'>Technology</p>
                   <ProfileCard
                     name='Vartan Arzumanyan'
-                    title='Technology Deputy'
+                    title='Director of Technology'
                     picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
                   />
+                 
                 </div>
               </div>
 
