@@ -12,35 +12,23 @@ export default function Evictions() {
             Eviction Notices (February - July 2023)
           </h2>
         </div>
-        <div className='dark:text-white' style={{fontFamily: 'Helvetica'}}>
-          <h3
-            className='mb-12'
-          >
+        <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
+          <h3 className='mb-12'>
             <b>Summary and Analysis</b>
           </h3>
         </div>
-        <div className='dark:text-white' style={{fontFamily: 'Helvetica'}}> 
-          <h4
-            className='mb-4'
-          >
+        <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
+          <h4 className='mb-4'>
             <b>Number of Eviction Notices</b>
           </h4>
         </div>
-        <div className='dark:text-white' style={{fontFamily: 'Helvetica'}}>
-          <p
-            className='mb-4'
-          >
+        <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
+          <p className='mb-4'>
             From the start of the filing requirement on 1/27/2023 to 7/31/2023,
             LAHD has received <b>39,766</b> eviction notices.
           </p>
-          <p
-            className='mb-3'
-          >
-            Of the 39,677 eviction notices:
-          </p>
-          <p
-            className='mb-10'
-          >
+          <p className='mb-3'>Of the 39,677 eviction notices:</p>
+          <p className='mb-10'>
             &bull; <b>39,631</b> were for at-fault evictions (96% were for
             non-payment of rent)
           </p>
@@ -122,9 +110,8 @@ export default function Evictions() {
           <h4 className='mb-4'>
             <b>Notice Types</b>
           </h4>
-          <p>
-            When served with an eviction, tenants are given a deadline to either
-          </p>
+          <p>When served with an eviction,</p>
+          <p>tenants are given a deadline to either</p>
           <p>
             pay rent owed or move out ("pay or quit") or to fix an issue or move
             out ("perform or quit").
