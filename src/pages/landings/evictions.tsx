@@ -111,10 +111,10 @@ export default function Evictions() {
             <b>Notice Types</b>
           </h4>
           <p>When served with an eviction,</p>
-          <p>tenants are given a deadline to either</p>
+          <p>tenants are given a deadline to either pay rent owed or</p>
           <p>
-            pay rent owed or move out ("pay or quit") or to fix an issue or move
-            out ("perform or quit").
+            move out ("pay or quit") or to fix an issue or move out ("perform or
+            quit").
           </p>
           <p>
             Other notices will only give a deadline to move out such as 30-day
