@@ -110,16 +110,18 @@ export default function Evictions() {
           <h4 className='mb-4'>
             <b>Notice Types</b>
           </h4>
-          <p>When served with an eviction,</p>
-          <p>tenants are given a deadline to either pay rent owed or</p>
-          <p>
-            move out ("pay or quit") or to fix an issue or move out ("perform or
-            quit").
-          </p>
-          <p>
-            Other notices will only give a deadline to move out such as 30-day
-            notices.
-          </p>
+          <div className='mb-4'>
+            <p>When served with an eviction,</p>
+            <p>tenants are given a deadline to either pay rent owed or</p>
+            <p>
+              move out ("pay or quit") or to fix an issue or move out ("perform
+              or quit").
+            </p>
+            <p>
+              Other notices will only give a deadline to move out such as 30-day
+              notices.
+            </p>
+          </div>
         </div>
         <div className='mb-16'>
           {' '}
