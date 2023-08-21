@@ -95,7 +95,7 @@ export default function Evictions() {
             </h4>
             <p className='mb-4'>
               In total, the amount of rent owed, as provided by the landlords
-              submitting the eviction notices totals <b>$155,741,112.88</b>
+              submitting the eviction notices totals <b>$155,143,853.49</b>
             </p>
           </div>
           <div className='mb-16'>
