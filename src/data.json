@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/evictionmap.png?alt=media&token=ac8415cd-302b-4066-8e8f-be843073e03b",
+      "name": "Eviction Notices Map & Analysis",
+      "year": "2023",
+       "dept": "Map",
+       "link": "https://evictions.lacontroller.io/"
+      },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapd-arrest-map.png?alt=media&token=c442083f-fb8f-4a6b-ba8d-0d6b6e91599c",
       "name": "LAPD Arrests Map & Analysis",
       "year": "2023",
