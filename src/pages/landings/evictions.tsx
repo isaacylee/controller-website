@@ -26,7 +26,7 @@ export default function Evictions() {
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <p className='mb-4'>
               From the start of the filing requirement on 1/27/2023 to
-              7/31/2023, LAHD has received <b>39,766</b> eviction notices.
+              7/31/2023, LAHD has received <b>39,677</b> eviction notices.
             </p>
             <p className='mb-3'>Of the 39,677 eviction notices:</p>
             <p className='mb-10'>
