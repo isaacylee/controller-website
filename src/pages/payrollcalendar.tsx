@@ -359,14 +359,30 @@ export default function PayrollCalendar(props: any) {
               </button>
             </Link>
           </div>
-          <p className='text-green-900 underline dark:text-mejito '>
-            <Link
-              href='/legacy-Payroll-Calendar-May2023.pdf'
-              className='font-semibold text-green-500 dark:text-mejito'
-            >
-              Print Old Version
-            </Link>
-          </p>
+          <div className='flex'>
+  <p className='text-green-900 underline dark:text-mejito '>
+    <Link
+      href='/legacy-Payroll-Calendar-May2023.pdf'
+      className='font-semibold text-green-500 dark:text-mejito'
+    >
+      Print Old Version
+    </Link>
+  </p>
+  
+  {/* Add margin to create space between the links */}
+  <div style={{ margin: '0 10px' }}></div>
+
+  <p className='text-green-900 underline dark:text-mejito '>
+    <Link
+      href='/Payroll_Calendar_2024.pdf'
+      className='font-semibold text-green-500 dark:text-mejito'
+    >
+      Payroll Calendar 2024
+    </Link>
+  </p>
+</div>
+
+
           <div>
             <div className='flex flex-row flex-wrap gap-x-4 gap-y-2'>
               <DatesLegendItem
