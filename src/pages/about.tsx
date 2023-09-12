@@ -211,17 +211,18 @@ export default function About(props: any) {
           {/* <div className='contentTimeline'> */}
 
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative md:py-2'>
-            Kenneth Mejia is the 20th City Controller, elected in November
-            2022 with 513,288 votes. Controller Mejia oversees a team of more than 160 employees
-            who conduct independent audits and investigations, manage the City’s accounting, payroll, and
-            spending, report on the City’s finances, and provide transparency on City operations, policies, metrics,
-            and data.            
+            Kenneth Mejia is the 20th City Controller, elected in November 2022
+            with 513,288 votes. Controller Mejia oversees a team of more than
+            160 employees who conduct independent audits and investigations,
+            manage the City’s accounting, payroll, and spending, report on the
+            City’s finances, and provide transparency on City operations,
+            policies, metrics, and data.
           </p>
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             The City Controller is the elected paymaster, auditor and chief
             accounting officer for the City of Los Angeles. Along with the Mayor
             and City Attorney, the Controller is one of three offices elected
-            every four years by citywide popular vote.            
+            every four years by citywide popular vote.
           </p>
 
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
@@ -241,12 +242,13 @@ export default function About(props: any) {
           </p>
           <p className='mb-3 font-light text-black dark:text-gray-100 md:relative'>
             The Executive Office supports the Controller with staff dedicated to
-            accountability and oversight, financial transparency, research, technology and innovation,
-            government affairs, communications, and community engagement. Management Services is
-            responsible for all aspects of personnel, departmental payroll,
-            budgeting, accounting and facility management for the Controller’s
-            office. Below is a closer look at Audit Services, Accounting
-            Operations, and Financial Reporting and Analysis.
+            accountability and oversight, financial transparency, research,
+            technology and innovation, government affairs, communications, and
+            community engagement. Management Services is responsible for all
+            aspects of personnel, departmental payroll, budgeting, accounting
+            and facility management for the Controller’s office. Below is a
+            closer look at Audit Services, Accounting Operations, and Financial
+            Reporting and Analysis.
           </p>
 
           {/* address */}
@@ -383,7 +385,11 @@ export default function About(props: any) {
                     title='Director of Technology'
                     picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
                   />
-                 
+                  <ProfileCard
+                    name='Naon Chun'
+                    title='Technology Deputy'
+                    picture='/images/staff/NaonChun-TechDeputy.jpg'
+                  />
                 </div>
               </div>
 
