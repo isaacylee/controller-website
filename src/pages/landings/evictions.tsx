@@ -30,10 +30,10 @@ export default function Evictions() {
               received updated data from the Los Angeles Housing Department
               (LAHD) through the month of August 2023 and the data reveals that
               from February to August 2023, LAHD has received a total of{' '}
-              <b>50,000</b>
-              eviction notices. <b>5,575</b> notices were filed for the month of
-              August and <b>4,748</b> are part of updated numbers for February
-              to July from eviction notices received via mail.
+              <b>50,000</b> eviction notices. <b>5,575</b> notices were filed
+              for the month of August and <b>4,748</b> are part of updated
+              numbers for February to July from eviction notices received via
+              mail.
             </p>
             <p className='mb-10'>
               &bull; 96.1% of evictions notices were for non-payment of rent.
