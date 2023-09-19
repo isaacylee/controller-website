@@ -43,8 +43,8 @@ export default function Evictions() {
             {' '}
             <img
               src='/images/evictions/notices-total-feb-aug.png'
-              width='500'
-              height='750'
+              width='600'
+              height='800'
               alt='Bar graph showing the Number of Eviction Notices filed with the City from February 2023 to July 2023. February 2023: 4952, March 2023: 7263, April 2023: 9858, May 2023: 9353, June 2023: 6975, July 2023: 5971, August 2023: 5575.'
             />
           </div>
@@ -135,8 +135,8 @@ export default function Evictions() {
             {' '}
             <img
               src='/images/evictions/fair-market-feb-aug.png'
-              width='400'
-              height='750'
+              width='500'
+              height='800'
               alt='Table shows the number of eviction notices filed with rent owed amounts that do not exceed the Fair Market Rent amounts.  The table has three columns.  First column is bedroom size of the unit. Second column is the Fair Market Rent (FMR) limit. The third column is the number of eviction notices issued for each grouping.  For Efficiency sized units with an FMR of $1,534, 822 eviction notices were issued.  For 1-bedroom units with an FMR of $1,747, 2,514 eviction notices were issued.  For 2-bedroom units with an FMR of $2,222, 2,070 eviction notices were issued.  For 3-bedroom units with an FMR of $2,888, 477 eviction notices were issued.  And for 4-bedroom units with an FMR of $3,170, 179 eviction notices were issued.  In total, 6,602 units received eviction notices where their rent owed was below the Fair Market Rent.'
             />
           </div>
@@ -157,8 +157,8 @@ export default function Evictions() {
             {' '}
             <img
               src='/images/evictions/notice-type-feb-aug.png'
-              width='400'
-              height='750'
+              width='500'
+              height='800'
               alt='Table shows the number of eviction notices by the type of notices issued and the percentage issued.  First column lists the Notice Type (number of days to “pay or quit” or “perform or quit” or days given to move out.  For 3 Day notices, 45,547 notices were issued and make up 91.09% of total notices issued. Second is 30 Day notices with 3,648 issued and make up 7.30% of all notices.  624 were issued for 10 Day notices (1.25%).  146 issued for 60-day notices (0.29%).  17 issued for 90-day notices (0.03%).  11 was issued for a 15-day notice (0.02%).  And 7 were issued for 120-day notices (0.01%).'
             />
           </div>
