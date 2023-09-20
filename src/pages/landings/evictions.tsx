@@ -146,7 +146,7 @@ export default function Evictions() {
             </h4>
             <div className='mb-4'>
               <p>
-                When served with an eviction, tenants are given a deadling to
+                When served with an eviction, tenants are given a deadline to
                 either pay rent owed or move out ("pay or quit") or to fix an
                 issue or move out ("perform or quit"). Other notices will only
                 give a deadline to move out such as 30-day notices.
