@@ -19,11 +19,6 @@ export default function Evictions() {
             </h3>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h4 className='mb-4'>
-              <b>Number of Eviction Notices</b>
-            </h4>
-          </div>
-          <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <p className='mb-4'>
               Last month, we said that there were nearly 40,000 eviction notices
               from February to July 2023 filed in the City of LA. We have
@@ -35,9 +30,17 @@ export default function Evictions() {
               numbers for February to July from eviction notices received via
               mail.
             </p>
-            <p className='mb-10'>
-              &bull; 96.1% of evictions notices were for non-payment of rent.
-            </p>
+            <ul className='mb-10'>
+              <li>&bull; <b>49,947 eviction notices were filed</b></li>
+              <li>&bull; <b>96.1% of evictions notices were for "non-payment of rent"</b></li>
+              <li>&bull; <b>91% came with a 3-day notice</b></li>
+              <li>&bull; <b>$186.5M accumulated rent owed</b></li>
+            </ul>
+          </div>
+          <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
+            <h4 className='mb-4'>
+              <b>Number of Eviction Notices</b>
+            </h4>
           </div>
           <div className='mb-16'>
             {' '}
@@ -149,7 +152,7 @@ export default function Evictions() {
                 When served with an eviction, tenants are given a deadline to
                 either pay rent owed or move out ("pay or quit") or to fix an
                 issue or move out ("perform or quit"). Other notices will only
-                give a deadline to move out such as 30-day notices.
+                give a deadline to move out (such as 30-day notices).
               </p>
             </div>
           </div>
