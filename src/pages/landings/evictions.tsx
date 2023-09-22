@@ -31,10 +31,19 @@ export default function Evictions() {
               mail.
             </p>
             <ul className='mb-10'>
-              <li>&bull; <b>49,947 eviction notices were filed</b></li>
-              <li>&bull; <b>96.1% of evictions notices were for "non-payment of rent"</b></li>
-              <li>&bull; <b>91% came with a 3-day notice</b></li>
-              <li>&bull; <b>$186.5M accumulated rent owed</b></li>
+              <li>
+                &bull; <b>49,947 eviction notices were filed</b>
+              </li>
+              <li>
+                &bull;{' '}
+                <b>96.1% of evictions notices were for "non-payment of rent"</b>
+              </li>
+              <li>
+                &bull; <b>91% came with a 3-day notice</b>
+              </li>
+              <li>
+                &bull; <b>$186.5M accumulated rent owed</b>
+              </li>
             </ul>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
@@ -169,38 +178,32 @@ export default function Evictions() {
             <h4 className='mb-4'>
               <b>Tenant Protection Deadlines</b>
             </h4>
-            <div className='mb-4'>
-              <p>
+            <ul>
+              <li className='mb-4'>
                 &bull; <b>August 1, 2023</b> – rent owed from March 1, 2020 to
                 August 31, 2020 is due. If the Declaration of COVID-19-Related
                 Financial Distress form was returned to the landlord within 15
                 days of rent being due, they cannot be evicted for nonpayment of
                 rent.
-              </p>
-            </div>
-            <div className='mb-4'>
-              <p>
+              </li>
+              <li className='mb-4'>
                 &bull; <b>February 1, 2024</b> – rent owed from October 1, 2021
                 to January 31, 2023 is due. If a tenant returned the Declaration
                 of COVID-19-Related Financial Distress form to the landlord
                 within 15 days of rent being due AND paid 25% of rent owed from
                 this period, they cannot be evicted for nonpayment of rent.
-              </p>
-            </div>
-            <div className='mb-4'>
-              <p>
+              </li>
+              <li className='mb-4'>
                 &bull; However, since <b>March 27, 2023</b>, landlords may not
                 evict a tenant who falls behind in rent unless the tenant owes
                 an amount higher than the <b>Fair Market Rent (FMR)</b>. The FMR
                 depends on the bedroom size of the rental unit.
-              </p>
-            </div>
-            <div className='mb-4'>
-              <p>
+              </li>
+              <li className='mb-4'>
                 &bull; If an eviction notice is not provided to LAHD, a tenant
                 may raise an affirmative defense in an Unlawful Detainer case.
-              </p>
-            </div>
+              </li>
+            </ul>
           </div>
         </center>
       </div>
