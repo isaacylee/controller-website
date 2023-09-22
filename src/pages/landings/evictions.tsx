@@ -32,7 +32,7 @@ export default function Evictions() {
             </p>
             <ul className='mb-10'>
               <li>
-                &bull; <b>49,947 eviction notices were filed</b>
+                &bull; <b>50,000 eviction notices were filed</b>
               </li>
               <li>
                 &bull;{' '}
