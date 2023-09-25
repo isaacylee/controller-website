@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import * as React from 'react';
 import TagManager from 'react-gtm-module';
@@ -131,6 +132,21 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeContext.Provider value={themeChanger}>
+       <Head>
+        {/* Google Analytics tracking code */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF7TCXWPKS"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DF7TCXWPKS');
+            `,
+          }}
+        />
+      </Head>
+
       <Component {...pageProps} />
     </ThemeContext.Provider>
   );
