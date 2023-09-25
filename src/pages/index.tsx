@@ -16,7 +16,7 @@ import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 import ImportantLinksSection from '@/components/ImportantLinksSection';
 import { SocialPageSeries } from '@/components/SocialPageSeries';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+ 
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -84,7 +84,7 @@ function BigCard(props: bigcardprops) {
 export default function HomePage(props: any) {
   return (
     <>
-    <GoogleAnalytics/>
+ 
       <Navbar />
       {/* <Translate /> */}
       <Layout>
