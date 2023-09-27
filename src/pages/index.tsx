@@ -10,13 +10,14 @@ import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
 import { audits } from '@/auditsindex.json';
+import { upcoming } from '@/upcoming.json';
 import { finance } from '@/financeindex.json';
 import { budget } from '@/budget.json';
 import Image from 'next/image';
 import OpenDataSeries from '@/components/opendataseries';
 import ImportantLinksSection from '@/components/ImportantLinksSection';
 import { SocialPageSeries } from '@/components/SocialPageSeries';
- 
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -81,61 +82,78 @@ function BigCard(props: bigcardprops) {
   );
 }
 
+function UpcomingBigCard(props: bigcardprops) {
+  return (
+    <div
+      key={props.key}
+      className={`mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-gray-800 dark:text-gray-100
+    ${props.key === 4 ? ' hidden md:block ' : ''}
+    ${props.key === 5 ? ' hidden lg:block ' : ''}`}
+    >
+      <a href={`${props.link}`}>
+        {/* <img src={props.image} className='w-full' alt={props.alt}></img> */}
+        <div className=' px-2 py-2  dark:text-gray-100'>
+          <p>
+            {props.year} | <span>{props.dept}</span>
+          </p>
+          <p className='font-semibold'>{props.name}</p>
+        </div>
+      </a>
+    </div>
+  );
+}
+
 export default function HomePage(props: any) {
   return (
     <>
- 
       <Navbar />
       {/* <Translate /> */}
       <Layout>
         {/* <Seo templateTitle='Home' /> */}
 
         <Seo />
-        
+
         <div className='bgColorHeader relative pt-4 text-base text-sm md:pt-12 md:text-white'>
-  <div className='background-1'>
-    <div className='pl-2-0 z-10 mx-auto text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
-      <div className='flex'>
-        <div className='w-full flex-col pt-2 md:pt-0'>
-          <div>
-            <h2>Kenneth Mejia, CPA</h2>
-            <h2>City Controller of Los Angeles</h2>
+          <div className='background-1'>
+            <div className='pl-2-0 z-10 mx-auto text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
+              <div className='flex'>
+                <div className='w-full flex-col pt-2 md:pt-0'>
+                  <div>
+                    <h2>Kenneth Mejia, CPA</h2>
+                    <h2>City Controller of Los Angeles</h2>
+                  </div>
+                  <SocialPageSeries />
+                  <div className='ml-auto mt-10 items-end '>
+                    <Image
+                      src='/images/killa-website2.png'
+                      alt='Portrait of Killa'
+                      className='w-full md:w-96 lg:w-[500px]'
+                      sizes='(max-width: 1023px) 100vw, 500px'
+                      priority={true}
+                      unoptimized={true}
+                      height={900}
+                      width={500}
+                    />
+                  </div>
+                </div>
+                <div className='flex w-full items-end md:w-1/2'>
+                  <div className='ml-auto'>
+                    <Image
+                      src='/images/ken-new-blob-big.png'
+                      alt='Portrait of Kenneth Mejia'
+                      className='md:w-100 w-full lg:w-[500px]'
+                      sizes='(max-width: 1023px) 100vw, 500px'
+                      priority={true}
+                      unoptimized={true}
+                      height={900}
+                      width={500}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <SocialPageSeries />
-          <div className='ml-auto mt-10 items-end '>
-  <Image
-    src='/images/killa-website2.png'
-    alt='Portrait of Killa'
-    className='w-full md:w-96 lg:w-[500px]'
-    sizes='(max-width: 1023px) 100vw, 500px'
-    priority={true}
-    unoptimized={true}
-    height={900}
-    width={500}
-  />
-</div>
-
         </div>
-        <div className='flex w-full items-end md:w-1/2'>
-          <div className='ml-auto'>
-            <Image
-              src='/images/ken-new-blob-big.png'
-              alt='Portrait of Kenneth Mejia'
-              className='md:w-100 w-full lg:w-[500px]'
-              sizes='(max-width: 1023px) 100vw, 500px'
-              priority={true}
-              unoptimized={true}
-              height={900}
-              width={500}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> 
-
-
 
         {/* <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
           <div className='background-1'>
@@ -233,6 +251,79 @@ export default function HomePage(props: any) {
             <div className='flex flex-row'>
               <Link href='/audits'>
                 <div className={`${kirbybutton}`}>All Audits & Reports</div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className='container mx-auto px-4  '>
+          <h2 className='frontpageh2section'> Upcoming Audits & Reports</h2>
+
+          <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
+            {upcoming.slice(0, 4).map((eachupcoming: any, key) => (
+              <UpcomingBigCard
+                key={key}
+                link={`${eachupcoming.link}`}
+                // image={eachupcoming.image}
+                year={eachupcoming.year}
+                dept={titleCase(eachupcoming.dept)}
+                name={eachupcoming.name}
+                alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
+                image=''
+              />
+            ))}
+            <div className='hidden lg:block'>
+              {upcoming.slice(4, 5).map((eachupcoming: any, key: number) => (
+                <UpcomingBigCard
+                  key={key}
+                  link={`${eachupcoming.link}`}
+                  // image={eachupcoming.image}
+                  year={eachupcoming.year}
+                  dept={titleCase(eachupcoming.dept)}
+                  name={eachupcoming.name}
+                  alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
+                  image=''
+                />
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className='rounded-lg  sm:hidden'>
+              {upcoming.slice(0, 5).map((eachupcoming: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={`${eachupcoming.link}`}
+                  image={eachupcoming.image}
+                  year={eachupcoming.year}
+                  dept={titleCase(eachupcoming.dept)}
+                  name={eachupcoming.name}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className='rounded-lg  md:hidden'>
+              {upcoming.slice(0, 6).map((eachupcoming: any, key: number) => (
+                <LineCard
+                  key={key}
+                  link={`${eachupcoming.pre === false ? '' : '/upcoming/'}${
+                    eachupcoming.link
+                  }`}
+                  // image={eachupcoming.image}
+                  year={eachupcoming.year}
+                  dept={titleCase(eachupcoming.dept)}
+                  name={eachupcoming.name}
+                />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-row'>
+              <Link href='/upcoming'>
+                <div className={`${kirbybutton}`}>
+                  All Upcoming Audits & Reports
+                </div>
               </Link>
             </div>
           </div>
@@ -388,10 +479,6 @@ export default function HomePage(props: any) {
             <ImportantLinksSection />
           </div>
         </div>
-
-
-     
-        
       </Layout>
     </>
   );
