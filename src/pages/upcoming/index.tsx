@@ -43,7 +43,7 @@ export default function Audits(props: any) {
               <LineItem
                 key={eachauditnum}
                 dept={eachaudit.dept}
-                link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                link={`${eachaudit.pre === false ? '' : '/upcoming/'}${
                   eachaudit.link
                 }`}
                 name={eachaudit.name}
@@ -59,10 +59,13 @@ export default function Audits(props: any) {
                   key={eachauditnum}
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
                 >
+                  {/* <a href={eachaudit.link}></a> */}
                   <a
-                    href={`${eachaudit.pre === false ? '' : '/audits/'}${
-                      eachaudit.link
-                    }`}
+                    href={
+                      eachaudit.pre === false
+                        ? eachaudit.link
+                        : `${eachaudit.link}`
+                    }
                   >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
