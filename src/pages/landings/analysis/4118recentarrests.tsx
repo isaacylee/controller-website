@@ -10,8 +10,8 @@ import TypePieChart from './charts/TypePieChart';
 
 const customStyles = {
   content: {
-    width: '50%', // Adjust the width as per your requirement, e.g., 50% for a smaller width
-    margin: 'auto', // Center the modal horizontally
+    width: '50%',
+    margin: 'auto',
     height: '40%',
     color: 'black',
   },
