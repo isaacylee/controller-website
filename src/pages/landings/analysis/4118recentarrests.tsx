@@ -4,20 +4,10 @@ import React, { useState } from 'react';
 import '@/app/globals.css';
 
 import BarChart from './charts/BarChart';
-import RaceBarChart from './charts/RaceBarChart';
-import TypePieChart from './charts/TypePieChart';
 import NumberOfArrests from './charts/NumberOfArrests';
-import Modal from 'react-modal';
+import RaceBarChart from './charts/RaceBarChart';
 import RacePieChart from './charts/RacePieChart';
-
-const customStyles = {
-  content: {
-    width: '50%', // Adjust the width as per your requirement, e.g., 50% for a smaller width
-    margin: 'auto', // Center the modal horizontally
-    height: '40%',
-    color: 'black',
-  },
-};
+import TypePieChart from './charts/TypePieChart';
 
 export default function Home() {
   const [loader, setLoader] = useState(false);
@@ -27,51 +17,6 @@ export default function Home() {
   const toggleChart = () => {
     setShowBarChart(!showBarChart);
   };
-
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const notesText = (
-    <>
-      <p>
-        This map and analysis show details of arrests under LA Municipal Code
-        41.18, which criminalizes sitting, lying, and sleeping, or placing
-        personal property in the public right-of-way in certain instances.
-      </p>
-      <br></br>
-      <p>
-        On{' '}
-        <u>
-          <b>
-            <a
-              href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              July 29, 2021
-            </a>
-          </b>
-        </u>
-        , the City of LA amended 41.18 in an attempt to comply with the 2018
-        Ninth Circuit Court of Appeals ruling in{' '}
-        <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span>, which
-        prohibits cities from enforcing anti-camping laws if they do not have
-        enough shelter beds for unhoused residents. Following the 2018{' '}
-        <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span> ruling and
-        prior to the City’s 2021 amendment, enforcement of 41.18 was
-        unconstitutional under the Eighth Amendment’s prohibition on cruel and
-        unusual punishment. The constitutionality of the current version of
-        41.18 is still disputed.
-      </p>
-
-      <br></br>
-      <p>
-        This map and analysis display 41.18 arrest data obtained from the Los
-        Angeles Police Department beginning on January 1, 2021, through
-        September 15, 2023, to encapsulate enforcement in the months leading up
-        to the July 29, 2021, 41.18 amendment and the most recent available
-        data.
-      </p>
-    </>
-  );
 
   return (
     <section className='flex min-h-screen flex-col p-10'>
@@ -101,37 +46,8 @@ export default function Home() {
               TABLE VERSION
             </button>
           </a>
-
-          {/* <button onClick={() => setModalIsOpen(true)} style={{ backgroundColor: '#41ffca', color: 'black', padding: '10px 20px', border: 'none', 
-  borderRadius: '4px', cursor: 'pointer'}}>
-    NOTES
-  </button> */}
         </div>
       </div>
-
-      {/* <Modal
-      isOpen={modalIsOpen}
-      onRequestClose={() => setModalIsOpen(false)}
-      style={customStyles}
-    >
- 
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <center><h2><b>Notes:</b></h2></center>
-
-        <button
-          onClick={() => setModalIsOpen(false)}
-          style={{
-            border: 'none',
-            background: 'none',
-            cursor: 'pointer',
-            fontSize: '20px',
-          }}
-        >
-          &times; {/* Display 'X' for close */}
-      {/* </button>
-      </div>
-      <p>{notesText}</p>
-    </Modal> */}
 
       <div id='overview' className='md:col-span-1'>
         <br></br>
