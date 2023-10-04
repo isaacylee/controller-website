@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
+import React, { useEffect, useState } from 'react';
+import { Bar } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
@@ -16,7 +16,7 @@ const Hbfs = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let currTheme = localStorage.getItem('theme');
+    const currTheme = localStorage.getItem('theme');
     if (currTheme !== null) setTheme(currTheme);
   }, [theme]);
 
@@ -26,7 +26,8 @@ const Hbfs = () => {
         const response = await fetch(
           'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/4118Ingest/numberOfArrestsPerYear'
         );
-        const data: { numberOfArrestsPerYear: ArrestData[] } = await response.json();
+        const data: { numberOfArrestsPerYear: ArrestData[] } =
+          await response.json();
 
         // Set the chart data
         setChartData(data.numberOfArrestsPerYear);
@@ -48,10 +49,9 @@ const Hbfs = () => {
 
   const chartOptions = {
     responsive: true, // Enable responsiveness
-    maintainAspectRatio : false,
+    maintainAspectRatio: false,
     scales: {
       x: {
-       
         title: {
           display: true,
           text: 'Year',
@@ -64,11 +64,11 @@ const Hbfs = () => {
       y: {
         beginAtZero: true,
         grid: {
-            color: theme === 'dark' ? '#555' : '#ddd',
-          },
-          
+          color: theme === 'dark' ? '#555' : '#ddd',
+        },
+
         title: {
-            text: '# of Arrests',
+          text: '# of Arrests',
           display: true,
           color: 'white', // Y-axis label color
         },
@@ -85,10 +85,6 @@ const Hbfs = () => {
       },
     },
   };
-  
-  
-  
-  
 
   const data = {
     labels: chartLabels,
@@ -96,8 +92,8 @@ const Hbfs = () => {
       {
         label: 'Arrests',
         data: chartValues,
-        backgroundColor:  '#41ffca', // Bar color
-    
+        backgroundColor: '#41ffca', // Bar color
+
         borderColor: 'rgba(65, 255, 202, 0.8)',
         borderWidth: 1,
       },
@@ -105,10 +101,9 @@ const Hbfs = () => {
   };
 
   return (
-    <div className="chart-container">
+    <div className='chart-container'>
       <Bar data={data} options={chartOptions} />
-      </div>
- 
+    </div>
   );
 };
 

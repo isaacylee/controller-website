@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Pie } from 'react-chartjs-2'; // Import Pie chart
 import { Chart, registerables } from 'chart.js';
+import React, { useEffect, useState } from 'react';
+import { Pie } from 'react-chartjs-2'; // Import Pie chart
 
 Chart.register(...registerables);
 
@@ -12,7 +12,7 @@ const Hbfs = () => {
   const [selectedYear, setSelectedYear] = useState<string>('2023'); // Start with 2021
 
   useEffect(() => {
-    let currTheme: string | null = localStorage.getItem('theme');
+    const currTheme: string | null = localStorage.getItem('theme');
     if (currTheme != null) setTheme(currTheme);
   }, [theme]);
 
@@ -37,7 +37,8 @@ const Hbfs = () => {
   }
 
   const selectedData = chartData.type.filter(
-    (item) => selectedYear === 'All Years' || item.year === parseInt(selectedYear)
+    (item) =>
+      selectedYear === 'All Years' || item.year === parseInt(selectedYear)
   );
 
   const pieChartData = {
@@ -53,8 +54,8 @@ const Hbfs = () => {
 
   const chartOptions = {
     responsive: true, // Enable responsiveness
-    maintainAspectRatio : false,
- 
+    maintainAspectRatio: false,
+
     plugins: {
       legend: {
         display: true,
@@ -67,20 +68,20 @@ const Hbfs = () => {
 
   return (
     <div style={{ width: '100%', height: '500px' }}>
-      <label htmlFor="yearDropdown">Select Year: </label>
+      <label htmlFor='yearDropdown'>Select Year: </label>
       <select
-        id="yearDropdown"
+        id='yearDropdown'
         onChange={(e) => setSelectedYear(e.target.value)}
         value={selectedYear}
         style={{ color: 'black', overflow: 'hidden' }}
       >
-        <option value="2021">2021</option>  
-        <option value="2022">2022</option>  
-        <option value="2023">2023</option>  
+        <option value='2021'>2021</option>
+        <option value='2022'>2022</option>
+        <option value='2023'>2023</option>
       </select>
-      <div className="chart-container">
-      <Pie data={pieChartData} options={chartOptions} />
- </div>
+      <div className='chart-container'>
+        <Pie data={pieChartData} options={chartOptions} />
+      </div>
     </div>
   );
 };

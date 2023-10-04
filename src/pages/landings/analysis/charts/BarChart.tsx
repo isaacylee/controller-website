@@ -1,21 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
+import React, { useEffect, useState } from 'react';
+import { Bar } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
 const Hbfs = () => {
   const [chartDatas, setChartData] = useState<{
     councilDistrict: {
-      homelessCount: any; year: number; cd: number; arrests: number 
-}[];
+      homelessCount: any;
+      year: number;
+      cd: number;
+      arrests: number;
+    }[];
   } | null>(null);
   const [theme, setTheme] = useState<string>('light');
   const [selectedYear, setSelectedYear] = useState<string>('2023'); // Start from 2023
   const [selectedType, setSelectedType] = useState('arrests'); // Default value: arrests
 
   useEffect(() => {
-    let currTheme: string | null = localStorage.getItem('theme');
+    const currTheme: string | null = localStorage.getItem('theme');
     if (currTheme != null) setTheme(currTheme);
   }, [theme]);
 
@@ -50,12 +53,20 @@ const Hbfs = () => {
   );
 
   const fundingSources = chartDatas.councilDistrict
-    .filter((item) => selectedYear === 'All Years' || item.year === parseInt(selectedYear))
+    .filter(
+      (item) =>
+        selectedYear === 'All Years' || item.year === parseInt(selectedYear)
+    )
     .map((item) => item.cd);
 
   const amounts = chartDatas.councilDistrict
-    .filter((item) => selectedYear === 'All Years' || item.year === parseInt(selectedYear))
-    .map((item) => (selectedType === 'arrests' ? item.arrests : item.homelessCount));
+    .filter(
+      (item) =>
+        selectedYear === 'All Years' || item.year === parseInt(selectedYear)
+    )
+    .map((item) =>
+      selectedType === 'arrests' ? item.arrests : item.homelessCount
+    );
 
   const chartData = {
     labels: fundingSources,
@@ -120,7 +131,9 @@ const Hbfs = () => {
             if (window.innerWidth <= 768) {
               maxWidth = 20;
             }
-            return typeof value === 'number' ? ` ${value || ''}`.toString() : '';
+            return typeof value === 'number'
+              ? ` ${value || ''}`.toString()
+              : '';
           },
         },
       },
@@ -130,9 +143,9 @@ const Hbfs = () => {
   return (
     <div style={{ width: '100%', height: '500px' }}>
       <div style={{ display: 'inline-block', marginRight: '20px' }}>
-        <label htmlFor="yearDropdown">Year: </label>
+        <label htmlFor='yearDropdown'>Year: </label>
         <select
-          id="yearDropdown"
+          id='yearDropdown'
           onChange={(e) => setSelectedYear(e.target.value)}
           value={selectedYear}
           style={{ color: 'black', overflow: 'hidden' }}
@@ -145,23 +158,22 @@ const Hbfs = () => {
         </select>
       </div>
       <div style={{ display: 'inline-block' }}>
-        <label htmlFor="typeDropdown">Type: </label>
+        <label htmlFor='typeDropdown'>Type: </label>
         <select
-          id="typeDropdown"
+          id='typeDropdown'
           onChange={(e) => setSelectedType(e.target.value)}
           value={selectedType}
           style={{ color: 'black', overflow: 'hidden' }}
         >
-          <option value="arrests">Arrests</option>
-          <option value="homeless">Homeless Count</option>
+          <option value='arrests'>Arrests</option>
+          <option value='homeless'>Homeless Count</option>
         </select>
       </div>
-      <div className="chart-container">
+      <div className='chart-container'>
         <Bar data={chartData} options={chartOptions as any} />
       </div>
     </div>
   );
-          }
-            
+};
 
 export default Hbfs;

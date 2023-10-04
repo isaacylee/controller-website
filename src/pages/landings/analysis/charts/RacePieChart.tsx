@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Pie } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
+import React, { useEffect, useState } from 'react';
+import { Pie } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
@@ -12,7 +12,7 @@ const Hbfs = () => {
   const [selectedYear, setSelectedYear] = useState<string>('2023');
 
   useEffect(() => {
-    let currTheme: string | null = localStorage.getItem('theme');
+    const currTheme: string | null = localStorage.getItem('theme');
     if (currTheme != null) setTheme(currTheme);
   }, [theme]);
 
@@ -40,11 +40,16 @@ const Hbfs = () => {
     new Set(chartData.race.map((item) => item.year))
   ).filter((year) => year >= 2021);
 
-  const selectedData = chartData.race
-    .filter((item) => selectedYear === 'All Years' || item.year === parseInt(selectedYear));
+  const selectedData = chartData.race.filter(
+    (item) =>
+      selectedYear === 'All Years' || item.year === parseInt(selectedYear)
+  );
 
   // Calculate the total number of arrests for the selected data
-  const totalArrests = selectedData.reduce((acc, item) => acc + item.arrests, 0);
+  const totalArrests = selectedData.reduce(
+    (acc, item) => acc + item.arrests,
+    0
+  );
 
   // Calculate percentages and use them as data for the Pie chart
   const chartDataForYear = {
@@ -81,7 +86,7 @@ const Hbfs = () => {
       },
       tooltip: {
         callbacks: {
-          label: (context: { label: string; parsed: number; }) => {
+          label: (context: { label: string; parsed: number }) => {
             const label = context.label || '';
             const value = context.parsed || 0;
             return `${label}: ${value.toFixed(2)}%`;
@@ -93,9 +98,9 @@ const Hbfs = () => {
 
   return (
     <div style={{ width: '100%', height: '500px' }}>
-      <label htmlFor="yearDropdown">Select Year: </label>
+      <label htmlFor='yearDropdown'>Select Year: </label>
       <select
-        id="yearDropdown"
+        id='yearDropdown'
         onChange={(e) => setSelectedYear(e.target.value)}
         value={selectedYear}
         style={{ color: 'black', overflow: 'hidden' }}
