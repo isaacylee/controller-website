@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
+import React, { useEffect, useState } from 'react';
+import { Bar } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
@@ -12,7 +12,7 @@ const Hbfs = () => {
   const [selectedYear, setSelectedYear] = useState<string>('2023'); // Initialize with the year 2021
 
   useEffect(() => {
-    let currTheme: string | null = localStorage.getItem('theme');
+    const currTheme: string | null = localStorage.getItem('theme');
     console.log('currTheme', currTheme);
     if (currTheme != null) setTheme(currTheme);
   }, [theme]);
@@ -44,11 +44,17 @@ const Hbfs = () => {
   ).filter((year) => year >= 2021); // Filter years starting from 2021
 
   const fundingSources = chartDatas.race
-    .filter((item) => selectedYear === 'All Years' || item.year === parseInt(selectedYear))
+    .filter(
+      (item) =>
+        selectedYear === 'All Years' || item.year === parseInt(selectedYear)
+    )
     .map((item) => item.race);
 
   const amounts = chartDatas.race
-    .filter((item) => selectedYear === 'All Years' || item.year === parseInt(selectedYear))
+    .filter(
+      (item) =>
+        selectedYear === 'All Years' || item.year === parseInt(selectedYear)
+    )
     .map((item) => item.arrests);
 
   const chartData = {
@@ -65,7 +71,7 @@ const Hbfs = () => {
 
   const chartOptions = {
     responsive: true, // Enable responsiveness
-    maintainAspectRatio : false,
+    maintainAspectRatio: false,
     indexAxis: 'x',
     plugins: {
       legend: {
@@ -74,7 +80,6 @@ const Hbfs = () => {
     },
     scales: {
       x: {
-     
         title: {
           display: true,
           text: 'Race',
@@ -121,15 +126,12 @@ const Hbfs = () => {
       },
     },
   };
-  
-  
-  
 
   return (
     <div style={{ width: '100%', height: '500px' }}>
-      <label htmlFor="yearDropdown">Select Year: </label>
+      <label htmlFor='yearDropdown'>Select Year: </label>
       <select
-        id="yearDropdown"
+        id='yearDropdown'
         onChange={(e) => setSelectedYear(e.target.value)}
         value={selectedYear} // Use the selectedYear state directly
         style={{ color: 'black', overflow: 'hidden' }}
@@ -142,12 +144,9 @@ const Hbfs = () => {
       </select>
       {/* <div className="chart-container"> */}
       <Bar data={chartData} options={chartOptions as any} />
-     {/* </div> */}
+      {/* </div> */}
     </div>
   );
-
-        }
-
-  
+};
 
 export default Hbfs;
