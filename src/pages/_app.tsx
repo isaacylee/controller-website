@@ -7,9 +7,9 @@ import TagManager from 'react-gtm-module';
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+import '@/styles/main.css';
 
 import { ThemeContext } from './../themeManager';
-
 /**
  * !STARTERCONF info
  * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
@@ -18,7 +18,6 @@ import { ThemeContext } from './../themeManager';
 const tagManagerArgs = {
   gtmId: 'G-DF7TCXWPKS',
 };
-
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -132,9 +131,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeContext.Provider value={themeChanger}>
-       <Head>
+      <Head>
         {/* Google Analytics tracking code */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF7TCXWPKS"></script>
+        <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-DF7TCXWPKS'
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
