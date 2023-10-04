@@ -6,11 +6,10 @@ import NumberOfArrests from './charts/NumberOfArrests';
 import RaceBarChart from './charts/RaceBarChart';
 import RacePieChart from './charts/RacePieChart';
 import TypePieChart from './charts/TypePieChart';
-
 export default function Home() {
   const [loader, setLoader] = useState(false);
   const [intakeData, setIntake] = useState({});
-  //test
+
   const [showBarChart, setShowBarChart] = useState(true);
   const toggleChart = () => {
     setShowBarChart(!showBarChart);
@@ -81,7 +80,6 @@ export default function Home() {
         </p>
 
         <br></br>
-        <br></br>
         <p>
           This map and analysis display 41.18 arrest data obtained from the Los
           Angeles Police Department beginning on January 1, 2021, through
@@ -89,8 +87,6 @@ export default function Home() {
           up to the July 29, 2021, 41.18 amendment and the most recent available
           data.
         </p>
-
-        <br></br>
       </div>
 
       <div id='overview' className='md:col-span-1'>
@@ -177,6 +173,61 @@ export default function Home() {
         </div>
       </center>
 
+      <br></br>
+      <style>
+        {`
+      
+          @tailwind base;
+          @tailwind components;
+          @tailwind utilities;
+
+          :root {
+            background-color: black;
+            color: white;
+          }
+
+          @media (prefers-color-scheme: dark) {
+            :root {
+              --foreground-rgb: 255, 255, 255;
+              --background-start-rgb: 0, 0, 0;
+              --background-end-rgb: 0, 0, 0;
+            }
+          }
+
+          body {
+            color: rgb(var(--foreground-rgb));
+            background: linear-gradient(
+                to bottom,
+                transparent,
+                rgb(var(--background-end-rgb))
+              )
+              rgb(var(--background-start-rgb));
+          }
+
+    
+          .chart-container {
+            max-width: 900px;
+            height: 500px;
+            text-align: center;
+          }
+
+   
+          @media (max-width: 767px) {
+            .chart-container {
+       
+            }
+          }
+
+          @media (max-width: 600px) {
+            .chart-container {
+       
+              max-width: 100%;
+              height: auto;
+            }
+          }
+        `}
+      </style>
+      <br></br>
       <br></br>
     </section>
   );
