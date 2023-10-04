@@ -10,7 +10,7 @@ import TypePieChart from './charts/TypePieChart';
 export default function Home() {
   const [loader, setLoader] = useState(false);
   const [intakeData, setIntake] = useState({});
-
+  //test
   const [showBarChart, setShowBarChart] = useState(true);
   const toggleChart = () => {
     setShowBarChart(!showBarChart);
