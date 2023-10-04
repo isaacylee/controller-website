@@ -1,8 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 
-import '@/app/globals.css';
-
 import BarChart from './charts/BarChart';
 import NumberOfArrests from './charts/NumberOfArrests';
 import RaceBarChart from './charts/RaceBarChart';
