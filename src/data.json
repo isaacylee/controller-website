@@ -1,50 +1,57 @@
 {
   "data": [
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/4118arrestrecent.png?alt=media&token=ded4d6b9-9164-45b4-9ee4-f51f9b337c8a",
+      "name": "41.18 Arrest Map",
+      "year": "2023",
+      "dept": "Map",
+      "link": "https://4118recentarrests.lacontroller.io/"
+    },
 
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/deptvacancies_thumbnail.png?alt=media&token=c70b7a9b-c726-490a-90fa-be7c8ec5c869",
       "name": "City of LA Staffing Vacancies by Department",
       "year": "2023",
-       "dept": "Charts",
-       "link": "https://deptvacancies.lacontroller.io/"
-      },
-  
+      "dept": "Charts",
+      "link": "https://deptvacancies.lacontroller.io/"
+    },
+
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/ncreport.png?alt=media&token=18e2c5d3-6829-4ea0-a3df-27eb809406fa",
       "name": "Neighborhood Councils Expenditure Report",
       "year": "2023",
-       "dept": "Report",
-       "link": "https://ncspending.controller.lacity.gov/"
-      },
+      "dept": "Report",
+      "link": "https://ncspending.controller.lacity.gov/"
+    },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/eviction-notices.png?alt=media&token=4d0fae64-7d16-45b5-898d-4646cbc2b1d4",
       "name": "Eviction Notices Map & Analysis",
       "year": "2023",
-       "dept": "Map",
-       "link": "https://evictions.lacontroller.io/"
-      },
+      "dept": "Map",
+      "link": "https://evictions.lacontroller.io/"
+    },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapd-arrest-map.png?alt=media&token=c442083f-fb8f-4a6b-ba8d-0d6b6e91599c",
       "name": "LAPD Arrests Map & Analysis",
       "year": "2023",
-       "dept": "Map",
-       "link": "https://arrests.lacontroller.io/"
-      },
+      "dept": "Map",
+      "link": "https://arrests.lacontroller.io/"
+    },
 
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/4118-banner.png?alt=media&token=28ea786e-894a-4bd4-b9fb-c844e46d8baa",
       "name": "41.18 Arrests (Jan 2012 - May 2023)",
       "year": "2023",
-       "dept": "Map",
-       "link": "https://4118arrests.lacontroller.io/"
-      },
+      "dept": "Map",
+      "link": "https://4118arrests.lacontroller.io/"
+    },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/affordable-housing.png?alt=media&token=00fdaf96-e113-420c-8775-391a1918d618",
       "name": "Affordable Housing Covenants - 1985 to 2022",
       "year": "2023",
-       "dept": "Map",
-       "link": "https://housingcovenants.lacontroller.io/"
-      },
+      "dept": "Map",
+      "link": "https://housingcovenants.lacontroller.io/"
+    },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/trans_animal_banner.png?alt=media&token=1a098234-8b03-402b-b290-0ea9ac701424",
       "name": "LA Animal Services Transparency Charts",
@@ -67,8 +74,6 @@
       "dept": "Map",
       "link": "https://spayneuter.lacontroller.io/"
     },
- 
-   
 
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/unhoused.png?alt=media&token=bedc82ec-6232-47da-9731-1543bac5995d",
@@ -77,7 +82,7 @@
       "dept": "Map",
       "link": "https://unhouseddeaths.lacontroller.io/"
     },
-  
+
     {
       "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/11/Visualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg",
       "name": "Visualizing Nine Years of Audits, Reports and Data Stories",
