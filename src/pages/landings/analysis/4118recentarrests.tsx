@@ -69,7 +69,7 @@ export default function Home() {
     <p className="mb-4">
       This map and analysis show details of arrests under LA Municipal Code 41.18, which criminalizes sitting, lying, and sleeping, or placing personal property in the public right-of-way in certain instances.
     </p>
-    <br /><br />
+   
     <p className="mb-4">
       On{' '}
       <u>
@@ -87,7 +87,7 @@ export default function Home() {
       <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span>, which prohibits cities from enforcing anti-camping laws if they do not have enough shelter beds for unhoused residents. Following the 2018{' '}
       <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span> ruling and prior to the City’s 2021 amendment, enforcement of 41.18 was unconstitutional under the Eighth Amendment’s prohibition on cruel and unusual punishment. The constitutionality of the current version of 41.18 is still disputed.
     </p>
-    <br /><br />
+   
     <p className="mb-4">
       This map and analysis display 41.18 arrest data obtained from the Los Angeles Police Department beginning on January 1, 2021, through September 15, 2023, to encapsulate enforcement in the months leading up to the July 29, 2021, 41.18 amendment and the most recent available data.
     </p>
