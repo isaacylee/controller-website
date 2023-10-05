@@ -42,7 +42,8 @@ const Hbfs = () => {
   );
 
   const pieChartData = {
-    labels: selectedData.map((item) => item.arrestType),
+    labels: selectedData
+      .map((item) => item.arrestType === 'Misdemeanor' ? 'Infraction' : 'Misdemeanor'),
     datasets: [
       {
         data: selectedData.map((item) => item.arrests),
@@ -51,6 +52,7 @@ const Hbfs = () => {
       },
     ],
   };
+  
 
   const chartOptions = {
     responsive: true, // Enable responsiveness

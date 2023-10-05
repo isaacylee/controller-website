@@ -24,26 +24,45 @@ export default function Home() {
 
         <br />
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <a
-            href='https://docs.google.com/spreadsheets/d/1llilA7y0LiHjM_0s9lrFJPdZAGfSaOnWjJo_dkKZhHo/edit?usp=sharing'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <button
-              style={{
-                marginRight: '10px',
-                backgroundColor: '#41ffca',
-                color: 'black',
-                padding: '10px 20px',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-              }}
-            >
-              TABLE VERSION
-            </button>
-          </a>
-        </div>
+  <a
+    href='https://docs.google.com/spreadsheets/d/1llilA7y0LiHjM_0s9lrFJPdZAGfSaOnWjJo_dkKZhHo/edit?usp=sharing'
+    target='_blank'
+    rel='noopener noreferrer'
+  >
+    <button
+      style={{
+        marginRight: '10px',
+        backgroundColor: '#41ffca',
+        color: 'black',
+        padding: '10px 20px',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+      }}
+    >
+      TABLE VERSION
+    </button>
+  </a>
+  <a
+    href='https://4118recentarrests.lacontroller.io/'
+    target='_blank'
+    rel='noopener noreferrer'
+  >
+    <button
+      style={{
+        backgroundColor: '#41ffca',
+        color: 'black',
+        padding: '10px 20px',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+      }}
+    >
+      MAP
+    </button>
+  </a>
+</div>
+
       </div>
 
       <div id='overview' className='md:col-span-1'>
@@ -111,7 +130,7 @@ export default function Home() {
         <div className='chart-container'>
           <center>
             <h1 className='mt-5 text-2xl font-bold'>
-              Number of 41.18 Arrests Per Year:
+              Number of 41.18 Arrests By Year:
             </h1>
           </center>
           <br></br>
