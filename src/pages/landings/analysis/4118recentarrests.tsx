@@ -63,65 +63,49 @@ export default function Home() {
   </a>
 </div>
 
-      </div>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <div className="dark:text-white text-left" style={{ fontFamily: "Helvetica", maxWidth: '600px' }}>
+    <br /><br />
+    <p className="mb-4">
+      This map and analysis show details of arrests under LA Municipal Code 41.18, which criminalizes sitting, lying, and sleeping, or placing personal property in the public right-of-way in certain instances.
+    </p>
+    <br /><br />
+    <p className="mb-4">
+      On{' '}
+      <u>
+        <b>
+          <a
+            href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            July 29, 2021
+          </a>
+        </b>
+      </u>
+      , the City of LA amended 41.18 in an attempt to comply with the 2018 Ninth Circuit Court of Appeals ruling in{' '}
+      <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span>, which prohibits cities from enforcing anti-camping laws if they do not have enough shelter beds for unhoused residents. Following the 2018{' '}
+      <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span> ruling and prior to the City’s 2021 amendment, enforcement of 41.18 was unconstitutional under the Eighth Amendment’s prohibition on cruel and unusual punishment. The constitutionality of the current version of 41.18 is still disputed.
+    </p>
+    <br /><br />
+    <p className="mb-4">
+      This map and analysis display 41.18 arrest data obtained from the Los Angeles Police Department beginning on January 1, 2021, through September 15, 2023, to encapsulate enforcement in the months leading up to the July 29, 2021, 41.18 amendment and the most recent available data.
+    </p>
+  </div>
 
-      <div id='overview' className='md:col-span-1'>
-        <br></br>
-        <p>
-          This map and analysis show details of arrests under LA Municipal Code
-          41.18, which criminalizes sitting, lying, and sleeping, or placing
-          personal property in the public right-of-way in certain instances.
-        </p>
-        <br></br>
-        <p>
-          On{' '}
-          <u>
-            <b>
-              <a
-                href='https://clkrep.lacity.org/onlinedocs/2020/20-1376-S1_ord_187127_09-03-21.pdf'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                July 29, 2021
-              </a>
-            </b>
-          </u>
-          , the City of LA amended 41.18 in an attempt to comply with the 2018
-          Ninth Circuit Court of Appeals ruling in{' '}
-          <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span>, which
-          prohibits cities from enforcing anti-camping laws if they do not have
-          enough shelter beds for unhoused residents. Following the 2018{' '}
-          <span style={{ fontStyle: 'italic' }}>Martin v. Boise</span> ruling
-          and prior to the City’s 2021 amendment, enforcement of 41.18 was
-          unconstitutional under the Eighth Amendment’s prohibition on cruel and
-          unusual punishment. The constitutionality of the current version of
-          41.18 is still disputed.
-        </p>
+  <div className="dark:text-white text-left" style={{ fontFamily: "Helvetica", maxWidth: '600px' }}>
+    <p className="mb-4">
+      From January 1, 2021 to September 15, 2023, there were 3,003 41.18 arrests in the City of LA.
+    </p>
+    <p className="mb-4">
+      41.18 violations can be cited as either infractions or misdemeanors. Infractions can lead to a fine of up to $2,500. Misdemeanors can result in a fine plus up to 6 months in jail.
+    </p>
+    <br /><br />
+    <hr />
+  </div>
+</div>
+</div>
 
-        <br></br>
-        <p>
-          This map and analysis display 41.18 arrest data obtained from the Los
-          Angeles Police Department beginning on January 1, 2021, through
-          September 15, 2023, to encapsulate enforcement in the months leading
-          up to the July 29, 2021, 41.18 amendment and the most recent available
-          data.
-        </p>
-      </div>
-
-      <div id='overview' className='md:col-span-1'>
-        <p className='mt-7'>
-          From January 1, 2021 to September 15, 2023, there were 3,003 41.18
-          arrests in the City of LA.
-        </p>
-        <p className='mt-7'>
-          41.18 violations can be cited as either infractions or misdemeanors.
-          Infractions can lead to a fine of up to $2,500. Misdemeanors can
-          result in a fine plus up to 6 months in jail.
-        </p>
-        <br />
-        <br />
-        <hr />
-      </div>
 
       <br></br>
 
