@@ -42,8 +42,7 @@ const Hbfs = () => {
   );
 
   const pieChartData = {
-    labels: selectedData
-      .map((item) => item.arrestType === 'Misdemeanor' ? 'Infraction' : 'Misdemeanor'),
+    labels: selectedData.map((item) => item.arrestType),
     datasets: [
       {
         data: selectedData.map((item) => item.arrests),
