@@ -32,10 +32,18 @@
     "@reduxjs/toolkit": "^1.9.1",
     "@types/d3": "^7.4.0",
     "@types/google-translate-api": "^2.3.2",
+<<<<<<< HEAD
     "axios": "^1.5.1",
     "byte-size": "^8.1.0",
     "calendar": "^0.1.1",
     "chart.js": "^4.4.0",
+=======
+    "@types/react-modal": "^3.16.1",
+    "byte-size": "^8.1.0",
+    "calendar": "^0.1.1",
+    "chart.js": "^4.4.0",
+    "chartjs": "^0.3.24",
+>>>>>>> 987af5289dfd2e3c8f40916af3c9dcb67c7be82f
     "clsx": "^1.2.1",
     "d3": "^7.8.2",
     "d3-svg-legend": "^2.25.6",
@@ -55,6 +63,7 @@
     "react-dom": "^18.2.0",
     "react-gtm-module": "^2.0.11",
     "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
     "sharp": "^0.31.3",
     "tailwind-merge": "^1.8.0",
     "title-case": "^3.0.3",

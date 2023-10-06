@@ -2,6 +2,14 @@
   "audits": [
     {
       "pre": false,
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/killa-fine-cover.jpg?alt=media&token=1a0b7da7-d521-403e-9372-6a5554b1d717",
+      "name": "This Is Not Fine: Hottest Summer on Record Calls for a Reboot of LA's Climate Plan",
+      "year": "2023",
+      "dept": "City of Los Angeles ",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/This%20is%20Not%20Fine_FINAL2.pdf?alt=media&token=6a23745b-3d25-45fb-b42b-1e36ebdfe1f1"
+    },
+    {
+      "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/fwa-cover.jpg?alt=media&token=ff61653d-404b-4915-8631-fdfdf4667356",
       "name": "Fraud, Waste and Abuse Annual Report",
       "year": "2023",

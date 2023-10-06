@@ -8,7 +8,7 @@ import LineItem from '@/components/LineItem';
 import Navbar from '@/components/Navbar';
 import Seo from '@/components/Seo';
 
-import { audits } from '@/auditsindex.json';
+import { audits } from '@/upcomingindex.json';
 
 /**
  * SVGR Support
@@ -31,33 +31,19 @@ export default function Audits(props: any) {
         {/* <Seo templateTitle='Home' /> */}
 
         <Seo
-          title='Audits'
-          description='Audits performed by the Controller since 2016.'
+          title='Upcoming Audits & Reports'
+          description='Upcoming Audits & Reports performed by the LA Controller.'
         />
 
         <div className=' flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <h1 className='dark:text-white' style={{ marginRight: '10px' }}>
-              Audits & Reports
-            </h1>
-            <button
-              className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'
-              onClick={() => {
-                // Use your preferred navigation method to go to the "/upcoming/" URL
-                window.location.href = '/upcoming/'; // Redirect to the "/upcoming/" URL
-              }}
-            >
-              Upcoming Audits & Reports
-            </button>
-          </div>
+          <h1 className='dark:text-white'>Upcoming Audits & Reports</h1>
 
-          <br></br>
           <div className='md:hidden'>
             {audits.map((eachaudit: any, eachauditnum: number) => (
               <LineItem
                 key={eachauditnum}
                 dept={eachaudit.dept}
-                link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                link={`${eachaudit.pre === false ? '' : '/upcoming/'}${
                   eachaudit.link
                 }`}
                 name={eachaudit.name}
@@ -73,10 +59,13 @@ export default function Audits(props: any) {
                   key={eachauditnum}
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
                 >
+                  {/* <a href={eachaudit.link}></a> */}
                   <a
-                    href={`${eachaudit.pre === false ? '' : '/audits/'}${
-                      eachaudit.link
-                    }`}
+                    href={
+                      eachaudit.pre === false
+                        ? eachaudit.link
+                        : `${eachaudit.link}`
+                    }
                   >
                     <img src={eachaudit.image} className='w-full'></img>
                     <div className=' px-2 py-2'>
