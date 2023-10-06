@@ -14,7 +14,7 @@ export default function FairMarketRent() {
       )
       .then((response) => {
         const data = response.data.fmr;
-        console.log("rent owed", data);
+        // console.log("rent owed", data);
         setFairMarket(data);
       })
       .catch((error) => {

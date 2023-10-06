@@ -14,7 +14,7 @@ export default function NoticeType() {
       )
       .then((response) => {
         const data = response.data.noticeTypes;
-        console.log("notice type", data);
+        // console.log("notice type", data);
         setNoticeType(data);
       })
       .catch((error) => {

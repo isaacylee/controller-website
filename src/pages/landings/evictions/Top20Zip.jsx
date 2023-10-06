@@ -15,7 +15,7 @@ export default function Top20Zip() {
         .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/evictionNoticesAnalysisMonthly/topTwenty')
         .then((response) => {
             const data = response.data.topTwenty;
-            console.log("zip", data);
+            // console.log("zip", data);
             setZipNotices(data);
         })
         .catch((error) => {

@@ -14,7 +14,7 @@ export default function RentOwed() {
       )
       .then((response) => {
         const data = response.data.rentOwed;
-        console.log("rent owed", data);
+        // console.log("rent owed", data);
         setRentOwed(data);
       })
       .catch((error) => {

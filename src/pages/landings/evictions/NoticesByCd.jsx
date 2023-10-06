@@ -20,7 +20,7 @@ export default function NoticesByCd(props) {
           return response.json();
         })
         .then((json) => {
-          console.log("cd", json.noticesByCd);
+          // console.log("cd", json.noticesByCd);
           let notices = json.noticesByCd;
           setCdNotices(notices);
         })

@@ -10,33 +10,12 @@ Chart.register(...registerables);
 export default function NoticesByMonth() {
   const [monthNotices, setMonthNotices] = useState([]);
 
-  // useEffect(() => {
-  //   let url =
-  //     'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/evictionNoticesAnalysisMonthly/noticesByMonth';
-  //   fetch(url)
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       console.log(json.noticesByMonth);
-  //       let notices = json.noticesByMonth;
-  //       setMonthNotices(
-  //         notices.map((x) => ({
-  //           id: x.id,
-  //           month: x.month,
-  //           total: x.number,
-  //         }))
-  //       );
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error:', error);
-  //     });
-  // }, []);
-
   useEffect(() => {
     axios
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/evictionNoticesAnalysisMonthly/noticesByMonth')
     .then((response) => {
         const data = response.data.noticesByMonth;
-        console.log("by month", data);
+        // console.log("by month", data);
         setMonthNotices(data);
     })
     .catch((error) => {
@@ -44,7 +23,7 @@ export default function NoticesByMonth() {
     })
   }, []);
 
-  console.log('month notices', monthNotices);
+  // console.log('month notices', monthNotices);
 
     var data = {
         labels: monthNotices.map((x) => x.month),
