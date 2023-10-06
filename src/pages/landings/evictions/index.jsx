@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 import Navbar from '@/components/Navbar';
 
@@ -12,30 +11,6 @@ import RentOwed from './RentOwed';
 import Top20Zip from './Top20Zip';
 
 export default function Evictions() {
-  const [monthNotices, setMonthNotices] = useState([]);
-
-  useEffect(() => {
-    let url =
-      'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/evictionNoticesAnalysisMonthly/noticesByMonth';
-    fetch(url)
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(json.noticesByMonth);
-        let notices = json.noticesByMonth;
-        setMonthNotices(
-          notices.map((x) => ({
-            id: x.id,
-            month: x.month,
-            total: x.number,
-          }))
-        );
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  }, []);
-
-  console.log('month notices', monthNotices);
 
   return (
     <>
@@ -106,7 +81,7 @@ export default function Evictions() {
           </div>
           <div className='mb-16'>
             {' '}
-            <NoticesByMonth monthNotices={monthNotices} />
+            <NoticesByMonth />
           </div>
         </center>
         <center>

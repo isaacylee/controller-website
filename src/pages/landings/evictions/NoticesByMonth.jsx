@@ -1,16 +1,56 @@
 "use client";
+import axios from "axios";
 import {Chart, registerables} from "chart.js";
+import { useEffect, useState } from "react";
 import {Bar} from "react-chartjs-2";
+
 
 Chart.register(...registerables);
 
-export default function NoticesByMonth(props) {
+export default function NoticesByMonth() {
+  const [monthNotices, setMonthNotices] = useState([]);
+
+  // useEffect(() => {
+  //   let url =
+  //     'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/evictionNoticesAnalysisMonthly/noticesByMonth';
+  //   fetch(url)
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       console.log(json.noticesByMonth);
+  //       let notices = json.noticesByMonth;
+  //       setMonthNotices(
+  //         notices.map((x) => ({
+  //           id: x.id,
+  //           month: x.month,
+  //           total: x.number,
+  //         }))
+  //       );
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error:', error);
+  //     });
+  // }, []);
+
+  useEffect(() => {
+    axios
+    .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/evictionNoticesAnalysisMonthly/noticesByMonth')
+    .then((response) => {
+        const data = response.data.noticesByMonth;
+        console.log("by month", data);
+        setMonthNotices(data);
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+    })
+  }, []);
+
+  console.log('month notices', monthNotices);
 
     var data = {
-        labels: props.monthNotices.map((x) => x.month),
+        labels: monthNotices.map((x) => x.month),
         datasets: [
           {
-            data: props.monthNotices.map((x) => x.total),
+            data: monthNotices.map((x) => x.number),
             backgroundColor: [
               "#41ffca",
             ],
