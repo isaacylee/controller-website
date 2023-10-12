@@ -7,7 +7,6 @@ import FairMarketRent from './FairMarketRent';
 import NoticesByCd from './NoticesByCd';
 import NoticesByMonth from './NoticesByMonth';
 import NoticeType from './NoticeType';
-import RentOwed from './RentOwed';
 import Top20Zip from './Top20Zip';
 
 export default function Evictions() {
@@ -121,7 +120,7 @@ export default function Evictions() {
               <b>90036</b> (Fairfax area) with <b>2,458</b>.
             </p>
           </div>
-          <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
+          {/* <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
               <b>Rent Owed</b>
             </h4>
@@ -133,7 +132,7 @@ export default function Evictions() {
           <div className='mb-16'>
             {' '}
             <RentOwed />
-          </div>
+          </div> */}
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
               <b>Fair Market Rent</b>
