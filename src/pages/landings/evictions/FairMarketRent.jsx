@@ -22,6 +22,15 @@ export default function FairMarketRent() {
       });
   }, []);
 
+  const fairMarketSum = () => {
+    const notices = fairMarket.map(x => x['#OfNotices']);
+    // console.log("notices", notices);
+    const total = notices.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    return total;
+  }
+
+  fairMarketSum();
+
   return (
     <div>
       <div className="bg-white p-2">
@@ -94,7 +103,7 @@ export default function FairMarketRent() {
           <tbody className="text-black" style={{border: "1px solid black"}}>
             <tr>
                 <td className="text-black p-2 font-bold text-xl" colSpan={2}>Total</td>
-                <td className="text-right font-bold p-2 text-xl">6,062</td>
+                <td className="text-right font-bold p-2 text-xl">{fairMarketSum()}</td>
             </tr>
           </tbody>
         </table>
@@ -102,3 +111,4 @@ export default function FairMarketRent() {
     </div>
   );
 }
+
