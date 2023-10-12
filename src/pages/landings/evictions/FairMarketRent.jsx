@@ -103,7 +103,7 @@ export default function FairMarketRent() {
           <tbody className="text-black" style={{border: "1px solid black"}}>
             <tr>
                 <td className="text-black p-2 font-bold text-xl" colSpan={2}>Total</td>
-                <td className="text-right font-bold p-2 text-xl">{fairMarketSum()}</td>
+                <td className="text-right font-bold p-2 text-xl">{fairMarketSum().toLocaleString()}</td>
             </tr>
           </tbody>
         </table>
