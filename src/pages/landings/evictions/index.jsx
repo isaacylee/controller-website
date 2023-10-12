@@ -98,7 +98,7 @@ export default function Evictions() {
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
-              <b>Top 20 Zip Codes with highest number of eviction notices</b>
+              <b>Top 20 Zip Codes with Highest Number of Eviction Notices</b>
             </h4>
           </div>
           <div className='mb-12'>
