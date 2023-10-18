@@ -1,6 +1,16 @@
 {
   "finance": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/prelim22-23-cover.jpg?alt=media&token=34ac7eca-0dac-4356-9a70-21f33cd4b3a8",
+      "name": "Preliminary Financial Report FY23 ",
+      "year": "2023",
+      "dept": "Financial Report",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/FY2022-23%20Preliminary%20Financial%20Report_v%20FINAL.pdf?alt=media&token=4a3d798d-6030-41f8-a40b-4b36884c305c",
+      "pre": false,
+      "alt": "Cover photo Preliminary Financial Report 2023"
+    },
+
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2Fidlespecialfunds.jpg?alt=media&token=69d117cb-df34-4ec4-85b1-f20d28fcebfd",
       "name": "Leveraging Idle Special Funds 2023 ",
       "year": "2023",
