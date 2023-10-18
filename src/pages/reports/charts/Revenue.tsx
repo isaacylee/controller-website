@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Bar, Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 interface RevenueSource {
   fiscalYear: number;
@@ -29,7 +29,6 @@ function Revenue() {
   );
 
   useEffect(() => {
-    // Fetch data from API for revenue sources
     axios
       .get(
         'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/pfr/revenueSources'
@@ -41,7 +40,6 @@ function Revenue() {
         console.error('Error fetching revenue sources data:', error);
       });
 
-    // Fetch data from API for total revenues over time
     axios
       .get(
         'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/pfr/totalRevenues'
@@ -66,73 +64,9 @@ function Revenue() {
     );
   };
 
-  const revenueSourcesChartOptions = {
-    scales: {
-      x: {
-        beginAtZero: true,
-        ticks: {
-          color: 'white',
-        },
-        title: {
-          display: true,
-          text: 'Amount',
-          color: 'white',
-        },
-      },
-      y: {
-        beginAtZero: true,
-        ticks: {
-          color: 'white',
-        },
-        title: {
-          display: true,
-          text: 'Category',
-          color: 'white',
-        },
-      },
-    },
-    plugins: {
-      legend: {
-        labels: {
-          color: 'white',
-        },
-      },
-    },
-  };
-
-  const totalRevenuesChartOptions = {
-    scales: {
-      x: {
-        beginAtZero: true,
-        ticks: {
-          color: 'white',
-        },
-        title: {
-          display: true,
-          text: 'Amount',
-          color: 'white',
-        },
-      },
-      y: {
-        beginAtZero: true,
-        ticks: {
-          color: 'white',
-        },
-        title: {
-          display: true,
-          text: 'Category',
-          color: 'white',
-        },
-      },
-    },
-    plugins: {
-      legend: {
-        labels: {
-          color: 'white',
-        },
-      },
-    },
-  };
+  const sortedRevenueData = getFilteredRevenueData().sort(
+    (a, b) => b.amount - a.amount
+  );
 
   return (
     <div>
@@ -173,41 +107,106 @@ function Revenue() {
             <h2>Revenue Sources</h2>
             <Bar
               data={{
-                labels: getFilteredRevenueData().map(
-                  (item) => item.revenueSource
-                ),
+                labels: sortedRevenueData.map((item) => item.revenueSource),
                 datasets: [
                   {
                     label: 'Amount',
-                    data: getFilteredRevenueData().map((item) => item.amount),
+                    data: sortedRevenueData.map((item) => item.amount),
                     backgroundColor: '#41ffca',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1,
                   },
                 ],
               }}
-              options={revenueSourcesChartOptions}
+              options={{
+                indexAxis: 'y',
+                scales: {
+                  x: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Amount',
+                      color: 'white',
+                    },
+                  },
+                  y: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Revenue Source',
+                      color: 'white',
+                    },
+                  },
+                },
+                plugins: {
+                  legend: {
+                    labels: {
+                      color: 'white',
+                    },
+                  },
+                },
+              }}
             />
           </div>
           <div>
             <h2>Revenues Over Time</h2>
-            <Line
+            <Bar
               data={{
-                labels: getFilteredTotalRevenuesData().map(
-                  (item) => item.fiscalYear
-                ),
+                labels: getFilteredTotalRevenuesData()
+                  .map((item) => item.fiscalYear)
+                  .reverse(), // Reverse the labels to display in descending order
                 datasets: [
                   {
                     label: 'Actual Receipts',
-                    data: getFilteredTotalRevenuesData().map(
-                      (item) => item.totalRevenues
-                    ),
-                    fill: false,
-                    borderColor: '#41ffca',
+                    data: getFilteredTotalRevenuesData()
+                      .map((item) => item.totalRevenues)
+                      .sort((a, b) => b - a), // Sort data in descending order
+                    backgroundColor: '#41ffca',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1,
                   },
                 ],
               }}
-              options={totalRevenuesChartOptions}
+              options={{
+                indexAxis: 'y',
+                scales: {
+                  x: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Amount',
+                      color: 'white',
+                    },
+                  },
+                  y: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Fiscal Year',
+                      color: 'white',
+                    },
+                  },
+                },
+                plugins: {
+                  legend: {
+                    labels: {
+                      color: 'white',
+                    },
+                  },
+                },
+              }}
             />
           </div>
         </div>

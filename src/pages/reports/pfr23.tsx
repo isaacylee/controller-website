@@ -20,14 +20,6 @@ const Home = () => {
   const pdfLink =
     'https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/FY2022-23%20Preliminary%20Financial%20Report_v%20FINAL.pdf?alt=media&token=4a3d798d-6030-41f8-a40b-4b36884c305c'; // Replace with the actual PDF link
 
-  const containerStyle: React.CSSProperties = {
-    maxWidth: '800px', // Adjust the width as needed
-    margin: '0 auto',
-    padding: '20px',
-    textAlign: 'left', // Align the text to the left
-    fontFamily: 'Arial, sans-serif', // Change the font to a normal one, for example, Arial
-  };
-
   return (
     <div style={{ color: 'white' }}>
       <br />
@@ -35,72 +27,55 @@ const Home = () => {
         <h1>FY 23 Preliminary Financial Report</h1>
         <br></br>
 
+        <br />
+        <br />
         <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
+          className='text-left dark:text-white'
+          style={{ fontFamily: 'Helvetica' }}
         >
-          <div
-            className='text-left dark:text-white'
-            style={{ fontFamily: 'Helvetica', maxWidth: '600px' }}
-          >
-            <br />
-            <br />
-            <p className='mb-4'>
-              One of the City Controller’s primary responsibilities is analyzing
-              and reporting on the City’s financial health. The Preliminary
-              Financial Report, made available each October after the City
-              closes its books, is the first of such report each year. It
-              provides information on how the City spent its money over the past
-              fiscal year, with data and analysis of the City’s revenues and
-              expenditures, reserves and bonded indebtedness.
-            </p>
+          <p className='mb-4'>
+            One of the City Controller’s primary responsibilities is analyzing
+            and reporting on the City’s financial health. The Preliminary
+            Financial Report, made available each October after the City closes
+            its books, is the first of such report each year. It provides
+            information on how the City spent its money over the past fiscal
+            year, with data and analysis of the City’s revenues and
+            expenditures, reserves and bonded indebtedness.
+          </p>
 
-            <p className='mb-4'>
-              Last fiscal year saw solid growth, with many General Fund revenue
-              sources outperforming Budget and exceeding previous fiscal year.
-              While the post-Pandemic revenue growth has been strong, efforts to
-              rein in inflation are likely to cool economic growth and
-              potentially tip the economy into recession at some point. There
-              are also serious long-term fiscal strains that will not be solved
-              by kicking the can down the road:
-            </p>
+          <p className='mb-4'>
+            Last fiscal year saw solid growth, with many General Fund revenue
+            sources outperforming Budget and exceeding the previous fiscal year.
+            While the post-Pandemic revenue growth has been strong, efforts to
+            rein in inflation are likely to cool economic growth and potentially
+            tip the economy into recession at some point. There are also serious
+            long-term fiscal strains that will not be solved by kicking the can
+            down the road:
+          </p>
 
-            <p className='mb-4'>
-              Scroll below to view the interactive data visualizations. You can
-              also read the Controller’s cover letter down below or access the
-              full report by clicking here:
-            </p>
-          </div>
+          <p className='mb-4'>
+            Scroll below to view the interactive data visualizations. You can
+            also read the Controller’s cover letter down below or access the
+            full report by clicking here:
+          </p>
         </div>
-
         <a
           href={pdfLink}
           target='_blank'
           rel='noopener noreferrer'
           style={buttonStyle}
         >
-          View Report
+          View Full Report
         </a>
 
         <div
           className='text-left dark:text-white'
-          style={{ fontFamily: 'Helvetica', maxWidth: '600px' }}
+          style={{ fontFamily: 'Helvetica' }}
         >
           <br />
           <br />
           <p className='mb-4'>
-            October 18, 2023
-            <br></br>
-            Honorable Karen Bass, Mayor
-            <br></br>
-            Honorable Members of the Los Angeles City Council
-            <br></br>
-            <br></br>
-            <b>Re: Preliminary Financial Report for Fiscal Year 2022-2023</b>
-            <br></br>
+            <b>Preliminary Financial Report for Fiscal Year 2022-2023</b>
             <br></br>
           </p>
 
@@ -133,7 +108,6 @@ const Home = () => {
           <p className='mb-4'>
             <b>Continued Recovery </b>
             <br></br>
-            <br></br>
             General Fund revenues were marked by strong 9% growth over the
             previous fiscal year. That performance exceeded the adopted budget
             projections by $135.7 million. General Fund budgetary department’s
@@ -156,7 +130,7 @@ const Home = () => {
           </p>
 
           <p className='mb-4'>
-            The report highlights a number of key indicators:
+            <b> The report highlights a number of key indicators:</b>
             <br></br>
             <br></br>● Major contributors to the strong revenue increase include
             Utility Users Tax revenue ($93 million above budget) primarily from
@@ -191,9 +165,10 @@ const Home = () => {
             double strain on finances going forward as raises and new hires
             absorb higher revenues.
           </p>
-
+          <br></br>
           <p className='mb-4'>
             <b>Hard choices lie ahead</b>
+            <br></br>
             <br></br>
             Despite widespread staff vacancies, General Fund departmental
             spending actually exceeded last year’s adopted budget by nearly $200
@@ -240,7 +215,6 @@ const Home = () => {
             budgeting, expanded beyond its current experimental pilot, would
             offer greater citizen engagement in the City’s fiscal health.
           </p>
-          <br></br>
 
           <p className='mb-4'>
             The City should also break with the opaque process where annual
@@ -252,7 +226,7 @@ const Home = () => {
             just numbers, they are a statement of values. As our city changes,
             so should our financial priorities.
           </p>
-          <br></br>
+
           <p className='mb-4'>
             By taking the long view and reforming our budgeting practices, the
             City can better serve everyone in our community. Budget reform and
@@ -260,7 +234,7 @@ const Home = () => {
             minimize abrupt service cuts (which disproportionately hurt our most
             vulnerable) if economic conditions deteriorate
           </p>
-          <br></br>
+
           <p className='mb-4'>
             My staff and I appreciate the cooperation shown by City departments
             as we prepared this report. Should you have questions or require
@@ -268,26 +242,14 @@ const Home = () => {
             Analysis and Reporting, Wally Oyewole at rahoof.oyewole@lacity.org.
           </p>
 
-          <p className='mb-4'>
-            Respectfully submitted,
-            <img src='/KM-Sign.PNG' alt='Signature' />
-          </p>
+          <p className='mb-4'>Respectfully submitted,</p>
 
-          <br></br>
           <p className='mb-4'>
             KENNETH MEJIA
             <br></br>
-            L.A. Controller
+            City Controller
           </p>
 
-          <br></br>
-          <p className='mb-4'>
-            cc: Rick Cole, Chief Deputy Controller
-            <br></br>
-            Sharon Tso, Chief Legislative
-            <br></br>
-            Analyst Matt Szabo, City Administrative Officer
-          </p>
           <br></br>
         </div>
       </center>

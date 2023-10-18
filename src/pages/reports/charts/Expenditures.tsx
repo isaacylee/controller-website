@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Bar, Line } from 'react-chartjs-2';
-
+import { Bar } from 'react-chartjs-2';
 interface RevenueSource {
   fiscalYear: number;
   category: string;
@@ -31,7 +30,6 @@ function Expenditures() {
   >([]);
 
   useEffect(() => {
-    // Fetch data from API for revenue sources
     axios
       .get(
         'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/pfr/expCategory'
@@ -43,7 +41,6 @@ function Expenditures() {
         console.error('Error fetching revenue sources data:', error);
       });
 
-    // Fetch data from API for total expenditures over time
     axios
       .get(
         'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/pfr/totalExpenditures'
@@ -178,21 +175,37 @@ function Expenditures() {
                 datasets: [
                   {
                     label: 'Total Expenditures',
-                    data: getFilteredRevenueData().map(
-                      (item) => item.totalExpenditures
-                    ),
+                    data: getFilteredRevenueData()
+                      .map((item) => item.totalExpenditures)
+                      .sort((a, b) => b - a), // Sort data in descending order
                     backgroundColor: '#41ffca',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1,
                   },
                 ],
               }}
-              options={revenueSourcesChartOptions}
+              options={{
+                scales: {
+                  x: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white', // Set the text color to white for x-axis
+                    },
+                  },
+                  y: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white', // Set the text color to white for x-axis
+                    },
+                  },
+                },
+                indexAxis: 'y', // Set the chart to have horizontal bars
+              }}
             />
           </div>
           <div>
             <h2>Total Expenditures Over Time</h2>
-            <Line
+            <Bar
               data={{
                 labels: getFilteredTotalExpendituresData().map(
                   (item) => item.fiscalYear
@@ -203,12 +216,28 @@ function Expenditures() {
                     data: getFilteredTotalExpendituresData().map(
                       (item) => item.amount
                     ),
-                    fill: false,
-                    borderColor: '#41ffca',
+                    backgroundColor: '#41ffca',
                   },
                 ],
               }}
-              options={totalExpendituresChartOptions}
+              options={{
+                scales: {
+                  x: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white', // Set the text color to white for x-axis
+                    },
+                  },
+                  y: {
+                    beginAtZero: true,
+                    ticks: {
+                      color: 'white', // Set the text color to white for x-axis
+                    },
+                  },
+                },
+
+                indexAxis: 'y', // Set the chart to have horizontal bars
+              }}
             />
           </div>
         </div>

@@ -94,7 +94,10 @@ const BarChartForDebt = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false,
+        display: true,
+        labels: {
+          color: 'white', // Set the legend text color to white
+        },
       },
       title: {
         display: false,

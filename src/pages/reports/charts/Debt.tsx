@@ -99,7 +99,10 @@ const BarChart: React.FC = () => {
     responsive: true,
     plugins: {
       legend: {
-        display: false,
+        display: true,
+        labels: {
+          color: 'white', // Set the legend text color to white
+        },
       },
       title: {
         display: false,
@@ -145,8 +148,8 @@ const BarChart: React.FC = () => {
           className='w-30 border-2 '
           style={{ color: 'black' }}
         >
-          <option value='debt'>Debt - %</option>
-          <option value='debtPercentage'>Debt - $</option>
+          <option value='debt'>Debt - $</option>
+          <option value='debtPercentage'>Debt - %</option>
         </select>
       </div>
       <div
