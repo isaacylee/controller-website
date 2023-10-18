@@ -132,7 +132,6 @@ const BarChartForDebt = () => {
 
   return (
     <div className='p-10 text-center'>
-      <h1>Reserve </h1>
       <br></br>
       <label style={{ marginRight: '10px' }}> Scale by % or $</label>
       <select

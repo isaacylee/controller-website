@@ -137,7 +137,6 @@ const BarChart: React.FC = () => {
   return (
     <>
       <div className='p-10 text-center'>
-        <h1>Debt </h1>
         <br></br>
         <label style={{ marginRight: '10px' }}>Scale by % or $</label>
         <select

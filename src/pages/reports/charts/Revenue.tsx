@@ -136,19 +136,18 @@ function Revenue() {
 
   return (
     <div>
-      <h1>Revenue</h1>
       <div>
         <center>
-          <label>Category:</label>{' '}
+          <label style={{ marginRight: '10px' }}>Category:</label>{' '}
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            style={{ color: 'black' }}
+            style={{ color: 'black', marginRight: '10px' }}
           >
             <option value='General Fund'>General Fund Receipts</option>
             <option value='Special Funds'>Special Fund Receipts</option>
           </select>
-          <label>Fiscal Year:</label>
+          <label style={{ marginRight: '10px' }}>Fiscal Year:</label>
           <select
             value={fiscalYear}
             onChange={(e) => setFiscalYear(parseInt(e.target.value))}

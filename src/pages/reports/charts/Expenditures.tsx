@@ -138,24 +138,23 @@ function Expenditures() {
 
   return (
     <div>
-      <h1>Expenditures</h1>
       <br></br>
       <div>
         <center>
-          <label>Budgetary Department:</label>
+          <label style={{ marginRight: '10px' }}>Budgetary Department:</label>
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            style={{ color: 'black' }}
+            style={{ color: 'black', marginRight: '10px' }}
           >
             <option value='Budgetary Department'>Budgetary Department</option>
             <option value='Non_Departmental'>Non-Departmental</option>
           </select>
-          <label>Fiscal Year:</label>
+          <label style={{ marginRight: '10px' }}>Fiscal Year:</label>
           <select
             value={fiscalYear}
             onChange={(e) => setFiscalYear(parseInt(e.target.value, 10))}
-            style={{ color: 'black' }}
+            style={{ color: 'black', marginRight: '10px' }}
           >
             <option value={2023}>2023</option>
             <option value={2022}>2022</option>
@@ -172,7 +171,7 @@ function Expenditures() {
 
         <div className='chart-container'>
           <div>
-            <h2>Revenue Sources</h2>
+            <h2>Total Expenditures by Department</h2>
             <Bar
               data={{
                 labels: getFilteredRevenueData().map((item) => item.department),
