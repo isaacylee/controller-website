@@ -96,12 +96,12 @@ const BarChartForDebt = () => {
       legend: {
         display: true,
         labels: {
-          color: 'white', // Set the legend text color to white
+          color: 'text-black dark:text-white', // Set the legend text color to white
         },
       },
       title: {
         display: false,
-        color: 'white',
+        color: 'text-black dark:text-white',
       },
     },
     scales: {
@@ -110,10 +110,10 @@ const BarChartForDebt = () => {
         title: {
           display: true,
           text: selectedOption === 'reserveFund' ? 'Amount' : 'Percentage',
-          color: 'white', // Set the text color of the y-axis label to white
+          color: 'text-black dark:text-white', // Set the text color of the y-axis label to white
         },
         ticks: {
-          color: 'white',
+          color: 'text-black dark:text-white',
         },
       },
 
@@ -124,10 +124,10 @@ const BarChartForDebt = () => {
         },
         title: {
           display: true,
-          color: 'white', // Set the text color of the x-axis label to white
+          color: 'text-black dark:text-white', // Set the text color of the x-axis label to white
         },
         ticks: {
-          color: 'white',
+          color: 'text-black dark:text-white',
         },
       },
     },

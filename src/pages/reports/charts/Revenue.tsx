@@ -1,7 +1,7 @@
 import axios from 'axios';
+import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-
 interface RevenueSource {
   fiscalYear: number;
   category: string;
@@ -68,6 +68,13 @@ function Revenue() {
     (a, b) => b.amount - a.amount
   );
 
+  const { theme, setTheme, resolvedTheme } = useTheme();
+
+  const isDarkMode =
+    resolvedTheme === 'dark' ||
+    (resolvedTheme === 'system' &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches);
+
   return (
     <div>
       <div>
@@ -124,30 +131,30 @@ function Revenue() {
                   x: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                     title: {
                       display: true,
                       text: 'Amount',
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                   },
                   y: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white',
+                      color: 'text-white dark:text-white',
                     },
                     title: {
                       display: true,
                       text: 'Revenue Source',
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                   },
                 },
                 plugins: {
                   legend: {
                     labels: {
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                   },
                 },
@@ -179,30 +186,30 @@ function Revenue() {
                   x: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                     title: {
                       display: true,
                       text: 'Amount',
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                   },
                   y: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                     title: {
                       display: true,
                       text: 'Fiscal Year',
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                   },
                 },
                 plugins: {
                   legend: {
                     labels: {
-                      color: 'white',
+                      color: isDarkMode ? 'white' : '#222',
                     },
                   },
                 },

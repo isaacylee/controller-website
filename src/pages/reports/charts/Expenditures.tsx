@@ -189,13 +189,13 @@ function Expenditures() {
                   x: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white', // Set the text color to white for x-axis
+                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
                     },
                   },
                   y: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white', // Set the text color to white for x-axis
+                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
                     },
                   },
                 },
@@ -225,13 +225,13 @@ function Expenditures() {
                   x: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white', // Set the text color to white for x-axis
+                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
                     },
                   },
                   y: {
                     beginAtZero: true,
                     ticks: {
-                      color: 'white', // Set the text color to white for x-axis
+                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
                     },
                   },
                 },

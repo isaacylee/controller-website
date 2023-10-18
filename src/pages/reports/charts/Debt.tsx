@@ -101,7 +101,7 @@ const BarChart: React.FC = () => {
       legend: {
         display: true,
         labels: {
-          color: 'white', // Set the legend text color to white
+          color: 'text-black dark:text-white', // Set the legend text color to white
         },
       },
       title: {
@@ -114,10 +114,10 @@ const BarChart: React.FC = () => {
         title: {
           display: false,
           text: selectedOption === 'debt' ? 'Amount' : 'Percentage',
-          color: 'white',
+          color: 'text-black dark:text-white',
         },
         ticks: {
-          color: 'white',
+          color: 'text-black dark:text-white',
         },
       },
 
@@ -128,10 +128,10 @@ const BarChart: React.FC = () => {
         },
         title: {
           display: false,
-          color: 'white',
+          color: 'text-black dark:text-white',
         },
         ticks: {
-          color: 'white',
+          color: 'text-black dark:text-white',
         },
       },
     },
@@ -146,7 +146,7 @@ const BarChart: React.FC = () => {
           value={selectedOption}
           onChange={(e) => setSelectedOption(e.target.value as SelectedOption)}
           className='w-30 border-2 '
-          style={{ color: 'black' }}
+          style={{ color: 'text-white dark:text-white' }}
         >
           <option value='debt'>Debt - $</option>
           <option value='debtPercentage'>Debt - %</option>
