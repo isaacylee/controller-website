@@ -29,12 +29,50 @@ interface DebtDataItem {
   reserveFundPercentage: number;
 }
 
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== 'undefined') {
+    const isDark = isDarkMode();
+    console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== 'undefined') {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
 // Define state types
 type SelectedOption = 'reserveFund' | 'reserveFundPercentage';
 const BarChartForDebt = () => {
   const [reserveData, setReserveData] = useState<DebtDataItem[] | undefined>();
   const [selectedOption, setSelectedOption] =
     useState<SelectedOption>('reserveFund'); // Default selection
+
+  const isDark = isDarkMode();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -96,24 +134,29 @@ const BarChartForDebt = () => {
       legend: {
         display: true,
         labels: {
-          color: 'text-black dark:text-white', // Set the legend text color to white
+          color: isDark ? 'white' : 'black',
         },
       },
       title: {
         display: false,
-        color: 'text-black dark:text-white',
+        color: isDark ? 'white' : 'black',
+
       },
     },
     scales: {
       y: {
         stacked: true,
+        grid: {
+          color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+        },
         title: {
           display: true,
           text: selectedOption === 'reserveFund' ? 'Amount' : 'Percentage',
-          color: 'text-black dark:text-white', // Set the text color of the y-axis label to white
+          color: isDark ? 'white' : 'black',
         },
         ticks: {
-          color: 'text-black dark:text-white',
+          color: isDark ? 'white' : 'black',
+
         },
       },
 
@@ -124,10 +167,10 @@ const BarChartForDebt = () => {
         },
         title: {
           display: true,
-          color: 'text-black dark:text-white', // Set the text color of the x-axis label to white
+          color: isDark ? 'white' : 'black',
         },
         ticks: {
-          color: 'text-black dark:text-white',
+          color: isDark ? 'white' : 'black',
         },
       },
     },

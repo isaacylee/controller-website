@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 interface RevenueSource {
@@ -18,6 +17,42 @@ interface TotalRevenue {
   id: number;
 }
 
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== 'undefined') {
+    const isDark = isDarkMode();
+    console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== 'undefined') {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
 function Revenue() {
   const [category, setCategory] = useState('General Fund');
   const [fiscalYear, setFiscalYear] = useState(2023);
@@ -27,6 +62,8 @@ function Revenue() {
   const [totalRevenuesData, setTotalRevenuesData] = useState<TotalRevenue[]>(
     []
   );
+
+  const isDark = isDarkMode();
 
   useEffect(() => {
     axios
@@ -68,12 +105,12 @@ function Revenue() {
     (a, b) => b.amount - a.amount
   );
 
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  // const { theme, setTheme, resolvedTheme } = useTheme();
 
-  const isDarkMode =
-    resolvedTheme === 'dark' ||
-    (resolvedTheme === 'system' &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches);
+  // const isDarkMode =
+  //   resolvedTheme === 'dark' ||
+  //   (resolvedTheme === 'system' &&
+  //     window.matchMedia('(prefers-color-scheme: dark)').matches);
 
   return (
     <div>
@@ -130,31 +167,37 @@ function Revenue() {
                 scales: {
                   x: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+                    },
                     ticks: {
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                     title: {
                       display: true,
                       text: 'Amount',
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                   y: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+                    },
                     ticks: {
-                      color: 'text-white dark:text-white',
+                      color: isDark ? 'white' : 'black',
                     },
                     title: {
                       display: true,
                       text: 'Revenue Source',
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },
                 plugins: {
                   legend: {
                     labels: {
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },
@@ -185,31 +228,37 @@ function Revenue() {
                 scales: {
                   x: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                    },
                     ticks: {
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                     title: {
                       display: true,
                       text: 'Amount',
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                   y: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                    },
                     ticks: {
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                     title: {
                       display: true,
                       text: 'Fiscal Year',
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },
                 plugins: {
                   legend: {
                     labels: {
-                      color: isDarkMode ? 'white' : '#222',
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },

@@ -19,6 +19,42 @@ interface TotalExpenditure {
   id: number;
 }
 
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== 'undefined') {
+    const isDark = isDarkMode();
+    console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== 'undefined') {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
 function Expenditures() {
   const [category, setCategory] = useState('Budgetary Department');
   const [fiscalYear, setFiscalYear] = useState(2023);
@@ -28,6 +64,8 @@ function Expenditures() {
   const [totalExpendituresData, setTotalExpendituresData] = useState<
     TotalExpenditure[]
   >([]);
+
+  const isDark = isDarkMode();
 
   useEffect(() => {
     axios
@@ -70,30 +108,35 @@ function Expenditures() {
       x: {
         beginAtZero: true,
         ticks: {
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
         title: {
           display: true,
           text: 'Amount',
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
       },
       y: {
         beginAtZero: true,
         ticks: {
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
         title: {
           display: true,
           text: 'Department',
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
       },
     },
     plugins: {
       legend: {
         labels: {
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
       },
     },
@@ -104,30 +147,35 @@ function Expenditures() {
       x: {
         beginAtZero: true,
         ticks: {
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
         title: {
           display: true,
           text: 'Amount',
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
       },
       y: {
         beginAtZero: true,
         ticks: {
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
         title: {
           display: true,
           text: 'Fiscal Year',
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
       },
     },
     plugins: {
       legend: {
         labels: {
-          color: 'white',
+          // color: 'white',
+          color: isDark ? 'white' : 'black',
         },
       },
     },
@@ -188,14 +236,22 @@ function Expenditures() {
                 scales: {
                   x: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                    },
                     ticks: {
-                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                   y: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                    },
                     ticks: {
-                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },
@@ -224,14 +280,22 @@ function Expenditures() {
                 scales: {
                   x: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                    },
                     ticks: {
-                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                   y: {
                     beginAtZero: true,
+                    grid: {
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                    },
                     ticks: {
-                      color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },

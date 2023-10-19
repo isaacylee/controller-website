@@ -33,9 +33,41 @@ ChartJS.register(
   Legend
 );
 
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (userPreference === 'dark' || (userPreference === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== "undefined") {
+    const isDark = isDarkMode();
+    console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark ? 'var(--chart-label-color-dark)' : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== "undefined") {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
 const BarChart: React.FC = () => {
   const [debtData, setDebtData] = useState<DebtDataItem[] | undefined>();
   const [selectedOption, setSelectedOption] = useState<SelectedOption>('debt'); // Default selection
+
+  const isDark = isDarkMode();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -101,7 +133,7 @@ const BarChart: React.FC = () => {
       legend: {
         display: true,
         labels: {
-          color: 'text-black dark:text-white', // Set the legend text color to white
+          color: isDark ? 'white' : 'black',
         },
       },
       title: {
@@ -111,13 +143,16 @@ const BarChart: React.FC = () => {
     scales: {
       y: {
         stacked: true,
+        grid: {
+          color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+        },
         title: {
           display: false,
           text: selectedOption === 'debt' ? 'Amount' : 'Percentage',
-          color: 'text-black dark:text-white',
+          color: isDark ? 'white' : 'black',
         },
         ticks: {
-          color: 'text-black dark:text-white',
+          color: isDark ? 'white' : 'black',
         },
       },
 
@@ -128,10 +163,10 @@ const BarChart: React.FC = () => {
         },
         title: {
           display: false,
-          color: 'text-black dark:text-white',
+          color: isDark ? 'white' : 'black',
         },
         ticks: {
-          color: 'text-black dark:text-white',
+          color: isDark ? 'white' : 'black',
         },
       },
     },
