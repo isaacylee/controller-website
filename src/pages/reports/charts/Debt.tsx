@@ -14,6 +14,7 @@ import { Bar } from 'react-chartjs-2';
 
 // Define data types and interfaces
 interface DebtDataItem {
+  capMoney: any;
   fiscalYear: string;
   voterApproved: number;
   debtServiceRequirementsNonVoterApproved: number;
@@ -109,6 +110,12 @@ const BarChart: React.FC = () => {
                 (item) => item.debtServiceRequirementsNonVoterApproved
               ),
               backgroundColor: '#41ffca',
+            },
+            // Add the capMoney dataset
+            {
+              label: 'Cap $',
+              data: debtData?.map((item) => item.capMoney),
+              backgroundColor: '#bb0000',
             },
           ],
         }

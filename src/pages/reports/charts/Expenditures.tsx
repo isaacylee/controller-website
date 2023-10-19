@@ -268,15 +268,13 @@ function Expenditures() {
             <h2>Total Expenditures Over Time</h2>
             <Bar
               data={{
-                labels: getFilteredTotalExpendituresData().map(
+                labels: totalExpendituresData.map(
                   (item) => `${item.fiscalYear}`
                 ),
                 datasets: [
                   {
                     label: 'Total Expenditures',
-                    data: getFilteredTotalExpendituresData().map(
-                      (item) => item.amount
-                    ),
+                    data: totalExpendituresData.map((item) => item.amount),
                     backgroundColor: '#41ffca',
                   },
                 ],
@@ -286,7 +284,7 @@ function Expenditures() {
                   x: {
                     beginAtZero: true,
                     grid: {
-                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
                     },
                     ticks: {
                       color: isDark ? 'white' : 'black',
@@ -295,18 +293,18 @@ function Expenditures() {
                   y: {
                     beginAtZero: true,
                     grid: {
-                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
+                      color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
                     },
                     ticks: {
                       color: isDark ? 'white' : 'black',
                     },
                   },
                 },
-                indexAxis: 'y', // Set the chart to have horizontal bars
+                indexAxis: 'y',
                 plugins: {
                   legend: {
                     labels: {
-                      color: isDark ? 'white' : 'black', // Set legend text color to white in dark mode
+                      color: isDark ? 'white' : 'black',
                     },
                   },
                 },

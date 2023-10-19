@@ -21,41 +21,27 @@ const Home = () => {
   };
 
   const pdfLink =
-    'https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/FY2022-23%20Preliminary%20Financial%20Report_v%20FINAL.pdf?alt=media&token=4a3d798d-6030-41f8-a40b-4b36884c305c'; // Replace with the actual PDF link
+    'https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/FY2022-23%20Preliminary%20Financial%20Report_v%20FINAL.pdf?alt=media&token=e1a49f43-8e97-42e7-a2db-37ef8edd952b'; // Replace with the actual PDF link
 
   return (
     <>
       <Navbar />
       <Layout>
-        <div className='flex flex-col pb-2 dark:text-white'>
-          <div
-            style={{
-              background: 'url(/images/pfr-banner.png)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'top',
-              minHeight: '630px',
-              minWidth: '1200px',
-            }}
-          >
-            {/* <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
-              <div className='xl:mt-64'>
-                <span className='xl:py-1'></span>
-              </div>
-              <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2 text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
-                <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
-                  Revenue Forecast 2023-2024 Web Summary
-                </span>
-                <br></br>
-              </h1>
-            </div> */}
-          </div>
-        </div>
+        <div
+          className='banner'
+          style={{
+            background: 'url(/images/pfr-banner.png)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'bottom',
+            width: '100%',
+            paddingBottom: '30%', // Set a responsive aspect ratio (adjust as needed)
+          }}
+        ></div>
       </Layout>
 
       <div className='text-black dark:text-white'>
         <center>
-          {/* <h1>FY 23 Preliminary Financial Report</h1> */}
           <br></br>
 
           <br />
