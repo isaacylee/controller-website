@@ -223,9 +223,9 @@ function Expenditures() {
                 datasets: [
                   {
                     label: 'Total Expenditures',
-                    data: getFilteredRevenueData()
-                      .map((item) => item.totalExpenditures)
-                      .sort((a, b) => b - a), // Sort data in descending order
+                    data: getFilteredRevenueData().map(
+                      (item) => item.totalExpenditures
+                    ),
                     backgroundColor: '#41ffca',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1,
@@ -240,7 +240,6 @@ function Expenditures() {
                       color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
                     },
                     ticks: {
-                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
                       color: isDark ? 'white' : 'black',
                     },
                   },
@@ -250,12 +249,18 @@ function Expenditures() {
                       color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
                     },
                     ticks: {
-                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
                       color: isDark ? 'white' : 'black',
                     },
                   },
                 },
                 indexAxis: 'y', // Set the chart to have horizontal bars
+                plugins: {
+                  legend: {
+                    labels: {
+                      color: isDark ? 'white' : 'black', // Set legend text color to white in dark mode
+                    },
+                  },
+                },
               }}
             />
           </div>
@@ -264,7 +269,7 @@ function Expenditures() {
             <Bar
               data={{
                 labels: getFilteredTotalExpendituresData().map(
-                  (item) => item.fiscalYear
+                  (item) => `${item.fiscalYear}`
                 ),
                 datasets: [
                   {
@@ -284,7 +289,6 @@ function Expenditures() {
                       color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
                     },
                     ticks: {
-                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
                       color: isDark ? 'white' : 'black',
                     },
                   },
@@ -294,13 +298,18 @@ function Expenditures() {
                       color: isDark ? '#44403c' : 'rgb(211, 211, 211)', // Set grid color to white in dark mode
                     },
                     ticks: {
-                      // color: 'text-black dark:text-white', // Set the text color to white for x-axis
                       color: isDark ? 'white' : 'black',
                     },
                   },
                 },
-
                 indexAxis: 'y', // Set the chart to have horizontal bars
+                plugins: {
+                  legend: {
+                    labels: {
+                      color: isDark ? 'white' : 'black', // Set legend text color to white in dark mode
+                    },
+                  },
+                },
               }}
             />
           </div>
