@@ -48,7 +48,7 @@ const Home = () => {
           <br />
           <div
             className='text-left dark:text-white'
-            style={{ fontFamily: 'Helvetica' }}
+            style={{ fontFamily: 'Helvetica', maxWidth: '1500px' }}
           >
             <p className='mb-4'>
               One of the City Controller’s primary responsibilities is analyzing
@@ -87,7 +87,7 @@ const Home = () => {
 
           <div
             className='text-left dark:text-white'
-            style={{ fontFamily: 'Helvetica' }}
+            style={{ fontFamily: 'Helvetica', maxWidth: '1500px' }}
           >
             <br />
             <br />
@@ -277,11 +277,7 @@ const Home = () => {
           </div>
         </center>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
         <h1>Revenues</h1>
         <p className='mb-4'>
           During the 2022-23 fiscal year, total revenues in budgeted funds were

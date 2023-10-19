@@ -6,6 +6,8 @@ import {
   ChartOptions,
   Legend,
   LinearScale,
+  LineElement,
+  PointElement,
   Title,
   Tooltip,
 } from 'chart.js';
@@ -20,6 +22,8 @@ interface DebtDataItem {
   debtServiceRequirementsNonVoterApproved: number;
   debtCapsNonVoterApproved: number;
   ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved: number;
+  totalAmount: number;
+  totalPercent: number;
 }
 
 // Define state types
@@ -29,6 +33,8 @@ ChartJS.register(
   CategoryScale,
   LinearScale,
   BarElement,
+  PointElement,
+  LineElement,
   Title,
   Tooltip,
   Legend
@@ -94,15 +100,26 @@ const BarChart: React.FC = () => {
 
   const labels = debtData?.map((item) => item.fiscalYear);
 
+  // Create a new dataset for the 'totalPercent' line chart
+
   const selectedData =
     selectedOption === 'debt'
       ? {
           labels,
           datasets: [
             {
-              label: 'Voter Approved Debt',
+              label: '$ Total Debt Cap',
+              type: 'line',
+              data: debtData?.map((item) => item.totalAmount),
+              borderColor: 'red',
+              backgroundColor: 'red',
+            },
+
+            {
+              label: selectedOption === 'debt' ? '' : 'Voter Approved Debt',
               data: debtData?.map((item) => item.voterApproved),
-              backgroundColor: '#ffca41',
+              // backgroundColor: '#ffca41',
+              type: 'bar',
             },
             {
               label: 'Debt Service Requirements (Non-Voter Approved)',
@@ -110,10 +127,12 @@ const BarChart: React.FC = () => {
                 (item) => item.debtServiceRequirementsNonVoterApproved
               ),
               backgroundColor: '#41ffca',
+              type: 'bar',
             },
-            // Add the capMoney dataset
+
             {
               label: 'Cap $',
+              type: 'bar',
               data: debtData?.map((item) => item.capMoney),
               backgroundColor: '#bb0000',
             },
@@ -122,6 +141,14 @@ const BarChart: React.FC = () => {
       : {
           labels,
           datasets: [
+            {
+              label: '$ Total Debt Cap',
+              type: 'line',
+              data: debtData?.map((item) => item.totalPercent),
+              borderColor: 'red',
+              backgroundColor: 'red',
+            },
+
             {
               label: 'Debt Caps (Non-Voter Approved)',
               data: debtData?.map((item) => item.debtCapsNonVoterApproved),
@@ -184,7 +211,6 @@ const BarChart: React.FC = () => {
       },
     },
   };
-
   return (
     <>
       <div className='p-10 text-center'>

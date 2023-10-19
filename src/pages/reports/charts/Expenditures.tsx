@@ -219,13 +219,15 @@ function Expenditures() {
             <h2>Total Expenditures by Department</h2>
             <Bar
               data={{
-                labels: getFilteredRevenueData().map((item) => item.department),
+                labels: getFilteredRevenueData()
+                  .sort((a, b) => b.totalExpenditures - a.totalExpenditures) // Sort the data in descending order
+                  .map((item) => item.department),
                 datasets: [
                   {
                     label: 'Total Expenditures',
-                    data: getFilteredRevenueData().map(
-                      (item) => item.totalExpenditures
-                    ),
+                    data: getFilteredRevenueData()
+                      .sort((a, b) => b.totalExpenditures - a.totalExpenditures) // Sort the data in descending order
+                      .map((item) => item.totalExpenditures),
                     backgroundColor: '#41ffca',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1,
@@ -264,13 +266,16 @@ function Expenditures() {
               }}
             />
           </div>
+
           <div>
             <h2>Total Expenditures Over Time</h2>
             <Bar
               data={{
-                labels: totalExpendituresData.map(
-                  (item) => `${item.fiscalYear}`
-                ),
+                labels: totalExpendituresData
+                  .map((item) => `${item.fiscalYear}`)
+                  .filter(
+                    (value, index, self) => self.indexOf(value) === index
+                  ), // Filter out repeated years
                 datasets: [
                   {
                     label: 'Total Expenditures',
@@ -289,6 +294,11 @@ function Expenditures() {
                     ticks: {
                       color: isDark ? 'white' : 'black',
                     },
+                    title: {
+                      display: true,
+                      text: 'Fiscal Year',
+                      color: isDark ? 'white' : 'black',
+                    },
                   },
                   y: {
                     beginAtZero: true,
@@ -296,6 +306,11 @@ function Expenditures() {
                       color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
                     },
                     ticks: {
+                      color: isDark ? 'white' : 'black',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Total Expenditures',
                       color: isDark ? 'white' : 'black',
                     },
                   },
