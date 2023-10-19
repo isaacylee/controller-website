@@ -37,7 +37,11 @@ function isDarkMode() {
   if (typeof window !== 'undefined') {
     // Check local storage for user preference
     const userPreference = localStorage.getItem('theme');
-    if (userPreference === 'dark' || (userPreference === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
       return true;
     }
   }
@@ -46,19 +50,21 @@ function isDarkMode() {
 }
 
 function updateChartLabelColor() {
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     const isDark = isDarkMode();
     console.log('isDark:', isDark);
     document.documentElement.style.setProperty(
       '--chart-label-color',
-      isDark ? 'var(--chart-label-color-dark)' : 'var(--chart-label-color-light)'
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
     );
   }
 }
 
 updateChartLabelColor();
 
-if (typeof window !== "undefined") {
+if (typeof window !== 'undefined') {
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
 }
@@ -181,7 +187,7 @@ const BarChart: React.FC = () => {
           value={selectedOption}
           onChange={(e) => setSelectedOption(e.target.value as SelectedOption)}
           className='w-30 border-2 '
-          style={{ color: 'text-white dark:text-white' }}
+          style={{ color: 'black' }}
         >
           <option value='debt'>Debt - $</option>
           <option value='debtPercentage'>Debt - %</option>

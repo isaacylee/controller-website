@@ -1,5 +1,6 @@
 import { Chart, registerables } from 'chart.js';
 
+import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 
 import Debt from '@/pages/reports/charts/Debt';
@@ -25,11 +26,36 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <Layout>
+        <div className='flex flex-col pb-2 dark:text-white'>
+          <div
+            style={{
+              background: 'url(/images/pfr-banner.png)',
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'top',
+              minHeight: '630px',
+              minWidth: '1200px',
+            }}
+          >
+            {/* <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
+              <div className='xl:mt-64'>
+                <span className='xl:py-1'></span>
+              </div>
+              <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2 text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
+                <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
+                  Revenue Forecast 2023-2024 Web Summary
+                </span>
+                <br></br>
+              </h1>
+            </div> */}
+          </div>
+        </div>
+      </Layout>
 
       <div className='text-black dark:text-white'>
-        <br />
         <center>
-          <h1>FY 23 Preliminary Financial Report</h1>
+          {/* <h1>FY 23 Preliminary Financial Report</h1> */}
           <br></br>
 
           <br />
