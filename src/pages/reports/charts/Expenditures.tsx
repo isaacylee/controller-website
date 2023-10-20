@@ -17,6 +17,9 @@ interface TotalExpenditure {
   amount: number;
   budgetActual: string;
   id: number;
+  budgetActuals: string; 
+  fiscalYears: number; 
+  amounts: number; 
 }
 
 function isDarkMode() {
@@ -99,7 +102,7 @@ function Expenditures() {
 
   const getFilteredTotalExpendituresData = () => {
     return totalExpendituresData.filter(
-      (item) => item.budgetActual === 'Final Budget'
+      (item) => item.budgetActual === 'Total Expenditures'
     );
   };
 
@@ -272,14 +275,14 @@ function Expenditures() {
             <Bar
               data={{
                 labels: totalExpendituresData
-                  .map((item) => `${item.fiscalYear}`)
+                  .map((item) => `${item.fiscalYears}`)
                   .filter(
                     (value, index, self) => self.indexOf(value) === index
                   ), // Filter out repeated years
                 datasets: [
                   {
                     label: 'Total Expenditures',
-                    data: totalExpendituresData.map((item) => item.amount),
+                    data: totalExpendituresData.map((item) => item.amounts),
                     backgroundColor: '#41ffca',
                   },
                 ],
