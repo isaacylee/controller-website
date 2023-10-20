@@ -132,12 +132,12 @@ const BarChart: React.FC = () => {
               type: 'bar',
             },
 
-            {
-              label: 'Cap $',
-              type: 'bar',
-              data: debtData?.map((item) => item.capMoney),
-              backgroundColor: '#bb0000',
-            },
+            // {
+            //   label: 'Cap $',
+            //   type: 'bar',
+            //   data: debtData?.map((item) => item.voterApproved),
+            //   backgroundColor: '#bb0000',
+            // },
           ],
         }
       : {
