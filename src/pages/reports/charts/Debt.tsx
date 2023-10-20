@@ -14,7 +14,8 @@ import {
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 
-// Define data types and interfaces
+
+//Define data types and interfaces
 interface DebtDataItem {
   capMoney: any;
   fiscalYear: string;
@@ -211,6 +212,8 @@ const BarChart: React.FC = () => {
       },
     },
   };
+
+  console.log('debt', debtData);
   return (
     <>
       <div className='p-10 text-center'>
