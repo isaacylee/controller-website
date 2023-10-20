@@ -3,6 +3,7 @@ import {
   BarElement,
   CategoryScale,
   Chart as ChartJS,
+  ChartData,
   ChartOptions,
   Legend,
   LinearScale,
@@ -112,8 +113,8 @@ const BarChart: React.FC = () => {
               label: '$ Total Debt Cap',
               type: 'line',
               data: debtData?.map((item) => item.totalAmount),
-              borderColor: 'red',
-              backgroundColor: 'red',
+              borderColor: 'white',
+              backgroundColor: 'white',
             },
 
             {
@@ -146,8 +147,8 @@ const BarChart: React.FC = () => {
               label: '$ Total Debt Cap',
               type: 'line',
               data: debtData?.map((item) => item.totalPercent),
-              borderColor: 'red',
-              backgroundColor: 'red',
+              borderColor: 'white',
+              backgroundColor: 'white',
             },
 
             {
@@ -213,7 +214,7 @@ const BarChart: React.FC = () => {
     },
   };
 
-  console.log('debt', debtData);
+  // console.log('debt', debtData);
   return (
     <>
       <div className='p-10 text-center'>
@@ -233,7 +234,11 @@ const BarChart: React.FC = () => {
         className='px-10'
         style={{ width: '100%', height: '500px', overflowX: 'auto' }}
       >
-        <Bar options={options} data={selectedData} />
+       <Bar
+  options={options as ChartOptions}
+  data={selectedData as ChartData<'bar'>}
+/>
+
       </div>
     </>
   );
