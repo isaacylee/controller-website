@@ -81,7 +81,7 @@ const BarChartForDebt = () => {
           'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/reserves/reservesCsv'
         );
         const data = await response.json();
-
+        // console.log(data.reservesCsv);
         setReserveData(data.reservesCsv);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -115,13 +115,15 @@ const BarChartForDebt = () => {
           datasets: [
             {
               label: 'Reserve Fund Percentage',
-              data: reserveData?.map((item) => item.reserveFundPercentage),
+              data: reserveData?.map(
+                (item) => item.reserveFundPercentage * 100
+              ),
               backgroundColor: '#ffca41',
             },
             {
               label: 'Budget Stabilization Fund Percentage',
               data: reserveData?.map(
-                (item) => item.budgetStabilizationFundPercentage
+                (item) => item.budgetStabilizationFundPercentage * 100
               ),
               backgroundColor: '#41ffca',
             },
@@ -140,7 +142,20 @@ const BarChartForDebt = () => {
       title: {
         display: false,
         color: isDark ? 'white' : 'black',
-
+      },
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            const { dataset, dataIndex } = context;
+            const value = dataset.data ? dataset.data[dataIndex] : null;
+      
+            if (selectedOption === 'reserveFund') {
+              return value !== null ? value.toString() : 'N/A';
+            } else {
+              return value !== null ? value + '%' : 'N/A';
+            }
+          },
+        },
       },
     },
     scales: {
@@ -156,7 +171,13 @@ const BarChartForDebt = () => {
         },
         ticks: {
           color: isDark ? 'white' : 'black',
-
+          callback: function (value) {
+            if (selectedOption === 'reserveFund') {
+              return value.toString();
+            } else {
+              return value + '%';
+            }
+          },
         },
       },
 

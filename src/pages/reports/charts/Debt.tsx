@@ -15,7 +15,6 @@ import {
 import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 
-
 //Define data types and interfaces
 interface DebtDataItem {
   capMoney: any;
@@ -144,16 +143,16 @@ const BarChart: React.FC = () => {
           labels,
           datasets: [
             {
-              label: '$ Total Debt Cap',
+              label: '% Total Debt Cap',
               type: 'line',
-              data: debtData?.map((item) => item.totalPercent),
+              data: debtData?.map((item) => item.totalPercent * 100),
               borderColor: 'white',
               backgroundColor: 'white',
             },
 
             {
               label: 'Debt Caps (Non-Voter Approved)',
-              data: debtData?.map((item) => item.debtCapsNonVoterApproved),
+              data: debtData?.map((item) => item.debtCapsNonVoterApproved * 100),
               backgroundColor: '#ffca41',
             },
             {
@@ -161,7 +160,7 @@ const BarChart: React.FC = () => {
                 'Ratio of Debt Service Requirements to General Fund Receipts (Non-Voter Approved)',
               data: debtData?.map(
                 (item) =>
-                  item.ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved
+                  item.ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved * 100
               ),
               backgroundColor: '#41ffca',
             },
@@ -181,6 +180,20 @@ const BarChart: React.FC = () => {
       title: {
         display: false,
       },
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            const { dataset, dataIndex } = context;
+            const value = dataset.data ? dataset.data[dataIndex] : null;
+      
+            if (selectedOption === 'debt') {
+              return value !== null ? value.toString() : 'N/A';
+            } else {
+              return value !== null ? value + '%' : 'N/A';
+            }
+          },
+        },
+      },
     },
     scales: {
       y: {
@@ -195,6 +208,13 @@ const BarChart: React.FC = () => {
         },
         ticks: {
           color: isDark ? 'white' : 'black',
+          callback: function (value) {
+            if (selectedOption === 'debt') {
+              return value.toString();
+            } else {
+              return value + '%';
+            }
+          },
         },
       },
 
@@ -234,11 +254,10 @@ const BarChart: React.FC = () => {
         className='px-10'
         style={{ width: '100%', height: '500px', overflowX: 'auto' }}
       >
-       <Bar
-  options={options as ChartOptions}
-  data={selectedData as ChartData<'bar'>}
-/>
-
+        <Bar
+          options={options as ChartOptions}
+          data={selectedData as ChartData<'bar'>}
+        />
       </div>
     </>
   );
