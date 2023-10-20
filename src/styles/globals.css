@@ -456,13 +456,3 @@ box-shadow: 10px 10px 40px -12px rgba(0,0,0,0.75);
     background-size: 0 2px, 100% 2px;
   }
 }
-
-.banner-pfr23 {
-  background-size: 85% auto;
-}
-
-@media (max-width: 1200px) {
-  .banner-pfr23 {
-    background-size: cover;
-  }
-}

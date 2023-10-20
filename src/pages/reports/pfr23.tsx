@@ -1,4 +1,5 @@
 import { Chart, registerables } from 'chart.js';
+import { useEffect, useState } from 'react';
 
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
@@ -10,6 +11,26 @@ import Revenue from '@/pages/reports/charts/Revenue';
 Chart.register(...registerables);
 
 const Home = () => {
+  const [backgroundSize, setBackgroundSize] = useState('cover');
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 1200) {
+        setBackgroundSize('90% auto');
+      } else {
+        setBackgroundSize('cover');
+      }
+    }
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const buttonStyle = {
     backgroundColor: '#41ffca',
     color: 'black',
@@ -28,12 +49,12 @@ const Home = () => {
       <Navbar />
       <Layout>
         <div
-          className='banner banner-pfr23'
+          className='banner'
           style={{
             background: 'url(/images/pfr-banner.png)',
             backgroundRepeat: 'no-repeat',
             // backgroundSize: 'cover',
-            // backgroundSize: '90% auto',
+            backgroundSize,
             backgroundPosition: 'bottom',
             width: '100%',
             paddingBottom: '30%', // Set a responsive aspect ratio (adjust as needed)

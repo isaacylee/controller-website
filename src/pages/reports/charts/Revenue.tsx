@@ -200,6 +200,17 @@ function Revenue() {
                       color: isDark ? 'white' : 'black',
                     },
                   },
+                  tooltip: {
+                    callbacks: {
+                      label: function (context) {
+                        const label = context.dataset.label || '';
+                        const value = sortedRevenueData[context.dataIndex].amount;
+                        const budgetActual = sortedRevenueData[context.dataIndex].budgetActual;
+          
+                        return `${label}: $${value.toLocaleString()} | ${budgetActual}`;
+                      },
+                    },
+                  },
                 },
               }}
             />
