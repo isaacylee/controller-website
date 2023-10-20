@@ -187,7 +187,7 @@ const BarChart: React.FC = () => {
             const value = dataset.data ? dataset.data[dataIndex] : null;
       
             if (selectedOption === 'debt') {
-              return value !== null ? value.toString() : 'N/A';
+              return value !== null ? value.toLocaleString() : 'N/A';
             } else {
               return value !== null ? value + '%' : 'N/A';
             }
@@ -210,7 +210,7 @@ const BarChart: React.FC = () => {
           color: isDark ? 'white' : 'black',
           callback: function (value) {
             if (selectedOption === 'debt') {
-              return value.toString();
+              return value.toLocaleString();
             } else {
               return value + '%';
             }

@@ -28,11 +28,12 @@ const Home = () => {
       <Navbar />
       <Layout>
         <div
-          className='banner'
+          className='banner banner-pfr23'
           style={{
             background: 'url(/images/pfr-banner.png)',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+            // backgroundSize: 'cover',
+            // backgroundSize: '90% auto',
             backgroundPosition: 'bottom',
             width: '100%',
             paddingBottom: '30%', // Set a responsive aspect ratio (adjust as needed)

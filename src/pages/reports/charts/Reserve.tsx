@@ -150,7 +150,7 @@ const BarChartForDebt = () => {
             const value = dataset.data ? dataset.data[dataIndex] : null;
       
             if (selectedOption === 'reserveFund') {
-              return value !== null ? value.toString() : 'N/A';
+              return value !== null ? value.toLocaleString() : 'N/A';
             } else {
               return value !== null ? value + '%' : 'N/A';
             }
@@ -173,7 +173,7 @@ const BarChartForDebt = () => {
           color: isDark ? 'white' : 'black',
           callback: function (value) {
             if (selectedOption === 'reserveFund') {
-              return value.toString();
+              return value.toLocaleString();
             } else {
               return value + '%';
             }
