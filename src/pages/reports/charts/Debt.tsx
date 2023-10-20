@@ -112,7 +112,7 @@ const BarChart: React.FC = () => {
             {
               label: '$ Total Debt Cap',
               type: 'line',
-              data: debtData?.map((item) => item.totalAmount),
+              data: debtData?.map((item) => item.capMoney),
               borderColor: 'white',
               backgroundColor: 'white',
             },
