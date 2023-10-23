@@ -20,6 +20,8 @@ interface DebtDataItem {
   capMoney: any;
   fiscalYear: string;
   voterApproved: number;
+  voterApproveds: number;
+  nonVoterApproved: number;
   debtServiceRequirementsNonVoterApproved: number;
   debtCapsNonVoterApproved: number;
   ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved: number;
@@ -90,6 +92,7 @@ const BarChart: React.FC = () => {
           'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/debt/debtCsv'
         );
         const data2: { debtCsv: DebtDataItem[] } = await response2.json();
+        console.log(data2.debtCsv);
         setDebtData(data2.debtCsv);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -117,24 +120,24 @@ const BarChart: React.FC = () => {
             },
 
             {
-              label: selectedOption === 'debt' ? '' : 'Voter Approved Debt',
-              data: debtData?.map((item) => item.voterApproved),
-              // backgroundColor: '#ffca41',
+              label: selectedOption === 'debt' ? 'Voter Approved Debt' : '',
+              data: debtData?.map((item) => item.voterApproveds),
+              backgroundColor: '#ffca41',
               type: 'bar',
             },
-            {
-              label: 'Debt Service Requirements (Non-Voter Approved)',
-              data: debtData?.map(
-                (item) => item.debtServiceRequirementsNonVoterApproved
-              ),
-              backgroundColor: '#41ffca',
-              type: 'bar',
-            },
+            // {
+            //   label: 'Debt Service Requirements (Non-Voter Approved)',
+            //   data: debtData?.map(
+            //     (item) => item.debtServiceRequirementsNonVoterApproved
+            //   ),
+            //   backgroundColor: '#41ffca',
+            //   type: 'bar',
+            // },
 
             {
               label: 'Non Voter Approved',
               type: 'bar',
-              data: debtData?.map((item) => item.debtServiceRequirementsNonVoterApproved),
+              data: debtData?.map((item) => item.nonVoterApproved),
               backgroundColor: '#bb0000',
             },
           ],
@@ -249,6 +252,9 @@ const BarChart: React.FC = () => {
           <option value='debt'>Debt - $</option>
           <option value='debtPercentage'>Debt - %</option>
         </select>
+      </div>
+      <div className='text-center font-bold'>
+      {selectedOption === 'debt' ? 'Debt Service Requirements' : 'Ratio of Debt Service Requirements to General Funds Receipts'}
       </div>
       <div
         className='px-10'
