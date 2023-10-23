@@ -62,7 +62,7 @@ const Home = () => {
         ></div>
       </Layout>
 
-      <div className='text-black dark:text-white'>
+      <div className='text-black dark:text-white mx-3'>
         <center>
           <br></br>
 
@@ -300,72 +300,79 @@ const Home = () => {
         </center>
         <br />
 
-        <h1>Revenues</h1>
-        <p className='mb-4'>
-          During the 2022-23 fiscal year, total revenues in budgeted funds were
-          $10.9 billion, a 6.5% increase over the prior year and 0.3% less than
-          the Budget.
+        <div
+          className='dark:text-white mx-auto container'
+          style={{ fontFamily: 'Helvetica', maxWidth: '1500px' }}
+        >
+          <h1>Revenues</h1>
+          <p className='mb-4'>
+            During the 2022-23 fiscal year, total revenues in budgeted funds
+            were $10.9 billion, a 6.5% increase over the prior year and 0.3%
+            less than the Budget.
+            <br></br>
+            General Fund revenues totaled $7.6 billion, a 10.1 percent growth
+            compared to last year, and was $135.7 million or 1.8 percent above
+            the Budget. <br></br>Revenue in budgeted special revenue funds was
+            $3.2 billion, a decrease of 1.1 percent over the prior year, and 4.8
+            percent under the Budget
+            <br></br>
+            View this interactive data visualization to explore the relative
+            size of the City’s revenue sources and their growth over the past 10
+            years.
+          </p>
+          <Revenue />
           <br></br>
-          General Fund revenues totaled $7.6 billion, a 10.1 percent growth
-          compared to last year, and was $135.7 million or 1.8 percent above the
-          Budget. <br></br>Revenue in budgeted special revenue funds was $3.2
-          billion, a decrease of 1.1 percent over the prior year, and 4.8
-          percent under the Budget
           <br></br>
-          View this interactive data visualization to explore the relative size
-          of the City’s revenue sources and their growth over the past 10 years.
-        </p>
-        <Revenue />
-        <br></br>
-        <br></br>
-        <h1>Expenditures</h1>
-        <p className='mb-4'>
-          Total expenditures, including encumbrances were $10.6 billion, $647
-          million or 6.5% percent higher than the year prior as spending
-          increased across nearly every category.
+          <h1>Expenditures</h1>
+          <p className='mb-4'>
+            Total expenditures, including encumbrances were $10.6 billion, $647
+            million or 6.5% percent higher than the year prior as spending
+            increased across nearly every category.
+            <br></br>
+            This interactive data visualization compares the expenditures of the
+            City’s different departments, as well as non-departmental
+            expenditures, over the past 10 years.
+          </p>
+          <Expenditures />
           <br></br>
-          This interactive data visualization compares the expenditures of the
-          City’s different departments, as well as non-departmental
-          expenditures, over the past 10 years.
-        </p>
-        <Expenditures />
-        <br></br>
-        <br></br>
-        <h1>Reserves</h1>
-        <br></br>
-        <p className='mb-4'>
-          The Reserve Fund is established to ensure that funds are available for
-          unanticipated expenditures and revenue shortfalls in the General Fund.
-          The City’s Reserve Fund Policy sets a goal for the Reserve Fund to be
-          at least 5% of the General Fund budget every year. On July 1, 2023,
-          the Reserve Fund had a balance of $648.3 million, 8.2% of the General
-          Fund budget and well above the 5% Reserve Fund Policy goal.
-        </p>
-        <br></br>
-        <p className='mb-4'>
-          The Budget Stabilization Fund (BSF) was added to the City Charter in
-          2011. The purpose of the BSF is to set aside funds when the City
-          exceeds revenue projections to help smooth out years when revenue is
-          stagnant or in decline. In fiscal year 2023, the BSF grew slightly to
-          $195.8 million.
-        </p>
-        <p className='mb-4'>
-          Click the chart below to view the performance of the Reserve Fund and
-          Budget Stabilization Fund, both in dollar terms and as a percentage of
-          budgeted General Fund revenues.
-        </p>
-        <Reserve />
-        <br></br>
-        <h1>Debt</h1>
-        <p className='mb-4'>
-          The City’s debt management policy establishes guidelines for the
-          structure and management of the City’s debt obligations. These
-          guidelines include a non-voter-approved debt service cap of 6% and a
-          total debt service cap of 15% as a percent of General Fund revenues.
-          The City’s debt service obligations decreased to 3.9% last fiscal
-          year.
-        </p>
-        <Debt />
+          <br></br>
+          <h1>Reserves</h1>
+          <br></br>
+          <p className='mb-4'>
+            The Reserve Fund is established to ensure that funds are available
+            for unanticipated expenditures and revenue shortfalls in the General
+            Fund. The City’s Reserve Fund Policy sets a goal for the Reserve
+            Fund to be at least 5% of the General Fund budget every year. On
+            July 1, 2023, the Reserve Fund had a balance of $648.3 million, 8.2%
+            of the General Fund budget and well above the 5% Reserve Fund Policy
+            goal.
+          </p>
+          <br></br>
+          <p className='mb-4'>
+            The Budget Stabilization Fund (BSF) was added to the City Charter in
+            2011. The purpose of the BSF is to set aside funds when the City
+            exceeds revenue projections to help smooth out years when revenue is
+            stagnant or in decline. In fiscal year 2023, the BSF grew slightly
+            to $195.8 million.
+          </p>
+          <p className='mb-4'>
+            Click the chart below to view the performance of the Reserve Fund
+            and Budget Stabilization Fund, both in dollar terms and as a
+            percentage of budgeted General Fund revenues.
+          </p>
+          <Reserve />
+          <br></br>
+          <h1>Debt</h1>
+          <p className='mb-4'>
+            The City’s debt management policy establishes guidelines for the
+            structure and management of the City’s debt obligations. These
+            guidelines include a non-voter-approved debt service cap of 6% and a
+            total debt service cap of 15% as a percent of General Fund revenues.
+            The City’s debt service obligations decreased to 3.9% last fiscal
+            year.
+          </p>
+          <Debt />
+        </div>
       </div>
     </>
   );
