@@ -150,9 +150,10 @@ const BarChartForDebt = () => {
             const value = dataset.data ? dataset.data[dataIndex] : null;
       
             if (selectedOption === 'reserveFund') {
-              return value !== null ? value.toLocaleString() : 'N/A';
+              return value !== null ? '$' + value.toLocaleString() : 'N/A';
             } else {
-              return value !== null ? value + '%' : 'N/A';
+              const formattedValue = value !== null ? Number(value).toFixed(2) : 'N/A';
+              return formattedValue + '%';
             }
           },
         },
@@ -173,7 +174,7 @@ const BarChartForDebt = () => {
           color: isDark ? 'white' : 'black',
           callback: function (value) {
             if (selectedOption === 'reserveFund') {
-              return value.toLocaleString();
+              return '$' + value.toLocaleString();
             } else {
               return value + '%';
             }
