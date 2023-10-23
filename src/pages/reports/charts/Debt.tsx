@@ -192,7 +192,8 @@ const BarChart: React.FC = () => {
             if (selectedOption === 'debt') {
               return value !== null ? value.toLocaleString() : 'N/A';
             } else {
-              return value !== null ? value + '%' : 'N/A';
+              const formattedValue = value !== null ? Number(value).toFixed(2) : 'N/A';
+              return formattedValue + '%';
             }
           },
         },
