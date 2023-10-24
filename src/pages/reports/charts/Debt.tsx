@@ -20,13 +20,14 @@ interface DebtDataItem {
   capMoney: any;
   fiscalYear: string;
   voterApproved: number;
-  voterApproveds: number;
-  nonVoterApproved: number;
   debtServiceRequirementsNonVoterApproved: number;
   debtCapsNonVoterApproved: number;
   ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved: number;
   totalAmount: number;
   totalPercent: number;
+  nonVoterApproved: number; 
+  voterApproveds: number;
+  voterXApproved: number;
 }
 
 // Define state types
@@ -122,18 +123,9 @@ const BarChart: React.FC = () => {
             {
               label: selectedOption === 'debt' ? 'Voter Approved Debt' : '',
               data: debtData?.map((item) => item.voterApproveds),
-              backgroundColor: '#ffca41',
+              backgroundColor: 'green',
               type: 'bar',
             },
-            // {
-            //   label: 'Debt Service Requirements (Non-Voter Approved)',
-            //   data: debtData?.map(
-            //     (item) => item.debtServiceRequirementsNonVoterApproved
-            //   ),
-            //   backgroundColor: '#41ffca',
-            //   type: 'bar',
-            // },
-
             {
               label: 'Non Voter Approved',
               type: 'bar',
@@ -154,13 +146,13 @@ const BarChart: React.FC = () => {
             },
 
             {
-              label: 'Debt Caps (Non-Voter Approved)',
-              data: debtData?.map((item) => item.debtCapsNonVoterApproved * 100),
+              label: 'Voter Approved',
+              data: debtData?.map((item) => item.voterXApproved * 100),
               backgroundColor: '#ffca41',
             },
             {
               label:
-                'Ratio of Debt Service Requirements to General Fund Receipts (Non-Voter Approved)',
+                'Non-Voter Approved',
               data: debtData?.map(
                 (item) =>
                   item.ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved * 100
