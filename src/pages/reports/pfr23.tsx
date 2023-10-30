@@ -62,7 +62,7 @@ const Home = () => {
         ></div>
       </Layout>
 
-      <div className='text-black dark:text-white mx-3'>
+      <div className='mx-3 text-black dark:text-white'>
         <center>
           <br></br>
 
@@ -76,20 +76,40 @@ const Home = () => {
               One of the City Controller’s primary responsibilities is analyzing
               and reporting on the City’s financial health. The Preliminary
               Financial Report, made available each October after the City
-              closes its books, is the first of such report each year. It
+              closes its books, is the first of such reports each year. It
               provides information on how the City spent its money over the past
-              fiscal year, with data and analysis of the City’s revenues and
+              fiscal year, with data and analysis of the City’s revenues,
               expenditures, reserves and bonded indebtedness.
             </p>
 
             <p className='mb-4'>
               Last fiscal year saw solid growth, with many General Fund revenue
-              sources outperforming Budget and exceeding the previous fiscal
-              year. While the post-Pandemic revenue growth has been strong,
-              efforts to rein in inflation are likely to cool economic growth
-              and potentially tip the economy into recession at some point.
-              There are also serious long-term fiscal strains that will not be
-              solved by kicking the can down the road:
+              sources outperforming Budget projections and exceeding the
+              previous fiscal year. While the post-pandemic revenue growth has
+              been strong, efforts to rein in inflation are likely to cool
+              economic growth and potentially tip the economy into recession at
+              some point.
+            </p>
+            <p className='mb-4'>
+              This Office continues to advocate for reform of the City’s
+              outmoded budget practices. A transition to a two-year budget cycle
+              would save enormous staff time, give greater opportunity for
+              meaningful community participation and allow for a more strategic
+              approach to the City’s Finances. The City also needs a transparent
+              Capital Improvement Program beyond the current wish list of
+              billions of dollars in unfunded projects. Participatory budgeting,
+              expanded beyond its current experimental pilot, would offer
+              greater citizen engagement in the City’s fiscal health.
+            </p>
+            <p className='mb-4'>
+              The City should also break with the opaque process where annual
+              departmental budgets are simply marginally adjusted (up or down)
+              without fundamentally altering the long-standing budgetary status
+              quo. Given the daunting financial realities, the City needs to
+              undertake a strategic reallocation of resources to what matters
+              most to the long-term wellbeing of all of our residents. Budgets
+              are not just numbers, they are a statement of values. As our city
+              changes, so should our financial priorities.
             </p>
 
             <p className='mb-4'>
@@ -104,7 +124,7 @@ const Home = () => {
             rel='noopener noreferrer'
             style={buttonStyle}
           >
-            View Full Report
+            Click to View Full Report
           </a>
 
           <div
@@ -113,6 +133,7 @@ const Home = () => {
           >
             <br />
             <br />
+            <h1 className='mb-4'>Controller’s Cover Letter</h1>
             <p className='mb-4'>
               <b>Preliminary Financial Report for Fiscal Year 2022-2023</b>
               <br></br>
@@ -301,32 +322,33 @@ const Home = () => {
         <br />
 
         <div
-          className='dark:text-white mx-auto container'
+          className='container mx-auto dark:text-white'
           style={{ fontFamily: 'Helvetica', maxWidth: '1500px' }}
         >
           <h1>Revenues</h1>
           <p className='mb-4'>
             During the 2022-23 fiscal year, total revenues in budgeted funds
             were $10.9 billion, a 6.5% increase over the prior year and 0.3%
-            less than the Budget.
+            less than the budget.
             <br></br>
             General Fund revenues totaled $7.6 billion, a 10.1 percent growth
-            compared to last year, and was $135.7 million or 1.8 percent above
-            the Budget. <br></br>Revenue in budgeted special revenue funds was
-            $3.2 billion, a decrease of 1.1 percent over the prior year, and 4.8
-            percent under the Budget
+            compared to the prior year, and $135.7 million or 1.8 above the
+            budget.
             <br></br>
-            View this interactive data visualization to explore the relative
-            size of the City’s revenue sources and their growth over the past 10
-            years.
+            Revenue in budgeted special revenue funds was $3.2 billion, a
+            decrease of 1.1% from the prior year, and 4.8% under the budget.
+            <br></br>
+            Use this interactive data visualization to explore the relative
+            sizes of the City’s revenue sources and their growth over the past
+            10 years.
           </p>
           <Revenue />
           <br></br>
           <br></br>
           <h1>Expenditures</h1>
           <p className='mb-4'>
-            Total expenditures, including encumbrances were $10.6 billion, $647
-            million or 6.5% percent higher than the year prior as spending
+            Total expenditures, including encumbrances were $10.6 billion, which
+            is $647 million or 6.5% higher than the year prior as spending
             increased across nearly every category.
             <br></br>
             This interactive data visualization compares the expenditures of the
@@ -356,9 +378,8 @@ const Home = () => {
             to $195.8 million.
           </p>
           <p className='mb-4'>
-            Click the chart below to view the performance of the Reserve Fund
-            and Budget Stabilization Fund, both in dollar terms and as a
-            percentage of budgeted General Fund revenues.
+            Click the chart below to view the performances of the Reserve Fund
+            and Budget Stabilization Fund.
           </p>
           <Reserve />
           <br></br>
