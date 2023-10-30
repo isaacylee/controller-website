@@ -168,6 +168,7 @@ const Home = () => {
             <p className='mb-4'>
               <b>Continued Recovery </b>
               <br></br>
+              <br></br>
               General Fund revenues were marked by strong 9% growth over the
               previous fiscal year. That performance exceeded the adopted budget
               projections by $135.7 million. General Fund budgetary department’s
@@ -182,6 +183,7 @@ const Home = () => {
               aside for mid-year adjustments) at a record-high $876.3 million or
               11.1% of the General Fund, exceeding the City’s goal of 10%
               reserves
+              <br></br>
               <br></br>
               Overall, all City spending for all budgeted funds (including the
               General Fund) was $1.2 billion below the level in the Adopted
@@ -326,6 +328,7 @@ const Home = () => {
           style={{ fontFamily: 'Helvetica', maxWidth: '1500px' }}
         >
           <h1>Revenues</h1>
+          <br></br>
           <p className='mb-4'>
             During the 2022-23 fiscal year, total revenues in budgeted funds
             were $10.9 billion, a 6.5% increase over the prior year and 0.3%
@@ -346,6 +349,7 @@ const Home = () => {
           <br></br>
           <br></br>
           <h1>Expenditures</h1>
+          <br></br>
           <p className='mb-4'>
             Total expenditures, including encumbrances were $10.6 billion, which
             is $647 million or 6.5% higher than the year prior as spending
@@ -384,6 +388,8 @@ const Home = () => {
           <Reserve />
           <br></br>
           <h1>Debt</h1>
+          <br></br>
+
           <p className='mb-4'>
             The City’s debt management policy establishes guidelines for the
             structure and management of the City’s debt obligations. These

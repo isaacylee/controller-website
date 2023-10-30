@@ -204,9 +204,11 @@ function Revenue() {
                     callbacks: {
                       label: function (context) {
                         const label = context.dataset.label || '';
-                        const value = sortedRevenueData[context.dataIndex].amount;
-                        const budgetActual = sortedRevenueData[context.dataIndex].budgetActual;
-          
+                        const value =
+                          sortedRevenueData[context.dataIndex].amount;
+                        const budgetActual =
+                          sortedRevenueData[context.dataIndex].budgetActual;
+
                         return `${label}: $${value.toLocaleString()} | ${budgetActual}`;
                       },
                     },
@@ -215,8 +217,11 @@ function Revenue() {
               }}
             />
           </div>
+          <br></br>
+          <br></br>
           <div>
             <h2>Revenues Over Time</h2>
+
             <Bar
               data={{
                 labels: getFilteredTotalRevenuesData()
