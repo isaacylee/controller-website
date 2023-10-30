@@ -148,6 +148,7 @@ function Revenue() {
 
         <div className='chart-container'>
           <div>
+            <br></br>
             <h2>Revenue Sources</h2>
             <Bar
               data={{
