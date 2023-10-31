@@ -90,9 +90,16 @@ function Revenue() {
   }, []);
 
   const getFilteredRevenueData = () => {
-    return revenueSourcesData.filter(
+    // return revenueSourcesData.filter(
+    //   (item) => item.category === category && item.fiscalYear === fiscalYear
+    // );
+    const filteredData = revenueSourcesData.filter(
       (item) => item.category === category && item.fiscalYear === fiscalYear
     );
+  
+    console.log('Filtered Data:', filteredData);
+  
+    return filteredData;
   };
 
   const getFilteredTotalRevenuesData = () => {
@@ -105,6 +112,8 @@ function Revenue() {
     (a, b) => b.amount - a.amount
   );
 
+  console.log('revenueSources', revenueSourcesData);
+  console.log('sortedRevenue', sortedRevenueData);
   // const { theme, setTheme, resolvedTheme } = useTheme();
 
   // const isDarkMode =
@@ -151,14 +160,18 @@ function Revenue() {
             <h2>Revenue Sources</h2>
             <Bar
               data={{
-                labels: sortedRevenueData.map((item) => item.revenueSource),
+                // labels: sortedRevenueData.map((item) => item.revenueSource),
+                labels: getFilteredRevenueData().map((item) => item.revenueSource),
                 datasets: [
                   {
                     label: 'Amount',
-                    data: sortedRevenueData.map((item) => item.amount),
+                    // data: sortedRevenueData.map((item) => item.amount),
+                    data: getFilteredRevenueData().map((item) => item.amount),
                     backgroundColor: '#41ffca',
                     borderColor: 'rgba(75, 192, 192, 1)',
                     borderWidth: 1,
+                    barPercentage: 0.8,
+                    categoryPercentage: 1
                   },
                 ],
               }}
@@ -180,11 +193,13 @@ function Revenue() {
                     },
                   },
                   y: {
-                    beginAtZero: true,
+                    beginAtZero: false,
                     grid: {
                       color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
                     },
                     ticks: {
+                      // autoSkip: false,
+                      maxTicksLimit: category === 'General Fund' ? undefined : Math.ceil(getFilteredRevenueData().length / 2),
                       color: isDark ? 'white' : 'black',
                     },
                     title: {
@@ -204,9 +219,11 @@ function Revenue() {
                     callbacks: {
                       label: function (context) {
                         const label = context.dataset.label || '';
-                        const value = sortedRevenueData[context.dataIndex].amount;
-                        const budgetActual = sortedRevenueData[context.dataIndex].budgetActual;
-          
+                        const value =
+                          getFilteredRevenueData()[context.dataIndex].amount;
+                        const budgetActual =
+                          getFilteredRevenueData()[context.dataIndex].budgetActual;
+
                         return `${label}: $${value.toLocaleString()} | ${budgetActual}`;
                       },
                     },
