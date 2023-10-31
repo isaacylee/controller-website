@@ -17,9 +17,9 @@ interface TotalExpenditure {
   amount: number;
   budgetActual: string;
   id: number;
-  budgetActuals: string; 
-  fiscalYears: number; 
-  amounts: number; 
+  budgetActuals: string;
+  fiscalYears: number;
+  amounts: number;
 }
 
 function isDarkMode() {
@@ -217,6 +217,8 @@ function Expenditures() {
           </select>
         </center>
 
+        <br></br>
+        <br></br>
         <div className='chart-container'>
           <div>
             <h2>Total Expenditures by Department</h2>
@@ -269,7 +271,8 @@ function Expenditures() {
               }}
             />
           </div>
-
+          <br></br>
+          <br></br>
           <div>
             <h2>Total Expenditures Over Time</h2>
             <Bar

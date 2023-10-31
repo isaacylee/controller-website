@@ -97,7 +97,7 @@ function Revenue() {
       (item) => item.category === category && item.fiscalYear === fiscalYear
     );
   
-    console.log('Filtered Data:', filteredData);
+    // console.log('Filtered Data:', filteredData);
   
     return filteredData;
   };
@@ -112,8 +112,6 @@ function Revenue() {
     (a, b) => b.amount - a.amount
   );
 
-  console.log('revenueSources', revenueSourcesData);
-  console.log('sortedRevenue', sortedRevenueData);
   // const { theme, setTheme, resolvedTheme } = useTheme();
 
   // const isDarkMode =
@@ -157,6 +155,7 @@ function Revenue() {
 
         <div className='chart-container'>
           <div>
+            <br></br>
             <h2>Revenue Sources</h2>
             <Bar
               data={{
@@ -232,8 +231,11 @@ function Revenue() {
               }}
             />
           </div>
+          <br></br>
+          <br></br>
           <div>
             <h2>Revenues Over Time</h2>
+
             <Bar
               data={{
                 labels: getFilteredTotalRevenuesData()
