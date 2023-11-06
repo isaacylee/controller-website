@@ -401,20 +401,23 @@ const Home = () => {
           </p>
           <Debt />
         </div>
-        <Helmet>
-          <meta name='twitter:card' content='summary_large_image' />
-          <meta name='twitter:site' content='@lacontroller' />
-          <meta
-            name='twitter:title'
-            content='Preliminary Financial Report 2022-23'
-          />
-          <meta
-            name='twitter:description'
-            content='Preliminary Financial Report Web Summary'
-          />
-          <meta name='twitter:image' content='/images/pfr-banner.png' />
-        </Helmet>
       </div>
+      <Helmet>
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@lacontroller' />
+        <meta
+          name='twitter:title'
+          content='Preliminary Financial Report 2022-23'
+        />
+        <meta
+          name='twitter:description'
+          content='Preliminary Financial Report Web Summary'
+        />
+        <meta
+          name='twitter:image'
+          content='https://controller.lacity.gov/images/pfr-banner.png'
+        />
+      </Helmet>
     </>
   );
 };
