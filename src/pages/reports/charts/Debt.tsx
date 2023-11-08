@@ -25,7 +25,7 @@ interface DebtDataItem {
   ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved: number;
   totalAmount: number;
   totalPercent: number;
-  nonVoterApproved: number; 
+  nonVoterApproved: number;
   voterApproveds: number;
   voterXApproved: number;
 }
@@ -116,8 +116,8 @@ const BarChart: React.FC = () => {
               label: '$ Total Debt Cap',
               type: 'line',
               data: debtData?.map((item) => item.capMoney),
-              borderColor: 'white',
-              backgroundColor: 'white',
+              borderColor: 'cyan',
+              backgroundColor: 'cyan',
             },
 
             {
@@ -141,8 +141,8 @@ const BarChart: React.FC = () => {
               label: '% Total Debt Cap',
               type: 'line',
               data: debtData?.map((item) => item.totalPercent * 100),
-              borderColor: 'white',
-              backgroundColor: 'white',
+              borderColor: 'cyan',
+              backgroundColor: 'cyan',
             },
 
             {
@@ -151,11 +151,11 @@ const BarChart: React.FC = () => {
               backgroundColor: '#ffca41',
             },
             {
-              label:
-                'Non-Voter Approved',
+              label: 'Non-Voter Approved',
               data: debtData?.map(
                 (item) =>
-                  item.ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved * 100
+                  item.ratioOfDebtServiceRequirementsToGeneralFundReceiptsNonVoterApproved *
+                  100
               ),
               backgroundColor: '#41ffca',
             },
@@ -180,11 +180,12 @@ const BarChart: React.FC = () => {
           label: function (context) {
             const { dataset, dataIndex } = context;
             const value = dataset.data ? dataset.data[dataIndex] : null;
-      
+
             if (selectedOption === 'debt') {
               return value !== null ? '$' + value.toLocaleString() : 'N/A';
             } else {
-              const formattedValue = value !== null ? Number(value).toFixed(2) : 'N/A';
+              const formattedValue =
+                value !== null ? Number(value).toFixed(2) : 'N/A';
               return formattedValue + '%';
             }
           },
@@ -247,7 +248,9 @@ const BarChart: React.FC = () => {
         </select>
       </div>
       <div className='text-center font-bold'>
-      {selectedOption === 'debt' ? 'Debt Service Requirements' : 'Ratio of Debt Service Requirements to General Funds Receipts'}
+        {selectedOption === 'debt'
+          ? 'Debt Service Requirements'
+          : 'Ratio of Debt Service Requirements to General Funds Receipts'}
       </div>
       <div
         className='px-10'
