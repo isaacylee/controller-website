@@ -17,7 +17,7 @@ export default function Evictions() {
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1 className='pt-8 pb-4 text-center text-3xl font-bold dark:text-white'>
-              Eviction Notices (February - September 2023)
+              Eviction Notices (February - October 2023)
             </h1>
           </div>
           <div>
@@ -46,18 +46,18 @@ export default function Evictions() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-2'>
-              [October 2023 Update] We received updated data from the Los
-              Angeles Housing Department (LAHD) through the month of September
+              [November 2023 Update] We received updated data from the Los
+              Angeles Housing Department (LAHD) through the month of October
               2023.
             </p>
             <p className='mb-4'>
-              The data reveals that from February to September, LAHD has
-              received a total of <b>59,582</b> eviction notices. <b>5,980</b>{' '}
-              notices were filed for the month of September.
+              The data reveals that from February to October, LAHD has
+              received a total of <b>66,007</b> eviction notices. <b>6,215</b>{' '}
+              notices were filed for the month of October.
             </p>
             <ul className='mb-10 ml-10'>
               <li>
-                &bull; <b>59,582 eviction notices were filed</b>
+                &bull; <b>66,007 eviction notices were filed</b>
               </li>
               <li>
                 &bull;{' '}
@@ -106,13 +106,13 @@ export default function Evictions() {
           >
             <p className='mb-4'>
               The table above shows the top 20 Zip Codes with the highest number
-              of eviction notices filed with the City from February to September
+              of eviction notices filed with the City from February to October
               2023.
             </p>
             <p className='mb-4'>
               Units located within <b>90028</b> (Hollywood area) had the highest
-              number of eviction notices filed with <b>4,006</b> followed by{' '}
-              <b>90036</b> (Fairfax area) with <b>2,850</b>.
+              number of eviction notices filed with <b>4,445</b> followed by{' '}
+              <b>90036</b> (Fairfax area) with <b>3,179</b>.
             </p>
           </div>
           {/* <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
@@ -140,7 +140,7 @@ export default function Evictions() {
                 metro area.
               </p>
               <p>
-                <b>7,262</b> eviction notices were filed where the amount of
+                <b>10,463</b> eviction notices were filed where the amount of
                 rent owed is below the Fair Market Rent (FMR) Limit.
               </p>
             </div>
@@ -214,7 +214,7 @@ export default function Evictions() {
                 </li>
               </ul>
               <li className='text-left'>
-                &bull; If an eviction notice is not provided to LAHD, a tenants
+                &bull; If an eviction notice is not provided to LAHD, a tenant
                 may raise an affirmative defense in an Unlawful Detainer case.
               </li>
             </ul>
