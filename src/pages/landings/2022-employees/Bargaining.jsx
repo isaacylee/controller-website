@@ -8,13 +8,35 @@ export default function Bargaining() {
   const [bargaining, setBargaining] = useState([]);
 
   const [showYesRows, setShowYesRows] = useState(true);
+  const [showNoRows, setShowNoRows] = useState(true);
+  const [selectedBargaining, setSelectedBargaining] = useState('');
 
   const toggleFilter = () => {
-    setShowYesRows(!showYesRows);
+    if (showYesRows && showNoRows) {
+      setShowYesRows(false);
+      setShowNoRows(true);
+    } else if (!showYesRows && showNoRows) {
+      setShowYesRows(true);
+      setShowNoRows(false);
+    } else {
+      setShowYesRows(true);
+      setShowNoRows(true);
+    }
   };
 
-  const filteredRows = bargaining.filter((row) => {
-    return showYesRows ? row.cityOfLa === 'YES' : row.cityOfLa === 'NO';
+  const handleMOUChange = (e) => {
+    setSelectedBargaining(e.target.value);
+  };
+
+  const filteredRows = bargaining.filter(row => {
+    if (showYesRows && showNoRows) {
+      return selectedBargaining === '' || row.mou === selectedBargaining;
+    } else if (showYesRows) {
+      return row.cityOfLa === 'YES' && (selectedBargaining === '' || row.mou === selectedBargaining);
+    } else if (showNoRows) {
+      return row.cityOfLa === 'NO' && (selectedBargaining === '' || row.mou === selectedBargaining);
+    }
+    return true;
   });
 
   useEffect(() => {
@@ -35,6 +57,8 @@ export default function Bargaining() {
   function addCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
+
+  const uniqueMOU = Array.from(new Set(bargaining.map(row => row.mou)));
 
   return (
     <div>
@@ -64,6 +88,18 @@ export default function Bargaining() {
                 style={{ border: '1px solid black' }}
               >
                 MOU
+                <select
+                className="w-12 rounded p-1 text-xs"
+                onChange={handleMOUChange}
+                value={selectedBargaining}
+              >
+                <option value="">All</option>
+                {uniqueMOU.map((dept) => (
+                  <option key={dept} value={dept}>
+                    {dept}
+                  </option>
+                ))}
+              </select>
               </th>
               <th
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'

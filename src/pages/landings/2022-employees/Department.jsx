@@ -8,14 +8,38 @@ export default function Department() {
   const [department, setDepartment] = useState([]);
 
   const [showYesRows, setShowYesRows] = useState(true);
+  const [showNoRows, setShowNoRows] = useState(true);
+  const [selectedDepartment, setSelectedDepartment] = useState('');
 
   const toggleFilter = () => {
-    setShowYesRows(!showYesRows);
+    if (showYesRows && showNoRows) {
+      setShowYesRows(false);
+      setShowNoRows(true);
+    } else if (!showYesRows && showNoRows) {
+      setShowYesRows(true);
+      setShowNoRows(false);
+    } else {
+      setShowYesRows(true);
+      setShowNoRows(true);
+    }
+  };
+
+  const handleDepartmentChange = (e) => {
+    setSelectedDepartment(e.target.value);
   };
 
   const filteredRows = department.filter(row => {
-    return showYesRows ? row.cityOfLa === 'YES' : row.cityOfLa === 'NO';
+    if (showYesRows && showNoRows) {
+      return selectedDepartment === '' || row.department === selectedDepartment;
+    } else if (showYesRows) {
+      return row.cityOfLa === 'YES' && (selectedDepartment === '' || row.department === selectedDepartment);
+    } else if (showNoRows) {
+      return row.cityOfLa === 'NO' && (selectedDepartment === '' || row.department === selectedDepartment);
+    }
+    return true;
   });
+
+  const uniqueDepartments = Array.from(new Set(department.map(row => row.department)));
 
   useEffect(() => {
     axios
@@ -60,10 +84,22 @@ export default function Department() {
           >
             <tr>
               <th
-                className='sm:p1 text-left text-black md:p-2 lg:p-2'
+                className='sm:p-1 text-left text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 Department
+                <select
+                className="w-64 rounded p-1 text-xs"
+                onChange={handleDepartmentChange}
+                value={selectedDepartment}
+              >
+                <option value="">All</option>
+                {uniqueDepartments.map((dept) => (
+                  <option key={dept} value={dept}>
+                    {dept}
+                  </option>
+                ))}
+              </select>
               </th>
               <th
                 className='flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
