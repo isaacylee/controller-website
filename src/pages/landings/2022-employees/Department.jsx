@@ -56,10 +56,6 @@ export default function Department() {
       });
   }, []);
 
-  function addCommas(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  }
-
   return (
     <div>
       <div className='overflow-x-auto bg-white p-2'>
@@ -174,7 +170,7 @@ export default function Department() {
                   className='sm:p1 text-black md:p-2 lg:p-2'
                   style={{ border: '1px solid black' }}
                 >
-                  ${addCommas(row.payrollAmt.toFixed(2))}
+                  ${Math.round(row.payrollAmt).toLocaleString()}
                 </td>
                 <td
                   className='sm:p1 text-black md:p-2 lg:p-2'
