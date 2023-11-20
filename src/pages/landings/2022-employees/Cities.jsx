@@ -41,7 +41,7 @@ export default function Cities() {
                 style={{ border: '1px solid black' }}
                 colSpan='3'
               >
-                Top 20 Cities
+                Top 20 Outside Cities
               </th>
             </tr>
           </thead>
