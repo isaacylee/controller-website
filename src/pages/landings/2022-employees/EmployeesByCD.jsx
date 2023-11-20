@@ -111,7 +111,7 @@ export default function CD() {
                 style={{ border: '1px solid black' }}
                 colSpan='3'
               >
-                Payroll Employee Analysis by CD
+                Payroll Employee Analysis by Council District
               </th>
             </tr>
           </thead>

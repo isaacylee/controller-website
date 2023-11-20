@@ -7,6 +7,16 @@ import { useEffect, useState } from 'react';
 export default function Department() {
   const [department, setDepartment] = useState([]);
 
+  const [showYesRows, setShowYesRows] = useState(true);
+
+  const toggleFilter = () => {
+    setShowYesRows(!showYesRows);
+  };
+
+  const filteredRows = department.filter(row => {
+    return showYesRows ? row.cityOfLa === 'YES' : row.cityOfLa === 'NO';
+  });
+
   useEffect(() => {
     axios
       .get(
@@ -56,10 +66,11 @@ export default function Department() {
                 Department
               </th>
               <th
-                className='sm:p1 text-left text-black md:p-2 lg:p-2'
-                style={{ border: '1px solid black' }}
+                className='flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
+                // style={{ border: '1px solid black' }}
               >
                 City of LA
+                <div className="dropdown-arrow" onClick={toggleFilter} style={{ cursor: 'pointer' }}>&#9662;</div>
               </th>
               <th
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'
@@ -97,7 +108,7 @@ export default function Department() {
             className='text-xs text-black sm:text-xs md:text-sm lg:text-base'
             style={{ border: '1px solid black' }}
           >
-            {department.map((row) => (
+            {filteredRows.map((row) => (
               <tr key={row.id}>
                 <td
                   className='sm:p1 text-black md:p-2 lg:p-2'
