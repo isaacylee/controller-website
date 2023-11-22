@@ -73,9 +73,9 @@ export default function Employees() {
             {' '}
             <Summary />
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
-            <SummaryPie1 />
-            <SummaryPie2 />
+          <div className='mb-6 grid grid-cols-1 sm:mb-8 md:mb-12 md:grid-cols-2 md:gap-6 lg:mb-16'>
+              <SummaryPie1 />
+              <SummaryPie2 />
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
@@ -89,7 +89,7 @@ export default function Employees() {
             {' '}
             <FiftyK />
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
+          <div className='mb-6 grid grid-cols-1 sm:mb-8 md:mb-12 md:grid-cols-2 md:gap-6 lg:mb-16'>
             <FiftyKPieOut />
             <FiftyKPieIn />
           </div>
@@ -97,7 +97,7 @@ export default function Employees() {
             {' '}
             <HundredK />
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
+          <div className='mb-6 grid grid-cols-1 sm:mb-8 md:mb-12 md:grid-cols-2 md:gap-6 lg:mb-16'>
             <HundredKOut />
             <HundredKIn />
           </div>
