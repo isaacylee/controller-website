@@ -162,8 +162,8 @@ export default function EmployeesByCDBar() {
         </select>
       </center>
     </div>
-    <div className='mt-4 py-4 px-5'>
-      <Bar data={data} height={250} options={options} />
+    <div className='mt-4'>
+      <Bar data={data} height={200} options={options} />
     </div>
     
     </>
