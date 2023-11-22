@@ -1,0 +1,169 @@
+"use client";
+
+import axios from 'axios';
+import {Chart, registerables} from "chart.js";
+import { useEffect, useState } from 'react';
+import { Bar } from 'react-chartjs-2';
+
+Chart.register(...registerables);
+
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== 'undefined') {
+    const isDark = isDarkMode();
+    console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== 'undefined') {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
+export default function EmployeesByCDBar() {
+  const [councilDistrict, setCouncilDistrict] = useState([]);
+  const [category, setCategory] = useState('# of Employees');
+
+  const isDark = isDarkMode();
+
+  useEffect(() => {
+    axios
+      .get(
+        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2022PayrollEmployeeAnalysis/6Cd'
+      )
+      .then((response) => {
+        const data = response.data['6Cd'];
+        console.log('cd', data);
+        setCouncilDistrict(data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, []);
+
+  const filteredData = councilDistrict.filter(
+    (data) => data['cd#'] !== 'Grand Total'
+  );
+
+  const onCategoryChange = (e) => {
+    setCategory(e.target.value);
+    console.log("target", e.target.value);
+  }
+
+  var data = {
+    labels: filteredData.map((x) => x['cd#']),
+    datasets: [
+      {
+        label: category,
+        data: category === '# of Employees' ? filteredData.map((x) => x['#OfEmployees']) : filteredData.map((x) => Math.round(x.totalPayroll)),
+        backgroundColor: [
+          "#41ffca",
+        ],
+        borderColor: [
+          "#41ffca",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  var options = {
+    plugins: {
+      legend: {
+        display: false,
+        labels: {
+          labels: {
+            color: isDark ? 'white' : 'black',
+          },
+          font: {
+            weight: "bold",
+            size: 12,
+          },
+        },
+      },
+    },
+    scales: {
+      y: {
+        grid: {
+          display: true,
+          color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+        },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+          callback: function (value) {
+            if (category === 'Total Payroll') {
+              return '$' + value.toLocaleString();
+            } else {
+              return value;
+            }
+          },
+        },
+        title: {
+            display: true,
+            text: category === '# of Employees' ? '# of Employees' : "Total Payroll",
+            color: isDark ? 'white' : 'black',
+        }
+      },
+      x: {
+        grid: {
+          display: true,
+          color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+        },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+        },
+        title: {
+          display: true,
+          text: 'Council District',
+          color: isDark ? 'white' : 'black',
+        }
+      },
+    },
+  };
+  
+  return (
+    <>
+    <div>
+      <center>
+        <label style={{ color: isDark ? 'white' : 'black' }}>Category:</label>{' '}
+        <select
+          value={category}
+          onChange={onCategoryChange}
+          style={{ color: 'black', marginRight: '10px' }}
+        >
+          <option value='# of Employees'># of Employees</option>
+          <option value='Total Payroll'>Total Payroll</option>
+        </select>
+      </center>
+    </div>
+    <div className='mt-4 py-4 px-5'>
+      <Bar data={data} height={150} width={200} options={options} />
+    </div>
+    
+    </>
+  );
+};
+
