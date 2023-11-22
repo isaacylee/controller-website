@@ -98,7 +98,7 @@ export default function Department() {
               </select>
               </th>
               <th
-                className='sticky top-0 flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
+                className='flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
                 // style={{ border: '1px solid black' }}
               >
                 City of LA
@@ -111,25 +111,25 @@ export default function Department() {
                 # of Employees
               </th>
               <th
-                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
+                className='sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 % of Dept.
               </th>
               <th
-                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
+                className='sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 Payroll Amount
               </th>
               <th
-                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
+                className='sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 % of Dept. Payroll
               </th>
               <th
-                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
+                className='sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 % of Total Payroll
