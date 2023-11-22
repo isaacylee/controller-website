@@ -12,7 +12,7 @@ import HundredK from './HundredK';
 import OutOfState from './OutOfState';
 import Summary from './Summary';
 
-export default function Evictions() {
+export default function Employees() {
   return (
     <>
       <Navbar />
