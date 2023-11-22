@@ -8,15 +8,21 @@ import Department from './Department';
 import CD from './EmployeesByCD';
 import EmployeesByCDBar from './EmployeesByCDBar';
 import FiftyK from './FiftyK';
+import FiftyKPieIn from './FiftyKPieIn';
+import FiftyKPieOut from './FiftyKPieOut';
 import HundredK from './HundredK';
+import HundredKIn from './HundredKIn';
+import HundredKOut from './HundredKOut';
 import OutOfState from './OutOfState';
 import Summary from './Summary';
+import SummaryPie1 from './SummaryPie1';
+import SummaryPie2 from './SummaryPie2';
 
 export default function Employees() {
   return (
     <>
       <Navbar />
-      <main className='container mx-auto px-4 sm:container md:max-w lg:max-w-3xl xl:max-w-4xl'>
+      <main className='md:max-w container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1
@@ -67,6 +73,10 @@ export default function Employees() {
             {' '}
             <Summary />
           </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
+            <SummaryPie1 />
+            <SummaryPie2 />
+          </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
             <Cities />
@@ -79,9 +89,17 @@ export default function Employees() {
             {' '}
             <FiftyK />
           </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
+            <FiftyKPieOut />
+            <FiftyKPieIn />
+          </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
             <HundredK />
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
+            <HundredKOut />
+            <HundredKIn />
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
