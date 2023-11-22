@@ -148,14 +148,15 @@ export default function EmployeesByCDBar() {
     <>
     <div>
       <center>
-        <label style={{ color: isDark ? 'white' : 'black' }}>Category:</label>{' '}
+        <label className='mx-2' style={{ color: isDark ? 'white' : 'black' }}>Category:</label>{' '}
         <select
+        className='text-xs text-black sm:text-xs md:text-sm lg:text-base'
           value={category}
           onChange={onCategoryChange}
           style={{ color: 'black', marginRight: '10px' }}
         >
-          <option value='# of Employees'># of Employees</option>
-          <option value='Total Payroll'>Total Payroll</option>
+          <option value='# of Employees' className='text-xs text-black sm:text-xs md:text-sm lg:text-base'># of Employees</option>
+          <option value='Total Payroll' className='text-xs text-black sm:text-xs md:text-sm lg:text-base'>Total Payroll</option>
         </select>
       </center>
     </div>
