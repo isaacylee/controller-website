@@ -91,6 +91,8 @@ export default function EmployeesByCDBar() {
   };
 
   var options = {
+    maintainAspectRatio: true,
+    responsive: true,
     plugins: {
       legend: {
         display: false,

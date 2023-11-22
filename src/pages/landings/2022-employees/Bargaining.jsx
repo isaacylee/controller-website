@@ -58,7 +58,7 @@ export default function Bargaining() {
 
   return (
     <div>
-      <div className='overflow-x-auto bg-white p-2'>
+      <div className='overflow-x-auto overflow-auto max-h-[600px] bg-white p-2'>
         <table className='w-full table-auto'>
           <thead
             className=' text-xs font-bold text-black sm:text-sm md:text-base lg:text-lg'
@@ -75,7 +75,7 @@ export default function Bargaining() {
             </tr>
           </thead>
           <thead
-            className='text-xs text-black sm:text-xs md:text-sm lg:text-base'
+            className='sticky top-0 text-xs text-black sm:text-xs md:text-sm lg:text-base'
             style={{ border: '1px solid black', backgroundColor: '#41ffca' }}
           >
             <tr>

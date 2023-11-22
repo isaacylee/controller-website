@@ -6,6 +6,7 @@ import Bargaining from './Bargaining';
 import Cities from './Cities';
 import Department from './Department';
 import CD from './EmployeesByCD';
+import EmployeesByCDBar from './EmployeesByCDBar';
 import FiftyK from './FiftyK';
 import HundredK from './HundredK';
 import OutOfState from './OutOfState';
@@ -85,6 +86,10 @@ export default function Evictions() {
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
             <CD />
+          </div>
+          <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
+            {' '}
+            <EmployeesByCDBar />
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}

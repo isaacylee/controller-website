@@ -58,10 +58,10 @@ export default function Department() {
 
   return (
     <div>
-      <div className='overflow-x-auto bg-white p-2'>
+      <div className='overflow-x-auto overflow-auto max-h-[600px] bg-white p-2'>
         <table className='w-full table-auto'>
           <thead
-            className=' text-xs font-bold text-black sm:text-sm md:text-base lg:text-lg'
+            className='text-xs font-bold text-black sm:text-sm md:text-base lg:text-lg'
             style={{ border: '1px solid black', backgroundColor: '#41ffca' }}
           >
             <tr>
@@ -75,12 +75,12 @@ export default function Department() {
             </tr>
           </thead>
           <thead
-            className='text-xs text-black sm:text-xs md:text-sm lg:text-base'
+            className='sticky top-0 text-xs text-black sm:text-xs md:text-sm lg:text-base'
             style={{ border: '1px solid black', backgroundColor: '#41ffca' }}
           >
             <tr>
               <th
-                className='sm:p-1 text-left text-black md:p-2 lg:p-2'
+                className='sticky top-0 sm:p-1 text-left text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 Department
@@ -98,7 +98,7 @@ export default function Department() {
               </select>
               </th>
               <th
-                className='flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
+                className='sticky top-0 flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
                 // style={{ border: '1px solid black' }}
               >
                 City of LA
@@ -111,25 +111,25 @@ export default function Department() {
                 # of Employees
               </th>
               <th
-                className='sm:p1 text-black md:p-2 lg:p-2'
+                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 % of Dept.
               </th>
               <th
-                className='sm:p1 text-black md:p-2 lg:p-2'
+                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 Payroll Amount
               </th>
               <th
-                className='sm:p1 text-black md:p-2 lg:p-2'
+                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 % of Dept. Payroll
               </th>
               <th
-                className='sm:p1 text-black md:p-2 lg:p-2'
+                className='sticky top-0 sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
                 % of Total Payroll
