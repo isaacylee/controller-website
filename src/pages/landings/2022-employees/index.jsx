@@ -62,7 +62,7 @@ export default function Evictions() {
                 emergencies
               </li>
             </ul>
-            <p className='mb-4'>
+            {/* <p className='mb-4'>
               <b>2022 HIGHLIGHTS:</b>
             </p>
             <ul className='mb-10 ml-10'>
@@ -134,7 +134,7 @@ export default function Evictions() {
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
