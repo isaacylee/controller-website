@@ -97,12 +97,12 @@ function SummaryPie1() {
   };
 
   return (
-    <div className='mx-2 mb-4'>
-      <h4 className='mb-2' style={{ color: isDark ? 'white' : 'black' }}>
+    <div className='mx-2 mb-6'>
+      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-64'>
         City of LA Total Payroll
       </h4>
       <Pie data={data} height={150} options={options} />
-      <p className='mt-3' style={{ color: isDark ? 'white' : 'black' }}>
+      <p className='mt-3 bg-zinc-900 text-white rounded-md w-64'>
         Total Payroll: <b>$4,826,820,876</b>
       </p>
     </div>

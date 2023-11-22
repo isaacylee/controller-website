@@ -61,7 +61,7 @@ export default function Bargaining() {
       <div className='overflow-x-auto overflow-auto max-h-[600px] bg-white p-2'>
         <table className='w-full table-auto'>
           <thead
-            className=' text-xs font-bold text-black sm:text-sm md:text-base lg:text-lg'
+            className='text-xs font-bold text-black sm:text-sm md:text-base lg:text-lg'
             style={{ border: '1px solid black', backgroundColor: '#41ffca' }}
           >
             <tr>

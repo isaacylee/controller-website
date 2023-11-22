@@ -101,13 +101,13 @@ function HundredKOut() {
   };
 
   return (
-    <div className='mx-2 mb-4'>
-      <h4 className='mb-2' style={{ color: isDark ? 'white' : 'black' }}>
+    <div className='mx-2 mb-6'>
+      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg'>
         Payroll Employees <b>Outside</b> of City of LA
         <br></br>Making &gt;$100K
       </h4>
       <Pie data={data} height={150} options={options} />
-      <p className='mt-3' style={{ color: isDark ? 'white' : 'black' }}>
+      <p className='mt-3 bg-zinc-900 text-white rounded-md w-64'>
         Total # of Employees: <b>32,066</b>
       </p>
     </div>
