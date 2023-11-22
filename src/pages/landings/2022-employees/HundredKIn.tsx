@@ -101,7 +101,7 @@ function HundredKOut() {
   };
 
   return (
-    <div className='mx-2'>
+    <div className='mx-2 mb-4'>
       <h4 className='mb-2' style={{ color: isDark ? 'white' : 'black' }}>
         Payroll Employees <b>Inside</b> of City of LA
         <br></br>Making &gt;$100K

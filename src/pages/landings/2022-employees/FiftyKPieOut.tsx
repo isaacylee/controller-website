@@ -101,7 +101,7 @@ function FiftyKPie() {
   };
 
   return (
-    <div className="mx-2">
+    <div className="mx-2 mb-4">
       <h4 className="mb-2" style={{ color: isDark ? 'white' : 'black' }}>Payroll Employees <b>Outside</b> of City of LA<br></br>Making &gt;$50K</h4>
       <Pie data={data} height={150} options={options}/>
       <p className="mt-3" style={{ color: isDark ? 'white' : 'black' }}>Total # of Employees: <b>32,066</b></p>
