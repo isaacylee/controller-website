@@ -163,7 +163,7 @@ export default function EmployeesByCDBar() {
       </center>
     </div>
     <div className='mt-4 py-4 px-5'>
-      <Bar data={data} height={150} width={200} options={options} />
+      <Bar data={data} height={250} options={options} />
     </div>
     
     </>
