@@ -87,7 +87,7 @@ function FiftyKPie() {
     plugins: {
       legend: {
         display: false,
-        color: "rgba(0, 0, 0, 1)",
+        // color: "rgba(0, 0, 0, 1)",
         labels: {
           font: {
             weight: "bold",
