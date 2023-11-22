@@ -111,7 +111,7 @@ export default function EmployeesByCDBar() {
       y: {
         grid: {
           display: true,
-          color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+          color: isDark ? '#44403c' : 'black',
         },
         ticks: {
           color: isDark ? 'white' : 'black',
@@ -132,7 +132,7 @@ export default function EmployeesByCDBar() {
       x: {
         grid: {
           display: true,
-          color: isDark ? '#44403c' : 'rgb(211, 211, 211)',
+          color: isDark ? '#44403c' : 'black',
         },
         ticks: {
           color: isDark ? 'white' : 'black',
