@@ -24,14 +24,12 @@ function updateChartLabelColor() {
   if (typeof window !== 'undefined') {
     const isDark = isDarkMode();
     console.log('isDark:', isDark);
-    // document.documentElement.style.setProperty(
-    //   '--chart-label-color',
-    //   isDark
-    //     ? 'var(--chart-label-color-dark)'
-    //     : 'var(--chart-label-color-light)'
-    // );
-    const root = document.documentElement;
-    root.style.setProperty('--chart-label-color', isDark ? 'white' : 'black');
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
   }
 }
 
