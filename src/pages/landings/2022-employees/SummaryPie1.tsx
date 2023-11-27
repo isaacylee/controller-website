@@ -95,6 +95,17 @@ function SummaryPie1() {
           },
         },
       },
+      tooltip: {
+        callbacks: {
+          label: function (context: any) {
+            const label = context.label || '';
+            const value = context.parsed.toLocaleString();
+            const percentOfEmployees = LAEmployees[context.dataIndex].percentOfEmployees;
+
+            return `${label}: ${value} (${percentOfEmployees * 100}%)`;
+          },
+        },
+      },
     },
   };
 

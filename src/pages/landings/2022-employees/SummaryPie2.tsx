@@ -101,7 +101,9 @@ function SummaryPie2() {
               label: (context: any) => {
                 const label = context.dataset.label || '';
                 const value = context.parsed.toLocaleString(); // Format number with commas
-                return `${label}: $${value}`;
+            const percentOfPayroll = LAEmployees[context.dataIndex].percentOfTotalPayroll;
+
+                return `${label}: $${value} (${percentOfPayroll * 100}%)`;
               },
             },
           },

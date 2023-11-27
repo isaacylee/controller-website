@@ -97,6 +97,17 @@ function FiftyKPie() {
           },
         },
       },
+      tooltip: {
+        callbacks: {
+          label: function (context: any) {
+            const label = context.label || '';
+            const value = LAEmployees[context.dataIndex].noOfEmployees.toLocaleString(undefined, { maximumFractionDigits: 2 });
+            const percentOfEmployees: string = (LAEmployees[context.dataIndex].percentOfGroup * 100).toFixed(2);
+
+            return `${label}: ${value} (${percentOfEmployees}%)`;
+          },
+        },
+      },
     },
   };
 
