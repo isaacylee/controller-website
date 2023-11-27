@@ -1,8 +1,9 @@
-import { Chart, registerables } from 'chart.js';
-import React, {useState } from 'react';
-import { Pie } from 'react-chartjs-2';
+import { Chart,registerables } from 'chart.js';
+import React, { useEffect, useRef } from 'react';
 
 Chart.register(...registerables);
+
+type CustomChartType = 'pie' | 'doughnut';
 
 function isDarkMode() {
   if (typeof window !== 'undefined') {
@@ -40,73 +41,92 @@ if (typeof window !== 'undefined') {
   darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
 }
 
-function SummaryPie1() {
-  const [LAEmployees] = useState([
-    {
-      id: 1,
-      cityOfLA: 'Outside of City of LA',
-      noOfEmployees: 32066,
-      percentOfEmployees: 0.6373,
-      totalPayroll: 3635090608,
-      percentOfTotalPayroll: 0.7531,
-    },
-    {
-      id: 2,
-      cityOfLA: 'Inside of City of LA',
-      noOfEmployees: 18243,
-      percentOfEmployees: 0.3627,
-      totalPayroll: 1191730268,
-      percentOfTotalPayroll: 0.2469,
-    },
-  ]);
+function SummaryPie2() {
+  const chartContainer = useRef<HTMLCanvasElement | null>(null);
+  const chartInstance = useRef<Chart<CustomChartType, any, any> | null>(null);
 
-  const isDark = isDarkMode();
+  useEffect(() => {
+    if (chartContainer.current) {
+      const ctx = chartContainer.current.getContext('2d');
 
-  const data = {
-    labels: LAEmployees.map((x: any) => x.cityOfLA),
-    datasets: [
-      {
-        label: 'Total Payroll',
-        data: LAEmployees.map((x: any) => x.totalPayroll),
-        backgroundColor: [
-          'rgba(1, 184, 193, 0.7)',
-          "rgba(0, 137, 75, 0.7)",
+      if (!ctx) {
+        console.error('Could not get 2D context for canvas.');
+        return;
+      }
+
+      // Destroy any existing chart on the canvas
+      if (chartInstance.current) {
+        chartInstance.current.destroy();
+      }
+
+      const LAEmployees = [
+        {
+          id: 1,
+          cityOfLA: 'Outside of City of LA',
+          noOfEmployees: 32066,
+          percentOfEmployees: 0.6373,
+          totalPayroll: 3635090608,
+          percentOfTotalPayroll: 0.7531,
+        },
+        {
+          id: 2,
+          cityOfLA: 'Inside of City of LA',
+          noOfEmployees: 18243,
+          percentOfEmployees: 0.3627,
+          totalPayroll: 1191730268,
+          percentOfTotalPayroll: 0.2469,
+        },
+      ];
+
+      const data = {
+        labels: LAEmployees.map((x) => x.cityOfLA),
+        datasets: [
+          {
+            label: 'Total Payroll',
+            data: LAEmployees.map((x) => x.totalPayroll),
+            backgroundColor: ['#41ffca', '#ffc021'],
+            borderColor: ['#41ffca', '#ffc021'],
+            borderWidth: 1,
+          },
         ],
-        borderColor: [
-          '#2dd4bf',
-          "#16a34a",
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
+      };
 
-  const options = {
-    plugins: {
-      legend: {
-        display: false,
-        // color: 'rgba(0, 0, 0, 1)',
-        labels: {
-          font: {
-            weight: 'bold',
-            size: 12,
+      const options = {
+        plugins: {
+          legend: {
+            display: false,
+          },
+          tooltip: {
+            callbacks: {
+              label: (context: any) => {
+                const label = context.dataset.label || '';
+                const value = context.parsed.toLocaleString(); // Format number with commas
+                return `${label}: $${value}`;
+              },
+            },
           },
         },
-      },
-    },
-  };
+      };
+
+      chartInstance.current = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options,
+      });
+    }
+  }, []);
 
   return (
     <div className='mx-2 mb-6'>
-      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-64'>
+      <h4 className='mb-2 w-64 rounded-md bg-zinc-900 text-white'>
         City of LA Total Payroll
       </h4>
-      <Pie data={data} height={150} options={options} />
-      <p className='mt-3 bg-zinc-900 text-white rounded-md w-64'>
+      <canvas ref={chartContainer} height={150}></canvas>
+      <p className='mt-3 w-64 rounded-md bg-zinc-900 text-white'>
         Total Payroll: <b>$4,826,820,876</b>
       </p>
     </div>
   );
 }
 
-export default SummaryPie1;
+export default SummaryPie2;

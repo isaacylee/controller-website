@@ -71,12 +71,12 @@ function SummaryPie1() {
         label: '# of Employees',
         data: LAEmployees.map((x: any) => x.noOfEmployees),
         backgroundColor: [
-          'rgba(1, 184, 193, 0.7)',
-          "rgba(0, 137, 75, 0.7)",
+          '#41ffca',
+          "#ffc021",
         ],
         borderColor: [
-          '#2dd4bf',
-          "#16a34a",
+          '#41ffca',
+          "#ffc021",
         ],
         borderWidth: 1,
       },

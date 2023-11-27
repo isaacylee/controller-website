@@ -73,12 +73,12 @@ function HundredKOut() {
         label: '# of Employees',
         data: LAEmployees.map((x: any) => x.noOfEmployees),
         backgroundColor: [
-          'rgba(1, 184, 193, 0.7)',
-          'rgba(255, 117, 31, 0.7)',
+          '#ffc021',
+          '#41ffca',
         ],
         borderColor: [
-          '#2dd4bf',
-          '#fb923c',
+          '#ffc021',
+          '#41ffca',
         ],
         borderWidth: 1,
       },

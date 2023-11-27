@@ -106,6 +106,20 @@ export default function EmployeesByCDBar() {
           },
         },
       },
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            const label = context.dataset.label || "";
+            const value = context.parsed.y.toLocaleString(); // Format number with commas
+
+            if (category === "Total Payroll") {
+              return `${label}: $${value}`;
+            } else {
+              return `${label}: ${value}`;
+            }
+          },
+        },
+      },
     },
     scales: {
       y: {
@@ -169,4 +183,3 @@ export default function EmployeesByCDBar() {
     </>
   );
 };
-
