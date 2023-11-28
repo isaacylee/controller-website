@@ -3,10 +3,10 @@
 import Navbar from '@/components/Navbar';
 
 import Bargaining from './Bargaining';
+import CDBar2 from './CDBar2';
 import Cities from './Cities';
 import Department from './Department';
 import CD from './EmployeesByCD';
-import EmployeesByCDBar from './EmployeesByCDBar';
 import FiftyK from './FiftyK';
 import FiftyKPieIn from './FiftyKPieIn';
 import FiftyKPieOut from './FiftyKPieOut';
@@ -107,7 +107,7 @@ export default function Employees() {
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
-            <EmployeesByCDBar />
+            <CDBar2 />
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
             {' '}
