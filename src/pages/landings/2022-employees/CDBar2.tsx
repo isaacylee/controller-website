@@ -71,7 +71,7 @@ function CDBar2() {
     (data) => data['cd#'] !== 'Grand Total'
   );
 
-  const onCategoryChange = (e) => {
+  const onCategoryChange = (e: any) => {
     setCategory(e.target.value);
     console.log('target', e.target.value);
   };
