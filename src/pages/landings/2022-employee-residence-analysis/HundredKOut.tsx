@@ -1,6 +1,6 @@
-import { Chart, registerables } from "chart.js";
-import React, {useState} from 'react';
-import { Pie } from "react-chartjs-2";
+import { Chart, registerables } from 'chart.js';
+import React, { useState } from 'react';
+import { Pie } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
@@ -42,43 +42,43 @@ if (typeof window !== 'undefined') {
   darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
 }
 
-function FiftyKPieIn() {
+function HundredKOut() {
   const [LAEmployees] = useState([
     {
-      id: 3,
-      cityOfLA: 'YES',
-      payGreater50K: 'Pay > $50K',
-      noOfEmployees: 9238,
-      percentOfGroup: 0.5063,
-      totalPayroll: 1052846656,
-      percentOfTotalPayroll: 0.8835,
+      id: 1,
+      cityOfLA: 'NO',
+      payGreater100K: 'Pay < $100K',
+      noOfEmployees: 13767,
+      percentOfGroup: 0.4293,
+      totalPayroll: 690709935,
+      percentOfTotalPayroll: 0.19,
     },
     {
-      id: 4,
-      cityOfLA: 'YES',
-      payGreater50K: 'Pay < $50K',
-      noOfEmployees: 9008,
-      percentOfGroup: 0.4937,
-      totalPayroll: 138883612,
-      percentOfTotalPayroll: 0.1165,
+      id: 2,
+      cityOfLA: 'NO',
+      payGreater100K: 'Pay > $100K',
+      noOfEmployees: 18299,
+      percentOfGroup: 0.5707,
+      totalPayroll: 2944380673,
+      percentOfTotalPayroll: 0.81,
     },
   ]);
 
   const isDark = isDarkMode();
 
   const data = {
-    labels: LAEmployees.map((x: any) => x.payGreater50K),
+    labels: LAEmployees.map((x: any) => x.payGreater100K),
     datasets: [
       {
-        label: "# of Employees",
+        label: '# of Employees',
         data: LAEmployees.map((x: any) => x.noOfEmployees),
         backgroundColor: [
-          "#41ffca",
-          "#ffc021",
+          '#ffc021',
+          '#41ffca',
         ],
         borderColor: [
-          "#41ffca",
-          "#ffc021",
+          '#ffc021',
+          '#41ffca',
         ],
         borderWidth: 1,
       },
@@ -89,10 +89,10 @@ function FiftyKPieIn() {
     plugins: {
       legend: {
         display: false,
-        // color: "rgba(0, 0, 0, 1)",
+        // color: 'rgba(0, 0, 0, 1)',
         labels: {
           font: {
-            weight: "bold",
+            weight: 'bold',
             size: 12,
           },
         },
@@ -102,7 +102,7 @@ function FiftyKPieIn() {
           label: function (context: any) {
             const label = context.label || '';
             const value = LAEmployees[context.dataIndex].noOfEmployees.toLocaleString(undefined, { maximumFractionDigits: 2 });
-            const percentOfEmployees: string = (LAEmployees[context.dataIndex].percentOfGroup * 100).toFixed(2);
+            const percentOfEmployees: number = LAEmployees[context.dataIndex].percentOfGroup * 100;
 
             return `${label}: ${value} (${percentOfEmployees}%)`;
           },
@@ -112,12 +112,17 @@ function FiftyKPieIn() {
   };
 
   return (
-    <div className="mx-2 mb-6">
-      <h4 className="mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg">Payroll Employees <b>Inside</b> of City of LA<br></br>Making &gt;$50K</h4>
-      <Pie data={data} height={150} options={options}/>
-      <p className="mt-3 bg-zinc-900 text-white rounded-md w-64">Total # of Employees: <b>18,246</b></p>
+    <div className='mx-2 mb-6'>
+      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg'>
+        Payroll Employees <b>Outside</b> of City of LA
+        <br></br>Making More Than $100K
+      </h4>
+      <Pie data={data} height={150} options={options} />
+      <p className='mt-3 bg-zinc-900 text-white rounded-md w-64'>
+        Total # of Employees: <b>32,066</b>
+      </p>
     </div>
   );
 }
 
-export default FiftyKPieIn;
+export default HundredKOut;

@@ -3,23 +3,43 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function Summary() {
+export default function HundredK() {
   const [LAEmployees] = useState([
     {
       id: 1,
       cityOfLA: 'NO',
-      noOfEmployees: 32066,
-      percentOfEmployees: 0.6373,
-      totalPayroll: 3635090608,
-      percentOfTotalPayroll: 0.7531,
+      payGreater100K: 'NO',
+      noOfEmployees: 13767,
+      percentOfGroup: 0.4293,
+      totalPayroll: 690709935,
+      percentOfTotalPayroll: 0.19,
     },
     {
       id: 2,
+      cityOfLA: 'NO',
+      payGreater100K: 'YES',
+      noOfEmployees: 18299,
+      percentOfGroup: 0.5707,
+      totalPayroll: 2944380673,
+      percentOfTotalPayroll: 0.81,
+    },
+    {
+      id: 3,
       cityOfLA: 'YES',
-      noOfEmployees: 18243,
-      percentOfEmployees: 0.3627,
-      totalPayroll: 1191730268,
-      percentOfTotalPayroll: 0.2469,
+      payGreater100K: 'NO',
+      noOfEmployees: 13335,
+      percentOfGroup: 0.7308,
+      totalPayroll: 461525658,
+      percentOfTotalPayroll: 0.3873,
+    },
+    {
+      id: 4,
+      cityOfLA: 'YES',
+      payGreater100K: 'YES',
+      noOfEmployees: 4911,
+      percentOfGroup: 0.2692,
+      totalPayroll: 730204610,
+      percentOfTotalPayroll: 0.6127,
     },
   ]);
 
@@ -35,9 +55,9 @@ export default function Summary() {
               <th
                 className='p-2 text-center text-black'
                 style={{ border: '1px solid black' }}
-                colSpan='5'
+                colSpan='6'
               >
-                Summary
+                Payroll Employees Making More Than $100K
               </th>
             </tr>
           </thead>
@@ -50,7 +70,13 @@ export default function Summary() {
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
-                City of LA
+                Lived in City of LA
+              </th>
+              <th
+                className='sm:p1 text-left text-black md:p-2 lg:p-2'
+                style={{ border: '1px solid black' }}
+              >
+                Pay More Than $100K
               </th>
               <th
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'
@@ -62,7 +88,7 @@ export default function Summary() {
                 className='sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
-                % of Employees
+                % of Group
               </th>
               <th
                 className='sm:p1 text-black md:p-2 lg:p-2'
@@ -74,7 +100,7 @@ export default function Summary() {
                 className='sm:p1 text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
-                % of Total Payroll
+                % of Group
               </th>
             </tr>
           </thead>
@@ -94,13 +120,19 @@ export default function Summary() {
                   className='sm:p1 text-black md:p-2 lg:p-2'
                   style={{ border: '1px solid black' }}
                 >
+                  {row.payGreater100K}
+                </td>
+                <td
+                  className='sm:p1 text-black md:p-2 lg:p-2'
+                  style={{ border: '1px solid black' }}
+                >
                   {row.noOfEmployees.toLocaleString()}
                 </td>
                 <td
                   className='sm:p1 text-black md:p-2 lg:p-2'
                   style={{ border: '1px solid black' }}
                 >
-                  {(row.percentOfEmployees * 100).toFixed(2)}%
+                  {(row.percentOfGroup * 100).toFixed(2)}%
                 </td>
                 <td
                   className='sm:p1 text-black md:p-2 lg:p-2'
@@ -126,15 +158,17 @@ export default function Summary() {
               <td
                 className='sm:p1 font-bold text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
+              ></td>
+              <td
+                className='sm:p1 font-bold text-black md:p-2 lg:p-2'
+                style={{ border: '1px solid black' }}
               >
                 50,312
               </td>
               <td
                 className='sm:p1 font-bold text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
-              >
-                100.00%
-              </td>
+              ></td>
               <td
                 className='sm:p1 font-bold text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
@@ -144,9 +178,7 @@ export default function Summary() {
               <td
                 className='sm:p1 font-bold text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
-              >
-                100.00%
-              </td>
+              ></td>
             </tr>
           </tbody>
         </table>

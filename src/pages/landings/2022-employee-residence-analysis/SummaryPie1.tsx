@@ -111,8 +111,8 @@ function SummaryPie1() {
 
   return (
     <div className='mx-2 mb-6'>
-      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-72'>
-        City of LA Payroll Employees
+      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-64'>
+        City of LA<br></br>Employee Resident #
       </h4>
       <Pie data={data} height={150} options={options} />
       <p className='mt-3 bg-zinc-900 text-white rounded-md w-64'>

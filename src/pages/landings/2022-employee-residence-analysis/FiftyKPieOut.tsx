@@ -1,6 +1,6 @@
-import { Chart, registerables } from 'chart.js';
-import React, { useState } from 'react';
-import { Pie } from 'react-chartjs-2';
+import { Chart, registerables } from "chart.js";
+import React, {useState} from 'react';
+import { Pie } from "react-chartjs-2";
 
 Chart.register(...registerables);
 
@@ -42,43 +42,43 @@ if (typeof window !== 'undefined') {
   darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
 }
 
-function HundredKOut() {
+function FiftyKPie() {
   const [LAEmployees] = useState([
     {
-      id: 3,
-      cityOfLA: 'YES',
-      payGreater100K: 'Pay < $100K',
-      noOfEmployees: 13335,
-      percentOfGroup: 0.7308,
-      totalPayroll: 461525658,
-      percentOfTotalPayroll: 0.3873,
+      id: 1,
+      cityOfLA: 'NO',
+      payGreater50K: 'Pay > $50K',
+      noOfEmployees: 25716,
+      percentOfGroup: 0.802,
+      totalPayroll: 3513156405,
+      percentOfTotalPayroll: 0.9665,
     },
     {
-      id: 4,
-      cityOfLA: 'YES',
-      payGreater100K: 'Pay > $100K',
-      noOfEmployees: 4911,
-      percentOfGroup: 0.2692,
-      totalPayroll: 730204610,
-      percentOfTotalPayroll: 0.6127,
+      id: 2,
+      cityOfLA: 'NO',
+      payGreater50K: 'Pay < $50K',
+      noOfEmployees: 6350,
+      percentOfGroup: 0.198,
+      totalPayroll: 121934203,
+      percentOfTotalPayroll: 0.0335,
     },
   ]);
 
   const isDark = isDarkMode();
 
   const data = {
-    labels: LAEmployees.map((x: any) => x.payGreater100K),
+    labels: LAEmployees.map((x: any) => x.payGreater50K),
     datasets: [
       {
-        label: '# of Employees',
+        label: "# of Employees",
         data: LAEmployees.map((x: any) => x.noOfEmployees),
         backgroundColor: [
-          '#ffc021',
-          '#41ffca',
+          "#41ffca",
+          "#ffc021",
         ],
         borderColor: [
-          '#ffc021',
-          '#41ffca',
+          "#41ffca",
+          "#ffc021",
         ],
         borderWidth: 1,
       },
@@ -89,10 +89,10 @@ function HundredKOut() {
     plugins: {
       legend: {
         display: false,
-        // color: 'rgba(0, 0, 0, 1)',
+        // color: "rgba(0, 0, 0, 1)",
         labels: {
           font: {
-            weight: 'bold',
+            weight: "bold",
             size: 12,
           },
         },
@@ -112,17 +112,12 @@ function HundredKOut() {
   };
 
   return (
-    <div className='mx-2 mb-6'>
-      <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg'>
-        Payroll Employees <b>Inside</b> of City of LA
-        <br></br>Making &gt;$100K
-      </h4>
-      <Pie data={data} height={150} options={options} />
-      <p className='mt-3 bg-zinc-900 text-white rounded-md w-64'>
-        Total # of Employees: <b>18,246</b>
-      </p>
+    <div className="mx-2 mb-6">
+      <h4 className="mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg">Payroll Employees <b>Outside</b> of City of LA<br></br>Making More Than $50K</h4>
+      <Pie data={data} height={150} options={options}/>
+      <p className="mt-3 bg-zinc-900 text-white rounded-md w-64">Total # of Employees: <b>32,066</b></p>
     </div>
   );
 }
 
-export default HundredKOut;
+export default FiftyKPie;

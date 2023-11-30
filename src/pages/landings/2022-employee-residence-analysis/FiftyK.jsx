@@ -57,7 +57,7 @@ export default function FiftyK() {
                 style={{ border: '1px solid black' }}
                 colSpan='6'
               >
-                Payroll Employees Making &gt;$50K
+                Payroll Employees Making More Than $50K
               </th>
             </tr>
           </thead>
@@ -70,13 +70,13 @@ export default function FiftyK() {
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
-                City of LA
+                Lived in City of LA
               </th>
               <th
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'
                 style={{ border: '1px solid black' }}
               >
-                Pay &gt;$50K
+                Paid More Than $50K
               </th>
               <th
                 className='sm:p1 text-left text-black md:p-2 lg:p-2'

@@ -121,7 +121,7 @@ function SummaryPie2() {
   return (
     <div className='mx-2 mb-6'>
       <h4 className='mb-2 w-64 rounded-md bg-zinc-900 text-white'>
-        City of LA Total Payroll
+      City of LA<br></br>Employee Resident Payroll $
       </h4>
       <canvas ref={chartContainer} height={150}></canvas>
       <p className='mt-3 w-64 rounded-md bg-zinc-900 text-white'>
