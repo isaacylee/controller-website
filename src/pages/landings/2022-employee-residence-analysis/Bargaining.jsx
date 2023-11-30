@@ -107,7 +107,7 @@ export default function Bargaining() {
                 className='sm:p1 flex items-center text-left text-black md:p-2 lg:p-2'
                 // style={{ border: '1px solid black' }}
               >
-                City of LA
+                Lived in City of LA
                 <div
                   className='dropdown-arrow'
                   onClick={toggleFilter}

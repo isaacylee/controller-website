@@ -101,7 +101,7 @@ export default function Department() {
                 className='flex items-center sm:p1 text-left text-black md:p-2 lg:p-2'
                 // style={{ border: '1px solid black' }}
               >
-                City of LA
+                Lived in City of LA
                 <div className="dropdown-arrow" onClick={toggleFilter} style={{ cursor: 'pointer' }}>&#9662;</div>
               </th>
               <th
