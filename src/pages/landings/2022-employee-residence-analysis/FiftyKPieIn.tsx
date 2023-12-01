@@ -1,6 +1,6 @@
-import { Chart, registerables } from "chart.js";
-import React, {useState} from 'react';
-import { Pie } from "react-chartjs-2";
+import { Chart, registerables } from 'chart.js';
+import React, { useState } from 'react';
+import { Pie } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
@@ -70,16 +70,10 @@ function FiftyKPieIn() {
     labels: LAEmployees.map((x: any) => x.payGreater50K),
     datasets: [
       {
-        label: "# of Employees",
+        label: '# of Employees',
         data: LAEmployees.map((x: any) => x.noOfEmployees),
-        backgroundColor: [
-          "#41ffca",
-          "#ffc021",
-        ],
-        borderColor: [
-          "#41ffca",
-          "#ffc021",
-        ],
+        backgroundColor: ['#41ffca', '#ffc021'],
+        borderColor: ['#41ffca', '#ffc021'],
         borderWidth: 1,
       },
     ],
@@ -92,7 +86,7 @@ function FiftyKPieIn() {
         // color: "rgba(0, 0, 0, 1)",
         labels: {
           font: {
-            weight: "bold",
+            weight: 'bold',
             size: 12,
           },
         },
@@ -101,8 +95,14 @@ function FiftyKPieIn() {
         callbacks: {
           label: function (context: any) {
             const label = context.label || '';
-            const value = LAEmployees[context.dataIndex].noOfEmployees.toLocaleString(undefined, { maximumFractionDigits: 2 });
-            const percentOfEmployees: string = (LAEmployees[context.dataIndex].percentOfGroup * 100).toFixed(2);
+            const value = LAEmployees[
+              context.dataIndex
+            ].noOfEmployees.toLocaleString(undefined, {
+              maximumFractionDigits: 2,
+            });
+            const percentOfEmployees: string = (
+              LAEmployees[context.dataIndex].percentOfGroup * 100
+            ).toFixed(2);
 
             return `${label}: ${value} (${percentOfEmployees}%)`;
           },
@@ -112,10 +112,14 @@ function FiftyKPieIn() {
   };
 
   return (
-    <div className="mx-2 mb-6">
-      <h4 className="mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg">Payroll Employees <b>Inside</b> of City of LA<br></br>Making More Than $50K</h4>
-      <Pie data={data} height={150} options={options}/>
-      <p className="mt-3 bg-zinc-900 text-white rounded-md w-64">Total # of Employees: <b>18,246</b></p>
+    <div className='mx-2 mb-6'>
+      <h4 className='mb-2 w-96 rounded-md bg-zinc-900 text-white sm:w-80 sm:text-sm md:w-80 md:text-base lg:w-96 lg:text-lg'>
+        City Employees <b>Inside</b> of City of LA<br></br>Making More Than $50K
+      </h4>
+      <Pie data={data} height={150} options={options} />
+      <p className='mt-3 w-64 rounded-md bg-zinc-900 text-white'>
+        Total # of Employees: <b>18,246</b>
+      </p>
     </div>
   );
 }

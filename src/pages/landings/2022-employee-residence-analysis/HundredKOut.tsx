@@ -114,7 +114,7 @@ function HundredKOut() {
   return (
     <div className='mx-2 mb-6'>
       <h4 className='mb-2 bg-zinc-900 text-white rounded-md w-96 sm:w-80 md:w-80 lg:w-96 sm:text-sm md:text-base lg:text-lg'>
-        Payroll Employees <b>Outside</b> of City of LA
+        City Employees <b>Outside</b> of City of LA
         <br></br>Making More Than $100K
       </h4>
       <Pie data={data} height={150} options={options} />

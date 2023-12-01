@@ -57,7 +57,7 @@ export default function FiftyK() {
                 style={{ border: '1px solid black' }}
                 colSpan='6'
               >
-                Payroll Employees Making More Than $50K
+                City Employees Making More Than $50K
               </th>
             </tr>
           </thead>
