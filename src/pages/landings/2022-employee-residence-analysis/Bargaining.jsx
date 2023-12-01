@@ -70,7 +70,7 @@ export default function Bargaining() {
                 style={{ border: '1px solid black' }}
                 colSpan='8'
               >
-                Payroll Employee Analysis by Bargaining Unit
+                City Employee Residence Analysis by Bargaining Unit
               </th>
             </tr>
           </thead>

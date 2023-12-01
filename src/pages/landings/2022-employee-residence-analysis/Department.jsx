@@ -70,7 +70,7 @@ export default function Department() {
                 style={{ border: '1px solid black' }}
                 colSpan='8'
               >
-                Payroll Employee Analysis by Department
+                City Employee Residence Analysis by Department
               </th>
             </tr>
           </thead>
