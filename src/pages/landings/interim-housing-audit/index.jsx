@@ -14,8 +14,8 @@ export default function InterimHousing() {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '160px',
-    height: '60px',
+    width: '170px',
+    height: '70px',
     textAlign: 'center',
   };
 
@@ -34,22 +34,22 @@ export default function InterimHousing() {
             <p>[insert short blurb here]</p>
           </div>
           <div className='flex flex-row justify-center mb-7'>
-            <a href='' className='text-lg' style={buttonStyle}>
+            <a href='' className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg' style={buttonStyle}>
               Full Report
             </a>
-            <a href='' className='text-lg' style={buttonStyle}>
+            <a href='' className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg' style={buttonStyle}>
               Shelter Bed Map<br></br>(Demo)
             </a>
           </div>
           <div>
-            <p className='text-left dark:text-white mt-2 mb-4'>December 5, 2023</p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mt-4 mb-5'>December 5, 2023</p>
+            <p className='text-left dark:text-white mb-5'>
               Honorable Karen Bass, Mayor<br></br>Honorable Hydee Feldstein
-              Soto, City Attory<br></br>Honorable Members of the Los Angeles
+              Soto, City Attorney<br></br>Honorable Members of the Los Angeles
               City Council
             </p>
-            <p className='text-left dark:text-white mb-4'>RE: Interim Housing Bed Availability Data</p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>RE: Interim Housing Bed Availability Data</p>
+            <p className='text-left dark:text-white mb-5'>
               The results of the 2023 Greater Los Angeles Homeless count
               revealed that an estimated 46,260 people in the City were
               experiencing either sheltered or unsheltered homelessness, a
@@ -62,7 +62,7 @@ export default function InterimHousing() {
               processes, significantly inhibit efforts by the City to respond to
               the crisis with the urgency that it requires.{' '}
             </p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               In this audit, our office worked to analyze and review current
               methods used to gather, use, and improve interim housing data. Due
               to the extremely limited amount of interim housing beds within
@@ -72,11 +72,11 @@ export default function InterimHousing() {
               and a high level of coordination between outreach workers, program
               operators, and others to place participants into a shelter.{' '}
             </p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               Right now, as documented by our Office’s audit, that data is
               lacking. We found:
             </p>
-            <ul className='text-left dark:text-white mb-4 ml-7'>
+            <ul className='text-left dark:text-white mb-5 ml-10'>
               <li>
                 &bull; Errors with data entry including instances of bed
                 attendance containing over- and underutilization counts,
@@ -94,7 +94,7 @@ export default function InterimHousing() {
                 beds may not be used efficiently.
               </li>
             </ul>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               These data quality issues make it next to impossible for the City
               to have an accurate picture of how many beds we actually have
               available, and how many are being utilized in the City at any
@@ -111,7 +111,7 @@ export default function InterimHousing() {
               not have sufficient shelter beds available for their homeless
               population.
             </p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               We recommend that the City collaborate with LAHSA to take new
               steps to create a functioning shelter bed availability system, and
               improve the data quality that supports the existing shelter
@@ -120,7 +120,7 @@ export default function InterimHousing() {
               expanding responsibility in newer City efforts, like Inside Safe.
               Specifically, LAHSA should:
             </p>
-            <ul className='text-left dark:text-white mb-4 ml-7'>
+            <ul className='text-left dark:text-white mb-5 ml-10'>
               <li>
                 &bull; Re-evaluate its information requirements and redesign a
                 shelter bed availability system that is publicly accessible to
@@ -141,12 +141,12 @@ export default function InterimHousing() {
                 utilization rates.
               </li>
             </ul>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               As this audit reveals, the City currently lacks a centralized
               database that tracks interim housing availability and criteria for
               entry for interim housing sites.{' '}
             </p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               To illustrate what our City needs, our team is launching an
               interim housing bed availability map that, while incomplete,
               serves as an example of what we could accomplish with more
@@ -159,7 +159,7 @@ export default function InterimHousing() {
               current bed availability, and daily reporting practices for all
               sites.
             </p>
-            <p className='text-left dark:text-white mb-4'>
+            <p className='text-left dark:text-white mb-5'>
               With the work we have done thus far, we believe that a system like
               this is possible. We invite all necessary stakeholders (including
               LAHSA and the service providers that it works with) to join
