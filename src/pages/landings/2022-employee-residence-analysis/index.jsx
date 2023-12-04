@@ -60,6 +60,10 @@ export default function Employees() {
                 spending / local taxes)
               </li>
               <li>
+                &bull; Increases in our city budget due to more local revenue
+                which means more spending on city resources and services
+              </li>
+              <li>
                 &bull; More engagement with the local communities they serve as
                 City employees
               </li>
@@ -82,13 +86,16 @@ export default function Employees() {
             <p className='mb-10'>
               Programs like “Targeted Local Hire” foster that relationship, but
               reform of the Civil Service system is needed to expand those
-              opportunities beyond entry-level positions. Other large cities
-              have implemented incentives for employees, including first
-              responders, to live in the communities they serve. Continued
-              progress toward promoting additional affordable housing in our
-              city, especially workforce housing and transit-oriented community
-              projects, can offer more and better choices that are affordable to
-              City workers.
+              opportunities beyond entry-level positions which are usually lower
+              paying positions compared to other city jobs as evidenced by our
+              analysis. This is especially important considering that our City
+              suffers from chronic staffing vacancies where 1 out of every 6
+              jobs are unfilled. Other large cities have implemented incentives
+              for employees, including first responders, to live in the
+              communities they serve. Continued progress toward promoting
+              additional affordable housing in our city, especially workforce
+              housing and transit-oriented community projects, can offer more
+              and better choices that are affordable to City workers.
             </p>
           </div>
           <div className='mb-6 sm:mb-8 md:mb-12 lg:mb-16'>
