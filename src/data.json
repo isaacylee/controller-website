@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "/images/2022analysis.png",
+      "name": "LA City Payroll Employee Residence Analysis (2022)",
+      "year": "2023",
+      "dept": "Analysis",
+      "link": "https://controller.lacity.gov/landings/2022-employee-residence-analysis"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/4118arrestrecent.png?alt=media&token=ded4d6b9-9164-45b4-9ee4-f51f9b337c8a",
       "name": "41.18 Arrests (1/1/21 - 9/15/23)",
       "year": "2023",
