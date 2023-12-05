@@ -43,7 +43,7 @@ export default function InterimHousing() {
           </div>
           <div className='mb-7 flex flex-row justify-center'>
             <a
-              href=''
+              href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/interimhousingaudit.pdf?alt=media&token=1c79962e-e930-4834-abb4-6a91ca32a6df'
               className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
               style={buttonStyle}
             >
@@ -95,25 +95,36 @@ export default function InterimHousing() {
               operators, and others to place participants into a shelter.{' '}
             </p>
             <p className='mb-5 text-left dark:text-white'>
-              Right now, as documented by our Office’s audit, that data is
-              lacking. We found:
+              Right now, as documented by our Office’s audit, the systems and
+              data are lacking. We found:
             </p>
             <ul className='mb-5 ml-10 text-left dark:text-white'>
               <li>
-                &bull; Errors with data entry including instances of bed
-                attendance containing over- and underutilization counts,
-                pointing to issues with data quality
+                &bull; Data entry issues related to participant enrollments and
+                exits, and bed attendance data
               </li>
               <li>
-                &bull; LAHSA did not follow the federal government’s guidelines
-                to investigate data quality issues that were clearly inaccurate
-                (indicated by bed utilization rates below 65% or above 105%)
+                &bull; LAHSA did not follow up with interim housing providers on
+                their point-in-time sheltered homeless count data, despite red
+                flags indicating potential data quality issues.
               </li>
               <li>
                 &bull; A significant number of shelters have recently reported
                 low bed utilization rates, increasing the risk that the number
                 of sheltered homeless is being undercounted and that available
                 beds may not be used efficiently.
+              </li>
+              <li>
+                &bull; LAHSA attempted to develop a public facing shelter bed
+                availability system (Find-a-Shelter) in the past, but low
+                participation rates by providers and inaccurate data limited the
+                usefulness of the system.
+              </li>
+              <li>
+                &bull; LAHSA’s current system for tracking bed availability (Bed
+                Reservation System) is so unreliable that LAHSA relies on daily
+                census emails to track bed availability, rather than the
+                reservation system.
               </li>
             </ul>
             <p className='mb-5 text-left dark:text-white'>
@@ -124,14 +135,13 @@ export default function InterimHousing() {
               like Los Angeles Municipal Code section 41.18 - which prohibits
               unhoused individuals from sitting, sleeping, or lying in
               designated areas, having reliable information about shelter bed
-              availability would help the City ensure it is abiding by the
-              Constitution by better understanding the extent to which it is
-              criminalizing individuals it cannot house. Under a federal court’s
-              decision in the case of Martin v. Boise, the City of Los Angeles
-              and other local jurisdictions in several western states cannot
-              enforce local laws restricting camping in public spaces if they do
-              not have sufficient shelter beds available for their homeless
-              population.
+              availability is crucial to assessing the City's adherence to the
+              Constitutional rights of unhoused individuals. Under a federal
+              court's decision in the case of Martin v. Boise, the City of Los
+              Angeles and other local jurisdictions in several western states
+              cannot enforce local laws restricting camping in public spaces if
+              they do not have sufficient shelter beds available for their
+              homeless population.
             </p>
             <p className='mb-5 text-left dark:text-white'>
               We recommend that the City collaborate with LAHSA to take new
@@ -189,6 +199,8 @@ export default function InterimHousing() {
               Angeles, including all of its unhoused neighbors, should know how
               many interim shelter beds are available on any given night.{' '}
             </p>
+            <p className='mb-5 text-left dark:text-white'>Respectfully submitted,</p>
+            <p className='mb-5 text-left dark:text-white'>KENNETH MEJIA<br></br>City Controller</p>
           </div>
         </center>
       </main>
