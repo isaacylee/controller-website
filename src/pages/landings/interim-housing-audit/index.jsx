@@ -199,8 +199,19 @@ export default function InterimHousing() {
               Angeles, including all of its unhoused neighbors, should know how
               many interim shelter beds are available on any given night.{' '}
             </p>
-            <p className='mb-5 text-left dark:text-white'>Respectfully submitted,</p>
-            <p className='mb-5 text-left dark:text-white'>KENNETH MEJIA<br></br>City Controller</p>
+            <p className='mb-5 text-left dark:text-white'>
+              Respectfully submitted,
+            </p>
+            <div>
+              <img
+                src='/images/sig-light.png'
+                className='float-left mb-5 mr-4 h-auto w-40'
+                alt='Signature Image'
+              />
+            </div>
+              <p className='mb-5 text-left dark:text-white clear-left'>
+                KENNETH MEJIA<br></br>City Controller
+              </p>
           </div>
         </center>
       </main>
