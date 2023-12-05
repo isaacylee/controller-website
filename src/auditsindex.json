@@ -1,13 +1,6 @@
 {
   "audits": [
-    {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/homelessaudit-sheltercover.jpg?alt=media&token=483a5f0a-13ea-41b1-bbf8-b5f64285f128",
-      "name": "Homelessness Audit: Interim Housing Data",
-      "year": "2023",
-      "dept": "City of Los Angeles ",
-      "link": "https://bit.ly/interim-housing-audit"
-    },
+  
     {
       "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/killa-fine-cover.jpg?alt=media&token=1a0b7da7-d521-403e-9372-6a5554b1d717",
