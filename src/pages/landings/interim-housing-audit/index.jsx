@@ -31,11 +31,6 @@ export default function InterimHousing() {
             />
           </div>
           <div className='mt-7 mb-7 dark:text-white'>
-            {/* <iframe
-              className='w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2'
-              height='auto'
-              src='https://www.youtube.com/watch?v=_58JJb-3E5I'
-            ></iframe> */}
             <iframe
               className='w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2'
               height='400'
@@ -55,7 +50,9 @@ export default function InterimHousing() {
               Full Report
             </a>
             <a
-              href=''
+              href='https://shelterbeds.lacontroller.app/'
+              target='_blank'
+              rel='noopener noreferrer'
               className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
               style={buttonStyle}
             >
