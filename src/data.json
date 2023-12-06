@@ -1,14 +1,5 @@
 {
   "data": [
- 
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/shelterbedmap_thumbnail.png?alt=media&token=96d7bc13-726e-4248-b941-5191f07f63a6",
-      "name": "Shelter Bed Availability Map",
-      "year": "2023",
-      "dept": "Map",
-      "link": "https://shelterbeds.lacontroller.app/"
-    },
-    
     {
       "image": "/images/2022analysis.png",
       "name": "LA City Payroll Employee Residence Analysis (2022)",
