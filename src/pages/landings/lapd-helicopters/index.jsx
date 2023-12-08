@@ -66,7 +66,7 @@ export default function InterimHousing() {
             className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
             style={buttonStyle}
           >
-            Costs Breakdown
+           Cost Analysis Summary 
           </a>
           </div>
           <div>
