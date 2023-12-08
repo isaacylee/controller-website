@@ -2,6 +2,8 @@ import React from 'react';
 
 import Navbar from '@/components/Navbar';
 
+ 
+
 export default function InterimHousing() {
   const buttonStyle = {
     backgroundColor: '#41ffca',
@@ -59,6 +61,13 @@ export default function InterimHousing() {
             >
               LAPD Helicopter Map<br></br>
             </a>
+            <a
+            href='#cost-analysis'
+            className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
+            style={buttonStyle}
+          >
+            Costs Breakdown
+          </a>
           </div>
           <div>
             <p className='mt-4 mb-5 text-left dark:text-white'>
@@ -216,7 +225,8 @@ export default function InterimHousing() {
               </p>
           </div>
           <br></br>
-          <h1 className='mb-5 text-left dark:text-white'>
+          
+          <h1 id='cost-analysis' className='mb-5 text-left dark:text-white '>
           Cost Analysis Summary
             </h1>
           <p className='mb-5 text-left dark:text-white'>
@@ -232,13 +242,11 @@ export default function InterimHousing() {
             <p className='mb-5 text-left dark:text-white'>
             For a thorough breakdown of identified costs, please see here:
             </p>
-            <a
-              href=''
-              className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
-              style={buttonStyle}
-            >
-              Costs Breakdown
-            </a>
+            <img
+            src='../images/costanalysis.png'
+            alt='Cost Analysis Breakdown'
+            className='mb-5 w-full'
+          />
         </center>
       </main>
     </>
