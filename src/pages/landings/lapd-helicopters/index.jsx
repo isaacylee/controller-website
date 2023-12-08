@@ -215,6 +215,30 @@ export default function InterimHousing() {
                 KENNETH MEJIA<br></br>City Controller
               </p>
           </div>
+          <br></br>
+          <h1 className='mb-5 text-left dark:text-white'>
+          Cost Analysis Summary
+            </h1>
+          <p className='mb-5 text-left dark:text-white'>
+          To identify costs related to Los Angeles Police Department (LAPD) helicopters, our auditors met with representatives from LAPD, the General Services Department (GSD), and the Information Technology Agency (ITA) as part of the cost estimate development process. We advised each during the meetings of our intent to develop a cost estimate that was based on total payroll costs and other costs (parts, materials, contracts, and services related to helicopters and their operations). 
+
+            </p>
+            <p className='mb-5 text-left dark:text-white'>
+            GSD and ITA provided the requested cost information. When we met with the LAPD to discuss the labor costs requests, the LAPD advised that it would take several weeks to provide the information because of workload constraints caused by the annual budget preparation cycle. The LAPD suggested that Controller audit staff run its own report, so our staff ran its own payroll report to identify LAPD helicopter labor costs. Controller audit staff sent the query information to the LAPD to confirm the query methodology.
+            </p>
+            <p className='mb-5 text-left dark:text-white'>
+            In addition to the information above, Controller audit staff worked with GSD to obtain information necessary to estimate fuel costs, and worked with CAO to obtain information necessary to develop cost estimates related to helicopter financing.
+            </p>
+            <p className='mb-5 text-left dark:text-white'>
+            For a thorough breakdown of identified costs, please see here:
+            </p>
+            <a
+              href=''
+              className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
+              style={buttonStyle}
+            >
+              Costs Breakdown
+            </a>
         </center>
       </main>
     </>
