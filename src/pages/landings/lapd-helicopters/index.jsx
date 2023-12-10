@@ -37,7 +37,7 @@ export default function InterimHousing() {
             <iframe
               className='w-full sm:w-2/3 md:w-1/2 lg:w-1/2 xl:w-1/2'
               height='400'
-              src=''
+              src='https://youtu.be/U7RmZk_gr_Q'
               title='YouTube video player'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
