@@ -118,7 +118,7 @@ export default function InterimHousing() {
             <ul className='mb-5 ml-10 text-left dark:text-white'>
               <li>
                 &bull; <b>The ASD program costs nearly $50 million annually while most of the flight time is not devoted to high priority events. </b>
-                . Our audit found that the estimated annual cost to operate the helicopter program is $46.6 million (i.e., $127,805 per day or $2,916 per flight hour). There are 14 City departments whose annual budgets do not reach this amount;
+                 Our audit found that the estimated annual cost to operate the helicopter program is $46.6 million (i.e., $127,805 per day or $2,916 per flight hour). There are 14 City departments whose annual budgets do not reach this amount;
 
               </li>
               <li>
