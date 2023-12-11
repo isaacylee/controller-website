@@ -118,8 +118,7 @@ export default function InterimHousing() {
             <ul className='mb-5 ml-10 text-left dark:text-white'>
               <li>
                 &bull; <b>The ASD program costs nearly $50 million annually while most of the flight time is not devoted to high priority events. </b>
-                Our audit found that the estimated annual cost to operate the helicopter program is $46.6 million (i.e., $127,805 per day or $2,916 per flight hour). There are 14 City departments whose annual budgets do not reach this amount;
-
+                . Our audit found that the estimated annual cost to operate the helicopter program is $46.6 million (i.e., $127,805 per day or $2,916 per flight hour). There are 14 City departments whose annual budgets do not reach this amount;
 
               </li>
               <li>
@@ -127,7 +126,7 @@ export default function InterimHousing() {
 
               </li>
               <li>
-                &bull; Some transportation and ceremonial flights were an inefficient, inappropriate use of City funds, (including passenger shuttle flights for a “Chili Fly-In” and a fly-by at a golf tournament); 
+                &bull;Some transportation and ceremonial flights were an inefficient, inappropriate use of City funds, (including passenger shuttle flights for a “Chili Fly-In” and a fly-by at a golf tournament); 
 
               </li>
               <li>
@@ -149,52 +148,40 @@ export default function InterimHousing() {
 
               </li>
               <li>
-                &bull; LAPD does not have a formal contract with its flight log application vendor, raising ethical, legal, and other concerns. Without a contract, flight related data may be accessed by unauthorized persons and  can be misused or withheld from the LAPD. 
+                &bull;LAPD does not have a formal contract with its flight log application vendor, raising ethical, legal, and other concerns. Without a contract, flight related data may be accessed by unauthorized persons and  can be misused or withheld from the LAPD. 
 
               </li>
               <li>
                 &bull; There are significant issues with flight data collection and monitoring. 
 
+
               </li>
             </ul>
             <p className='mb-5 text-left dark:text-white'>
-            It is unsurprising that the helicopter program’s cost is high given that, unlike most jurisdictions, 
-            the City operates its helicopter fleet on an almost continuous basis. Typically, there are two helicopters
-            flying for 20 hours every day of the year. During FY 2018-22, these helicopters logged an average of 16,000 
-            hours of flight time each year at a cost of $2,916 per flight hour. 
+            It is unsurprising that the helicopter program’s cost is high given that, unlike most jurisdictions, the City operates its helicopter fleet on an almost continuous basis. Typically, there are two helicopters flying for 20 hours every day of the year. During FY 2018-22, these helicopters logged an average of 16,000 hours of flight time each year at a cost of $2,916 per flight hour. 
 
             </p>
             <p className='mb-5 text-left dark:text-white'>
-            Our audit identified several issues of concern about how ASD helicopter flight hours were spent.
-             Most alarmingly, we found that approximately 61% of ASD’s flight time was dedicated to activities 
-             not associated with high priority crime. Instead, that 61% of flight time was devoted to lower priority
-              calls, transportation and ceremonial flights, and scheduled patrols of specific areas.
+            Our audit identified several issues of concern about how ASD helicopter flight hours were spent. Most alarmingly, we found that approximately 61% of ASD’s flight time was dedicated to activities not associated with high priority crime. Instead, that 61% of flight time was devoted to lower priority calls, transportation and ceremonial flights, and scheduled patrols of specific areas.
 
 
             </p>
             <p className='mb-5 text-left dark:text-white'>
-            At least some of the transportation and ceremonial flights were an inefficient or inappropriate use of 
-            City money as they provided little to no public safety benefit. For example, included in the transportation 
-            flights that lasted hours were a 6-hour shuttle flight for an ASD-sponsored “Chili Fly-In” and a roundtrip 
-            helicopter transport of two high ranking LAPD officials from LAPD headquarters in Downtown LA to a meeting 
-            at the Harbor Community police station. 
-
+            At least some of the transportation and ceremonial flights were an inefficient or inappropriate use of City money as they provided little to no public safety benefit. For example, included in the transportation flights that lasted hours were a 6-hour shuttle flight for an ASD-sponsored “Chili Fly-In” and a roundtrip helicopter transport of two high ranking LAPD officials from LAPD headquarters in Downtown LA to a meeting at the Harbor Community police station. 
             </p>
             <p className='mb-5 text-left dark:text-white'>
-            ASD also conducted 783 ceremonial “fly-by” activities, which are flights over a ceremony or event. These fly-by activities included, in part, LAPD events like academy graduations, retirement ceremonies, and police station events as well as community events and golf tournaments. We found that for at least 161 of the fly-by activities there was not enough information to determine what category of activity took place. 
-
+            ASD also conducted 783 ceremonial “fly-by” activities, which are flights over a ceremony or event. These fly-by activities included, in part, LAPD events like academy graduations, retirement ceremonies, and police station events as well as community events and golf tournaments. We found that for at least 161 of the fly-by activities there was not enough information to determine what category of activity took place.
             </p>
             <p className='mb-5 text-left dark:text-white'>
             Even when ASD does devote some of its flight time (39%) to high priority crime types, based on the data currently available, neither our office nor the LAPD can  demonstrate that police helicopters actually deter crime in the City. 
-
             </p>
             <p className='mb-5 text-left dark:text-white'>
             There is evidence, however, that helicopters can have a negative quality of life impact on the lives of residents who live in communities with frequent helicopter activity. Long-term noise exposure to aircrafts can lead to: decreased sleep quality, increased stress, cognitive impairment, reduced metabolism, and cardiovascular disease (i.e. heart attack, stroke, heart disease, etc.).  
 
-
             </p>
             <p className='mb-5 text-left dark:text-white'>
             Taking a closer look at emissions and pollution, our audit found that ASD helicopters:
+
 
             </p>
             <ul className='mb-5 ml-10 text-left dark:text-white'>
@@ -202,20 +189,23 @@ export default function InterimHousing() {
                 &bull; Burn approximately 47.6 gallons of fuel per hour
 
 
+
               </li>
               <li>
                 &bull; Burn approximately 761,600 gallons of fuel per year (based on ASD flying 16,000 hours per year)
+
 
 
               </li>
               <li>
                 &bull; Release approximately 7,427 metric tons of carbon dioxide equivalent per year
 
+
               </li>
             </ul>
             <p className='mb-5 text-left dark:text-white'>
-           <b>  Our audit makes recommendations for (1) reducing inefficiencies,
-             (2) improving data collection and management, and 
+           <b>  Our audit makes recommendations for (1) reducing inefficiencies, 
+            (2) improving data collection and management, and
              (3) boosting transparency and performance monitoring, including but not limited to the following: 
   </b>
 {' '}
@@ -229,21 +219,22 @@ export default function InterimHousing() {
                 &bull; Complete a formal assessment of air support needs for patrol and incident response operations to assess the program’s current operations and whether rightsizing opportunities exist;
 
 
+
               </li>
               <li>
                 &bull; Revise existing data fields or establish new data fields in the Daily Flight Log to allow ASD to track responses to Part I crimes, and responses where the ASD aircrew is directly responsible for an apprehension or recovery of a firearm;
 
 
+
               </li>
               <li>
-                &bull;  Update the ASD Manual to establish policies for the planning and authorization of directed patrols, fly-bys, and administrative flights.
+                &bull; Update the ASD Manual to establish policies for the planning and authorization of directed patrols, fly-bys, and administrative flights.
 
 
               </li>
               </ul>
             <p className='mb-5 text-left dark:text-white'>
-            With this audit, the City now has the information to better determine whether the City needs an airborne program that is this big, this costly, and this damaging to its environment. To better highlight these impacts, this Office has also created an accompanying data tool that maps LAPD helicopter flights from 2019 through 2022. For the first time ever, the general public will be able to see the helicopters they pay for, where they fly, and what they cost - both monetarily and environmentally. 
-
+            With this audit, the City now has the information to better determine whether the City needs an airborne program that is this big, this costly, and this damaging to its environment. 
 </p>
            
             <p className='mb-5 text-left dark:text-white'>
