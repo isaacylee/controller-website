@@ -46,13 +46,13 @@ export default function InterimHousing() {
           </div>
           <div className='mb-7 flex flex-row justify-center'>
             <a
-              href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/LAPDHelicopterAudit.pdf?alt=media&token=31732283-09a7-4afd-bf68-73aa1e41a5e5'
+              href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/LAPD%20Air%20Support%20FINAL_12.10.2023.pdf?alt=media&token=90f3d118-6cec-41c2-93aa-f3c2eb7d457c'
               className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
               style={buttonStyle}
             >
               Full Report
             </a>
-            <a
+            {/* <a
               href='https://helicopteraudit2019.lacontroller.app/'
               target='_blank'
               rel='noopener noreferrer'
@@ -60,7 +60,7 @@ export default function InterimHousing() {
               style={buttonStyle}
             >
               LAPD Helicopter Map<br></br>
-            </a>
+            </a> */}
             <a
             href='#cost-analysis'
             className='text-base sm:text-base md:text-lg lg:text-lg xl:text-lg'
