@@ -1,5 +1,14 @@
 {
   "audits": [
+
+    {
+      "pre": false,
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapdhelicopter-cover-thumb.jpg?alt=media&token=ea5dccf0-d50b-4145-b338-aedf3bf4fa7d",
+      "name": "LAPD Helicopters",
+      "year": "2023",
+      "dept": "City of Los Angeles ",
+      "link": "https://bit.ly/heli-audit"
+    },
   
     {
       "pre": false,
