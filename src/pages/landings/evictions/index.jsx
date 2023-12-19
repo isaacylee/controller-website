@@ -17,7 +17,7 @@ export default function Evictions() {
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1 className='pt-8 pb-4 text-center text-3xl font-bold dark:text-white'>
-              Eviction Notices (February - October 2023)
+              Eviction Notices (February - November 2023)
             </h1>
           </div>
           <div>
@@ -46,18 +46,18 @@ export default function Evictions() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-2'>
-              [November 2023 Update] We received updated data from the Los
-              Angeles Housing Department (LAHD) through the month of October
+              [December 2023 Update] We received updated data from the Los
+              Angeles Housing Department (LAHD) through the month of November
               2023.
             </p>
             <p className='mb-4'>
-              The data reveals that from February to October, LAHD has
-              received a total of <b>66,007</b> eviction notices. <b>6,215</b>{' '}
-              notices were filed for the month of October.
+              The data reveals that from February to November, LAHD has
+              received a total of <b>71,429</b> eviction notices. <b>5,902</b>{' '}
+              notices were filed for the month of November.
             </p>
             <ul className='mb-10 ml-10'>
               <li>
-                &bull; <b>66,007 eviction notices were filed</b>
+                &bull; <b>71,429 eviction notices were filed</b>
               </li>
               <li>
                 &bull;{' '}
@@ -65,6 +65,9 @@ export default function Evictions() {
               </li>
               <li>
                 &bull; <b>91% came with a 3-day notice</b>
+              </li>
+              <li>
+                &bull; <b>$3,760 is the average amount of rent owed</b>
               </li>
             </ul>
           </div>
@@ -106,13 +109,13 @@ export default function Evictions() {
           >
             <p className='mb-4'>
               The table above shows the top 20 Zip Codes with the highest number
-              of eviction notices filed with the City from February to October
+              of eviction notices filed with the City from February to November
               2023.
             </p>
             <p className='mb-4'>
               Units located within <b>90028</b> (Hollywood area) had the highest
-              number of eviction notices filed with <b>4,445</b> followed by{' '}
-              <b>90036</b> (Fairfax area) with <b>3,179</b>.
+              number of eviction notices filed with <b>4,778</b> followed by{' '}
+              <b>90036</b> (Fairfax area) with <b>3,566</b>.
             </p>
           </div>
           {/* <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
@@ -140,7 +143,7 @@ export default function Evictions() {
                 metro area.
               </p>
               <p>
-                <b>10,463</b> eviction notices were filed where the amount of
+                <b>11,461</b> eviction notices were filed where the amount of
                 rent owed is below the Fair Market Rent (FMR) Limit.
               </p>
             </div>
@@ -185,22 +188,22 @@ export default function Evictions() {
                     rent.
                   </p>
                   <p>
-                    However, since March 27, 2023 landlords may not evict a
+                    However, since <b>March 27, 2023</b> landlords may not evict a
                     tenant who falls behind in rent unless the tenant owes an
-                    amount higher than the Fair Market Rent (FMR). The FMR
+                    amount higher than the <b>Fair Market Rent (FMR)</b>. The FMR
                     depends on the bedroom size of the rental unit.
                   </p>
                 </li>
                 <li className='mb-4 text-left'>
                   <p className='mb-4'>
-                    &#9702; Unless amended by City Council, annual rent
+                    &#9702; As amended by City Council, annual rent
                     increases will resume for rental units subject to the City’s
                     Rent Stabilization Ordinance (RSO) with the allowable rent
-                    increase at 7% starting <b>February 1, 2024</b> through{' '}
+                    increase at 4% starting <b>February 1, 2024</b> through{' '}
                     <b>June 30, 2024</b>. If the tenant is provided with
                     electric service and/or gas by the landlord, rent can be
-                    increased an additional 1-2% with a total increase of 8% or
-                    9%.
+                    increased an additional 1-2% with a total increase of 5% or
+                    6%.
                   </p>
                   <p>
                     State law requires that the landlord must provide an advance
