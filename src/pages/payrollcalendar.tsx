@@ -20,111 +20,111 @@ import Seo from '@/components/Seo';
 // to customize the default configuration.
 
 const importantdates: any = {
-  '2023': {
+  '2024': {
     holiday: [
-      '01-02',
-      '01-16',
-      '02-20',
-      '03-27',
-      '05-29',
+      '01-01',
+      '01-15',
+      '02-19',
+      '03-25',
+      '05-27',
       '06-19',
       '07-04',
-      '09-04',
-      '10-09',
-      '11-10',
-      '11-23',
-      '11-24',
+      '09-02',
+      '10-14',
+      '11-11',
+      '11-28',
+      '11-29',
       '12-25',
     ],
-    excess: ['01-25'],
-    nodeduction: ['05-31', '11-29'],
+    excess: ['01-24'],
+    nodeduction: ['05-29', '10-30'],
     endofpay: [
-      //every other saturday of 2023
-      '01-14',
-      '01-28',
-      '02-11',
-      '02-25',
-      '03-11',
-      '03-25',
-      '04-08',
-      '04-22',
-      '05-06',
-      '05-20',
-      '06-03',
-      '06-17',
-      '07-01',
-      '07-15',
-      '07-29',
-      '08-12',
-      '08-26',
-      '09-09',
-      '09-23',
-      '10-07',
-      '10-21',
-      '11-04',
-      '11-18',
-      '12-02',
-      '12-16',
-      '12-30',
+      //every other saturday of 2024
+      '01-13',
+      '01-27',
+      '02-10',
+      '02-24',
+      '03-09',
+      '03-23',
+      '04-06',
+      '04-20',
+      '05-04',
+      '05-18',
+      '06-01',
+      '06-15',
+      '06-29',
+      '07-13',
+      '07-27',
+      '08-10',
+      '08-24',
+      '09-07',
+      '09-21',
+      '10-05',
+      '10-19',
+      '11-02',
+      '11-16',
+      '11-30',
+      '12-14',
+      '12-28',
     ],
     payday: [
-      //every other wednesday of 2023 except for the excess sick pays and no deduction pays
+      //every other wednesday of 2024 except for the excess sick pays and no deduction pays
 
-      '01-11',
-      '02-08',
-      '02-22',
-      '03-08',
-      '03-22',
-      '04-05',
-      '04-19',
-      '05-03',
-      '05-17',
-      '06-14',
-      '06-28',
-      '07-12',
-      '07-26',
-      '08-09',
-      '08-23',
-      '09-06',
-      '09-20',
-      '10-04',
-      '10-18',
-      '11-01',
-      '11-15',
-      '12-13',
-      '12-27',
+      '01-10',
+      '02-07',
+      '02-21',
+      '03-06',
+      '03-20',
+      '04-03',
+      '04-17',
+      '05-01',
+      '05-15',
+      '06-12',
+      '06-26',
+      '07-10',
+      '07-24',
+      '08-07',
+      '08-21',
+      '09-04',
+      '09-18',
+      '10-02',
+      '10-16',
+      '11-13',
+      '11-27',
+      '12-11',
+      '12-24',
     ],
   },
 };
 
 const endofpayperiodsreference: any = {
-  '2023': {
-    '01-14': '15',
-    '01-28': '16',
-    '02-11': '17',
-    '02-25': '18',
-    '03-11': '19',
-    '03-25': '20',
-    '04-08': '21',
-    '04-22': '22',
-    '05-06': '23',
-    '05-20': '24',
-    '06-03': '25',
-    '06-17': '26',
-    '07-01': '1',
-    '07-15': '2',
-    '07-29': '3',
-    '08-12': '4',
-    '08-26': '5',
-    '09-09': '6',
-    '09-23': '7',
-    '10-07': '8',
-    '10-21': '9',
-    '11-04': '10',
-    '11-18': '11',
-    '12-02': '12',
-    '12-16': '13',
-    '12-30': '14',
+  '2024': {
+    '01-13': '15',
+    '01-27': '16',
+    '02-10': '17',
+    '02-24': '18',
+    '03-09': '19',
+    '03-23': '20',
+    '04-06': '21',
+    '04-20': '22',
+    '05-04': '23',
+    '05-18': '24',
+    '06-01': '25',
+    '06-15': '26',
+    '06-29': '27',
+    '07-13': '1',
+    '07-27': '2',
+    '08-10': '3',
+    '08-24': '4',
+    '09-07': '5',
+    '09-21': '6',
+    '10-05': '7',
+    '10-19': '8',
+    '11-02': '9',
+    '11-16': '10',
+    '11-30': '11',
+    '12-14': '12',
+    '12-28': '13',
   },
 };
 
@@ -141,7 +141,7 @@ export function DatesLegendItem(props: any) {
 }
 
 export default function PayrollCalendar(props: any) {
-  const [selectedYear, setSelectedYear] = React.useState<number>(2023);
+  const [selectedYear, setSelectedYear] = React.useState<number>(2024);
   const [todaysDate, setTodaysDate] = React.useState<string>('');
   const [calendar, setCalendar] = React.useState<Array<Array<Array<number>>>>(
     []
@@ -345,7 +345,7 @@ export default function PayrollCalendar(props: any) {
             </h1>
             <Link
               download={true}
-              href='payrollv3.pdf'
+              href='payrollv4.jpeg'
               target='_blank'
               referrerPolicy='no-referrer'
             >
@@ -362,7 +362,7 @@ export default function PayrollCalendar(props: any) {
           <div className='flex'>
   <p className='text-green-900 underline dark:text-mejito '>
     <Link
-      href='/legacy-Payroll-Calendar-May2023.pdf'
+      href='/Payroll_Calendar_2024.pdf'
       className='font-semibold text-green-500 dark:text-mejito'
     >
       Print Old Version
@@ -374,10 +374,10 @@ export default function PayrollCalendar(props: any) {
 
   <p className='text-green-900 underline dark:text-mejito '>
     <Link
-      href='/Payroll_Calendar_2024.pdf'
+      href='/Payroll_Calendar_2025.pdf'
       className='font-semibold text-green-500 dark:text-mejito'
     >
-      Payroll Calendar 2024
+      Payroll Calendar 2025
     </Link>
   </p>
 </div>
