@@ -143,16 +143,16 @@ export default function CashForKeys() {
                 &bull; The tenant may consult with an attorney or call LAHD
                 prior to accepting the landlord’s offer.
               </li>
-              <li className='text-left'>
+              <li className='mb-4 text-left'>
                 &bull; The tenant may cancel the Buyout Agreement up to{' '}
                 <b>30 days</b> after signing it without obligation or penalty.
               </li>
-              <li className='text-left'>
+              <li className='mb-4 text-left'>
                 &bull; If the owner does not comply with the requirements above,
                 then the tenant has the right to cancel the Buyout Agreement for
                 any reason at any time without obligation or penalty.
               </li>
-              <li className='text-left'>
+              <li className='mb-4 text-left'>
                 &bull; If the owner does not comply with the requirements above,
                 then the tenant may assert an affirmative defense to an Unlawful
                 Detainer action and may have a private civil remedy against the
