@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/LA%20Homelessness%20Expense%20Tracker.png?alt=media&token=f7d20cf1-0b5f-466e-9b21-0fcc950263aa",
+      "name": "LA Homelessness Expense Tracker",
+      "year": "2024",
+      "dept": "Datasets",
+      "link": "https://controllerdata.lacity.org/dataset/HOMELESSNESS-EXPENSE-TRACKER/98ve-cuf5/data_preview"
+    },
+    {
       "image": "/images/2022analysis.png",
       "name": "LA City Payroll Employee Residence Analysis (2022)",
       "year": "2023",
