@@ -103,7 +103,7 @@ export default function CashForKeys() {
             <p className='mb-4 text-left dark:text-white'>
               Units located within <b>90004</b> (Koreatown, Mid-Wilshire area)
               had the highest number of buyout agreements (<b>370</b>), followed
-              by <b>90026</b> (Echo Park area) with <b>247</b>.
+              by <b>90026</b> (Echo Park area) with <b>250</b>.
             </p>
           </div>
           <div className='mb-12'>
