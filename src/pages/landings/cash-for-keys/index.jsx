@@ -54,7 +54,7 @@ export default function CashForKeys() {
             <p>
               <b>Between 2019-2023:</b>
             </p>
-            <ul className='mb-10 ml-10'>
+            <ul className='mb-10 ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
               <li>
                 &bull;{' '}
                 <b>
@@ -135,24 +135,24 @@ export default function CashForKeys() {
               keys" offer:
             </p>
             <ul>
-              <li className='mb-4 text-left'>
+              <li className='mb-4 text-left ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
                 &bull; The tenant is not required to accept or sign the Buyout
                 Agreement.
               </li>
-              <li className='mb-4 text-left'>
+              <li className='mb-4 text-left ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
                 &bull; The tenant may consult with an attorney or call LAHD
                 prior to accepting the landlord’s offer.
               </li>
-              <li className='mb-4 text-left'>
+              <li className='mb-4 text-left ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
                 &bull; The tenant may cancel the Buyout Agreement up to{' '}
                 <b>30 days</b> after signing it without obligation or penalty.
               </li>
-              <li className='mb-4 text-left'>
+              <li className='mb-4 text-left ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
                 &bull; If the owner does not comply with the requirements above,
                 then the tenant has the right to cancel the Buyout Agreement for
                 any reason at any time without obligation or penalty.
               </li>
-              <li className='mb-4 text-left'>
+              <li className='mb-4 text-left ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
                 &bull; If the owner does not comply with the requirements above,
                 then the tenant may assert an affirmative defense to an Unlawful
                 Detainer action and may have a private civil remedy against the
