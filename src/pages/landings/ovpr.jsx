@@ -21,7 +21,7 @@ export default function OVPR() {
           </div>
           <div>
             <Link
-              href='https://oversized-vehicles.vercel.app/'
+              href='https://rvbans.lacontroller.app/'
               passHref
               target='_blank'
             >
