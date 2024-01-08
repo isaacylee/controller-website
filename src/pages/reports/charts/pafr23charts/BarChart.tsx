@@ -1,18 +1,21 @@
-"use client"
 import {
   BarElement,
   CategoryScale,
+  Chart as ChartJS,
   LinearScale,
   Title,
-  Tooltip,
-} from "chart.js";
-import { Chart, registerables } from 'chart.js';
+  Tooltip} from 'chart.js';
 import { csvParse } from 'd3';
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
+
+// Register the components
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
+
+
+
  
-Chart.register(...registerables);
+
 interface ChartData {
   fiscalYear: number;
   estimatedPopulation: number;
@@ -96,7 +99,7 @@ const BarChart: React.FC = () => {
     },
   ];
 
-  const options: Chart.ChartOptions = {
+  const options = {
     maintainAspectRatio: false,
     scales: {
       x: {
@@ -104,6 +107,12 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: 'Fiscal Year',
+           color: 'white', 
+           
+          
+        },
+        ticks: {
+          color: 'white', // Set x-axis tick color to white
         },
       },
       y: {
@@ -112,9 +121,18 @@ const BarChart: React.FC = () => {
           display: true,
           text: 'Values',
         },
+        ticks: {
+          color: 'white', // Set y-axis tick color to white
+        },
+      },
+    },
+    legend: {
+      labels: {
+        color: 'white', // Set legend text color to white
       },
     },
   };
+  
 
   return (
     <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>
