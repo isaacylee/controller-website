@@ -47,7 +47,7 @@ export default function pafr23(props: any) {
                 <br></br>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-base italic sm:text-lg'>
                   A summary of the City of Los Angeles Annual Comprehensive
-                  Financial Report for Fiscal Year ended June 30, 2022.
+                  Financial Report for Fiscal Year ended June 30, 2023.
                 </span>
               </h1>
             </div>
@@ -70,7 +70,7 @@ export default function pafr23(props: any) {
                 rel='noreferrer noopener'
                 className='text-green-800 underline dark:text-mejito'
               >
-                Click here for the full FY2022 Annual Comprehensive Financial
+                Click here for the full FY2023 Annual Comprehensive Financial
                 Report
               </Link>
             </p>
@@ -90,7 +90,7 @@ export default function pafr23(props: any) {
                 As the new Controller for the City of Los Angeles, our Office
                 has the Charter responsibility to prepare and publish the City's
                 Annual Comprehensive Financial Report (ACFR) of the City for the
-                fiscal year ended June 30, 2022.
+                fiscal year ended June 30, 2023.
                 <br />
                 <br />
                 We live in tumultuous times. The residents and businesses of Los
@@ -112,7 +112,7 @@ export default function pafr23(props: any) {
                 The ACFR provides a report on revenues and expenses for all the
                 City's funds, including the Harbor, Airports and Department of
                 Water and Power and a snapshot of the fiscal condition of the
-                City as it ended the fiscal year on June 30 of 2022.
+                City as it ended the fiscal year on June 30 of 2023.
                 <br />
                 <br />
                 <ul className='list-disc pl-4'>
