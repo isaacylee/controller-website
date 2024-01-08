@@ -2,17 +2,17 @@
 import {
   BarElement,
   CategoryScale,
-  Chart,
   LinearScale,
   Title,
   Tooltip,
 } from "chart.js";
+import { Chart, registerables } from 'chart.js';
 import { csvParse } from 'd3';
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
-
+ 
+Chart.register(...registerables);
 interface ChartData {
   fiscalYear: number;
   estimatedPopulation: number;
@@ -33,13 +33,13 @@ const BarChart: React.FC = () => {
         const csvData = await response.text();
 
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-          fiscalYear: +d['Fiscal Year'],
-          estimatedPopulation: +d['Estimatd Population'].replace(/,/g, ''),
-          personalIncome: +d['Personal Income (in thousands)'].replace(/,/g, ''),
-          personalIncomePerCapita: +d['Personal Income Per Capita'].replace(/,/g, ''),
-          medianAge: isNaN(d['Median Age']) ? 0 : +d['Median Age'],
-          publicSchoolEnrollment: +d['Public School Enrollment'].replace(/,/g, ''),
-          unemploymentRate: isNaN(d['Unemployment Rate']) ? 0 : +d['Unemployment Rate'].replace('%', ''),
+          fiscalYear: (d['Fiscal Year'] !== undefined) ? +d['Fiscal Year'] : 0,
+          estimatedPopulation: (d['Estimatd Population'] !== undefined) ? +d['Estimatd Population'].replace(/,/g, '') : 0,
+          personalIncome: (d['Personal Income (in thousands)'] !== undefined) ? +d['Personal Income (in thousands)'].replace(/,/g, '') : 0,
+          personalIncomePerCapita: (d['Personal Income Per Capita'] !== undefined) ? +d['Personal Income Per Capita'].replace(/,/g, '') : 0,
+          medianAge: (d['Median Age'] !== undefined) ? +d['Median Age'] : 0,
+          publicSchoolEnrollment: (d['Public School Enrollment'] !== undefined) ? +d['Public School Enrollment'].replace(/,/g, '') : 0,
+          unemploymentRate: (d['Unemployment Rate'] !== undefined) ? +d['Unemployment Rate'].replace('%', '') : 0,
         }));
 
         setChartData(dataArray);

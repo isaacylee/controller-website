@@ -41,12 +41,13 @@ const NetPositionChart: React.FC = () => {
         const csvData = await response.text();
 
         const dataArray: ChartDataItem[] = csvParse(csvData, (d) => ({
-          year: d.Year,
-          category: d.Category,
-          businessType: d['Business-Type'],
-          governmental: +d.Governmental.replace(/,/g, ''),
-          total: +d.Total.replace(/,/g, ''),
+          year: d.Year ?? '', // Default to an empty string if undefined
+          category: d.Category ?? '', // Default to an empty string if undefined
+          businessType: d['Business-Type'] ?? '', // Default to an empty string if undefined
+          governmental: d.Governmental ? +d.Governmental.replace(/,/g, '') : 0, // Replace commas, convert to number, default to 0 if undefined
+          total: d.Total ? +d.Total.replace(/,/g, '') : 0, // Replace commas, convert to number, default to 0 if undefined
         }));
+        
 
         setChartData(dataArray);
       } catch (error) {
