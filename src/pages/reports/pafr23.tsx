@@ -15,7 +15,7 @@ import Seo from '@/components/Seo';
 import BarChart from './charts/pafr23charts/BarChart';
 import NetPositionChart from './charts/pafr23charts/NetPosition';
 import TopEmployeeChart from './charts/pafr23charts/TopEmployee';
-export default function pafr23() {
+export default function pafr23(props: any) {
   return (
     <>
       <Navbar />
