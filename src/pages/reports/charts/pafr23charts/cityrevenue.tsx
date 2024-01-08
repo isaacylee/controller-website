@@ -4,11 +4,12 @@ import * as d3 from 'd3';
 import * as React from 'react';
 import { useEffect, useRef } from 'react';
 
+import { insertDarkModed3 } from '@/components/darkmodethesvg';
 //import { Plot } from '../tooltipsPlot/tooltips';
 import { addTooltips } from '@/components/tooltipsPlot/newtooltipsattempt';
 import { processEachValueIntoTextMore } from '@/components/utils';
 
-import { insertDarkModed3 } from '../darkmodethesvg';
+// import { insertDarkModed3 } from '../darkmodethesvg';
 
 function responsivefy(svg: any) {
   // container will be the DOM element
