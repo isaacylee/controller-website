@@ -5,22 +5,22 @@ import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import { Expenditures } from '@/components/pafr22visualise/2expen';
 import { BondsOverTime } from '@/components/pafr22visualise/bondsovertime';
-import { Changeinnetpos } from '@/components/pafr22visualise/changeinnetpos';
-import { ChangeinnetposGen } from '@/components/pafr22visualise/changeinnetposgen';
 import { CityActivities } from '@/components/pafr22visualise/cityactivities';
 import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
-import { Demographics } from '@/components/pafr22visualise/demo';
-import { Employers } from '@/components/pafr22visualise/employers';
 import { GeneralExpenditures } from '@/components/pafr22visualise/generalexpen';
 import { GeneralRevenue } from '@/components/pafr22visualise/generalrev';
 import Seo from '@/components/Seo';
+
+import BarChart from './charts/pafr23charts/BarChart';
+import NetPositionChart from './charts/pafr23charts/NetPosition';
+import TopEmployeeChart from './charts/pafr23charts/TopEmployee';
 export default function pafr22(props: any) {
   return (
     <>
       <Navbar />
       <Seo
-        title='Popular Annual Financial Report FY22'
+        title='Popular Annual Financial Report FY23'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
         image='https://controller.lacity.gov/images/pafrthumbnail3.png'
       />
@@ -42,7 +42,7 @@ export default function pafr22(props: any) {
               </div>
               <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
-                  Popular Annual Financial Report FY22
+                  Popular Annual Financial Report FY23
                 </span>
                 <br></br>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1 text-base italic sm:text-lg'>
@@ -307,11 +307,17 @@ export default function pafr22(props: any) {
               negatively affect other economically sensitive revenue sources.
             </p>
             {/* Add Visual - Demographic and Economic Data */}
+            <h2 className='mt-3 dark:text-white'>City of LA Demographic</h2>
+            <BarChart />
             {/* Add Visual - Principal Employers */}
-            <br />
+            
+            <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2022 vs 2013</h2>
+            <TopEmployeeChart />
+
+            {/* <br />
             <Demographics />
             <br />
-            <Employers />
+            <Employers /> */}
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <h2 className='mt-3'>City Organization</h2>
@@ -434,30 +440,8 @@ export default function pafr22(props: any) {
               <br />
               <br />
             </p>
-
-            <h2>Business-Type Activities</h2>
-            <p className='mt-4 lg:max-w-5xl'>
-              The $9.0 billion combined operating revenues of the City’s six
-              business-type activities were $1.6 billion more than the $7.4
-              billion combined operating expenses.
-              <br />
-              <br />
-            </p>
-
-            <h2> Business-Type Activities: Change in Net Position</h2>
-            <p className='mt-4 lg:max-w-5xl'>
-              Enterprise funds are used to report the functions presented as
-              business-type activities in the government-wide financial
-              statements, they are generally used to account for services for
-              which the City charges customers – either outside customers or
-              other departments/funds of the City. All of the City’s enterprise
-              funds, except the convention center, are considered major funds.
-              The operating results of the City’s six enterprise funds are
-              reflected in the change in net position statement below.
-              <br />
-              <br />
-            </p>
-            <Changeinnetpos />
+           
+            {/* <Changeinnetpos /> */}
           </div>
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
@@ -588,8 +572,8 @@ export default function pafr22(props: any) {
               increased in business-type of 653.2 million.
               <br />
               <br />
-              The City’s net position is illustrated in the table below:
-              <ChangeinnetposGen />
+              The City’s net position is illustrated in the chart below:
+              <NetPositionChart />
             </p>
             {/*Net Pos Generally */}
             <h2 className='mt-3'>General Fund</h2>

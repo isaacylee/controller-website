@@ -151,11 +151,6 @@ export function Expenditures() {
     <div>
       <h4>Expenses Stacked</h4>
       <div ref={stacked}></div>
-      {/* <h4>Each Expenses Source Breakdown</h4>
-      <h5>Business-Type</h5>
-      <div ref={expenrefbis}></div> */}
-      {/* <h5>Governmental</h5>
-      <div ref={expenrefgov}></div> */}
     </div>
   );
 }
