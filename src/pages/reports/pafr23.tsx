@@ -10,11 +10,10 @@ import CityRevenue from '@/components/pafr22visualise/cityrevenue';
 import { Credit } from '@/components/pafr22visualise/credit';
 import { GeneralExpenditures } from '@/components/pafr22visualise/generalexpen';
 import { GeneralRevenue } from '@/components/pafr22visualise/generalrev';
+import BarChart from '@/components/pafr23visualise/BarChart';
+import NetPositionChart from '@/components/pafr23visualise/NetPosition';
+import TopEmployeeChart from '@/components/pafr23visualise/TopEmployee';
 import Seo from '@/components/Seo';
-
-import BarChart from './charts/pafr23charts/BarChart';
-import NetPositionChart from './charts/pafr23charts/NetPosition';
-import TopEmployeeChart from './charts/pafr23charts/TopEmployee';
 export default function pafr23(props: any) {
   return (
     <>
