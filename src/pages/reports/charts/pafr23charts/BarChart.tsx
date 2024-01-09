@@ -1,20 +1,17 @@
+"use client"
 import {
   BarElement,
   CategoryScale,
-  Chart as ChartJS,
+  Chart,
   LinearScale,
   Title,
-  Tooltip} from 'chart.js';
+  Tooltip,
+} from "chart.js";
 import { csvParse } from 'd3';
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 
-// Register the components
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
-
-
-
- 
+Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 interface ChartData {
   fiscalYear: number;
@@ -36,13 +33,13 @@ const BarChart: React.FC = () => {
         const csvData = await response.text();
 
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-          fiscalYear: (d['Fiscal Year'] !== undefined) ? +d['Fiscal Year'] : 0,
-          estimatedPopulation: (d['Estimatd Population'] !== undefined) ? +d['Estimatd Population'].replace(/,/g, '') : 0,
-          personalIncome: (d['Personal Income (in thousands)'] !== undefined) ? +d['Personal Income (in thousands)'].replace(/,/g, '') : 0,
-          personalIncomePerCapita: (d['Personal Income Per Capita'] !== undefined) ? +d['Personal Income Per Capita'].replace(/,/g, '') : 0,
-          medianAge: (d['Median Age'] !== undefined) ? +d['Median Age'] : 0,
-          publicSchoolEnrollment: (d['Public School Enrollment'] !== undefined) ? +d['Public School Enrollment'].replace(/,/g, '') : 0,
-          unemploymentRate: (d['Unemployment Rate'] !== undefined) ? +d['Unemployment Rate'].replace('%', '') : 0,
+          fiscalYear: +d['Fiscal Year'],
+          estimatedPopulation: +d['Estimatd Population'].replace(/,/g, ''),
+          personalIncome: +d['Personal Income (in thousands)'].replace(/,/g, ''),
+          personalIncomePerCapita: +d['Personal Income Per Capita'].replace(/,/g, ''),
+          medianAge: isNaN(d['Median Age']) ? 0 : +d['Median Age'],
+          publicSchoolEnrollment: +d['Public School Enrollment'].replace(/,/g, ''),
+          unemploymentRate: isNaN(d['Unemployment Rate']) ? 0 : +d['Unemployment Rate'].replace('%', ''),
         }));
 
         setChartData(dataArray);
@@ -99,7 +96,7 @@ const BarChart: React.FC = () => {
     },
   ];
 
-  const options = {
+  const options: Chart.ChartOptions = {
     maintainAspectRatio: false,
     scales: {
       x: {
@@ -107,12 +104,6 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: 'Fiscal Year',
-           color: 'white', 
-           
-          
-        },
-        ticks: {
-          color: 'white', // Set x-axis tick color to white
         },
       },
       y: {
@@ -121,18 +112,9 @@ const BarChart: React.FC = () => {
           display: true,
           text: 'Values',
         },
-        ticks: {
-          color: 'white', // Set y-axis tick color to white
-        },
-      },
-    },
-    legend: {
-      labels: {
-        color: 'white', // Set legend text color to white
       },
     },
   };
-  
 
   return (
     <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>
