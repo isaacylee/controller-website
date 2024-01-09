@@ -154,3 +154,4 @@ export function Expenditures() {
     </div>
   );
 }
+export default Expenditures;
