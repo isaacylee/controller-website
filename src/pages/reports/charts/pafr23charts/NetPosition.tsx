@@ -1,4 +1,3 @@
-"use client";
 import {
   BarElement,
   CategoryScale,
@@ -7,11 +6,11 @@ import {
   Title,
   Tooltip,
 } from "chart.js";
-import { csvParse } from "d3";
+import { csvParse } from 'd3';
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 
-// Add types for your data
+// Define the shape of the data
 interface ChartDataItem {
   year: string;
   category: string;
@@ -20,11 +19,17 @@ interface ChartDataItem {
   total: number;
 }
 
+// Register the components with ChartJS
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
-interface CustomChartDataset {
-  label: string;
-  data: number[] | Chart.ChartPoint[];
-  backgroundColor: string;
+
+// Utility function to generate random colors
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
 
 const NetPositionChart: React.FC = () => {
@@ -33,22 +38,19 @@ const NetPositionChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "/csvsforpafr22/6condensedstatementofnetposition.csv"
-        );
+        const response = await fetch('/csvsforpafr22/6condensedstatementofnetposition.csv');
         const csvData = await response.text();
-
-        const dataArray: ChartDataItem[] = csvParse(csvData, (d) => ({
-          year: d.Year,
-          category: d.Category,
-          businessType: d["Business-Type"],
-          governmental: +d.Governmental.replace(/,/g, ""),
-          total: +d.Total.replace(/,/g, ""),
+        const dataArray: ChartDataItem[] = csvParse(csvData, (d: any) => ({
+          year: d.Year ?? '',
+          category: d.Category ?? '',
+          businessType: d['Business-Type'] ?? '',
+          governmental: d.Governmental ? +d.Governmental.replace(/,/g, '') : 0,
+          total: d.Total ? +d.Total.replace(/,/g, '') : 0,
         }));
-
+        
         setChartData(dataArray);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error('Error fetching data:', error);
       }
     };
 
@@ -56,39 +58,26 @@ const NetPositionChart: React.FC = () => {
   }, []);
 
   if (!chartData) {
-    return null;
+    return <div>Loading chart data...</div>;
   }
 
-  const categories = Array.from(
-    new Set(chartData.map((data) => data.category))
-  );
-  const colorMap: Record<string, string> = {
-    "2022": "rgba(75, 192, 192, 0.7)",
-    "2021": "rgba(255, 99, 132, 0.7)",
-    "2020": "rgba(255, 205, 86, 0.7)",
-    "2019": "rgba(54, 162, 235, 0.7)",
-    "2018": "rgba(255, 159, 64, 0.7)",
-    "2017": "rgba(153, 102, 255, 0.7)",
-    "2016": "rgba(255, 206, 86, 0.7)",
-  };
+  // Create a set of unique years
+  const uniqueYears = Array.from(new Set(chartData.map((data) => data.year)));
 
-  const datasets: CustomChartDataset[] = chartData.reduce((acc, data) => {
-    const color = colorMap[data.year] || "rgba(0, 0, 0, 0.7)";
-    const index = acc.findIndex((dataset) => dataset.label === data.year);
-    if (index === -1) {
-      acc.push({
-        label: data.year,
-        data: [data.governmental, data.total],
-        backgroundColor: color,
-      });
-    } else {
-      acc[index].data = [
-        (acc[index].data as number[])[0] + (data.governmental ?? 0),
-        (acc[index].data as number[])[1] + (data.total ?? 0),
-      ];
-    }
+  const categories = Array.from(new Set(chartData.map((data) => data.category)));
+  const colorMap: Record<string, string> = categories.reduce((acc, category) => {
+    acc[category] = getRandomColor();
     return acc;
-  }, [] as CustomChartDataset[]);
+  }, {} as Record<string, string>);
+
+  const datasets = categories.map((category) => {
+    const filteredData = chartData.filter((item) => item.category === category);
+    return {
+      label: category,
+      data: filteredData.map((item) => item.governmental),
+      backgroundColor: colorMap[category],
+    };
+  });
 
   const options = {
     maintainAspectRatio: false,
@@ -96,17 +85,40 @@ const NetPositionChart: React.FC = () => {
       x: {
         stacked: true,
         beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Year',
+          color: 'white'
+        },
+        ticks: {
+          color: 'white'
+        }
       },
       y: {
         stacked: true,
         beginAtZero: true,
-      },
+        title: {
+          display: true,
+          text: 'Amount',
+          color: 'white'
+        },
+        ticks: {
+          color: 'white'
+        }
+      }
     },
+    plugins: {
+      legend: {
+        labels: {
+          color: 'white'
+        }
+      }
+    }
   };
 
   return (
-    <div style={{ width: "100%", height: "500px", overflowX: "auto" }}>
-      <Bar data={{ labels: categories, datasets }} options={options} />
+    <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>
+      <Bar data={{ labels: uniqueYears, datasets }} options={options} />
     </div>
   );
 };
