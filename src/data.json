@@ -26,7 +26,7 @@
       "name": "41.18 Arrests (1/1/21 - 9/15/23)",
       "year": "2023",
       "dept": "Map",
-      "link": "https://4118recentarrests.lacontroller.io/"
+      "link": "https://4118recentarrests.lacontroller.app/"
     },
 
     {
@@ -34,7 +34,7 @@
       "name": "City of LA Staffing Vacancies by Department",
       "year": "2023",
       "dept": "Charts",
-      "link": "https://deptvacancies.lacontroller.io/"
+      "link": "https://deptvacancies.lacontroller.app/"
     },
 
     {
@@ -49,14 +49,14 @@
       "name": "Eviction Notices Map & Analysis",
       "year": "2023",
       "dept": "Map",
-      "link": "https://evictions.lacontroller.io/"
+      "link": "https://evictions.lacontroller.app/"
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapd-arrest-map.png?alt=media&token=c442083f-fb8f-4a6b-ba8d-0d6b6e91599c",
       "name": "LAPD Arrests Map & Analysis",
       "year": "2023",
       "dept": "Map",
-      "link": "https://arrests.lacontroller.io/"
+      "link": "https://arrests.lacontroller.app/"
     },
 
     {
@@ -64,28 +64,28 @@
       "name": "41.18 Arrests (Jan 2012 - May 2023)",
       "year": "2023",
       "dept": "Map",
-      "link": "https://4118arrests.lacontroller.io/"
+      "link": "https://4118arrests.lacontroller.app/"
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/affordable-housing.png?alt=media&token=00fdaf96-e113-420c-8775-391a1918d618",
       "name": "Affordable Housing Covenants - 1985 to 2022",
       "year": "2023",
       "dept": "Map",
-      "link": "https://housingcovenants.lacontroller.io/"
+      "link": "https://housingcovenants.lacontroller.app/"
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/trans_animal_banner.png?alt=media&token=1a098234-8b03-402b-b290-0ea9ac701424",
       "name": "LA Animal Services Transparency Charts",
       "year": "2023",
       "dept": "Charts",
-      "link": "https://laascharts.lacontroller.io/"
+      "link": "https://laascharts.lacontroller.app/"
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/banner-budget.png?alt=media&token=29c9bdbb-c597-4e6a-97b5-026b9c41ad1b",
       "name": "City Of LA Budget",
       "year": "2023",
       "dept": "Charts",
-      "link": "https://budget.lacontroller.io/"
+      "link": "https://budget.lacontroller.app/"
     },
 
     {
@@ -93,7 +93,7 @@
       "name": "LAAS Spay Neuter & Shelter",
       "year": "2023",
       "dept": "Map",
-      "link": "https://spayneuter.lacontroller.io/"
+      "link": "https://spayneuter.lacontroller.app/"
     },
 
     {
@@ -101,7 +101,7 @@
       "name": "Unhoused Deaths in Los Angeles",
       "year": "2023",
       "dept": "Map",
-      "link": "https://unhouseddeaths.lacontroller.io/"
+      "link": "https://unhouseddeaths.lacontroller.app/"
     },
 
     {
