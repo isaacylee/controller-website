@@ -32,24 +32,41 @@
           const response = await fetch("/csvsforpafr23/demographics.csv");
           const csvData = await response.text();
           console.log(csvData)
-
-          const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-            fiscalYear: +d["Fiscal Year"],
-            estimatedPopulation:
-              parseInt(d["Estimated Population"].replace(/,/g, ""), 10) || 0,
-            personalIncome:
-              parseInt(
-                d["Personal Income (in thousands)"].replace(/,/g, ""),
-                10
-              ) || 0,
-            personalIncomePerCapita:
-              parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) ||
-              0,
-            medianAge:
-              d[" Median Age "].toLowerCase() === "n/a" ? 0 : +d[" Median Age "],
-            publicSchoolEnrollment:
-              parseInt(d["Public School Enrollment"].replace(/,/g, ""), 10) || 0,
-          }));
+          const dataArray: ChartData[] = csvParse(csvData, (d) => {
+            // Ensure that the values are defined before accessing them
+            const fiscalYear = d["Fiscal Year"] !== undefined ? +d["Fiscal Year"] : 0;
+            const estimatedPopulation =
+              d["Estimated Population"] !== undefined
+                ? parseInt(d["Estimated Population"]?.replace(/,/g, ""), 10) || 0
+                : 0;
+            const personalIncome =
+              d["Personal Income (in thousands)"] !== undefined
+                ? parseInt(d["Personal Income (in thousands)"]?.replace(/,/g, ""), 10) || 0
+                : 0;
+            const personalIncomePerCapita =
+              d["Personal Income Per Capita"] !== undefined
+                ? parseInt(d["Personal Income Per Capita"]?.replace(/,/g, ""), 10) || 0
+                : 0;
+            const medianAge =
+              d[" Median Age "] !== undefined
+                ? d[" Median Age "].toLowerCase() === "n/a" ? 0 : +d[" Median Age "] || 0
+                : 0;
+            const publicSchoolEnrollment =
+              d["Public School Enrollment"] !== undefined
+                ? parseInt(d["Public School Enrollment"]?.replace(/,/g, ""), 10) || 0
+                : 0;
+          
+            return {
+              fiscalYear,
+              estimatedPopulation,
+              personalIncome,
+              personalIncomePerCapita,
+              medianAge,
+              publicSchoolEnrollment,
+            };
+          });
+          
+          
 
           setChartData(dataArray);
         } catch (error) {
