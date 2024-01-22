@@ -42,15 +42,27 @@ const sanitizedCsvData = csvData.replace(/"(.*?)"/g, (_, g) =>
 g.replace(/,/g, "")
 );
 
-const dataArray: ChartDataItem[] = csvParse(sanitizedCsvData, (d) => ({
-year: d.Year,
-category: d.Category,
-businessType: d["Business-Type"],
-governmental: +d.Governmental.replace(/,/g, ""),
-total: +d.Total.replace(/,/g, "").replace(/\(|\)/g, "") * (d.Total.includes("(") ? -1 : 1),
-}));
+const dataArray: ChartDataItem[] = csvParse(sanitizedCsvData, (d) => {
+  const total =
+    d.Total !== undefined
+      ? +String(d.Total.replace(/,/g, "").replace(/\(|\)/g, "")) *
+        (d.Total.includes("(") ? -1 : 1)
+      : 0;
+
+  return {
+    year: String(d.Year),
+    category: String(d.Category),
+    businessType: String(d["Business-Type"]),
+    governmental:
+      d.Governmental !== undefined ? +String(d.Governmental.replace(/,/g, "")) : 0,
+    total,
+  };
+});
 
 setChartData(dataArray);
+
+
+
       } catch (error) {
         console.error("Error fetching data:", error);
       }

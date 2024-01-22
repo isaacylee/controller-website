@@ -35,14 +35,15 @@ const TopEmployeeChart: React.FC = () => {
 
 
         const dataArray = csvParse(csvData, (d) => ({
-          employer: d.Employer,
-          employees22: +d["22 Employees"].replace(/,/g, ''),
-          rank22: +d["22 Rank"],
-          percent22: +d["22 % of Total"].replace('%', ''),
-          employees13: +d["13 Employees"].replace(/,/g, ''),
-          rank13: +d["13 Rank"],
-          percent13: +d["13 % of Total"].replace('%', ''),
+          employer: String(d.Employer),
+          employees22: +String(d["22 Employees"]).replace(/,/g, '') || 0,
+          rank22: +String(d["22 Rank"]) || 0,
+          percent22: +String(d["22 % of Total"]).replace('%', '') || 0,
+          employees13: +String(d["13 Employees"]).replace(/,/g, '') || 0,
+          rank13: +String(d["13 Rank"]) || 0,
+          percent13: +String(d["13 % of Total"]).replace('%', '') || 0,
         }));
+        
 
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'

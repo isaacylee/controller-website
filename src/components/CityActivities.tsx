@@ -56,18 +56,19 @@ interface ChartData {
   
           const dataArray: ChartData[] = csvParse(csvData, (d) => {
             const chartDataItem: ChartData = {
-              Department: d["DEPARTMENT"],
-              Asset: d["OPERATING INDICATOR / ASSET"],
+              Department: String(d["DEPARTMENT"]),
+              Asset: String(d["OPERATING INDICATOR / ASSET"]),
             };
-  
+          
             for (const key in d) {
               if (key !== "DEPARTMENT" && key !== "OPERATING INDICATOR / ASSET") {
-                chartDataItem[key] = parseFloat(d[key].replace(/,/g, "")) || 0;
+                chartDataItem[key] = parseFloat(String(d[key]).replace(/,/g, "")) || 0;
               }
             }
-  
+          
             return chartDataItem;
           });
+          
   
           setChartData(dataArray);
           // Select the first department by default
@@ -124,6 +125,8 @@ interface ChartData {
         }, 0.7)`;
       }
   
+    
+
       const options = {
         maintainAspectRatio: false,
         scales: {
@@ -190,7 +193,7 @@ interface ChartData {
                     ? "2px solid green"
                     : "2px solid black",
                 borderRadius: "10px",
-                fontWeight: "600",
+                // fontWeight: "600",
               }}
             >
               {item}

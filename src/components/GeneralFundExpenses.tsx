@@ -29,12 +29,13 @@ interface ChartData {
           const csvData = await response.text();
   
           const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-            Expenditure: d["Expenditure"],
-            Value: parseFloat(d["Value"].replace(/,/g, "").trim()) || 0,
-            "Fiscal Year": d["Fiscal Year"].trim(),
+            Expenditure: String(d["Expenditure"]),
+            Value: parseFloat(String(d["Value"]).replace(/,/g, "").trim()) || 0,
+            "Fiscal Year": String(d["Fiscal Year"]).trim(),
           }));
-  
+          
           setChartData(dataArray);
+          
         } catch (error) {
           console.error("Error fetching data:", error);
         }

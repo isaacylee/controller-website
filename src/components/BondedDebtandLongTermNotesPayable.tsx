@@ -32,19 +32,20 @@ const BarChart: React.FC = () => {
         const dataArray: ChartData[] = csvParse(csvData, (d, i) => {
           try {
             return {
-              Year: d["Fiscal Year"].trim(),
-              "Activity Type": d["Activity Type"],
-              Total: parseFloat(d["Total"].replace(/,/g, "").trim()) || 0,
-              Value: parseFloat(d["Value "].replace(/,/g, "").trim()) || 0,
-            };
+              Year: String(d["Fiscal Year"]).trim(),
+              "Activity Type": String(d["Activity Type"]),
+              Total: parseFloat(String(d["Total"]).replace(/,/g, "").trim()) || 0,
+              Value: parseFloat(String(d["Value "]).replace(/,/g, "").trim()) || 0,
+            } as ChartData;
           } catch (error) {
             console.error(`Error parsing row ${i + 1}:`, error);
             console.log("Row content:", d);
             return null;
           }
-        }).filter((d) => d !== null);
-
+        }).filter((d): d is ChartData => d !== null);
+        
         setChartData(dataArray);
+        
       } catch (error) {
         console.error("Error fetching data:", error);
       }

@@ -28,15 +28,15 @@ const BarChart: React.FC = () => {
       try {
         const response = await fetch("/csvsforpafr23/2totalcityexpenditures.csv");
         const csvData = await response.text();
-
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-          Year: d["Year"],
-          "Activity Type": d["Activity Type"],
-          Activity: d["Activity"],
-          Value: parseFloat(d["Value"].replace(/,/g, "").trim()),
+          Year: String(d["Year"]),
+          "Activity Type": String(d["Activity Type"]),
+          Activity: String(d["Activity"]),
+          Value: parseFloat(String(d["Value"]).replace(/,/g, "").trim()) || 0,
         }));
-
+        
         setChartData(dataArray);
+        
       } catch (error) {
         console.error("Error fetching data:", error);
       }
