@@ -29,19 +29,18 @@ const TopEmployeeChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/csvsforpafr22/employers-1.csv');
+        const response = await fetch('/csvsforpafr22/employers-12.csv');
         const csvData = await response.text();
 
         const dataArray = csvParse(csvData, (d) => ({
-          employer: d.Employer ?? '', // Default to an empty string if undefined
-          employees22: d["22 Employees"] ? +d["22 Employees"].replace(/,/g, '') : 0, // Replace commas and convert to number, default to 0 if undefined
-          rank22: d["22 Rank"] ? +d["22 Rank"] : 0, // Convert to number, default to 0 if undefined
-          percent22: d["22 % of Total"] ? +d["22 % of Total"].replace('%', '') : 0, // Remove percentage sign, convert to number, default to 0 if undefined
-          employees13: d["13 Employees"] ? +d["13 Employees"].replace(/,/g, '') : 0, // Replace commas and convert to number, default to 0 if undefined
-          rank13: d["13 Rank"] ? +d["13 Rank"] : 0, // Convert to number, default to 0 if undefined
-          percent13: d["13 % of Total"] ? +d["13 % of Total"].replace('%', '') : 0, // Remove percentage sign, convert to number, default to 0 if undefined
+          employer: d.Employer,
+          employees22: +d["22 Employees"].replace(/,/g, ''),
+          rank22: +d["22 Rank"],
+          percent22: +d["22 % of Total"].replace('%', ''),
+          employees13: +d["13 Employees"].replace(/,/g, ''),
+          rank13: +d["13 Rank"],
+          percent13: +d["13 % of Total"].replace('%', ''),
         }));
-        
 
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'
@@ -80,38 +79,22 @@ const TopEmployeeChart: React.FC = () => {
   const options = {
     maintainAspectRatio: false,
     scales: {
-        x: {
-            beginAtZero: true,
-            title: {
-                display: true,
-                text: 'Employer',
-                color: 'white' // Set color of x-axis title to white
-            },
-            ticks: {
-                color: 'white' // Set color of x-axis ticks to white
-            }
+      x: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Employer',
         },
-        y: {
-            beginAtZero: true,
-            title: {
-                display: true,
-                text: 'Number of Employees',
-                color: 'white' // Set color of y-axis title to white
-            },
-            ticks: {
-                color: 'white' // Set color of y-axis ticks to white
-            }
-        }
+      },
+      y: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Number of Employees',
+        },
+      },
     },
-    plugins: {
-        legend: {
-            labels: {
-                color: 'white' // Set color of legend text to white
-            }
-        }
-    }
-};
-
+  };
 
   return (
     <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>

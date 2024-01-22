@@ -8,9 +8,9 @@ import {
   Tooltip,
 } from "chart.js";
 import { csvParse } from 'd3';
+import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 interface ChartData {
@@ -25,23 +25,24 @@ interface ChartData {
 
 const TopEmployeeChart: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData[] | null>(null);
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/csvsforpafr22/employers-1.csv');
+        const response = await fetch('/csvsforpafr23/employers-1.csv');
         const csvData = await response.text();
 
+
         const dataArray = csvParse(csvData, (d) => ({
-          employer: d.Employer ?? '', // Default to an empty string if undefined
-          employees22: d["22 Employees"] ? +d["22 Employees"].replace(/,/g, '') : 0, // Replace commas and convert to number, default to 0 if undefined
-          rank22: d["22 Rank"] ? +d["22 Rank"] : 0, // Convert to number, default to 0 if undefined
-          percent22: d["22 % of Total"] ? +d["22 % of Total"].replace('%', '') : 0, // Remove percentage sign, convert to number, default to 0 if undefined
-          employees13: d["13 Employees"] ? +d["13 Employees"].replace(/,/g, '') : 0, // Replace commas and convert to number, default to 0 if undefined
-          rank13: d["13 Rank"] ? +d["13 Rank"] : 0, // Convert to number, default to 0 if undefined
-          percent13: d["13 % of Total"] ? +d["13 % of Total"].replace('%', '') : 0, // Remove percentage sign, convert to number, default to 0 if undefined
+          employer: d.Employer,
+          employees22: +d["22 Employees"].replace(/,/g, ''),
+          rank22: +d["22 Rank"],
+          percent22: +d["22 % of Total"].replace('%', ''),
+          employees13: +d["13 Employees"].replace(/,/g, ''),
+          rank13: +d["13 Rank"],
+          percent13: +d["13 % of Total"].replace('%', ''),
         }));
-        
 
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'
@@ -64,7 +65,7 @@ const TopEmployeeChart: React.FC = () => {
 
   const datasets = [
     {
-      label: '2022 Employees',
+      label: '2023 Employees',
       data: chartData.map((data) => data.employees22),
       backgroundColor: 'rgba(255, 99, 132, 0.7)',
       stack: 'stack',
@@ -80,38 +81,42 @@ const TopEmployeeChart: React.FC = () => {
   const options = {
     maintainAspectRatio: false,
     scales: {
-        x: {
-            beginAtZero: true,
-            title: {
-                display: true,
-                text: 'Employer',
-                color: 'white' // Set color of x-axis title to white
-            },
-            ticks: {
-                color: 'white' // Set color of x-axis ticks to white
-            }
+      x: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Employer',
+          color: theme === 'dark' ? 'white' : 'grey',
         },
-        y: {
-            beginAtZero: true,
-            title: {
-                display: true,
-                text: 'Number of Employees',
-                color: 'white' // Set color of y-axis title to white
-            },
-            ticks: {
-                color: 'white' // Set color of y-axis ticks to white
-            }
-        }
+        ticks: {
+          color: theme === 'dark' ? 'white' : 'grey',
+        },
+      },
+      y: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: 'Number of Employees',
+          color: theme === 'dark' ? 'white' : 'grey',
+        },
+        ticks: {
+          color: theme === 'dark' ? 'white' : 'grey',
+        },
+        
+        
+      },
+      
     },
     plugins: {
-        legend: {
-            labels: {
-                color: 'white' // Set color of legend text to white
-            }
-        }
-    }
-};
-
+      legend: {
+        labels: {
+          color: theme === 'dark' ? 'white' : 'grey', // Set color for legend text
+        },
+      },
+    },
+  };
+  
+  
 
   return (
     <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>

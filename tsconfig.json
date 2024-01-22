@@ -1,4 +1,6 @@
 {
+  
+
   "compilerOptions": {
     "target": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -27,6 +29,9 @@
     "src/components/tooltipsPlot/tooltips.bruh",
     "src/__tests__/pages/pafr22.test.tsx.off"
   ],
+  
   "exclude": ["node_modules", "src/__tests__", "src/lib"],
   "moduleResolution": ["node_modules", ".next", "node"]
+  
 }
+
