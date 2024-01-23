@@ -1,16 +1,16 @@
 "use client"
+import React, { useEffect, useState } from "react";
+import { Bar } from "react-chartjs-2";
 import {
-  BarElement,
-  CategoryScale,
   Chart,
+  CategoryScale,
   LinearScale,
+  BarElement,
   Title,
   Tooltip,
 } from "chart.js";
 import { csvParse } from 'd3';
-import { useTheme } from 'next-themes';
-import React, { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
+
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 interface ChartData {
@@ -25,7 +25,6 @@ interface ChartData {
 
 const TopEmployeeChart: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData[] | null>(null);
-  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,17 +32,15 @@ const TopEmployeeChart: React.FC = () => {
         const response = await fetch('/csvsforpafr23/employers-1.csv');
         const csvData = await response.text();
 
-
         const dataArray = csvParse(csvData, (d) => ({
-          employer: String(d.Employer),
-          employees22: +String(d["22 Employees"]).replace(/,/g, '') || 0,
-          rank22: +String(d["22 Rank"]) || 0,
-          percent22: +String(d["22 % of Total"]).replace('%', '') || 0,
-          employees13: +String(d["13 Employees"]).replace(/,/g, '') || 0,
-          rank13: +String(d["13 Rank"]) || 0,
-          percent13: +String(d["13 % of Total"]).replace('%', '') || 0,
+          employer: d.Employer,
+          employees22: +d["22 Employees"].replace(/,/g, ''),
+          rank22: +d["22 Rank"],
+          percent22: +d["22 % of Total"].replace('%', ''),
+          employees13: +d["13 Employees"].replace(/,/g, ''),
+          rank13: +d["13 Rank"],
+          percent13: +d["13 % of Total"].replace('%', ''),
         }));
-        
 
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'
@@ -71,12 +68,12 @@ const TopEmployeeChart: React.FC = () => {
       backgroundColor: 'rgba(255, 99, 132, 0.7)',
       stack: 'stack',
     },
-    {
-      label: '2013 Employees',
-      data: chartData.map((data) => data.employees13),
-      backgroundColor: 'rgba(75, 192, 192, 0.7)',
-      stack: 'stack',
-    },
+    // {
+    //   label: '2013 Employees',
+    //   data: chartData.map((data) => data.employees13),
+    //   backgroundColor: 'rgba(75, 192, 192, 0.7)',
+    //   stack: 'stack',
+    // },
   ];
 
   const options = {
@@ -87,10 +84,6 @@ const TopEmployeeChart: React.FC = () => {
         title: {
           display: true,
           text: 'Employer',
-          color: theme === 'dark' ? 'white' : 'grey',
-        },
-        ticks: {
-          color: theme === 'dark' ? 'white' : 'grey',
         },
       },
       y: {
@@ -98,26 +91,10 @@ const TopEmployeeChart: React.FC = () => {
         title: {
           display: true,
           text: 'Number of Employees',
-          color: theme === 'dark' ? 'white' : 'grey',
-        },
-        ticks: {
-          color: theme === 'dark' ? 'white' : 'grey',
-        },
-        
-        
-      },
-      
-    },
-    plugins: {
-      legend: {
-        labels: {
-          color: theme === 'dark' ? 'white' : 'grey', // Set color for legend text
         },
       },
     },
   };
-  
-  
 
   return (
     <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>

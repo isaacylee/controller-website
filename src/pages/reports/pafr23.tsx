@@ -83,7 +83,7 @@ export default function pafr23(props: any) {
                 <br />
                 <img
                   className='float-right ml-2 mb-2 w-32 sm:ml-4 sm:mb-4 sm:w-64'
-                  src='/images/cropped-kenneth.jpg'
+                  src='/images/new_KM.jpg'
                   alt='Portrait of Kenneth Mejia'
                 />
                 As the new Controller for the City of Los Angeles, our Office
@@ -306,11 +306,18 @@ export default function pafr23(props: any) {
               negatively affect other economically sensitive revenue sources.
             </p>
             {/* Add Visual - Demographic and Economic Data */}
+           
+  <img
+    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
+    src="/images/IMG_0798.png"
+    alt="Portrait of City Of LA"
+  />
+ 
             <h2 className='mt-3 dark:text-white'>City of LA Demographic</h2>
             <BarChart />
             {/* Add Visual - Principal Employers */}
             
-            <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023 vs 2013</h2>
+            <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2>
             <TopEmployeeChart />
 
             {/* <br />
@@ -319,6 +326,11 @@ export default function pafr23(props: any) {
             <Employers /> */}
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+          <img
+    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
+    src="/images/IMG_6323.png"
+    alt="Portrait of City Of LA"
+  />
             <h2 className='mt-3'>City Organization</h2>
 
             <p className='mt-2 lg:max-w-5xl'>
@@ -398,7 +410,13 @@ export default function pafr23(props: any) {
               </p>
             </div>
           </div>
+    
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+          <img
+    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
+    src="/images/IMG_5094.png"
+    alt="Portrait of City Of LA"
+  />
             <h1 className='mt-3'>Management's Discussion and Analysis</h1>
 
             <p className='mt-2 lg:max-w-5xl'>
@@ -487,6 +505,11 @@ export default function pafr23(props: any) {
             </p>
           </div>
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+          <img
+    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
+    src="/images/IMG_3171.png"
+    alt="Portrait of City Of LA"
+  />
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
               The <span className='font-bold'>net position</span> is the
