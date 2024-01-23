@@ -1,15 +1,15 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
 import {
-  Chart,
-  CategoryScale,
-  LinearScale,
   BarElement,
+  CategoryScale,
+  Chart,
+  LinearScale,
   Title,
   Tooltip,
 } from "chart.js";
 import { csvParse } from "d3";
+import React, { useEffect, useState } from "react";
+import { Bar } from "react-chartjs-2";
 
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
@@ -32,11 +32,11 @@ const BarChart: React.FC = () => {
         const dataArray: ChartData[] = csvParse(csvData, (d, i) => {
           try {
             return {
-              Year: d["Fiscal Year"].trim(),
-              "Activity Type": d["Activity Type"],
-              Total: parseFloat(d["Total"].replace(/,/g, "").trim()) || 0,
-              Value: parseFloat(d["Value "].replace(/,/g, "").trim()) || 0,
-            };
+              Year: String(d["Fiscal Year"]).trim(),
+              "Activity Type": String(d["Activity Type"]),
+              Total: parseFloat(String(d["Total"]).replace(/,/g, "").trim()) || 0,
+              Value: parseFloat(String(d["Value "]).replace(/,/g, "").trim()) || 0,
+            } as ChartData;
           } catch (error) {
             console.error(`Error parsing row ${i + 1}:`, error);
             console.log("Row content:", d);
@@ -122,7 +122,7 @@ const BarChart: React.FC = () => {
 
   return (
     <div style={{ width: "100%", height: "500px", overflowX: "auto" }}>
-      <Bar data={{ labels, datasets: allDatasets }} options={options} />
+      <Bar data={{ labels, datasets }} options={options} />
     </div>
   );
 };
