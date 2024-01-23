@@ -1,9 +1,8 @@
-"use client";
+import { BarElement, CategoryScale, Chart, LinearScale, Title, Tooltip } from "chart.js";
+import { csvParse } from "d3";
+import { useTheme } from 'next-themes';
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-import { Chart, CategoryScale, LinearScale, BarElement, Title, Tooltip } from "chart.js";
-import { csvParse } from "d3";
-
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 interface ChartData {
@@ -16,20 +15,21 @@ interface ChartData {
 
 const BarChart: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData[] | null>(null);
-
+  const { theme, setTheme } = useTheme()
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("/csvsforpafr23/demographics.csv");
         const csvData = await response.text();
-
+        // Parse and process CSV data
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-          fiscalYear: +d["Fiscal Year"],
-          estimatedPopulation: parseInt(d["Estimated Population"].replace(/,/g, ""), 10) || 0,
-          personalIncome: parseInt(d["Personal Income (in thousands)"].replace(/,/g, ""), 10) || 0,
-          personalIncomePerCapita: parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) || 0,
-          unemploymentRate: parseFloat(d["Unemployment Rate"].replace(/%/, "")) || 0,
+          fiscalYear: d["Fiscal Year"] ? +d["Fiscal Year"] : 0,
+          estimatedPopulation: d["Estimated Population"] ? parseInt(d["Estimated Population"].replace(/,/g, ""), 10) : 0,
+          personalIncome: d["Personal Income (in thousands)"] ? parseInt(d["Personal Income (in thousands)"].replace(/,/g, ""), 10) : 0,
+          personalIncomePerCapita: d["Personal Income Per Capita"] ? parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) : 0,
+          unemploymentRate: d["Unemployment Rate"] ? parseFloat(d["Unemployment Rate"].replace(/%/, "")) : 0,
         }));
+        // Filter data
         const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2023);
         setChartData(filteredData);
       } catch (error) {
@@ -44,8 +44,8 @@ const BarChart: React.FC = () => {
     return null;
   }
 
+  // Map chart data
   const labels = chartData.map((data) => data.fiscalYear.toString());
-
   const datasets = [
     {
       label: "Estimated Population",
@@ -65,6 +65,7 @@ const BarChart: React.FC = () => {
     },
   ];
 
+  // Updated options
   const options = {
     maintainAspectRatio: false,
     scales: {
@@ -73,6 +74,10 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Fiscal Year",
+          color: theme === 'dark' ? 'white' : 'grey',
+        },
+        ticks: {
+          color: theme === 'dark' ? 'white' : 'grey',
         },
       },
       y: {
@@ -80,20 +85,22 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Values",
+          color: theme === 'dark' ? 'white' : 'grey', // Set color for y-axis title
         },
-      },
-      percentageYAxis: {
-        position: 'right',
-        beginAtZero: true,
-        title: {
-          display: true,
-          text: "Unemployment Rate (%)",
+        ticks: {
+          color: theme === 'dark' ? 'white' : 'grey',
+        },
+        labels: {
+          color: theme === 'dark' ? 'white' : 'grey',
         },
       },
     },
     plugins: {
-      xLabels: [{ className: 'dark:text-white' }],
-      yLabels: [{ className: 'dark:text-white' }],
+      legend: {
+        labels: {
+          color: theme === 'dark' ? 'white' : 'grey', // Set color for legend text
+        },
+      },
     },
   };
 

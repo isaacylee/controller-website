@@ -204,106 +204,68 @@ export default function pafr23(props: any) {
             <p className='mt-2  lg:max-w-5xl'>
               <img
                 className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
-                src='/images/award21pafr.png'
+                src='/images/Award-1.png'
               ></img>
               <img
                 className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
-                src='/images/award21pafr-dark.png'
+                src='/images/Award-1.png'
               />
-              The Government Finance Officers Association of the United States
-              and Canada (GFOA) has given an Award for Outstanding Achievement
-              in Popular Annual Financial Reporting to the City of Los Angeles
-              for its Popular Annual Financial Report for the fiscal year ended
-              June 30, 2021. The Award for Outstanding Achievement in Popular
-              Annual Financial Reporting is a prestigious national award
-              recognizing conformance with the highest standards for preparation
-              of state and local government popular reports.
+            Government Finance Officers Association of the United States and Canada (GFOA) has given an
+Award for Outstanding Achievement in Popular Annual Financial Reporting to the City of Los Angeles
+for its Popular Annual Financial Report for the fiscal year ended June 30, 2022. The Award for
+Outstanding Achievement in Popular Annual Financial Reporting is a prestigious national award
+recognizing conformance with the highest standards for preparation of state and local government
+popular reports.
               <br />
-              To receive the award, a government unit must publish a Popular
-              Annual Financial Report, whose contents conform to program
-              standards of creativity, presentation, understandability, and
-              reader appeal. The award is valid for a period of one year only.
-              We believe our current report continues to conform to the Popular
-              Annual Financial Reporting requirements, and we are submitting it
-              to GFOA to determine its eligibility for another Award.
+              In order to receive an Award for Outstanding Achievement in Popular Annual Financial Reporting, a
+government unit must publish a Popular Annual Financial Report, whose contents conform to
+program standards of creativity, presentation, understandability, and reader appeal. An Award for
+Outstanding Achievement in Popular Annual Financial Reporting is valid for a period of one year
+only. We believe our current report continues to conform to the Popular Annual Financial Reporting
+requirements, and we are submitting it to GFOA to determine its eligibility for another Award.
             </p>
             <h2 className='mt-3'>Local Economy</h2>
             <p className='mt-2 lg:max-w-5xl'>
-              The City and its surrounding metropolitan region feature
-              incredible diversity in both population and the economy. Tourism
-              and hospitality, professional and business services, international
-              trade, entertainment production, and wholesale trade and logistics
-              all contribute significantly to local employment. The Port of Los
-              Angeles handles the largest volume of containerized cargo of all
-              U.S. ports and ranks as number one in cargo value for U.S.
-              waterborne foreign traffic. According to preliminary ACI
-              statistics, in the calendar year 2021, Los Angeles International
-              Airport (LAX) was the fifth busiest airport in the world in terms
-              of total passengers and 8th busiest airport in the world in terms
-              of total cargo metric tons.
+            The City and its surrounding metropolitan region feature incredible diversity in both population and
+the economy. Tourism and hospitality, professional and business services, international trade,
+entertainment production, and wholesale trade and logistics all contribute significantly to local
+employment. The Port of Los Angeles handles the largest volume of containerized cargo of all U.S.
+ports and ranks as number one in cargo value for U.S. waterborne foreign traffic. According to
+preliminary ACI statistics, in the calendar year 2022, Los Angeles International Airport (LAX) was the
+sixth busiest airport in the world in terms of total passengers and ninth busiest in terms of total
+cargo metric tons. According to the U.S. DOT originating and destination (O&amp;D) Survey of Airline
+Passenger Traffic for calendar year 2022, LAX had the largest number of domestic O&amp;D passengers
+in the U.S. O&amp;D passengers begin and end their journeys at LAX, while connecting passengers
+transfer to other flights at LAX.
               <br />
               <br />
-              The passage of the federal American Rescue Plan Act (ARPA) in
-              March 2021 significantly changed City’s fiscal outlook after the
-              pandemic downturn. ARPA, which provided $1.3 billion in direct
-              financial assistance to the City over the last two fiscal years
-              helped fill the revenue gap and eliminated the need to dip into
-              the reserves to balance the books.
+              The post-pandemic economic recovery continued through fiscal year 2023 and resulted in a robust
+General Fund revenue growth for the City. The strong revenues allowed the City to end fiscal year
+2023 in a solid financial position, with July 1, 2023 Reserve Fund balance of 648.3 million, an all-time
+high.
               <br />
               <br />
-              At the beginning of fiscal year 2022, as COVID-19 vaccine became
-              widely available and the economy reopened, the unemployment in the
-              City of Los Angeles began its steady decline from 7.2 percent in
-              October 2021 to 4.6 percent as of October 2022. With the improving
-              economy throughout fiscal 2022, most economic sensitive revenue
-              rebounded. The improvement in revenue along with the federal
-              assistance allowed the City to close fiscal year 2022 in a strong
-              financial position. While most revenue sources have remained
-              stable during the earlier months of fiscal year 2023, the economic
-              outlook for the remainder of the fiscal year remains uncertain.
-              According to the University of California (UCLA) Anderson
-              Forecast, the employment picture in California has evolved
-              slightly in recent months as the three sectors of health care and
-              social services, leisure and hospitality, and education have shown
-              the largest gains in jobs. And despite the statewide gains in
-              leisure and hospitality employment, the landscape for that sector
-              remains difficult in the City of Los Angeles. Without increased
-              employment gains in the hospitality and leisure sector, full
-              economic recovery is expected to remain on a shallow trend. In
-              addition, whether the economy slips into a recession or not
-              depends largely on whether inflation continues to stay elevated,
-              and any additional actions the Federal Reserve takes to bring down
-              inflation.
+              There are several economic factors that could impact revenues and the overall City’s fiscal position
+in the upcoming year. According to the University of California (UCLA) Anderson Forecast, while the
+California economy is growing faster than the U.S. economy, there is a risk that the high interest
+rates might still disrupt the current expansion on the downside. Even though recession worries have
+subsided, increased military conflict abroad and a sense of greater geopolitical risk has kept
+uncertainty about the future high. The uncertainty factor, combined with a slower-growing U.S.
+economy in 2024, suggests a slower-growing California economy in 2024.
               <br />
               <br />
-              While the City is currently in a strong fiscal position,
-              significant challenges lie ahead. The almost $2 billion in
-              one-time revenue from the federal government available during the
-              last two years is no longer available for future budgets. The City
-              faces difficult decisions on how to continue the programming those
-              funds made possible while simultaneously facing potential
-              increased cost and lower receipts arising from the impact of
-              rising interest rates.
+              The unemployment rate within the City of Los Angeles appears to be inching up as well. Although
+labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 2023
+have subsided, the Los Angeles Hotel workers strike is still unsettled. According to the California
+Employment Development Department, the unemployment rate for the City of Los Angeles metro
+area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
               <br />
               <br />
-              Higher mortgage interest rates have led to declining real estate
-              sales volume and decreasing prices, which would impact documentary
-              tax receipt, a key revenue source for the City. In its Second
-              Financial Status Report issued on December 1, 2022, the Chief
-              Administrative Officer reported that declining sales have already
-              resulted in $23 million in documentary transfer tax receipts
-              shortfall during the first four months of fiscal year 2023. Voters
-              in the last election passed Measure ULA, which increases the tax
-              to provide revenue. More worrisome is that sales volume is
-              expected to continue to slide. According to the California
-              Association of Realtors’ October 2022 forecast, sales volume is
-              expected to decline by 7.2 percent and prices are expected to
-              decrease by 8.8 percent in 2023. This would likely result in
-              increasing monthly shortfalls and lower year-end documentary
-              receipts. In addition, the increasing probability of a recession,
-              the unresolved war abroad, global supply chain issues, and energy
-              costs contribute to downward economic pressures which could
-              negatively affect other economically sensitive revenue sources.
+              The unemployment rate within the City of Los Angeles appears to be inching up as well. Although
+labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 2023
+have subsided, the Los Angeles Hotel workers strike is still unsettled. According to the California
+Employment Development Department, the unemployment rate for the City of Los Angeles metro
+area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
             </p>
             {/* Add Visual - Demographic and Economic Data */}
            

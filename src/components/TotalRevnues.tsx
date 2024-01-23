@@ -1,15 +1,15 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
 import {
-  Chart,
-  CategoryScale,
-  LinearScale,
   BarElement,
+  CategoryScale,
+  Chart,
+  LinearScale,
   Title,
   Tooltip,
 } from "chart.js";
 import { csvParse } from "d3";
+import React, { useEffect, useState } from "react";
+import { Bar } from "react-chartjs-2";
 
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
@@ -30,12 +30,13 @@ const BarChart: React.FC = () => {
         const response = await fetch("/csvsforpafr23/1totalcityrevenue.csv");
         const csvData = await response.text();
 
+      
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-          Year: d["Year"],
-          "Activity Type": d["Activity Type"],
-          Activity: d["Activity"],
-          "Revenue Type": d["Revenue Type"],
-          Revenue: parseFloat(d[" Revenue "].replace(/,/g, "").trim()),
+          Year: String(d["Year"]),
+          "Activity Type": String(d["Activity Type"]),
+          Activity: String(d["Activity"]),
+          "Revenue Type": String(d["Revenue Type"]),
+          Revenue: parseFloat(String(d[" Revenue "]).replace(/,/g, "").trim()) || 0,
         }));
         const filteredData = dataArray.filter((data) => data?.Year >= "2019" && data?.Year <= "2023");
         setChartData(filteredData);
@@ -111,7 +112,7 @@ const BarChart: React.FC = () => {
 
   return (
     <div style={{ width: "100%", height: "500px", overflowX: "auto" }}>
-      <Bar data={{ labels, datasets: allDatasets }} options={options} />
+      <Bar data={{ labels, datasets }} options={options} />
     </div>
   );
 };
