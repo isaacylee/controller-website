@@ -74,6 +74,37 @@ const BarChart: React.FC = () => {
     console.log(activityType)
     return activityType === 'Governmental' ? '#41ffca' : '#ffca41';
   }
+
+  function isDarkMode() {
+    if (typeof window !== 'undefined') {
+      const userPreference = localStorage.getItem('theme');
+      if (
+        userPreference === 'dark' ||
+        (userPreference === null &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function updateChartLabelColor() {
+    if (typeof window !== 'undefined') {
+      const isDark = isDarkMode();
+      document.documentElement.style.setProperty(
+        '--chart-label-color',
+        isDark
+          ? 'var(--chart-label-color-dark)'
+          : 'var(--chart-label-color-light)'
+      );
+    }
+  }
+  
+  updateChartLabelColor();
+
+  const isDark = isDarkMode();
+
   const options = {
     maintainAspectRatio: false,
     scales: {
@@ -82,6 +113,10 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Fiscal Year",
+          color: isDark ? 'white' : 'black',
+        },
+        ticks: {
+          color: isDark ? 'white' : 'black',
         },
       },
       y: {
@@ -89,6 +124,20 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Values",
+          color: isDark ? 'white' : 'black',
+        },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+        },
+        labels: {
+          color: isDark ? 'white' : 'black',
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: isDark ? 'white' : 'black',
         },
       },
     },

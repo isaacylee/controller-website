@@ -76,6 +76,36 @@ const TopEmployeeChart: React.FC = () => {
     // },
   ];
 
+  function isDarkMode() {
+    if (typeof window !== 'undefined') {
+      const userPreference = localStorage.getItem('theme');
+      if (
+        userPreference === 'dark' ||
+        (userPreference === null &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function updateChartLabelColor() {
+    if (typeof window !== 'undefined') {
+      const isDark = isDarkMode();
+      document.documentElement.style.setProperty(
+        '--chart-label-color',
+        isDark
+          ? 'var(--chart-label-color-dark)'
+          : 'var(--chart-label-color-light)'
+      );
+    }
+  }
+  
+  updateChartLabelColor();
+
+  const isDark = isDarkMode();
+
   const options = {
     maintainAspectRatio: false,
     scales: {
@@ -84,13 +114,34 @@ const TopEmployeeChart: React.FC = () => {
         title: {
           display: true,
           text: 'Employer',
+          color: isDark ? 'white' : 'black',
         },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+        },
+        
       },
       y: {
         beginAtZero: true,
         title: {
           display: true,
           text: 'Number of Employees',
+          color: isDark ? 'white' : 'black',
+        },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+        },
+        labels: {
+          color: isDark ? 'white' : 'black',
+        },
+      
+      },
+      
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: isDark ? 'white' : 'black',
         },
       },
     },
