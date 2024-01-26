@@ -75,7 +75,7 @@ export default function pafr23(props: any) {
             </p>
             <br />
             <div className='lg:max-w-5xl'>
-              <h2>A Letter from City Controller Kenneth Mejia</h2>
+              <h2>A Message from City Controller Kenneth Mejia</h2>
               <p>
                 <br />
                 Community Members of the City of Los Angeles
@@ -216,6 +216,7 @@ for its Popular Annual Financial Report for the fiscal year ended June 30, 2022.
 Outstanding Achievement in Popular Annual Financial Reporting is a prestigious national award
 recognizing conformance with the highest standards for preparation of state and local government
 popular reports.
+              <br />
               <br />
               In order to receive an Award for Outstanding Achievement in Popular Annual Financial Reporting, a
 government unit must publish a Popular Annual Financial Report, whose contents conform to
@@ -379,93 +380,48 @@ area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
     src="/images/IMG_5094.png"
     alt="Portrait of City Of LA"
   />
-            <h1 className='mt-3'>Management's Discussion and Analysis</h1>
+            <h1 className='mt-3'>Total City Revenues: $21.6 billion</h1>
 
             <p className='mt-2 lg:max-w-5xl'>
-              For the fiscal year that ended on June 30, 2022, total City
-              revenues were $20.0 billion, an increase of 8.7% over the prior
-              year. Expenses were $16.6 billion, 4.5% less than the prior year.
+            For the fiscal year that ended on June 30, 2023, total City revenues were $21.6 billion, an increase
+of 8.4% over the prior year.
+<br></br>
+<br></br>
+Total revenues of governmental activities were $10.2 billion, while the combined operating
+revenues from City’s six business-type activities was $11.4 billion.
             </p>
           </div>
+      
+          
 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>FY 22 Total Revenues: $20.0 billion</h3>
+            <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3>
             {/* Add Visual - City Revenues */}
             <TotalRevnues />
 
-            <h3 className='mt-3'>FY 22 Total Expenses: $16.6 billion</h3>
+            <h3 className='mt-3'>Total City Expenses: $19.6 billion</h3>
             <TotalExpenditure />
           </div>
 
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <p className='mt-4 lg:max-w-5xl'>
-              Total revenues of governmental activities were $10.2 billion,
-              while total expenses were $7.8 billion. Of the $7.8 billion total
-              expenses, 40.3% was funded by taxes and other general revenues,
-              and the remaining 59.7% was funded by program revenues and
-              transfers from business-type funds. Program revenues are resources
-              obtained from parties outside of the City and charges for services
-              between the governmental and business-type activities.
+            Total revenues of governmental activities were $10.2 billion, while the combined operating
+revenues from City’s six business-type activities was $11.4 billion.
               <br />
               <br />
-              Total expenses decreased by $1.7 billion or 18.0% compared to FY
-              21. Expenses decreased in the following functional areas: general
-              government by $209.6 million, protections of persons and property
-              by $1.4 billion, public works by $73.9 million, health and
-              sanitation by $125.3 million, transportation by $13.5 million, and
-              interest on long-term debt by $1.6 million; offset by increases of
-              cultural and recreational services of $9.3 million and community
-              development of $77.6 million.
+              Total expenses increased by $3.0 billion or 18.2% compared to FY 22. Expenses increased by $2.2
+billion in the governmental activities primarily in the following functional areas: general government
+by $605.4 million, protections of persons and property by $1.0 billion, public works by $128.6
+million, health and sanitation by $183.4 million, transportation by $78.0 million, cultural and
+recreational services by $108.7 million and $839.4 million increase in the City’s business-type
+activities.
               <br />
               <br />
             </p>
            
             {/* <Changeinnetpos /> */}
           </div>
-          <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
-            <h4>$37.3 billion, 9.0% increase from FY 21</h4>
-            <BondedDebtandLongTermNotesPayable />
-            <h3 className='mt-3'>
-              Ratings of the City's Debts by Rating Agencies
-            </h3>
-            <Credit />
-
-            <p className='mt-4 lg:max-w-5xl'>
-              The City has established guidelines for the structure and
-              management of the City’s debt, which include target and ceiling
-              levels for certain debt ratios to be used for financial planning
-              purposes and restrictions on the types of items that can be
-              financed, limiting financing only to those items with a useful
-              life of six years or more. In accordance with this policy, the
-              ratio of annual debt payments cannot exceed 15% of General Fund
-              revenues for voter-approved and non-voter approved debt overall,
-              and cannot exceed 6% of General Fund revenues for non-voter
-              approved debt alone. The 6% ceiling for non-voter approved debt
-              may be exceeded only if there is a guaranteed new revenue stream
-              for the debt payments and the additional debt will not cause the
-              ratio to exceed 7.5%, or there is no guaranteed revenue stream but
-              the 6% ceiling shall not be exceeded for more than one year.
-              <br />
-              <br />
-              For 2022, the ratios were{' '}
-              <span className='font-bold'>4.7% for overall debt</span> and{' '}
-              <span className='font-bold'>
-                3.0% for non-voter approved debt.
-              </span>{' '}
-              <br />
-              <br />
-              Of the{' '}
-              <span className='font-bold'>
-                $37.3 billion long-term bonds and notes payable, $751.7 million
-                were General Obligation bonds.
-              </span>
-              <br />
-              <br />
-              As of June 30, 2022, the City is in compliance with its Debt
-              Policies.
-            </p>
-          </div>
+         
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
           <img
     className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
@@ -684,6 +640,50 @@ area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
               </li>
             </ul>
 
+            <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+            <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
+            <h4>$37.3 billion, 9.0% increase from FY 21</h4>
+            <BondedDebtandLongTermNotesPayable />
+            <h3 className='mt-3'>
+              Ratings of the City's Debts by Rating Agencies
+            </h3>
+            <Credit />
+
+            <p className='mt-4 lg:max-w-5xl'>
+              The City has established guidelines for the structure and
+              management of the City’s debt, which include target and ceiling
+              levels for certain debt ratios to be used for financial planning
+              purposes and restrictions on the types of items that can be
+              financed, limiting financing only to those items with a useful
+              life of six years or more. In accordance with this policy, the
+              ratio of annual debt payments cannot exceed 15% of General Fund
+              revenues for voter-approved and non-voter approved debt overall,
+              and cannot exceed 6% of General Fund revenues for non-voter
+              approved debt alone. The 6% ceiling for non-voter approved debt
+              may be exceeded only if there is a guaranteed new revenue stream
+              for the debt payments and the additional debt will not cause the
+              ratio to exceed 7.5%, or there is no guaranteed revenue stream but
+              the 6% ceiling shall not be exceeded for more than one year.
+              <br />
+              <br />
+              For 2022, the ratios were{' '}
+              <span className='font-bold'>4.7% for overall debt</span> and{' '}
+              <span className='font-bold'>
+                3.0% for non-voter approved debt.
+              </span>{' '}
+              <br />
+              <br />
+              Of the{' '}
+              <span className='font-bold'>
+                $37.3 billion long-term bonds and notes payable, $751.7 million
+                were General Obligation bonds.
+              </span>
+              <br />
+              <br />
+              As of June 30, 2022, the City is in compliance with its Debt
+              Policies.
+            </p>
+          </div>
             <br />
             <h2 className='mt-3'>City Activities</h2>
             <br />
