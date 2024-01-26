@@ -82,7 +82,8 @@ const BarChart: React.FC = () => {
   const datasets = Object.entries(aggregatedData).map(([activityType, data]) => ({
     label: activityType,
     data: Object.values(data),
-    backgroundColor: getColor(activityType),
+     backgroundColor: getColor(activityType),
+    
     stack: "stack",
   }));
 
@@ -97,7 +98,7 @@ const BarChart: React.FC = () => {
   const allDatasets = [...datasets, lineDataset];
 
   function getColor(activityType: string) {
-    return activityType === 'Governmental' ? 'rgba(255, 165, 0, 0.7)' : 'rgba(0, 0, 255, 0.7)';
+    return activityType === 'Governmental' ? '#41ffca' : '#ffca41';
   }
 
   const options = {

@@ -65,7 +65,7 @@ const TopEmployeeChart: React.FC = () => {
     {
       label: '2023 Employees',
       data: chartData.map((data) => data.employees22),
-      backgroundColor: 'rgba(255, 99, 132, 0.7)',
+      backgroundColor: '#41ffca',
       stack: 'stack',
     },
     // {

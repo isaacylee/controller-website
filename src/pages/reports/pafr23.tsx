@@ -8,7 +8,7 @@ import GeneralFundExpenses from "@/components/GeneralFundExpenses"
 import GeneralFundRevenues from "@/components/GeneralFundRevenues"
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
-import NetPositionChart from '@/components/NetPosition';
+import NetPosition from '@/components/NetPosition';
 import { Credit } from '@/components/pafr22visualise/credit';
 import Seo from '@/components/Seo';
 import TopEmployeeChart from '@/components/TopEmployee';
@@ -64,7 +64,7 @@ export default function pafr23(props: any) {
             <br />
             <p className='text-green-800 underline dark:text-[#41ffca]'>
               <Link
-                href='/acfr22.pdf'
+                href='/acfr23.pdf'
                 target='_blank'
                 rel='noreferrer noopener'
                 className='text-green-800 underline dark:text-mejito'
@@ -556,9 +556,10 @@ area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
               increased in business-type of 653.2 million.
               <br />
               <br />
-              The City’s net position is illustrated in the chart below:
-              <NetPositionChart />
-            </p>
+              The City’s net position is illustrated in the table below:
+              <NetPosition />
+              {/* <ChangeinnetposGen /> */}
+            </p> 
             {/*Net Pos Generally */}
             <h2 className='mt-3'>General Fund</h2>
             <p>

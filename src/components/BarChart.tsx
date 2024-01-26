@@ -50,17 +50,17 @@ const BarChart: React.FC = () => {
     {
       label: "Estimated Population",
       data: chartData.map((data) => data.estimatedPopulation),
-      backgroundColor: "rgba(255, 99, 132, 0.7)",
+      backgroundColor: "#41ffca",
     },
     {
       label: "Personal Income Per Capita",
       data: chartData.map((data) => data.personalIncomePerCapita),
-      backgroundColor: "rgba(255, 205, 86, 0.7)",
+      backgroundColor: "purple",
     },
     {
       label: "Unemployment Rate",
       data: chartData.map((data) => data.unemploymentRate),
-      backgroundColor: "rgba(54, 162, 235, 0.7)",
+      backgroundColor: "#FFCA41",
       yAxisID: "percentageYAxis",
     },
   ];
