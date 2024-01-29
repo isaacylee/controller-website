@@ -9,13 +9,16 @@ import GeneralFundRevenues from "@/components/GeneralFundRevenues"
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import NetPosition from '@/components/NetPosition';
-import { Credit } from '@/components/pafr22visualise/credit';
+import { Credit } from '@/components/pafr23visualise/credit';
 import Seo from '@/components/Seo';
 import TopEmployeeChart from '@/components/TopEmployee';
 import TotalExpenditure from '@/components/TotalExpendituresExpenses'
 import TotalRevnues from '@/components/TotalRevnues'
 
  
+
+
+
 export default function pafr23(props: any) {
   return (
     <>
@@ -227,6 +230,7 @@ Outstanding Achievement in Popular Annual Financial Reporting is valid for a per
 only. We believe our current report continues to conform to the Popular Annual Financial Reporting
 requirements, and we are submitting it to GFOA to determine its eligibility for another Award.
             </p>
+            
             <h2 className='mt-3'>Local Economy</h2>
             <p className='mt-2 lg:max-w-5xl'>
             The City and its surrounding metropolitan region feature incredible diversity in both 
@@ -241,6 +245,15 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
                 begin and end their journeys at LAX, while connecting passengers transfer to other flights at LAX.
               <br />
               <br />
+              <img
+                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
+                src='/images/conventioncenter.png'
+              ></img>
+              <img
+                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
+                src='/images/conventioncenter.png'
+              />
+    
               The post-pandemic economic recovery continued through fiscal year 2023 and resulted in a robust General Fund 
               revenue growth for the City. The strong revenues allowed the City to end fiscal year 2023 in a solid financial 
               position, with July 1, 2023 Reserve Fund balance of 648.3 million, an all-time high. 
@@ -270,11 +283,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
             </p>
             {/* Add Visual - Demographic and Economic Data */}
            
-  <img
-    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
-    src="/images/IMG_0798.png"
-    alt="Portrait of City Of LA"
-  />
+ 
  
             {/* <h2 className='mt-3 dark:text-white'>City of LA Demographic</h2> */}
             <h2 className='mt-3 dark:text-white'>Demographic and Economic Data</h2>
@@ -291,25 +300,29 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
             <br />
             <Employers /> */}
           </div>
-          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-          <img
-    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
-    src="/images/IMG_6323.png"
-    alt="Portrait of City Of LA"
-  />
-            <h2 className='mt-3'>City Organization</h2>
-
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
+  <h2 className='mt-3'>City Organization</h2>
+  <div className="clear: both;"></div>  
+ 
             <p className='mt-2 lg:max-w-5xl'>
               The City operates under a Mayor-Council form of government. The
               Mayor supervises the administrative processes of the City and
               works with the City Council in matters relating to legislation,
-              budget and finance. The 15-member City Council enacts ordinances,
+              budg et and finance. The 15-member City Council enacts ordinances,
               levies taxes, authorizes contracts and public improvements, adopts
               zoning and other land use contracts, and provides necessary
               resources for the budgetary departments and offices of the City.
               The City Controller and City Attorney are independently elected
               citywide.
               <br />
+              <img
+    className='float-left mr-1 mb-1 w-80 dark:hidden md:w-48 lg:w-64'
+    src='/images/vistahermosa.png'
+  ></img>
+  <img
+    className='float-right ml-1 mb-1 w-80 dark:block md:w-48 lg:w-64' 
+    src='/images/vistahermosa.png'
+  />
               <br />
               The City has 46 departments, bureaus, commissions and offices, 39
               of which have their operating funds annually budgeted by the City
@@ -379,10 +392,12 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
     
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
           <img
-    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
-    src="/images/IMG_5094.png"
-    alt="Portrait of City Of LA"
-  />
+  className="mb-2 w-96 sm:ml-4 sm:mb-4 lg:w-1/2"
+  src="/images/freeway.png"
+  alt="Portrait of City Of LA"
+/>
+
+
             <h1 className='mt-3'>Total City Revenues: $21.6 billion</h1>
 
             <p className='mt-2 lg:max-w-5xl'>
@@ -391,8 +406,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
 
 <br></br>
 <br></br>
-Total revenues of governmental activities were $10.2 billion, while the combined operating 
-revenues from City’s six business-type activities was $11.4 billion.
+
 
             </p>
           </div>
@@ -403,6 +417,8 @@ revenues from City’s six business-type activities was $11.4 billion.
             {/* <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3> */}
             {/* Add Visual - City Revenues */}
             <TotalRevnues />
+            <p>Total revenues of governmental activities were $10.2 billion, while the combined operating 
+revenues from City’s six business-type activities was $11.4 billion.</p>
 
             <h3 className='mt-3'>Total City Expenses: $19.6 billion</h3>
               <p className='mt-3'>For the fiscal year that ended on June 30, 2023, expenses were $19.6 billion, 
@@ -436,7 +452,7 @@ activities.
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
             City of Los Angeles’s Net position provides insight into the City’s financial position as of June 30,  2023. 
-            It includes a summary of what the City owns (assets and deferred outflows) and what the City owes
+            It includes a summary of what the City owns (assets and deferred outflows) <b>minus</b> what the City owes
              (liabilities and deferred inflows). 
                <br />
               <br />
@@ -444,13 +460,7 @@ activities.
 
             <div className='mt-2 flex flex-col gap-y-2 md:flex-row md:gap-x-3'>
               <div className=' rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
-                Total City Assets: $86.9 billion.
-                <br />
-                Deferred Outflows of Resources: $5.2 billion.
-                <br />
-                <span className='font-bold'>Total: $92.1 billion.</span>
-                <br />
-                <br />
+             
                 <p className='font-bold'>
                   Assets represent what the City owns:
                 </p>
@@ -459,14 +469,18 @@ activities.
                   <li>Receivables</li>
                   <li>Capital assets (land, buildings and infrastructure)</li>
                 </ul>
+                <br></br>
+                Total City Assets: $86.9 billion.
+                <br />
+                Deferred Outflows of Resources: $5.2 billion.
+                <br />
+                <span className='font-bold'>Total: $92.1 billion.</span>
+                <br />
+                <br />
               </div>
               <div className='rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800   md:w-1/2'>
-                Total City Liabilities: $58.8 billion. <br />
-                Deferred Inflows of Resources: $2.7 billion.
-                <br />
-                <span className='font-bold'>Total: $61.5 billion.</span>
-                <br />
-                <br />
+                
+                
                 <p className='font-bold'>
                   Liabilities represent what the City owes:
                 </p>
@@ -476,6 +490,11 @@ activities.
                   <li>Unearned revenue</li>
                   <li>Accounts payable and accrued expenses</li>
                 </ul>
+                <br></br>
+                Total City Liabilities: $58.8 billion. <br />
+                Deferred Inflows of Resources: $2.7 billion.
+                <br />
+                <span className='font-bold'>Total: $61.5 billion.</span>
               </div>
             </div>
 
@@ -493,7 +512,7 @@ activities.
 
 <br></br>
             <p>
-              The net position of $28.5 billion consisted of:
+            The net position of $30.6 billion consisted of:
               <br />
               <br />
               <span className='font-bold'>
@@ -525,8 +544,9 @@ activities.
               <h2 className='mt-3'>Dollars In – General Fund Revenues:</h2>
               City of Los Angeles’ government resources and services are funded through several different revenue streams. 
               In FY 2023, the City collected General Fund revenues of $6.7 billion with the majority received through taxes
-               which makes up $5,7 billion or 84.6% of General Fund revenue. 
-
+               which makes up $5.7 billion or 84.6% of General Fund revenue. 
+<br></br>
+<br></br>
                <GeneralFundRevenues />
               {/* <ChangeinnetposGen /> */}
             </p> 
@@ -564,11 +584,11 @@ activities.
             {/* revenues text */}
             <ul className='list-disc'>
               <li>
-                <span className='font-bold'>Property taxes</span>, which represent 39.4% of General Fund revenue, 
-                increased by $166.1 million (6.7%), due to growth in current secured property tax receipts of $150.5 
-                million, a combined increase of $55.5 million from vehicle license fees replacement and Ex-Community 
-                Redevelopment Agency tax increment receipts, and offset by a decrease of $45.8 million in prior 
-                secured property tax receipts.
+                <span className='font-bold'>Property taxes</span>, which represent 39.4% of General Fund revenue, increased by $166.1
+million (6.7%), due to growth in current secured property tax receipts of $150.5 million, a
+combined increase of $55.5 million from vehicle license fees replacement and Ex-
+Community Redevelopment Agency tax increment receipts, and offset by a decrease of
+$45.8 million in prior secured property tax receipts.
 
               </li>
               <li>
@@ -606,25 +626,10 @@ activities.
                  investment earnings and a change in the fair value of investments resulting from the higher interest rates, partially offset by a $15.7 million decrease in other revenues.
 
                 {' '}
-                <span className='font-bold'>Documentary Transfer Tax</span> due
-                to home price appreciation during FY22.
+               
               </li>
-              <li>
-                <span className='font-bold'>Licenses and permits</span> revenues
-                were up by $2.1 million (7.2%), due to recovery of filming
-                permit fees from pandemic low.
-              </li>
-              <li>
-                <span className='font-bold'>Charges for services</span> provided
-                to Enterprise Fund totaled $17.6 million or 4.9% lower than
-                prior fiscal year.
-              </li>
-              <li>
-                <span className='font-bold'>Net investment earnings</span> and
-                <span className='font-bold'>other revenues</span> decreased by
-                $88.2 million, due to decreases in investment earnings and
-                change in the fair market value of investments.
-              </li>
+              
+              
             </ul>
 
             <br />
@@ -634,9 +639,12 @@ activities.
                street maintenance and traffic management, enforcement of building safety laws, libraries, recreation 
                and parks, community development, etc. </p>
                <br></br>
+               <br></br>
                <p>The operating fund from which the City accounts for the money coming in and the expenditures paid out 
                 is the General Fund. 
 </p>
+<br></br>
+<br></br>
 <GeneralFundExpenses />
             <h4 className='font-bold'>
             In FY 23 General Fund Expenditures was $6.0 billion, $238.7 million (4.1%) increase over FY 22, 
@@ -684,7 +692,7 @@ activities.
             </ul>
 
             <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>How Much Do we Owe</h3>
+            <h3 className='mt-3'>How Much Does The City Owe?</h3>
             <h4>Bonded Debt and Long-Term Notes Payable: $39.2 billion, 5.0% increase from FY 22</h4>
             <BondedDebtandLongTermNotesPayable />
             <br></br>
@@ -730,7 +738,7 @@ activities.
             </ul>
 
             <h3 className='mt-3'>
-            Ratings of the City’s Debts by Rating Agencies
+            Ratings of the City’s General Obligation Bonds 
 
             </h3>
             <Credit />

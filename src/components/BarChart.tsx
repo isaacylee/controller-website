@@ -1,4 +1,3 @@
-"use client"
 import { BarElement, CategoryScale, Chart, LinearScale, Title, Tooltip } from "chart.js";
 import { csvParse } from "d3";
 import { useTheme } from 'next-themes';
@@ -30,6 +29,7 @@ const BarChart: React.FC = () => {
           personalIncomePerCapita: d["Personal Income Per Capita"] ? parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) : 0,
           unemploymentRate: d["Unemployment Rate"] ? parseFloat(d["Unemployment Rate"].replace(/%/, "")) : 0,
         }));
+        // Filter data
         const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2023);
         setChartData(filteredData);
       } catch (error) {
@@ -43,6 +43,8 @@ const BarChart: React.FC = () => {
   if (!chartData) {
     return null;
   }
+
+  // Map chart data
   const labels = chartData.map((data) => data.fiscalYear.toString());
   const datasets = [
     {
@@ -53,11 +55,7 @@ const BarChart: React.FC = () => {
     {
       label: "Personal Income Per Capita",
       data: chartData.map((data) => data.personalIncomePerCapita),
-      type: 'line',
-      borderColor: 'purple',
-      borderWidth: 2,
-      fill: false,
-      yAxisID: 'incomePerCapitaYAxis',
+      backgroundColor: "purple",
     },
     {
       label: "Unemployment Rate",
@@ -96,6 +94,8 @@ const BarChart: React.FC = () => {
   updateChartLabelColor();
 
   const isDark = isDarkMode();
+
+  // Updated options
   const options = {
     maintainAspectRatio: false,
     scales: {
@@ -115,20 +115,6 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Values",
-          color: isDark ? 'white' : 'black',
-        },
-        ticks: {
-          color: isDark ? 'white' : 'black',
-        },
-        labels: {
-          color: isDark ? 'white' : 'black',
-        },
-      },
-      incomePerCapitaYAxis: {
-        beginAtZero: true,
-        title: {
-          display: true,
-          text: "Personal Income Per Capita",
           color: isDark ? 'white' : 'black',
         },
         ticks: {

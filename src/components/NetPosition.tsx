@@ -1,8 +1,8 @@
-"use client"
-import { csvParse } from "d3";
-import React, { useEffect, useState } from "react";
-import DataTable from "react-data-table-component";
+import { csvParse } from 'd3';
+import React, { useEffect, useState } from 'react';
+import DataTable from 'react-data-table-component';
 
+// Define the data structure for your data
 interface Data {
   year: string;
   category: string;
@@ -12,279 +12,129 @@ interface Data {
   total: number;
 }
 
-interface OrganizedDataRow {
-  description: string;
-  [key: string]: string | number;
+// Define the structure for your table columns
+interface TableColumn<T> {
+  name: string;
+  selector?: (row: T) => string | number;
+  sortable?: boolean;
+  cell?: (row: T) => React.ReactNode;
 }
 
-type TableColumn<T> = {
-  name: string;
-  selector?: keyof T | string;
-  sortable?: boolean;
-  center?: boolean;
-  cell?: (row: T) => React.ReactNode;
-  conditionalCellStyles?: {
-    when: (row: T) => boolean;
-    style: React.CSSProperties;
-  }[];
-};
+const NetPosition: React.FC = () => {
+  const [data, setData] = useState<Data[]>([]);
+  const [selectedYear, setSelectedYear] = useState<number>(2023); // Starting year, change as needed
+  const [yearRange, setYearRange] = useState<{ min: number; max: number }>({ min: 2023, max: 2024 }); // Change as needed
 
-const NetPositionChart: React.FC = () => {
-  const [data, setData] = useState<Data[] | null>(null);
-
-  function formatCurrency(number: number): string {
+  // Currency formatting function
+  function formatCurrency(number: number) {
     const billion = 1e9;
-    const formattedValue = new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
       minimumFractionDigits: 1,
       maximumFractionDigits: 1,
-    }).format(number / billion);
-
-    return formattedValue.replace("$", "") + "B";
+    }).format(number / billion) + 'B';
   }
 
+  // Fetch and process data
   useEffect(() => {
-    const fetchData = async (): Promise<void> => {
-      try {
-        const response = await fetch(
-          "/csvsforpafr23/6condensedstatementofnetposition1.csv"
-        );
-        const csvData = await response.text();
-        const sanitizedCsvData = csvData.replace(/"(.*?)"/g, (_, g) =>
-          g.replace(/,/g, "")
-        );
+    const fetchData = async () => {
+      const response = await fetch('/csvsforpafr23/6condensedstatementofnetposition1.csv');
+      const csvData = await response.text();
+      const sanitizedCsvData = csvData.replace(/"(.*?)"/g, (_, g) => g.replace(/,/g, ''));
+      const dataArray: Data[] = csvParse(sanitizedCsvData, (d) => ({
+        year: d.Year || '',
+        category: d.Category || '',
+        desc: d.Description || '',
+        businessType: d['Business-Type'] || '',
+        governmental: d.Governmental ? +d.Governmental.replace(/,/g, '') : 0,
+        total: d.Total ? +d.Total.replace(/,/g, '').replace(/\(|\)/g, '') * (d.Total.includes('(') ? -1 : 1) : 0,
+      }));
 
-        const dataArray: Data[] = csvParse(sanitizedCsvData, (d) => ({
-          year: d.Year || '',
-          category: d.Category || '',
-          desc: d.Description || '',
-          businessType: d['Business-Type'] || '',
-          governmental: d.Governmental ? +d.Governmental.replace(/,/g, '') : 0,
-          total: d.Total ? +d.Total.replace(/,/g, '').replace(/\(|\)/g, '') * (d.Total.includes('(') ? -1 : 1) : 0,
-        }));
-  
-        const filteredData = dataArray.filter(
-          (data) => data.year >= "2022" && data.year <= "2023"
-        );
-        setData(filteredData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+      const years = dataArray.map(item => parseInt(item.year, 10));
+      setYearRange({ min: Math.min(...years), max: Math.max(...years) });
+      setData(dataArray);
     };
 
     fetchData();
   }, []);
 
-  const organizedData: OrganizedDataRow[] = (data ?? []).reduce(
-    (acc, row) => {
-      const description = row["desc"];
-      const year = row["year"];
-      const businessType = row["businessType"];
-      const governmental = row["governmental"];
-      const total = row["total"];
-
-      const existingRow = acc.find(
-        (item) => item["description"] === description
-      );
-
-      if (existingRow) {
-        existingRow[`Business-Type-${year}`] = businessType;
-        existingRow[`Governmental-${year}`] = governmental;
-        existingRow[`Total-${year}`] = total;
-      } else {
-        const newRow: OrganizedDataRow = {
-          description,
-          [`Business-Type-${year}`]: businessType,
-          [`Governmental-${year}`]: governmental,
-          [`Total-${year}`]: total,
-        };
-        acc.push(newRow);
-      }
-
-      return acc;
-    },
-    [] as OrganizedDataRow[]
-  );
-
-  const columns: TableColumn<OrganizedDataRow>[] = [
+  // Define the columns for the DataTable
+  const columns: TableColumn<Data>[] = [
     {
-      name: "Assets",
-      selector: "description",
+      name: 'Category',
+      selector: row => row.category,
+      sortable: true,
     },
     {
-      name: "FY 2023",
-      selector: "Business-Type-2023",
-      center: true,
-      conditionalCellStyles: [
-        {
-          when: (row: OrganizedDataRow) => row["Business-Type-2023"] !== undefined,
-          style: {
-            backgroundColor: "#9db4e0",
-          },
-        },
-        {
-          when: (row: OrganizedDataRow) =>
-            row["description"] === "Total assets" ||
-            row["description"] === "Total liabilities" ||
-            row["description"] === "Deferred outflows of resources" ||
-            row["description"] === "Total net position" ||
-            row["description"] === "Deferred inflows of resources",
-          style: {
-            backgroundColor: "#9db4e0",
-            borderTop: "2px solid black",
-            borderBottom: "2px solid black",
-          },
-        },
-      ],
+      name: 'Description',
+      selector: row => row.desc,
+      sortable: true,
     },
     {
-      name: "FY 2022",
-      selector: "Business-Type-2022",
-      center: true,
-      conditionalCellStyles: [
-        {
-          when: (row: OrganizedDataRow) =>
-            row["description"] === "Total assets" ||
-            row["description"] === "Total liabilities" ||
-            row["description"] === "Deferred outflows of resources" ||
-            row["description"] === "Total net position" ||
-            row["description"] === "Deferred inflows of resources",
-          style: {
-            borderTop: "2px solid black",
-            borderBottom: "2px solid black",
-          },
-        },
-      ],
+      name: 'Business-Type',
+      cell: (row) => formatCurrency(parseFloat(row.businessType)),
+      sortable: true,
     },
     {
-      name: "FY 2023",
-      selector: "Governmental-2023",
-      center: true,
-      conditionalCellStyles: [
-        {
-          when: (row: OrganizedDataRow) => row["Governmental-2023"] !== undefined,
-          style: {
-            backgroundColor: "#9db4e0",
-          },
-        },
-        {
-          when: (row: OrganizedDataRow) =>
-            row["description"] === "Total assets" ||
-            row["description"] === "Total liabilities" ||
-            row["description"] === "Deferred outflows of resources" ||
-            row["description"] === "Total net position" ||
-            row["description"] === "Deferred inflows of resources",
-          style: {
-            backgroundColor: "#9db4e0",
-            borderTop: "2px solid black",
-            borderBottom: "2px solid black",
-          },
-        },
-      ],
+      name: 'Governmental',
+      cell: (row) => formatCurrency(row.governmental),
+      sortable: true,
     },
     {
-      name: "FY 2022",
-      center: true,
-      selector: "Governmental-2022",
-      conditionalCellStyles: [
-        {
-          when: (row: OrganizedDataRow) =>
-            row["description"] === "Total assets" ||
-            row["description"] === "Total liabilities" ||
-            row["description"] === "Deferred outflows of resources" ||
-            row["description"] === "Total net position" ||
-            row["description"] === "Deferred inflows of resources",
-          style: {
-            borderTop: "2px solid black",
-            borderBottom: "2px solid black",
-          },
-        },
-      ],
-    },
-    {
-      name: "FY 2023",
-      selector: "Total-2023",
-      center: true,
-      conditionalCellStyles: [
-        {
-          when: (row: OrganizedDataRow) => row["Total-2023"] !== undefined,
-          style: {
-            backgroundColor: "#9db4e0",
-          },
-        },
-        {
-          when: (row: OrganizedDataRow) =>
-            row["description"] === "Total assets" ||
-            row["description"] === "Total liabilities" ||
-            row["description"] === "Deferred outflows of resources" ||
-            row["description"] === "Total net position" ||
-            row["description"] === "Deferred inflows of resources",
-          style: {
-            backgroundColor: "#9db4e0",
-            borderTop: "2px solid black",
-            borderBottom: "2px solid black",
-          },
-        },
-      ],
-    },
-    {
-      name: "FY 2022",
-      center: true,
-      selector: "Total-2022",
-      conditionalCellStyles: [
-        {
-          when: (row: OrganizedDataRow) =>
-            row["description"] === "Total assets" ||
-            row["description"] === "Total liabilities" ||
-            row["description"] === "Deferred outflows of resources" ||
-            row["description"] === "Total net position" ||
-            row["description"] === "Deferred inflows of resources",
-          style: {
-            borderTop: "2px solid black",
-            borderBottom: "2px solid black",
-          },
-        },
-      ],
+      name: 'Total',
+      cell: (row) => formatCurrency(row.total),
+      sortable: true,
     },
   ];
 
+  // Custom styles for the DataTable
   const customStyles = {
     rows: {
       style: {
-        minHeight: "50px",
+        minHeight: '50px', // Adjust this value if needed
       },
     },
     headCells: {
       style: {
-        paddingLeft: "8px",
-        paddingRight: "8px",
-        backgroundColor: "#f9f7f7",
+        paddingLeft: '8px',
+        paddingRight: '8px',
+        backgroundColor: '#f9f7f7',
         fontWeight: 700,
-        fontSize: "18px",
+        fontSize: '16px',
       },
     },
     cells: {
       style: {
-        paddingLeft: "8px",
-        paddingRight: "8px",
-        fontWeight: 500,
-        fontSize: "15px",
+        paddingLeft: '8px',
+        paddingRight: '8px',
       },
     },
   };
 
+  // Render the component
   return (
-    <div style={{ width: "100%", height: "700px", overflowX: "auto" }}>
-      {data && (
+    <div style={{ width: '100%' }}>
+      <div style={{ margin: '20px 0' }}>
+        <input
+          type="range"
+          min={yearRange.min}
+          max={yearRange.max}
+          value={selectedYear}
+          onChange={(e) => setSelectedYear(Number(e.target.value))}
+        />
+        <p>Selected Year: {selectedYear}</p>
+      </div>
+      <div>
         <DataTable
           columns={columns}
-          data={organizedData}
+          data={data.filter((item) => parseInt(item.year, 10) === selectedYear)}
           customStyles={customStyles}
+          pagination={false} // Disable pagination
         />
-      )}
+      </div>
     </div>
   );
 };
 
-export default NetPositionChart;
+export default NetPosition;
