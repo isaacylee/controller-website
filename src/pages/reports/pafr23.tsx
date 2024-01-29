@@ -14,6 +14,8 @@ import Seo from '@/components/Seo';
 import TopEmployeeChart from '@/components/TopEmployee';
 import TotalExpenditure from '@/components/TotalExpendituresExpenses'
 import TotalRevnues from '@/components/TotalRevnues'
+
+ 
 export default function pafr23(props: any) {
   return (
     <>
@@ -21,7 +23,7 @@ export default function pafr23(props: any) {
       <Seo
         title='Popular Annual Financial Report FY23'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/pafrthumbnail3.png'
+        image='https://controller.lacity.gov/images/pafr23-thumbnail.png'
       />
       <Layout>
         <div className='flex flex-col pb-2 dark:text-white'>
@@ -29,7 +31,7 @@ export default function pafr23(props: any) {
             className=''
             style={{
               //url
-              background: 'url(/images/acfr-coverphoto.png)',
+              background: 'url(/images/pafr23.png)',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom',
@@ -227,46 +229,44 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
             </p>
             <h2 className='mt-3'>Local Economy</h2>
             <p className='mt-2 lg:max-w-5xl'>
-            The City and its surrounding metropolitan region feature incredible diversity in both population and
-the economy. Tourism and hospitality, professional and business services, international trade,
-entertainment production, and wholesale trade and logistics all contribute significantly to local
-employment. The Port of Los Angeles handles the largest volume of containerized cargo of all U.S.
-ports and ranks as number one in cargo value for U.S. waterborne foreign traffic. According to
-preliminary ACI statistics, in the calendar year 2022, Los Angeles International Airport (LAX) was the
-sixth busiest airport in the world in terms of total passengers and ninth busiest in terms of total
-cargo metric tons. According to the U.S. DOT originating and destination (O&amp;D) Survey of Airline
-Passenger Traffic for calendar year 2022, LAX had the largest number of domestic O&amp;D passengers
-in the U.S. O&amp;D passengers begin and end their journeys at LAX, while connecting passengers
-transfer to other flights at LAX.
+            The City and its surrounding metropolitan region feature incredible diversity in both 
+            population and the economy. Tourism and hospitality, professional and business services,
+             international trade, entertainment production, and wholesale trade and logistics all contribute 
+             significantly to local employment. The Port of Los Angeles handles the largest volume of containerized
+              cargo of all U.S. ports and ranks as number one in cargo value for U.S. waterborne foreign traffic.
+               According to preliminary ACI statistics, in the calendar year 2022, Los Angeles International Airport (LAX) 
+               was the sixth busiest airport in the world in terms of total passengers and ninth busiest in terms of total
+               cargo metric tons. According to the U.S. DOT originating and destination (O&D) Survey of Airline Passenger 
+               Traffic for calendar year 2022, LAX had the largest number of domestic O&D passengers in the U.S. O&D passengers
+                begin and end their journeys at LAX, while connecting passengers transfer to other flights at LAX.
               <br />
               <br />
-              The post-pandemic economic recovery continued through fiscal year 2023 and resulted in a robust
-General Fund revenue growth for the City. The strong revenues allowed the City to end fiscal year
-2023 in a solid financial position, with July 1, 2023 Reserve Fund balance of 648.3 million, an all-time
-high.
+              The post-pandemic economic recovery continued through fiscal year 2023 and resulted in a robust General Fund 
+              revenue growth for the City. The strong revenues allowed the City to end fiscal year 2023 in a solid financial 
+              position, with July 1, 2023 Reserve Fund balance of 648.3 million, an all-time high. 
               <br />
               <br />
-              There are several economic factors that could impact revenues and the overall City’s fiscal position
-in the upcoming year. According to the University of California (UCLA) Anderson Forecast, while the
-California economy is growing faster than the U.S. economy, there is a risk that the high interest
-rates might still disrupt the current expansion on the downside. Even though recession worries have
-subsided, increased military conflict abroad and a sense of greater geopolitical risk has kept
-uncertainty about the future high. The uncertainty factor, combined with a slower-growing U.S.
-economy in 2024, suggests a slower-growing California economy in 2024.
+              There are several economic factors that could impact revenues and the overall City’s fiscal position in the upcoming year. According to the 
+              University of California (UCLA) Anderson Forecast, while the California economy is growing faster than the U.S.
+               economy, there is a risk that the high interest rates might still disrupt the current expansion on the downside.
+                Even though recession worries have subsided, increased military conflict abroad and a sense of greater 
+                geopolitical risk has kept uncertainty about the future high. The uncertainty factor, combined with a 
+                slower-growing U.S. economy in 2024, suggests a slower-growing California economy in 2024.
               <br />
               <br />
-              The unemployment rate within the City of Los Angeles appears to be inching up as well. Although
-labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 2023
-have subsided, the Los Angeles Hotel workers strike is still unsettled. According to the California
-Employment Development Department, the unemployment rate for the City of Los Angeles metro
-area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
+              The unemployment rate within the City of Los Angeles appears to be inching up as well.
+               Although labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 
+               2023 have subsided, the Los Angeles Hotel workers strike is still unsettled. According to the California
+                Employment Development Department, the unemployment rate for the City of Los Angeles metro area rose from
+                 4.6 percent in November 2022 to 5.3 percent in November 2023. 
               <br />
               <br />
-              The unemployment rate within the City of Los Angeles appears to be inching up as well. Although
-labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 2023
-have subsided, the Los Angeles Hotel workers strike is still unsettled. According to the California
-Employment Development Department, the unemployment rate for the City of Los Angeles metro
-area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
+              Another factor is the higher mortgage interest rates, which continue to put downward pressure on 
+              real estate sales volume and prices. According to the California Association of Realtors’ November 
+              2023 Sales Report, although median price was up by 7.2 percent In Los Angeles, sales volume declined 
+              by 5.1 percent compared to November 2022. All these economic factors contribute to downward economic 
+              pressures which could negatively affect the City’s economically sensitive revenue sources, and City’s financial 
+              position in 2024.
             </p>
             {/* Add Visual - Demographic and Economic Data */}
            
@@ -276,11 +276,14 @@ area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
     alt="Portrait of City Of LA"
   />
  
-            <h2 className='mt-3 dark:text-white'>City of LA Demographic</h2>
+            {/* <h2 className='mt-3 dark:text-white'>City of LA Demographic</h2> */}
+            <h2 className='mt-3 dark:text-white'>Demographic and Economic Data</h2>
             <BarChart />
             {/* Add Visual - Principal Employers */}
             
-            <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2>
+            {/* <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2> */}
+            <h2 className='mt-3 dark:text-white'>Principal Employers</h2>
+         
             <TopEmployeeChart />
 
             {/* <br />
@@ -383,37 +386,39 @@ area rose from 4.6 percent in November 2022 to 5.3 percent in November 2023.
             <h1 className='mt-3'>Total City Revenues: $21.6 billion</h1>
 
             <p className='mt-2 lg:max-w-5xl'>
-            For the fiscal year that ended on June 30, 2023, total City revenues were $21.6 billion, an increase
-of 8.4% over the prior year.
+            For the fiscal year that ended on June 30, 2023, total City revenues were $21.6 billion, 
+            an increase of 8.4% over the prior year. 
+
 <br></br>
 <br></br>
-Total revenues of governmental activities were $10.2 billion, while the combined operating
+Total revenues of governmental activities were $10.2 billion, while the combined operating 
 revenues from City’s six business-type activities was $11.4 billion.
+
             </p>
           </div>
       
           
 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3>
+            {/* <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3> */}
             {/* Add Visual - City Revenues */}
             <TotalRevnues />
 
             <h3 className='mt-3'>Total City Expenses: $19.6 billion</h3>
+              <p className='mt-3'>For the fiscal year that ended on June 30, 2023, expenses were $19.6 billion, 
+              18.2% more than the prior year.</p>
             <TotalExpenditure />
           </div>
 
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <p className='mt-4 lg:max-w-5xl'>
-            Total revenues of governmental activities were $10.2 billion, while the combined operating
-revenues from City’s six business-type activities was $11.4 billion.
+            Total expenses increased by $3.0 billion or 18.2% compared to FY 22. Expenses increased by $2.2 billion 
+            in the governmental activities primarily in the following functional areas: general government by $605.4 million, 
+            protections of persons and property by $1.0 billion, public works by $128.6 million, health and sanitation by $183.4 
+            million, transportation by $78.0 million, cultural and recreational services by $108.7 million and $839.4 million 
+            increase in the City’s business-type activities. 
               <br />
-              <br />
-              Total expenses increased by $3.0 billion or 18.2% compared to FY 22. Expenses increased by $2.2
-billion in the governmental activities primarily in the following functional areas: general government
-by $605.4 million, protections of persons and property by $1.0 billion, public works by $128.6
-million, health and sanitation by $183.4 million, transportation by $78.0 million, cultural and
-recreational services by $108.7 million and $839.4 million increase in the City’s business-type
+              
 activities.
               <br />
               <br />
@@ -430,20 +435,20 @@ activities.
   />
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
-              The <span className='font-bold'>net position</span> is the
-              financial position of the City – assets and deferred outflows of
-              resources <span className='font-bold'>minus</span> liabilities and
-              deferred inflows of resources. <br />
+            City of Los Angeles’s Net position provides insight into the City’s financial position as of June 30,  2023. 
+            It includes a summary of what the City owns (assets and deferred outflows) and what the City owes
+             (liabilities and deferred inflows). 
+               <br />
               <br />
             </p>
 
             <div className='mt-2 flex flex-col gap-y-2 md:flex-row md:gap-x-3'>
               <div className=' rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
-                Total City Assets: $87.4 billion.
+                Total City Assets: $86.9 billion.
                 <br />
-                Deferred Outflows of Resources: $3.8 billion.
+                Deferred Outflows of Resources: $5.2 billion.
                 <br />
-                <span className='font-bold'>Total: $91.2 Billion.</span>
+                <span className='font-bold'>Total: $92.1 billion.</span>
                 <br />
                 <br />
                 <p className='font-bold'>
@@ -456,10 +461,10 @@ activities.
                 </ul>
               </div>
               <div className='rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800   md:w-1/2'>
-                Total City Liabilities: $51.3 billion. <br />
-                Deferred Inflows of Resources: $11.4 billion.
+                Total City Liabilities: $58.8 billion. <br />
+                Deferred Inflows of Resources: $2.7 billion.
                 <br />
-                <span className='font-bold'>Total: $62.7 billion.</span>
+                <span className='font-bold'>Total: $61.5 billion.</span>
                 <br />
                 <br />
                 <p className='font-bold'>
@@ -477,48 +482,59 @@ activities.
             <h3>
               <br />
               <br />
-              Net Position: $28.5 billion, $3.4 billion (13.6%) increase from FY
-              21
+              Net Position: $30.6 billion, $3.4 billion, 7.1% increase from FY 22
+
+              
+
             </h3>
+            The City’s net position is illustrated in the table below: 
+
+<NetPosition />
+
+<br></br>
             <p>
               The net position of $28.5 billion consisted of:
               <br />
               <br />
               <span className='font-bold'>
-                Net investment in capital assets:
+              Net investment in capital assets:
               </span>{' '}
-              $22.3 billion, including land, building, infrastructure and
-              equipment, less accumulated depreciation and outstanding debt,
-              deferred outflows and deferred inflows of resources related to
-              acquisition, construction or improvements ($6.5 billion in
-              governmental activities and $15.8 billion in business-type
-              activities). This is an increase of $306.6 million over FY 21.
+              $22.7 billion, including land, building, infrastructure and equipment, 
+              less accumulated depreciation and outstanding debt, deferred outflows and deferred inflows of 
+              resources related to acquisition, construction or improvements. This is an increase of $401.6 million 
+              over FY 22.
               <br />
               <br />
-              <span className='font-bold'>Restricted net position:</span> $6.1
-              billion, which represents external restrictions imposed by
-              creditors, grantors, contributors, laws of other governments,
-              constitutional provisions or enabling legislation ($4.3 billion in
-              governmental activities and $1.8 billion in business-type
-              activities). This is an increase of $158.2 million over FY 21.
+              <span className='font-bold'>Restricted net position:</span> $6.9 billion, which represents amounts with 
+              constrained placed on their use by (1) external groups such as creditors, grantors, contributors, or laws 
+              and regulations of other governments or, (2) law through constitutional provisions or enabling legislation.
+               This is an increase of $779.6 million over FY 22.
+
               <br />
               <br />
-              <span className='font-bold'>Unrestricted net position:</span>{' '}
-              $114.4 million is the net amount of the governmental deficit of
-              $5.2 billion and $5.4 billion in unrestricted net position in its
-              business activities. Compared to FY21, the overall unrestricted
-              position increased by $2.9 billion, primarily due to a combination
-              of reduction in governmental deficit by $2.3 billion and an
-              increased in business-type of 653.2 million.
+              <span className='font-bold'>Unrestricted Net position:</span>{' '}
+              $971.9 million is the net unrestricted amount. Compared to FY22, the overall 
+              unrestricted position increased by $857.5 million, primarily due to a combination of 
+              reduction in governmental deficit by $12.8 million and an increased in business-type of 
+              $844.6 million.   
+
               <br />
               <br />
-              The City’s net position is illustrated in the table below:
-              <NetPosition />
+
+           
+              <h2 className='mt-3'>Dollars In – General Fund Revenues:</h2>
+              City of Los Angeles’ government resources and services are funded through several different revenue streams. 
+              In FY 2023, the City collected General Fund revenues of $6.7 billion with the majority received through taxes
+               which makes up $5,7 billion or 84.6% of General Fund revenue. 
+
+               <GeneralFundRevenues />
               {/* <ChangeinnetposGen /> */}
             </p> 
             {/*Net Pos Generally */}
-            <h2 className='mt-3'>General Fund</h2>
-            <p>
+            {/* <p className='mt-3'>In FY 23, General Fund revenues of $6.7 billion was a 9.3% increase from FY 22, and exceeds General Fund expenditures by $745.5 million.
+</p> */}
+<br></br>
+            {/* <p>
               The General Fund is the general operating fund of the City and
               includes transactions of the Reserve Fund and other accounts that
               have General Fund type activity for generally accepted accounting
@@ -530,33 +546,36 @@ activities.
               million committed; $724.3 million assigned for general government
               purposes; and $621.8 million unassigned.
               <br />
-              <br />
+              <br /> */}
               <span className='font-bold'>
-                In FY 22, General Fund revenues exceeded expenses by $408.3
-                million.
+              In FY 23, General Fund revenues of $6.7 billion was a 9.3% increase from FY 22, and 
+              exceeds General Fund expenditures by $745.5 million.
+
               </span>
-            </p>
-            <h2 className='mt-3'>General Fund Revenues</h2>
-            <h4 className='font-bold'>
+            {/* </p> */}
+            {/* <h2 className='mt-3'>General Fund Revenues</h2> */}
+            {/* <h4 className='font-bold'>
               FY 22 Total General Fund Revenues: $6.2 billion, $498.5 million
               8.8% increase from FY 21
-            </h4>
+            </h4> */}
             {/*Revenues  vis */}
 
-            <GeneralFundRevenues />
+           
             {/* revenues text */}
             <ul className='list-disc'>
               <li>
-                <span className='font-bold'>Tax Revenues</span>, increased by
-                $571.0 million or 11.9% from FY 21 due primarily to property tax
-                growth. Taxes accounted for $5.4 billion (86.8%) of General Fund
-                revenue.
+                <span className='font-bold'>Property taxes</span>, which represent 39.4% of General Fund revenue, 
+                increased by $166.1 million (6.7%), due to growth in current secured property tax receipts of $150.5 
+                million, a combined increase of $55.5 million from vehicle license fees replacement and Ex-Community 
+                Redevelopment Agency tax increment receipts, and offset by a decrease of $45.8 million in prior 
+                secured property tax receipts.
+
               </li>
               <li>
-                <span className='font-bold'>Property Taxes</span>, which
-                represent 40.4% of General Fund revenue, increased by $90.5
-                million (3.8%), primarily due to growth in secured property tax
-                and VLF Replacement of $84.5 million.
+                <span className='font-bold'>Economy-sensitive revenues continued post pandemic recovery</span>:<b>  Sales tax</b> 
+                increased by $10.7 million (1.5%) as a result of improvement in local economic activity, while <b> business tax </b>
+                grew by $60.4 million (8.0) due to growth in non- cannabis offset by a decrease in legal recreational cannabis. 
+
               </li>
               <li>
                 <span className='font-bold'>Sales tax</span> increased by $132.0
@@ -566,22 +585,27 @@ activities.
                 offset by a decrease in legal recreational cannabis.
               </li>
               <li>
-                <span className='font-bold'>Utility users’ tax</span> revenues
-                posted an increase of $21.5 million (3.5%), as growth in gas
-                users tax and electrical users taxes, offset the modest decline
-                in communications users tax. Gas user taxes contributed $17.1
-                million of the increase in this category primarily due to the
-                historic spike in natural gas price during much of the fiscal
-                year.
+                <span className='font-bold'>Utility users’ tax</span> revenues posted an increase of $73.1 million (11.6%),
+                 as growth in gas users’ tax and electrical users taxes, offset the modest decline in communications users tax.
+                  Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energ
+                  y prices and consumption during much of the fiscal year. 
+
               </li>
               <li>
-                <span className='font-bold'>Other tax revenues</span> were up by
-                $256.6 million or 49.2%, primarily due to increases of 128.7
-                million in{' '}
-                <span className='font-bold'>Transient Occupancy Tax</span>,
-                $39.7million in{' '}
-                <span className='font-bold'>Parking Occupancy Tax</span>{' '}
-                receipts and $62.3 million in{' '}
+                <span className='font-bold'>Other tax revenues</span> were up by $42.4 million or 5.4%, primarily due to
+                 increases of 58.9 million in Transient Occupancy Tax, $21.4 million in Parking Occupancy Tax receipts and 
+                 $63.6 million increase in Franchise Income from high natural gas prices. These increases were offset by the 
+                 reduction of $100.4 million in Documentary Transfer Tax revenue due to continued real estate sales volume and 
+                 pricing declines.
+{' '}
+                <span className='font-bold'>Charges for services</span>,
+                provided to Enterprise Funds increased by $49.9 million or 15.2% over prior fiscal year. 
+{' '}
+                <span className='font-bold'>Net investment</span>{' '}
+                earnings and other revenues increased by $131.4 million due to a total increase of $147.2 million in
+                 investment earnings and a change in the fair value of investments resulting from the higher interest rates, partially offset by a $15.7 million decrease in other revenues.
+
+                {' '}
                 <span className='font-bold'>Documentary Transfer Tax</span> due
                 to home price appreciation during FY22.
               </li>
@@ -604,52 +628,114 @@ activities.
             </ul>
 
             <br />
-            <h2 className='mt-3'>General Fund Expenses</h2>
+            <h2 className='mt-3'>Dollars Out – General Fund Expenditures </h2>
+            <p>The City of Los Angeles provides a wide range of services to residents ranging from public safety, 
+              fire and paramedics, residential refuse collection and disposal, wastewater collection and treatment,
+               street maintenance and traffic management, enforcement of building safety laws, libraries, recreation 
+               and parks, community development, etc. </p>
+               <br></br>
+               <p>The operating fund from which the City accounts for the money coming in and the expenditures paid out 
+                is the General Fund. 
+</p>
+<GeneralFundExpenses />
             <h4 className='font-bold'>
-              FY 22 General Fund Expenses: $5.8 billion, $465.6 million (8.8%)
-              increase over FY 21
+            In FY 23 General Fund Expenditures was $6.0 billion, $238.7 million (4.1%) increase over FY 22, 
+            primarily due to the following:
+
             </h4>
             {/*Expenses  vis */}
-            <GeneralFundExpenses />
+          
             <br />
             <ul className='list-disc'>
               <li>
                 <span className='font-bold'>
-                  Salaries and Benefits increased by $319.1 million (9.3%)
+                Salaries and Benefits 
                 </span>
-                , due to payment of excess sick and overtime payouts, and
-                one-time bonuses to certain labor organizations for a portion of
-                deferred compensation adjustments and increased pension
-                contribution.
+                increased by $69.6 million (1.9%), due to payment to certain labor organization members for 
+                deferred compensation adjustments and cash awards, and workers' compensation and liability payouts.
+
               </li>
               <li>
                 <span className='font-bold'>
-                  Capital outlays increased by $24.8 million (85.1%),
+                Capital outlays 
                 </span>{' '}
-                attributed to increase in right-to-use lease contracts and
-                progression of capital projects.
+                increased by $13.8 million or 25.5%, mainly attributed to the recognition of $5.7 million in 
+                right-to-use (RTU) subscription contracts for GASB 96 implementation and a $5.0 million increase 
+                in vehicle and transportation equipment acquisition. 
+
               </li>
               <li>
                 <span className='font-bold'>
-                  Contractual services, operating equipment, and supplies went
-                  up by $53.6 million (4.4%),
+                Contractual services, operating equipment, and supplies went up by,
                 </span>{' '}
-                due to increased fuel and utility costs as well increased costs
-                from inflationary pressure on other materials and commodity
-                prices.
+                $86.2 million or 8.7%, primarily attributed to increased fuel and utility costs and 
+                other commodity prices for citywide departments.
+
+              </li>
+              <li>
+                <span className='font-bold'>
+                Debt service
+                </span>{' '}
+                payments increased by $50.0 million, primarily attributed to the increase of interest 
+                expenditures due to higher interest rates. 
+
+
               </li>
             </ul>
 
             <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>Bonded Debt and Long-Term Notes Payable</h3>
-            <h4>$37.3 billion, 9.0% increase from FY 21</h4>
+            <h3 className='mt-3'>How Much Do we Owe</h3>
+            <h4>Bonded Debt and Long-Term Notes Payable: $39.2 billion, 5.0% increase from FY 22</h4>
             <BondedDebtandLongTermNotesPayable />
+            <br></br>
+            <p>
+            The City has established guidelines for the structure and management of the City’s debt, 
+            which include target and ceiling levels for certain debt ratios to be used for financial 
+            planning purposes and restrictions on the types of items that can be financed, limiting 
+            financing only to those items with a useful life of six years or more. In accordance with this policy, 
+            the ratio of annual debt payments cannot exceed 15% of General Fund revenues for voter-approved and non-voter 
+            approved debt overall, and cannot exceed 6% of General Fund revenues for non-voter approved debt alone. The 6%
+             ceiling for non-voter approved debt may be exceeded only if there is a guaranteed new revenue stream for the 
+             debt payments and the additional debt will not cause the ratio to exceed 7.5%, or there is no guaranteed revenue
+              stream but the 6% ceiling shall not be exceeded for more than one year. 
+
+            </p>
+            <ul>
+            <li>
+                <span className='font-bold'>
+                For Fiscal Year 2023, 
+
+                </span>{' '}
+                the ratios were 3.9% for overall debt and 2.4% for non-voter approved debt. 
+
+
+              </li>
+              <br></br>
+              <li>
+                <span className='font-bold'>
+                Of the $39.2 billion long-term bonds and notes payable, 
+
+                </span>{' '}
+               $1.1 billion were General Obligation bonds.
+   </li>
+   <br></br>
+   <li>
+                <span className='font-bold'>
+                As of June 30, 2023, 
+
+                </span>{' '}
+                the City was in compliance with its Debt Policies.
+
+   </li>
+            </ul>
+
             <h3 className='mt-3'>
-              Ratings of the City's Debts by Rating Agencies
+            Ratings of the City’s Debts by Rating Agencies
+
             </h3>
             <Credit />
 
-            <p className='mt-4 lg:max-w-5xl'>
+            {/* <p className='mt-4 lg:max-w-5xl'>
               The City has established guidelines for the structure and
               management of the City’s debt, which include target and ceiling
               levels for certain debt ratios to be used for financial planning
@@ -682,7 +768,7 @@ activities.
               <br />
               As of June 30, 2022, the City is in compliance with its Debt
               Policies.
-            </p>
+            </p> */}
           </div>
             <br />
             <h2 className='mt-3'>City Activities</h2>
