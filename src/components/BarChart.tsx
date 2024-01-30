@@ -29,16 +29,22 @@ const BarChart: React.FC = () => {
           personalIncomePerCapita: d["Personal Income Per Capita"] ? parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) : 0,
           unemploymentRate: d["Unemployment Rate"] ? parseFloat(d["Unemployment Rate"].replace(/%/, "")) : 0,
         }));
-        // Filter data
+  
+        // Filter data for the years 2019 to 2023
         const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2023);
-        setChartData(filteredData);
+  
+        // Sort the filtered data by fiscalYear in ascending order
+        const sortedData = filteredData.sort((a, b) => a.fiscalYear - b.fiscalYear);
+  
+        setChartData(sortedData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-
+  
     fetchData();
   }, []);
+  
 
   if (!chartData) {
     return null;
@@ -51,17 +57,23 @@ const BarChart: React.FC = () => {
       label: "Estimated Population",
       data: chartData.map((data) => data.estimatedPopulation),
       backgroundColor: "#41ffca",
+      type: 'bar', // specifying the type as 'bar' for population data
     },
     {
       label: "Personal Income Per Capita",
       data: chartData.map((data) => data.personalIncomePerCapita),
-      backgroundColor: "purple",
+      borderColor: "purple", // using borderColor for the line
+      backgroundColor: 'rgba(0,0,0,0)', // making background transparent
+      type: 'line', // specifying the type as 'line' for income data
+      fill: false, // ensuring the area under the line isn't filled
+      yAxisID: "incomeYAxis", // assuming you have a separate y-axis for income
     },
     {
       label: "Unemployment Rate",
       data: chartData.map((data) => data.unemploymentRate),
       backgroundColor: "#FFCA41",
       yAxisID: "percentageYAxis",
+      type: 'bar', // specifying the type as 'bar' for unemployment data
     },
   ];
 
