@@ -259,10 +259,10 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
                 className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
                 src='/images/conventioncenter.png'
               ></img>
-              <img
+              {/* <img
                 className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
                 src='/images/conventioncenter.png'
-              />
+              /> */}
     
               The post-pandemic economic recovery continued through fiscal year 2023 and resulted in a robust General Fund 
               revenue growth for the City. The strong revenues allowed the City to end fiscal year 2023 in a solid financial 
