@@ -21,6 +21,7 @@ import TotalRevnues from '@/components/TotalRevnues'
 
 export default function pafr23(props: any) {
   return (
+    
     <>
       <Navbar />
       <Seo
@@ -240,8 +241,9 @@ Outstanding Achievement in Popular Annual Financial Reporting is valid for a per
 only. We believe our current report continues to conform to the Popular Annual Financial Reporting
 requirements, and we are submitting it to GFOA to determine its eligibility for another Award.
             </p>
-            
+            <br></br>
             <h2 className='mt-3'>Local Economy</h2>
+     
             <p className='mt-2 lg:max-w-5xl'>
             The City and its surrounding metropolitan region feature incredible diversity in both 
             population and the economy. Tourism and hospitality, professional and business services,
@@ -255,42 +257,55 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
                 begin and end their journeys at LAX, while connecting passengers transfer to other flights at LAX.
               <br />
               <br />
-              <img
-                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
-                src='/images/conventioncenter.png'
-              ></img>
-              {/* <img
-                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
-                src='/images/conventioncenter.png'
-              /> */}
+             
+              </p>
+      
+
+ 
+
+<div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1rem' }}>
+    <img
     
-              The post-pandemic economic recovery continued through fiscal year 2023 and resulted in a robust General Fund 
-              revenue growth for the City. The strong revenues allowed the City to end fiscal year 2023 in a solid financial 
-              position, with July 1, 2023 Reserve Fund balance of 648.3 million, an all-time high. 
-              <br />
-              <br />
-              There are several economic factors that could impact revenues and the overall City’s fiscal position in the upcoming year. According to the 
-              University of California (UCLA) Anderson Forecast, while the California economy is growing faster than the U.S.
-               economy, there is a risk that the high interest rates might still disrupt the current expansion on the downside.
-                Even though recession worries have subsided, increased military conflict abroad and a sense of greater 
-                geopolitical risk has kept uncertainty about the future high. The uncertainty factor, combined with a 
-                slower-growing U.S. economy in 2024, suggests a slower-growing California economy in 2024.
-              <br />
-              <br />
-              The unemployment rate within the City of Los Angeles appears to be inching up as well.
-               Although labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 
-               2023 have subsided, the Los Angeles Hotel workers strike is still unsettled. According to the California
-                Employment Development Department, the unemployment rate for the City of Los Angeles metro area rose from
-                 4.6 percent in November 2022 to 5.3 percent in November 2023. 
-              <br />
-              <br />
-              Another factor is the higher mortgage interest rates, which continue to put downward pressure on 
-              real estate sales volume and prices. According to the California Association of Realtors’ November 
-              2023 Sales Report, although median price was up by 7.2 percent In Los Angeles, sales volume declined 
-              by 5.1 percent compared to November 2022. All these economic factors contribute to downward economic 
-              pressures which could negatively affect the City’s economically sensitive revenue sources, and City’s financial 
-              position in 2024.
-            </p>
+        style={{ float: 'left', marginRight: '1rem', marginBottom: '1rem', width: '256px', display: 'block' }}  
+        src="/images/conventioncenter.png"  
+        alt="Convention Center"
+    />
+    
+    <div>
+    <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
+            The post-pandemic economic recovery continued through fiscal year 2023 and resulted in robust General Fund 
+            revenue growth for the City. The strong revenues allowed the City to end fiscal year 2023 in a solid financial 
+            position, with a July 1, 2023 Reserve Fund balance of $648.3 million, an all-time high.
+        </p>
+        <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
+          
+            There are several economic factors that could impact revenues and the overall City’s fiscal position in the upcoming year. According to the 
+            University of California (UCLA) Anderson Forecast, while the California economy is growing faster than the U.S.
+            economy, there is a risk that high interest rates might still disrupt the current expansion on the downside.
+            Even though recession worries have subsided, increased military conflict abroad and a sense of greater 
+            geopolitical risk have kept uncertainty about the future high. The uncertainty factor, combined with a 
+            slower-growing U.S. economy in 2024, suggests a slower-growing California economy in 2024.
+        </p>
+        <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
+            The unemployment rate within the City of Los Angeles appears to be inching up as well.
+            Although labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 
+            2023 have subsided, the Los Angeles Hotel workers' strike is still unsettled. According to the California
+            Employment Development Department, the unemployment rate for the City of Los Angeles metro area rose from
+            4.6 percent in November 2022 to 5.3 percent in November 2023.
+        </p>
+        <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
+            Another factor is the higher mortgage interest rates, which continue to put downward pressure on 
+            real estate sales volume and prices. According to the California Association of Realtors’ November 
+            2023 Sales Report, although the median price was up by 7.2 percent in Los Angeles, sales volume declined 
+            by 5.1 percent compared to November 2022. These economic factors contribute to downward economic 
+            pressures which could negatively affect the City’s economically sensitive revenue sources and the City’s financial 
+            position in 2024.
+        </p>
+    </div>
+</div>
+
+
+
             {/* Add Visual - Demographic and Economic Data */}
            
  

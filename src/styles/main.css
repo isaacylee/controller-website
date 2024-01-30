@@ -16,6 +16,29 @@
     --chart-label-color: var(--chart-label-color-dark);   /* Dark mode text color */
   }
 }
+.container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.container img {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 256px; /* Adjusted to emulate w-32, md:w-48, lg:w-64 */
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container img {
+      display: none;
+  }
+}
+
+.text-content {
+  max-width: calc(100% - 256px);
+}
 
 body {
   color: rgb(var(--foreground-rgb));
