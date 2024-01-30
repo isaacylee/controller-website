@@ -1,3 +1,4 @@
+"use client"
 import { BarElement, CategoryScale, Chart, LinearScale, Title, Tooltip } from "chart.js";
 import { csvParse } from "d3";
 import { useTheme } from 'next-themes';
@@ -21,7 +22,6 @@ const BarChart: React.FC = () => {
       try {
         const response = await fetch("/csvsforpafr23/demographics.csv");
         const csvData = await response.text();
-        // Parse and process CSV data
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
           fiscalYear: d["Fiscal Year"] ? +d["Fiscal Year"] : 0,
           estimatedPopulation: d["Estimated Population"] ? parseInt(d["Estimated Population"].replace(/,/g, ""), 10) : 0,
@@ -29,13 +29,8 @@ const BarChart: React.FC = () => {
           personalIncomePerCapita: d["Personal Income Per Capita"] ? parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) : 0,
           unemploymentRate: d["Unemployment Rate"] ? parseFloat(d["Unemployment Rate"].replace(/%/, "")) : 0,
         }));
-  
-        // Filter data for the years 2019 to 2023
         const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2023);
-  
-        // Sort the filtered data by fiscalYear in ascending order
         const sortedData = filteredData.sort((a, b) => a.fiscalYear - b.fiscalYear);
-  
         setChartData(sortedData);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -49,25 +44,29 @@ const BarChart: React.FC = () => {
   if (!chartData) {
     return null;
   }
-
-  // Map chart data
   const labels = chartData.map((data) => data.fiscalYear.toString());
   const datasets = [
     {
       label: "Estimated Population",
       data: chartData.map((data) => data.estimatedPopulation),
       backgroundColor: "#41ffca",
+      type: 'bar',
     },
     {
       label: "Personal Income Per Capita",
       data: chartData.map((data) => data.personalIncomePerCapita),
-      backgroundColor: "purple",
+      borderColor: "grey",
+      backgroundColor: 'grey',
+      type: 'line',
+      fill: false,
+      yAxisID: "incomeYAxis",
     },
     {
       label: "Unemployment Rate",
       data: chartData.map((data) => data.unemploymentRate),
       backgroundColor: "#FFCA41",
       yAxisID: "percentageYAxis",
+      type: 'bar',
     },
   ];
 
@@ -99,12 +98,12 @@ const BarChart: React.FC = () => {
   
   updateChartLabelColor();
 
-  const isDark = isDarkMode();
-
-  // Updated options
+  const isDark = isDarkMode()
   const options = {
     maintainAspectRatio: false,
+    
     scales: {
+      
       x: {
         beginAtZero: true,
         title: {
@@ -121,28 +120,31 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Values",
-          color: isDark ? 'white' : 'black',
+          color: isDark ? 'white' : 'black', // This will set the title color based on the theme
         },
         ticks: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? 'white' : 'black', // This will set the tick labels color based on the theme
         },
-        labels: {
-          color: isDark ? 'white' : 'black',
-        },
+        
       },
+   
     },
+    
     plugins: {
       legend: {
         labels: {
           color: isDark ? 'white' : 'black',
         },
+        
+        
       },
     },
+    
   };
 
   return (
     <div style={{ width: "100%", height: "500px", overflowX: "auto" }}>
-      <Bar data={{ labels, datasets }} options={options} />
+      <Bar data={{ labels, datasets } as any} options={options} />
     </div>
   );
 };

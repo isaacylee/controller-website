@@ -91,100 +91,110 @@ export default function pafr23(props: any) {
                   src='/images/new_KM.jpg'
                   alt='Portrait of Kenneth Mejia'
                 />
-                As the new Controller for the City of Los Angeles, our Office
-                has the Charter responsibility to prepare and publish the City's
-                Annual Comprehensive Financial Report (ACFR) of the City for the
-                fiscal year ended June 30, 2023.
+               As the Controller for the City of Los Angeles, our Office has the Charter responsibility to
+prepare and publish the City’s Annual Comprehensive Financial Report (ACFR) of the
+City for the fiscal year ended June 30, 2023. I can report a year of strong revenue growth
+that contributed to record reserves on July 1, the beginning of the current fiscal year.
                 <br />
                 <br />
-                We live in tumultuous times. The residents and businesses of Los
-                Angeles have endured a once-in-a-century pandemic that upended
-                lives and livelihoods throughout the City, falling hardest on
-                the most vulnerable. Rising rents and housing prices have
-                increased housing insecurity for tens of thousands of tenants
-                and fueled a homelessness emergency. The impacts of the
-                pandemic, inflation and international conflicts continue to
-                disrupt supply chains around the world.
+                Unfortunately, it is also my responsibility to report the bad news: this year the City is
+spending well beyond our actual revenues. Projected deficits for years to come will force
+wrenching choices that threaten the vital services Angelenos rely on. This is not the result
+of a sudden economic downturn, but the culmination of years of short-term budget
+balancing at the cost of long-term fiscal sustainability.
                 <br />
                 <br />
-                Amid deepening economic and political divides, Los Angeles is at
-                the epicenter of these and even larger challenges, including the
-                "planetary red alert" of climate change. Angelenos in the last
-                election voted for change. It is our responsibility to respond
-                with transparency and accountability. <br />
+               <b> Grim news requires serious long-term solutions for the future</b>
+               <br/>
+               
+                
                 <br />
-                The ACFR provides a report on revenues and expenses for all the
-                City's funds, including the Harbor, Airports and Department of
-                Water and Power and a snapshot of the fiscal condition of the
-                City as it ended the fiscal year on June 30 of 2023.
-                <br />
-                <br />
-                <ul className='list-disc pl-4'>
-                  <li>
-                    Total City revenues, including Governmental and
-                    Business-Type activities, were approximately $20.0 billion,
-                    an 8.7 percent increase over FY 2020-21.
-                  </li>
-                  <li>
-                    {' '}
-                    Total City expenses including Governmental and Business-Type
-                    activities, were approximately $16.6 billion, a decrease of
-                    4.5 percent from FY 2020-21.
-                  </li>
-                  <li>
-                    The aggregate fund balances of the City's governmental funds
-                    were $7.3 billion, a net increase of $857.4 million from
-                    June 30, 2021.
-                  </li>
-                  <li>
-                    The Reserve Fund cash balance began FY 2022-23 at $601.7
-                    million or 8.1 percent of General Fund Budget, down from an
-                    all-time high of $647.0 million at the beginning of Fiscal
-                    Year 2021-22.
-                  </li>
-                  <li>
-                    The City's bonded debt and long-term notes payable as of
-                    June 30, 2022, totaled $37.3 billion, an increase of $3.1
-                    billion from the prior year's balance of $34.2 billion.
-                  </li>
-                  <li>
-                    The largest General Fund departmental expenditures
-                    (including encumbrances) went to Police ($1.8 billion); Fire
-                    ($780.2 million); and Sanitation ($330.6 million).
-                  </li>
-                </ul>
-                <br />
-                While the City is currently in a stable fiscal position,
-                significant challenges lie ahead. The almost $2.0 billion in
-                one-time revenue from the federal government available during
-                the last two years has largely been spent. Retirement Plans'
-                adverse investment returns during Fiscal Year 2021-22 will
-                increase future pension costs, which now consume more than 15%
-                of the General Fund budget. Increased labor costs put a further
-                strain on resources to maintain and improve services to our
-                residents. There is also universal recognition of the need to
-                spend more to house the more than 42,000 unhoused residents of
-                our community. Finally, Los Angeles has underinvested for
-                decades in maintaining its capital and human infrastructure -
-                which will come under intense test from the impacts of climate
-                change.
+                We’ve already seen the whiplash as the State of California has gone from a record-
+breaking surplus to a projected huge deficit next fiscal year. While not as dependent on
+
+volatile revenues as the State, the reality is that both the strong economic recovery from
+the pandemic and major Federal emergency aid are behind us. Not only has revenue
+growth slowed, it is falling far short of the optimistic projections contained in this year’s
+adopted budget. Meanwhile, spending is exceeding expected levels. The estimates of the
+City Administrative Officer contained in his recent January statement point to a budget
+shortfall in excess of $143 million to be addressed by a partial hiring freeze and tapping
+the City’s Reserve Fund. The shortfall could swell to as much as $400 million next year,
+according to the CAO.
                 <br />
                 <br />
-                All this impels us to "link arms" (as Mayor Karen Bass has
-                advocated) to undertake the difficult, long-term changes that
-                will not only ensure financial stability, but address the urgent
-                need to make Los Angeles a more equitable and sustainable city.
-                We pledge that the Office of the Controller will be a
-                collaborative partner in meeting those shared challenges.
+                Even as we look back on the positive results from the prior year, the warning signs were
+there:
+<ul>
+  <li>As previously reported, despite widespread staff vacancies, General Fund
+departmental spending actually exceeded last year’s adopted budget by nearly $200
+million. Had the vacancy rate been closer to normal, the budget would have been in
+the red.</li>
+<li>As our Office has consistently pointed out, citywide deferred maintenance of vital
+infrastructure requires urgent attention. Last year’s underspending of $316 million in
+budgeted capital expenditures underscores that the City continues to fall behind –
+which means even higher costs in the long run.</li>
+<li>Again, as we have warned, current staff shortages and long-term underinvestment
+in the training, technology, equipment and facilities for our workforce hobbles
+productivity and shortchanges our residents. The homelessness crisis and the reality
+of a changing climate put even further strain on City resources.</li>
+</ul>
                 <br />
-                <br />I would like to acknowledge the professional and dedicated
-                staff of the Financial Analysis and Reporting Division of the
-                Controller's Office for the preparation of this report. I would
-                also like to express my appreciation to other staff of the
-                Office for their assistance and contributions, as well as other
-                professional contributors citywide.
+                <br />The contract for rank-and-file police staff ratified last fall will add nearly a billion dollars in
+additional costs over the next four years, with the likelihood of commensurate increases
+in compensation for police management. The new five-year contracts negotiated with
+civilian bargaining units will have an even larger budget impact, putting budget projections
+deeply in the red for the next five years.
                 <br />
+                <br />Without a long-term approach to putting our fiscal house in order, short-term decisions
+will doom Los Angeles to an inexorable decline in public services, undermining our quality
+of life and the economic prospects of our residents.
                 <br />
+                <br />Nothing short of a serious, strategic five-year plan to fix our City’s finances can meet this
+moment. Scrambling every year to paper over budget gaps will result in ever-worsening
+political pain and economic hardships.
+                <br />
+                <br />A transition to a two-year budget cycle would save enormous staff time, give greater
+opportunity for meaningful community participation, and allow for a more strategic
+approach to the City’s Finances. The City also needs a transparent Capital Improvement
+Program beyond the current wish list of billions of dollars in unfunded projects.
+Participatory budgeting, expanded beyond its current experimental pilot, would offer
+greater citizen engagement in the City’s fiscal health.
+<br />The City should also break with the opaque process where annual departmental budgets
+
+are simply marginally adjusted (up or down) without fundamentally altering the long-
+standing budgetary status quo. Given the daunting financial realities, the City needs to
+
+undertake a strategic reallocation of resources to what matters most to the long-term
+wellbeing of all of our residents. Budgets are not just numbers; they are a statement of
+values. As our city changes, so should our financial priorities.
+                <br />
+                <br />The City should also break with the opaque process where annual departmental budgets
+
+are simply marginally adjusted (up or down) without fundamentally altering the long-
+standing budgetary status quo. Given the daunting financial realities, the City needs to
+
+undertake a strategic reallocation of resources to what matters most to the long-term
+wellbeing of all of our residents. Budgets are not just numbers; they are a statement of
+values. As our city changes, so should our financial priorities.
+                <br />
+                <br />Our Office is eager to collaborate with the Mayor, Council, and greater community to
+reform the City’s budgeting process and priorities. This must be a long-term commitment
+because the problems are long-standing and will require a phased approach to solving.
+Budget reform and more accountable stewardship of the public’s resources are vital to
+minimize abrupt service cuts (which disproportionately hurt our most vulnerable) –
+especially if economic conditions deteriorate.
+                <br />
+                <br />Los Angeles is a vibrant, dynamic center of one of the world’s most diverse and influential
+regions. Our City has the potential to restore fiscal health, improve vital City services, and
+lead the world in confronting climate change, housing insecurity, and a changing
+economy. It would be tragically short-sighted not to tackle the City’s fiscal challenges to
+capture that potential. We must put our City on the path to fiscal sustainability so we can
+do the job our residents expect us to do.
+                <br />
+                My staff and I appreciate the cooperation shown by City departments as we prepared this
+report. Should you have questions or require additional information, please contact my
+Director of Financial Analysis and Reporting, Rahoof Oyewole at
+rahoof.oyewole@lacity.org.
               </p>
               <p>
                 Respectfully submitted,
@@ -445,8 +455,8 @@ activities.
          
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
           <img
-    className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"   
-    src="/images/IMG_3171.png"
+  className="mb-2 w-96 sm:ml-4 sm:mb-4 lg:w-1/2"
+    src="/images/freeway2.png"
     alt="Portrait of City Of LA"
   />
             <h2>Net Position</h2>

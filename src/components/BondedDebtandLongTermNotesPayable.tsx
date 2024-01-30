@@ -10,23 +10,21 @@ import {
 import { csvParse } from "d3";
 import React, { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
-
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
-
 interface ChartData {
   Year: string;
   "Activity Type": string;
   Total: number;
   Value: number;
 }
-
 const BarChart: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData[] | null>(null);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/csvsforpafr23/4bondeddebtandlongtermnotespayable.csv");
+        const response = await fetch(
+          "/csvsforpafr23/4bondeddebtandlongtermnotespayable.csv"
+        );
         const csvData = await response.text();
 
         const dataArray: ChartData[] = csvParse(csvData, (d, i) => {
@@ -34,8 +32,10 @@ const BarChart: React.FC = () => {
             return {
               Year: String(d["Fiscal Year"]).trim(),
               "Activity Type": String(d["Activity Type"]),
-              Total: parseFloat(String(d["Total"]).replace(/,/g, "").trim()) || 0,
-              Value: parseFloat(String(d["Value "]).replace(/,/g, "").trim()) || 0,
+              Total:
+                parseFloat(String(d["Total"]).replace(/,/g, "").trim()) || 0,
+              Value:
+                parseFloat(String(d["Value "]).replace(/,/g, "").trim()) || 0,
             } as ChartData;
           } catch (error) {
             console.error(`Error parsing row ${i + 1}:`, error);
@@ -44,13 +44,14 @@ const BarChart: React.FC = () => {
           }
         }).filter((d) => d !== null);
 
-        const filteredData = dataArray.filter((data) => data["Year"] >= "2019" && data["Year"] <= "2023");
-          setChartData(filteredData);
+        const filteredData = dataArray.filter(
+          (data) => data["Year"] >= "2019" && data["Year"] <= "2023"
+        );
+        setChartData(filteredData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-
     fetchData();
   }, []);
 
@@ -79,37 +80,36 @@ const BarChart: React.FC = () => {
   });
 
   const labels = Object.keys(aggregatedData[Object.keys(aggregatedData)[0]]);
-  const datasets = Object.entries(aggregatedData).map(([activityType, data]) => ({
-    label: activityType,
-    data: Object.values(data),
-     backgroundColor: getColor(activityType),
-    
-    stack: "stack",
-  }));
+  const datasets = Object.entries(aggregatedData).map(
+    ([activityType, data]) => ({
+      label: activityType,
+      data: Object.values(data),
+      backgroundColor: getColor(activityType),
+      stack: "stack",
+    })
+  );
 
   const lineDataset = {
     label: "Yearly Sum",
     data: labels.map((year) => activitiesSum[year]),
     fill: false,
-    borderColor: "gray",
-    type: 'line',
+    borderColor: "grey",
+    type: "line",
   };
 
   const allDatasets = [...datasets, lineDataset];
 
   function getColor(activityType: string) {
-    return activityType === 'Governmental' ? '#41ffca' : '#ffca41';
+    return activityType === "Governmental" ? "#41ffca" : "#ffca41";
   }
 
-
-
   function isDarkMode() {
-    if (typeof window !== 'undefined') {
-      const userPreference = localStorage.getItem('theme');
+    if (typeof window !== "undefined") {
+      const userPreference = localStorage.getItem("theme");
       if (
-        userPreference === 'dark' ||
+        userPreference === "dark" ||
         (userPreference === null &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
         return true;
       }
@@ -118,17 +118,17 @@ const BarChart: React.FC = () => {
   }
 
   function updateChartLabelColor() {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const isDark = isDarkMode();
       document.documentElement.style.setProperty(
-        '--chart-label-color',
+        "--chart-label-color",
         isDark
-          ? 'var(--chart-label-color-dark)'
-          : 'var(--chart-label-color-light)'
+          ? "var(--chart-label-color-dark)"
+          : "var(--chart-label-color-light)"
       );
     }
   }
-  
+
   updateChartLabelColor();
 
   const isDark = isDarkMode();
@@ -141,10 +141,10 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Fiscal Year",
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
         ticks: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
       },
       y: {
@@ -152,20 +152,20 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Values",
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
         ticks: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
         labels: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
       },
     },
     plugins: {
       legend: {
         labels: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
       },
     },
@@ -173,10 +173,9 @@ const BarChart: React.FC = () => {
 
   return (
     <div style={{ width: "100%", height: "500px", overflowX: "auto" }}>
-      <Bar data={{ labels, datasets }} options={options} />
+      <Bar data={{ labels, datasets: allDatasets } as any} options={options} />
     </div>
   );
 };
 
 export default BarChart;
-
