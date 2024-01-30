@@ -94,6 +94,7 @@ const BarChart: React.FC = () => {
     data: labels.map((year) => activitiesSum[year]),
     fill: false,
     borderColor: "grey",
+    backgroundColor: 'grey',
     type: "line",
   };
 
