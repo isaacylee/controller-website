@@ -44,6 +44,7 @@ const BarChart: React.FC = () => {
   if (!chartData) {
     return null;
   }
+  const isDark = isDarkMode()
   const labels = chartData.map((data) => data.fiscalYear.toString());
   const datasets = [
     {
@@ -55,8 +56,8 @@ const BarChart: React.FC = () => {
     {
       label: "Personal Income Per Capita",
       data: chartData.map((data) => data.personalIncomePerCapita),
-      borderColor: "grey",
-      backgroundColor: 'grey',
+      borderColor: "purple",
+      backgroundColor: 'rgba(0,0,0,0)',
       type: 'line',
       fill: false,
       yAxisID: "incomeYAxis",
@@ -98,12 +99,10 @@ const BarChart: React.FC = () => {
   
   updateChartLabelColor();
 
-  const isDark = isDarkMode()
+
   const options = {
     maintainAspectRatio: false,
-    
     scales: {
-      
       x: {
         beginAtZero: true,
         title: {
@@ -117,29 +116,54 @@ const BarChart: React.FC = () => {
       },
       y: {
         beginAtZero: true,
+        // title: {
+        //   display: true,
+        //   text: "Values",
+        //   color: isDark ? 'white' : 'black',
+        // },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+        },
+        labels: {
+          color: isDark ? 'white' : 'black',
+        },
+      },
+      incomeYAxis: {
+        // beginAtZero: true,
+        // title: {
+        //   display: true,
+        //   text: "Values",
+        //   color: isDark ? 'white' : 'black',
+        // },
+        ticks: {
+          color: isDark ? 'white' : 'black',
+        },
+        labels: {
+          color: isDark ? 'white' : 'black',
+        },
+      },
+      percentageYAxis: {
+        // beginAtZero: true,
         title: {
           display: true,
           text: "Values",
-          color: isDark ? 'white' : 'black', // This will set the title color based on the theme
+          color: isDark ? 'white' : 'black',
         },
         ticks: {
-          color: isDark ? 'white' : 'black', // This will set the tick labels color based on the theme
+          color: isDark ? 'white' : 'black',
         },
-        
-      },
-   
+        labels: {
+          color: isDark ? 'white' : 'black',
+        },
+      }
     },
-    
     plugins: {
       legend: {
         labels: {
           color: isDark ? 'white' : 'black',
         },
-        
-        
       },
     },
-    
   };
 
   return (
