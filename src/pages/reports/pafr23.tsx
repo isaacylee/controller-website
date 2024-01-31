@@ -430,11 +430,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
           </div>
     
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-          <img
-            className="mb-2 w-96 sm:ml-4 sm:mb-4 lg:w-1/2"
-            src="/images/freeway.png"
-            alt="Portrait of City Of LA"
-          />
+          <div className="PortraitofCityOfLA"></div>
 
 
             <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3>
@@ -481,7 +477,7 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
           </div>
          
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-          <div className="lapotrait"></div>
+          <div className="lapotrait mb-5"></div>
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
             City of Los Angeles’s Net position provides insight into the City’s financial position as of June 30,  2023. 
@@ -822,3 +818,4 @@ $45.8 million in prior secured property tax receipts.
     </>
   );
 }
+
