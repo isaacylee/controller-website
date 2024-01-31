@@ -7,6 +7,7 @@ import TagManager from 'react-gtm-module';
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+import '@/styles/sglobal.css';
 
 import { ThemeContext } from './../themeManager';
 /**

@@ -1,0 +1,14 @@
+.soup-image {
+    width: 256px;
+    float: left;
+    shape-outside: url("/images/conventioncenter.png");
+}
+
+.lapotrait {
+    background-image: url("/images/freeway2.png");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }

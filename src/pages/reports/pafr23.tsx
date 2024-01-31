@@ -14,7 +14,6 @@ import Seo from '@/components/Seo';
 import TopEmployeeChart from '@/components/TopEmployee';
 import TotalExpenditure from '@/components/TotalExpendituresExpenses'
 import TotalRevnues from '@/components/TotalRevnues'
-
  
 
 
@@ -169,15 +168,6 @@ undertake a strategic reallocation of resources to what matters most to the long
 wellbeing of all of our residents. Budgets are not just numbers; they are a statement of
 values. As our city changes, so should our financial priorities.
                 <br />
-                <br />The City should also break with the opaque process where annual departmental budgets
-
-are simply marginally adjusted (up or down) without fundamentally altering the long-
-standing budgetary status quo. Given the daunting financial realities, the City needs to
-
-undertake a strategic reallocation of resources to what matters most to the long-term
-wellbeing of all of our residents. Budgets are not just numbers; they are a statement of
-values. As our city changes, so should our financial priorities.
-                <br />
                 <br />Our Office is eager to collaborate with the Mayor, Council, and greater community to
 reform the City’s budgeting process and priorities. This must be a long-term commitment
 because the problems are long-standing and will require a phased approach to solving.
@@ -263,46 +253,69 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
 
  
 
-<div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '1rem' }}>
-    <img
-    
-        style={{ float: 'left', marginRight: '1rem', marginBottom: '1rem', width: '256px', display: 'block' }}  
-        src="/images/conventioncenter.png"  
-        alt="Convention Center"
-    />
-    
-    <div>
-    <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
-            The post-pandemic economic recovery continued through fiscal year 2023 and resulted in robust General Fund 
-            revenue growth for the City. The strong revenues allowed the City to end fiscal year 2023 in a solid financial 
-            position, with a July 1, 2023 Reserve Fund balance of $648.3 million, an all-time high.
-        </p>
-        <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
-          
-            There are several economic factors that could impact revenues and the overall City’s fiscal position in the upcoming year. According to the 
-            University of California (UCLA) Anderson Forecast, while the California economy is growing faster than the U.S.
-            economy, there is a risk that high interest rates might still disrupt the current expansion on the downside.
-            Even though recession worries have subsided, increased military conflict abroad and a sense of greater 
-            geopolitical risk have kept uncertainty about the future high. The uncertainty factor, combined with a 
-            slower-growing U.S. economy in 2024, suggests a slower-growing California economy in 2024.
-        </p>
-        <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
-            The unemployment rate within the City of Los Angeles appears to be inching up as well.
-            Although labor disputes involving SAG-AFTRA, Writers, and Longshore workers that consumed most of 
-            2023 have subsided, the Los Angeles Hotel workers' strike is still unsettled. According to the California
-            Employment Development Department, the unemployment rate for the City of Los Angeles metro area rose from
-            4.6 percent in November 2022 to 5.3 percent in November 2023.
-        </p>
-        <p style={{ marginTop: '0.5rem', maxWidth: '832px', textAlign: 'justify', fontSize: '14px', lineHeight: '1.6' }}>
-            Another factor is the higher mortgage interest rates, which continue to put downward pressure on 
-            real estate sales volume and prices. According to the California Association of Realtors’ November 
-            2023 Sales Report, although the median price was up by 7.2 percent in Los Angeles, sales volume declined 
-            by 5.1 percent compared to November 2022. These economic factors contribute to downward economic 
-            pressures which could negatively affect the City’s economically sensitive revenue sources and the City’s financial 
-            position in 2024.
-        </p>
-    </div>
-</div>
+              <div
+            style={{
+              display: "flex",
+              alignItems: "flex-start",
+              marginBottom: "1rem",
+            }}
+          >
+            <article>
+            <img
+              style={{
+                float: "left",
+                marginRight: "1rem",
+                marginBottom: "1rem",
+                width: "256px",
+                display: "block",
+              }}
+              src="/images/conventioncenter.png"
+              alt="Convention Center"
+              className="soup-image"
+            />
+              <p className="mt-2  lg:max-w-5xl">
+                The post-pandemic economic recovery continued through fiscal
+                year 2023 and resulted in robust General Fund revenue growth for
+                the City. The strong revenues allowed the City to end fiscal
+                year 2023 in a solid financial position, with a July 1, 2023
+                Reserve Fund balance of $648.3 million, an all-time high.
+              </p>
+              <p className="mt-2  lg:max-w-5xl">
+                There are several economic factors that could impact revenues
+                and the overall City’s fiscal position in the upcoming year.
+                According to the University of California (UCLA) Anderson
+                Forecast, while the California economy is growing faster than
+                the U.S. economy, there is a risk that high interest rates might
+                still disrupt the current expansion on the downside. Even though
+                recession worries have subsided, increased military conflict
+                abroad and a sense of greater geopolitical risk have kept
+                uncertainty about the future high. The uncertainty factor,
+                combined with a slower-growing U.S. economy in 2024, suggests a
+                slower-growing California economy in 2024.
+              </p>
+              <p className="mt-2  lg:max-w-5xl">
+                The unemployment rate within the City of Los Angeles appears to
+                be inching up as well. Although labor disputes involving
+                SAG-AFTRA, Writers, and Longshore workers that consumed most of
+                2023 have subsided, the Los Angeles Hotel workers' strike is
+                still unsettled. According to the California Employment
+                Development Department, the unemployment rate for the City of
+                Los Angeles metro area rose from 4.6 percent in November 2022 to
+                5.3 percent in November 2023.
+              </p>
+              <p className="mt-2  lg:max-w-5xl">
+                Another factor is the higher mortgage interest rates, which
+                continue to put downward pressure on real estate sales volume
+                and prices. According to the California Association of Realtors’
+                November 2023 Sales Report, although the median price was up by
+                7.2 percent in Los Angeles, sales volume declined by 5.1 percent
+                compared to November 2022. These economic factors contribute to
+                downward economic pressures which could negatively affect the
+                City’s economically sensitive revenue sources and the City’s
+                financial position in 2024.
+              </p>
+              </article>
+          </div>
 
 
 
@@ -333,7 +346,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
               The City operates under a Mayor-Council form of government. The
               Mayor supervises the administrative processes of the City and
               works with the City Council in matters relating to legislation,
-              budg et and finance. The 15-member City Council enacts ordinances,
+              budget and finance. The 15-member City Council enacts ordinances,
               levies taxes, authorizes contracts and public improvements, adopts
               zoning and other land use contracts, and provides necessary
               resources for the budgetary departments and offices of the City.
@@ -407,8 +420,9 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
                 <br />
                 <br />
                 <span className='font-bold'>Capital Assets:</span> These include
-                land, buildings, facilities, equipment and infrastructure that
-                the City owns. The City uses these capital assets to provide
+                land, buildings, facilities, equipment, infrastructure, 
+                intangibles, construction in progress, nuclear fuel and a 
+                natural gas field. The City uses these capital assets to provide
                 services to its citizens; consequently, these assets are not
                 available for future spending.
               </p>
@@ -417,13 +431,13 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
     
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
           <img
-  className="mb-2 w-96 sm:ml-4 sm:mb-4 lg:w-1/2"
-  src="/images/freeway.png"
-  alt="Portrait of City Of LA"
-/>
+            className="mb-2 w-96 sm:ml-4 sm:mb-4 lg:w-1/2"
+            src="/images/freeway.png"
+            alt="Portrait of City Of LA"
+          />
 
 
-            <h1 className='mt-3'>Total City Revenues: $21.6 billion</h1>
+            <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3>
 
             <p className='mt-2 lg:max-w-5xl'>
             For the fiscal year that ended on June 30, 2023, total City revenues were $21.6 billion, 
@@ -453,14 +467,12 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
 
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <p className='mt-4 lg:max-w-5xl'>
-            Total expenses increased by $3.0 billion or 18.2% compared to FY 22. Expenses increased by $2.2 billion 
+            Total expenses increased by $3.0 billion or 18.2% compared to FY 22. Expenses increased by $2.1 billion 
             in the governmental activities primarily in the following functional areas: general government by $605.4 million, 
             protections of persons and property by $1.0 billion, public works by $128.6 million, health and sanitation by $183.4 
             million, transportation by $78.0 million, cultural and recreational services by $108.7 million and $839.4 million 
             increase in the City’s business-type activities. 
               <br />
-              
-activities.
               <br />
               <br />
             </p>
@@ -469,11 +481,7 @@ activities.
           </div>
          
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-          <img
-  className="mb-2 w-96 sm:ml-4 sm:mb-4 lg:w-1/2"
-    src="/images/freeway2.png"
-    alt="Portrait of City Of LA"
-  />
+          <div className="lapotrait"></div>
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
             City of Los Angeles’s Net position provides insight into the City’s financial position as of June 30,  2023. 
@@ -526,7 +534,7 @@ activities.
             <h3>
               <br />
               <br />
-              Net Position: $30.6 billion, $3.4 billion, 7.1% increase from FY 22
+              Net Position: $30.6 billion, $2.0 billion, 7.1% increase from FY 22
 
               
 
@@ -549,18 +557,18 @@ activities.
               over FY 22.
               <br />
               <br />
-              <span className='font-bold'>Restricted net position:</span> $6.9 billion, which represents amounts with 
+              <span className='font-bold'>Restricted Net Position:</span> $6.9 billion, which represents amounts with 
               constrained placed on their use by (1) external groups such as creditors, grantors, contributors, or laws 
               and regulations of other governments or, (2) law through constitutional provisions or enabling legislation.
                This is an increase of $779.6 million over FY 22.
 
               <br />
               <br />
-              <span className='font-bold'>Unrestricted Net position:</span>{' '}
+              <span className='font-bold'>Unrestricted Net Position:</span>{' '}
               $971.9 million is the net unrestricted amount. Compared to FY22, the overall 
               unrestricted position increased by $857.5 million, primarily due to a combination of 
               reduction in governmental deficit by $12.8 million and an increased in business-type of 
-              $844.6 million.   
+              $844.7 million.   
 
               <br />
               <br />
@@ -617,28 +625,21 @@ $45.8 million in prior secured property tax receipts.
 
               </li>
               <li>
-                <span className='font-bold'>Economy-sensitive revenues continued post pandemic recovery</span>:<b>  Sales tax</b> 
+                <span className='font-bold'>Economy-sensitive revenues continued post pandemic recovery</span>:<b>  Sales tax </b> 
                 increased by $10.7 million (1.5%) as a result of improvement in local economic activity, while <b> business tax </b>
-                grew by $60.4 million (8.0) due to growth in non- cannabis offset by a decrease in legal recreational cannabis. 
+                grew by $60.4 million (8.0%) due to growth in non- cannabis offset by a decrease in legal recreational cannabis. 
 
-              </li>
-              <li>
-                <span className='font-bold'>Sales tax</span> increased by $132.0
-                million (23.5%) as a result of improvement in local economic
-                activity, while <span className='font-bold'>business tax</span>{' '}
-                grew by $70.4 million (10.3%) due to growth in non-cannabis
-                offset by a decrease in legal recreational cannabis.
               </li>
               <li>
                 <span className='font-bold'>Utility users’ tax</span> revenues posted an increase of $73.1 million (11.6%),
                  as growth in gas users’ tax and electrical users taxes, offset the modest decline in communications users tax.
-                  Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energ
-                  y prices and consumption during much of the fiscal year. 
+                  Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energy
+                   prices and consumption during much of the fiscal year. 
 
               </li>
               <li>
                 <span className='font-bold'>Other tax revenues</span> were up by $42.4 million or 5.4%, primarily due to
-                 increases of 58.9 million in Transient Occupancy Tax, $21.4 million in Parking Occupancy Tax receipts and 
+                 increases of $58.9 million in Transient Occupancy Tax, $21.4 million in Parking Occupancy Tax receipts and 
                  $63.6 million increase in Franchise Income from high natural gas prices. These increases were offset by the 
                  reduction of $100.4 million in Documentary Transfer Tax revenue due to continued real estate sales volume and 
                  pricing declines.
@@ -683,8 +684,7 @@ $45.8 million in prior secured property tax receipts.
               <li>
                 <span className='font-bold'>
                 Salaries and Benefits 
-                </span>
-                increased by $69.6 million (1.9%), due to payment to certain labor organization members for 
+                </span> increased by $69.6 million (1.9%), due to payment to certain labor organization members for 
                 deferred compensation adjustments and cash awards, and workers' compensation and liability payouts.
 
               </li>
@@ -734,6 +734,7 @@ $45.8 million in prior secured property tax receipts.
 
             </p>
             <ul>
+            <br></br>
             <li>
                 <span className='font-bold'>
                 For Fiscal Year 2023, 
@@ -807,7 +808,7 @@ $45.8 million in prior secured property tax receipts.
             <h2 className='mt-3'>City Activities</h2>
             <br />
             <p>
-              The charts represents performance metrics reported across
+              The charts represent performance metrics reported across
               departments. Switch departments using the picker below.
             </p>
             <br />
