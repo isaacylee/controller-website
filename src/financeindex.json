@@ -1,6 +1,15 @@
 {
   "finance": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Screenshot%202024-02-01%20at%208.29.41%20AM.png?alt=media&token=b442d276-13da-477f-a018-001745560d88",
+      "name": "Annual Comprehensive Financial Report FY23 ",
+      "year": "2024",
+      "dept": "Financial Report",
+      "link": "https://controller.lacity.gov/reports/pafr23",
+      "pre": false,
+      "alt": "Cover photo Annual Comprehensive Financial Report 2023"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/prelim22-23-cover.jpg?alt=media&token=34ac7eca-0dac-4356-9a70-21f33cd4b3a8",
       "name": "Preliminary Financial Report FY23 ",
       "year": "2023",
