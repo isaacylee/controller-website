@@ -100,11 +100,67 @@ export default function Evictions() {
 
            <br></br>
            <b>12,200</b> eviction notices were filed where the amount of rent owed is below the Fair Market Rent (FMR) Limit.
+    </p>
+    <br></br>
+    <p className='mb-2'>
+           <b> Notice Types</b>
+           <br></br>
+            
+           When served with an eviction, tenants are given a deadline to either pay rent owed or move out
+            ("pay or quit") or to fix an issue or move out ("perform or quit"). Other notices will only give a 
+            deadline to move out (such as 30-day notices).
+ 
+    </p>
+    <br></br>
+    <p className='mb-2'>
+           <b> Tenant Protection Deadlines</b>
+           <br></br>
+            
+         
+              <li>Effective <b>February 1, 2024:</b></li>
+ <br></br>
+              <li style={{ listStyleType: 'circle', fontFamily: 'Arial, sans-serif' }}>Rent owed from October 1, 2021 to January 31, 2023 
+              is due. If a tenant returned the Declaration of COVID-19-Related Financial Distress form to the landlord within 15 days
+               of rent being due AND paid 25% of rent owed from this period, they cannot be evicted for nonpayment of rent.
 
+               However, since <b> March 27, 2023 </b>landlords may not evict a tenant who falls behind in rent unless the 
+               tenant owes an amount higher than the <b> Fair Market Rent (FMR)</b>. The FMR depends on the bedroom size of the 
+               rental unit.
 
+</li>
+<br></br>
+<li style={{ listStyleType: 'circle', fontFamily: 'Arial, sans-serif' }}>As amended by City Council, annual rent increases will 
+resume for rental units subject to the City’s Rent Stabilization Ordinance (RSO) with the allowable rent increase at 4% starting
+<b>February 1, 2024</b> through <b>June 30, 2024</b>.  If the tenant is provided with electric service and/or gas by the landlord, rent can be
+ increased an additional 1-2% with a total increase of 5% or 6%.
+	<br></br>
+  <br></br>
+  State law requires that the landlord must provide an advance 30-day written notice for all rent increases of less than 10%.
+  
+             
 
+ </li>
 
-            </p>
+ <br></br>
+ <li style={{ listStyleType: 'circle', fontFamily: 'Arial, sans-serif' }}>Eviction protections will continue for tenants with
+  unauthorized pets obtained during the COVID-19 emergency. Tenants who have not yet told their landlord about the pet will have
+   30 days after the ordinance goes into effect to do so.  This protection does not apply to unauthorized pets that began 
+   residing in the rental unit after 1/31/2024.
+
+  
+ </li>
+ <br></br>
+ <ul>
+  <li>If an eviction notice is not provided to LAHD, a tenant may raise an affirmative defense in an Unlawful Detainer case.</li>
+ </ul>
+ For future updates on eviction notices, please visit LAHD’s 
+  <a href="https://housing2.lacity.org/residents/renters/eviction-notices-filed"target='_blank'
+     style={{ color: 'white' }} rel="noreferrer"> https://housing2.lacity.org/residents/renters/eviction-notices-filed</a>.
+ 
+
+          
+ 
+    </p>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold'>
