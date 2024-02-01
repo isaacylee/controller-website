@@ -46,14 +46,17 @@ export default function Evictions() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-2'>
-              [December 2023 Update] We received updated data from the Los
-              Angeles Housing Department (LAHD) through the month of November
-              2023.
+            [January 2024 Update] We analyzed updated data from the Los Angeles Housing Department (LAHD) 
+            through the month of December 2023. 
+
             </p>
             <p className='mb-4'>
-              The data reveals that from February to November, LAHD has
-              received a total of <b>71,429</b> eviction notices. <b>5,902</b>{' '}
-              notices were filed for the month of November.
+            The data reveals that from February to December, LAHD received a total of 77,049 eviction notices. 
+            5,652 notices were filed for the month of December.
+
+            The data reveals that from February to December, LAHD received a total of
+             <b> 77,049</b> eviction notices. <b>5,652</b>{' '}
+              notices were filed for the month of December.
             </p>
             <ul className='mb-10 ml-10'>
               <li>

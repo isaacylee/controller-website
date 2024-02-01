@@ -57,8 +57,9 @@ export default function pafr23(props: any) {
             </div>
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+      
             <br />
-            <p>
+            <p className='lg:max-w-5xl'> 
               LA City Controller Kenneth Mejia releases the Annual Comprehensive
               Financial Report (ACFR) each January to provide a complete picture
               of the City’s finances. This website contains the Popular Annual
@@ -133,6 +134,7 @@ the red.</li>
 infrastructure requires urgent attention. Last year’s underspending of $316 million in
 budgeted capital expenditures underscores that the City continues to fall behind –
 which means even higher costs in the long run.</li>
+<br></br>
 <li>Again, as we have warned, current staff shortages and long-term underinvestment
 in the training, technology, equipment and facilities for our workforce hobbles
 productivity and shortchanges our residents. The homelessness crisis and the reality
@@ -181,6 +183,7 @@ lead the world in confronting climate change, housing insecurity, and a changing
 economy. It would be tragically short-sighted not to tackle the City’s fiscal challenges to
 capture that potential. We must put our City on the path to fiscal sustainability so we can
 do the job our residents expect us to do.
+                <br />
                 <br />
                 My staff and I appreciate the cooperation shown by City departments as we prepared this
 report. Should you have questions or require additional information, please contact my
@@ -325,13 +328,16 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
  
             {/* <h2 className='mt-3 dark:text-white'>City of LA Demographic</h2> */}
             <h2 className='mt-3 dark:text-white'>Demographic and Economic Data</h2>
+            <div className='lg:max-w-5xl'> 
             <BarChart />
+            </div>
             {/* Add Visual - Principal Employers */}
             
             {/* <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2> */}
             <h2 className='mt-3 dark:text-white'>Principal Employers</h2>
-         
+            <div className='lg:max-w-5xl'> 
             <TopEmployeeChart />
+            </div>
 
             {/* <br />
             <Demographics />
@@ -422,7 +428,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
                 <span className='font-bold'>Capital Assets:</span> These include
                 land, buildings, facilities, equipment, infrastructure, 
                 intangibles, construction in progress, nuclear fuel and a 
-                natural gas field. The City uses these capital assets to provide
+                natural gas field that the city owns. The City uses these capital assets to provide
                 services to its citizens; consequently, these assets are not
                 available for future spending.
               </p>
@@ -430,7 +436,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
           </div>
     
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-          <div className="PortraitofCityOfLA"></div>
+          <div className="PortraitofCityOfLA lg:max-w-5xl"></div>
 
 
             <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3>
@@ -451,14 +457,18 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             {/* <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3> */}
             {/* Add Visual - City Revenues */}
+            <div className='lg:max-w-5xl'> 
             <TotalRevnues />
+            </div>
             <p>Total revenues of governmental activities were $10.2 billion, while the combined operating 
 revenues from City’s six business-type activities was $11.4 billion.</p>
 
             <h3 className='mt-3'>Total City Expenses: $19.6 billion</h3>
               <p className='mt-3'>For the fiscal year that ended on June 30, 2023, expenses were $19.6 billion, 
               18.2% more than the prior year.</p>
+              <div className='lg:max-w-5xl'> 
             <TotalExpenditure />
+            </div>
           </div>
 
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
@@ -466,7 +476,8 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
             Total expenses increased by $3.0 billion or 18.2% compared to FY 22. Expenses increased by $2.1 billion 
             in the governmental activities primarily in the following functional areas: general government by $605.4 million, 
             protections of persons and property by $1.0 billion, public works by $128.6 million, health and sanitation by $183.4 
-            million, transportation by $78.0 million, cultural and recreational services by $108.7 million and $839.4 million 
+            million, transportation by $78.0 million, cultural and recreational services by $108.7 million, community development 
+            of $1.5 million, and interest on long-term debt of $56.1 million and $839.4 million 
             increase in the City’s business-type activities. 
               <br />
               <br />
@@ -475,9 +486,9 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
            
             {/* <Changeinnetpos /> */}
           </div>
-         
+        
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-          <div className="lapotrait mb-5"></div>
+          <div className="lapotrait lg:max-w-5xl"></div>
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
             City of Los Angeles’s Net position provides insight into the City’s financial position as of June 30,  2023. 
@@ -487,7 +498,7 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
               <br />
             </p>
 
-            <div className='mt-2 flex flex-col gap-y-2 md:flex-row md:gap-x-3'>
+            <div className='lg:max-w-5xl flex flex-col gap-y-2 md:flex-row md:gap-x-3'>
               <div className=' rounded-lg bg-gray-100 px-3 py-3 dark:bg-gray-800 md:w-1/2'>
              
                 <p className='font-bold'>
@@ -536,10 +547,12 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
 
             </h3>
             The City’s net position is illustrated in the table below: 
-
+<div className='lg:max-w-5xl'> 
 <NetPosition />
+</div>
 
 <br></br>
+<div className='lg:max-w-5xl'> 
             <p>
             The net position of $30.6 billion consisted of:
               <br />
@@ -576,9 +589,11 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
                which makes up $5.7 billion or 84.6% of General Fund revenue. 
 <br></br>
 <br></br>
+ 
                <GeneralFundRevenues />
               {/* <ChangeinnetposGen /> */}
             </p> 
+          
             {/*Net Pos Generally */}
             {/* <p className='mt-3'>In FY 23, General Fund revenues of $6.7 billion was a 9.3% increase from FY 22, and exceeds General Fund expenditures by $745.5 million.
 </p> */}
@@ -596,11 +611,13 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
               purposes; and $621.8 million unassigned.
               <br />
               <br /> */}
-              <span className='font-bold'>
+            
+              <span className='font-bold  '>
               In FY 23, General Fund revenues of $6.7 billion was a 9.3% increase from FY 22, and 
               exceeds General Fund expenditures by $745.5 million.
 
               </span>
+           
             {/* </p> */}
             {/* <h2 className='mt-3'>General Fund Revenues</h2> */}
             {/* <h4 className='font-bold'>
@@ -624,37 +641,42 @@ $45.8 million in prior secured property tax receipts.
                 <span className='font-bold'>Economy-sensitive revenues continued post pandemic recovery</span>:<b>  Sales tax </b> 
                 increased by $10.7 million (1.5%) as a result of improvement in local economic activity, while <b> business tax </b>
                 grew by $60.4 million (8.0%) due to growth in non- cannabis offset by a decrease in legal recreational cannabis. 
-
+                Utility users’ tax revenues posted an increase of $73.1 million (11.6%),
+                 as growth in gas users’ tax and electrical users taxes, offset the modest decline in communications users tax.
+                  Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energy
+                   prices and consumption during much of the fiscal year. 
               </li>
-              <li>
+              {/* <li>
                 <span className='font-bold'>Utility users’ tax</span> revenues posted an increase of $73.1 million (11.6%),
                  as growth in gas users’ tax and electrical users taxes, offset the modest decline in communications users tax.
                   Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energy
                    prices and consumption during much of the fiscal year. 
 
-              </li>
+              </li> */}
               <li>
                 <span className='font-bold'>Other tax revenues</span> were up by $42.4 million or 5.4%, primarily due to
-                 increases of $58.9 million in Transient Occupancy Tax, $21.4 million in Parking Occupancy Tax receipts and 
+                 increases of $59.8 million in Transient Occupancy Tax, $21.4 million in Parking Occupancy Tax receipts and 
                  $63.6 million increase in Franchise Income from high natural gas prices. These increases were offset by the 
                  reduction of $100.4 million in Documentary Transfer Tax revenue due to continued real estate sales volume and 
                  pricing declines.
-{' '}
+ <li> 
                 <span className='font-bold'>Charges for services</span>,
                 provided to Enterprise Funds increased by $49.9 million or 15.2% over prior fiscal year. 
-{' '}
+                </li>
+                <li> 
                 <span className='font-bold'>Net investment</span>{' '}
                 earnings and other revenues increased by $131.4 million due to a total increase of $147.2 million in
                  investment earnings and a change in the fair value of investments resulting from the higher interest rates, partially offset by a $15.7 million decrease in other revenues.
-
+                 </li>
                 {' '}
                
               </li>
               
               
             </ul>
-
+            </div>
             <br />
+            <div className='lg:max-w-5xl'> 
             <h2 className='mt-3'>Dollars Out – General Fund Expenditures </h2>
             <p>The City of Los Angeles provides a wide range of services to residents ranging from public safety, 
               fire and paramedics, residential refuse collection and disposal, wastewater collection and treatment,
@@ -665,9 +687,13 @@ $45.8 million in prior secured property tax receipts.
                <p>The operating fund from which the City accounts for the money coming in and the expenditures paid out 
                 is the General Fund. 
 </p>
+</div>
 <br></br>
 <br></br>
+<div className='lg:max-w-5xl'> 
 <GeneralFundExpenses />
+</div>
+<div className='lg:max-w-5xl'> 
             <h4 className='font-bold'>
             In FY 23 General Fund Expenditures was $6.0 billion, $238.7 million (4.1%) increase over FY 22, 
             primarily due to the following:
@@ -711,12 +737,15 @@ $45.8 million in prior secured property tax receipts.
 
               </li>
             </ul>
-
+</div>
             <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <h3 className='mt-3'>How Much Does The City Owe?</h3>
             <h4>Bonded Debt and Long-Term Notes Payable: $39.2 billion, 5.0% increase from FY 22</h4>
+            <div className='lg:max-w-5xl'> 
             <BondedDebtandLongTermNotesPayable />
+            </div>
             <br></br>
+            <div className='lg:max-w-5xl'> 
             <p>
             The City has established guidelines for the structure and management of the City’s debt, 
             which include target and ceiling levels for certain debt ratios to be used for financial 
@@ -729,6 +758,7 @@ $45.8 million in prior secured property tax receipts.
               stream but the 6% ceiling shall not be exceeded for more than one year. 
 
             </p>
+            </div>
             <ul>
             <br></br>
             <li>
@@ -801,6 +831,7 @@ $45.8 million in prior secured property tax receipts.
             </p> */}
           </div>
             <br />
+            <div className='lg:max-w-5xl'> 
             <h2 className='mt-3'>City Activities</h2>
             <br />
             <p>
@@ -811,8 +842,11 @@ $45.8 million in prior secured property tax receipts.
           </div>
 
           <div className='container mx-0 pb-3  dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
+          <div className='lg:max-w-5xl'> 
             <CityActivities />
+            </div>
           </div>
+        </div>
         </div>
       </Layout>
     </>
