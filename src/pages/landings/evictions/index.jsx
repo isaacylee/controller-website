@@ -51,8 +51,7 @@ export default function Evictions() {
 
             </p>
             <p className='mb-4'>
-            The data reveals that from February to December, LAHD received a total of 77,049 eviction notices. 
-            5,652 notices were filed for the month of December.
+            
 
             The data reveals that from February to December, LAHD received a total of
              <b> 77,049</b> eviction notices. <b>5,652</b>{' '}
