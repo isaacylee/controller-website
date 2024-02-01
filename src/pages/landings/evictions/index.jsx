@@ -60,19 +60,51 @@ export default function Evictions() {
             </p>
             <ul className='mb-10 ml-10'>
               <li>
-                &bull; <b>71,429 eviction notices were filed</b>
+                &bull; <b>77,049 eviction notices were filed
+</b>
               </li>
               <li>
                 &bull;{' '}
-                <b>96% of eviction notices were for "non-payment of rent"</b>
+                <b>96% of eviction notices were for “non-payment of rent”
+</b>
               </li>
               <li>
-                &bull; <b>91% came with a 3-day notice</b>
+                &bull; <b>91% came with a 3-day notice
+</b>
               </li>
               <li>
-                &bull; <b>$3,760 is the average amount of rent owed</b>
+                &bull; <b>$3,774 is the average amount of rent owed
+</b>
               </li>
             </ul>
+            <p className='mb-2'>
+           <b> Top 20 Zip Codes with Highest Number of Eviction Notices</b>
+           <br></br>
+           The table above shows the top 20 Zip Codes with the highest number of eviction notices 
+           filed with the City from February to December 2023.
+           <br></br>
+           Units located within  <b>90028 </b>(Hollywood area) had the highest number of eviction notices 
+           filed with <b>5,156</b> followed by <b>90036</b> (Fairfax area) with <b>3,840</b>.
+
+
+
+            </p>
+
+            <br></br>
+            <p className='mb-2'>
+           <b> Fair Market Rent</b>
+           <br></br>
+            
+           The <b>Just Cause Ordinance (JCO)</b> contains a provision where a landlord can evict a 
+           tenant only if the amount due exceeds one month of fair market rent for the Los Angeles metro area.
+
+           <br></br>
+           <b>12,200</b> eviction notices were filed where the amount of rent owed is below the Fair Market Rent (FMR) Limit.
+
+
+
+
+            </p>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold'>

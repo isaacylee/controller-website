@@ -641,7 +641,7 @@ $45.8 million in prior secured property tax receipts.
                 <span className='font-bold'>Economy-sensitive revenues continued post pandemic recovery</span>:<b>  Sales tax </b> 
                 increased by $10.7 million (1.5%) as a result of improvement in local economic activity, while <b> business tax </b>
                 grew by $60.4 million (8.0%) due to growth in non- cannabis offset by a decrease in legal recreational cannabis. 
-                Utility users’ tax revenues posted an increase of $73.1 million (11.6%),
+                <b>Utility users’ tax</b> revenues posted an increase of $73.1 million (11.6%),
                  as growth in gas users’ tax and electrical users taxes, offset the modest decline in communications users tax.
                   Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energy
                    prices and consumption during much of the fiscal year. 
