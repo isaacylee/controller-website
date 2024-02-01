@@ -363,10 +363,7 @@ requirements, and we are submitting it to GFOA to determine its eligibility for 
     className='float-left mr-1 mb-1 w-80 dark:hidden md:w-48 lg:w-64'
     src='/images/vistahermosa.png'
   ></img>
-  <img
-    className='float-right ml-1 mb-1 w-80 dark:block md:w-48 lg:w-64' 
-    src='/images/vistahermosa.png'
-  />
+
               <br />
               The City has 46 departments, bureaus, commissions and offices, 39
               of which have their operating funds annually budgeted by the City
