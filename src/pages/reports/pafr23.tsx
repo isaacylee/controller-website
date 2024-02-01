@@ -210,30 +210,35 @@ rahoof.oyewole@lacity.org.
             </div>
             <br />
             <h2>About Popular Annual Financial Reporting</h2>
-            <p className='mt-2  lg:max-w-5xl'>
-              <img
-                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
-                src='/images/Award-1.png'
-              ></img>
-              <img
-                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
-                src='/images/Award-1.png'
-              />
-            Government Finance Officers Association of the United States and Canada (GFOA) has given an
-Award for Outstanding Achievement in Popular Annual Financial Reporting to the City of Los Angeles
-for its Popular Annual Financial Report for the fiscal year ended June 30, 2022. The Award for
-Outstanding Achievement in Popular Annual Financial Reporting is a prestigious national award
-recognizing conformance with the highest standards for preparation of state and local government
-popular reports.
-              <br />
-              <br />
-              In order to receive an Award for Outstanding Achievement in Popular Annual Financial Reporting, a
-government unit must publish a Popular Annual Financial Report, whose contents conform to
-program standards of creativity, presentation, understandability, and reader appeal. An Award for
-Outstanding Achievement in Popular Annual Financial Reporting is valid for a period of one year
-only. We believe our current report continues to conform to the Popular Annual Financial Reporting
-requirements, and we are submitting it to GFOA to determine its eligibility for another Award.
-            </p>
+            <p className='mt-2  lg:max-w-5xl '>
+  <img
+    className='float-left mr-1 mb-4 w-32 dark:hidden md:w-48 lg:w-64' 
+    src='/images/Award-1.png'
+  ></img>
+  <img
+    className='float-left mr-1 mb-4 hidden w-32 dark:block md:w-48 lg:w-64'  
+    src='/images/Award-1.png'
+  />
+  <div style={{ paddingLeft: '18rem' }}> 
+  Government Finance Officers Association of the United States and Canada (GFOA) has given an
+  Award for Outstanding Achievement in Popular Annual Financial Reporting to the City of Los Angeles
+  for its Popular Annual Financial Report for the fiscal year ended June 30, 2022. The Award for
+  Outstanding Achievement in Popular Annual Financial Reporting is a prestigious national award
+  recognizing conformance with the highest standards for preparation of state and local government
+  popular reports.
+  </div>
+  <br />
+  <br />
+  <div style={{ paddingLeft: '18rem' }}> 
+  In order to receive an Award for Outstanding Achievement in Popular Annual Financial Reporting, a
+  government unit must publish a Popular Annual Financial Report, whose contents conform to
+  program standards of creativity, presentation, understandability, and reader appeal. An Award for
+  Outstanding Achievement in Popular Annual Financial Reporting is valid for a period of one year
+  only. We believe our current report continues to conform to the Popular Annual Financial Reporting
+  requirements, and we are submitting it to GFOA to determine its eligibility for another Award.
+  </div>
+</p>
+
             <br></br>
             <h2 className='mt-3'>Local Economy</h2>
      
@@ -486,6 +491,7 @@ revenues from City’s six business-type activities was $11.4 billion.</p>
         
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
           <div className="lapotrait lg:max-w-5xl"></div>
+          <br></br>
             <h2>Net Position</h2>
             <p className='mt-2 lg:max-w-5xl'>
             City of Los Angeles’s Net position provides insight into the City’s financial position as of June 30,  2023. 
