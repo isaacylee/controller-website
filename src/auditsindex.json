@@ -1,6 +1,5 @@
 {
   "audits": [
-
     {
       "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapdhelicopter-cover-thumb.jpg?alt=media&token=ea5dccf0-d50b-4145-b338-aedf3bf4fa7d",
@@ -9,7 +8,7 @@
       "dept": "City of Los Angeles ",
       "link": "https://bit.ly/heli-audit"
     },
-  
+
     {
       "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/homelessaudit-sheltercover.jpg?alt=media&token=483a5f0a-13ea-41b1-bbf8-b5f64285f128",
@@ -18,9 +17,8 @@
       "dept": "City of Los Angeles ",
       "link": "https://bit.ly/interim-housing-audit"
     },
- 
 
-   {
+    {
       "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/killa-fine-cover.jpg?alt=media&token=1a0b7da7-d521-403e-9372-6a5554b1d717",
       "name": "This Is Not Fine: Hottest Summer on Record Calls for a Reboot of LA's Climate Plan",
@@ -61,7 +59,7 @@
       "pre": false
     },
     {
-      "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/12/LAWA-IEA-Thumbnail-scaled.jpg",
+      "image": "https://github.com/LosAngelesController/controller-website/blob/main/public/images/2022/12/LAWA-IEA-Thumbnail-scaled.jpg",
       "name": "Industrial, Economic and Administrative Survey of the Los Angeles World Airports",
       "year": "2022",
       "dept": "LOS ANGELES WORLD AIRPORTS",
