@@ -60,8 +60,11 @@ export default function FraudWasteAndAbuse(props: any) {
             <Link href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'>
               <div className={kirbybutton}>Follow Up on your Case</div>
             </Link>
+             
           </div>
-
+          <div className='mt-8 dark:text-white'>
+          To make a report by phone, call (866) 428-1514.
+          </div>
           <div className='mt-8 dark:text-white'>
             {' '}
             <h2>Examples of Types of Fraud, Waste and Abuse</h2>
