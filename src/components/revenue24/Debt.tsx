@@ -5,21 +5,22 @@ import * as React from 'react';
 export function LegendDebt() {
   return (
     <div className='flex flex-row'>
-      <div className='flex flex-row gap-x-1'>
-        <div className='flex flex-row'>
-          <div className='h-4 w-4 rounded-full bg-red-500'></div>
-          <p className='ml-2 text-red-900 dark:text-red-100'>
-            Non-Voter Approved
-          </p>
-        </div>
-        <div className='flex flex-row'>
-          <div className='h-4 w-4 rounded-full bg-blue-500'></div>
-          <p className='ml-2 text-blue-900 dark:text-blue-100'>
-            Voter Approved
-          </p>
-        </div>
+    <div className='flex flex-row gap-x-1'>
+      <div className='flex flex-row'>
+        <div className='h-4 w-4 rounded-full' style={{backgroundColor: '#41ffca'}}></div>
+        <p className='ml-2' style={{color: '#41ffca'}}>
+          Non-Voter Approved
+        </p>
+      </div>
+      <div className='flex flex-row'>
+        <div className='h-4 w-4 rounded-full' style={{backgroundColor: '#ffca41'}}></div>
+        <p className='ml-2' style={{color: '#ffca41'}}>
+          Voter Approved
+        </p>
       </div>
     </div>
+  </div>
+  
   );
 }
 
@@ -59,13 +60,13 @@ export function Debt(props: any) {
           'Fiscal Year': element['Fiscal Year'],
           Type: 'Debt Service Requirement-Non-Voter Approved',
           Amount: element['Debt Service Requirement-Non-Voter Approved'],
-          color: '#ef4444',
+          color: '#41ffca',
         });
         stackabledata.push({
           'Fiscal Year': element['Fiscal Year'],
           Type: 'Debt Service Requirement-Voter Approved',
           Amount: element['Debt Service Requirement-Voter Approved'],
-          color: '#3b82f6',
+          color: '#ffca41',
         });
       });
 
@@ -86,12 +87,12 @@ export function Debt(props: any) {
           Plot.line(datacleaned, {
             x: 'Fiscal Year',
             y: 'Debt Service Requirement-Non-Voter Approved',
-            stroke: 'red',
+            stroke: '#41ffca',
           }),
           Plot.line(datacleaned, {
             x: 'Fiscal Year',
             y: 'Debt Service Requirement-Voter Approved',
-            stroke: '#3b82f6',
+            stroke: '#ffca41',
           }),
           //label each year with numbers in their corrosponding colours
           Plot.text(datacleaned, {
@@ -103,7 +104,7 @@ export function Debt(props: any) {
                 .replace('G', 'B'),
             dy: 10,
             dx: 5,
-            fill: '#ef4444',
+            fill: '#41ffca',
           }),
           Plot.text(datacleaned, {
             x: 'Fiscal Year',
@@ -114,7 +115,7 @@ export function Debt(props: any) {
                 .replace('G', 'B'),
             dy: -10,
             dx: 5,
-            fill: '#3b82f6',
+            fill: '#ffca41',
           }),
           Plot.ruleY([0], {
             stroke: 'grey',
@@ -139,12 +140,12 @@ export function Debt(props: any) {
           Plot.line(datacleaned, {
             x: 'Fiscal Year',
             y: 'Debt Service Requirement-Non-Voter Approved',
-            stroke: 'red',
+            stroke: '#ffca41',
           }),
           Plot.line(datacleaned, {
             x: 'Fiscal Year',
             y: 'NonVoterApprovedLimit',
-            stroke: 'red',
+            stroke: '#41ffca',
             //dotted line
             strokeDasharray: '5 5',
           }),
@@ -158,7 +159,7 @@ export function Debt(props: any) {
               ),
             dy: 10,
             dx: 5,
-            fill: '#ef4444',
+            fill: '#ffca41',
           }),
           //add limit text
           Plot.text(datacleaned, {
@@ -167,7 +168,7 @@ export function Debt(props: any) {
             text: (d: any) => d3.format('.4s')(d['NonVoterApprovedLimit']),
             dy: 10,
             dx: 5,
-            fill: '#ef4444',
+            fill: '#41ffca',
           }),
           Plot.ruleY([0], {
             stroke: 'grey',
