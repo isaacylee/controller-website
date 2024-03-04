@@ -14,7 +14,7 @@ export default function pafr22(props: any) {
       <Seo
         title='Revenue Forecast for Fiscal Year 2025'
         description='Forecast & Visualizations of Revenue for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/revforecast24-25-web.png'
+        image='https://controller.lacity.gov/images/revforecast24-25-thumbnail.png'
       />
  
       <Layout>
@@ -23,7 +23,7 @@ export default function pafr22(props: any) {
             className=''
             style={{
               //url  
-              background: 'url(/images/revforecastcoverpic-yee.jpg)',
+              background: 'url(https://controller.lacity.gov/images/revforecast24-25-web.png)',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom',
