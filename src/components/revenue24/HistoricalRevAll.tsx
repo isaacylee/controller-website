@@ -9,7 +9,7 @@ export function HistoricalRevAll(props: any) {
   const specialbox = React.useRef<any>(null);
 
   React.useEffect(() => {
-    d3.csv('/csvsrevenueforecast24/remove-individal-funds-lol.csv').then(
+    d3.csv('/csvsrevenueforecast25/remove-individal-funds-lol.csv').then(
       (removeIndividalFundsLol: any) => {
         const removeIndividalFundsLol1 = removeIndividalFundsLol.map(
           (e: any) => {

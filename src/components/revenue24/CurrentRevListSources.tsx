@@ -13,7 +13,7 @@ export function CurrentRevListSources(props: any) {
   ];
 
   React.useEffect(() => {
-    d3.csv('/csvsrevenueforecast24/gf-current.csv').then((data: any) => {
+    d3.csv('/csvsrevenueforecast25/gf-current.csv').then((data: any) => {
       console.log(data);
 
       const table = d3
