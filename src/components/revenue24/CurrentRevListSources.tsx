@@ -7,9 +7,9 @@ export function CurrentRevListSources(props: any) {
   const columns = ['category', 'actual', 'estimated', 'projected'];
   const headcolumns = [
     'Name',
-    'Actual',
-    'Estimate',
-    'Projected',
+    'FY Actual',
+    'FY Estimate',
+    'FY Projected',
   ];
 
   React.useEffect(() => {

@@ -18,6 +18,7 @@ export default function pafr22(props: any) {
       />
  
       <Layout>
+     
         <div className='flex flex-col pb-2 dark:text-white'>
           <div
             className=''
@@ -29,6 +30,7 @@ export default function pafr22(props: any) {
               backgroundPosition: 'bottom',
             }}
           >
+            
             <div className=' container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
               <div className='xl:mt-64'>
                 <span className='xl:py-1'></span>
@@ -41,6 +43,8 @@ export default function pafr22(props: any) {
               </h1>
             </div>
           </div>
+          <div style={{ marginRight: '15px' }} className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
+
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <br />
             <p>
@@ -71,13 +75,7 @@ report are the estimated requirements for debt service and General Fund cash flo
 2024 and 2025, and compare last year’s revenues to the estimates for this and next fiscal year.
                 <br />
                 <br />
-                {/*
-                  Add visuals –
-o Revenue by Fund Type
- Revenue Sources for FY 2024 (separate visual for GF &amp; SF sources)
- Revenue Sources Over Three Years
- – General Fund, Special Funds &amp; Total
-                  */}
+             
                 <CurrentRevListSources />
               </p>
             </div>
@@ -158,6 +156,7 @@ the coming year for a net increase of just $132 million in GF revenue.
               </p>
             </div>
             <p>Explore historical total City revenue by source or category:</p>
+            <br></br>
             <HistoricalRevAll></HistoricalRevAll>
             <br />
             <p className='font-semibold'>
@@ -166,7 +165,7 @@ economy fall into a recession within the next fiscal year, the City may realize 
 revenue than we estimate, as most economically sensitive revenues would be impacted.
             </p>
             <br />
-            <h1>THE NEED FOR A LONG-TERM STRATEGY</h1>
+            <h3>THE NEED FOR A LONG-TERM STRATEGY</h3>
             <p>
             General Fund expenses are on track to increase considerably next fiscal year. The State is experiencing
 its own severe budget challenges. The Mayor’s ambitious effort to meet the homelessness emergency
@@ -182,28 +181,27 @@ inexorable decline in public services, undermining our quality of life and the e
 residents” as our Office warned in January when releasing the City’s Annual Comprehensive Financial
 Report.
             </p>
-            <br />
+   
             <p>
             All of this means that short-term fixes and budget gimmickry will only prolong pain and lead to “an
 inexorable decline in public services, undermining our quality of life and the economic prospects of our
 residents” as our Office warned in January when releasing the City’s Annual Comprehensive Financial
 Report.
             </p>
-            <br />
+      
             <p>
             I summarized last year’s March Revenue Forecast with this advice: “The voters of Los Angeles expressed
 their choices for change in the last election. It will be our shared responsibility not to be trapped by
 business as usual if we are to deliver on their expectations. Taking the long view and the high road will
 be essential to making a more equitable, livable and resilient city for our four million residents.”
-              <br />
-              <br />
+             
             </p>
             <p>
             Our residents deserve to have their City’s fiscal house put in order so that not only their City
 government lives within its means, but they can too. Our residents deserve to look forward to a brighter
 future for themselves and their families based on a strong economy that leaves no one behind.
-              <br />
-              <br />
+       
+            
             </p>
             <p>
            <b>  Now is the time for City leadership to recognize the need to move beyond business as usual and get
@@ -212,6 +210,7 @@ down to the business of meeting the changing needs of our changing city.</b>
               <br />
             </p>
             <h2>Debt</h2>
+            <br></br>
             <p>
             The estimated debt service requirement for 2024-25 on the City’s long-term debt is $549.8 million,
 which is $22.8 million less than 2023-24 mainly due to decrease in General Obligation Bonds (GOB) total
@@ -223,8 +222,10 @@ Solid Waste Resources Programs, and Site-Specific Tax Revenue Debt.
 In total, debt service is projected to be 3.68 percent of projected 2024-25 General Fund receipts, well
 under the 15 percent limit set by the City’s Debt Policy.
             </p>
+            <br></br>
             <Debt />
           </div>
+        </div>
         </div>
       </Layout>
     </>

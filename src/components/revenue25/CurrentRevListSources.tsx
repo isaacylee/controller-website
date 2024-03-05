@@ -7,13 +7,13 @@ export function CurrentRevListSources(props: any) {
   const columns = ['category', 'actual', 'estimated', 'projected'];
   const headcolumns = [
     'Name',
-    'Actual',
-    'Estimate',
-    'Projected',
+    'Actual FY23',
+    'Estimate FY24',
+    'Projected FY25',
   ];
 
   React.useEffect(() => {
-    d3.csv('/csvsrevenueforecast25/gf-current.csv').then((data: any) => {
+    d3.csv('/csvsrevenueforecast25/gf-current-new.csv').then((data: any) => {
       console.log(data);
 
       const table = d3
