@@ -3,9 +3,9 @@ import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
-import { CurrentRevListSources } from '@/components/revenue24/CurrentRevListSources';
-import { Debt } from '@/components/revenue24/Debt';
-import { HistoricalRevAll } from '@/components/revenue24/HistoricalRevAll';
+import { CurrentRevListSources } from '@/components/revenue25/CurrentRevListSources';
+import { Debt } from '@/components/revenue25/Debt';
+import { HistoricalRevAll } from '@/components/revenue25/HistoricalRevAll';
 import Seo from '@/components/Seo';
 export default function pafr22(props: any) {
   return (

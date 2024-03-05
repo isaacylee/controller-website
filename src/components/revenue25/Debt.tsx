@@ -30,7 +30,7 @@ export function Debt(props: any) {
   const debtboxlimittotal = React.useRef<any>(null);
 
   React.useEffect(() => {
-    d3.csv('/csvsrevenueforecast24/debt.csv', d3.autoType).then((data: any) => {
+    d3.csv('/csvsrevenueforecast25/debt.csv', d3.autoType).then((data: any) => {
       const nonVoterMaxRatio = 0.06;
       const combinedMaxRatio = 0.15;
 
