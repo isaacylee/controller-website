@@ -76,16 +76,12 @@ export function Debt(props: any) {
         marginTop: 50,
         marginLeft: 80,
         x: {
-          values: datacleaned.map((d: any) => d['Fiscal Year']),
-          scale: { type: 'point' },
+          domain: [
+            d3.min(datacleaned, (d: any) => d['Fiscal Year']),
+            d3.max(datacleaned, (d: any) => d['Fiscal Year'])
+          ],
+          ticks: datacleaned.map((d: any) => d['Fiscal Year']),
         },
-        // x: {
-        //   domain: [
-        //     d3.min(datacleaned, (d: any) => d['Fiscal Year']),
-        //     d3.max(datacleaned, (d: any) => d['Fiscal Year'])
-        //   ],
-        //   ticks: datacleaned.map((d: any) => d['Fiscal Year']),
-        // },
         // x: {
         //   label: 'Fiscal Year',
         //   tickFormat: d3.format('d'),
@@ -140,16 +136,12 @@ export function Debt(props: any) {
         marginTop: 50,
         marginLeft: 80,
         x: {
-          values: datacleaned.map((d: any) => d['Fiscal Year']),
-          scale: { type: 'point' },
+          domain: [
+            d3.min(datacleaned, (d: any) => d['Fiscal Year']),
+            d3.max(datacleaned, (d: any) => d['Fiscal Year'])
+          ],
+          ticks: datacleaned.map((d: any) => d['Fiscal Year']),
         },
-        // x: {
-        //   domain: [
-        //     d3.min(datacleaned, (d: any) => d['Fiscal Year']),
-        //     d3.max(datacleaned, (d: any) => d['Fiscal Year'])
-        //   ],
-        //   ticks: datacleaned.map((d: any) => d['Fiscal Year']),
-        // },
         // x: {
         //   label: 'Fiscal Year',
         //   tickFormat: d3.format('d'),
@@ -204,16 +196,12 @@ export function Debt(props: any) {
         marginTop: 50,
         marginLeft: 80,
         x: {
-          values: datacleaned.map((d: any) => d['Fiscal Year']),
-          scale: { type: 'point' },
+          domain: [
+            d3.min(datacleaned, (d: any) => d['Fiscal Year']),
+            d3.max(datacleaned, (d: any) => d['Fiscal Year'])
+          ],
+          ticks: datacleaned.map((d: any) => d['Fiscal Year']),
         },
-        // x: {
-        //   domain: [
-        //     d3.min(datacleaned, (d: any) => d['Fiscal Year']),
-        //     d3.max(datacleaned, (d: any) => d['Fiscal Year'])
-        //   ],
-        //   ticks: datacleaned.map((d: any) => d['Fiscal Year']),
-        // },
         // x: {
         //   label: 'Fiscal Year',
         //   tickFormat: d3.format('d'),

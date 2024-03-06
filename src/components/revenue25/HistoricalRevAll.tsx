@@ -17,7 +17,7 @@ export function HistoricalRevAll(props: any) {
           (e: any) => {
             return {
               ...e,
-              'Fiscal Year': e['Fiscal Year'].toString(),
+              'Fiscal Year': parseInt(e['Fiscal Year']),
               'Sum of Amount': parseFloat(e['Sum of Amount']),
             };
           }
@@ -31,16 +31,12 @@ export function HistoricalRevAll(props: any) {
 
 
           return Plot.plot({
-            // x: {
-            //   domain: [
-            //     d3.min(removeIndividalFundsLol1, (d: any) => d['Fiscal Year']),
-            //     d3.max(removeIndividalFundsLol1, (d: any) => d['Fiscal Year'])
-            //   ],
-            //   ticks: removeIndividalFundsLol1.map((d: any) => d['Fiscal Year']),
-            // },
             x: {
-              values: removeIndividalFundsLol1.map((d: any) => d['Fiscal Year']),
-              scale: { type: 'point' },
+              domain: [
+                d3.min(removeIndividalFundsLol1, (d: any) => d['Fiscal Year']),
+                d3.max(removeIndividalFundsLol1, (d: any) => d['Fiscal Year'])
+              ],
+              ticks: removeIndividalFundsLol1.map((d: any) => d['Fiscal Year']),
             },
             y: {
               tickFormat: (tick: any) =>
