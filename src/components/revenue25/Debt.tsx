@@ -87,7 +87,7 @@ export function Debt(props: any) {
         //   tickFormat: d3.format('d'),
         // },
         y: {
-          label: 'Amount of Debt ($)',
+          label: 'Debt Service Amount ($)',
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
         },
         marks: [
@@ -147,7 +147,7 @@ export function Debt(props: any) {
         //   tickFormat: d3.format('d'),
         // },
         y: {
-          label: 'Amount of Debt ($)',
+          label: 'Debt Service Amount ($)',
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
         },
         marks: [
@@ -207,7 +207,7 @@ export function Debt(props: any) {
         //   tickFormat: d3.format('d'),
         // },
         y: {
-          label: 'Amount of Debt ($)',
+          label: 'Debt Service Amount ($)',
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
         },
         marks: [
@@ -274,7 +274,7 @@ export function Debt(props: any) {
 
   return (
     <div>
-      <h3>Debt over Time</h3>
+      <h3>Debt Service over Time</h3>
       {/*Make a legend with 2 items, 
       - Red Dot that say Non-Voter Approved
       - Blue Dot that say Voter Approved
