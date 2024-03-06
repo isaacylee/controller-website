@@ -8,6 +8,8 @@ export function HistoricalRevAll(props: any) {
   const generalbox = React.useRef<any>(null);
   const specialbox = React.useRef<any>(null);
 
+
+
   React.useEffect(() => {
     d3.csv('/csvsrevenueforecast25/remove-individal-funds-lol.csv').then(
       (removeIndividalFundsLol: any) => {
@@ -23,94 +25,19 @@ export function HistoricalRevAll(props: any) {
 
         console.log('fetched data', removeIndividalFundsLol1);
 
-        
-        // const generateSubPlot = (input: string) => {
-        //   return Plot.plot({
-        //     y: {
-        //       tickFormat: (tick: any) =>
-        //         d3.format('~s')(tick).replace('G', 'B'),
-        //       label: 'Revenue',
-        //     },
-        //     marks: [
-        //       Plot.lineY(
-        //         removeIndividalFundsLol1.filter(
-        //           (item: any) =>
-        //             item.Type === 'Budget' && item.Category === input
-        //         ),
-        //         { x: 'Fiscal Year', y: 'Sum of Amount', stroke: 'Type' }
-        //       ),
-        //       Plot.lineY(
-        //         removeIndividalFundsLol1.filter(
-        //           (item: any) =>
-        //             item.Type === 'Receipts' &&
-        //             item.Category === input &&
-        //             item['Fiscal Year'] >= 2022
-        //         ),
-        //         {
-        //           x: 'Fiscal Year',
-        //           y: 'Sum of Amount',
-        //           stroke: 'Type',
-        //           strokeWidth: 2,
-        //           strokeDasharray: '2,6',
-        //           defined: (item: any) =>
-        //             item['Fiscal Year'] > 2022 && item['Type'] === 'Receipts',
-        //         }
-        //       ),
-        //       Plot.lineY(
-        //         removeIndividalFundsLol1.filter(
-        //           (item: any) =>
-        //             item.Type === 'Receipts' &&
-        //             item.Category === input &&
-        //             item['Fiscal Year'] <= 2022
-        //         ),
-        //         { x: 'Fiscal Year', y: 'Sum of Amount', stroke: 'Type' }
-        //       ),
-        //       //add text
-        //       Plot.text(
-        //         removeIndividalFundsLol1.filter(
-        //           (item: any) =>
-        //             item.Type === 'Receipts' &&
-        //             item.Category === input &&
-        //             item['Fiscal Year'] <= 2022
-        //         ),
-        //         {
-        //           x: 'Fiscal Year',
-        //           y: 'Sum of Amount',
-        //           dx: 5,
-        //           dy: 30,
-        //           fill: 'Type',
-        //           text: (elem: any) =>
-        //             `${processEachValueIntoTextMore({
-        //               value: elem['Sum of Amount'],
-        //               digits: 2,
-        //             })}`,
-        //         }
-        //       ),
-        //       Plot.text(
-        //         removeIndividalFundsLol1.filter(
-        //           (item: any) =>
-        //             item.Type === 'Budget' && item.Category === input
-        //         ),
-        //         {
-        //           x: 'Fiscal Year',
-        //           y: 'Sum of Amount',
-        //           dx: 5,
-        //           dy: -20,
-        //           fill: 'Type',
-        //           text: (elem: any) =>
-        //             `${processEachValueIntoTextMore({
-        //               value: elem['Sum of Amount'],
-        //               digits: 2,
-        //             })}`,
-        //         }
-        //       ),
-        //     ],
-        //     color: { scheme: 'set1', type: 'categorical', legend: true },
-        //   });
-        // };
+
 
         const generateSubPlot = (input: string) => {
+
+
           return Plot.plot({
+            x: {
+              domain: [
+                d3.min(removeIndividalFundsLol1, (d: any) => d['Fiscal Year']),
+                d3.max(removeIndividalFundsLol1, (d: any) => d['Fiscal Year'])
+              ],
+              ticks: removeIndividalFundsLol1.map((d: any) => d['Fiscal Year']),
+            },
             y: {
               tickFormat: (tick: any) =>
                 d3.format('~s')(tick).replace('G', 'B'),
@@ -132,6 +59,7 @@ export function HistoricalRevAll(props: any) {
                     item['Fiscal Year'] >= 2022
                 ),
                 {
+
                   x: 'Fiscal Year',
                   y: 'Sum of Amount',
                   stroke: '#41ffca', // Updated color
@@ -193,7 +121,10 @@ export function HistoricalRevAll(props: any) {
           });
         };
 
-        
+
+
+
+
         const generalboxplot = generateSubPlot('General Fund');
         const specialboxplot = generateSubPlot('Special Funds');
 

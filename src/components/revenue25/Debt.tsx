@@ -5,22 +5,22 @@ import * as React from 'react';
 export function LegendDebt() {
   return (
     <div className='flex flex-row'>
-    <div className='flex flex-row gap-x-1'>
-      <div className='flex flex-row'>
-        <div className='h-4 w-4 rounded-full' style={{backgroundColor: '#41ffca'}}></div>
-        <p className='ml-2' style={{color: '#41ffca'}}>
-          Non-Voter Approved
-        </p>
-      </div>
-      <div className='flex flex-row'>
-        <div className='h-4 w-4 rounded-full' style={{backgroundColor: '#ffca41'}}></div>
-        <p className='ml-2' style={{color: '#ffca41'}}>
-          Voter Approved
-        </p>
+      <div className='flex flex-row gap-x-1'>
+        <div className='flex flex-row'>
+          <div className='h-4 w-4 rounded-full' style={{ backgroundColor: '#41ffca' }}></div>
+          <p className='ml-2' style={{ color: '#41ffca' }}>
+            Non-Voter Approved
+          </p>
+        </div>
+        <div className='flex flex-row'>
+          <div className='h-4 w-4 rounded-full' style={{ backgroundColor: '#ffca41' }}></div>
+          <p className='ml-2' style={{ color: '#ffca41' }}>
+            Voter Approved
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  
+
   );
 }
 
@@ -76,9 +76,16 @@ export function Debt(props: any) {
         marginTop: 50,
         marginLeft: 80,
         x: {
-          label: 'Fiscal Year',
-          tickFormat: d3.format('d'),
+          domain: [
+            d3.min(datacleaned, (d: any) => d['Fiscal Year']),
+            d3.max(datacleaned, (d: any) => d['Fiscal Year'])
+          ],
+          ticks: datacleaned.map((d: any) => d['Fiscal Year']),
         },
+        // x: {
+        //   label: 'Fiscal Year',
+        //   tickFormat: d3.format('d'),
+        // },
         y: {
           label: 'Amount of Debt ($)',
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
@@ -129,9 +136,16 @@ export function Debt(props: any) {
         marginTop: 50,
         marginLeft: 80,
         x: {
-          label: 'Fiscal Year',
-          tickFormat: d3.format('d'),
+          domain: [
+            d3.min(datacleaned, (d: any) => d['Fiscal Year']),
+            d3.max(datacleaned, (d: any) => d['Fiscal Year'])
+          ],
+          ticks: datacleaned.map((d: any) => d['Fiscal Year']),
         },
+        // x: {
+        //   label: 'Fiscal Year',
+        //   tickFormat: d3.format('d'),
+        // },
         y: {
           label: 'Amount of Debt ($)',
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
@@ -182,9 +196,16 @@ export function Debt(props: any) {
         marginTop: 50,
         marginLeft: 80,
         x: {
-          label: 'Fiscal Year',
-          tickFormat: d3.format('d'),
+          domain: [
+            d3.min(datacleaned, (d: any) => d['Fiscal Year']),
+            d3.max(datacleaned, (d: any) => d['Fiscal Year'])
+          ],
+          ticks: datacleaned.map((d: any) => d['Fiscal Year']),
         },
+        // x: {
+        //   label: 'Fiscal Year',
+        //   tickFormat: d3.format('d'),
+        // },
         y: {
           label: 'Amount of Debt ($)',
           tickFormat: (tick: any) => d3.format('~s')(tick).replace('G', 'B'),
