@@ -32,7 +32,7 @@ export default function pafr22(props: any) {
               <div className='xl:mt-64'>
                 <span className='xl:py-1'></span>
               </div>
-              <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
+              <h1 className='w-content mt-64 mb-64 ml-2 px-2 text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
                   Revenue Forecast 2023-2024 Web Summary
                 </span>
