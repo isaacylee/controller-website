@@ -7,7 +7,7 @@
       "dept": "Dataset",
       "link": "https://ccspending.controller.lacity.gov/"
     },
-     {
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/cash-for-keys.png?alt=media&token=dc09acf4-7e37-4921-9bc4-9b7545a34ae4",
       "name": "Cash for Keys LA",
       "year": "2024",
@@ -112,7 +112,7 @@
     },
 
     {
-      "image": "https://wpstaticarchive.lacontroller.io/wp-content/uploads/2022/11/Visualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FVisualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg?alt=media&token=07109c82-8bcd-482a-833e-f936a927e8bb",
       "name": "Visualizing Nine Years of Audits, Reports and Data Stories",
       "year": "2022",
       "dept": "Dashboard",
