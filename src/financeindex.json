@@ -5,7 +5,7 @@
       "name": "Revenue Forecast Report ",
       "year": "2024",
       "dept": "Financial Report",
-      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2FController%20Revenue%20Forecast%20Report_FY24%2625_%20Final.pdf?alt=media&token=f33ddc87-44f3-4d25-8091-66be3eb931ac",
+      "link": "https://controller.lacity.gov/reports/revenueforecast25",
       "pre": false,
       "alt": "Cover photo Revenue Forecast Report"
     },
@@ -27,7 +27,6 @@
       "pre": false,
       "alt": "Cover photo Preliminary Financial Report 2023"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2Fidlespecialfunds.jpg?alt=media&token=69d117cb-df34-4ec4-85b1-f20d28fcebfd",
       "name": "Leveraging Idle Special Funds 2023 ",
