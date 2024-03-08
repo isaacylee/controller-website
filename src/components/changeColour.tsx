@@ -22,7 +22,7 @@ export function ChangeColour() {
     <ThemeContext.Consumer>
       {(themeChanger: any) => (
         <Popover className='relative '>
-          <Popover.Button>
+          <Popover.Button aria-label="Change Theme">
             <div
               className='rounded-full px-2 py-2 text-gray-900 drop-shadow-md  dark:text-gray-200'
               suppressHydrationWarning={true}
