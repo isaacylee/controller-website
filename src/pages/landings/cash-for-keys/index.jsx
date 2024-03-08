@@ -40,9 +40,9 @@ export default function CashForKeys() {
             </Link>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h3 className='mb-12 text-2xl font-bold'>
+            <h2 className='mb-12 text-2xl font-bold'>
               <b>Summary and Analysis</b>
-            </h3>
+            </h2>
           </div>
           <div
             className='text-left dark:text-white'
@@ -71,9 +71,9 @@ export default function CashForKeys() {
             </ul>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h4 className='mb-4 text-xl font-bold'>
+            <h3 className='mb-4 text-xl font-bold'>
               <b>Number of Tenant Buyouts by Year</b>
-            </h4>
+            </h3>
           </div>
           <div className='mb-16'>
             {' '}
@@ -82,12 +82,12 @@ export default function CashForKeys() {
         </center>
         <center>
           <div>
-            <h4
+            <h3
               className='mb-4 text-xl font-bold dark:text-white'
               style={{ fontFamily: 'Helvetica' }}
             >
               <b>Number of Tenant Buyouts by Council District</b>
-            </h4>
+            </h3>
             <p className='mb-4 text-left dark:text-white'>
               Units located within Council District <b>10</b> had the highest
               number of tenant buyouts <b>(997)</b>, followed by Council
@@ -99,11 +99,11 @@ export default function CashForKeys() {
             <BuyoutsByDistrict />
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h4 className='mb-4 text-xl font-bold dark:text-white'>
+            <h3 className='mb-4 text-xl font-bold dark:text-white'>
               <b>
                 Top 20 Zip Codes with Highest Number of Tenant Buyout Agreements
               </b>
-            </h4>
+            </h3>
             <p className='mb-4 text-left dark:text-white'>
               Units located within <b>90004</b> (Koreatown, Mid-Wilshire area)
               had the highest number of buyout agreements (<b>370</b>), followed
@@ -115,9 +115,9 @@ export default function CashForKeys() {
             <BuyoutsByZip />
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h4 className='mb-4 text-xl font-bold dark:text-white'>
+            <h3 className='mb-4 text-xl font-bold dark:text-white'>
               <b>Tenant Buyouts by $ Range</b>
-            </h4>
+            </h3>
             <p className='mb-4 text-left'>
               The total dollar amount of tenant buyouts was <b>$118,305,500</b>{' '}
               with an average tenant buyout amount of <b>$24,704 per unit</b>.
@@ -131,9 +131,9 @@ export default function CashForKeys() {
             className='mb-16 dark:text-white'
             style={{ fontFamily: 'Helvetica' }}
           >
-            <h4 className='mb-4 text-left text-xl font-bold dark:text-white'>
+            <h3 className='mb-4 text-left text-xl font-bold dark:text-white'>
               <b>Tenant Rights</b>
-            </h4>
+            </h3>
             <p className='mb-4 text-left dark:text-white'>
               Tenants have a number of rights when presented with a "cash for
               keys" offer:
@@ -165,9 +165,9 @@ export default function CashForKeys() {
             </ul>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h4 className='mb-4 text-left text-xl font-bold dark:text-white'>
+            <h3 className='mb-4 text-left text-xl font-bold dark:text-white'>
               <b>About the Tenant Buyout Notification Program</b>
-            </h4>
+            </h3>
             <p className='mb-4 text-left dark:text-white'>
               The <b>Tenant Buyout Notification Program</b> went into effect on
               January 25, 2017 and amended the City’s Rent Stabilization
