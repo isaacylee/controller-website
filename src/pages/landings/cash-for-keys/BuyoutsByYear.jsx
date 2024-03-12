@@ -48,10 +48,10 @@ export default function BuyoutsByYear() {
           },
         },
       },
-    },
-    aria: {
-      label:
-        'Bar chart of number of tenant buyouts by year from 2019 to 2023. 1209 buyouts in 2019. 1100 buyouts in 2020. 878 buyouts in 2021. 893 buyouts in 2022. 789 buyouts in 2023.',
+      aria: {
+        label:
+          'Bar chart of number of tenant buyouts by year from 2019 to 2023. 1209 buyouts in 2019. 1100 buyouts in 2020. 878 buyouts in 2021. 893 buyouts in 2022. 789 buyouts in 2023.',
+      },
     },
     scales: {
       y: {
