@@ -24,6 +24,19 @@ export default function BuyoutsByYear() {
       });
   }, []);
 
+  useEffect(() => {
+    const canvases = document.querySelectorAll('canvas');
+    const labels = [
+      'Bar chart of number of tenant buyouts by year from 2019 to 2023. 1209 buyouts in 2019. 1100 buyouts in 2020. 878 buyouts in 2021. 893 buyouts in 2022. 789 buyouts in 2023.',
+      'Bar chart of number of tenant buyouts by council district. CD 1 had 569 buyouts. CD 2 had 171 buyouts. CD 3 had 41 buyouts. CD 4 had 188 buyouts. CD 5 had 362 buyouts. CD 6 had 104 buyouts. CD 7 had 56 buyouts. CD 8 had 302 buyouts. CD 9 had 388 buyouts. CD 10 had 997 buyouts. CD 11 had 383 buyouts. CD 12 had 4 buyouts. CD 13 had 970 buyouts. CD 14 had 246 buyouts. CD 15 had 87 buyouts.',
+    ];
+  
+    canvases.forEach((canvas, index) => {
+      canvas.setAttribute('aria-label', labels[index]);
+    });
+  }, []);
+  
+
   var data = {
     labels: buyoutYears.map((x) => x.year),
     datasets: [
@@ -47,10 +60,6 @@ export default function BuyoutsByYear() {
             size: 12,
           },
         },
-      },
-      aria: {
-        label:
-          'Bar chart of number of tenant buyouts by year from 2019 to 2023. 1209 buyouts in 2019. 1100 buyouts in 2020. 878 buyouts in 2021. 893 buyouts in 2022. 789 buyouts in 2023.',
       },
     },
     scales: {
