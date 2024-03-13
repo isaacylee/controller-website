@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/liabclaim.png?alt=media&token=ca5c7821-85b2-45c5-826c-3dc7bc0ae14f",
+      "name": "City Of LA Liability Claim Payouts FY2020 - FY2023",
+      "year": "2024",
+      "dept": "Charts",
+      "link": "https://liabilityclaims.lacontroller.app/"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Copy%20of%20LAAS%20Spay%20Neuter%20%26%20Shelter%20(4).png?alt=media&token=84e3ce8d-b11d-4fa7-91a9-c65eb785781b",
       "name": "City Council Discetionary Funds Spending ",
       "year": "2024",
@@ -35,7 +42,6 @@
       "dept": "Map",
       "link": "https://4118recentarrests.lacontroller.app/"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/deptvacancies_thumbnail.png?alt=media&token=c70b7a9b-c726-490a-90fa-be7c8ec5c869",
       "name": "City of LA Staffing Vacancies by Department",
@@ -43,7 +49,6 @@
       "dept": "Charts",
       "link": "https://deptvacancies.lacontroller.app/"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/ncreport.png?alt=media&token=18e2c5d3-6829-4ea0-a3df-27eb809406fa",
       "name": "Neighborhood Councils Expenditure Report",
@@ -65,7 +70,6 @@
       "dept": "Map",
       "link": "https://arrests.lacontroller.app/"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/4118-banner.png?alt=media&token=28ea786e-894a-4bd4-b9fb-c844e46d8baa",
       "name": "41.18 Arrests (Jan 2012 - May 2023)",
@@ -94,7 +98,6 @@
       "dept": "Charts",
       "link": "https://budget.lacontroller.app/"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/laas_banner.png?alt=media&token=d9ef3cd0-ad10-4599-9641-4a0c935168e0",
       "name": "LAAS Spay Neuter & Shelter",
@@ -102,7 +105,6 @@
       "dept": "Map",
       "link": "https://spayneuter.lacontroller.app/"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/unhoused.png?alt=media&token=bedc82ec-6232-47da-9731-1543bac5995d",
       "name": "Unhoused Deaths in Los Angeles",
@@ -110,7 +112,6 @@
       "dept": "Map",
       "link": "https://unhouseddeaths.lacontroller.app/"
     },
-
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FVisualizing-Nine-Years-of-Audits-Financial-Reports-and-Data-Stories-1.jpg?alt=media&token=07109c82-8bcd-482a-833e-f936a927e8bb",
       "name": "Visualizing Nine Years of Audits, Reports and Data Stories",
