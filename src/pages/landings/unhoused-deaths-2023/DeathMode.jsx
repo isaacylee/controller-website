@@ -15,7 +15,7 @@ export default function DeathMode() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/mode')
     .then((response) => {
         const data = response.data.mode;
-        console.log("mode", data);
+        // console.log("mode", data);
         setMode(data);
     })
     .catch((error) => {

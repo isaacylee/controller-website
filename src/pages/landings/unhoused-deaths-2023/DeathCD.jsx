@@ -15,7 +15,7 @@ export default function DeathCD() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/cd')
     .then((response) => {
         const data = response.data.cd;
-        console.log("cd", data);
+        // console.log("cd", data);
         setCD(data);
     })
     .catch((error) => {

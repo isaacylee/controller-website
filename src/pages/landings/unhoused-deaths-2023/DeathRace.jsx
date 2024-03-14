@@ -15,7 +15,7 @@ export default function DeathRace() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/race')
     .then((response) => {
         const data = response.data.race;
-        console.log("race", data);
+        // console.log("race", data);
         setRace(data);
     })
     .catch((error) => {

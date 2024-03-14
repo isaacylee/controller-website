@@ -15,7 +15,7 @@ export default function DeathPlace() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/place')
     .then((response) => {
         const data = response.data.place;
-        console.log("place", data);
+        // console.log("place", data);
         setPlace(data);
     })
     .catch((error) => {

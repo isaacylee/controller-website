@@ -15,7 +15,7 @@ export default function DeathMonth() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/month')
     .then((response) => {
         const data = response.data.month;
-        console.log("month", data);
+        // console.log("month", data);
         setMonth(data);
     })
     .catch((error) => {
