@@ -5,6 +5,7 @@ import React, {useEffect} from 'react';
 
 import Navbar from '@/components/Navbar';
 
+import DeathAge from './DeathAge';
 import DeathCD from './DeathCD';
 import DeathMode from './DeathMode';
 import DeathMonth from './DeathMonth';
@@ -147,6 +148,15 @@ export default function CashForKeys() {
               <div>
                 <h4>Unhoused Deaths in City of LA by Month, 2023</h4>
                 <DeathMonth />
+              </div>
+            </div>
+            <div className='mb-14'>
+              <h3 className='text-left mb-7 text-xl font-bold'>
+                <b>Deaths by Age:</b>
+              </h3>
+              <div>
+                <h4>Unhoused Deaths in City of LA by Age, 2023</h4>
+                <DeathAge />
               </div>
             </div>
           </div>
