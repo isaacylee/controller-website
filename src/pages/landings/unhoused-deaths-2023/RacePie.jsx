@@ -60,6 +60,7 @@ function RacePie() {
   const options = {
     plugins: {
       legend: {
+        display: false,
         labels: {
           color: "rgb(255, 255, 255)",
           font: {
@@ -88,7 +89,7 @@ function RacePie() {
     
     
     return (
-      <div className="my-6 mx-24">
+      <div className="my-6 mx-12 sm:mx-16 md:mx-20 lg:mx-28 xl:mx-32">
       <Pie data={data} height={100} options={options} />
     </div>
   );
