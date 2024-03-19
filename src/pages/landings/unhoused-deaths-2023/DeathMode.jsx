@@ -80,7 +80,7 @@ export default function DeathMode() {
       };
     
       return (
-        <div className="mt-4 py-4 px-1 sm:px-5 md:px-9 lg:px-20 xl:px-24 bg-zinc-900">
+        <div className="mt-6 py-4 px-1 sm:px-5 md:px-9 lg:px-20 xl:px-24 bg-zinc-900">
           <Bar data={data} height={100} width={150} options={options} />
         </div>
       );

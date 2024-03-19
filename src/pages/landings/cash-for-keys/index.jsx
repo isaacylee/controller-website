@@ -16,7 +16,7 @@ export default function CashForKeys() {
         <title>Cash for Keys (2019-2023)</title>
       </Head>
       <Navbar />
-      <main className='container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
+      <body className='container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1 className='pt-8 pb-4 text-center text-3xl font-bold dark:text-white'>
@@ -190,7 +190,7 @@ export default function CashForKeys() {
             </p>
           </div>
         </center>
-      </main>
+      </body>
     </>
   );
 }
