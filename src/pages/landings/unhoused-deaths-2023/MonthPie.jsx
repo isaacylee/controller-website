@@ -28,7 +28,7 @@ function MonthPie() {
     labels: month.map((x) => x.month),
     datasets: [
       {
-        label: '2023 Unhoused Deaths in City of LA by Mode',
+        label: '2023 Unhoused Deaths in City of LA by Month',
         data: month.map((x) => x.numberOfDeaths),
         backgroundColor: [
           '#a21caf',
