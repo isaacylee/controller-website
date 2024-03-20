@@ -6,18 +6,18 @@ import { Pie } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
-function RacePie() {
-  const [race, setRace] = useState([]);
+function CDPie() {
+  const [cd, setCD] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/race'
+        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/cd'
       )
       .then((response) => {
-        const data = response.data.race;
+        const data = response.data.cd;
         console.log('data', data);
-        setRace(data);
+        setCD(data);
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -25,17 +25,17 @@ function RacePie() {
   }, []);
 
   const data = {
-    labels: race.map((x) => x.race),
+    labels: cd.map((x) => x.councilDistrict),
     datasets: [
       {
-        label: '2023 Unhoused Deaths in City of LA by Race',
-        data: race.map((x) => x.numberOfDeaths),
+        label: '2023 Unhoused Deaths in City of LA by Council District',
+        data: cd.map((x) => x.numberOfDeaths),
         backgroundColor: [
           '#fb923c',
           '#16a34a',
+          '#f87171',
           '#41ffca',
           '#fde047',
-          '#f87171',
           '#67e8f9',
           '#3730a3',
           '#f0fdf4',
@@ -45,9 +45,9 @@ function RacePie() {
         borderColor: [
           '#fb923c',
           '#16a34a',
+          '#ef4444',
           '#41ffca',
           '#fde047',
-          '#ef4444',
           '#67e8f9',
           '#3730a3',
           '#f0fdf4',
@@ -76,7 +76,7 @@ function RacePie() {
         callbacks: {
           label: (tooltipItem) => {
             // console.log('no data', tooltipItem);
-            const filteredDeaths = race.map((x) => x.numberOfDeaths);
+            const filteredDeaths = cd.map((x) => x.numberOfDeaths);
             // console.log("total", filteredDeaths);
             const totalDeaths = (deaths) =>
               deaths.reduce((total, num) => total + num, 0);
@@ -99,4 +99,4 @@ function RacePie() {
   );
 }
 
-export default RacePie;
+export default CDPie;

@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 
 import Navbar from '@/components/Navbar';
 
+import CDPie from './CDPie';
 import DeathAge from './DeathAge';
 import DeathCD from './DeathCD';
 import DeathMode from './DeathMode';
@@ -12,6 +13,7 @@ import DeathMonth from './DeathMonth';
 import DeathPlace from './DeathPlace';
 import DeathRace from './DeathRace';
 import ModePie from './ModePie';
+import MonthPie from './MonthPie';
 import RacePie from './RacePie';
 
 export default function CashForKeys() {
@@ -292,6 +294,7 @@ export default function CashForKeys() {
               </div>
               <div>
                 <h4>Unhoused Deaths in City of LA by Council District, 2023</h4>
+                <CDPie />
                 <DeathCD />
               </div>
             </div>
@@ -327,6 +330,7 @@ export default function CashForKeys() {
               </div>
               <div>
                 <h4>Unhoused Deaths in City of LA by Month, 2023</h4>
+                <MonthPie />
                 <DeathMonth />
               </div>
             </div>

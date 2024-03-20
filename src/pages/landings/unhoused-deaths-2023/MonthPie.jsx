@@ -6,18 +6,18 @@ import { Pie } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
-function RacePie() {
-  const [race, setRace] = useState([]);
+function MonthPie() {
+  const [month, setMonth] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/race'
+        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/month'
       )
       .then((response) => {
-        const data = response.data.race;
+        const data = response.data.month;
         console.log('data', data);
-        setRace(data);
+        setMonth(data);
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -25,34 +25,38 @@ function RacePie() {
   }, []);
 
   const data = {
-    labels: race.map((x) => x.race),
+    labels: month.map((x) => x.month),
     datasets: [
       {
-        label: '2023 Unhoused Deaths in City of LA by Race',
-        data: race.map((x) => x.numberOfDeaths),
+        label: '2023 Unhoused Deaths in City of LA by Mode',
+        data: month.map((x) => x.numberOfDeaths),
         backgroundColor: [
-          '#fb923c',
+          '#a21caf',
           '#16a34a',
-          '#41ffca',
-          '#fde047',
           '#f87171',
+          '#0891b2',
+          '#fde047',
           '#67e8f9',
           '#3730a3',
           '#f0fdf4',
           '#d6d3d1',
           '#2563eb',
+          '#41ffca',
+          '#fb923c',
         ],
         borderColor: [
-          '#fb923c',
+          '#a21caf',
           '#16a34a',
-          '#41ffca',
-          '#fde047',
           '#ef4444',
+          '#0891b2',
+          '#fde047',
           '#67e8f9',
           '#3730a3',
           '#f0fdf4',
           '#d6d3d1',
           '#2563eb',
+          '#41ffca',
+          '#fb923c',
         ],
         borderWidth: 1,
       },
@@ -76,7 +80,7 @@ function RacePie() {
         callbacks: {
           label: (tooltipItem) => {
             // console.log('no data', tooltipItem);
-            const filteredDeaths = race.map((x) => x.numberOfDeaths);
+            const filteredDeaths = month.map((x) => x.numberOfDeaths);
             // console.log("total", filteredDeaths);
             const totalDeaths = (deaths) =>
               deaths.reduce((total, num) => total + num, 0);
@@ -99,4 +103,4 @@ function RacePie() {
   );
 }
 
-export default RacePie;
+export default MonthPie;
