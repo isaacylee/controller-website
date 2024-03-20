@@ -316,7 +316,7 @@ export default function CashForKeys() {
                   Deaths <b>dropped</b> significantly in <b>November</b> and{' '}
                   <b>December</b>
                 </p>
-                <p className='mb-2'>Month:</p>
+                <p className='mb-2 font-bold'>Month:</p>
                 <ul className='ml-4'>
                   <li>January: 115 deaths (12.8%)</li>
                   <li>February: 100 deaths (11.1%)</li>
