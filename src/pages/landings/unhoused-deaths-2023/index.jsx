@@ -43,7 +43,7 @@ export default function CashForKeys() {
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1 className='pt-8 pb-4 text-center text-3xl font-bold'>
-              Unhoused Deaths 2023
+              Deaths of Unhoused People in the City of LA, 2023
             </h1>
           </div>
           <div className='mb-10'>
@@ -77,9 +77,7 @@ export default function CashForKeys() {
             </Link>
           </div>
           <div>
-            <h2 className='mb-10 text-2xl font-bold'>
-              <b>Analysis</b>
-            </h2>
+            <h2 className='mb-10 text-2xl font-bold'>Analysis</h2>
             <div className='text-left'>
               <p className='mb-4'>
                 This map and analysis show details of deaths of unhoused people
@@ -89,29 +87,35 @@ export default function CashForKeys() {
                 date, location, age, race, gender, place, cause, and mode.
               </p>
               <p className='mb-4'>
-                In 2023, there were a total of 900 deaths of unhoused people in
-                the City of LA.
+                In 2023,{' '}
+                <strong>
+                  there were a total of 900 deaths of unhoused people
+                </strong>{' '}
+                in the City of LA.
               </p>
               <ul className='ml-4 mb-4'>
-                <li>&#x2022; Most common mode of death: Accident (75%)</li>
+                <li>
+                  &#x2022; Most common mode of death: <b>Accident (75%)</b>
+                </li>
                 <li>
                   &#x2022; Most common place of death:
-                  Street/Freeway/Tunnel/Sidewalk
+                  <b>Street/Freeway/Tunnel/Sidewalk</b>
                 </li>
                 <li>
-                  &#x2022; Black people were 31% of deaths. Black people are
-                  only 8% of the City’s general population, but are 33% of the
-                  City’s unhoused population.
+                  &#x2022; <strong>Black people were 31% of deaths</strong>.
+                  Black people are only 8% of the City’s general population, but
+                  are 33% of the City’s unhoused population.
                 </li>
                 <li>
-                  &#x2022; Council Districts 14 and 1 had the highest numbers of
-                  deaths, as well as some of the highest unhoused populations.
-                  Council District 9 was also among districts with the highest
-                  unhoused populations, but had fewer deaths.
+                  &#x2022;{' '}
+                  <strong>
+                    Council Districts 14 and 1 had the highest numbers of deaths
+                  </strong>{' '}
+                  as well as some of the highest unhoused populations.
                 </li>
                 <li>
-                  &#x2022; January, February, and March were the most deadly
-                  months.
+                  &#x2022; <b>January, February,</b> and <b>March</b> were the
+                  most deadly months.
                 </li>
               </ul>
               <p className='mb-4'>
@@ -120,20 +124,38 @@ export default function CashForKeys() {
               </p>
             </div>
             <div className='mb-14'>
-              <h3 className='mt-10 mb-4 text-left text-xl font-bold'>
-                <b>Mode:</b>
-              </h3>
+              <h3 className='mt-10 mb-4 text-left text-xl font-bold'>Mode:</h3>
               <div className='mb-7 text-left'>
                 <p className='mb-4'>
                   Mode of death can take a while to investigate and conclusions
                   are preliminary.
                 </p>
-                <p>
+                <p className='mb-4'>
                   “Mode” vs “Cause”: Mode of death is the way in which cause
                   contributed to death. Cause of death is the specific factor
                   (e.g., injury, disease, etc.) that led to mode of death. Mode
                   of death is more established data.
                 </p>
+                <div>
+                  <p className='mb-2 font-bold'>Mode of Death:</p>
+                  <ul className='ml-4'>
+                    <li>
+                      Accident: 678 deaths <b>(75%)</b>
+                    </li>
+                    <li>
+                      Natural: 160 deaths <b>(18%)</b>
+                    </li>
+                    <li>
+                      Homicide: 40 deaths <b>(4%)</b>
+                    </li>
+                    <li>
+                      Suicide: 16 deaths <b>(2%)</b>
+                    </li>
+                    <li>
+                      Undetermined: 6 deaths <b>(1%)</b>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div>
                 <h4>Unhoused Deaths in City of LA by Mode, 2023</h4>
@@ -142,20 +164,26 @@ export default function CashForKeys() {
               </div>
             </div>
             <div className='mb-14'>
-              <h3 className='mb-4 text-left text-xl font-bold'>
-                <b>Places of Death:</b>
-              </h3>
+              <h3 className='mb-4 text-left text-xl font-bold'>Place:</h3>
               <div>
                 <div className='mb-7 text-left'>
-                  <p className='mb-2'>
-                    <b>Top 5 Places of Death:</b>
-                  </p>
+                  <p className='mb-2 font-bold'>Top 5 Places of Death:</p>
                   <ul className='ml-4'>
-                    <li>Street/Freeway/Tunnel/Sidewalk: 338 deaths</li>
-                    <li>Healthcare Facility: 135 deaths</li>
-                    <li>Vehicle: 70 deaths</li>
-                    <li>Residence: 48 deaths</li>
-                    <li>Tent: 38 deaths</li>
+                    <li>
+                      Street/Freeway/Tunnel/Sidewalk: <b>338</b> deaths
+                    </li>
+                    <li>
+                      Healthcare Facility: <b>135</b> deaths
+                    </li>
+                    <li>
+                      Vehicle: <b>70</b> deaths
+                    </li>
+                    <li>
+                      Residence: <b>48</b> deaths
+                    </li>
+                    <li>
+                      Tent: <b>38</b> deaths
+                    </li>
                   </ul>
                 </div>
                 <h4>Unhoused Deaths in City of LA by Place, 2023</h4>
@@ -163,16 +191,50 @@ export default function CashForKeys() {
               </div>
             </div>
             <div className='mb-14'>
-              <h3 className='mb-4 text-left text-xl font-bold'>
-                <b>Race:</b>
-              </h3>
+              <h3 className='mb-4 text-left text-xl font-bold'>Race:</h3>
               <div>
                 <p className='mb-4 text-left'>
                   While Black people are only 8% of the City of LA’s general
-                  population, they were 31% of the City’s unhoused people who
-                  died. Black people were 33% of the City’s unhoused population
-                  in 2023.
+                  population, they were{' '}
+                  <strong>31% of the City’s unhoused people who died</strong>.
+                  Black people were 33% of the City’s unhoused population in
+                  2023.
                 </p>
+                <div className='mb-4 text-left'>
+                  <p className='mb-2 font-bold'>Race:</p>
+                  <ul className='ml-4'>
+                    <li>
+                      Hispanic/Latino: 289 <b>(32%)</b>
+                    </li>
+                    <li>
+                      Black: 281 <b>(31%)</b>
+                    </li>
+                    <li>
+                      White: 274 <b>(30%)</b>
+                    </li>
+                    <li>
+                      Unknown: 24 <b>(3%)</b>
+                    </li>
+                    <li>
+                      Asian: 17 <b>(2%)</b>
+                    </li>
+                    <li>
+                      Hispanic/Latino/White: 6 <b>(1%)</b>
+                    </li>
+                    <li>
+                      American Indian: 4 <b>(0.4%)</b>
+                    </li>
+                    <li>
+                      Middle Eastern: 3 <b>(0.3%)</b>
+                    </li>
+                    <li>
+                      Hispanic/Latino/Black: 1 <b>(0.1%)</b>
+                    </li>
+                    <li>
+                      Hawaiian/Pacific Islander: 1 <b>(0.1%)</b>
+                    </li>
+                  </ul>
+                </div>
                 <p className='mb-7 text-left'>
                   Data including categories for race set by L.A. County
                   Medical-Examiner Coroner.
@@ -186,9 +248,48 @@ export default function CashForKeys() {
               </div>
             </div>
             <div className='mb-14'>
-              <h3 className='mb-7 text-left text-xl font-bold'>
-                <b>City Council District:</b>
+              <h3 className='mb-4 text-left text-xl font-bold'>
+                City Council District:
               </h3>
+              <div className='mb-7 text-left'>
+                <p className='mb-4'>
+                  The highest unhoused <strong>populations</strong> in 2022 (the most
+                  recent data available) were in Council Districts{' '}
+                  <strong>14, 9,</strong> and <strong>1</strong> (followed
+                  closely by 6 and 13),{' '}
+                  <a
+                    href='https://www.lahsa.org/data?id=52-homeless-count-by-city-of-la-council-district-2015-2022'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='underline text-blue-500'
+                  >
+                    according to LAHSA
+                  </a>
+                </p>
+                <p className='mb-4'>
+                  The highest numbers of <strong>deaths</strong> of unhoused people in 2023 were in Council Districts <strong>14</strong> and <strong>1</strong>.
+                </p>
+                <div>
+                  <p className='mb-2 font-bold'>Unhoused Deaths by City Council District, 2023:</p>
+                  <ul className='ml-4'>
+                    <li>Council District 1: 105 deaths <b>(11.7%)</b></li>
+                    <li>Council District 2: 37 deaths <b>(4.1%)</b></li>
+                    <li>Council District 3: 20 deaths <b>(2.2%)</b></li>
+                    <li>Council District 4: 35 deaths <b>(3.9%)</b></li>
+                    <li>Council District 5: 45 deaths <b>(5.0%)</b></li>
+                    <li>Council District 6: 46 deaths <b>(5.1%)</b></li>
+                    <li>Council District 7: 36 deaths <b>(4.0%)</b></li>
+                    <li>Council District 8: 31 deaths <b>(3.4%)</b></li>
+                    <li>Council District 9: 40 deaths <b>(4.4%)</b></li>
+                    <li>Council District 10: 40 deaths <b>(4.4%)</b></li>
+                    <li>Council District 11: 48 deaths <b>(5.3%)</b></li>
+                    <li>Council District 12: 38 deaths <b>(4.2%)</b></li>
+                    <li>Council District 13: 77 deaths <b>(8.6%)</b></li>
+                    <li>Council District 14: 269 deaths <b>(29.9%)</b></li>
+                    <li>Council District 15: 33 deaths <b>(3.7%)</b></li>
+                  </ul>
+                </div>
+              </div>
               <div>
                 <h4>Unhoused Deaths in City of LA by Council District, 2023</h4>
                 <DeathCD />
@@ -196,7 +297,7 @@ export default function CashForKeys() {
             </div>
             <div className='mb-14'>
               <h3 className='mb-7 text-left text-xl font-bold'>
-                <b>Month:</b>
+                Month:
               </h3>
               <div className='mb-7 text-left'>
                 <p className='mb-4'>
