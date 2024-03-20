@@ -20,10 +20,14 @@ export default function CashForKeys() {
   useEffect(() => {
     const canvases = document.querySelectorAll('canvas');
     const labels = [
+      'Pie chart of unhoused deaths in the city of LA by mode in 2023 with percentages',
       'Bar chart of number of unhoused deaths in city of LA by mode in year 2023. 678 deaths by accident. 40 deaths by homicide. 160 deaths by natural causes. 16 deaths by suicide. 6 undetermined modes of death.',
       'Bar chart of number of unhoused deaths in city of LA by place in year 2023. 14 deaths in abandoned/vacant building. 19 deaths in business/restaurant/mall/plaza. 19 deaths in encampment. 3 deaths in facility/building. 4 deaths in garage. 135 deaths in healthcare facility. 20 deaths in hotel/motel. 2 deaths in jail. 9 deaths in mobilehome/motorhome/trailer. 18 deaths in other. 22 deaths outdoors (nature). 23 deaths at park/recreation areas. 31 deaths in parking. 12 deaths in patio/yard/shed. 24 deaths in public transit. 48 deaths in residence. 7 deaths in restroom/bathroom. 16 deaths in shelter. 338 deaths on street/freeway/tunnel/sidewalk. 38 deaths in tent. 70 deaths in vehicle.',
+      'Pie chart of unhoused deaths in city of LA by race in 2023 with percentages',
       'Bar chart of number of unhoused deaths in city of LA by race in year 2023. 4 American Indian. 17 Asian. 281 Black. 1 Hawaiian/Pacific Islander. 289 Hispanic/Latino. 1 Hispanic/Latino/Black. 6 Hispanic/Latino/White. 3 Middle Eastern. 24 Unknown. 274 White.',
+      'Pie chart of number of unhoused deaths in city of LA by council district in year 2023 with percentages',
       'Bar chart of number of unhoused deaths in city of LA by council district in year 2023. CD 1 had 105 deaths. CD 2 had 37 deaths. CD 3 had 20 deaths. CD 4 had 35 deaths. CD 5 had 45 deaths. CD 6 had 46 deaths. CD 7 had 36 deaths. CD 8 had 31 deaths. CD 9 had 40 deaths. CD 10 had 40 deaths. CD 11 had 48 deaths. CD 12 had 38 deaths. CD 13 had 77 deaths. CD 14 had 269 deaths. CD 15 had 33 deaths.',
+      'Pie chart of number of unhoused deaths in city of LA by month in year 2023 with percentages.',
       'Bar chart of number of unhoused deaths in city of LA by month in year 2023. 115 deaths in January. 100 deaths in February. 87 deaths in March. 81 deaths in April. 70 deaths in May. 76 deaths in June. 77 deaths in July. 81 deaths in August. 77 deaths in September. 71 deaths in October. 45 deaths in November. 20 deaths in December.',
     ];
 
