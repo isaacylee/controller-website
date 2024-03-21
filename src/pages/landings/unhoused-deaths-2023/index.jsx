@@ -14,6 +14,7 @@ import DeathPlace from './DeathPlace';
 import DeathRace from './DeathRace';
 import ModePie from './ModePie';
 import MonthPie from './MonthPie';
+import PlacePie from './PlacePie';
 import RacePie from './RacePie';
 
 export default function CashForKeys() {
@@ -68,7 +69,7 @@ export default function CashForKeys() {
               </button>
             </Link>
             <Link
-              href='https://unhoused-deaths-2023.vercel.app/'
+              href='https://unhouseddeaths2023.lacontroller.app/'
               passHref
               target='_blank'
             >
@@ -102,6 +103,11 @@ export default function CashForKeys() {
               <ul className='ml-4 mb-4'>
                 <li>
                   &#x2022; Most common mode of death: <b>Accident (75%)</b>
+                </li>
+                <li>
+                  &#x2022; <b>At least 73%</b> of deaths were in{' '}
+                  <strong>streets or areas without proper utilities</strong>,
+                  such as tents, parking lots, parks, RVs, and vacant buildings.
                 </li>
                 <li>
                   &#x2022; Most common place of death:
@@ -173,6 +179,24 @@ export default function CashForKeys() {
               <h3 className='mb-4 text-left text-xl font-bold'>Place:</h3>
               <div>
                 <div className='mb-7 text-left'>
+                  <p className='mb-4'>
+                    <strong>At least 73%</strong> of deaths were in{' '}
+                    <strong>streets or areas without proper utilities</strong>,
+                    such as tents, parking lots, parks, RVs, and vacant
+                    buildings.
+                  </p>
+                  <p className='mb-4'>
+                    <b>15%</b> were in <b>healthcare facilities</b>.
+                  </p>
+                  <p className='mb-4'>
+                    <b>10%</b> were in other <b>sheltered places</b>, such as
+                    hotels, residences, and interim housing facilities.
+                  </p>
+                  <p className='mb-4'>
+                    (<b>2%</b> were classified as taking place in "<b>Other</b>
+                    ".)
+                  </p>
+                  <PlacePie />
                   <p className='mb-2 font-bold'>Top 5 Places of Death:</p>
                   <ul className='ml-4'>
                     <li>
@@ -259,40 +283,74 @@ export default function CashForKeys() {
               </h3>
               <div className='mb-7 text-left'>
                 <p className='mb-4'>
-                  The highest unhoused <strong>populations</strong> in 2022 (the most
-                  recent data available) were in Council Districts{' '}
+                  The highest unhoused <strong>populations</strong> in 2022 (the
+                  most recent data available) were in Council Districts{' '}
                   <strong>14, 9,</strong> and <strong>1</strong> (followed
                   closely by 6 and 13),{' '}
                   <a
                     href='https://www.lahsa.org/data?id=52-homeless-count-by-city-of-la-council-district-2015-2022'
                     target='_blank'
                     rel='noreferrer'
-                    className='underline text-blue-500'
+                    className='text-blue-500 underline'
                   >
                     according to LAHSA
                   </a>
                 </p>
                 <p className='mb-4'>
-                  The highest numbers of <strong>deaths</strong> of unhoused people in 2023 were in Council Districts <strong>14</strong> and <strong>1</strong>.
+                  The highest numbers of <strong>deaths</strong> of unhoused
+                  people in 2023 were in Council Districts <strong>14</strong>{' '}
+                  and <strong>1</strong>.
                 </p>
                 <div>
-                  <p className='mb-2 font-bold'>Unhoused Deaths by City Council District, 2023:</p>
+                  <p className='mb-2 font-bold'>
+                    Unhoused Deaths by City Council District, 2023:
+                  </p>
                   <ul className='ml-4'>
-                    <li>Council District 1: 105 deaths <b>(11.7%)</b></li>
-                    <li>Council District 2: 37 deaths <b>(4.1%)</b></li>
-                    <li>Council District 3: 20 deaths <b>(2.2%)</b></li>
-                    <li>Council District 4: 35 deaths <b>(3.9%)</b></li>
-                    <li>Council District 5: 45 deaths <b>(5.0%)</b></li>
-                    <li>Council District 6: 46 deaths <b>(5.1%)</b></li>
-                    <li>Council District 7: 36 deaths <b>(4.0%)</b></li>
-                    <li>Council District 8: 31 deaths <b>(3.4%)</b></li>
-                    <li>Council District 9: 40 deaths <b>(4.4%)</b></li>
-                    <li>Council District 10: 40 deaths <b>(4.4%)</b></li>
-                    <li>Council District 11: 48 deaths <b>(5.3%)</b></li>
-                    <li>Council District 12: 38 deaths <b>(4.2%)</b></li>
-                    <li>Council District 13: 77 deaths <b>(8.6%)</b></li>
-                    <li>Council District 14: 269 deaths <b>(29.9%)</b></li>
-                    <li>Council District 15: 33 deaths <b>(3.7%)</b></li>
+                    <li>
+                      Council District 1: 105 deaths <b>(11.7%)</b>
+                    </li>
+                    <li>
+                      Council District 2: 37 deaths <b>(4.1%)</b>
+                    </li>
+                    <li>
+                      Council District 3: 20 deaths <b>(2.2%)</b>
+                    </li>
+                    <li>
+                      Council District 4: 35 deaths <b>(3.9%)</b>
+                    </li>
+                    <li>
+                      Council District 5: 45 deaths <b>(5.0%)</b>
+                    </li>
+                    <li>
+                      Council District 6: 46 deaths <b>(5.1%)</b>
+                    </li>
+                    <li>
+                      Council District 7: 36 deaths <b>(4.0%)</b>
+                    </li>
+                    <li>
+                      Council District 8: 31 deaths <b>(3.4%)</b>
+                    </li>
+                    <li>
+                      Council District 9: 40 deaths <b>(4.4%)</b>
+                    </li>
+                    <li>
+                      Council District 10: 40 deaths <b>(4.4%)</b>
+                    </li>
+                    <li>
+                      Council District 11: 48 deaths <b>(5.3%)</b>
+                    </li>
+                    <li>
+                      Council District 12: 38 deaths <b>(4.2%)</b>
+                    </li>
+                    <li>
+                      Council District 13: 77 deaths <b>(8.6%)</b>
+                    </li>
+                    <li>
+                      Council District 14: 269 deaths <b>(29.9%)</b>
+                    </li>
+                    <li>
+                      Council District 15: 33 deaths <b>(3.7%)</b>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -303,9 +361,7 @@ export default function CashForKeys() {
               </div>
             </div>
             <div className='mb-14'>
-              <h3 className='mb-7 text-left text-xl font-bold'>
-                Month:
-              </h3>
+              <h3 className='mb-7 text-left text-xl font-bold'>Month:</h3>
               <div className='mb-7 text-left'>
                 <p className='mb-4'>
                   The <b>highest</b> numbers of deaths occurred in{' '}
