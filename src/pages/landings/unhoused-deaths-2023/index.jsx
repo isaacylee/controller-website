@@ -117,7 +117,7 @@ export default function CashForKeys() {
                   such as tents, parking lots, parks, RVs, and vacant buildings.
                 </li>
                 <li>
-                  &#x2022; Most common place of death:
+                  &#x2022; Most common place of death:{' '}
                   <b>Street/Freeway/Tunnel/Sidewalk</b>
                 </li>
                 <li>
