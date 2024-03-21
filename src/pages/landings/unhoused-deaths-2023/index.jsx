@@ -23,6 +23,7 @@ export default function CashForKeys() {
     const labels = [
       'Pie chart of unhoused deaths in the city of LA by mode in 2023 with percentages',
       'Bar chart of number of unhoused deaths in city of LA by mode in year 2023. 678 deaths by accident. 40 deaths by homicide. 160 deaths by natural causes. 16 deaths by suicide. 6 undetermined modes of death.',
+      'Pie chart of unhoused deaths in city of LA by places without proper utilities and places with utilities',
       'Bar chart of number of unhoused deaths in city of LA by place in year 2023. 14 deaths in abandoned/vacant building. 19 deaths in business/restaurant/mall/plaza. 19 deaths in encampment. 3 deaths in facility/building. 4 deaths in garage. 135 deaths in healthcare facility. 20 deaths in hotel/motel. 2 deaths in jail. 9 deaths in mobilehome/motorhome/trailer. 18 deaths in other. 22 deaths outdoors (nature). 23 deaths at park/recreation areas. 31 deaths in parking. 12 deaths in patio/yard/shed. 24 deaths in public transit. 48 deaths in residence. 7 deaths in restroom/bathroom. 16 deaths in shelter. 338 deaths on street/freeway/tunnel/sidewalk. 38 deaths in tent. 70 deaths in vehicle.',
       'Pie chart of unhoused deaths in city of LA by race in 2023 with percentages',
       'Bar chart of number of unhoused deaths in city of LA by race in year 2023. 4 American Indian. 17 Asian. 281 Black. 1 Hawaiian/Pacific Islander. 289 Hispanic/Latino. 1 Hispanic/Latino/Black. 6 Hispanic/Latino/White. 3 Middle Eastern. 24 Unknown. 274 White.',
