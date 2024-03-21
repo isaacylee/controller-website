@@ -94,7 +94,7 @@ function PlacePie() {
   
 
   return (
-    <div className='my-12 mx-10 sm:mx-10 md:mx-20 lg:mx-28 xl:mx-32'>
+    <div className='my-7 mx-10 sm:mx-10 md:mx-20 lg:mx-28 xl:mx-32'>
       <Pie data={data} height={100} options={options} />
     </div>
   );

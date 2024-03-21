@@ -5,6 +5,7 @@ import React, { useEffect } from 'react';
 
 import Navbar from '@/components/Navbar';
 
+import AgePie from './AgePie';
 import CDPie from './CDPie';
 import DeathAge from './DeathAge';
 import DeathCD from './DeathCD';
@@ -197,7 +198,12 @@ export default function CashForKeys() {
                     (<b>2%</b> were classified as taking place in "<b>Other</b>
                     ".)
                   </p>
+                </div>
+                <div>
+                  <h4>Unhoused Deaths in City of LA by Place, 2023</h4>
                   <PlacePie />
+                </div>
+                <div className='mb-7 text-left'>
                   <p className='mb-2 font-bold'>Top 5 Places of Death:</p>
                   <ul className='ml-4'>
                     <li>
@@ -396,11 +402,50 @@ export default function CashForKeys() {
               </div>
             </div>
             <div className='mb-14'>
-              <h3 className='mb-7 text-left text-xl font-bold'>
-                <b>Deaths by Age:</b>
-              </h3>
+              <h3 className='mb-7 text-left text-xl font-bold'>Age:</h3>
+              <div className='mb-7 text-left'>
+                <p className='mb-4'>
+                  <b>68%</b> of deaths were suffered by people{' '}
+                  <b>ages 31-60. Ages 51-60</b> had the <b>highest</b> death
+                  rate.
+                </p>
+                <p className='mb-2 font-bold'>Age:</p>
+                <ul className='ml-4'>
+                  <li>
+                    Under 1 year: 3 deaths <b>(0.3%)</b>
+                  </li>
+                  <li>
+                    1-10 years: 0 deaths <b>(0.0%)</b>
+                  </li>
+                  <li>
+                    11-20 years: 5 deaths <b>(0.6%)</b>
+                  </li>
+                  <li>
+                    21-30 years: 93 deaths <b>(10.4%)</b>
+                  </li>
+                  <li>
+                    31-40 years: 187 deaths <b>(20.9%)</b>
+                  </li>
+                  <li>
+                    41-50 years: 183 deaths <b>(20.5%)</b>
+                  </li>
+                  <li>
+                    51-60 years: 243 deaths <b>(27.2%)</b>
+                  </li>
+                  <li>
+                    61-70 years: 139 deaths <b>(15.6%)</b>
+                  </li>
+                  <li>
+                    71-80 years: 36 deaths <b>(4.0%)</b>
+                  </li>
+                  <li>
+                    Over 81 years: 4 deaths <b>(0.4%)</b>
+                  </li>
+                </ul>
+              </div>
               <div>
                 <h4>Unhoused Deaths in City of LA by Age, 2023</h4>
+                <AgePie />
                 <DeathAge />
               </div>
             </div>
