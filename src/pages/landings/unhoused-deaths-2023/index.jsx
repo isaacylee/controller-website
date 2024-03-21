@@ -107,6 +107,11 @@ export default function CashForKeys() {
                   &#x2022; Most common mode of death: <b>Accident (75%)</b>
                 </li>
                 <li>
+                  &#x2022; <b>40</b> unhoused people were murdered in 2023,
+                  which is <b>12% of all homicides</b> in the City of LA.
+                  Unhoused people are only about 1% of the population.
+                </li>
+                <li>
                   &#x2022; <b>At least 73%</b> of deaths were in{' '}
                   <strong>streets or areas without proper utilities</strong>,
                   such as tents, parking lots, parks, RVs, and vacant buildings.
