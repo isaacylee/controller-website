@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/deptvacancies_thumbnail.png?alt=media&token=c70b7a9b-c726-490a-90fa-be7c8ec5c869",
+      "name": "City of LA Staffing Vacancies by Department",
+      "year": "2024",
+      "dept": "Charts",
+      "link": "https://deptvacancies.lacontroller.app/"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/liabclaim.png?alt=media&token=ca5c7821-85b2-45c5-826c-3dc7bc0ae14f",
       "name": "City Of LA Liability Claim Payouts FY2020 - FY2023",
       "year": "2024",
@@ -41,13 +48,6 @@
       "year": "2023",
       "dept": "Map",
       "link": "https://4118recentarrests.lacontroller.app/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/deptvacancies_thumbnail.png?alt=media&token=c70b7a9b-c726-490a-90fa-be7c8ec5c869",
-      "name": "City of LA Staffing Vacancies by Department",
-      "year": "2023",
-      "dept": "Charts",
-      "link": "https://deptvacancies.lacontroller.app/"
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/ncreport.png?alt=media&token=18e2c5d3-6829-4ea0-a3df-27eb809406fa",
