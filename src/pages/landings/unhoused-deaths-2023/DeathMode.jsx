@@ -7,8 +7,45 @@ import {Bar} from "react-chartjs-2";
 
 Chart.register(...registerables);
 
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== 'undefined') {
+    const isDark = isDarkMode();
+    console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== 'undefined') {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
 export default function DeathMode() {
   const [mode, setMode] = useState([]);
+  const isDark = isDarkMode();
 
   useEffect(() => {
     axios
@@ -44,7 +81,7 @@ export default function DeathMode() {
           legend: {
             display: false,
             labels: {
-              color: "rgb(255, 255, 255)",
+              color: isDark ? 'white' : 'black',
               font: {
                 weight: "bold",
                 size: 12,
@@ -56,31 +93,31 @@ export default function DeathMode() {
           y: {
             grid: {
               display: true,
-              color: "rgba(198, 198, 198, .5)",
+              color: isDark ? 'rgba(198, 198, 198, .5)' : 'rgb(211, 211, 211)',
             },
             ticks: {
-              color: "rgb(255, 255, 255)",
+              color: isDark ? 'white' : 'black',
             },
             title: {
                 display: true,
                 text: '# of Deaths',
-              color: "rgb(255, 255, 255)",
+                color: isDark ? 'white' : 'black',
             }
           },
           x: {
             grid: {
               display: true,
-              color: "rgba(198, 198, 198, .5)",
+              color: isDark ? 'rgba(198, 198, 198, .5)' : 'rgb(211, 211, 211)',
             },
             ticks: {
-              color: "rgb(255, 255, 255)",
+              color: isDark ? 'white' : 'black',
             },
           },
         },
       };
     
       return (
-        <div className="mt-6 py-4 px-1 sm:px-5 md:px-9 lg:px-20 xl:px-24 bg-zinc-900">
+        <div className="mt-6 py-4 px-1 sm:px-5 md:px-9 lg:px-20 xl:px-24 border border-zinc-900">
           <Bar data={data} height={100} width={150} options={options} />
         </div>
       );
