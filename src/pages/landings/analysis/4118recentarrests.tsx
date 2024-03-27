@@ -44,7 +44,7 @@ export default function Home() {
             </button>
           </a>
           <a
-            href='https://4118recentarrests.lacontroller.io/'
+            href='https://4118recentarrests.lacontroller.app/'
             target='_blank'
             rel='noopener noreferrer'
           >
