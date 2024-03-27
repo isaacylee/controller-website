@@ -9,23 +9,7 @@ import Seo from '@/components/Seo';
 
 import collections from '@/collectionsboard.json';
 
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
-/*
-
-Copied from the original site using this 
-https://gist.github.com/kylerchin/cecf448ee67c57d3b05b4b25593d0c59
-*/
 
 export default function CollectionsBoard(props: any) {
   return (
