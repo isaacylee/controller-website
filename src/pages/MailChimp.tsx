@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
@@ -56,7 +55,7 @@ const MailchimpForm = () => {
           </div>
         </form>
       </div>
-      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+      {/* <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
       <script type="text/javascript">
         {`(function($) {
             window.fnames = new Array();
@@ -69,7 +68,7 @@ const MailchimpForm = () => {
             fnames[5]='MMERGE5';ftypes[5]='text';
           }(jQuery));
           var $mcj = jQuery.noConflict(true);`}
-      </script>
+      </script> */}
     </div></center></>
   );
 };
