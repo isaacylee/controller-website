@@ -113,9 +113,9 @@ export default function Home() {
         {' '}
         <div className='chart-container'>
           <center>
-            <h1 className='mt-5 text-2xl font-bold'>
+            <h2 className='mt-5 text-2xl font-bold'>
               Number of 41.18 Arrests By Year:
-            </h1>
+            </h2>
           </center>
           <br></br>
           <br></br>
@@ -130,9 +130,9 @@ export default function Home() {
         <div className='chart-container'>
           <br></br>
           <center>
-            <h1 className='mt-5 text-2xl font-bold'>
+            <h2 className='mt-5 text-2xl font-bold'>
               41.18 Arrests by Council District:
-            </h1>
+            </h2>
           </center>
           <br></br>
           <center>
@@ -150,7 +150,7 @@ export default function Home() {
           <br />
           <br />
           <center>
-            <h1 className='mt-5 text-2xl font-bold'>41.18 Arrests by Race:</h1>
+            <h2 className='mt-5 text-2xl font-bold'>41.18 Arrests by Race:</h2>
           </center>
           <center>
             <label>{showBarChart ? 'Bar chart' : 'Pie chart'}</label>
@@ -167,7 +167,7 @@ export default function Home() {
         <br></br>
         <div className='chart-container'>
           <center>
-            <h1 className='mt-5 text-2xl font-bold'>41.18 Arrests by Type</h1>
+            <h2 className='mt-5 text-2xl font-bold'>41.18 Arrests by Type</h2>
           </center>
           <br></br>
           <center>
