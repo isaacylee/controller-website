@@ -26,7 +26,7 @@ function isDarkMode() {
 function updateChartLabelColor() {
   if (typeof window !== 'undefined') {
     const isDark = isDarkMode();
-    console.log('isDark:', isDark);
+    // console.log('isDark:', isDark);
     document.documentElement.style.setProperty(
       '--chart-label-color',
       isDark
@@ -52,7 +52,7 @@ export default function DeathAge() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/age')
     .then((response) => {
         const data = response.data.age;
-        console.log("age", data);
+        // console.log("age", data);
         setAge(data);
     })
     .catch((error) => {

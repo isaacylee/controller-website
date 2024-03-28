@@ -16,7 +16,7 @@ function MonthPie() {
       )
       .then((response) => {
         const data = response.data.month;
-        console.log('data', data);
+        // console.log('data', data);
         setMonth(data);
       })
       .catch((error) => {
