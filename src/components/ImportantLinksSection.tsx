@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import React from 'react';
 
 const links = [
   {
@@ -7,7 +7,8 @@ const links = [
 
     // -- use this for mailchimp forn /mailchimp
     name: '📰 Sign up for Newsletters/Texts',
-    url: 'http://eepurl.com/ihOabb', // Update the URL to point to the new route for the MailChimp page
+    url: '/MailChimp', // Update the URL to point to the new route for the MailChimp page
+    // url: 'http://eepurl.com/ihOabb', // Update the URL to point to the new route for the MailChimp page
   },
   { name: '📅 Payroll Calendar', url: '/payrollcalendar/' },
   {
