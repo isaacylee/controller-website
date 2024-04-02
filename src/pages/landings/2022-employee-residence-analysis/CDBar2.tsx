@@ -105,8 +105,6 @@ function CDBar2() {
           font: {
             weight: 'bold',
             size: 12,
-            family: 'Arial', // Add this line with your desired font family
-            lineHeight: 1.2, // Add this line with your desired line height
           },
         },
       },
@@ -143,7 +141,8 @@ function CDBar2() {
         },
         title: {
           display: true,
-          text: category === '# of Employees' ? '# of Employees' : 'Total Payroll',
+          text:
+            category === '# of Employees' ? '# of Employees' : 'Total Payroll',
           color: isDark ? 'white' : 'black',
         },
       },
@@ -163,7 +162,6 @@ function CDBar2() {
       },
     },
   };
-
 
   return (
     <>
