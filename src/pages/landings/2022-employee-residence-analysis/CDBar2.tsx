@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import { Chart, registerables } from 'chart.js';
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 
 Chart.register(...registerables);
@@ -105,6 +105,8 @@ function CDBar2() {
           font: {
             weight: 'bold',
             size: 12,
+            family: 'Arial', // Add this line with your desired font family
+            lineHeight: 1.2, // Add this line with your desired line height
           },
         },
       },
@@ -141,8 +143,7 @@ function CDBar2() {
         },
         title: {
           display: true,
-          text:
-            category === '# of Employees' ? '# of Employees' : 'Total Payroll',
+          text: category === '# of Employees' ? '# of Employees' : 'Total Payroll',
           color: isDark ? 'white' : 'black',
         },
       },
@@ -162,6 +163,7 @@ function CDBar2() {
       },
     },
   };
+
 
   return (
     <>
