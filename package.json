@@ -37,7 +37,6 @@
     "byte-size": "^8.1.0",
     "calendar": "^0.1.1",
     "chart.js": "^4.4.0",
-    "chartjs": "^0.3.24",
     "chartjs-plugin-annotation": "^3.0.1",
     "clsx": "^1.2.1",
     "d3": "^7.8.2",
