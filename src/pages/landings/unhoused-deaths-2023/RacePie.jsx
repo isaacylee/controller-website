@@ -16,7 +16,7 @@ function RacePie() {
       )
       .then((response) => {
         const data = response.data.race;
-        // console.log('data', data);
+        console.log('data', data);
         setRace(data);
       })
       .catch((error) => {

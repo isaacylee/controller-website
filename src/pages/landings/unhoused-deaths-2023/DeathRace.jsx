@@ -26,7 +26,7 @@ function isDarkMode() {
 function updateChartLabelColor() {
   if (typeof window !== 'undefined') {
     const isDark = isDarkMode();
-    // console.log('isDark:', isDark);
+    console.log('isDark:', isDark);
     document.documentElement.style.setProperty(
       '--chart-label-color',
       isDark
