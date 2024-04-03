@@ -14,7 +14,7 @@ function ModePie() {
     .get('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/2023UnhousedDeathsIngest/mode')
     .then((response) => {
         const data = response.data.mode;
-        // console.log("data", data);
+        console.log("data", data);
         setMode(data);
     })
     .catch((error) => {
