@@ -1,9 +1,11 @@
 {
-  
-
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -13,12 +15,16 @@
     "resolveJsonModule": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "isolatedModules": true,
+    "isolatedModules": false,
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "~/*": ["./public/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "~/*": [
+        "./public/*"
+      ]
     },
     "incremental": true
   },
@@ -26,14 +32,17 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    
     "src/components/tooltipsPlot/tooltips.bruh",
     "src/__tests__/pages/pafr22.test.tsx.off",
-     
-  ], 
-  
-  "exclude": ["node_modules", "src/__tests__", "src/lib"],
-  "moduleResolution": ["node_modules", ".next", "node"]
-  
+  ],
+  "exclude": [
+    "node_modules",
+    "src/__tests__",
+    "src/lib"
+  ],
+  "moduleResolution": [
+    "node_modules",
+    ".next",
+    "node"
+  ]
 }
-
