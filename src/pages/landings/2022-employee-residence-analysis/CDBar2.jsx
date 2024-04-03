@@ -53,7 +53,7 @@ function CDBar2() {
       )
       .then((response) => {
         const data = response.data['6Cd'];
-        console.log('cd', data);
+        // console.log('cd', data);
         setCouncilDistrict(data);
       })
       .catch((error) => {
@@ -67,7 +67,7 @@ function CDBar2() {
 
   const onCategoryChange = (e) => {
     setCategory(e.target.value);
-    console.log('target', e.target.value);
+    // console.log('target', e.target.value);
   };
 
   const data = {
