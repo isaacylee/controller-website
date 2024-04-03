@@ -92,76 +92,6 @@ function CDBar2() {
     ],
   };
 
-  // const options = {
-  //   maintainAspectRatio: true,
-  //   responsive: true,
-  //   plugins: {
-  //     legend: {
-  //       display: false,
-  //       labels: {
-  //         labels: {
-  //           color: isDark ? 'white' : 'black',
-  //         },
-  //         font: {
-  //           weight: 'bold',
-  //           size: 12,
-  //         },
-  //       },
-  //     },
-  //     tooltip: {
-  //       callbacks: {
-  //         label: function (context: any) {
-  //           const label = context.dataset.label || '';
-  //           const value = context.parsed.y.toLocaleString(); // Format number with commas
-
-  //           if (category === 'Total Payroll') {
-  //             return `${label}: $${value}`;
-  //           } else {
-  //             return `${label}: ${value}`;
-  //           }
-  //         },
-  //       },
-  //     },
-  //   },
-  //   scales: {
-  //     y: {
-  //       grid: {
-  //         display: true,
-  //         color: isDark ? '#44403c' : 'black',
-  //       },
-  //       ticks: {
-  //         color: isDark ? 'white' : 'black',
-  //         callback: function (value: any) {
-  //           if (category === 'Total Payroll') {
-  //             return '$' + value.toLocaleString();
-  //           } else {
-  //             return value;
-  //           }
-  //         },
-  //       },
-  //       title: {
-  //         display: true,
-  //         text:
-  //           category === '# of Employees' ? '# of Employees' : 'Total Payroll',
-  //         color: isDark ? 'white' : 'black',
-  //       },
-  //     },
-  //     x: {
-  //       grid: {
-  //         display: true,
-  //         color: isDark ? '#44403c' : 'black',
-  //       },
-  //       ticks: {
-  //         color: isDark ? 'white' : 'black',
-  //       },
-  //       title: {
-  //         display: true,
-  //         text: 'Council District',
-  //         color: isDark ? 'white' : 'black',
-  //       },
-  //     },
-  //   },
-  // };
   const options = {
     maintainAspectRatio: true,
     responsive: true,
@@ -175,8 +105,6 @@ function CDBar2() {
           font: {
             weight: 'bold',
             size: 12,
-            family: 'Arial', // Add this line with your desired font family
-            lineHeight: 1.2, // Add this line with your desired line height
           },
         },
       },
@@ -213,7 +141,8 @@ function CDBar2() {
         },
         title: {
           display: true,
-          text: category === '# of Employees' ? '# of Employees' : 'Total Payroll',
+          text:
+            category === '# of Employees' ? '# of Employees' : 'Total Payroll',
           color: isDark ? 'white' : 'black',
         },
       },
