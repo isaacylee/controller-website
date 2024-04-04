@@ -14,7 +14,7 @@ const MailchimpForm = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:9090/MailChimp', // Your proxy server URL
+        'http://localhost:9090/mailchimp', // Your proxy server URL
         {
           MERGE0: email,
           MERGE1: fName,
