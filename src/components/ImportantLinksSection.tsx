@@ -3,12 +3,9 @@ import React from 'react';
 
 const links = [
   {
-    //https://docs.google.com/forms/d/e/1FAIpQLSfr1ndu5UaX3IPaxWi30tEpw3J7ZMB5d8HdKC9Uhg9IniIH5w/viewform
-
     // -- use this for mailchimp forn /mailchimp
     name: '📰 Sign up for Newsletters/Texts',
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfr1ndu5UaX3IPaxWi30tEpw3J7ZMB5d8HdKC9Uhg9IniIH5w/viewform', // Update the URL to point to the new route for the MailChimp page
-    // url: 'http://eepurl.com/ihOabb', // Update the URL to point to the new route for the MailChimp page
+    url: 'https://lacontroller.us17.list-manage.com/subscribe?u=0689bc999e6529efb2132dd1e&id=bc5fcb7dd9', // Update the URL to point to the new route for the MailChimp page https://docs.google.com/forms/d/e/1FAIpQLSfr1ndu5UaX3IPaxWi30tEpw3J7ZMB5d8HdKC9Uhg9IniIH5w/viewform
   },
   { name: '📅 Payroll Calendar', url: '/payrollcalendar/' },
   {
