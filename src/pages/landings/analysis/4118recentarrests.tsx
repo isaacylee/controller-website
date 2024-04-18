@@ -5,7 +5,6 @@ import BarChart from './charts/BarChart';
 import NumberOfArrests from './charts/NumberOfArrests';
 import RaceBarChart from './charts/RaceBarChart';
 import RacePieChart from './charts/RacePieChart';
-import TypePieChart from './charts/TypePieChart';
 export default function Home() {
   const [loader, setLoader] = useState(false);
   const [intakeData, setIntake] = useState({});
@@ -195,7 +194,7 @@ export default function Home() {
         <br></br>
         <br></br>
         <br></br>
-        <div className='chart-container'>
+        {/* <div className='chart-container'>
           <center>
             <h2 className='mt-5 text-2xl font-bold'>41.18 Arrests by Type</h2>
           </center>
@@ -203,7 +202,7 @@ export default function Home() {
           <center>
             <TypePieChart />
           </center>
-        </div>
+        </div> */}
       </center>
 
       <br></br>
