@@ -53,7 +53,6 @@ function CDBar2() {
       )
       .then((response) => {
         const data = response.data['6Cd'];
-        // console.log('cd', data);
         setCouncilDistrict(data);
       })
       .catch((error) => {
