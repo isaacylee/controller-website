@@ -259,8 +259,7 @@ export default function PayrollCalendar(props: any) {
     if (category) {
       aria =
         aria +
-        ` is a ${category} ${
-          category.toLowerCase().includes('day') ? '' : 'day'
+        ` is a ${category} ${category.toLowerCase().includes('day') ? '' : 'day'
         }`;
     }
 
@@ -360,27 +359,27 @@ export default function PayrollCalendar(props: any) {
             </Link>
           </div>
           <div className='flex'>
-  <p className='text-green-900 underline dark:text-mejito '>
-    <Link
-      href='/Payroll_Calendar_2024.pdf'
-      className='font-semibold text-green-500 dark:text-mejito'
-    >
-      Print Old Version
-    </Link>
-  </p>
-  
-  {/* Add margin to create space between the links */}
-  <div style={{ margin: '0 10px' }}></div>
+            <p className='text-green-900 underline dark:text-mejito '>
+              <Link
+                href='/Payroll_Calendar_2024.pdf'
+                className='font-semibold text-green-500 dark:text-mejito'
+              >
+                Print Old Version
+              </Link>
+            </p>
 
-  <p className='text-green-900 underline dark:text-mejito '>
-    <Link
-      href='/Payroll_Calendar_2025.pdf'
-      className='font-semibold text-green-500 dark:text-mejito'
-    >
-      Payroll Calendar 2025
-    </Link>
-  </p>
-</div>
+            {/* Add margin to create space between the links */}
+            <div style={{ margin: '0 10px' }}></div>
+
+            <p className='text-green-900 underline dark:text-mejito '>
+              <Link
+                href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FLA_Payroll_Calendar_2025.pdf?alt=media&token=16bbed06-4bc4-4d9f-87d2-c5c2650b06d4'
+                className='font-semibold text-green-500 dark:text-mejito'
+              >
+                Payroll Calendar 2025
+              </Link>
+            </p>
+          </div>
 
 
           <div>
@@ -452,9 +451,8 @@ export default function PayrollCalendar(props: any) {
                               )}  ${checkiftodaysdate(monthindex + 1, day)}`}
                             >
                               <time
-                                dateTime={`${selectedYear}-${
-                                  monthindex + 1
-                                }-${day}`}
+                                dateTime={`${selectedYear}-${monthindex + 1
+                                  }-${day}`}
                               >
                                 <p
                                   className='m-auto print:text-black'
