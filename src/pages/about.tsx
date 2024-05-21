@@ -336,17 +336,15 @@ export default function About(props: any) {
                 <div className='flex flex-col gap-y-2'>
                   <p className='text-xl'>Accountability and Oversight</p>
                   <ProfileCard
+                    name='Dinah M. Manning'
+                    title='Deputy Chief of Accountability & Oversight'
+                    picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
+                  />
+                  <ProfileCard
                     name='Ashley Bennett'
                     title='Director of Homelessness'
                     picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
                   />
-
-                  <ProfileCard
-                    name='Dinah M. Manning'
-                    title='Director of Public Safety'
-                    picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
-                  />
-
                   <ProfileCard
                     name='Vincent de Vera'
                     picture='/images/staff/VincentdeVera-ExecAide.jpg'
