@@ -50,7 +50,9 @@ export default function FraudWasteAndAbuse(props: any) {
             >
               lapdonline.org/file-a-police-report/
             </a>
-            .
+            <br></br>
+
+            or by phone at 1-877-ASK-LAPD.
           </p>
 
           <div className='mt-1 flex flex-row gap-x-2'>
@@ -60,10 +62,11 @@ export default function FraudWasteAndAbuse(props: any) {
             <Link href='https://cityoflaprod.service-now.com/fwa/?id=fwa_login'>
               <div className={kirbybutton}>Follow Up on your Case</div>
             </Link>
-             
+
           </div>
           <div className='mt-8 dark:text-white'>
-          To make a report by phone, call (866) 428-1514.
+            To make an online report please click New Report above. We encourage users to file a report online as you will have the ability to upload documents and information, respond to questions from our unit, and provide additional details if new information becomes available. Otherwise, to make a report by phone during business hours, call (866) 428-1514.
+            {/* To make a report by phone, call (866) 428-1514. */}
           </div>
           <div className='mt-8 dark:text-white'>
             {' '}
