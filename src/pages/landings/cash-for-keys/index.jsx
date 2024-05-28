@@ -119,6 +119,11 @@ export default function CashForKeys() {
           <div className='mb-16'>
             {' '}
             <BuyoutsByDollars />
+            <p className='dark:text-white text-left mt-4'>
+              *Note: Some tenant buyouts may have received both rent credit and
+              monetary compensation. However, those receiving both are not
+              included in the total for the Rent Credits section of this table.
+            </p>
           </div>
           <div
             className='mb-16 dark:text-white'
