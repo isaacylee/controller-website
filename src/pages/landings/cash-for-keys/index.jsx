@@ -13,14 +13,14 @@ export default function CashForKeys() {
   return (
     <>
       <Head>
-        <title>Cash for Keys (2019-2023)</title>
+        <title>Cash for Keys (Jan 2019 - Mar 2024)</title>
       </Head>
       <Navbar />
       <body className='container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1 className='pt-8 pb-4 text-center text-3xl font-bold dark:text-white'>
-              Cash For Keys (2019 - 2023)
+              Cash For Keys (Jan 2019 - Mar 2024)
             </h1>
           </div>
           <div>
@@ -49,26 +49,19 @@ export default function CashForKeys() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-4'>
-              Amid the ongoing housing crisis, our Office wanted to provide
-              transparency on how many tenant buyouts, or “cash for keys”
-              agreements (where a landlord pays a tenant to move out), are
-              happening throughout the City, and where. Data includes all tenant
-              buyout agreements filed between 2019 and 2023.
+              [May 2024 Update] We analyzed updated data from the Los Angeles
+              Housing Department (LAHD) through the month of March 2024.
             </p>
-            <p>
-              <b>Between 2019-2023:</b>
+            <p className='mb-4'>
+              The data reveals that from January 2019 through March 2024, LAHD
+              received a total of <b>5,008</b> Tenant Buyout Agreements (also
+              known as “Cash for Keys” agreements). <b>$24,818</b> was the
+              average buyout amount.
             </p>
-            <ul className='mb-10 ml-4 sm:ml-4 md:ml-6 lg:ml-8 xl:ml-10'>
-              <li>
-                &bull;{' '}
-                <b>
-                  4,869 Tenant Buyout or “Cash for Keys” agreements were filed
-                </b>
-              </li>
-              <li>
-                &bull; <b>$24,704 was the average buyout amount</b>
-              </li>
-            </ul>
+            <p className='mb-4'>
+              <b>97</b> Tenant Buyout agreements were filed this year so far,
+              from January to March 2024.
+            </p>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h3 className='mb-4 text-xl font-bold'>
@@ -90,8 +83,8 @@ export default function CashForKeys() {
             </h3>
             <p className='mb-4 text-left dark:text-white'>
               Units located within Council District <b>10</b> had the highest
-              number of tenant buyouts <b>(997)</b>, followed by Council
-              District <b>13 (970)</b>.
+              number of tenant buyouts <b>(1,019)</b>, followed by Council
+              District <b>13 (999)</b>.
             </p>
           </div>
           <div className='mb-16'>
@@ -119,8 +112,8 @@ export default function CashForKeys() {
               <b>Tenant Buyouts by $ Range</b>
             </h3>
             <p className='mb-4 text-left'>
-              The total dollar amount of tenant buyouts was <b>$118,305,500</b>{' '}
-              with an average tenant buyout amount of <b>$24,704 per unit</b>.
+              The total dollar amount of tenant buyouts was <b>$122,300,990</b>{' '}
+              with an average tenant buyout amount of <b>$24,818 per unit</b>.
             </p>
           </div>
           <div className='mb-16'>
