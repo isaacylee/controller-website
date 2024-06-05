@@ -302,7 +302,7 @@ export default function About(props: any) {
                 </p>
                 <ProfileCard
                   name='Rahoof (Wally) Oyewole'
-                  title='Chief Financial Officer/Director of Financial Analysis and Reporting'
+                  title='Director of Financial Analysis and Reporting'
                   picture='/images/staff/WallyOyewole-CFO.jpg'
                 />
               </div>
