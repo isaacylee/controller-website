@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/homeless_dashboard%2FHomelessnessDashboard.png?alt=media&token=c8dc1cf9-5291-457b-be4d-e1414147b1cb",
+      "name": "Homelessness Dashboard",
+      "year": "2024",
+      "dept": "Dashboard",
+      "link": "https://homelessdashboard.lacontroller.app/"
+    },
+    {
       "image": "/images/FY2024-25proposed-budget.png",
       "name": "FY2024-25 Proposed Budget",
       "year": "2024",
