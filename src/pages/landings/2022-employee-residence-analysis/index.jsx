@@ -1,23 +1,22 @@
 'use client';
 import Head from 'next/head';
 
+import Bargaining from '@/components/2022employeeResidenceAnalysis/Bargaining';
+import CDBar2 from '@/components/2022employeeResidenceAnalysis/CDBar2';
+import Cities from '@/components/2022employeeResidenceAnalysis/Cities';
+import Department from '@/components/2022employeeResidenceAnalysis/Department';
+import CD from '@/components/2022employeeResidenceAnalysis/EmployeesByCD';
+import FiftyK from '@/components/2022employeeResidenceAnalysis/FiftyK';
+import FiftyKPieIn from '@/components/2022employeeResidenceAnalysis/FiftyKPieIn';
+import FiftyKPieOut from '@/components/2022employeeResidenceAnalysis/FiftyKPieOut';
+import HundredK from '@/components/2022employeeResidenceAnalysis/HundredK';
+import HundredKIn from '@/components/2022employeeResidenceAnalysis/HundredKIn';
+import HundredKOut from '@/components/2022employeeResidenceAnalysis/HundredKOut';
+import OutOfState from '@/components/2022employeeResidenceAnalysis/OutOfState';
+import Summary from '@/components/2022employeeResidenceAnalysis/Summary';
+import SummaryPie1 from '@/components/2022employeeResidenceAnalysis/SummaryPie1';
+import SummaryPie2 from '@/components/2022employeeResidenceAnalysis/SummaryPie2';
 import Navbar from '@/components/Navbar';
-
-import Bargaining from './Bargaining';
-import CDBar2 from './CDBar2';
-import Cities from './Cities';
-import Department from './Department';
-import CD from './EmployeesByCD';
-import FiftyK from './FiftyK';
-import FiftyKPieIn from './FiftyKPieIn';
-import FiftyKPieOut from './FiftyKPieOut';
-import HundredK from './HundredK';
-import HundredKIn from './HundredKIn';
-import HundredKOut from './HundredKOut';
-import OutOfState from './OutOfState';
-import Summary from './Summary';
-import SummaryPie1 from './SummaryPie1';
-import SummaryPie2 from './SummaryPie2';
 
 export default function Employees() {
   return (
