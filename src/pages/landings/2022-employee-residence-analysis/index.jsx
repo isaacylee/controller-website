@@ -1,4 +1,5 @@
 'use client';
+import Head from 'next/head';
 
 import Navbar from '@/components/Navbar';
 
@@ -21,6 +22,32 @@ import SummaryPie2 from './SummaryPie2';
 export default function Employees() {
   return (
     <>
+      <Head>
+        <title>2022 City of LA Payroll Employee Residence Analysis</title>
+        <meta
+          name='description'
+          content="A detailed analysis of the residence locations of City of LA payroll employees in 2022, exploring the impact on the city's economy and community."
+        />
+        <meta
+          name='keywords'
+          content='City of LA, Payroll, Employee Residence, 2022 Analysis, Local Hire, City Budget, Community Engagement'
+        />
+        <meta name='author' content='Executive Office of the Controller' />
+        <meta
+          property='og:title'
+          content='2022 City of LA Payroll Employee Residence Analysis'
+        />
+        <meta
+          property='og:description'
+          content="A detailed analysis of the residence locations of City of LA payroll employees in 2022, exploring the impact on the city's economy and community."
+        />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://controller.lacity.gov/landings/2022-employee-residence-analysis' />
+        {/* <meta
+          property='og:image'
+          content='https://controller.lacity.gov/landings/2022-employee-residence-analysis/image.jpg'
+        /> */}
+      </Head>
       <Navbar />
       <main className='md:max-w container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>
