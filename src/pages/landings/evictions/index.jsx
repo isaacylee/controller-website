@@ -1,13 +1,12 @@
 'use client';
 import Link from 'next/link';
 
+import FairMarketRent from '@/components/eviction/FairMarketRent';
+import NoticesByCd from '@/components/eviction/NoticesByCd';
+import NoticesByMonth from '@/components/eviction/NoticesByMonth';
+import NoticeType from '@/components/eviction/NoticeType';
+import Top20Zip from '@/components/eviction/Top20Zip';
 import Navbar from '@/components/Navbar';
-
-import FairMarketRent from './FairMarketRent';
-import NoticesByCd from './NoticesByCd';
-import NoticesByMonth from './NoticesByMonth';
-import NoticeType from './NoticeType';
-import Top20Zip from './Top20Zip';
 
 export default function Evictions() {
   return (

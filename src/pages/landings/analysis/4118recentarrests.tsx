@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 
-import BarChart from './charts/BarChart';
-import NumberOfArrests from './charts/NumberOfArrests';
-import RaceBarChart from './charts/RaceBarChart';
-import RacePieChart from './charts/RacePieChart';
+import BarChart from '@/components/charts/BarChart';
+import NumberOfArrests from '@/components/charts/NumberOfArrests';
+import RaceBarChart from '@/components/charts/RaceBarChart';
+import RacePieChart from '@/components/charts/RacePieChart';
 export default function Home() {
   const [loader, setLoader] = useState(false);
   const [intakeData, setIntake] = useState({});

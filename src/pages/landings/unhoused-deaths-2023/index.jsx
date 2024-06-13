@@ -4,16 +4,15 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 
 import Navbar from '@/components/Navbar';
-
-import DeathAge from './DeathAge';
-import DeathCD from './DeathCD';
-import DeathMode from './DeathMode';
-import DeathMonth from './DeathMonth';
-import DeathPlace from './DeathPlace';
-import DeathRace from './DeathRace';
-import ModePie from './ModePie';
-import PlacePie from './PlacePie';
-import RacePie from './RacePie';
+import DeathAge from '@/components/unhousedDeaths/DeathAge';
+import DeathCD from '@/components/unhousedDeaths/DeathCD';
+import DeathMode from '@/components/unhousedDeaths/DeathMode';
+import DeathMonth from '@/components/unhousedDeaths/DeathMonth';
+import DeathPlace from '@/components/unhousedDeaths/DeathPlace';
+import DeathRace from '@/components/unhousedDeaths/DeathRace';
+import ModePie from '@/components/unhousedDeaths/ModePie';
+import PlacePie from '@/components/unhousedDeaths/PlacePie';
+import RacePie from '@/components/unhousedDeaths/RacePie';
 
 export default function CashForKeys() {
   useEffect(() => {

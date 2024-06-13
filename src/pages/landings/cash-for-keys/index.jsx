@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 import Navbar from '@/components/Navbar';
 
-import BuyoutsByDistrict from './BuyoutsByDistrict';
-import BuyoutsByDollars from './BuyoutsByDollars';
-import BuyoutsByYear from './BuyoutsByYear';
-import BuyoutsByZip from './BuyoutsByZip';
+import BuyoutsByDistrict from '../../../components/cashForKeys/BuyoutsByDistrict';
+import BuyoutsByDollars from '../../../components/cashForKeys/BuyoutsByDollars';
+import BuyoutsByYear from '../../../components/cashForKeys/BuyoutsByYear';
+import BuyoutsByZip from '../../../components/cashForKeys/BuyoutsByZip';
 
 export default function CashForKeys() {
   return (
