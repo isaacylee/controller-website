@@ -27,7 +27,7 @@ export default function Analysis() {
         const cd = entry.councilDistrict;
         const operationType = entry.operationType;
 
-        if (cd) {
+        if (cd && cd >= 1 && cd <= 15) { // Ensure cd is within valid range
           if (operationType === 'CARE') {
             careOperations[cd] += 1;
           } else if (operationType === 'CARE+') {
