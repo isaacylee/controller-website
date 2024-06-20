@@ -124,6 +124,14 @@ export default function Analysis() {
             Locations are prioritized by Council Office.
             <br></br>
             CARE Program deployment is coordinated through collaboration between Council offices and City Departments.
+            <br></br>
+            The Bureau of Sanitation (LASAN) was provided funding in the 2023-24 Adopted Budget to
+            continue the Comprehensive Cleaning and Rapid Engagement Program (CARE)
+            Comprehensive Cleaning and Rapid Engagement Plus Program (CARE+). The CARE program
+            ensures the City's sidewalks and other public areas are safe, clean, sanitary, and accessible for
+            public use. The CARE+ program is responsible for removing abandoned waste from the public
+            right of way and cleaning encampments.
+
           </p>
         </div>
 
