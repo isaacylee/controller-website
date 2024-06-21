@@ -119,11 +119,11 @@ export default function Analysis() {
       <div className="container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl">
         <div className="py-4">
           <p className="pt-8 pb-4 text-center text-xl font-normal dark:text-white">
-            The Comprehensive Cleaning and Rapid Engagement (CARE) Program provides cleaning, public health and outreach services to neighborhoods and Angelenos experiencing homelessness.
+            {/* The Comprehensive Cleaning and Rapid Engagement (CARE) Program provides cleaning, public health and outreach services to neighborhoods and Angelenos experiencing homelessness.
             <br></br>
             Locations are prioritized by Council Office.
             <br></br>
-            CARE Program deployment is coordinated through collaboration between Council offices and City Departments.
+            CARE Program deployment is coordinated through collaboration between Council offices and City Departments. */}
             {/* <br></br>
             The Bureau of Sanitation (LASAN) was provided funding in the 2023-24 Adopted Budget to
             continue the Comprehensive Cleaning and Rapid Engagement Program (CARE)
