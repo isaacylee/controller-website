@@ -2,6 +2,14 @@
   "audits": [
     {
       "pre": false,
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Ffwa-2023.jpg?alt=media&token=a9c39eb1-ac20-4e2e-b332-10a31cbd5c47",
+      "name": "FWA Annual Report 2023",
+      "year": "2024",
+      "dept": "City of Los Angeles ",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FDESIGNED%20-%20FWA_Annual_Report_2023%20-%2006.18.2024.pdf?alt=media&token=861b4a14-44b9-4edf-913d-c298c68d1883"
+    },
+    {
+      "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fsingleaudits2023.jpg?alt=media&token=829724f0-8496-4475-9a66-978c32f3036e",
       "name": "FY 2023 Single Audit Reports",
       "year": "2024",
