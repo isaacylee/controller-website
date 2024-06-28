@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,8 +19,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "~/*": ["./public/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "~/*": [
+        "./public/*"
+      ]
     },
     "incremental": true
   },
@@ -32,9 +40,17 @@
     "src/pages/landings/2022-employee-residence-analysis/HundredKIn.jsx",
     "src/pages/landings/2022-employee-residence-analysis/HundredKOut.jsx",
     "src/pages/landings/2022-employee-residence-analysis/SummaryPie2.jsx",
-    "src/pages/landings/2022-employee-residence-analysis/SummaryPie1.jsx"
+    "src/pages/landings/2022-employee-residence-analysis/SummaryPie1.jsx",
+    "src/pages/landings/care/barchartbycd.jsx"
   ],
-
-  "exclude": ["node_modules", "src/__tests__", "src/lib"],
-  "moduleResolution": ["node_modules", ".next", "node"]
+  "exclude": [
+    "node_modules",
+    "src/__tests__",
+    "src/lib"
+  ],
+  "moduleResolution": [
+    "node_modules",
+    ".next",
+    "node"
+  ]
 }
