@@ -409,7 +409,7 @@ export default function About(props: any) {
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
-                <p className='text-xl'>Executive Aide</p>
+                <p className='text-xl'>Research Analyst / Executive Aide</p>
                 <ProfileCard
                   name='Jacky Rodarte'
                   title=''
