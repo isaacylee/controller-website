@@ -160,12 +160,12 @@ export default function Analysis() {
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE Operations by Council District without the GRAND FSZ CARE+</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE Operations by Council District </p>
             <Bar data={careChartData} options={chartOptions} />
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE+ Operations by Council District without the GRAND FSZ CARE+</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE+ Operations by Council District</p>
             <Bar data={carePlusChartData} options={chartOptions} />
           </div>
         </center>
