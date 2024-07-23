@@ -43,31 +43,48 @@ export default function Analysis() {
     fetchData();
   }, []);
 
-  // Fixed dataset based on the provided image
+  const fixedCareData = {
+    1: 603,
+    2: 756,
+    3: 278,
+    4: 417,
+    5: 352,
+    6: 496,
+    7: 360,
+    8: 538,
+    9: 269,
+    10: 448,
+    11: 471,
+    12: 434,
+    13: 508,
+    14: 746,
+    15: 425,
+  };
+
   const fixedCarePlusData = {
-    1: 243,
-    2: 478,
-    3: 165,
-    4: 209,
-    5: 155,
-    6: 246,
-    7: 197,
-    8: 309,
-    9: 213,
-    10: 270,
-    11: 196,
-    12: 201,
-    13: 426,
-    14: 577,
-    15: 191
+    1: 342,
+    2: 1144,
+    3: 373,
+    4: 291,
+    5: 302,
+    6: 469,
+    7: 357,
+    8: 367,
+    9: 468,
+    10: 486,
+    11: 479,
+    12: 436,
+    13: 649,
+    14: 649,
+    15: 468,
   };
 
   const careChartData = {
-    labels: Object.keys(careData),
+    labels: Object.keys(fixedCareData),
     datasets: [
       {
         label: 'CARE Operations by CD',
-        data: Object.values(careData),
+        data: Object.values(fixedCareData),
         backgroundColor: '#41ffca',
         borderColor: '#41ffca',
         borderWidth: 1,
@@ -143,12 +160,12 @@ export default function Analysis() {
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE Operations by Council District</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE Operations by Council District without the GRAND FSZ CARE+</p>
             <Bar data={careChartData} options={chartOptions} />
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE+ Operations by Council District</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE+ Operations by Council District without the GRAND FSZ CARE+</p>
             <Bar data={carePlusChartData} options={chartOptions} />
           </div>
         </center>
