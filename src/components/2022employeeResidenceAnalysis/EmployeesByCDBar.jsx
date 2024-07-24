@@ -26,7 +26,7 @@ function isDarkMode() {
 function updateChartLabelColor() {
   if (typeof window !== 'undefined') {
     const isDark = isDarkMode();
-    console.log('isDark:', isDark);
+    // console.log('isDark:', isDark);
     document.documentElement.style.setProperty(
       '--chart-label-color',
       isDark
@@ -56,7 +56,7 @@ export default function EmployeesByCDBar() {
       )
       .then((response) => {
         const data = response.data['6Cd'];
-        console.log('cd', data);
+        // console.log('cd', data);
         setCouncilDistrict(data);
       })
       .catch((error) => {
@@ -70,7 +70,7 @@ export default function EmployeesByCDBar() {
 
   const onCategoryChange = (e) => {
     setCategory(e.target.value);
-    console.log("target", e.target.value);
+    // console.log("target", e.target.value);
   }
 
   var data = {
@@ -110,7 +110,7 @@ export default function EmployeesByCDBar() {
         callbacks: {
           label: function (context) {
             const label = context.dataset.label || "";
-            const value = context.parsed.y.toLocaleString(); // Format number with commas
+            const value = context.parsed.y.toLocaleString();
 
             if (category === "Total Payroll") {
               return `${label}: $${value}`;
