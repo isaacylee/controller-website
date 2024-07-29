@@ -189,7 +189,7 @@ export default function Analysis() {
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Budget Breakdown</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Total CARE & CARE+ Budget FY2023: $70,338,280</p>
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
