@@ -193,7 +193,7 @@ export default function Analysis() {
           </div>
           <div className="w-full mb-8">
             <h2 className="pt-8 pb-4 text-center text-2xl font-bold dark:text-white">
-              RSO Units by Zip Code (2024)
+              Top 20 Zip Codes with the Most RSO Units (2024)
             </h2>
             <table className="table-auto w-full text-left text-black bg-white">
               <thead style={{ backgroundColor: '#41ffca', color: 'black' }}>
