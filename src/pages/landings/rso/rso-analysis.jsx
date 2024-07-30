@@ -160,7 +160,7 @@ export default function Analysis() {
             )}
           </div>
           <div className="w-full mb-8">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">RSO Units Net Chg by Council District</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Net Change in RSO Units by City Council District</p>
             {chartData3.labels ? (
               <Bar
                 data={chartData3}
