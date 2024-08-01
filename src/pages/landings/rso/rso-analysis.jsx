@@ -42,7 +42,7 @@ export default function Analysis() {
         labels: labels,
         datasets: [
           {
-            label: 'RSO Units by Council District - 2024',
+            label: 'Number of Tenant Buyouts',
             data: units,
             backgroundColor: '#41ffca',
             borderColor: '#41ffca',
@@ -107,18 +107,34 @@ export default function Analysis() {
                       ticks: {
                         color: 'white',
                       },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Number of RSO Units', // Add title to the y-axis
+                        color: 'white',
+                      },
                     },
                     x: {
                       ticks: {
+                        color: 'white',
+                      },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Year', // Add title to the x-axis
                         color: 'white',
                       },
                     },
                   },
                   plugins: {
                     legend: {
-                      labels: {
-                        color: 'white',
-                      },
+                      display: false, // Remove legend
                     },
                   },
                 }}
@@ -128,7 +144,7 @@ export default function Analysis() {
             )}
           </div>
           <div className="w-full mb-8">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">RSO Units by Council District (2024)</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Number of Tenant Buyouts by Council District</p>
             {chartData2.labels ? (
               <Bar
                 data={chartData2}
@@ -139,18 +155,34 @@ export default function Analysis() {
                       ticks: {
                         color: 'white',
                       },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Number of Buyouts', // Add title to the y-axis
+                        color: 'white',
+                      },
                     },
                     x: {
                       ticks: {
+                        color: 'white',
+                      },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Council District', // Add title to the x-axis
                         color: 'white',
                       },
                     },
                   },
                   plugins: {
                     legend: {
-                      labels: {
-                        color: 'white',
-                      },
+                      display: false, // Remove legend
                     },
                   },
                 }}
@@ -171,18 +203,34 @@ export default function Analysis() {
                       ticks: {
                         color: 'white',
                       },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Net Change in RSO Units', // Add title to the y-axis
+                        color: 'white',
+                      },
                     },
                     x: {
                       ticks: {
+                        color: 'white',
+                      },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Council District', // Add title to the x-axis
                         color: 'white',
                       },
                     },
                   },
                   plugins: {
                     legend: {
-                      labels: {
-                        color: 'white',
-                      },
+                      display: false, // Remove legend
                     },
                   },
                 }}
