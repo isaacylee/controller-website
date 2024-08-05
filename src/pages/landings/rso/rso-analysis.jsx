@@ -144,7 +144,7 @@ export default function Analysis() {
             )}
           </div>
           <div className="w-full mb-8">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Number of Tenant Buyouts by Council District</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Number of RSO Units by Council District (2024)</p>
             {chartData2.labels ? (
               <Bar
                 data={chartData2}
