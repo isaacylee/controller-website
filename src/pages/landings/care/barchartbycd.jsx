@@ -80,6 +80,16 @@ export default function Analysis() {
     15: 433,
   };
 
+  // Calculate the total count for CARE operations
+  const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+
+  // Calculate the total count for CARE+ operations
+  const totalCarePlusOperations = Object.values(fixedCarePlusData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+
+
+  // Total budget already provided in the code: $70,338,280
+  const totalBudget = '$70,338,280';
+
   const careChartData = {
     labels: Object.keys(fixedCareData),
     datasets: [
@@ -161,24 +171,30 @@ export default function Analysis() {
         </div>
 
         <center>
-          {/* <div className="mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl">
-            <h1 className="pt-8 pb-4 text-center text-3xl font-bold dark:text-white">
-              Analysis
-            </h1>
-          </div> */}
-
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE Operations by Council District </p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">
+              2023 CARE Operations by Council District
+            </p>
+            <p className="text-center text-lg dark:text-white">
+              Total CARE Operations: {totalCareOperations}
+            </p>
             <Bar data={careChartData} options={chartOptions} />
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE+ Operations by Council District</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">
+              2023 CARE+ Operations by Council District
+            </p>
+            <p className="text-center text-lg dark:text-white">
+              Total CARE+ Operations: {totalCarePlusOperations}
+            </p>
             <Bar data={carePlusChartData} options={chartOptions} />
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Total CARE & CARE+ Budget FY2023-24: $70,338,280</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">
+              Total CARE & CARE+ Budget FY2023-24: {totalBudget}
+            </p>
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-[#41ffca]">
                 <tr>
