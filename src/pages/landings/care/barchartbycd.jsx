@@ -79,7 +79,6 @@ export default function Analysis() {
     14: 629,
     15: 433,
   };
-
   // Calculate the total count for CARE operations
   const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
 
