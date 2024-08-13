@@ -63,22 +63,31 @@ export default function Analysis() {
   };
 
   const fixedCarePlusData = {
-    1: 342,
-    2: 1144,
-    3: 373,
+    1: 339,
+    2: 1107,
+    3: 363,
     4: 291,
     5: 302,
-    6: 469,
+    6: 458,
     7: 357,
-    8: 367,
-    9: 753,
-    10: 486,
-    11: 479,
+    8: 357,
+    9: 738,
+    10: 482,
+    11: 473,
     12: 436,
-    13: 649,
-    14: 649,
-    15: 468,
+    13: 632,
+    14: 629,
+    15: 433,
   };
+  // Calculate the total count for CARE operations
+  const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+
+  // Calculate the total count for CARE+ operations
+  const totalCarePlusOperations = Object.values(fixedCarePlusData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+
+
+  // Total budget already provided in the code: $70,338,280
+  const totalBudget = '$70,338,280';
 
   const careChartData = {
     labels: Object.keys(fixedCareData),
@@ -150,46 +159,41 @@ export default function Analysis() {
   return (
     <>
       <Head>
-        <title>Analysis</title>
+        {/* <title>Analysis</title> */}
       </Head>
       <Navbar />
-      <div className="container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl">
+      <div className="mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl">
         <div className="py-4">
-          <p className="pt-8 pb-4 text-center text-xl font-normal dark:text-white">
-            {/* The Comprehensive Cleaning and Rapid Engagement (CARE) Program provides cleaning, public health and outreach services to neighborhoods and Angelenos experiencing homelessness.
-            <br></br>
-            Locations are prioritized by Council Office.
-            <br></br>
-            CARE Program deployment is coordinated through collaboration between Council offices and City Departments. */}
-            {/* <br></br>
-            The Bureau of Sanitation (LASAN) was provided funding in the 2023-24 Adopted Budget to
-            continue the Comprehensive Cleaning and Rapid Engagement Program (CARE)
-            Comprehensive Cleaning and Rapid Engagement Plus Program (CARE+). The CARE program
-            ensures the City's sidewalks and other public areas are safe, clean, sanitary, and accessible for
-            public use. The CARE+ program is responsible for removing abandoned waste from the public
-            right of way and cleaning encampments. */}
-          </p>
+          <h1 className="pt-8 pb-4 text-center text-3xl font-bold dark:text-white">
+            Analysis
+          </h1>
         </div>
 
         <center>
-          <div className="mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl">
-            <h1 className="pt-8 pb-4 text-center text-3xl font-bold dark:text-white">
-              Analysis
-            </h1>
-          </div>
-
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE Operations by Council District </p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">
+              2023 CARE Operations by Council District
+            </p>
+            <p className="text-center text-lg dark:text-white">
+              Total CARE Operations: {totalCareOperations}
+            </p>
             <Bar data={careChartData} options={chartOptions} />
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">2023 CARE+ Operations by Council District</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">
+              2023 CARE+ Operations by Council District
+            </p>
+            <p className="text-center text-lg dark:text-white">
+              Total CARE+ Operations: {totalCarePlusOperations}
+            </p>
             <Bar data={carePlusChartData} options={chartOptions} />
           </div>
 
           <div className="py-4">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Total CARE & CARE+ Budget FY2023-24: $70,338,280</p>
+            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">
+              Total CARE & CARE+ Budget FY2023-24: {totalBudget}
+            </p>
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-[#41ffca]">
                 <tr>
