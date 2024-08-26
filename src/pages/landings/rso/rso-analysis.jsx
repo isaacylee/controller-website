@@ -317,7 +317,7 @@ export default function Analysis() {
               <p>Loading data...</p>
             )}
           </div>
-          <div className="w-full mb-8">
+          {/* <div className="w-full mb-8">
             <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Net Change in RSO Units by City Council District</p>
             {chartData3.labels ? (
               <Bar
@@ -364,7 +364,7 @@ export default function Analysis() {
             ) : (
               <p>Loading data...</p>
             )}
-          </div>
+          </div> */}
           <div className="w-full mb-8">
             <h2 className="pt-8 pb-4 text-center text-2xl font-bold dark:text-white">
               Top 20 Zip Codes with the Most RSO Units (2024)
