@@ -73,10 +73,11 @@ export default function Analysis() {
     }
 
     async function fetchZipCodeData() {
-      const response = await fetch('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsByZipCode2024');
+      const response = await fetch('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsByZipCode');
       const data = await response.json();
-      setZipCodeData(data.rsoUnitsByZipCode2024);
+      setZipCodeData(data.rsoUnitsByZipCode);
     }
+
 
     fetchChartData1();
     fetchChartData2();
