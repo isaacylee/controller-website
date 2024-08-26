@@ -648,7 +648,7 @@ export default function Analysis() {
               <table className="table-auto w-full sm:w-1/2 text-left text-black bg-white mb-4 sm:mb-0 sm:mr-2">
                 <thead style={{ backgroundColor: '#41ffca', color: 'black' }}>
                   <tr>
-                    <th className="px-4 py-2 border border-gray-400">Land Use Code</th>
+                    <th className="px-4 py-2 border border-gray-400" style={{ whiteSpace: 'normal', width: '10rem' }}>Land Use Code</th>
                     <th className="px-4 py-2 border border-gray-400">Description</th>
                     <th className="px-4 py-2 border border-gray-400"># Net Change</th>
                   </tr>
@@ -667,7 +667,7 @@ export default function Analysis() {
               <table className="table-auto w-full sm:w-1/2 text-left text-black bg-white">
                 <thead style={{ backgroundColor: '#41ffca', color: 'black' }}>
                   <tr>
-                    <th className="px-4 py-2 border border-gray-400">Land Use Code</th>
+                    <th className="px-4 py-2 border border-gray-400" style={{ whiteSpace: 'normal', width: '10rem' }}>Land Use Code</th>
                     <th className="px-4 py-2 border border-gray-400">Description</th>
                     <th className="px-4 py-2 border border-gray-400"># Net Loss</th>
                   </tr>
@@ -684,6 +684,7 @@ export default function Analysis() {
               </table>
             </div>
           </div>
+
 
 
 
