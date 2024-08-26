@@ -267,7 +267,7 @@ export default function Analysis() {
               style={{ fontFamily: 'Helvetica' }}
             >
               <p className='mb-4'>
-                <b> Council District 13</b> has the highest number of RSO units with <b>78,958</b>, followed by <b>Council District 10</b> with <b>78,370 RSO</b>units.
+                <b> Council District 13</b> has the highest number of RSO units with <b>78,958</b>, followed by <b>Council District 10</b> with <b>78,370 RSO </b> units.
 
               </p>
             </div>
