@@ -195,7 +195,9 @@ export default function Analysis() {
             <p className='mb-2'>
               Every year, the Los Angeles Housing Department (LAHD) updates the inventory of RSO units in the City of Los Angeles.
               Using updated data, we analyzed the most current inventory of RSO units (2024)
-              and also compared it with the previous 5 years (2019-2023).
+              and also compared it with the previous 5 years (2019-2023). The data from LAHD can be accessed on the Department’s Report Dashboard for RSO
+              <a href="https://housing2.lacity.org/RSO" target='_blank'> https://housing2.lacity.org/RSO</a>
+
             </p>
             <p className='mb-4'>
               The data reveals that as of 2024,
@@ -414,7 +416,10 @@ export default function Analysis() {
               <p className='mb-4'>
                 Land Use Codes, or Property Use Classifications, are assigned by the Los Angeles County Assessor’s Office to
                 describe the actual current use of a property and are in the form of four character codes that are made up of
-                either letters, numbers, or a combination of both.
+                either letters, numbers, or a combination of both. More information can be found on the LA County Assessor’s Portal
+                <a href="https://portal.assessor.lacounty.gov/" target='_blank'> https://portal.assessor.lacounty.gov/</a>
+                using either an address or the Assessor Parcel Number (APN) in LAHD’s data.
+
               </p>
               <p className='mb-4'>
                 In 2024, the highest number of RSO units were located on properties that contained five or more units but were four stories or less <b> (0500) </b>,
