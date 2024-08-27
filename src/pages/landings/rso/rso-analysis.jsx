@@ -417,7 +417,7 @@ export default function Analysis() {
                 Land Use Codes, or Property Use Classifications, are assigned by the Los Angeles County Assessor’s Office to
                 describe the actual current use of a property and are in the form of four character codes that are made up of
                 either letters, numbers, or a combination of both. More information can be found on the LA County Assessor’s Portal
-                <a href="https://portal.assessor.lacounty.gov/" target='_blank'> https://portal.assessor.lacounty.gov/</a>
+                <a href="https://portal.assessor.lacounty.gov/" target='_blank'> https://portal.assessor.lacounty.gov/ </a>
                 using either an address or the Assessor Parcel Number (APN) in LAHD’s data.
 
               </p>
