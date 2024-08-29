@@ -176,9 +176,15 @@ export default function Analysis() {
       </Head>
       <Navbar />
       <center>
+
         <div className="mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl">
-          <h1 className="pt-8 pb-4 text-center text-3xl font-bold dark:text-white">
-            Analysis
+          <h2 className="pt-8 pb-4 text-center text-3xl font-bold dark:text-white">
+            Net Change in RSO Units from 2019 to 2024
+          </h2>
+          <h1 className="pt-8 pb-4 text-center text-2xl font-bold dark:text-white">
+
+
+            Summary & Analysis
           </h1>
 
 
@@ -196,7 +202,7 @@ export default function Analysis() {
               Every year, the Los Angeles Housing Department (LAHD) updates the inventory of RSO units in the City of Los Angeles.
               Using updated data, we analyzed the most current inventory of RSO units (2024)
               and also compared it with the previous 5 years (2019-2023). The data from LAHD can be accessed on the Department’s Report Dashboard for RSO
-              <a href="https://housing2.lacity.org/RSO" target='_blank'> https://housing2.lacity.org/RSO</a>
+              <a href="https://housing2.lacity.org/RSO" target='_blank'> (https://housing2.lacity.org/RSO)</a>
 
             </p>
             <p className='mb-4'>
@@ -407,7 +413,7 @@ export default function Analysis() {
 
           <div className="w-full mb-8">
             <h2 className="pt-8 pb-4 text-center text-2xl font-bold dark:text-white">
-              Property Type (Land Use Code) in 2024
+              Number of RSO Units by Property Type (Land Use Code) in 2024
             </h2>
             <div
               className='text-left dark:text-white'
@@ -417,7 +423,8 @@ export default function Analysis() {
                 Land Use Codes, or Property Use Classifications, are assigned by the Los Angeles County Assessor’s Office to
                 describe the actual current use of a property and are in the form of four character codes that are made up of
                 either letters, numbers, or a combination of both. More information can be found on the LA County Assessor’s Portal
-                <a href="https://portal.assessor.lacounty.gov/" target='_blank'> https://portal.assessor.lacounty.gov/ </a>
+                <a href="https://portal.assessor.lacounty.gov/" target="_blank"> (https://portal.assessor.lacounty.gov/) </a>
+
                 using either an address or the Assessor Parcel Number (APN) in LAHD’s data.
 
               </p>
