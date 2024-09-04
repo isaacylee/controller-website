@@ -2,6 +2,14 @@
   "audits": [
     {
       "pre": false,
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fab481-cover-bw.jpg?alt=media&token=8368b875-f70a-4e05-8a6d-57654c4feb45",
+      "name": "LAPD's Compliance with AB 481 (Military Equipment: Funding, Acquisition, and Use)",
+      "year": "2024",
+      "dept": "City of Los Angeles ",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FAB481%20Performance%20Audit%20-%2008272024.pdf?alt=media&token=c0abff89-8daf-445f-931c-46bf80236862"
+    },
+    {
+      "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Ffwa-2023.jpg?alt=media&token=a9c39eb1-ac20-4e2e-b332-10a31cbd5c47",
       "name": "FWA Annual Report 2023",
       "year": "2024",
