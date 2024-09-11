@@ -58,7 +58,7 @@ export default function Audits(props: any) {
                   'https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing'; // Redirect to the "/upcoming/" URL
               }}
             >
-              Old Audits and reports
+              Old Audits and Reports
             </button>
           </div>
 
