@@ -50,16 +50,25 @@ export default function Audits(props: any) {
             >
               Upcoming Audits & Reports
             </button>
-            <button
+            <a
+              href="https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing"
+              target="_blank"  // This ensures the link opens in a new tab
+              rel="noopener noreferrer"  // Adds security benefits when opening new tabs
+              className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'
+            >
+              Old Audits and Reports
+            </a>
+
+            {/* <button
               className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'
               onClick={() => {
                 // Use your preferred navigation method to go to the "/upcoming/" URL
                 window.location.href =
-                  'https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing'; // Redirect to the "/upcoming/" URL
+                  'https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing';
               }}
             >
               Old Audits and Reports
-            </button>
+            </button> */}
           </div>
 
           <br></br>
