@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import * as React from 'react';
 
 import '@/styles/aboutstyles.module.css';
@@ -24,6 +25,11 @@ const kirbybutton =
 export default function Data(props: any) {
   return (
     <>
+      <Head>
+        <title>
+          41.18 Arrests (Jan 2012 - May 2023) Summary and Analysis
+        </title>
+      </Head>
       <Navbar />
 
       <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>

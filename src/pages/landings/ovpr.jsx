@@ -1,4 +1,5 @@
 'use client';
+import Head from 'next/head';
 import Link from 'next/link';
 
 import Navbar from '@/components/Navbar';
@@ -6,6 +7,31 @@ import Navbar from '@/components/Navbar';
 export default function OVPR() {
   return (
     <>
+      <Head>
+        <title>Oversized Vehicle Parking Restriction (OVPR) Summary and Analysis</title>
+        <meta
+          name='description'
+          content='Summary and Analysis of Los Angeles Municipal Code 80.69.4 Parking of Oversize Vehicles'
+        />
+        <meta
+          name='keywords'
+          content='City of LA, oversized vehicles, parking, rv'
+        />
+        <meta name='author' content='Executive Office of the Controller' />
+        <meta
+          property='og:title'
+          content='Oversized Vehicle Parking Restriction (OVPR) Summary and Analysis'
+        />
+        <meta
+          property='og:description'
+          content='Summary and Analysis of Los Angeles Municipal Code 80.69.4 Parking of Oversize Vehicles'
+        />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://controller.lacity.gov/landings/ovpr'
+        />
+      </Head>
       <Navbar />
       <main className='container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>

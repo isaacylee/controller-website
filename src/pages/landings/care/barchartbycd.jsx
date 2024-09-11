@@ -79,6 +79,15 @@ export default function Analysis() {
     14: 629,
     15: 433,
   };
+  // Calculate the total count for CARE operations
+  const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+
+  // Calculate the total count for CARE+ operations
+  const totalCarePlusOperations = Object.values(fixedCarePlusData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+
+
+  // Total budget already provided in the code: $70,338,280
+  const totalBudget = '$70,338,280';
 
   // Calculate the total count for CARE operations
   const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
