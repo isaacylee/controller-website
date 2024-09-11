@@ -50,35 +50,25 @@ export default function Audits(props: any) {
             >
               Upcoming Audits & Reports
             </button>
-            {/* <a
-              href="https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing"
-              target="_blank"  // This ensures the link opens in a new tab
-              rel="noopener noreferrer"  // Adds security benefits when opening new tabs
+            <a
               className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'
+              href='https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Old Audits and Reports
-            </a> */}
-
-            {/* <button
-              className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'
-              onClick={() => {
-                // Use your preferred navigation method to go to the "/upcoming/" URL
-                window.location.href =
-                  'https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing';
-              }}
-            >
-              Old Audits and Reports
-            </button> */}
+            </a>
           </div>
 
           <br></br>
           <div className='md:hidden'>
-            {audits.map((eachaudit: any, eachauditnum: number) => (
+            {props.audits.map((eachaudit: any, eachauditnum: number) => (
               <LineItem
                 key={eachauditnum}
                 dept={eachaudit.dept}
-                link={`${eachaudit.pre === false ? '' : '/audits/'}${eachaudit.link
-                  }`}
+                link={`${eachaudit.pre === false ? '' : '/audits/'}${
+                  eachaudit.link
+                }`}
                 name={eachaudit.name}
                 year={eachaudit.year}
               />
@@ -93,10 +83,15 @@ export default function Audits(props: any) {
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
                 >
                   <a
-                    href={`${eachaudit.pre === false ? '' : '/audits/'}${eachaudit.link
-                      }`}
+                    href={`${eachaudit.pre === false ? '' : '/audits/'}${
+                      eachaudit.link
+                    }`}
                   >
-                    <img src={eachaudit.image} className='w-full'></img>
+                    <img
+                      src={eachaudit.image}
+                      className='w-full'
+                      alt='Card images'
+                    ></img>
                     <div className=' px-2 py-2'>
                       <p className='dark:text-white'>
                         {eachaudit.year} |{' '}
