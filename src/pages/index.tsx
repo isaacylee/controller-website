@@ -330,7 +330,7 @@ export default function HomePage(props: any) {
         </div>
 
         <div className='container mx-auto px-4  '>
-          <h2 className='pt-8 pb-4 dark:text-white'>Financial Reports</h2>
+          <h2 className='pb-4 pt-8 dark:text-white'>Financial Reports</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {finance.slice(0, 4).map((eachaudit: any, key: number) => (
@@ -395,7 +395,7 @@ export default function HomePage(props: any) {
           <div className='flex flex-row flex-wrap gap-x-3 gap-y-3 pt-4 lg:hidden'>
             {budget.slice(0, 6).map((eachbudget: any, key: number) => (
               <Link href={`${eachbudget.link}`} key={key}>
-                <div className='rounded-full bg-[#41ffca] py-2 px-4 font-semibold text-black dark:text-black'>
+                <div className='rounded-full bg-[#41ffca] px-4 py-2 font-semibold text-black dark:text-black'>
                   {eachbudget.name}
                 </div>
               </Link>
@@ -405,7 +405,7 @@ export default function HomePage(props: any) {
           <div className='hidden flex-row flex-wrap gap-x-3 gap-y-3 pt-4 lg:flex'>
             {budget.slice(0, 9).map((eachbudget: any, key: number) => (
               <Link href={`${eachbudget.link}`} key={key}>
-                <div className='rounded-full bg-[#41ffca] py-2 px-4 font-semibold text-black dark:text-black'>
+                <div className='rounded-full bg-[#41ffca] px-4 py-2 font-semibold text-black dark:text-black'>
                   {eachbudget.name}
                 </div>
               </Link>
@@ -413,7 +413,7 @@ export default function HomePage(props: any) {
           </div>
 
           <div>
-            <div className='flex flex-row pt-4 pb-8'>
+            <div className='flex flex-row pb-8 pt-4'>
               <Link href='/budgets' target='_blank' rel='noreferrer'>
                 <div className={`${kirbybutton}`}>All Budgets</div>
               </Link>
