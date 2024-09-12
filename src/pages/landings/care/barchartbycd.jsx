@@ -1,9 +1,9 @@
 'use client';
 import Head from 'next/head';
-import Navbar from '@/components/Navbar';
 import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import Chart from 'chart.js/auto';
+
+import Navbar from '@/components/Navbar';
 
 export default function Analysis() {
   const [careData, setCareData] = useState({});
@@ -90,14 +90,14 @@ export default function Analysis() {
   const totalBudget = '$70,338,280';
 
   // Calculate the total count for CARE operations
-  const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+  // const totalCareOperations = Object.values(fixedCareData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
 
   // Calculate the total count for CARE+ operations
-  const totalCarePlusOperations = Object.values(fixedCarePlusData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
+  // const totalCarePlusOperations = Object.values(fixedCarePlusData).reduce((acc, curr) => acc + curr, 0).toLocaleString();
 
 
   // Total budget already provided in the code: $70,338,280
-  const totalBudget = '$70,338,280';
+  // const totalBudget = '$70,338,280';
 
   const careChartData = {
     labels: Object.keys(fixedCareData),
