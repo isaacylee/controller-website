@@ -50,14 +50,15 @@ export default function Audits(props: any) {
             >
               Upcoming Audits & Reports
             </button>
-            <a
-              className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'
-              href='https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Old Audits and Reports
-            </a>
+            <button className='rounded-full bg-black px-2 py-2 font-bold text-white dark:bg-white dark:text-black'>
+              <a
+                href='https://docs.google.com/spreadsheets/d/1oYBlBXCcSyUxx7YKovNXqt15oPD5rqOdqe5tXXgylPA/edit?usp=sharing'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Old Audits and Reports
+              </a>
+            </button>
           </div>
 
           <br></br>
