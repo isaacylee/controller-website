@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -23,6 +24,33 @@ import { budget } from '@/budget.json';
 export default function Budgets(props: any) {
   return (
     <>
+      <Head>
+        <meta property='og:title' content='Budgets' />
+        <meta
+          property='og:description'
+          content='View & Download City of Los Angeles Adopted Budgets'
+        />
+        <meta
+          property='og:url'
+          content='https://www.controller.lacity.gov/budgets'
+        />
+        <meta
+          property='og:image'
+          content='https://www.controller.lacity.gov/images/budget2024-25.png'
+        />
+        <meta property='og:type' content='website' />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content='Budgets' />
+        <meta
+          name='twitter:description'
+          content='View & Download City of Los Angeles Adopted Budgets'
+        />
+        <meta
+          name='twitter:image'
+          content='https://www.example.com/images/budget2024-25.png'
+        />
+      </Head>
       <Navbar />
 
       <Layout>
@@ -34,12 +62,12 @@ export default function Budgets(props: any) {
         />
 
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h1 className='py-2 dark:text-white sm:pt-4 sm:pb-2'>Budgets</h1>
+          <h1 className='py-2 dark:text-white sm:pb-2 sm:pt-4'>Budgets</h1>
 
           <div className='grid grid-cols-3 gap-x-3 gap-y-3 sm:flex sm:flex-row sm:flex-wrap '>
             {budget.map((eachbudget: any, key: number) => (
               <Link href={`${eachbudget.link}`} key={key}>
-                <div className='rounded-full bg-[#41ffca] py-2 px-4 font-semibold text-black dark:text-black'>
+                <div className='rounded-full bg-[#41ffca] px-4 py-2 font-semibold text-black dark:text-black'>
                   <p className='mx-auto'>{eachbudget.name}</p>
                 </div>
               </Link>
