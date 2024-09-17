@@ -219,7 +219,7 @@ export default function Analysis() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-2'>
-              Since going into effect in 1978, the Rent Stabilization Ordinance (RSO) has
+              Since going into effect in 1979, the Rent Stabilization Ordinance (RSO) has
               provided extensive protections to renters in the City of Los Angeles that in
               units covered by this ordinance.  Protections range from limiting the percentage
               rent can be increased to eviction protections.
