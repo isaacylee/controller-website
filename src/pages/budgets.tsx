@@ -36,7 +36,7 @@ export default function Budgets(props: any) {
         />
         <meta
           property='og:image'
-          content='https://www.controller.lacity.gov/images/budget2024-25.png'
+          content='https://controller.lacity.gov/images/budget2024-25.png'
         />
         <meta property='og:type' content='website' />
 
@@ -48,7 +48,7 @@ export default function Budgets(props: any) {
         />
         <meta
           name='twitter:image'
-          content='https://www.example.com/images/budget2024-25.png'
+          content='https://controller.lacity.gov/images/budget2024-25.png'
         />
       </Head>
       <Navbar />
