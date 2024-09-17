@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -24,33 +23,6 @@ import { budget } from '@/budget.json';
 export default function Budgets(props: any) {
   return (
     <>
-      <Head>
-        <meta property='og:title' content='Budgets' />
-        <meta
-          property='og:description'
-          content='View & Download City of Los Angeles Adopted Budgets'
-        />
-        <meta
-          property='og:url'
-          content='https://www.controller.lacity.gov/budgets'
-        />
-        <meta
-          property='og:image'
-          content='https://controller.lacity.gov/images/budget2024-25.png'
-        />
-        <meta property='og:type' content='website' />
-
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Budgets' />
-        <meta
-          name='twitter:description'
-          content='View & Download City of Los Angeles Adopted Budgets'
-        />
-        <meta
-          name='twitter:image'
-          content='https://controller.lacity.gov/images/budget2024-25.png'
-        />
-      </Head>
       <Navbar />
 
       <Layout>
