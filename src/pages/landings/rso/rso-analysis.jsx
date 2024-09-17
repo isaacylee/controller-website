@@ -739,7 +739,6 @@ export default function Analysis() {
                 <br></br>
                 Properties with <strong>100+ units</strong> saw the highest decrease with a loss of <strong>1,716</strong> RSO units, followed by properties with <strong>3-4 units</strong> with a loss of <strong>380</strong> units.
               </p>
-
             </div>
             {netChangeByUnitRangeData.labels ? (
               <Bar
@@ -782,11 +781,30 @@ export default function Analysis() {
                     },
                   },
                 }}
+                plugins={[
+                  {
+                    id: 'zeroLine',
+                    afterDraw: (chart) => {
+                      const { ctx, scales: { y } } = chart;
+                      const yZero = y.getPixelForValue(0); // Get pixel position for y=0
+
+                      ctx.save();
+                      ctx.beginPath();
+                      ctx.moveTo(chart.scales.x.left, yZero);
+                      ctx.lineTo(chart.scales.x.right, yZero);
+                      ctx.lineWidth = 6;
+                      ctx.strokeStyle = 'grey'; // Same color as gridline
+                      ctx.stroke();
+                      ctx.restore();
+                    },
+                  },
+                ]}
               />
             ) : (
               <p>Loading data...</p>
             )}
           </div>
+
 
 
         </div>
