@@ -177,7 +177,7 @@ export default function About(props: any) {
           description="Meet our team and learn about our office's functions and responsibilities."
         />
 
-        <div className=' bgColorHeader relative px-8 px-4 pt-8 text-base text-sm  md:px-32 md:px-0 md:pt-24 md:text-white'>
+        <div className=' bgColorHeader relative px-4 px-8 pt-8 text-base text-sm  md:px-0 md:px-32 md:pt-24 md:text-white'>
           <div className='background-1'>
             {/* max-w-2md z-10 mx-auto text-white */}
             <div className='z-10 mx-4 max-w-7xl text-white lg:mx-auto'>
@@ -269,7 +269,7 @@ export default function About(props: any) {
 
           {/*BRUH OKAY THE CONTACTS GO HERE */}
 
-          <h2 className='mt-4 mb-2'>Our Team</h2>
+          <h2 className='mb-2 mt-4'>Our Team</h2>
           <div className='mb-4 grid grid-cols-1 gap-x-4 dark:text-gray-100 sm:grid-cols-2 '>
             <div className='flex flex-col gap-y-8'>
               <div className='flex flex-col gap-y-2'>
@@ -294,6 +294,11 @@ export default function About(props: any) {
                   name='Sergio Perez'
                   title='Chief of Accountability & Oversight'
                   picture='/images/staff/Sergio_Perez_ChiefAccountability.jpeg'
+                />
+                <ProfileCard
+                  name='Dinah M. Manning'
+                  title='Chief of Strategic Initiatives & Senior Advisor'
+                  picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
                 />
               </div>
               <div className='flex flex-col gap-y-2'>
@@ -334,17 +339,7 @@ export default function About(props: any) {
             <div className='flex flex-col gap-y-8'>
               <div className='flex flex-col gap-y-2'>
                 <div className='flex flex-col gap-y-2'>
-                  <p className='text-xl'>Accountability and Oversight</p>
-                  <ProfileCard
-                    name='Dinah M. Manning'
-                    title='Deputy Chief of Accountability & Oversight'
-                    picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
-                  />
-                  <ProfileCard
-                    name='Ashley Bennett'
-                    title='Director of Homelessness'
-                    picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
-                  />
+                  <p className='text-xl'>Working Groups</p>
                   <ProfileCard
                     name='Vincent de Vera'
                     picture='/images/staff/VincentdeVera-ExecAide.jpg'
@@ -352,7 +347,17 @@ export default function About(props: any) {
                       ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                       'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                     }}
-                    title='Director of Special Projects'
+                    title='Director of Accounting Projects & Executive Aide'
+                  />
+                  <ProfileCard
+                    name='Ashley Bennett'
+                    title='Director of Homelessness'
+                    picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
+                  />
+                  <ProfileCard
+                    name='Maria Rosas'
+                    title='Deputy Controller of Finance'
+                    picture='/images/staff/MariaRosas-DeputyControllerFinance.JPG'
                   />
                 </div>
                 <br></br>
@@ -398,26 +403,13 @@ export default function About(props: any) {
                   title='Director of Research & Government Affairs'
                   picture='/images/staff/MikeShear-DirectorOfResearch.jpg'
                 />
-              </div>
-
-              <div className='flex flex-col gap-y-2'>
-                <p className='text-xl'>Financial Transparency</p>
-                <ProfileCard
-                  name='Maria Rosas'
-                  title='Deputy Controller of Finance'
-                  picture='/images/staff/MariaRosas-DeputyControllerFinance.JPG'
-                />
-              </div>
-              <div className='flex flex-col gap-y-2'>
-                <p className='text-xl'>Research Analyst / Executive Aide</p>
                 <ProfileCard
                   name='Jacky Rodarte'
-                  title=''
+                  title='Research Analyst'
                   picture='/images/staff/JackyRodarte-ExecAide.jpg'
                 />
               </div>
             </div>
-            <div></div>
           </div>
 
           <h1 className='md:py-4'>Audit Services Division</h1>
