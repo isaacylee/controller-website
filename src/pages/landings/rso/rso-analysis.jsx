@@ -19,12 +19,25 @@ export default function Analysis() {
   const [netLossByLuCodeData, setNetLossByLuCodeData] = useState([]);
   const [netChangeByUnitRangeData, setNetChangeByUnitRangeData] = useState({});
 
+
+
+  const [theme, setTheme] = useState('light');
+
   useEffect(() => {
+    const currTheme = localStorage.getItem('theme');
+    if (currTheme !== null) setTheme(currTheme);
+  }, [theme]);
+
+  useEffect(() => {
+
+
     async function fetchUnitRangeData() {
       const response = await fetch('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsNetChgByUnitRange');
       const data = await response.json();
       const labels = data.rsoUnitsNetChgByUnitRange.map(item => item.unitRange);
       const units = data.rsoUnitsNetChgByUnitRange.map(item => item.number);
+
+
 
       setNetChangeByUnitRangeData({
         labels: labels,
@@ -40,7 +53,6 @@ export default function Analysis() {
       });
     }
 
-    fetchUnitRangeData();
   }, []);
 
 
@@ -226,16 +238,16 @@ export default function Analysis() {
             </p>
             <p className='mb-2'>
               Every year, the Los Angeles Housing Department (LAHD) updates the inventory of RSO units in the City of Los Angeles.
-              Using the most updated data, we analyzed this inventory of RSO units starting with the oldest available (2019) to the most current (2024). 
-             The data can be accessed on LAHD’s Report 
-              <a href="https://housing2.lacity.org/RSO" target='_blank'>Dashboard for RSO (https://housing2.lacity.org/RSO)</a>
+              Using updated data, we analyzed the most current inventory of RSO units (2024)
+              and also compared it with the previous 5 years (2019-2023). The data from LAHD can be accessed on the Department’s Report Dashboard for RSO
+              <a href="https://housing2.lacity.org/RSO" target='_blank'> (https://housing2.lacity.org/RSO)</a>
 
             </p>
             <p className='mb-4'>
               The data reveals that as of 2024,
               there are <b> 661,851</b> RSO units. From 2019 to 2024,
-               Loss <b> 15,754</b> Units
-              Gain <b>34,099</b> Units
+              there was a net increase of <b> 18,345</b> RSO units
+              (a loss of <b>15,754</b> units but a gain of <b>34,099</b> units)
 
 
 
@@ -256,30 +268,30 @@ export default function Analysis() {
                     y: {
                       beginAtZero: true,
                       ticks: {
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#ddd',  // White for dark mode, black for light
                       },
                       grid: {
-                        display: true, // Enable grid lines
+                        display: true,
                         color: 'gray',
                       },
                       title: {
                         display: true,
                         text: 'Number of RSO Units', // Add title to the y-axis
-                        color: 'white',
+                        ticks: { color: theme === 'dark' ? '#555' : '#000000', }// White for dark mode, black for light
                       },
                     },
                     x: {
                       ticks: {
-                        color: 'white',
+                        ticks: { color: theme === 'dark' ? '#555' : '#000000', } // White for dark mode, black for light
                       },
                       grid: {
-                        display: true, // Enable grid lines
+                        display: true,
                         color: 'gray',
                       },
                       title: {
                         display: true,
                         text: 'Year', // Add title to the x-axis
-                        color: 'white',
+                        ticks: { color: theme === 'dark' ? '#555' : '#000000', }// White for dark mode, black for light
                       },
                     },
                   },
@@ -289,6 +301,9 @@ export default function Analysis() {
                     },
                   },
                 }}
+
+
+
               />
             ) : (
               <p>Loading data...</p>
@@ -309,46 +324,11 @@ export default function Analysis() {
               <Bar
                 data={chartData2}
                 options={{
-  scales: {
-    y: {
-      beginAtZero: true,
-      ticks: {
-        color: textColor,
-      },
-      grid: {
-        display: true,
-        color: 'gray',
-      },
-      title: {
-        display: true,
-        text: 'Number of RSO Units',
-        color: textColor,
-      },
-    },
-    x: {
-      ticks: {
-        color: textColor,
-      },
-      grid: {
-        display: true,
-        color: 'gray',
-      },
-      title: {
-        display: true,
-        text: 'Year',
-        color: textColor,
-      },
-    },
-  },
- 
- 
-
-{/*                 options={{
                   scales: {
                     y: {
                       beginAtZero: true,
                       ticks: {
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                       grid: {
                         display: true, // Enable grid lines
@@ -357,12 +337,12 @@ export default function Analysis() {
                       title: {
                         display: true,
                         text: 'Number of Buyouts', // Add title to the y-axis
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                     },
                     x: {
                       ticks: {
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                       grid: {
                         display: true, // Enable grid lines
@@ -371,10 +351,10 @@ export default function Analysis() {
                       title: {
                         display: true,
                         text: 'Council District', // Add title to the x-axis
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                     },
-                  }, */}
+                  },
                   plugins: {
                     legend: {
                       display: false, // Remove legend
@@ -540,7 +520,7 @@ export default function Analysis() {
                     y: {
                       beginAtZero: true,
                       ticks: {
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                       grid: {
                         display: true,
@@ -549,12 +529,12 @@ export default function Analysis() {
                       title: {
                         display: true,
                         text: 'Number of RSO Units',
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                     },
                     x: {
                       ticks: {
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000',
                       },
                       grid: {
                         display: true,
@@ -563,7 +543,7 @@ export default function Analysis() {
                       title: {
                         display: true,
                         text: 'Unit Range',
-                        color: 'white',
+                        color: theme === 'dark' ? '#555' : '#000000',
                       },
                     },
                   },
@@ -597,38 +577,38 @@ export default function Analysis() {
             {netChangeData.labels ? (
               <Bar
                 data={netChangeData}
-                               options={{
-  scales: {
-    y: {
-      beginAtZero: true,
-      ticks: {
-        color: textColor,
-      },
-      grid: {
-        display: true,
-        color: 'gray',
-      },
-      title: {
-        display: true,
-        text: 'Number of RSO Units',
-        color: textColor,
-      },
-    },
-    x: {
-      ticks: {
-        color: textColor,
-      },
-      grid: {
-        display: true,
-        color: 'gray',
-      },
-      title: {
-        display: true,
-        text: 'Year',
-        color: textColor,
-      },
-    },
-  },
+                options={{
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                      grid: {
+                        display: true,
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Net Change in RSO Units',
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                    },
+                    x: {
+                      ticks: {
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                      grid: {
+                        display: true,
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Council District',
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                    },
+                  },
                   plugins: {
                     legend: {
                       display: false,
@@ -778,38 +758,38 @@ export default function Analysis() {
             {netChangeByUnitRangeData.labels ? (
               <Bar
                 data={netChangeByUnitRangeData}
-                               options={{
-  scales: {
-    y: {
-      beginAtZero: true,
-      ticks: {
-        color: textColor,
-      },
-      grid: {
-        display: true,
-        color: 'gray',
-      },
-      title: {
-        display: true,
-        text: 'Number of RSO Units',
-        color: textColor,
-      },
-    },
-    x: {
-      ticks: {
-        color: textColor,
-      },
-      grid: {
-        display: true,
-        color: 'gray',
-      },
-      title: {
-        display: true,
-        text: 'Year',
-        color: textColor,
-      },
-    },
-  },
+                options={{
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Net Change in RSO Units',
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                    },
+                    x: {
+                      ticks: {
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                      grid: {
+                        display: true, // Enable grid lines
+                        color: 'gray',
+                      },
+                      title: {
+                        display: true,
+                        text: 'Unit Range',
+                        color: theme === 'dark' ? '#555' : '#000000',
+                      },
+                    },
+                  },
                   plugins: {
                     legend: {
                       display: false, // Remove legend
