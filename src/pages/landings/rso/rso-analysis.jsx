@@ -4,23 +4,20 @@ import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2'; // Import Bar component
 
 import Navbar from '@/components/Navbar';
+import NetUnitsByCD from '@/components/rso/NetUnitsByCD';
+import UnitsByCD from '@/components/rso/UnitsByCD';
+import UnitsByRange from '@/components/rso/UnitsByRange';
 import UnitsByYear from '@/components/rso/UnitsByYear';
 
 export default function Analysis() {
-  // const [chartData1, setChartData1] = useState({});
-  const [chartData2, setChartData2] = useState({});
   const [chartData3, setChartData3] = useState({});
   const [zipCodeData, setZipCodeData] = useState([]);
   const [landUseCodeData, setLandUseCodeData] = useState([]);
-  const [unitRangeData, setUnitRangeData] = useState({});
-  const [netChangeData, setNetChangeData] = useState({});
   const [netGainData, setNetGainData] = useState([]);
   const [netLossData, setNetLossData] = useState([]);
   const [netGainByLuCodeData, setNetGainByLuCodeData] = useState([]);
   const [netLossByLuCodeData, setNetLossByLuCodeData] = useState([]);
   const [netChangeByUnitRangeData, setNetChangeByUnitRangeData] = useState({});
-
-  const isDark = localStorage.theme === 'dark';
 
   useEffect(() => {
     async function fetchUnitRangeData() {
@@ -49,48 +46,6 @@ export default function Analysis() {
   }, []);
 
   useEffect(() => {
-    // async function fetchChartData1() {
-    //   const response = await fetch('https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsByYear');
-    //   const data = await response.json();
-    //   const labels = data.rsoUnitsByYear.map(item => item.year);
-    //   const units = data.rsoUnitsByYear.map(item => item.number);
-
-    //   setChartData1({
-    //     labels: labels,
-    //     datasets: [
-    //       {
-    //         label: 'RSO Units by Year',
-    //         data: units,
-    //         backgroundColor: '#41ffca',
-    //         borderColor: '#41ffca',
-    //         borderWidth: 1,
-    //       },
-    //     ],
-    //   });
-    // }
-
-    async function fetchChartData2() {
-      const response = await fetch(
-        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsByCd2024'
-      );
-      const data = await response.json();
-      const labels = data.rsoUnitsByCd2024.map((item) => `CD ${item.cd}`);
-      const units = data.rsoUnitsByCd2024.map((item) => item.number);
-
-      setChartData2({
-        labels: labels,
-        datasets: [
-          {
-            label: 'Number of Tenant Buyouts',
-            data: units,
-            backgroundColor: '#41ffca',
-            borderColor: '#41ffca',
-            borderWidth: 1,
-          },
-        ],
-      });
-    }
-
     async function fetchChartData3() {
       const response = await fetch(
         'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsNetChgByCd'
@@ -128,50 +83,6 @@ export default function Analysis() {
       setLandUseCodeData(data.rsoUnitsByLuCode2024);
     }
 
-    async function fetchUnitRangeData() {
-      const response = await fetch(
-        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsByUnitRange2024'
-      );
-      const data = await response.json();
-      const labels = data.rsoUnitsByUnitRange2024.map((item) => item.unitRange);
-      const units = data.rsoUnitsByUnitRange2024.map((item) => item.number);
-
-      setUnitRangeData({
-        labels: labels,
-        datasets: [
-          {
-            label: 'Number of RSO Units',
-            data: units,
-            backgroundColor: '#41ffca',
-            borderColor: '#41ffca',
-            borderWidth: 1,
-          },
-        ],
-      });
-    }
-
-    async function fetchNetChangeData() {
-      const response = await fetch(
-        'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/rsoUnitsNetChgByCd'
-      );
-      const data = await response.json();
-      const labels = data.rsoUnitsNetChgByCd.map((item) => `CD ${item.cd}`);
-      const units = data.rsoUnitsNetChgByCd.map((item) => item.number);
-
-      setNetChangeData({
-        labels: labels,
-        datasets: [
-          {
-            label: 'Net Change in RSO Units',
-            data: units,
-            backgroundColor: '#41ffca',
-            borderColor: '#41ffca',
-            borderWidth: 1,
-          },
-        ],
-      });
-    }
-
     async function fetchNetGainData() {
       const response = await fetch(
         'https://api.sheety.co/2996d79e2117ff0d746768a9b29ec03c/rsoCsv/netGainByZipCode'
@@ -204,13 +115,9 @@ export default function Analysis() {
       setNetLossByLuCodeData(data.netLossByLuCode);
     }
 
-    // fetchChartData1();
-    fetchChartData2();
     fetchChartData3();
     fetchZipCodeData();
     fetchLandUseCodeData();
-    fetchUnitRangeData();
-    fetchNetChangeData();
     fetchNetGainData();
     fetchNetLossData();
     fetchNetGainByLuCodeData();
@@ -265,117 +172,7 @@ export default function Analysis() {
             <br></br>
           </div>
           <UnitsByYear />
-          {/* <div className="w-full mb-8">
-            <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">RSO Units by Year</p>
-            {chartData1.labels ? (
-              <Bar
-                data={chartData1}
-                options={{
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                      ticks: {
-                        color: theme === 'dark' ? '#555' : '#ddd',  // White for dark mode, black for light
-                      },
-                      grid: {
-                        display: true,
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Number of RSO Units', // Add title to the y-axis
-                        ticks: { color: theme === 'dark' ? '#555' : '#000000', }// White for dark mode, black for light
-                      },
-                    },
-                    x: {
-                      ticks: {
-                        ticks: { color: theme === 'dark' ? '#555' : '#000000', } // White for dark mode, black for light
-                      },
-                      grid: {
-                        display: true,
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Year', // Add title to the x-axis
-                        ticks: { color: theme === 'dark' ? '#555' : '#000000', }// White for dark mode, black for light
-                      },
-                    },
-                  },
-                  plugins: {
-                    legend: {
-                      display: false, // Remove legend
-                    },
-                  },
-                }}
-
-
-
-              />
-            ) : (
-              <p>Loading data...</p>
-            )}
-          </div> */}
-          <div className='mb-8 w-full'>
-            <p className='pb-4 pt-8 text-center text-xl font-bold dark:text-white'>
-              Number of RSO Units by Council District (2024)
-            </p>
-            <div
-              className='text-left dark:text-white'
-              style={{ fontFamily: 'Helvetica' }}
-            >
-              <p className='mb-4'>
-                <b> Council District 13</b> has the highest number of RSO units
-                with <b>78,958</b>, followed by <b>Council District 10</b> with{' '}
-                <b>78,370 RSO </b> units.
-              </p>
-            </div>
-            {chartData2.labels ? (
-              <Bar
-                data={chartData2}
-                options={{
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                      ticks: {
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                      grid: {
-                        display: true, // Enable grid lines
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Number of Buyouts', // Add title to the y-axis
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                    },
-                    x: {
-                      ticks: {
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                      grid: {
-                        display: true, // Enable grid lines
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Council District', // Add title to the x-axis
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                    },
-                  },
-                  plugins: {
-                    legend: {
-                      display: false, // Remove legend
-                    },
-                  },
-                }}
-              />
-            ) : (
-              <p>Loading data...</p>
-            )}
-          </div>
+          <UnitsByCD />
           {/* <div className="w-full mb-8">
             <p className="pt-8 pb-4 text-center text-xl font-bold dark:text-white">Net Change in RSO Units by City Council District</p>
             {chartData3.labels ? (
@@ -534,140 +331,8 @@ export default function Analysis() {
               </tbody>
             </table>
           </div>
-
-          <div className='mb-8 w-full'>
-            <h2 className='pb-4 pt-8 text-center text-2xl font-bold dark:text-white'>
-              Number of RSO Units by Unit Range
-            </h2>
-            <div
-              className='text-left dark:text-white'
-              style={{ fontFamily: 'Helvetica' }}
-            >
-              <p className='mb-4'>
-                Unit Range is based on the number of RSO units located within a
-                particular property.
-              </p>
-              <p className='mb-4'>
-                In 2024, <b>195,926</b> RSO units were located in properties
-                that contained 11-49 units followed by <b>127,240</b> RSO units
-                in properties that contained 5-10 units.
-              </p>
-            </div>
-            {unitRangeData.labels ? (
-              <Bar
-                data={unitRangeData}
-                options={{
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                      ticks: {
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                      grid: {
-                        display: true,
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Number of RSO Units',
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                    },
-                    x: {
-                      ticks: {
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                      grid: {
-                        display: true,
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Unit Range',
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                    },
-                  },
-                  plugins: {
-                    legend: {
-                      display: false,
-                    },
-                  },
-                }}
-              />
-            ) : (
-              <p>Loading data...</p>
-            )}
-          </div>
-
-          <div className='mb-8 w-full'>
-            <h2 className='pb-4 pt-8 text-center text-2xl font-bold dark:text-white'>
-              Net Change in RSO Units by Council District (CD)
-            </h2>
-            <div
-              className='text-left dark:text-white'
-              style={{ fontFamily: 'Helvetica' }}
-            >
-              <p className='mb-4'>
-                Most Council Districts saw net increases in the number of RSO
-                units over the past 6 years. Council District <b>12</b> saw the
-                highest increase with <b>2,877</b> units followed by Council
-                District <b>2</b> with <b>2,859</b>.
-              </p>
-              <p className='mb-4'>
-                Of the three Council Districts with net losses in RSO units,
-                Council District <b>14</b> saw the most with a net loss of{' '}
-                <b>868</b> RSO units followed by Council District <b>15</b> with
-                a net loss of <b>490</b> units.
-              </p>
-            </div>
-            {netChangeData.labels ? (
-              <Bar
-                data={netChangeData}
-                options={{
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                      ticks: {
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                      grid: {
-                        display: true,
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Net Change in RSO Units',
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                    },
-                    x: {
-                      ticks: {
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                      grid: {
-                        display: true,
-                        color: 'gray',
-                      },
-                      title: {
-                        display: true,
-                        text: 'Council District',
-                        color: isDark ? '#FFF' : '#000',
-                      },
-                    },
-                  },
-                  plugins: {
-                    legend: {
-                      display: false,
-                    },
-                  },
-                }}
-              />
-            ) : (
-              <p>Loading data...</p>
-            )}
-          </div>
-
+          <UnitsByRange />
+          <NetUnitsByCD />
           <div className='mb-8 w-full'>
             <h2 className='pb-4 pt-8 text-center text-2xl font-bold dark:text-white'>
               Top 10 Zip Codes with the Highest Net Increases/Decreases in RSO
@@ -885,7 +550,7 @@ export default function Analysis() {
                     y: {
                       beginAtZero: true,
                       ticks: {
-                        color: isDark ? '#FFF' : '#000',
+                        color: 'white',
                       },
                       grid: {
                         display: true, // Enable grid lines
@@ -894,12 +559,12 @@ export default function Analysis() {
                       title: {
                         display: true,
                         text: 'Net Change in RSO Units',
-                        color: isDark ? '#FFF' : '#000',
+                        color: 'white',
                       },
                     },
                     x: {
                       ticks: {
-                        color: isDark ? '#FFF' : '#000',
+                        color: 'white',
                       },
                       grid: {
                         display: true, // Enable grid lines
@@ -908,7 +573,7 @@ export default function Analysis() {
                       title: {
                         display: true,
                         text: 'Unit Range',
-                        color: isDark ? '#FFF' : '#000',
+                        color: 'white',
                       },
                     },
                   },

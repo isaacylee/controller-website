@@ -5,10 +5,45 @@ import { Bar } from 'react-chartjs-2';
 
 Chart.register(...registerables);
 
+function isDarkMode() {
+  if (typeof window !== 'undefined') {
+    // Check local storage for user preference
+    const userPreference = localStorage.getItem('theme');
+    if (
+      userPreference === 'dark' ||
+      (userPreference === null &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      return true;
+    }
+  }
+  // Default to light mode on the server or when no preference is set
+  return false;
+}
+
+function updateChartLabelColor() {
+  if (typeof window !== 'undefined') {
+    const isDark = isDarkMode();
+    // console.log('isDark:', isDark);
+    document.documentElement.style.setProperty(
+      '--chart-label-color',
+      isDark
+        ? 'var(--chart-label-color-dark)'
+        : 'var(--chart-label-color-light)'
+    );
+  }
+}
+
+updateChartLabelColor();
+
+if (typeof window !== 'undefined') {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  darkModeMediaQuery.addEventListener('change', updateChartLabelColor);
+}
+
 export default function UnitsByYear() {
   const [chartData1, setChartData1] = useState({});
-  // const themeChanger = useContext(ThemeContext);
-  const isDark = localStorage.theme === 'dark';
+  const isDark = isDarkMode();
 
   useEffect(() => {
     async function fetchChartData1() {
@@ -41,7 +76,7 @@ export default function UnitsByYear() {
       y: {
         beginAtZero: true,
         ticks: {
-          color: isDark ? '#FFF' : '#000',
+          color: isDark ? 'white' : 'black',
         },
         grid: {
           display: true,
@@ -50,12 +85,12 @@ export default function UnitsByYear() {
         title: {
           display: true,
           text: 'Number of RSO Units',
-          color: isDark ? '#FFF' : '#000',
+          color: isDark ? 'white' : 'black',
         },
       },
       x: {
         ticks: {
-          color: isDark ? '#FFF' : '#000',
+          color: isDark ? 'white' : 'black',
         },
         grid: {
           display: true,
@@ -64,7 +99,7 @@ export default function UnitsByYear() {
         title: {
           display: true,
           text: 'Year',
-          color: isDark ? '#FFF' : '#000',
+          color: isDark ? 'white' : 'black',
         },
       },
     },
@@ -81,7 +116,7 @@ export default function UnitsByYear() {
         RSO Units by Year
       </p>
       {chartData1.labels ? (
-        <Bar key={isDark} data={chartData1} options={chartOptions} />
+        <Bar data={chartData1} options={chartOptions} />
       ) : (
         <p>Loading data...</p>
       )}
