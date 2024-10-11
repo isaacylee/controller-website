@@ -43,7 +43,9 @@ export default function Analysis() {
         ],
       });
     }
-  }, []);
+ // Call the function to fetch data
+  fetchUnitRangeData();
+}, []);
 
   useEffect(() => {
     async function fetchChartData3() {
