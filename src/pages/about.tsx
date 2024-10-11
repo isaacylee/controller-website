@@ -117,7 +117,7 @@ function ProfileCard(props: profilecardprops) {
       }
     }
 
-    console.log('rerender string to use', stringtouse, Date.now());
+    // console.log('rerender string to use', stringtouse, Date.now());
 
     return stringtouse;
   };
@@ -177,7 +177,7 @@ export default function About(props: any) {
           description="Meet our team and learn about our office's functions and responsibilities."
         />
 
-        <div className=' bgColorHeader relative px-4 px-8 pt-8 text-base text-sm  md:px-0 md:px-32 md:pt-24 md:text-white'>
+        <div className='bgColorHeader relative px-4 pt-8 text-base md:px-32 md:pt-24 md:text-white'>
           <div className='background-1'>
             {/* max-w-2md z-10 mx-auto text-white */}
             <div className='z-10 mx-4 max-w-7xl text-white lg:mx-auto'>
@@ -192,9 +192,7 @@ export default function About(props: any) {
                     src='/images/ken-new-blob-big.png'
                     alt='Portrait of Kenneth Mejia'
                     className='w-96 lg:w-[500px]'
-                    sizes='(max-width: 1023px) 24rem,
-                    
-              500px'
+                    sizes='(max-width: 1023px) 24rem, 500px'
                     priority={true}
                     unoptimized={true}
                     height={440}
