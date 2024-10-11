@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2'; // Import Bar component
 
 import Navbar from '@/components/Navbar';
-
-import UnitsByYear from '../../../components/RSO/unitsByYear';
+import UnitsByYear from '@/components/RSO/UnitsByYear';
 
 export default function Analysis() {
   // const [chartData1, setChartData1] = useState({});
