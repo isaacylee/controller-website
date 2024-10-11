@@ -5,7 +5,9 @@
 :root {
  background-color: black;
  color: white;
- --chart-label-color: var(--chart-label-color-light);  /* Light mode text color */
+ --chart-label-color: var(--chart-label-color-light); 
+ --chart-border-color: var(--chart-border-color-light);
+ --chart-border-width: var(--chart-border-width-light);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,7 +15,9 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    --chart-label-color: var(--chart-label-color-dark);   /* Dark mode text color */
+    --chart-label-color: var(--chart-label-color-dark); 
+    --chart-border-color: var(--chart-border-color-dark);
+    --chart-border-width: var(--chart-border-width-dark);
   }
 }
 .container {

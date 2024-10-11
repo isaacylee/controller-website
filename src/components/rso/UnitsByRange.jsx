@@ -7,7 +7,6 @@ Chart.register(...registerables);
 
 function isDarkMode() {
   if (typeof window !== 'undefined') {
-    // Check local storage for user preference
     const userPreference = localStorage.getItem('theme');
     if (
       userPreference === 'dark' ||
@@ -17,7 +16,6 @@ function isDarkMode() {
       return true;
     }
   }
-  // Default to light mode on the server or when no preference is set
   return false;
 }
 
@@ -61,7 +59,7 @@ export default function UnitsByRange() {
             label: 'Number of RSO Units',
             data: units,
             backgroundColor: '#41ffca',
-            borderColor: '#41ffca',
+            borderColor: 'gray',
             borderWidth: 1,
           },
         ],
