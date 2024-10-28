@@ -2,6 +2,14 @@
   "audits": [
     {
       "pre": false,
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Finternalcontrols-cover.jpg?alt=media&token=79b9fba0-5927-4d5f-adcd-d370151e84a3",
+      "name": "Citywide Internal Controls Self-Assessment",
+      "year": "2024",
+      "dept": "City of Los Angeles ",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FASD%20Controls%20Assessment%20Final%20Management%20Report%20-%2009262024.2.pdf?alt=media&token=f9a1fef7-d767-4efd-af63-825236f82e39"
+    },
+    {
+      "pre": false,
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fab481-cover-bw.jpg?alt=media&token=8368b875-f70a-4e05-8a6d-57654c4feb45",
       "name": "LAPD's Compliance with AB 481 (Military Equipment: Funding, Acquisition, and Use)",
       "year": "2024",
