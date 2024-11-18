@@ -1,6 +1,20 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2F2.png?alt=media&token=0a170023-0a52-43cd-bc12-5bf5fea75191",
+      "name": "Los Angeles Single Family/Multi-Family Zoning Map",
+      "year": "2024",
+      "dept": "Map",
+      "link": "https://single-family-zoning.lacontroller.app/"
+    },
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2F1.png?alt=media&token=8bd6302c-ec42-4ccb-8aa2-d23ace060c12",
+      "name": "Approved Affordable Housing Units (2018-2024)",
+      "year": "2024",
+      "dept": "Map",
+      "link": "https://affordable-housing-approved.lacontroller.app/"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2F4118-banner%20(3).png?alt=media&token=632b7d57-6ff4-40f0-9e3b-ab1058d50ef9",
       "name": "Safe Parking Map",
       "year": "2024",
