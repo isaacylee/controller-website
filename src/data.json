@@ -1,6 +1,20 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/thumbnails%2Fovpr.png?alt=media&token=c790b54f-aad6-41e7-a703-ec4a14329758",
+      "name": "Oversized Vehicle Parking Restrictions Map",
+      "year": "2024",
+      "dept": "Map",
+      "link": "https://ovo-zones.lacontroller.app/"
+    },
+    {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/thumbnails%2Fovo-parking-citations.png?alt=media&token=2d47a614-b402-4202-9bd2-e5b9e61331c1",
+      "name": "Oversized Vehicle Parking Citations Map",
+      "year": "2024",
+      "dept": "Map",
+      "link": "https://ovo-parking-citations.lacontroller.app/"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2F2.png?alt=media&token=0a170023-0a52-43cd-bc12-5bf5fea75191",
       "name": "Los Angeles Single Family/Multi-Family Zoning Map",
       "year": "2024",
