@@ -1,5 +1,10 @@
 [
-    {
+  {
+    "agenda": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/CollectionBoardOfReview%2FCollections%20Board%20of%20Review%20Minutes%20-%20July%2031%2C%202024.pdf?alt=media&token=33980489-b7d9-4772-86da-bcee338d4690",
+    "date": "Wednesday, July 31, 2024",
+    "minutes": ""
+  },
+  {
     "agenda": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/CollectionBoardOfReview%2FCollections%20Board%20of%20Review%20Agenda%20-%20October%2030%2C%202024.pdf?alt=media&token=aaa63522-239d-4566-b20a-8db0872e8aaf",
     "date": "Wednesday, October 30, 2024",
     "minutes": ""
