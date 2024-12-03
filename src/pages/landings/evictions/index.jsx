@@ -159,7 +159,7 @@ export default function Evictions() {
           <div className='mb-16'>
             {' '}
             <FairMarketRent />
-            <p className='italic'>
+            <p className='italic dark:text-white'>
               Note: The Fair Market Rent (FMR) amounts are adjusted each Fiscal
               Year (July to June).
             </p>
