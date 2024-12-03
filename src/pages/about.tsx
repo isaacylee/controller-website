@@ -404,7 +404,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Jacky Rodarte'
                   title='Research Analyst'
-                  picture='/images/staff/JackyRodarte-ExecAide.jpg'
+                  picture='/images/staff/JackyRodarte-ResearchAnalyst.jpg'
                 />
               </div>
             </div>
