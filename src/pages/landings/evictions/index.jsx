@@ -13,14 +13,17 @@ export default function Evictions() {
   return (
     <>
       <Head>
-        <title>Eviction Notices (February - December 2023) Summary and Analysis</title>
+        <title>
+          Eviction Notices (February 2023 - November 17, 2024) Summary and
+          Analysis
+        </title>
       </Head>
       <Navbar />
-      <main className='container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
+      <main className='container mx-auto mb-12 px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-            <h1 className='pt-8 pb-4 text-center text-3xl font-bold dark:text-white'>
-              Eviction Notices (February - December 2023)
+            <h1 className='pb-4 pt-8 text-center text-3xl font-bold dark:text-white'>
+              Eviction Notices (February 2023 - November 17, 2024)
             </h1>
           </div>
           <div>
@@ -30,7 +33,7 @@ export default function Evictions() {
               target='_blank'
             >
               <button
-                className='mb-4 rounded py-2 px-4 font-bold text-black'
+                className='mb-4 rounded px-4 py-2 font-bold text-black'
                 style={{
                   backgroundColor: '#41ffca',
                 }}
@@ -49,29 +52,29 @@ export default function Evictions() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-2'>
-              [January 2024 Update] We analyzed updated data from the Los
-              Angeles Housing Department (LAHD) through the month of December
-              2023.
+              [December 2024 Update] We analyzed updated data from the Los
+              Angeles Housing Department (LAHD) from February 2023 through
+              November 17, 2024.
             </p>
             <p className='mb-4'>
-              The data reveals that from February to December, LAHD received a
-              total of
-              <b> 77,049</b> eviction notices. <b>5,652</b> notices were filed
-              for the month of December.
+              The data reveals that from February 2023 to November 17, 2024,
+              LAHD received a total of
+              <b> 166,433</b> eviction notices. <b>5,136</b> notices were filed
+              for November 2024 (as of 11/17/2024).
             </p>
             <ul className='mb-10 ml-10'>
               <li>
-                &bull; <b>77,049 eviction notices were filed</b>
+                &bull; <b>166,433 eviction notices were filed</b>
               </li>
               <li>
                 &bull;{' '}
-                <b>96% of eviction notices were for “non-payment of rent”</b>
+                <b>94% of eviction notices were for “non-payment of rent”</b>
               </li>
               <li>
-                &bull; <b>91% came with a 3-day notice</b>
+                &bull; <b>90% came with a 3-day notice</b>
               </li>
               <li>
-                &bull; <b>$3,774 is the average amount of rent owed</b>
+                &bull; <b>$3,960 is the average amount of rent owed</b>
               </li>
             </ul>
 
@@ -115,13 +118,13 @@ export default function Evictions() {
           >
             <p className='mb-4'>
               The table above shows the top 20 Zip Codes with the highest number
-              of eviction notices filed with the City from February to December
-              2023.
+              of eviction notices filed with the City from February 2023 to
+              November 17, 2024.
             </p>
             <p className='mb-4'>
               Units located within <b>90028 </b>(Hollywood area) had the highest
-              number of eviction notices filed with <b>5,156</b> followed by{' '}
-              <b>90036</b> (Fairfax area) with <b>3,840</b>.
+              number of eviction notices filed with <b>10,239</b> followed by{' '}
+              <b>90012</b> (Downtown LA, Chinatown area) with <b>8,078</b>.
             </p>
           </div>
           {/* <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
@@ -143,13 +146,12 @@ export default function Evictions() {
             </h4>
             <div className='mb-4 text-left'>
               <p className='mb-4'>
-                The <b>Just Cause Ordinance (JCO)</b> c contains a provision
-                where a landlord can evict a tenant only if the amount due{' '}
-                exceeds one month of fair market rent for the Los Angeles metro
-                area.
+                The <b>Just Cause Ordinance (JCO)</b> contains a provision where
+                a landlord can evict a tenant only if the amount due exceeds one
+                month of fair market rent for the Los Angeles metro area.
               </p>
               <p>
-                <b>12,200 </b> eviction notices were filed where the amount of
+                <b>28,352 </b> eviction notices were filed where the amount of
                 rent owed is below the Fair Market Rent (FMR) Limit.
               </p>
             </div>
@@ -157,6 +159,10 @@ export default function Evictions() {
           <div className='mb-16'>
             {' '}
             <FairMarketRent />
+            <p className='italic'>
+              Note: The Fair Market Rent (FMR) amounts are adjusted each Fiscal
+              Year (July to June).
+            </p>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
@@ -179,19 +185,18 @@ export default function Evictions() {
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
               <b>Tenant Protection Deadlines</b>
             </h4>
-            <ul>
+            <ul className='list-disc'>
               <li className='mb-4 text-left'>
-                &bull; Effective <b>February 1, 2024</b>:
+                Effective <b>February 1, 2024</b>:
               </li>
-              <ul className='ml-10'>
+              <ul className='ml-10 list-[circle]'>
                 <li className='mb-4 text-left'>
                   <p className='mb-4 text-left'>
-                    &#9702; Rent owed from October 1, 2021 to January 31, 2023
-                    is due. If a tenant returned the Declaration of
-                    COVID-19-Related Financial Distress form to the landlord
-                    within 15 days of rent being due AND paid 25% of rent owed
-                    from this period, they cannot be evicted for nonpayment of
-                    rent.
+                    Rent owed from October 1, 2021 to January 31, 2023 is due.
+                    If a tenant returned the Declaration of COVID-19-Related
+                    Financial Distress form to the landlord within 15 days of
+                    rent being due AND paid 25% of rent owed from this period,
+                    they cannot be evicted for nonpayment of rent.
                   </p>
                   <p>
                     However, since <b>March 27, 2023</b> landlords may not evict
@@ -202,8 +207,8 @@ export default function Evictions() {
                 </li>
                 <li className='mb-4 text-left'>
                   <p className='mb-4'>
-                    &#9702; As amended by City Council, annual rent increases
-                    will resume for rental units subject to the City’s Rent
+                    As amended by City Council, annual rent increases will
+                    resume for rental units subject to the City’s Rent
                     Stabilization Ordinance (RSO) with the allowable rent
                     increase at 4% starting <b>February 1, 2024</b> through{' '}
                     <b>June 30, 2024</b>. If the tenant is provided with
@@ -211,38 +216,54 @@ export default function Evictions() {
                     increased an additional 1-2% with a total increase of 5% or
                     6%.
                   </p>
+                  <p className='mb-4'>
+                    The allowable rent increase of 4% is still in effect
+                    starting on <b>July 1, 2024</b> through <b>June 30, 2024</b>
+                    . The additional 1-2% is still applicable if the tenant is
+                    provided with electric service and/or gas by the landlord,
+                    totaling 5-6%.
+                  </p>
                   <p>
                     State law requires that the landlord must provide an advance
                     30-day written notice for all rent increases of less than
                     10%.
                   </p>
                 </li>
+              </ul>
+              <li className='mb-4 text-left'>
+                Effective <b>February 5, 2024</b>:
+              </li>
+              <ul className='ml-10 list-[circle]'>
                 <li className='mb-4 text-left'>
-                  &#9702; Eviction protections will continue for tenants with
+                  Eviction protections will continue for tenants with
                   unauthorized pets obtained during the COVID-19 emergency.
-                  Tenants who have not yet told their landlord about the pet
-                  will have 30 days after the ordinance goes into effect to do
-                  so. This protection does not apply to unauthorized pets that
-                  began residing in the rental unit after 1/31/2024.
+                  Tenants had until <b>March 5, 2024</b> to inform their
+                  landlord of their unauthorized pet if they had not yet done so
+                  already. This protection does not apploy to unauthorized pets
+                  that began residing in the rental until after{' '}
+                  <b>January 31, 2024</b>.
                 </li>
               </ul>
               <li className='text-left'>
-                &bull; If an eviction notice is not provided to LAHD, a tenant
-                may raise an affirmative defense in an Unlawful Detainer case.
+                If an eviction notice is not provided to LAHD, a tenant may
+                raise an affirmative defense in an Unlawful Detainer case.
               </li>
             </ul>
             <br></br>
-            For future updates on eviction notices, please visit LAHD’s
-            <a
-              href='https://housing2.lacity.org/residents/renters/eviction-notices-filed'
-              target='_blank'
-              style={{ color: 'white' }}
-              rel='noreferrer'
-            >
-              {' '}
-              https://housing2.lacity.org/residents/renters/eviction-notices-filed
-            </a>
-            .
+            <p className='text-left'>
+              For future updates on eviction notices, please visit LAHD’s{' '}
+              <b>Eviction Notices Filed</b> dashboard:
+              <a
+                href='https://housing2.lacity.org/residents/renters/eviction-notices-filed'
+                target='_blank'
+                className='text-blue-500 underline'
+                rel='noreferrer'
+              >
+                {' '}
+                https://housing2.lacity.org/residents/renters/eviction-notices-filed
+              </a>
+              .
+            </p>
           </div>
         </center>
       </main>
