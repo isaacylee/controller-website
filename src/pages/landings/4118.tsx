@@ -26,20 +26,18 @@ export default function Data(props: any) {
   return (
     <>
       <Head>
-        <title>
-          41.18 Arrests (Jan 2012 - May 2023) Summary and Analysis
-        </title>
+        <title>41.18 Arrests (Jan 2012 - May 2023) Summary and Analysis</title>
       </Head>
       <Navbar />
 
       <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-        <h2 className='pt-8 pb-4 dark:text-white'>
+        <h2 className='pb-4 pt-8 dark:text-white'>
           41.18 Arrests Map (Jan 2012 - May 2023)
         </h2>
 
         <center>
           <a
-            href='https://4118arrests.lacontroller.io'
+            href='https://4118arrests.lacontroller.app'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -58,7 +56,7 @@ export default function Data(props: any) {
 
       <center>
         <a
-          href='https://4118arrests.lacontroller.io'
+          href='https://4118arrests.lacontroller.app'
           target='_blank'
           style={{
             backgroundColor: '#41ffca',

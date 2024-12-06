@@ -40,7 +40,7 @@ export default function Data(props: any) {
           }}
         >
           <h2
-            className='mobile-left-align pt-8 pb-4 dark:text-white'
+            className='mobile-left-align pb-4 pt-8 dark:text-white'
             style={{ flex: '1' }}
           >
             LAPD Arrest Maps & Analysis{' '}
@@ -112,7 +112,7 @@ export default function Data(props: any) {
             <br></br>
             <center>
               <a
-                href='https://arrests.lacontroller.io/'
+                href='https://arrests.lacontroller.app/'
                 target='_blank'
                 style={{
                   backgroundColor: '#41ffca',
@@ -486,7 +486,7 @@ infractions carry varying degrees of financial and incarceration consequences.
 
       <div id='spanish_translation'>
         <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-          <h2 className='mobile-left-align pt-8 pb-4 dark:text-white'>
+          <h2 className='mobile-left-align pb-4 pt-8 dark:text-white'>
             Mapas y Análisis de Arrestos de LAPD (2019-2022)
           </h2>
 
@@ -529,7 +529,7 @@ infractions carry varying degrees of financial and incarceration consequences.
               <br></br>
               <center>
                 <a
-                  href='https://arrests.lacontroller.io/'
+                  href='https://arrests.lacontroller.app/'
                   target='_blank'
                   style={{
                     backgroundColor: '#41ffca',
