@@ -218,7 +218,7 @@ export default function Evictions() {
                   </p>
                   <p className='mb-4'>
                     The allowable rent increase of 4% is still in effect
-                    starting on <b>July 1, 2024</b> through <b>June 30, 2024</b>
+                    starting on <b>July 1, 2024</b> through <b>June 30, 2025</b>
                     . The additional 1-2% is still applicable if the tenant is
                     provided with electric service and/or gas by the landlord,
                     totaling 5-6%.
