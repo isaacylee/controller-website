@@ -144,6 +144,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   `}
       </Script>
 
+      <Script
+        src="https://website-widgets.pages.dev/dist/sienna.min.js"
+        defer
+      ></Script>
+
       <Component {...pageProps} />
     </ThemeContext.Provider>
   );
