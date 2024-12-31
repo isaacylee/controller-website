@@ -20,111 +20,111 @@ import Seo from '@/components/Seo';
 // to customize the default configuration.
 
 const importantdates: any = {
-  '2024': {
+  '2025': {
     holiday: [
       '01-01',
-      '01-15',
-      '02-19',
-      '03-25',
-      '05-27',
+      '01-20',
+      '02-17',
+      '03-31',
+      '05-26',
       '06-19',
       '07-04',
-      '09-02',
-      '10-14',
+      '09-01',
+      '10-13',
       '11-11',
+      '11-27',
       '11-28',
-      '11-29',
       '12-25',
     ],
-    excess: ['01-24'],
-    nodeduction: ['05-29', '10-30'],
+    excess: ['01-22'],
+    nodeduction: ['04-30', '10-29'],
     endofpay: [
-      //every other saturday of 2024
-      '01-13',
-      '01-27',
-      '02-10',
-      '02-24',
-      '03-09',
-      '03-23',
-      '04-06',
-      '04-20',
-      '05-04',
-      '05-18',
-      '06-01',
-      '06-15',
-      '06-29',
-      '07-13',
-      '07-27',
-      '08-10',
-      '08-24',
-      '09-07',
-      '09-21',
-      '10-05',
-      '10-19',
-      '11-02',
-      '11-16',
-      '11-30',
-      '12-14',
-      '12-28',
+      //every other saturday of 2025
+      '01-11',
+      '01-25',
+      '02-08',
+      '02-22',
+      '03-08',
+      '03-22',
+      '04-05',
+      '04-19',
+      '05-03',
+      '05-17',
+      '05-31',
+      '06-14',
+      '06-28',
+      '07-12',
+      '07-26',
+      '08-09',
+      '08-23',
+      '09-06',
+      '09-20',
+      '10-04',
+      '10-18',
+      '11-01',
+      '11-15',
+      '11-29',
+      '12-13',
+      '12-27',
     ],
     payday: [
-      //every other wednesday of 2024 except for the excess sick pays and no deduction pays
+      //every other wednesday of 2025 except for the excess sick pays and no deduction pays
 
-      '01-10',
-      '02-07',
-      '02-21',
-      '03-06',
-      '03-20',
-      '04-03',
-      '04-17',
-      '05-01',
-      '05-15',
-      '06-12',
-      '06-26',
-      '07-10',
-      '07-24',
-      '08-07',
-      '08-21',
-      '09-04',
-      '09-18',
-      '10-02',
-      '10-16',
-      '11-13',
-      '11-27',
-      '12-11',
+      '01-08',
+      '02-05',
+      '02-19',
+      '03-05',
+      '03-19',
+      '04-02',
+      '04-16',
+      '05-14',
+      '05-28',
+      '06-11',
+      '06-25',
+      '07-09',
+      '07-23',
+      '08-06',
+      '08-20',
+      '09-03',
+      '09-17',
+      '10-01',
+      '10-15',
+      '11-12',
+      '11-26',
+      '12-10',
       '12-24',
     ],
   },
 };
 
 const endofpayperiodsreference: any = {
-  '2024': {
-    '01-13': '15',
-    '01-27': '16',
-    '02-10': '17',
-    '02-24': '18',
-    '03-09': '19',
-    '03-23': '20',
-    '04-06': '21',
-    '04-20': '22',
-    '05-04': '23',
-    '05-18': '24',
-    '06-01': '25',
-    '06-15': '26',
-    '06-29': '27',
-    '07-13': '1',
-    '07-27': '2',
-    '08-10': '3',
-    '08-24': '4',
-    '09-07': '5',
-    '09-21': '6',
-    '10-05': '7',
-    '10-19': '8',
-    '11-02': '9',
-    '11-16': '10',
-    '11-30': '11',
-    '12-14': '12',
-    '12-28': '13',
+  '2025': {
+    '01-11': '14',
+    '01-25': '15',
+    '02-08': '16',
+    '02-22': '17',
+    '03-08': '18',
+    '03-22': '19',
+    '04-05': '20',
+    '04-19': '21',
+    '05-03': '22',
+    '05-17': '23',
+    '05-31': '24',
+    '06-14': '25',
+    '06-28': '26',
+    '07-12': '1',
+    '07-26': '2',
+    '08-09': '3',
+    '08-23': '4',
+    '09-06': '5',
+    '09-20': '6',
+    '10-04': '7',
+    '10-18': '8',
+    '11-01': '9',
+    '11-15': '10',
+    '11-29': '11',
+    '12-13': '12',
+    '12-27': '13',
   },
 };
 
@@ -141,7 +141,7 @@ export function DatesLegendItem(props: any) {
 }
 
 export default function PayrollCalendar(props: any) {
-  const [selectedYear, setSelectedYear] = React.useState<number>(2024);
+  const [selectedYear, setSelectedYear] = React.useState<number>(2025);
   const [todaysDate, setTodaysDate] = React.useState<string>('');
   const [calendar, setCalendar] = React.useState<Array<Array<Array<number>>>>(
     []
@@ -172,7 +172,7 @@ export default function PayrollCalendar(props: any) {
     const date_time = year + '-' + month + '-' + date;
 
     // "2021-03-22"
-    console.log(date_time);
+    // console.log(date_time);
 
     if (todaysDate !== date_time) {
       setTodaysDate(date_time);
@@ -195,8 +195,8 @@ export default function PayrollCalendar(props: any) {
     const stringmonth = ('0' + month).slice(-2);
     const stringday = ('0' + day).slice(-2);
 
-    console.log('stringmonth', stringmonth);
-    console.log('stringday', stringday);
+    // console.log('stringmonth', stringmonth);
+    // console.log('stringday', stringday);
 
     if (listofimportantdates[stringmonth] === undefined) {
       return '';
@@ -233,7 +233,7 @@ export default function PayrollCalendar(props: any) {
 
     const refstring = `${stringmonth}-${stringday}`;
 
-    console.log('ref string', refstring);
+    // console.log('ref string', refstring);
 
     const answer = yeartoref[refstring];
 
@@ -259,7 +259,8 @@ export default function PayrollCalendar(props: any) {
     if (category) {
       aria =
         aria +
-        ` is a ${category} ${category.toLowerCase().includes('day') ? '' : 'day'
+        ` is a ${category} ${
+          category.toLowerCase().includes('day') ? '' : 'day'
         }`;
     }
 
@@ -337,18 +338,18 @@ export default function PayrollCalendar(props: any) {
 
         <Seo title='Payroll Calendar - Los Angeles Controller' />
 
-        <div className='mx-2 flex w-full flex-col px-4 py-2   dark:text-white print:text-black  print:text-black sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl  xl:max-w-4xl'>
-          <div className='flex flex-row gap-x-2 pt-2  pb-2  print:text-black '>
+        <div className='mx-2 flex w-full flex-col px-4 py-2   dark:text-white sm:mx-4  md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl print:text-black  print:text-black'>
+          <div className='flex flex-row gap-x-2 pb-2  pt-2  print:text-black '>
             <h1 className='dark:text-white  print:text-black'>
               Payroll Calendar {selectedYear}
             </h1>
             <Link
               download={true}
-              href='payrollv4.jpeg'
+              href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/payroll2025.pdf?alt=media&token=4e790812-2ee9-4393-ae94-9fa12d60b15d'
               target='_blank'
               referrerPolicy='no-referrer'
             >
-              <button className='my-auto rounded-full bg-black p-1.5 text-white dark:bg-white dark:text-black print:hidden  md:p-2'>
+              <button className='my-auto rounded-full bg-black p-1.5 text-white dark:bg-white dark:text-black md:p-2  print:hidden'>
                 <svg className='l-4 h-4' viewBox='0 0 24 24'>
                   <path
                     fill='currentColor'
@@ -361,7 +362,7 @@ export default function PayrollCalendar(props: any) {
           <div className='flex'>
             <p className='text-green-900 underline dark:text-mejito '>
               <Link
-                href='/Payroll_Calendar_2024.pdf'
+                href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/payroll2025old.pdf?alt=media&token=86060fba-cdc3-4a6c-bdaa-bbfb48f89842'
                 className='font-semibold text-green-500 dark:text-mejito'
               >
                 Print Old Version
@@ -373,14 +374,13 @@ export default function PayrollCalendar(props: any) {
 
             <p className='text-green-900 underline dark:text-mejito '>
               <Link
-                href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FLA_Payroll_Calendar_2025.pdf?alt=media&token=16bbed06-4bc4-4d9f-87d2-c5c2650b06d4'
+                href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Payroll%20Calendar%202026.pdf?alt=media&token=9e2932fe-6707-454c-8a48-9363aa4bb931'
                 className='font-semibold text-green-500 dark:text-mejito'
               >
-                Payroll Calendar 2025
+                Payroll Calendar 2026
               </Link>
             </p>
           </div>
-
 
           <div>
             <div className='flex flex-row flex-wrap gap-x-4 gap-y-2'>
@@ -451,8 +451,9 @@ export default function PayrollCalendar(props: any) {
                               )}  ${checkiftodaysdate(monthindex + 1, day)}`}
                             >
                               <time
-                                dateTime={`${selectedYear}-${monthindex + 1
-                                  }-${day}`}
+                                dateTime={`${selectedYear}-${
+                                  monthindex + 1
+                                }-${day}`}
                               >
                                 <p
                                   className='m-auto print:text-black'
