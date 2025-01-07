@@ -288,11 +288,11 @@ export default function About(props: any) {
                   title='Chief Deputy Controller'
                   picture='/images/staff/RickCole-ChiefDeputyController.jpg'
                 />
-{/*                 <ProfileCard
-                  name='Sergio Perez'
-                  title='Chief of Accountability & Oversight'
-                  picture='/images/staff/Sergio_Perez_ChiefAccountability.jpeg'
-                /> */}
+                <ProfileCard
+                  name='Deborah Mitrenga'
+                  title='Chief Assistant Controller'
+                  picture='/images/staff/DeborahMitrenga-ChiefAssistantController.jpg'
+                />
                 <ProfileCard
                   name='Dinah M. Manning'
                   title='Chief of Strategic Initiatives & Senior Advisor'
