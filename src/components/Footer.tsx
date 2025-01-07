@@ -64,7 +64,7 @@ export default function Footer() {
 
         <div className='sm:flex sm:items-center sm:justify-between'>
           <span className='text-sm text-gray-500 dark:text-gray-100 sm:text-center '>
-            © 2024{' '}
+            © 2025{' '}
             <a
               href='https://controller.lacity.gov'
               className='p-0 hover:underline dark:text-white'
