@@ -20,18 +20,30 @@ export default function Home() {
     <>
       <Head>
         <title>41.18 Recent Arrests Summary and Analysis</title>
-        <meta name='description' content='An analysis of 41.18 arrests from January 2021 to February 2024' />
-        <meta name='keywords' content='41.18, arrests, city of Los Angeles, homelessness' />
-        <meta property='og:title' content='41.18 Recent Arrests Summary and Analysis' />
+        <meta
+          name='description'
+          content='An analysis of 41.18 arrests from January 2021 to December 2024'
+        />
+        <meta
+          name='keywords'
+          content='41.18, arrests, city of Los Angeles, homelessness'
+        />
+        <meta
+          property='og:title'
+          content='41.18 Recent Arrests Summary and Analysis'
+        />
         <meta
           property='og:description'
-          content='An analysis of 41.18 arrests from January 2021 to February 2024'
+          content='An analysis of 41.18 arrests from January 2021 to December 2024'
         />
         {/* <meta
           property='og:image'
           content='https://example.com/about-image.jpg'
         /> */}
-        <meta property='og:url' content='https://controller.lacity.gov/landings/analysis/4118recentarrests' />
+        <meta
+          property='og:url'
+          content='https://controller.lacity.gov/landings/analysis/4118recentarrests'
+        />
         {/* <meta name='twitter:card' content='summary_large_image' /> */}
       </Head>
       <section className='flex min-h-screen flex-col p-10'>
@@ -142,7 +154,7 @@ export default function Home() {
               style={{ fontFamily: 'Helvetica', maxWidth: '600px' }}
             >
               <p className='mb-4'>
-                From January 1, 2021 to August 23, 2024, there were 3,984
+                From January 1, 2021 to December 13, 2024, there were 4,361
                 41.18 arrests in the City of LA.
               </p>
               <p className='mb-4'>
