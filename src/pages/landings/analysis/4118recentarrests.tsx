@@ -143,7 +143,7 @@ export default function Home() {
               <p className='mb-4'>
                 This map and analysis display 41.18 arrest data obtained from
                 the Los Angeles Police Department beginning on January 1, 2021
-                through August 23, 2024, to encapsulate enforcement in the
+                through December 13, 2024, to encapsulate enforcement in the
                 months leading up to the July 29, 2021 41.18 amendment and the
                 most recent available data.
               </p>
