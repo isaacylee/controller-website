@@ -259,7 +259,7 @@ export default function HomePage(props: any) {
         <div className='container mx-auto px-4  '>
           <h2 className='frontpageh2section'> Upcoming Audits & Reports</h2>
 
-          <div className=' hidden grid-cols-3 gap-x-4 gap-y-4 sm:grid md:grid-cols-4 lg:grid-cols-5'>
+          <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid md:grid-cols-4 lg:grid-cols-5'>
             {upcoming.slice(0, 4).map((eachupcoming: any, key) => (
               <UpcomingBigCard
                 key={key}
@@ -283,21 +283,6 @@ export default function HomePage(props: any) {
                   name={eachupcoming.name}
                   alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
                   image=''
-                />
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className='rounded-lg  sm:hidden'>
-              {upcoming.slice(0, 5).map((eachupcoming: any, key: number) => (
-                <LineCard
-                  key={key}
-                  link={`${eachupcoming.link}`}
-                  image={eachupcoming.image}
-                  year={eachupcoming.year}
-                  dept={titleCase(eachupcoming.dept)}
-                  name={eachupcoming.name}
                 />
               ))}
             </div>
