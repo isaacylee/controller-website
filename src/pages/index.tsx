@@ -365,7 +365,7 @@ export default function HomePage(props: any) {
           </div>
           <div>
             <div className='flex flex-row'>
-              <Link href='/audits'>
+              <Link href='/reports'>
                 <div className={`${kirbybutton}`}>All Financial Reports</div>
               </Link>
             </div>
