@@ -26,7 +26,7 @@ export default function pafr23(props: any) {
       <Seo
         title='Popular Annual Financial Report FY24'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/pafr23-thumbnail.png'
+        image='https://controller.lacity.gov/images/pafr24-thumbnail.jpg'
       />
       <Layout>
         <div className='flex flex-col pb-2 dark:text-white'>
