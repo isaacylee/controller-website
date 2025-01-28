@@ -108,9 +108,12 @@ const LineChart: React.FC = () => {
   const charts = departmentAssets.map((asset) => {
     const dataForAsset = filteredData.filter((data) => data.Asset === asset);
 
-    const labels = Object.keys(chartData[0]).filter(
-      (key) => key !== "Department" && key !== "Asset"
-    );
+    // const labels = Object.keys(chartData[0]).filter(
+    //   (key) => key !== "Department" && key !== "Asset"
+    // );
+    const labels = Object.keys(chartData[0])
+      .filter((key) => /^\d{4}$/.test(key)); // Only include keys that are 4-digit years
+
 
     const datasets = dataForAsset.map((data) => ({
       label: `${data.Department} - ${data.Asset}`,
