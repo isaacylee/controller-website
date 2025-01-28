@@ -20,7 +20,7 @@ const BarChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/csvsforpafr23/demographics.csv");
+        const response = await fetch("/csvsforpafr24/demographics.csv");
         const csvData = await response.text();
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
           fiscalYear: d["Fiscal Year"] ? +d["Fiscal Year"] : 0,
@@ -29,17 +29,17 @@ const BarChart: React.FC = () => {
           personalIncomePerCapita: d["Personal Income Per Capita"] ? parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) : 0,
           unemploymentRate: d["Unemployment Rate"] ? parseFloat(d["Unemployment Rate"].replace(/%/, "")) : 0,
         }));
-        const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2023);
+        const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2024);
         const sortedData = filteredData.sort((a, b) => a.fiscalYear - b.fiscalYear);
         setChartData(sortedData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-  
+
     fetchData();
   }, []);
-  
+
 
   if (!chartData) {
     return null;
@@ -96,7 +96,7 @@ const BarChart: React.FC = () => {
       );
     }
   }
-  
+
   updateChartLabelColor();
 
 
@@ -108,7 +108,7 @@ const BarChart: React.FC = () => {
         title: {
           display: true,
           text: "Fiscal Year",
-           color: isDark ? 'white' : 'black',
+          color: isDark ? 'white' : 'black',
         },
         ticks: {
           color: isDark ? 'white' : 'black',

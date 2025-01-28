@@ -1,22 +1,23 @@
 .soup-image {
-    width: 256px;
-    float: left;
-    shape-outside: url("/images/conventioncenter.png");
+  width: 256px;
+  float: left;
+  shape-outside: url("/images/conventioncenter.png");
 }
 
 .lapotrait {
-    background-image: url("/images/freeway2.png");
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
-  .PortraitofCityOfLA {
-    background-image: url("/images/freeway.png");
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  }
+  background-image: url("/images/funfact.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.PortraitofCityOfLA {
+  background-image: url("/images/_MG_0981.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}

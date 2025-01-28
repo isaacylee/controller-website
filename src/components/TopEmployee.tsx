@@ -29,17 +29,17 @@ const TopEmployeeChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/csvsforpafr23/employers-1.csv');
+        const response = await fetch('/csvsforpafr24/employers-1.csv');
         const csvData = await response.text();
 
         const dataArray = csvParse(csvData, (d) => ({
           employer: String(d.Employer),
-          employees22: +String(d["22 Employees"]).replace(/,/g, '') || 0,
-          rank22: +String(d["22 Rank"]) || 0,
-          percent22: +String(d["22 % of Total"]).replace('%', '') || 0,
-          employees13: +String(d["13 Employees"]).replace(/,/g, '') || 0,
-          rank13: +String(d["13 Rank"]) || 0,
-          percent13: +String(d["13 % of Total"]).replace('%', '') || 0,
+          employees22: +String(d["Employees"]).replace(/,/g, '') || 0,
+          rank22: +String(d["Rank"]) || 0,
+          percent22: +String(d["% of Total"]).replace('%', '') || 0,
+          employees13: +String(d["Employees"]).replace(/,/g, '') || 0,
+          rank13: +String(d["Rank"]) || 0,
+          percent13: +String(d["% of Total"]).replace('%', '') || 0,
         }));
 
         const filteredData = dataArray.filter(
@@ -63,7 +63,7 @@ const TopEmployeeChart: React.FC = () => {
 
   const datasets = [
     {
-      label: '2023 Employees',
+      label: '2024 Employees',
       data: chartData.map((data) => data.employees22),
       backgroundColor: '#41ffca',
       stack: 'stack',
@@ -101,7 +101,7 @@ const TopEmployeeChart: React.FC = () => {
       );
     }
   }
-  
+
   updateChartLabelColor();
 
   const isDark = isDarkMode();
@@ -119,7 +119,7 @@ const TopEmployeeChart: React.FC = () => {
         ticks: {
           color: isDark ? 'white' : 'black',
         },
-        
+
       },
       y: {
         beginAtZero: true,
@@ -134,9 +134,9 @@ const TopEmployeeChart: React.FC = () => {
         labels: {
           color: isDark ? 'white' : 'black',
         },
-      
+
       },
-      
+
     },
     plugins: {
       legend: {

@@ -16,26 +16,26 @@ Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 interface ChartData {
   Year: string;
   "Activity Type": string;
-  // Activity: string;
   Value: number;
 }
 
 const BarChart: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData[] | null>(null);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/csvsforpafr23/2expend-sum.csv");
+        const response = await fetch("/csvsforpafr24/2expend-sum.csv");
         const csvData = await response.text();
 
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
           Year: String(d["Year"]),
           "Activity Type": String(d["Activity Type"]),
-          Value: parseFloat(String(d["Value"]).replace(/,/g, "").trim()) || 0,
+          Value: parseFloat(String(d["Sum of Value"]).replace(/,/g, "").trim()) || 0,
         }));
 
         const filteredData = dataArray.filter(
-          (data) => data?.Year >= "2019" && data?.Year <= "2023"
+          (data) => parseInt(data.Year, 10) >= 2019 && parseInt(data.Year, 10) <= 2024
         );
         setChartData(filteredData);
       } catch (error) {
@@ -49,58 +49,50 @@ const BarChart: React.FC = () => {
   if (!chartData) {
     return null;
   }
-const labels = [...new Set(chartData.map((item) => item.Year))];
 
+  // Generate unique labels (Years)
+  const labels = [...new Set(chartData.map((item) => item.Year))];
+
+  // Prepare datasets for the chart
   const datasets = [
     {
       label: "Governmental",
-      data: chartData
-        .filter((data) => data["Activity Type"] === "Governmental")
-        .map((data) => data.Value),
-      backgroundColor: getColor("Governmental"),
-      stack: "stack",
+      data: labels.map(
+        (year) =>
+          chartData.find(
+            (data) =>
+              data.Year === year && data["Activity Type"] === "Governmental"
+          )?.Value || 0
+      ),
+      backgroundColor: "#41ffca", // Color for Governmental
+      stack: "stack", // Grouped stacking
     },
     {
       label: "Business-Type",
-      data: chartData
-        .filter((data) => data["Activity Type"] === "Business-Type")
-        .map((data) => data.Value),
-      backgroundColor: getColor("Business-Type"),
-      stack: "stack",
+      data: labels.map(
+        (year) =>
+          chartData.find(
+            (data) =>
+              data.Year === year && data["Activity Type"] === "Business-Type"
+          )?.Value || 0
+      ),
+      backgroundColor: "#ffca41", // Color for Business-Type
+      stack: "stack", // Grouped stacking
     },
   ];
 
-  function getColor(activityType: string) {
-    return activityType === "Governmental" ? "#41ffca" : "#ffca41";
-  }
-
+  // Dark mode handling
   function isDarkMode() {
     if (typeof window !== "undefined") {
       const userPreference = localStorage.getItem("theme");
-      if (
+      return (
         userPreference === "dark" ||
         (userPreference === null &&
           window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        return true;
-      }
+      );
     }
     return false;
   }
-
-  function updateChartLabelColor() {
-    if (typeof window !== "undefined") {
-      const isDark = isDarkMode();
-      document.documentElement.style.setProperty(
-        "--chart-label-color",
-        isDark
-          ? "var(--chart-label-color-dark)"
-          : "var(--chart-label-color-light)"
-      );
-    }
-  }
-
-  updateChartLabelColor();
 
   const isDark = isDarkMode();
 
@@ -126,9 +118,6 @@ const labels = [...new Set(chartData.map((item) => item.Year))];
           color: isDark ? "white" : "black",
         },
         ticks: {
-          color: isDark ? "white" : "black",
-        },
-        labels: {
           color: isDark ? "white" : "black",
         },
       },

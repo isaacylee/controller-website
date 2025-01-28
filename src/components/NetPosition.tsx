@@ -22,7 +22,7 @@ interface TableColumn<T> {
 
 const NetPosition: React.FC = () => {
   const [data, setData] = useState<Data[]>([]);
-  const [selectedYear, setSelectedYear] = useState<number>(2023); // Starting year, change as needed
+  const [selectedYear, setSelectedYear] = useState<number>(2024); // Starting year, change as needed
   const [yearRange, setYearRange] = useState<{ min: number; max: number }>({ min: 2023, max: 2024 }); // Change as needed
 
   // Currency formatting function
@@ -39,7 +39,7 @@ const NetPosition: React.FC = () => {
   // Fetch and process data
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/csvsforpafr23/6condensedstatementofnetposition1.csv');
+      const response = await fetch('/csvsforpafr24/6condensedstatementofnetposition1.csv');
       const csvData = await response.text();
       const sanitizedCsvData = csvData.replace(/"(.*?)"/g, (_, g) => g.replace(/,/g, ''));
       const dataArray: Data[] = csvParse(sanitizedCsvData, (d) => ({
