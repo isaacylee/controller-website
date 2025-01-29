@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   BarElement,
   CategoryScale,
@@ -42,11 +42,18 @@ const TopEmployeeChart: React.FC = () => {
           percent13: +String(d["% of Total"]).replace('%', '') || 0,
         }));
 
+        // Filter out unnecessary rows
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'
         );
 
-        setChartData(filteredData);
+        // Sort by 2024 employees (employees22) in descending order
+        const sortedData = filteredData.sort((a, b) => b.employees22 - a.employees22);
+
+        // Get the top 10 employers
+        const top10Data = sortedData.slice(0, 10);
+
+        setChartData(top10Data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -68,12 +75,6 @@ const TopEmployeeChart: React.FC = () => {
       backgroundColor: '#41ffca',
       stack: 'stack',
     },
-    // {
-    //   label: '2013 Employees',
-    //   data: chartData.map((data) => data.employees13),
-    //   backgroundColor: 'rgba(75, 192, 192, 0.7)',
-    //   stack: 'stack',
-    // },
   ];
 
   function isDarkMode() {

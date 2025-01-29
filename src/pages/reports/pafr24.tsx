@@ -260,60 +260,52 @@ export default function pafr23(props: any) {
             <br></br>
             <h2 className='mt-3'>Local Economy</h2>
 
-            <p className='mt-2 lg:max-w-5xl'>
-              According to the U.S. Bureau of Economic Analysis, the Los Angeles-Long Beach-Anaheim, CA (MSA), with a Gross Domestic Product of $1.295 trillion in 2023, is the second- ranked metropolitan area in the United States. The City and its surrounding metropolitan region feature incredible diversity in both population and the economy. Tourism and hospitality, professional and business services, international trade and education, entertainment production, sports, and wholesale trade and logistics all contribute significantly to local employment.
-              <br />
-              <br />
 
+            <p className='mt-2 lg:max-w-5xl'>
+              According to the U.S. Bureau of Economic Analysis, Los Angeles-Long Beach-Anaheim, CA (MSA), with a Gross Domestic Product of $1.295 trillion in 2023, is the second-ranked metropolitan area in the United States. The City and its surrounding metropolitan region feature incredible diversity in both population and the economy. Tourism and hospitality, professional and business services, international trade and education, entertainment production, sports, and wholesale trade and logistics all contribute significantly to local employment.
+              <br />
+              <br />
             </p>
 
             <p className='mt-2 lg:max-w-5xl'>
               The Port of Los Angeles handles the largest volume of containerized cargo of all U.S. ports and ranks as number one in cargo value for U.S. waterborne foreign traffic. According to ACI World’s 2023 Airport Traffic Report, in the calendar year 2023, Los Angeles International Airport (LAX) ranked as the eighth busiest airport in the world in terms of total passengers and the ninth busiest airport in the world in terms of total cargo. The Los Angeles MSA experienced strong economic growth in 2023, with an increase in economic output of 4.8%, as measured by Gross Domestic Product.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              The fiscal year 2025 General Fund Budget assumes the City would see solid revenue growth while continuing to make historic investments to reduce homelessness and improve public safety. While the economic activities and General Fund revenues continue to remain stable during the first half of fiscal year 2025, there remains several factors that could affect future economic outlook and the economically-sensitive revenue sources.
+              The fiscal year 2025 General Fund Budget assumes the City would see solid revenue growth while continuing to make historic investments to reduce homelessness and improve public safety. While the economic activities and General Fund revenues continue to remain stable during the first half of fiscal year 2025, there remain several factors that could affect future economic outlook and the economically-sensitive revenue sources.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              The Ports of Los Angeles and Long Beach reported increased activity in late 2024 as shipments are diverted away from the East Coast ports due to unresolved labor negotiations. The recent elections reportedly also had an impact on trade volume as the country braces for potential tariff under incoming administration. With the President’s promises to impose tariffs on the US top three trading partners, Mexico, Canada and China, fearing the effect of the tariffs, many merchants are reportedly sending large shipment before the new administration takes office and tariffs kick in. While these recent activities bode well for the Los Angeles economy in the short run, the uncertainty of any long-term impact of tariffs policy remains very high.
+              The Ports of Los Angeles and Long Beach reported increased activity in late 2024 as shipments were diverted away from East Coast ports due to unresolved labor negotiations. The recent elections reportedly also had an impact on trade volume as the country braces for potential tariffs under the incoming administration. With the President’s promises to impose tariffs on the U.S.'s top three trading partners—Mexico, Canada, and China—many merchants are reportedly sending large shipments before the new administration takes office and tariffs take effect. While these recent activities bode well for the Los Angeles economy in the short run, the long-term impact of tariff policies remains uncertain.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              A critical part of Los Angeles economy depends on the entertainment industry. The filming activities reportedly hit a new low in 2024, driven by studio cost cutting and the relocation of production to cheaper locales, including U.K. and Central Europe. Some executives attributed the decline in production to increased cost of labor from 2023 strike, a contention rejected by union leaders. An undisputed factor is California’s inability to compete with tax incentives offered by other states and countries, a situation that Governor Newsom is now trying to address. Businesses that rely on entertainment economy are rallying behind the Governor’s proposal to increase annual film and TV tax credit allocation from $330 million to $750 million. This should help keep more production in Los Angeles. It is unclear, however, how much of the decline can be reversed with the new tax incentive policy.
+              A critical part of Los Angeles' economy depends on the entertainment industry. Filming activities reportedly hit a new low in 2024, driven by studio cost-cutting and the relocation of production to cheaper locales, including the U.K. and Central Europe. Some executives attributed the decline in production to increased labor costs following the 2023 strike, a contention rejected by union leaders. An undisputed factor is California’s inability to compete with tax incentives offered by other states and countries, a situation that Governor Newsom is now trying to address. Businesses that rely on the entertainment economy are rallying behind the Governor’s proposal to increase annual film and TV tax credit allocation from $330 million to $750 million. This should help keep more production in Los Angeles. It is unclear, however, how much of the decline can be reversed with the new tax incentive policy.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              Property taxes is the biggest source of revenue for the General Fund. Higher mortgage interest rates continue to affect affordability and real estate sales volume in Los Angeles and surrounding areas. However, the California Association of Realtors (C.A.R.) recently released its 2025 housing and economic forecast, predicting a lower interest rate environment that will ease the current "lock-in" effect (where sellers with lower mortgage rates have been unwilling to sell), leading to increase in housing inventory. C.A.R expects the shift to encourage both buyers and sellers to re-enter the market, boosting California home sales by 10.5 percent and prices by 4.6 percent in 2025. Locally, Zillow, a national real estate company, also predicts a steady growth in home sales and a 2.3 percent price appreciation for Los Angeles in 2025. These projections assume stable economy and lower interest rates in 2025. Any improvement in housing sales and prices should boost transfer tax revenues to the General Fund.
+              Property taxes are the biggest source of revenue for the General Fund. Higher mortgage interest rates continue to affect affordability and real estate sales volume in Los Angeles and surrounding areas. However, the California Association of Realtors (C.A.R.) recently released its 2025 housing and economic forecast, predicting a lower interest rate environment that will ease the current "lock-in" effect (where sellers with lower mortgage rates have been unwilling to sell), leading to an increase in housing inventory. C.A.R. expects the shift to encourage both buyers and sellers to re-enter the market, boosting California home sales by 10.5 percent and prices by 4.6 percent in 2025. Locally, Zillow, a national real estate company, also predicts steady growth in home sales and a 2.3 percent price appreciation for Los Angeles in 2025. These projections assume a stable economy and lower interest rates in 2025. Any improvement in housing sales and prices should boost transfer tax revenues to the General Fund.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              Another significant factor affecting the outlook for the second half of the fiscal year is the lack of clarity on the economic impact of the proposed policies of the incoming federal administration. In January 2025, new U.S. President Donald Trump returns to the White House with plans to implement several economic policies he promised during the 2024 campaign. On one hand, small business optimism and consumer confidence have picked up, expectations of tax cuts, deregulations and energy policies have boosted projections of corporate earnings. On the other hand, according to the University of California (UCLA) Anderson Forecast, some of the policies could have a notable effect on California and Los Angeles’ economy. Policies around tariffs on United States’ three largest trading partners, immigration and regulations may stoke inflation while stifling economic growth. How these policies ultimately manifest is not necessarily clear at this time, as many of these policies would not come into focus until late 2025.
+              Another significant factor affecting the outlook for the second half of the fiscal year is the lack of clarity on the economic impact of the proposed policies of the incoming federal administration. In January 2025, new U.S. President Donald Trump returns to the White House with plans to implement several economic policies he promised during the 2024 campaign. On one hand, small business optimism and consumer confidence have picked up, and expectations of tax cuts, deregulations, and energy policies have boosted projections of corporate earnings. On the other hand, according to the University of California (UCLA) Anderson Forecast, some of the policies could have a notable effect on California and Los Angeles’ economy. Policies around tariffs on the U.S.'s three largest trading partners, immigration, and regulations may stoke inflation while stifling economic growth. How these policies ultimately manifest is not necessarily clear at this time, as many of these policies would not come into focus until late 2025.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              Finally, at the time of this report, the City is dealing with a major fire disaster in Pacific Palisades and other communities, the magnitude of which the City has never seen. Several widespread fires burning thousands of acres, devastating many communities and families. The fires have reportedly burned thousands of homes and businesses, with many lives lost. While the firefighters and first responders are still working around the clock to put out fires in many areas, the disaster so far have been described as one of the worst disasters in United States’ history, with preliminary property loss estimates ranging in the billions. The impacted Angelenos faces a long road ahead as they try to rebuild their lives. Although the scale of the impact is still being assessed at the time of this report, the loss of this magnitude is bound to significantly affect the local economy and revenues to the City.
+              Finally, at the time of this report, the City is dealing with a major fire disaster in Pacific Palisades and other communities, the magnitude of which the City has never seen. Several widespread fires have burned thousands of acres, devastating many communities and families. The fires have reportedly burned thousands of homes and businesses, with many lives lost. While firefighters and first responders are still working around the clock to put out fires in many areas, the disaster so far has been described as one of the worst disasters in United States’ history, with preliminary property loss estimates ranging in the billions. The impacted Angelenos face a long road ahead as they try to rebuild their lives. Although the scale of the impact is still being assessed at the time of this report, a loss of this magnitude is bound to significantly affect the local economy and revenues to the City.
               <br />
               <br />
-
             </p>
             <p className='mt-2 lg:max-w-5xl'>
-              Because of all these factors, the City is likely to be facing fiscal challenges for a foreseeable future. It is therefore incumbent on City policymakers to plan accordingly, rethink priorities and implement General Fund expenditure reduction measures, should in case the projected growth in General Fund revenue fails to materialize.
+              Because of all these factors, the City is likely to be facing fiscal challenges for a foreseeable future. It is therefore incumbent on City policymakers to plan accordingly, rethink priorities and implement General Fund expenditure reduction measures, should in case the projected growth in General Fund revenue fails to materialize. The City’s initial fire damage estimate submitted to FEMA shows a total of $358.0 million in costs related to emergency response, infrastructure/structural damages and debris removal estimated through January 10, 2025.
               <br />
               <br />
-
             </p>
 
 
@@ -828,7 +820,11 @@ export default function pafr23(props: any) {
               <br></br>
               <br></br>
               <br></br>
-              <span className='font-bold'>
+
+
+              <Credit />
+              <br></br>
+              <span >
                 In January 2025, three rating agencies, S&P,
                 Fitch, and Kroll, placed the City's ratings on watch negative status,
                 indicating that the City's ratings are under review and that there is
@@ -839,8 +835,6 @@ export default function pafr23(props: any) {
                 outlooks on the City's issuer rating for Sewer's senior and subordinate
                 wastewater revenue bonds rating from stable to negative.
               </span>{' '}
-
-              <Credit />
 
               {/* <p className='mt-4 lg:max-w-5xl'>
               The City has established guidelines for the structure and

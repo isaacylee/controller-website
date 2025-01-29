@@ -151,6 +151,9 @@ const BarChart: React.FC = () => {
         },
         ticks: {
           color: isDark ? 'white' : 'black',
+          callback: function (value: any) {
+            return `${value}%`;  // Add percentage sign
+          }
         },
         labels: {
           color: isDark ? 'white' : 'black',
