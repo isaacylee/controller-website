@@ -1,9 +1,16 @@
-"use client"
-import { BarElement, CategoryScale, Chart, LinearScale, Title, Tooltip } from "chart.js";
-import { csvParse } from "d3";
+'use client';
+import {
+  BarElement,
+  CategoryScale,
+  Chart,
+  LinearScale,
+  Title,
+  Tooltip,
+} from 'chart.js';
+import { csvParse } from 'd3';
 import { useTheme } from 'next-themes';
-import React, { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
+import React, { useEffect, useState } from 'react';
+import { Bar } from 'react-chartjs-2';
 Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 interface ChartData {
@@ -16,57 +23,72 @@ interface ChartData {
 
 const BarChart: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData[] | null>(null);
-  const { theme, setTheme } = useTheme()
+  const category = 'Unemployment Rate';
+  const { theme, setTheme } = useTheme();
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/csvsforpafr24/demographics.csv");
+        const response = await fetch('/csvsforpafr24/demographics.csv');
         const csvData = await response.text();
         const dataArray: ChartData[] = csvParse(csvData, (d) => ({
-          fiscalYear: d["Fiscal Year"] ? +d["Fiscal Year"] : 0,
-          estimatedPopulation: d["Estimated Population"] ? parseInt(d["Estimated Population"].replace(/,/g, ""), 10) : 0,
-          personalIncome: d["Personal Income (in thousands)"] ? parseInt(d["Personal Income (in thousands)"].replace(/,/g, ""), 10) : 0,
-          personalIncomePerCapita: d["Personal Income Per Capita"] ? parseInt(d["Personal Income Per Capita"].replace(/,/g, ""), 10) : 0,
-          unemploymentRate: d["Unemployment Rate"] ? parseFloat(d["Unemployment Rate"].replace(/%/, "")) : 0,
+          fiscalYear: d['Fiscal Year'] ? +d['Fiscal Year'] : 0,
+          estimatedPopulation: d['Estimated Population']
+            ? parseInt(d['Estimated Population'].replace(/,/g, ''), 10)
+            : 0,
+          personalIncome: d['Personal Income (in thousands)']
+            ? parseInt(
+                d['Personal Income (in thousands)'].replace(/,/g, ''),
+                10
+              )
+            : 0,
+          personalIncomePerCapita: d['Personal Income Per Capita']
+            ? parseInt(d['Personal Income Per Capita'].replace(/,/g, ''), 10)
+            : 0,
+          unemploymentRate: d['Unemployment Rate']
+            ? parseFloat(d['Unemployment Rate'].replace(/%/, ''))
+            : 0,
         }));
-        const filteredData = dataArray.filter((data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2024);
-        const sortedData = filteredData.sort((a, b) => a.fiscalYear - b.fiscalYear);
+        const filteredData = dataArray.filter(
+          (data) => data.fiscalYear >= 2019 && data.fiscalYear <= 2024
+        );
+        const sortedData = filteredData.sort(
+          (a, b) => a.fiscalYear - b.fiscalYear
+        );
         setChartData(sortedData);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error('Error fetching data:', error);
       }
     };
 
     fetchData();
   }, []);
 
-
   if (!chartData) {
     return null;
   }
-  const isDark = isDarkMode()
+  const isDark = isDarkMode();
   const labels = chartData.map((data) => data.fiscalYear.toString());
   const datasets = [
     {
-      label: "Estimated Population",
+      label: 'Estimated Population',
       data: chartData.map((data) => data.estimatedPopulation),
-      backgroundColor: "#41ffca",
+      backgroundColor: '#41ffca',
       type: 'bar',
     },
     {
-      label: "Personal Income Per Capita",
+      label: 'Personal Income Per Capita',
       data: chartData.map((data) => data.personalIncomePerCapita),
-      borderColor: "purple",
+      borderColor: 'purple',
       backgroundColor: 'rgba(0,0,0,0)',
       type: 'line',
       fill: false,
-      yAxisID: "incomeYAxis",
+      yAxisID: 'incomeYAxis',
     },
     {
-      label: "Unemployment Rate",
+      label: category,
       data: chartData.map((data) => data.unemploymentRate),
-      backgroundColor: "#FFCA41",
-      yAxisID: "percentageYAxis",
+      backgroundColor: '#FFCA41',
+      yAxisID: 'percentageYAxis',
       type: 'bar',
     },
   ];
@@ -99,7 +121,6 @@ const BarChart: React.FC = () => {
 
   updateChartLabelColor();
 
-
   const options = {
     maintainAspectRatio: false,
     scales: {
@@ -107,7 +128,7 @@ const BarChart: React.FC = () => {
         beginAtZero: true,
         title: {
           display: true,
-          text: "Fiscal Year",
+          text: 'Fiscal Year',
           color: isDark ? 'white' : 'black',
         },
         ticks: {
@@ -146,19 +167,19 @@ const BarChart: React.FC = () => {
         // beginAtZero: true,
         title: {
           display: true,
-          text: "Values",
+          text: 'Values',
           color: isDark ? 'white' : 'black',
         },
         ticks: {
           color: isDark ? 'white' : 'black',
           callback: function (value: any) {
-            return `${value}%`;  // Add percentage sign
-          }
+            return `${value}%`; // Add percentage sign
+          },
         },
         labels: {
           color: isDark ? 'white' : 'black',
         },
-      }
+      },
     },
     plugins: {
       legend: {
@@ -166,11 +187,25 @@ const BarChart: React.FC = () => {
           color: isDark ? 'white' : 'black',
         },
       },
+      tooltip: {
+        callbacks: {
+          label: function (context: any) {
+            const label = context.dataset.label || '';
+            const value = context.parsed.y.toLocaleString();
+
+            if (label === 'Unemployment Rate') {
+              return `${label}: ${(value * 100).toFixed(2)}%`;
+            } else {
+              return `${label}: ${value}`;
+            }
+          },
+        },
+      },
     },
   };
 
   return (
-    <div style={{ width: "100%", height: "500px", overflowX: "auto" }}>
+    <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>
       <Bar data={{ labels, datasets } as any} options={options} />
     </div>
   );
