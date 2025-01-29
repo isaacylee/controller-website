@@ -765,7 +765,7 @@ export default function pafr23(props: any) {
                 more{' '}
               </b>{' '}
               than the prior year. The growth in expenses outpaced the growth in
-              revenues due cost increases in many governmental activities.
+              revenues due to cost increases in many governmental activities.
             </p>
             <div className='lg:max-w-5xl'>
               <TotalExpenditure />

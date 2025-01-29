@@ -16,7 +16,7 @@ export function Credit() {
   React.useEffect(() => {
     d3.csv('/csvsforpafr23/5ratingsofthecitydebtbyratingagencies.csv').then(
       (data: any) => {
-        console.log('credit ratings', data);
+        // console.log('credit ratings', data);
 
         const offeredYearsForGeneralBond: any = [];
         const allCreditYearsPre: any = [];
@@ -43,7 +43,7 @@ export function Credit() {
         });
 
         setAllCreditYears(allCreditYearsPre);
-        console.log('cleaned general bond rating', generalBondData);
+        // console.log('cleaned general bond rating', generalBondData);
         setCreditData({ 'General Obligation Bonds': generalBondData });
       }
     );
