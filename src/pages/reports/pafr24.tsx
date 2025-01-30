@@ -371,11 +371,11 @@ export default function pafr23(props: any) {
             <p className='mt-2  lg:max-w-5xl '>
               <img
                 className='float-left mb-4 mr-1 w-32 dark:hidden md:w-48 lg:w-64'
-                src='/images/Award-1.png'
+                src='/images/award24.png'
               ></img>
               <img
                 className='float-left mb-4 mr-1 hidden w-32 dark:block md:w-48 lg:w-64'
-                src='/images/Award-1.png'
+                src='/images/award24.png'
               />
               <div style={{ paddingLeft: '18rem' }}>
                 Government Finance Officers Association of the United States and
