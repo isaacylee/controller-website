@@ -33,26 +33,20 @@ const TopEmployeeChart: React.FC = () => {
         const csvData = await response.text();
 
         const dataArray = csvParse(csvData, (d) => ({
-          employer: String(d.Employer),
-          employees22: +String(d["Employees"]).replace(/,/g, '') || 0,
-          rank22: +String(d["Rank"]) || 0,
-          percent22: +String(d["% of Total"]).replace('%', '') || 0,
-          employees13: +String(d["Employees"]).replace(/,/g, '') || 0,
-          rank13: +String(d["Rank"]) || 0,
-          percent13: +String(d["% of Total"]).replace('%', '') || 0,
+          employer: d.Employer,
+          employees22: +d["Employees"].replace(/,/g, ''),
+          rank22: +d["Rank"],
+          percent22: +d["% of Total"].replace('%', ''),
+          employees13: +d["15 Employees"].replace(/,/g, ''),
+          rank13: +d["15 Rank"],
+          percent13: +d["15 % of Total"].replace('%', ''),
         }));
 
-        // Filter out unnecessary rows
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'
         );
-
-        // Sort by 2024 employees (employees22) in descending order
-        const sortedData = filteredData.sort((a, b) => b.employees22 - a.employees22);
-
-        // Get the top 10 employers
+        const sortedData = filteredData.sort((a, b) => a.rank22 - b.rank22);
         const top10Data = sortedData.slice(0, 10);
-
         setChartData(top10Data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -70,7 +64,7 @@ const TopEmployeeChart: React.FC = () => {
 
   const datasets = [
     {
-      label: '2024 Employees',
+      label: '2024 Employees(Non-Government)',
       data: chartData.map((data) => data.employees22),
       backgroundColor: '#41ffca',
       stack: 'stack',
