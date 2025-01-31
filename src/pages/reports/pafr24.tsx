@@ -370,14 +370,14 @@ export default function pafr23(props: any) {
             <h2>About Popular Annual Financial Reporting</h2>
             <p className='mt-2  lg:max-w-5xl '>
               <img
-                className='float-left mb-4 mr-1 w-32 dark:hidden md:w-48 lg:w-64'
+                className='float-left mb-2 mr-2 w-32 dark:hidden md:mb-4 md:w-56 lg:w-64'
                 src='/images/award24.png'
               ></img>
               <img
-                className='float-left mb-4 mr-1 hidden w-32 dark:block md:w-48 lg:w-64'
+                className='float-left mb-2 mr-2 hidden w-32 dark:block md:mb-4 md:w-56 lg:w-64'
                 src='/images/award24.png'
               />
-              <div style={{ paddingLeft: '18rem' }}>
+              <div className='pl-2 md:pl-4 lg:pl-[18rem]'>
                 Government Finance Officers Association of the United States and
                 Canada (GFOA) has given an Award for Outstanding Achievement in
                 Popular Annual Financial Reporting to the City of Los Angeles
@@ -388,7 +388,7 @@ export default function pafr23(props: any) {
                 preparation of state and local government popular reports.
               </div>
               <br />
-              <div style={{ paddingLeft: '18rem' }}>
+              <div className='pl-2 md:pl-4 lg:pl-[18rem]'>
                 In order to receive an Award for Outstanding Achievement in
                 Popular Annual Financial Reporting, a government unit must
                 publish a Popular Annual Financial Report, whose contents
@@ -403,7 +403,7 @@ export default function pafr23(props: any) {
             </p>
 
             <br></br>
-            <h2 className='mt-3'>Local Economy</h2>
+            <h2 className='mt-7'>Local Economy</h2>
 
             <p className='mt-2 lg:max-w-5xl'>
               According to the U.S. Bureau of Economic Analysis, Los
