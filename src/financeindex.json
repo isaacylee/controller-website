@@ -1,6 +1,15 @@
 {
   "finance": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fpafr25%2Facfr2025cover.jpg?alt=media&token=829c7b21-25f4-4414-af73-a2736c0b818d",
+      "name": "Annual Comprehensive Financial Report FY24 ",
+      "year": "2025",
+      "dept": "Financial Report",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fpafr25%2FACFR%202024_secured.pdf?alt=media&token=aec1a01a-d50a-41d1-90b1-1797353479ba",
+      "pre": false,
+      "alt": "Cover photo Preliminary Financial Report 2024"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2Frevforecastcover24-25.jpg?alt=media&token=e5d242a6-d2f2-4218-b1d4-50dda3444117",
       "name": "Revenue Forecast Report ",
       "year": "2024",
