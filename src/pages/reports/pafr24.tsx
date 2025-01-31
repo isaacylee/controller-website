@@ -65,7 +65,7 @@ export default function pafr23(props: any) {
             <br />
             <p className='text-green-800 underline dark:text-[#41ffca]'>
               <Link
-                href='/acfr23.pdf'
+                href='https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fpafr25%2FACFR%202024_secured.pdf?alt=media&token=aec1a01a-d50a-41d1-90b1-1797353479ba'
                 target='_blank'
                 rel='noreferrer noopener'
                 className='text-green-800 underline dark:text-mejito'
