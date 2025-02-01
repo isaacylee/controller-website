@@ -76,7 +76,11 @@ export default function pafr23(props: any) {
             <h2>A Message from City Controller Kenneth Mejia</h2>
             <p>
               <br />
+              Honorable Mayor Karen Bass <br />
+              Honorable Members of the Council of the City of Los Angeles
+              <br />
               Community Members of the City of Los Angeles
+              <br />
               <br />
               <br />
               <img
@@ -94,42 +98,58 @@ export default function pafr23(props: any) {
               <br />
               <br />
               As we warned at this time last year, the City is continuing to
-              spend well beyond our actual revenues. Even before the
-              catastrophic firestorm impact, the City Administrative Officer was
-              projecting another deficit this year approaching $300 million. In
-              last year’s letter, we predicted “deficits for years to come
+              spend well beyond our actual revenues and adopted budget. The City
+              exceeded various department and non-department adopted budgets
+              triggering austerity measures that adversely impacted most
+              departments and city services. The top areas of spending over
+              budget (when compared on a cash basis) included:
+              <br />
+              <br />
+              <ul className='mb-4 ml-12 list-disc'>
+                <li>
+                  Liability Claims by $153 million (largest shares include
+                  Police at $75.1 million and Miscellaneous at $71.6 million)
+                </li>
+                <li>Police by $127 million</li>
+                <li>General Services by $105 million</li>
+              </ul>
+              At the opposite end, there was underspending in critical areas
+              related to homelessness, infrastructure, animal services, and
+              basic services to make up for the overspending.
+              <br />
+              <br />
+              In last year’s letter, we predicted “deficits for years to come
               (that) will force wrenching choices that threaten the vital
               services Angelenos rely on. This is not the result of a sudden
               economic downturn, but the culmination of years of short-term
               budget balancing at the cost of long-term fiscal sustainability.”
               <br />
               <br />
-              Short-term budget balancing resulted in the elimination of 1,700
+              Short-term budget balancing resulted in the elimination of 1700
               then-vacant positions, which included positions that weren’t
-              vacant for that very long. As the year has progressed, the service
+              vacant for very long. As the year has progressed, the service
               impacts of those cuts are hitting as departments scramble with
               severely diminished capacities to address undiminished (and even
-              growing) needs and expectations.
+              growing) needs.
               <br />
               <br />
               Given the devastating damage and disruptions from the firestorm
               disaster, the fiscal stress could not come at a worse time. We’ve
-              gone from record levels of reserves 18 months ago to the brink of
-              needing to officially declare a “fiscal emergency.” The full scope
-              is just emerging for disaster response expenses; revenue loss from
-              property damage and business disruption; and the costs of recovery
-              and rebuilding. This added stress on the budget comes on top of
-              the growing responsibilities for preparing for the Olympic and
-              Paralympic Games in 2028.
+              gone from record levels of General Fund reserves 18 months ago to
+              the brink of needing to officially declare a “fiscal emergency.”
+              The full scope is just emerging for disaster response expenses;
+              revenue loss from property damage and business disruption; and the
+              costs of recovery and rebuilding. This added stress on the budget
+              comes on top of the growing responsibilities for preparing for the
+              Olympic and Paralympic Games in 2028.
               <br />
               <br />
-              In January 2025, three rating agencies, S&P Global Ratings, Fitch
-              Ratings, and Kroll Bond Rating Agency, placed the City's ratings
-              on watch negative status, indicating that the City's ratings are
-              under review and that there is meaningful potential for a negative
-              rating change. Additionally, Moody's Ratings revised the outlooks
-              on the City's issuer rating for Sewer's senior and subordinate
-              wastewater revenue bonds rating from stable to negative.
+              In January 2025, three rating agencies, S&P, Fitch, and Kroll,
+              placed the City's ratings on negative watch status, indicating
+              that the City's ratings are under review and that there is
+              meaningful potential for a negative rating change. Additionally,
+              Moody's Ratings revised the outlooks on the City's issuer rating
+              for wastewater revenue bonds rating from stable to negative.
               <br />
               <br />
               Last year at this time we noted that, “The contract for rank and
@@ -145,199 +165,153 @@ export default function pafr23(props: any) {
               year – and in the current fiscal year, the underbudgeting for the
               impacts of those contracts leaves many departments forced for the
               first time into automatic overspending simply to honor the payroll
-              costs of their existing (and understaffed) workforce. Similarly,
-              the continued underbudgeting of the soaring costs of legal
-              liability judgments and settlements resulted in $239.70 fiscal
-              year 2024 and a projected $209.10 in the fiscal year 2025.
+              costs of their existing (and understaffed) workforce who are now
+              working even more overtime to keep up. Similarly, the continued
+              underbudgeting of the soaring costs of legal liability judgments
+              and settlements resulted in $240.4 million last fiscal year and
+              estimated to be $301 million for the current fiscal year.
               <br />
-              <br />
-              General Fund budgeted revenues fiscal year 2024 also turned out to
-              be overly optimistic. In March, our Office projected $7.6 billion
-              in General Fund revenues, while the Budget adopted by the Council
-              and signed by the Mayor assumed $7.9 billion. Actual revenues
-              turned out to be $7.7 billion.
               <br />
               The 3.0% increase over FY23 in General Fund revenues falls below
               both average historical growth and the rate of growth in
               expenditures. While property taxes (which represent 40.2% of
               General Fund revenue) increased by $136.4 million (5.1%),
               economy-sensitive revenues declined overall versus prior year:
-              <ul>
-                <li>
+              <ul className='my-4 ml-12 list-disc'>
+                <li className='mb-2'>
                   The ongoing inflation, higher interest rates, and the impacts
                   of the entertainment industry strike negatively affected local
                   economic activities in FY24, resulting in Sales tax decreasing
                   by $28.2 million (4.0%) and Business tax falling by $35.2
                   million (4.3%).
                 </li>
-                <br></br>
-                <li>
-                  Utility users tax (which comprise gas, electric and
-                  communication users taxes) revenues posted a decrease of $21.5
-                  million (3.0%) primarily due to a drop in gas users tax
+                <li className='mb-2'>
+                  Utility users’ tax (which comprise gas, electric and
+                  communication users’ taxes) revenues posted a decrease of
+                  $21.5 million (3.0%) primarily due to a drop in gas users tax
                   receipts, after a return of previously high natural gas prices
                   to normal levels.
                 </li>
-                <br></br>
                 <li>
                   Other tax revenues decreased by $66.2 million or 8.1%. There
                   were reductions in both Franchise Income ($30.1 million) and
-                  in Documentary Transfer Tax revenue ($49.0 million), the
-                  latter reflecting the slump in real estate sales.
-                  Intergovernmental revenues decreased by $11.1 million due to a
-                  reduction in State and Federal grant receipts.
+                  in Documentary Transfer Tax revenue ($49 million), the latter
+                  reflecting the slump in real estate sales. Intergovernmental
+                  revenues decreased by $11.1 million due to a reduction in
+                  State and Federal grant receipts.
                 </li>
               </ul>
               <br></br>
-              While revenues lagged, expenditures jumped by $6.8 billion, a
-              14.0% increase over FY23, primarily due to the following:
-              <ul>
-                <li>
+              While revenues lagged, General Fund expenditures jumped to $6.8
+              billion, $841 million or 14.0% increase over FY23, primarily due
+              to the following:
+              <ul className='my-4 ml-12 list-disc'>
+                <li className='mb-2'>
                   Salaries and Benefits increased by $343.6 million (11.2%) with
                   increases for sworn and civilian employees from new labor
                   agreements as well as increased sworn overtime for the Police
                   and Fire Departments and large retirement and sick payouts for
                   the Fire Department.
                 </li>
-                <br></br>
-                <li>
-                  Liability payouts for legal claims rose to $246.6 million,
+                <li className='mb-2'>
+                  Liability payouts for legal claims rose by $246.6 million,
                   well beyond the $82 million budgeted.
                 </li>
-                <br></br>
-                <li>
+                <li className='mb-2'>
                   Capital outlays increased by $68.2 million, although capital
                   expenditures still fall far short of the unfunded needs for
                   street, sidewalk, street light and other vital infrastructure
-                  repair and replacement..
+                  repair and replacement.
                 </li>
-                <br></br>
-                <li>
+                <li className='mb-2'>
                   Contractual services, operating equipment, and supplies rose
-                  $138.8 million (12.6%) due to increased costs for homelessness
-                  programs, solid waste activities, fleet maintenance and
-                  repair, auto parts and equipment, fuel and energy, human
-                  resources management project, and outside legal counsel.
+                  by $138.8 million (12.6%) due to increased costs for
+                  homelessness programs, solid waste activities, fleet
+                  maintenance and repair, auto parts and equipment, fuel and
+                  energy, human resources management project, and outside legal
+                  counsel.
                 </li>
-                <br></br>
                 <li>
                   The combined expenditures for retirement contributions and
                   workers' compensation rose by $31.7 million. Additionally,
-                  interest payments for debt service increased by $10.7 million.
-                  Primarily due to higher interest payments for Tax and Revenue
+                  interest payments for debt service increased by $10.7 million,
+                  primarily due to higher interest payments for Tax and Revenue
                   Anticipation Notes (TRAN) borrowing that has been used to earn
                   a discount on the City’s pension payments.
                 </li>
-                <br></br>
                 <li>
                   The late Dr. Herbert Stein, who chaired the President’s
                   Council of Economic Advisors, wrote, “Things that can’t go on
                   forever, don’t.” Given the grim fiscal prospects for the years
                   ahead, it is time for fundamental change to the City’s
-                  unsustainable budgetary practices.{' '}
-                </li>
-                <br></br>
-                We continue to advocate for the Mayor and Council to develop a
-                strategic five-year plan to fix our City’s finances. Without a
-                long-term approach to putting our fiscal house in order,
-                short-term decisions will doom Los Angeles to an inexorable
-                decline in public services, undermining our quality of life and
-                the economic prospects of our residents.
-                <br></br>
-                <li>
-                  I strongly commend the Mayor’s far-sighted vision outlined in
-                  her Executive Directive No. 9(ED 9) which lays out a
-                  comprehensive approach to “making our neighborhoods more
-                  resilient and equitable by revitalizing our streets and
-                  tackling years of deferred maintenance and underinvestment in
-                  our most vulnerable communities.”
-                </li>
-                <br></br>
-                <li>
-                  Her diagnosis acknowledges the long-standing shortcomings of
-                  the City’s approach to capital budgeting: “The City of Los
-                  Angeles currently lacks a comprehensive, multi-year plan for
-                  maintaining and developing infrastructure in the public
-                  right-of-way. Angelenos do not have a clear understanding of
-                  what can realistically be funded and when, nor what the City’s
-                  long-term priorities are beyond those of a given year.
-                  Additionally, fragmented governance over what gets built on
-                  and below our streets means that projects requiring strong
-                  collaboration between City departments experience last-minute
-                  changes, creating cost overruns that contribute to a growing
-                  total cost of capital projects. Furthermore, the City is
-                  financing many of these projects in a year-over-year approach,
-                  often meaning that without dedicated and predictable sources
-                  of capital, project work stops and starts and takes much
-                  longer to complete, costing us more. As a result, many
-                  communities suffer from deferred maintenance that degrade our
-                  streets, sidewalks, parks and aging facilities, and delay
-                  improvements that prevent injury and save lives.”
-                </li>
-                <br></br>
-                <li>
-                  The reforms she outlines in Executive Directive No. 9(ED 9)
-                  reflect the same strategic approach we have been advocating
-                  for the overall City budget, since similar problems afflict
-                  the way the City approaches funding for vital services.
-                </li>
-                <br></br>
-                <li>
-                  In that spirit, we have advocated for a transition to a
-                  two-year budget cycle that would save enormous staff time,
-                  give greater opportunity for meaningful community
-                  participation and allow for a more systematic approach to the
-                  City’s Finances.
-                </li>
-                <br></br>
-                <li>
-                  Department heads also need greater flexibility in allocating
-                  shrinking resources. They have the responsibility for
-                  delivering quality services yet lack the authority to direct
-                  hiring and spending within their budgets to best deliver those
-                  results.
-                </li>
-                <br></br>
-                <li>
-                  The City also needs greater transparency and accountability in
-                  its budgeting. Unlike most cities, LA segregates pension and
-                  benefit costs from department budgets, obscuring the true
-                  total cost of personnel. Similarly, LA could learn from cities
-                  who have mechanisms for rewarding departments that hold down
-                  liability costs and/or penalize those which fail to address
-                  preventable liability claims.
-                </li>
-                <br></br>
-                <li>
-                  Our Office is eager to collaborate with the Mayor, Council and
-                  greater community to reform the City’s budgeting process and
-                  priorities. This must be a long-term commitment because the
-                  problems are long-standing and will require a phased approach
-                  to solving. Budget reform and more accountable stewardship of
-                  the public’s resources are vital to minimize abrupt service
-                  cuts (which disproportionately hurt our most vulnerable).
-                </li>
-                <br></br>
-                <li>
-                  In less than four years, Los Angeles will be the center of
-                  world attention. Working together, we can ensure that our City
-                  is ready for the scrutiny. Our City has the potential to
-                  restore fiscal health, improve vital City services and lead
-                  the world in confronting climate change, housing insecurity
-                  and a changing economy. It would be tragically short-sighted
-                  not to tackle the City’s fiscal challenges to capture that
-                  potential. We must put our City on the path to fiscal
-                  sustainability so we can do the job our residents expect us to
-                  do.
+                  unsustainable budgetary practices.
                 </li>
               </ul>
               <br />
+              We continue to advocate for the Mayor and Council to develop a
+              strategic five-year plan to fix our City’s finances. Without a
+              long-term approach to putting our fiscal house in order,
+              short-term decisions will doom Los Angeles to an inexorable
+              decline in public services, undermining our quality of life and
+              the economic prospects of our residents.
               <br />
-              My staff and I appreciate the cooperation shown by City
-              departments as we prepared this report. Should you have questions
-              or require additional information, please contact my Director of
-              Financial Analysis and Reporting, Wally Oyewole at
-              rahoof.oyewole@lacity.org.
+              <br />
+              I strongly commend the Mayor’s capital infrastructure vision
+              outlined in her Executive Directive No. 9 which lays out a
+              comprehensive approach to “making our neighborhoods more resilient
+              and equitable by revitalizing our streets and tackling years of
+              deferred maintenance and underinvestment in our most vulnerable
+              communities.”
+              <br />
+              <br />
+              In that spirit, we have advocated for a transition to a two-year
+              budget cycle that would save enormous staff time, give greater
+              opportunity for meaningful community participation and allow for a
+              more systematic approach to the City’s Finances.
+              <br />
+              <br />
+              Department heads also need greater flexibility in allocating
+              shrinking resources. They have the responsibility for delivering
+              quality services yet lack the authority to direct hiring and
+              spending within their budgets to best deliver those results.
+              <br />
+              <br />
+              The City also needs greater transparency and accountability in its
+              budgeting. Unlike most cities, LA segregates pension and benefit
+              costs from department budgets, obscuring the true total cost of
+              personnel. Similarly, LA could learn from cities that have
+              mechanisms for rewarding departments that hold down liability
+              costs and/or penalize those which fail to address preventable
+              liability claims.
+              <br />
+              <br />
+              Our Office is eager to collaborate with the Mayor, Council and
+              greater community to reform the City’s budgeting process and
+              priorities. This must be a long-term commitment because the
+              problems are long-standing and will require a phased approach to
+              solving. Budget reform and more accountable stewardship of the
+              public’s resources are vital to minimize abrupt service cuts
+              (which disproportionately hurt our most vulnerable).
+              <br />
+              <br />
+              Finally, I would like to acknowledge the professional and
+              dedicated staff of the Financial Analysis and Reporting Division
+              of the Controller’s Office for the preparation of this report. I
+              would also like to express my appreciation to all those in our
+              Office and citywide who made contributions to the report. At a
+              time of staff shortages and resource constraints, their work is
+              deeply valued and respected.
+              <br />
+              <br />
+              Should you have questions or require additional information,
+              please contact my Director of Financial Analysis and Reporting,
+              Wally Oyewole at{' '}
+              <u className='text-blue-400'>rahoof.oyewole@lacity.org</u>
+              .
+              <br />
+              <br />
+              <br />
+              <br />
             </p>
             <p>
               Respectfully submitted,
