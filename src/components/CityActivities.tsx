@@ -51,7 +51,7 @@ const LineChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/csvsforpafr24/9City_activities_FY24.csv");
+        const response = await fetch("/csvsforpafr24/9City_activities.csv");
         const csvData = await response.text();
 
         const dataArray: ChartData[] = csvParse(csvData, (d) => {
