@@ -310,8 +310,7 @@ export default function pafr24(props: any) {
               .
               <br />
               <br />
-              <br />
-              <br />
+
             </p>
             <p>
               Respectfully submitted,
