@@ -18,6 +18,7 @@ interface TableColumn<T> {
   selector?: (row: T) => string | number;
   sortable?: boolean;
   cell?: (row: T) => React.ReactNode;
+  width?: string
 }
 
 const NetPosition: React.FC = () => {
@@ -70,6 +71,7 @@ const NetPosition: React.FC = () => {
       name: 'Description',
       selector: row => row.desc,
       sortable: true,
+      width: '300px'
     },
     {
       name: 'Business-Type',
