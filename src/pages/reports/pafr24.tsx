@@ -12,7 +12,7 @@ import TopEmployeeChart from '@/components/TopEmployee';
 import TotalExpenditure from '@/components/TotalExpendituresExpenses';
 import TotalRevnues from '@/components/TotalRevnues';
 
-export default function pafr23(props: any) {
+export default function pafr24(props: any) {
   return (
     <>
       {/* <Navbar /> */}

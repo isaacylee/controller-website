@@ -37,9 +37,9 @@ const BarChart: React.FC = () => {
             : 0,
           personalIncome: d['Personal Income (in thousands)']
             ? parseInt(
-                d['Personal Income (in thousands)'].replace(/,/g, ''),
-                10
-              )
+              d['Personal Income (in thousands)'].replace(/,/g, ''),
+              10
+            )
             : 0,
           personalIncomePerCapita: d['Personal Income Per Capita']
             ? parseInt(d['Personal Income Per Capita'].replace(/,/g, ''), 10)
