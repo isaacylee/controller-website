@@ -122,7 +122,7 @@ export default function OpenDataSeries() {
     },
     {
       name: 'All City Funds',
-      link: 'https://controllerdata.lacity.org/Audits-and-Reports/All-City-Funds/ej7u-di9z/data',
+      link: 'https://controllerdata.lacity.org/Audits-and-Reports/All-City-Funds/ej7u-di9z/data_preview',
       tags: ['socrata'],
       // lastupdated: datainfo.cityfunds.lastUpdatedAt,
       //  since: '2014',
@@ -143,7 +143,7 @@ export default function OpenDataSeries() {
   ];
 
   return (
-    <div className='##27272a #sm:grid-cols-2 grid grid-cols-1 gap-y-4 gap-x-4 lg:grid-cols-4'>
+    <div className='##27272a #sm:grid-cols-2 grid grid-cols-1 gap-x-4 gap-y-4 lg:grid-cols-4'>
       {datalinks.map((eachlink: any, eachlinknum: number) => (
         <EachDataButton
           key={eachlinknum}
