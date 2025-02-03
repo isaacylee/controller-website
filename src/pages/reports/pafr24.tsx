@@ -332,7 +332,7 @@ export default function pafr23(props: any) {
             </p>
           </div>
           <br />
-          <h2>About Popular Annual Financial Reporting</h2>
+          <h2 className='mt-3'>About Popular Annual Financial Reporting</h2>
           <p className='mt-2  lg:max-w-5xl '>
             <img
               className='float-left mb-4 mr-1 w-32 dark:hidden md:w-48 lg:w-64'
@@ -342,7 +342,7 @@ export default function pafr23(props: any) {
               className='float-left mb-4 mr-1 hidden w-32 dark:block md:w-48 lg:w-64'
               src='/images/award24.png'
             />
-            <div style={{ paddingLeft: '18rem' }}>
+            <div className='mt-3' style={{ paddingLeft: '18rem' }}>
               Government Finance Officers Association of the United States and
               Canada (GFOA) has given an Award for Outstanding Achievement in
               Popular Annual Financial Reporting to the City of Los Angeles for
@@ -353,7 +353,7 @@ export default function pafr23(props: any) {
               and local government popular reports.
             </div>
             <br />
-            <div style={{ paddingLeft: '18rem' }}>
+            <div className='mt-3' style={{ paddingLeft: '18rem' }}>
               In order to receive an Award for Outstanding Achievement in
               Popular Annual Financial Reporting, a government unit must publish
               a Popular Annual Financial Report, whose contents conform to
@@ -368,6 +368,67 @@ export default function pafr23(props: any) {
 
           <br></br>
           <h2 className='mt-3'>Local Economy</h2>
+
+          <p className='mt-2 lg:max-w-5xl'>
+            The City and its surrounding metropolitan region feature incredible diversity in both
+            population and the economy. Tourism and hospitality, professional and business services,
+            international trade, entertainment production, and wholesale trade and logistics all contribute
+            significantly to local employment. The Port of Los Angeles handles the largest volume of containerized
+            cargo of all U.S. ports and ranks as number one in cargo value for U.S. waterborne foreign traffic.
+            According to preliminary ACI statistics, in the calendar year 2022, Los Angeles International Airport (LAX)
+            was the sixth busiest airport in the world in terms of total passengers and ninth busiest in terms of total
+            cargo metric tons. According to the U.S. DOT originating and destination (O&D) Survey of Airline Passenger
+            Traffic for calendar year 2022, LAX had the largest number of domestic O&D passengers in the U.S. O&D passengers
+            begin and end their journeys at LAX, while connecting passengers transfer to other flights at LAX.
+            <br />
+            <br />
+
+          </p>
+
+
+
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "flex-start",
+              marginBottom: "1rem",
+            }}
+          >
+            <article>
+              <img
+                style={{
+                  float: "left",
+                  marginRight: "1rem",
+                  marginBottom: "1rem",
+                  width: "256px",
+                  display: "block",
+                }}
+                src="/images/conventioncenter.png"
+                alt="Convention Center"
+                className="soup-image"
+              />
+              <p className="mt-2  lg:max-w-5xl">
+                According to the U.S. Bureau of Economic Analysis, Los Angeles-Long Beach-Anaheim, CA (MSA), with a Gross Domestic Product of $1.295 trillion in 2023, is the second- ranked metropolitan area in the United States. The City and its surrounding metropolitan region feature incredible diversity in both population and the economy. Tourism and hospitality, professional and business services, international trade and education, entertainment production, sports, and wholesale trade and logistics all contribute significantly to local employment.
+              </p>
+              <p className="mt-2  lg:max-w-5xl">
+                The Port of Los Angeles handles the largest volume of containerized cargo of all U.S. ports and ranks as number one in cargo value for U.S. waterborne foreign traffic. According to ACI World’s 2023 Airport Traffic Report, in the calendar year 2023, Los Angeles International Airport (LAX) ranked as the eighth busiest airport in the world in terms of total passengers and the ninth busiest airport in the world in terms of total cargo. The Los Angeles MSA experienced strong economic growth in 2023, with an increase in economic output of 4.8%, as measured by Gross Domestic Product.
+                <br></br>
+                The fiscal year 2025 General Fund Budget assumes the City would see solid revenue growth while continuing to make historic investments to reduce homelessness and improve public safety. While the economic activities and General Fund revenues continue to remain stable during the first half of fiscal year 2025, there remain several factors that could affect future economic outlook and the economically-sensitive revenue sources.
+              </p>
+              <p className="mt-2  lg:max-w-5xl">
+                A critical part of Los Angeles' economy depends on the entertainment industry. The filming activities reportedly hit a new low in 2024, driven by studio cost cutting and the relocation of production to cheaper locales, including U.K. and Central Europe. Some executives attributed the decline in production to increased cost of labor from the 2023 strike, a contention rejected by union leaders. An undisputed factor is California’s inability to compete with tax incentives offered by other states and countries, a situation that Governor Newsom is now trying to address. Businesses that rely on the entertainment economy are rallying behind the Governor’s proposal to increase annual film and TV tax credit allocation from $330 million to $750 million. This should help keep more production in Los Angeles. It is unclear, however, how much of the decline can be reversed with the new tax incentive policy.
+                <br></br>
+                Property taxes are the biggest source of revenue for the General Fund and higher mortgage interest rates continue to affect affordability and real estate sales volume in Los Angeles and surrounding areas. However, the California Association of Realtors (C.A.R.) recently released its 2025 housing and economic forecast, predicting a stable economy and lower interest rate environment that would stimulate sales and price appreciation in 2025. Any improvement in housing sales and prices should boost transfer tax revenues to the General Fund.
+              </p>
+              <p className="mt-2  lg:max-w-5xl">
+                Finally, at the time of this report, the City is dealing with a major fire disaster in Pacific Palisades and other communities, the magnitude of which the City has never seen. Several widespread fires burned thousands of acres, devastating many communities and families. The fires have reportedly burned thousands of homes and businesses, with many lives lost. While the firefighters and first responders are still working around the clock to put out fires in many areas, the disaster so far has been described as one of the worst disasters in United States’ history, with preliminary property loss estimates ranging in the billions. The impacted Angelenos face a long road ahead as they try to rebuild their lives. Although the scale of the impact is still being assessed at the time of this report, the loss of this magnitude is bound to significantly affect the local economy and revenues to the City.
+                <br></br>
+                Because of all these factors, the City is likely to be facing fiscal challenges for a foreseeable future. It is therefore incumbent on City policymakers to plan accordingly, rethink priorities and implement General Fund expenditure reduction measures, should in case the projected growth in General Fund revenue fails to materialize. The City’s initial fire damage estimate submitted to FEMA shows a total of $358.0 million in costs related to emergency response, infrastructure/structural damages and debris removal estimated through January 10, 2025.
+              </p>
+            </article>
+          </div>
+          {/* <h2 className='mt-3'>Local Economy</h2>
 
           <p className='mt-2 lg:max-w-5xl'>
             According to the U.S. Bureau of Economic Analysis, Los Angeles-Long
@@ -510,7 +571,7 @@ export default function pafr23(props: any) {
             estimated through January 10, 2025.
             <br />
             <br />
-          </p>
+          </p> */}
 
           {/* <div
               style={{
