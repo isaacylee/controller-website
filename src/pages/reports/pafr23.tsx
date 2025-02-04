@@ -2,11 +2,6 @@ import Link from 'next/link';
 import * as React from 'react';
 
 import BondedDebtandLongTermNotesPayable from '@/components//pafr23comp/BondedDebtandLongTermNotesPayable';
-import BarChart from '@/components/BarChart';
-import BondedDebtandLongTermNotesPayable from '@/components/BondedDebtandLongTermNotesPayable';
-import CityActivities from '@/components/CityActivities';
-import GeneralFundExpenses from '@/components/GeneralFundExpenses';
-import GeneralFundRevenues from '@/components/GeneralFundRevenues';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
 import BarChart from '@/components/pafr23comp/BarChart';
