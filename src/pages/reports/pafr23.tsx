@@ -1,11 +1,7 @@
 import Link from 'next/link';
 import * as React from 'react';
 
-import BarChart from '@/components/pafr23comp/BarChart';
-import BondedDebtandLongTermNotesPayable from "@/components/pafr23comp/BondedDebtandLongTermNotesPayable"
-import CityActivities from "@/components/pafr23comp/CityActivities"
-import GeneralFundExpenses from "@/components/pafr23comp/GeneralFundExpenses"
-import GeneralFundRevenues from "@/components/pafr23comp/GeneralFundRevenues"
+import BondedDebtandLongTermNotesPayable from '@/components//pafr23comp/BondedDebtandLongTermNotesPayable';
 import BarChart from '@/components/BarChart';
 import BondedDebtandLongTermNotesPayable from '@/components/BondedDebtandLongTermNotesPayable';
 import CityActivities from '@/components/CityActivities';
@@ -13,12 +9,16 @@ import GeneralFundExpenses from '@/components/GeneralFundExpenses';
 import GeneralFundRevenues from '@/components/GeneralFundRevenues';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
-import NetPosition from '@/components/pafr23comp/NetPosition';
+import BarChart from '@/components/pafr23comp/BarChart';
+import CityActivities from '@/components/pafr23comp/CityActivities';
 import { Credit } from '@/components/pafr23comp/credit';
+import GeneralFundExpenses from '@/components/pafr23comp/GeneralFundExpenses';
+import GeneralFundRevenues from '@/components/pafr23comp/GeneralFundRevenues';
+import NetPosition from '@/components/pafr23comp/NetPosition';
+import TopEmployeeChart from '@/components/pafr23comp/TopEmployee';
+import TotalExpenditure from '@/components/pafr23comp/TotalExpendituresExpenses';
+import TotalRevnues from '@/components/pafr23comp/TotalRevnues';
 import Seo from '@/components/Seo';
-import TopEmployeeChart from '@/components/TopEmployee';
-import TotalExpenditure from '@/components/TotalExpendituresExpenses';
-import TotalRevnues from '@/components/TotalRevnues';
 
 export default function pafr23(props: any) {
   return (
@@ -27,7 +27,7 @@ export default function pafr23(props: any) {
       <Seo
         title='Popular Annual Financial Report FY23'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/pafrthumbnail3.png'
+        image='https://controller.lacity.gov/images/pafr23-thumbnail.png'
       />
       <Layout>
         <div className='flex flex-col pb-2 dark:text-white'>
@@ -35,7 +35,7 @@ export default function pafr23(props: any) {
             className=''
             style={{
               //url
-              background: 'url(/images/acfr-coverphoto.png)',
+              background: 'url(/images/pafr23.png)',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom',
@@ -59,7 +59,7 @@ export default function pafr23(props: any) {
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <br />
-            <p>
+            <p className='lg:max-w-5xl'>
               LA City Controller Kenneth Mejia releases the Annual Comprehensive
               Financial Report (ACFR) each January to provide a complete picture
               of the City’s finances. This website contains the Popular Annual
@@ -81,7 +81,7 @@ export default function pafr23(props: any) {
             </p>
             <br />
             <div className='lg:max-w-5xl'>
-              <h2>A Letter from City Controller Kenneth Mejia</h2>
+              <h2>A Message from City Controller Kenneth Mejia</h2>
               <p>
                 <br />
                 Community Members of the City of Los Angeles
@@ -198,6 +198,23 @@ export default function pafr23(props: any) {
                 Budgets are not just numbers; they are a statement of values. As
                 our city changes, so should our financial priorities.
                 <br />
+                <br />A transition to a two-year budget cycle would save
+                enormous staff time, give greater opportunity for meaningful
+                community participation, and allow for a more strategic approach
+                to the City’s Finances. The City also needs a transparent
+                Capital Improvement Program beyond the current wish list of
+                billions of dollars in unfunded projects. Participatory
+                budgeting, expanded beyond its current experimental pilot, would
+                offer greater citizen engagement in the City’s fiscal health.
+                <br />
+                The City should also break with the opaque process where annual
+                departmental budgets are simply marginally adjusted (up or down)
+                without fundamentally altering the long- standing budgetary
+                status quo. Given the daunting financial realities, the City
+                needs to undertake a strategic reallocation of resources to what
+                matters most to the long-term wellbeing of all of our residents.
+                Budgets are not just numbers; they are a statement of values. As
+                our city changes, so should our financial priorities.
                 <br />
                 Our Office is eager to collaborate with the Mayor, Council, and
                 greater community to reform the City’s budgeting process and
@@ -279,7 +296,9 @@ export default function pafr23(props: any) {
                 eligibility for another Award.
               </div>
             </p>
+            <br></br>
             <h2 className='mt-3'>Local Economy</h2>
+
             <p className='mt-2 lg:max-w-5xl'>
               The City and its surrounding metropolitan region feature
               incredible diversity in both population and the economy. Tourism
@@ -378,20 +397,18 @@ export default function pafr23(props: any) {
             </div>
             {/* Add Visual - Principal Employers */}
 
-            <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2>
-            <TopEmployeeChart />
+            {/* <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2> */}
+            <h2 className='mt-3 dark:text-white'>Principal Employers</h2>
+            <div className='lg:max-w-5xl'>
+              <TopEmployeeChart />
+            </div>
 
             {/* <br />
             <Demographics />
             <br />
             <Employers /> */}
           </div>
-          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
-            <img
-              className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"
-              src="/images/IMG_6323.png"
-              alt="Portrait of City Of LA"
-            />
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <h2 className='mt-3'>City Organization</h2>
             <div className='clear: both;'></div>
 
@@ -508,7 +525,7 @@ export default function pafr23(props: any) {
           </div>
 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            <h3 className='mt-3'>FY 22 Total Revenues: $20.0 billion</h3>
+            {/* <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3> */}
             {/* Add Visual - City Revenues */}
             <div className='lg:max-w-5xl'>
               <TotalRevnues />
@@ -543,20 +560,12 @@ export default function pafr23(props: any) {
               business-type activities.
               <br />
               <br />
-              Total expenses decreased by $1.7 billion or 18.0% compared to FY
-              21. Expenses decreased in the following functional areas: general
-              government by $209.6 million, protections of persons and property
-              by $1.4 billion, public works by $73.9 million, health and
-              sanitation by $125.3 million, transportation by $13.5 million, and
-              interest on long-term debt by $1.6 million; offset by increases of
-              cultural and recreational services of $9.3 million and community
-              development of $77.6 million.
-              <br />
               <br />
             </p>
 
             {/* <Changeinnetpos /> */}
           </div>
+
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <div className='laportrait lg:max-w-5xl'></div>
             <br></br>
@@ -874,7 +883,7 @@ export default function pafr23(props: any) {
               </h3>
               <Credit />
 
-            <p className='mt-4 lg:max-w-5xl'>
+              {/* <p className='mt-4 lg:max-w-5xl'>
               The City has established guidelines for the structure and
               management of the City’s debt, which include target and ceiling
               levels for certain debt ratios to be used for financial planning
@@ -910,6 +919,20 @@ export default function pafr23(props: any) {
             </p> */}
             </div>
             <br />
+            <div className='lg:max-w-5xl'>
+              <h2 className='mt-3'>City Activities</h2>
+              <br />
+              <p>
+                The charts represent performance metrics reported across
+                departments. Switch departments using the picker below.
+              </p>
+              <br />
+            </div>
+            <div className='container mx-0 pb-3  dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
+              <div className='lg:max-w-5xl'>
+                <CityActivities />
+              </div>
+            </div>
             <div className='lg:max-w-5xl'>
               <h2 className='mt-3'>City Activities</h2>
               <br />
