@@ -14,7 +14,7 @@ export function Credit() {
   };
 
   React.useEffect(() => {
-    d3.csv('/csvsforpafr23/5ratingsofthecitydebtbyratingagencies_FY24.csv').then(
+    d3.csv('/csvsforpafr23/5ratingsofthecitydebtbyratingagencies.csv').then(
       (data: any) => {
         // console.log('credit ratings', data);
 
