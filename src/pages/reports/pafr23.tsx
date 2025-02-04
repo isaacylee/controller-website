@@ -928,20 +928,6 @@ export default function pafr23(props: any) {
                 <CityActivities />
               </div>
             </div>
-            <div className='lg:max-w-5xl'>
-              <h2 className='mt-3'>City Activities</h2>
-              <br />
-              <p>
-                The charts represent performance metrics reported across
-                departments. Switch departments using the picker below.
-              </p>
-              <br />
-            </div>
-            <div className='container mx-0 pb-3  dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
-              <div className='lg:max-w-5xl'>
-                <CityActivities />
-              </div>
-            </div>
           </div>
         </div>
       </Layout>
