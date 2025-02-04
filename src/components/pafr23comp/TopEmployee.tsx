@@ -3,6 +3,7 @@ import {
   BarElement,
   CategoryScale,
   Chart,
+  ChartOptions,
   LinearScale,
   Title,
   Tooltip,
@@ -34,13 +35,24 @@ const TopEmployeeChart: React.FC = () => {
 
         const dataArray = csvParse(csvData, (d) => ({
           employer: d.Employer,
-          employees22: +d["Employees"].replace(/,/g, ''),
-          rank22: +d["Rank"],
-          percent22: +d["% of Total"].replace('%', ''),
-          employees13: +d["15 Employees"].replace(/,/g, ''),
-          rank13: +d["15 Rank"],
-          percent13: +d["15 % of Total"].replace('%', ''),
+          employees22: +d["22 Employees"]?.replace(/,/g, '') || 0,
+          rank22: +d["22 Rank"] || 0,
+          percent22: +(d["22 % of Total"]?.replace('%', '') || 0),
+          employees13: +d["13 Employees"]?.replace(/,/g, '') || 0,
+          rank13: +d["13 Rank"] || 0,
+          percent13: +(d["13 % of Total"]?.replace('%', '') || 0),
         }));
+
+
+        // const dataArray = csvParse(csvData, (d) => ({
+        //   employer: d.Employer,
+        //   employees22: +d["Employees"].replace(/,/g, ''),
+        //   rank22: +d["Rank"],
+        //   percent22: +d["% of Total"].replace('%', ''),
+        //   employees13: +d["15 Employees"].replace(/,/g, ''),
+        //   rank13: +d["15 Rank"],
+        //   percent13: +d["15 % of Total"].replace('%', ''),
+        // }));
 
         const filteredData = dataArray.filter(
           (data) => data.employer !== 'All Others' && data.employer !== 'TOTAL'
@@ -64,7 +76,7 @@ const TopEmployeeChart: React.FC = () => {
 
   const datasets = [
     {
-      label: '2024 Employees(Non-Government)',
+      label: '2023 Employees',
       data: chartData.map((data) => data.employees22),
       backgroundColor: '#41ffca',
       stack: 'stack',
@@ -103,44 +115,54 @@ const TopEmployeeChart: React.FC = () => {
 
   const options = {
     maintainAspectRatio: false,
+    responsive: true,
+    layout: {
+      padding: {
+        left: 0, // Remove extra left padding
+        right: 20, // Keep some right padding
+        top: 10,
+        bottom: 10,
+      },
+    },
     scales: {
       x: {
-        beginAtZero: true,
         title: {
           display: true,
-          text: 'Employer',
-          color: isDark ? 'white' : 'black',
+          text: "Employer",
+          color: isDark ? "white" : "black",
         },
         ticks: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
-
       },
       y: {
-        beginAtZero: true,
         title: {
           display: true,
-          text: 'Number of Employees',
-          color: isDark ? 'white' : 'black',
+          text: "Number of Employees",
+          color: isDark ? "white" : "black",
         },
         ticks: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
+          padding: 5, // Ensures spacing is minimal
         },
-        labels: {
-          color: isDark ? 'white' : 'black',
+        grid: {
+          drawTicks: false,
+          drawBorder: false, // Removes extra border space
         },
-
       },
-
     },
     plugins: {
       legend: {
         labels: {
-          color: isDark ? 'white' : 'black',
+          color: isDark ? "white" : "black",
         },
       },
     },
   };
+
+
+
+
 
   return (
     <div style={{ width: '100%', height: '500px', overflowX: 'auto' }}>
