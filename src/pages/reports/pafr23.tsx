@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import * as React from 'react';
 
+import BarChart from '@/components/pafr23comp/BarChart';
+import BondedDebtandLongTermNotesPayable from "@/components/pafr23comp/BondedDebtandLongTermNotesPayable"
+import CityActivities from "@/components/pafr23comp/CityActivities"
+import GeneralFundExpenses from "@/components/pafr23comp/GeneralFundExpenses"
+import GeneralFundRevenues from "@/components/pafr23comp/GeneralFundRevenues"
 import BarChart from '@/components/BarChart';
 import BondedDebtandLongTermNotesPayable from '@/components/BondedDebtandLongTermNotesPayable';
 import CityActivities from '@/components/CityActivities';
@@ -8,8 +13,8 @@ import GeneralFundExpenses from '@/components/GeneralFundExpenses';
 import GeneralFundRevenues from '@/components/GeneralFundRevenues';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar';
-import NetPosition from '@/components/NetPosition';
-import { Credit } from '@/components/pafr23visualise/credit';
+import NetPosition from '@/components/pafr23comp/NetPosition';
+import { Credit } from '@/components/pafr23comp/credit';
 import Seo from '@/components/Seo';
 import TopEmployeeChart from '@/components/TopEmployee';
 import TotalExpenditure from '@/components/TotalExpendituresExpenses';
@@ -22,7 +27,7 @@ export default function pafr23(props: any) {
       <Seo
         title='Popular Annual Financial Report FY23'
         description='Report & Visualizations of Expenditures, Revenues, and Debt for the City of Los Angeles'
-        image='https://controller.lacity.gov/images/pafr23-thumbnail.png'
+        image='https://controller.lacity.gov/images/pafrthumbnail3.png'
       />
       <Layout>
         <div className='flex flex-col pb-2 dark:text-white'>
@@ -30,7 +35,7 @@ export default function pafr23(props: any) {
             className=''
             style={{
               //url
-              background: 'url(/images/pafr23.png)',
+              background: 'url(/images/acfr-coverphoto.png)',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom',
@@ -54,7 +59,7 @@ export default function pafr23(props: any) {
           </div>
           <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
             <br />
-            <p className='lg:max-w-5xl'>
+            <p>
               LA City Controller Kenneth Mejia releases the Annual Comprehensive
               Financial Report (ACFR) each January to provide a complete picture
               of the City’s finances. This website contains the Popular Annual
@@ -76,7 +81,7 @@ export default function pafr23(props: any) {
             </p>
             <br />
             <div className='lg:max-w-5xl'>
-              <h2>A Message from City Controller Kenneth Mejia</h2>
+              <h2>A Letter from City Controller Kenneth Mejia</h2>
               <p>
                 <br />
                 Community Members of the City of Los Angeles
@@ -240,7 +245,7 @@ export default function pafr23(props: any) {
             </div>
             <br />
             <h2>About Popular Annual Financial Reporting</h2>
-            <p className='mt-2  lg:max-w-5xl '>
+            <p className='mt-2  lg:max-w-5xl'>
               <img
                 className='float-left mb-4 mr-1 w-32 dark:hidden md:w-48 lg:w-64'
                 src='/images/Award-1.png'
@@ -274,10 +279,7 @@ export default function pafr23(props: any) {
                 eligibility for another Award.
               </div>
             </p>
-
-            <br></br>
             <h2 className='mt-3'>Local Economy</h2>
-
             <p className='mt-2 lg:max-w-5xl'>
               The City and its surrounding metropolitan region feature
               incredible diversity in both population and the economy. Tourism
@@ -376,18 +378,20 @@ export default function pafr23(props: any) {
             </div>
             {/* Add Visual - Principal Employers */}
 
-            {/* <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2> */}
-            <h2 className='mt-3 dark:text-white'>Principal Employers</h2>
-            <div className='lg:max-w-5xl'>
-              <TopEmployeeChart />
-            </div>
+            <h2 className='mt-3 dark:text-white'>Top Employers in Los Angeles County 2023</h2>
+            <TopEmployeeChart />
 
             {/* <br />
             <Demographics />
             <br />
             <Employers /> */}
           </div>
-          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100 sm:px-4 lg:mx-auto lg:max-w-7xl'>
+          <div className='container mx-0 px-2 pb-3 pt-5 dark:text-gray-100  sm:px-4 lg:mx-auto lg:max-w-7xl'>
+            <img
+              className="mb-2 w-72 sm:ml-4 sm:mb-4 sm:w-144"
+              src="/images/IMG_6323.png"
+              alt="Portrait of City Of LA"
+            />
             <h2 className='mt-3'>City Organization</h2>
             <div className='clear: both;'></div>
 
@@ -504,7 +508,7 @@ export default function pafr23(props: any) {
           </div>
 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
-            {/* <h3 className='mt-3'>Total City Revenues: $21.6 billion</h3> */}
+            <h3 className='mt-3'>FY 22 Total Revenues: $20.0 billion</h3>
             {/* Add Visual - City Revenues */}
             <div className='lg:max-w-5xl'>
               <TotalRevnues />
@@ -539,12 +543,20 @@ export default function pafr23(props: any) {
               business-type activities.
               <br />
               <br />
+              Total expenses decreased by $1.7 billion or 18.0% compared to FY
+              21. Expenses decreased in the following functional areas: general
+              government by $209.6 million, protections of persons and property
+              by $1.4 billion, public works by $73.9 million, health and
+              sanitation by $125.3 million, transportation by $13.5 million, and
+              interest on long-term debt by $1.6 million; offset by increases of
+              cultural and recreational services of $9.3 million and community
+              development of $77.6 million.
+              <br />
               <br />
             </p>
 
             {/* <Changeinnetpos /> */}
           </div>
-
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
             <div className='laportrait lg:max-w-5xl'></div>
             <br></br>
@@ -862,7 +874,7 @@ export default function pafr23(props: any) {
               </h3>
               <Credit />
 
-              {/* <p className='mt-4 lg:max-w-5xl'>
+            <p className='mt-4 lg:max-w-5xl'>
               The City has established guidelines for the structure and
               management of the City’s debt, which include target and ceiling
               levels for certain debt ratios to be used for financial planning

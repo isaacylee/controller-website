@@ -12,7 +12,7 @@ import TopEmployeeChart from '@/components/TopEmployee';
 import TotalExpenditure from '@/components/TotalExpendituresExpenses';
 import TotalRevnues from '@/components/TotalRevnues';
 
-export default function pafr23(props: any) {
+export default function pafr24(props: any) {
   return (
     <>
       {/* <Navbar /> */}
@@ -186,7 +186,7 @@ export default function pafr23(props: any) {
                   million (4.3%).
                 </li>
                 <li className='mb-2'>
-                  Utility users’ tax (which comprise gas, electric and
+                  Utility users tax (which comprise gas, electric and
                   communication users’ taxes) revenues posted a decrease of
                   $21.5 million (3.0%) primarily due to a drop in gas users tax
                   receipts, after a return of previously high natural gas prices
@@ -310,8 +310,7 @@ export default function pafr23(props: any) {
               .
               <br />
               <br />
-              <br />
-              <br />
+
             </p>
             <p>
               Respectfully submitted,
@@ -369,7 +368,7 @@ export default function pafr23(props: any) {
           <br></br>
           <h2 className='mt-3'>Local Economy</h2>
 
-          <p className='mt-2 lg:max-w-5xl'>
+          {/* <p className='mt-2 lg:max-w-5xl'>
             The City and its surrounding metropolitan region feature incredible diversity in both
             population and the economy. Tourism and hospitality, professional and business services,
             international trade, entertainment production, and wholesale trade and logistics all contribute
@@ -383,7 +382,7 @@ export default function pafr23(props: any) {
             <br />
             <br />
 
-          </p>
+          </p> */}
 
 
 
@@ -408,24 +407,25 @@ export default function pafr23(props: any) {
                 alt="Convention Center"
                 className="soup-image"
               />
-              <p className="mt-2  lg:max-w-5xl">
+              <p className="mt-2 lg:max-w-5xl">
                 According to the U.S. Bureau of Economic Analysis, Los Angeles-Long Beach-Anaheim, CA (MSA), with a Gross Domestic Product of $1.295 trillion in 2023, is the second- ranked metropolitan area in the United States. The City and its surrounding metropolitan region feature incredible diversity in both population and the economy. Tourism and hospitality, professional and business services, international trade and education, entertainment production, sports, and wholesale trade and logistics all contribute significantly to local employment.
               </p>
-              <p className="mt-2  lg:max-w-5xl">
+              <p className="mt-2 lg:max-w-5xl">
                 The Port of Los Angeles handles the largest volume of containerized cargo of all U.S. ports and ranks as number one in cargo value for U.S. waterborne foreign traffic. According to ACI World’s 2023 Airport Traffic Report, in the calendar year 2023, Los Angeles International Airport (LAX) ranked as the eighth busiest airport in the world in terms of total passengers and the ninth busiest airport in the world in terms of total cargo. The Los Angeles MSA experienced strong economic growth in 2023, with an increase in economic output of 4.8%, as measured by Gross Domestic Product.
                 <br></br>
                 The fiscal year 2025 General Fund Budget assumes the City would see solid revenue growth while continuing to make historic investments to reduce homelessness and improve public safety. While the economic activities and General Fund revenues continue to remain stable during the first half of fiscal year 2025, there remain several factors that could affect future economic outlook and the economically-sensitive revenue sources.
               </p>
-              <p className="mt-2  lg:max-w-5xl">
+              <p className="mt-2 lg:max-w-5xl">
                 A critical part of Los Angeles' economy depends on the entertainment industry. The filming activities reportedly hit a new low in 2024, driven by studio cost cutting and the relocation of production to cheaper locales, including U.K. and Central Europe. Some executives attributed the decline in production to increased cost of labor from the 2023 strike, a contention rejected by union leaders. An undisputed factor is California’s inability to compete with tax incentives offered by other states and countries, a situation that Governor Newsom is now trying to address. Businesses that rely on the entertainment economy are rallying behind the Governor’s proposal to increase annual film and TV tax credit allocation from $330 million to $750 million. This should help keep more production in Los Angeles. It is unclear, however, how much of the decline can be reversed with the new tax incentive policy.
                 <br></br>
                 Property taxes are the biggest source of revenue for the General Fund and higher mortgage interest rates continue to affect affordability and real estate sales volume in Los Angeles and surrounding areas. However, the California Association of Realtors (C.A.R.) recently released its 2025 housing and economic forecast, predicting a stable economy and lower interest rate environment that would stimulate sales and price appreciation in 2025. Any improvement in housing sales and prices should boost transfer tax revenues to the General Fund.
               </p>
-              <p className="mt-2  lg:max-w-5xl">
+              <p className="mt-2 lg:max-w-5xl">
                 Finally, at the time of this report, the City is dealing with a major fire disaster in Pacific Palisades and other communities, the magnitude of which the City has never seen. Several widespread fires burned thousands of acres, devastating many communities and families. The fires have reportedly burned thousands of homes and businesses, with many lives lost. While the firefighters and first responders are still working around the clock to put out fires in many areas, the disaster so far has been described as one of the worst disasters in United States’ history, with preliminary property loss estimates ranging in the billions. The impacted Angelenos face a long road ahead as they try to rebuild their lives. Although the scale of the impact is still being assessed at the time of this report, the loss of this magnitude is bound to significantly affect the local economy and revenues to the City.
                 <br></br>
                 Because of all these factors, the City is likely to be facing fiscal challenges for a foreseeable future. It is therefore incumbent on City policymakers to plan accordingly, rethink priorities and implement General Fund expenditure reduction measures, should in case the projected growth in General Fund revenue fails to materialize. The City’s initial fire damage estimate submitted to FEMA shows a total of $358.0 million in costs related to emergency response, infrastructure/structural damages and debris removal estimated through January 10, 2025.
               </p>
+
             </article>
           </div>
           {/* <h2 className='mt-3'>Local Economy</h2>
@@ -909,7 +909,7 @@ export default function pafr23(props: any) {
               <br />
               <h2 className='mt-3'>Dollars In – General Fund Revenues:</h2>
               City of Los Angeles’ government resources and services are funded
-              through several different revenue streams. In FY 2024, the City
+              through several different revenue streams. In FY24, the City
               collected General Fund revenues of <b>$6.9 billion</b> with $5.7
               billion or 82% coming from taxes.
               <br></br>
@@ -976,7 +976,7 @@ export default function pafr23(props: any) {
                 decreasing by $28.2 million (4.0%) and{' '}
                 <b> Business tax revenues </b>
                 falling by $35.2 million (4.3%).
-                <b> Utility users’ tax </b> (which comprise gas, electric and
+                <b> Utility users tax </b> (which comprise gas, electric and
                 communication users’ taxes) revenues posted a decrease of $21.5
                 million (3.0%). The decline was primarily due to a drop of $52.0
                 million in gas users tax receipts, following a return of
@@ -988,7 +988,7 @@ export default function pafr23(props: any) {
                 higher consumption.
               </li>
               {/* <li>
-                <span className='font-bold'>Utility users’ tax</span> revenues posted an increase of $73.1 million (11.6%),
+                <span className='font-bold'>Utility users tax</span> revenues posted an increase of $73.1 million (11.6%),
                  as growth in gas users’ tax and electrical users taxes, offset the modest decline in communications users tax.
                   Gas user taxes contributed $61.7 million of the increase in this category primarily due to the increased energy
                    prices and consumption during much of the fiscal year. 
@@ -1198,7 +1198,7 @@ export default function pafr23(props: any) {
                 subordinate wastewater revenue bonds rating from stable to
                 negative. */}
             </span>{' '}
-            <br></br>
+            <br></br><br />
             <span>
               S&P Global Ratings placed the City's general obligation bonds and
               MICLA's lease revenue bonds on CreditWatch with negative
@@ -1213,7 +1213,7 @@ export default function pafr23(props: any) {
               Issuer Default Rating on Rating Watch Negative and expects to
               complete its review by July 17, 2025.
             </span>
-            <br></br>
+            <br></br><br />
             <span>
               S&P Global Ratings lowered its long-term and underlying ratings on
               Power's revenue bonds outstanding from 'AA-' to 'A' and Water's
