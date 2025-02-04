@@ -193,23 +193,6 @@ export default function pafr23(props: any) {
                 Budgets are not just numbers; they are a statement of values. As
                 our city changes, so should our financial priorities.
                 <br />
-                <br />A transition to a two-year budget cycle would save
-                enormous staff time, give greater opportunity for meaningful
-                community participation, and allow for a more strategic approach
-                to the City’s Finances. The City also needs a transparent
-                Capital Improvement Program beyond the current wish list of
-                billions of dollars in unfunded projects. Participatory
-                budgeting, expanded beyond its current experimental pilot, would
-                offer greater citizen engagement in the City’s fiscal health.
-                <br />
-                The City should also break with the opaque process where annual
-                departmental budgets are simply marginally adjusted (up or down)
-                without fundamentally altering the long- standing budgetary
-                status quo. Given the daunting financial realities, the City
-                needs to undertake a strategic reallocation of resources to what
-                matters most to the long-term wellbeing of all of our residents.
-                Budgets are not just numbers; they are a statement of values. As
-                our city changes, so should our financial priorities.
                 <br />
                 Our Office is eager to collaborate with the Mayor, Council, and
                 greater community to reform the City’s budgeting process and
