@@ -248,6 +248,7 @@ export default function pafr24(props: any) {
               ahead, it is time for fundamental change to the City’s
               unsustainable budgetary practices.
               <br />
+              <br></br>
               We continue to advocate for the Mayor and Council to develop a
               strategic five-year plan to fix our City’s finances. Without a
               long-term approach to putting our fiscal house in order,
