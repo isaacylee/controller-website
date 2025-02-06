@@ -125,12 +125,10 @@ export default function pafr24(props: any) {
               budget balancing at the cost of long-term fiscal sustainability.”
               <br />
               <br />
-              Short-term budget balancing resulted in the elimination of 1700
-              then-vacant positions, which included positions that weren’t
-              vacant for very long. As the year has progressed, the service
-              impacts of those cuts are hitting as departments scramble with
-              severely diminished capacities to address undiminished (and even
-              growing) needs.
+              Short-term budget balancing resulted in the elimination of 1700 then-vacant positions, which included a majority of
+              positions that weren’t vacant for very long. As the year has progressed, the service impacts of those cuts are
+              hitting as departments scramble with severely diminished capacities to address undiminished (and even growing)
+              needs.
               <br />
               <br />
               Given the devastating damage and disruptions from the firestorm
@@ -239,14 +237,16 @@ export default function pafr24(props: any) {
                   Anticipation Notes (TRAN) borrowing that has been used to earn
                   a discount on the City’s pension payments.
                 </li>
-                <li>
-                  The late Dr. Herbert Stein, who chaired the President’s
-                  Council of Economic Advisors, wrote, “Things that can’t go on
-                  forever, don’t.” Given the grim fiscal prospects for the years
-                  ahead, it is time for fundamental change to the City’s
-                  unsustainable budgetary practices.
-                </li>
+
+
+
               </ul>
+              <br />
+              The late Dr. Herbert Stein, who chaired the President’s
+              Council of Economic Advisors, wrote, “Things that can’t go on
+              forever, don’t.” Given the grim fiscal prospects for the years
+              ahead, it is time for fundamental change to the City’s
+              unsustainable budgetary practices.
               <br />
               We continue to advocate for the Mayor and Council to develop a
               strategic five-year plan to fix our City’s finances. Without a
