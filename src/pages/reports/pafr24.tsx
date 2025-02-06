@@ -125,12 +125,10 @@ export default function pafr24(props: any) {
               budget balancing at the cost of long-term fiscal sustainability.”
               <br />
               <br />
-              Short-term budget balancing resulted in the elimination of 1700
-              then-vacant positions, which included positions that weren’t
-              vacant for very long. As the year has progressed, the service
-              impacts of those cuts are hitting as departments scramble with
-              severely diminished capacities to address undiminished (and even
-              growing) needs.
+              Short-term budget balancing resulted in the elimination of 1700 then-vacant positions, which included a majority of
+              positions that weren’t vacant for very long. As the year has progressed, the service impacts of those cuts are
+              hitting as departments scramble with severely diminished capacities to address undiminished (and even growing)
+              needs.
               <br />
               <br />
               Given the devastating damage and disruptions from the firestorm
@@ -239,15 +237,18 @@ export default function pafr24(props: any) {
                   Anticipation Notes (TRAN) borrowing that has been used to earn
                   a discount on the City’s pension payments.
                 </li>
-                <li>
-                  The late Dr. Herbert Stein, who chaired the President’s
-                  Council of Economic Advisors, wrote, “Things that can’t go on
-                  forever, don’t.” Given the grim fiscal prospects for the years
-                  ahead, it is time for fundamental change to the City’s
-                  unsustainable budgetary practices.
-                </li>
+
+
+
               </ul>
               <br />
+              The late Dr. Herbert Stein, who chaired the President’s
+              Council of Economic Advisors, wrote, “Things that can’t go on
+              forever, don’t.” Given the grim fiscal prospects for the years
+              ahead, it is time for fundamental change to the City’s
+              unsustainable budgetary practices.
+              <br />
+              <br></br>
               We continue to advocate for the Mayor and Council to develop a
               strategic five-year plan to fix our City’s finances. Without a
               long-term approach to putting our fiscal house in order,
@@ -412,17 +413,26 @@ export default function pafr24(props: any) {
               </p>
               <p className="mt-2 lg:max-w-5xl">
                 The Port of Los Angeles handles the largest volume of containerized cargo of all U.S. ports and ranks as number one in cargo value for U.S. waterborne foreign traffic. According to ACI World’s 2023 Airport Traffic Report, in the calendar year 2023, Los Angeles International Airport (LAX) ranked as the eighth busiest airport in the world in terms of total passengers and the ninth busiest airport in the world in terms of total cargo. The Los Angeles MSA experienced strong economic growth in 2023, with an increase in economic output of 4.8%, as measured by Gross Domestic Product.
-                <br></br>
+
+              </p>
+              <p className="mt-2 lg:max-w-5xl">
+
                 The fiscal year 2025 General Fund Budget assumes the City would see solid revenue growth while continuing to make historic investments to reduce homelessness and improve public safety. While the economic activities and General Fund revenues continue to remain stable during the first half of fiscal year 2025, there remain several factors that could affect future economic outlook and the economically-sensitive revenue sources.
               </p>
               <p className="mt-2 lg:max-w-5xl">
                 A critical part of Los Angeles' economy depends on the entertainment industry. The filming activities reportedly hit a new low in 2024, driven by studio cost cutting and the relocation of production to cheaper locales, including U.K. and Central Europe. Some executives attributed the decline in production to increased cost of labor from the 2023 strike, a contention rejected by union leaders. An undisputed factor is California’s inability to compete with tax incentives offered by other states and countries, a situation that Governor Newsom is now trying to address. Businesses that rely on the entertainment economy are rallying behind the Governor’s proposal to increase annual film and TV tax credit allocation from $330 million to $750 million. This should help keep more production in Los Angeles. It is unclear, however, how much of the decline can be reversed with the new tax incentive policy.
-                <br></br>
+
+              </p>
+              <p className="mt-2 lg:max-w-5xl">
+
                 Property taxes are the biggest source of revenue for the General Fund and higher mortgage interest rates continue to affect affordability and real estate sales volume in Los Angeles and surrounding areas. However, the California Association of Realtors (C.A.R.) recently released its 2025 housing and economic forecast, predicting a stable economy and lower interest rate environment that would stimulate sales and price appreciation in 2025. Any improvement in housing sales and prices should boost transfer tax revenues to the General Fund.
               </p>
               <p className="mt-2 lg:max-w-5xl">
                 Finally, at the time of this report, the City is dealing with a major fire disaster in Pacific Palisades and other communities, the magnitude of which the City has never seen. Several widespread fires burned thousands of acres, devastating many communities and families. The fires have reportedly burned thousands of homes and businesses, with many lives lost. While the firefighters and first responders are still working around the clock to put out fires in many areas, the disaster so far has been described as one of the worst disasters in United States’ history, with preliminary property loss estimates ranging in the billions. The impacted Angelenos face a long road ahead as they try to rebuild their lives. Although the scale of the impact is still being assessed at the time of this report, the loss of this magnitude is bound to significantly affect the local economy and revenues to the City.
-                <br></br>
+
+              </p>
+              <p className="mt-2 lg:max-w-5xl">
+
                 Because of all these factors, the City is likely to be facing fiscal challenges for a foreseeable future. It is therefore incumbent on City policymakers to plan accordingly, rethink priorities and implement General Fund expenditure reduction measures, should in case the projected growth in General Fund revenue fails to materialize. The City’s initial fire damage estimate submitted to FEMA shows a total of $358.0 million in costs related to emergency response, infrastructure/structural damages and debris removal estimated through January 10, 2025.
               </p>
 
