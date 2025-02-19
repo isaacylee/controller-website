@@ -1,6 +1,13 @@
 {
   "data": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Screenshot%202025-02-19%20121224.png?alt=media&token=6f41f6db-4965-43e4-a7ac-80d5809a2948",
+      "name": "Popular Annual Financial Report FY2024",
+      "year": "2025",
+      "dept": "Dashboard",
+      "link": "https://controller.lacity.gov/reports/pafr24"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/thumbnails%2Fovpr.png?alt=media&token=c790b54f-aad6-41e7-a703-ec4a14329758",
       "name": "Oversized Vehicle Parking Restrictions Map",
       "year": "2024",
