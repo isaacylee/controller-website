@@ -2,6 +2,13 @@
   "upcoming": [
     {
       "image": "",
+      "name": "CARE/CARE+",
+      "year": "2025",
+      "dept": "Upcoming",
+      "link": "https://bsky.app/profile/controller.lacity.gov/post/3lhu4v4ic7c2t"
+    },
+    {
+      "image": "",
       "name": "LA Animal Services",
       "year": "2024",
       "dept": "Upcoming",
@@ -21,7 +28,6 @@
       "dept": "Upcoming",
       "link": "https://www.instagram.com/p/C2QL-wvPRgx/ "
     },
-
     {
       "image": "",
       "name": "Pathways to Permanent Housing",
@@ -36,7 +42,6 @@
       "dept": "Upcoming",
       "link": " "
     },
-
     {
       "image": "",
       "name": "Implementation of Tenant Anti-Harassment Ordinance",
