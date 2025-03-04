@@ -1,6 +1,15 @@
 {
   "finance": [
     {
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2Frev25-cover3.jpg?alt=media&token=106ff50a-f4d3-4192-95ba-832944673d54",
+      "name": "Revenue Forecast Report",
+      "year": "2025",
+      "dept": "Financial Report",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2FController%20Revenue%20Forecast%20Report_030325.pdf?alt=media&token=71f700ff-27cf-4396-b9e4-1fcf325868ad",
+      "pre": false,
+      "alt": "Cover photo Revenue Forecast Report 2025"
+    },
+    {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fpafr25%2Facfr2025cover.jpg?alt=media&token=829c7b21-25f4-4414-af73-a2736c0b818d",
       "name": "Annual Comprehensive Financial Report FY24 ",
       "year": "2025",
@@ -11,7 +20,7 @@
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/financial%20reports%2Frevforecastcover24-25.jpg?alt=media&token=e5d242a6-d2f2-4218-b1d4-50dda3444117",
-      "name": "Revenue Forecast Report ",
+      "name": "Revenue Forecast Report",
       "year": "2024",
       "dept": "Financial Report",
       "link": "https://controller.lacity.gov/reports/revenueforecast25",
@@ -20,7 +29,7 @@
     },
     {
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Screenshot%202024-02-01%20at%208.29.41%20AM.png?alt=media&token=b442d276-13da-477f-a018-001745560d88",
-      "name": "Annual Comprehensive Financial Report FY23 ",
+      "name": "Annual Comprehensive Financial Report FY23",
       "year": "2024",
       "dept": "Financial Report",
       "link": "https://controller.lacity.gov/reports/pafr23",

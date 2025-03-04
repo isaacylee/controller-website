@@ -1,3 +1,5 @@
+'use client';
+
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
@@ -167,7 +169,7 @@ export default function Navbar(props: any) {
                     setMobileTranslateOpen(!mobiletranslateopen);
                   }}
                   aria-label='Open Translate Selector'
-                  className='py-4 px-4 sm:px-0 sm:pt-3 sm:pb-4 md:hidden'
+                  className='px-4 py-4 sm:px-0 sm:pb-4 sm:pt-3 md:hidden'
                 >
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -192,7 +194,7 @@ export default function Navbar(props: any) {
           </div>
 
           <Disclosure.Panel className='md:hidden'>
-            <div className='space-y-1 px-2 pt-2 pb-3'>
+            <div className='space-y-1 px-2 pb-3 pt-2'>
               {navarraycurrent().map((item: newiteminterface) => (
                 <Disclosure.Button
                   key={item.name}
@@ -217,21 +219,21 @@ export default function Navbar(props: any) {
                   >
                     <button
                       type='button'
-                      className='rounded-l-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
+                      className='rounded-l-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
                       onClick={themeChanger.makeLight}
                     >
                       Light
                     </button>
                     <button
                       type='button'
-                      className='border-t border-b border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
+                      className='border-b border-t border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
                       onClick={themeChanger.makeDark}
                     >
                       Dark
                     </button>
                     <button
                       type='button'
-                      className='rounded-r-md border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
+                      className='rounded-r-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:ring-2 focus:ring-blue-700 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:text-white dark:focus:text-white dark:focus:ring-blue-500'
                       onClick={themeChanger.makeSystem}
                     >
                       System
