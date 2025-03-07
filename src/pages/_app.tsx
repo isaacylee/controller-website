@@ -144,10 +144,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   `}
       </Script>
 
-      {/* <Script
-        src="https://website-widgets.pages.dev/dist/sienna.min.js"
+      <Script
+        src='https://website-widgets.pages.dev/dist/sienna.min.js'
         defer
-      ></Script> */}
+      ></Script>
 
       <Component {...pageProps} />
     </ThemeContext.Provider>
