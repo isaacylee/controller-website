@@ -199,7 +199,7 @@ export default function HomePage(props: any) {
           </div>
         </div>
         <div className='container mx-auto px-4  '>
-          <h2 className='frontpageh2section'> Audits & Reports</h2>
+          <h2 className='frontpageh2section'> Oversight</h2>
 
           <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 4).map((eachaudit: any, key: number) => (
