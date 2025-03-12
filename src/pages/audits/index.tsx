@@ -38,7 +38,7 @@ export default function Audits(props: any) {
         <div className=' flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <h1 className='dark:text-white' style={{ marginRight: '20px' }}>
-              Audits & Reports
+              Oversight
             </h1>
             <button
               className='rounded-full bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black'
