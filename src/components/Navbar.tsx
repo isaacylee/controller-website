@@ -23,7 +23,7 @@ interface newiteminterface {
 const navigation: any = [
   { name: 'About', href: '/about' },
   { name: 'Data', href: '/data' },
-  { name: 'Audits/Reports', href: '/audits' },
+  { name: 'Oversight', href: '/audits' },
   { name: 'Financials', href: '/reports' },
   { name: 'Budgets', href: '/budgets' },
   // { name: 'Events', href: '/events', current: false },
