@@ -1,806 +1,204 @@
 {
   "audits": [
-   
-       {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Screenshot%202024-12-10%20at%2010.43.55%E2%80%AFAM.png?alt=media&token=ae7b314a-d9e2-48ec-8d11-273c080ff9a5",
+    {
       "name": "Homelessness Audit: Pathways to Permanent Housing",
-      "year": "2024",
-      "dept": "City of Los Angeles ",
+      "Year": 2024,
+      "document": "Audit",
+      "category": "LAHSA",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Screenshot%202024-12-10%20at%2010.43.55%E2%80%AFAM.png?alt=media&token=ae7b314a-d9e2-48ec-8d11-273c080ff9a5",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/PH%20Pathways_LAHSA%20Final_12.10.2024.pdf?alt=media&token=0f6681b8-a28b-44ed-8bfa-e040fd2a127f"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Finternalcontrols-cover.jpg?alt=media&token=79b9fba0-5927-4d5f-adcd-d370151e84a3",
       "name": "Citywide Internal Controls Self-Assessment",
-      "year": "2024",
-      "dept": "City of Los Angeles ",
+      "Year": 2024,
+      "document": "Special Report",
+      "category": "City of Los Angeles",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Finternalcontrols-cover.jpg?alt=media&token=79b9fba0-5927-4d5f-adcd-d370151e84a3",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FASD%20Controls%20Assessment%20Final%20Management%20Report%20-%2009262024.2.pdf?alt=media&token=f9a1fef7-d767-4efd-af63-825236f82e39"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fab481-cover-bw.jpg?alt=media&token=8368b875-f70a-4e05-8a6d-57654c4feb45",
       "name": "LAPD's Compliance with AB 481 (Military Equipment: Funding, Acquisition, and Use)",
-      "year": "2024",
-      "dept": "City of Los Angeles ",
+      "Year": 2024,
+      "document": "Audit",
+      "category": "LAPD",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fab481-cover-bw.jpg?alt=media&token=8368b875-f70a-4e05-8a6d-57654c4feb45",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FAB481%20Performance%20Audit%20-%2008272024.pdf?alt=media&token=c0abff89-8daf-445f-931c-46bf80236862"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Ffwa-2023.jpg?alt=media&token=a9c39eb1-ac20-4e2e-b332-10a31cbd5c47",
       "name": "FWA Annual Report 2023",
-      "year": "2024",
-      "dept": "City of Los Angeles ",
+      "Year": 2024,
+      "document": "FWA Investigative Report",
+      "category": "City of Los Angeles",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Ffwa-2023.jpg?alt=media&token=a9c39eb1-ac20-4e2e-b332-10a31cbd5c47",
       "link": "https://shorturl.at/p7zQw"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fsingleaudits2023.jpg?alt=media&token=829724f0-8496-4475-9a66-978c32f3036e",
       "name": "FY 2023 Single Audit Reports",
-      "year": "2024",
-      "dept": "City of Los Angeles ",
+      "Year": 2024,
+      "document": "Financial/Compliance Audit",
+      "category": "City of Los Angeles",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2Fsingleaudits2023.jpg?alt=media&token=829724f0-8496-4475-9a66-978c32f3036e",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/Press%20Releases%2FCity%20of%20Los%20Angeles%20-%20Single%20Audit%20Reports%20-%20FYE%2006.30.2023%20-%20final.pdf?alt=media&token=91111957-1361-4b65-97d3-59ce5eb7a944"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapdhelicopter-cover-thumb.jpg?alt=media&token=ea5dccf0-d50b-4145-b338-aedf3bf4fa7d",
       "name": "LAPD Helicopters",
-      "year": "2023",
-      "dept": "City of Los Angeles ",
+      "Year": 2023,
+      "document": "Audit",
+      "category": "LAPD",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/lapdhelicopter-cover-thumb.jpg?alt=media&token=ea5dccf0-d50b-4145-b338-aedf3bf4fa7d",
       "link": "https://bit.ly/heli-audit"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/homelessaudit-sheltercover.jpg?alt=media&token=483a5f0a-13ea-41b1-bbf8-b5f64285f128",
       "name": "Homelessness Audit: Interim Housing Data",
-      "year": "2023",
-      "dept": "City of Los Angeles ",
+      "Year": 2023,
+      "document": "Audit",
+      "category": "LAHSA",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/homelessaudit-sheltercover.jpg?alt=media&token=483a5f0a-13ea-41b1-bbf8-b5f64285f128",
       "link": "https://bit.ly/interim-housing-audit"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/killa-fine-cover.jpg?alt=media&token=1a0b7da7-d521-403e-9372-6a5554b1d717",
       "name": "This Is Not Fine: Hottest Summer on Record Calls for a Reboot of LA's Climate Plan",
-      "year": "2023",
-      "dept": "City of Los Angeles ",
+      "Year": 2023,
+      "document": "Report",
+      "category": "City of Los Angeles",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/killa-fine-cover.jpg?alt=media&token=1a0b7da7-d521-403e-9372-6a5554b1d717",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/This%20is%20Not%20Fine_FINAL2.pdf?alt=media&token=6a23745b-3d25-45fb-b42b-1e36ebdfe1f1"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/fwa-cover.jpg?alt=media&token=ff61653d-404b-4915-8631-fdfdf4667356",
       "name": "Fraud, Waste and Abuse Annual Report",
-      "year": "2023",
-      "dept": "City of Los Angeles ",
+      "Year": 2023,
+      "document": "FWA Investigative Report",
+      "category": "City of Los Angeles",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/fwa-cover.jpg?alt=media&token=ff61653d-404b-4915-8631-fdfdf4667356",
       "link": "/audits/fwa-2022/"
     },
     {
-      "pre": false,
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/tree-audit-cover4.jpg?alt=media&token=19951e63-0298-4e51-8a46-3816db590837",
       "name": "L.A. Tree Trimming & Maintenance Audit - Follow-up",
-      "year": "2023",
-      "dept": "Public Works - Bureau of Street Services",
+      "Year": 2023,
+      "document": "Audit",
+      "category": "Public Works - Bureau of Street Services",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/tree-audit-cover4.jpg?alt=media&token=19951e63-0298-4e51-8a46-3816db590837",
       "link": "/audits/tree-audit-followup/"
     },
     {
-      "pre": false,
-      "image": "/singaudits2022.jpg",
       "name": "FY 2022 Single Audit Reports",
-      "year": "2023",
-      "dept": "2022 Single Audits",
+      "Year": 2023,
+      "document": "Financial/Compliance Audit",
+      "category": "City of Los Angeles",
+      "image": "/singaudits2022.jpg",
       "link": "/22-single-audit-reports.pdf"
     },
     {
-      "image": "https://controller.lacity.gov/images/animalcover.png",
-      "dept": "Animal Services",
       "name": "LA Animal Services Shelter Operations & Care",
-      "year": "2023",
-      "link": "https://controller-website-5mli35gg5a-uw.a.run.app/laas_transparency_report.pdf",
-      "pre": false
+      "Year": 2023,
+      "document": "Transparency Report",
+      "category": "Animal Services",
+      "image": "https://controller.lacity.gov/images/animalcover.png",
+      "link": "https://controller-website-5mli35gg5a-uw.a.run.app/laas_transparency_report.pdf"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FLAWA-IEA-Thumbnail-scaled.jpg?alt=media&token=7565ccb6-dbc4-4f90-895f-8d4edc3d219c",
       "name": "Industrial, Economic and Administrative Survey of the Los Angeles World Airports",
-      "year": "2022",
-      "dept": "LOS ANGELES WORLD AIRPORTS",
-      "link": "/industrial-economic-and-administrative-survey-of-the-los-angeles-world-airports/",
-      "alt": "Cover Photo with a Picture of LAX Airport Lights"
+      "Year": 2022,
+      "document": "Charter-mandated Assessment",
+      "category": "Los Angeles World Airports",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FLAWA-IEA-Thumbnail-scaled.jpg?alt=media&token=7565ccb6-dbc4-4f90-895f-8d4edc3d219c",
+      "link": "/industrial-economic-and-administrative-survey-of-the-los-angeles-world-airports/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FDCR-Cover-scaled.jpg?alt=media&token=4db30924-7ea1-453a-a54b-cd6e6244c06c",
       "name": "High Maintenance: Review of the City’s Cannabis Regulation Efforts",
-      "year": "2022",
-      "dept": "DEPARTMENT OF CANNABIS REGULATION",
-      "link": "/review-of-the-citys-cannabis-regulation-efforts/",
-      "alt": "Cover Photo, Drone Shot of Echo Park Lake"
+      "Year": 2022,
+      "document": "Audit",
+      "category": "Cannabis Regulation",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FDCR-Cover-scaled.jpg?alt=media&token=4db30924-7ea1-453a-a54b-cd6e6244c06c",
+      "link": "/review-of-the-citys-cannabis-regulation-efforts/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FNotify-LA-Thumbnail-scaled.jpg?alt=media&token=a8d9a5f1-82fb-4b50-bd06-23192e62da9c",
       "name": "Follow-Up Audit — Alert and Aware: Modernizations to Improve NotifyLA, the City’s Emergency Mass Notification System",
-      "year": "2022",
-      "dept": "EMERGENCY MANAGEMENT DEPARTMENT",
-      "link": "/follow-up-audit-alert-and-aware-modernizations-to-improve-notifyla-the-citys-emergency-mass-notification-system/",
-      "alt": "Cover photo of Los Angeles and Broken Earthquake road"
+      "Year": 2022,
+      "document": "Audit",
+      "category": "Emergency Management",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FNotify-LA-Thumbnail-scaled.jpg?alt=media&token=a8d9a5f1-82fb-4b50-bd06-23192e62da9c",
+      "link": "/follow-up-audit-alert-and-aware-modernizations-to-improve-notifyla-the-citys-emergency-mass-notification-system/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FDSW-Thumbnail-scaled.jpg?alt=media&token=20b8ee88-3d81-474b-ab2d-2697b6c67b2a",
       "name": "Follow-Up Audit — In Case of Emergency: The City’s Disaster Service Worker Program",
-      "year": "2022",
-      "dept": "DISASTER SERVICE WORKER PROGRAM",
-      "link": "/follow-up-audit-in-case-of-emergency-the-citys-disaster-service-worker-program/",
-      "alt": "Cover photo of workers putting items into donation boxes"
+      "Year": 2022,
+      "document": "Audit",
+      "category": "Disaster Service Worker Program",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FDSW-Thumbnail-scaled.jpg?alt=media&token=20b8ee88-3d81-474b-ab2d-2697b6c67b2a",
+      "link": "/follow-up-audit-in-case-of-emergency-the-citys-disaster-service-worker-program/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FEmergency-Management-Department-Audit-Cover-scaled.jpg?alt=media&token=ac0b19f5-ab6d-49bf-b88b-8cde7e45775c",
       "name": "A Better Plan to Get L.A. Ready for Emergencies",
-      "year": "2022",
-      "dept": "EMERGENCY MANAGEMENT",
-      "link": "/a-better-plan-to-get-l-a-ready-for-emergencies/",
-      "alt": "Cover photo of Cars lined up waiting to pick up emergency supplies"
+      "Year": 2022,
+      "document": "Audit",
+      "category": "Emergency Management",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FEmergency-Management-Department-Audit-Cover-scaled.jpg?alt=media&token=ac0b19f5-ab6d-49bf-b88b-8cde7e45775c",
+      "link": "/a-better-plan-to-get-l-a-ready-for-emergencies/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
       "name": "FY21 Single Audit Reports",
-      "year": "2022",
-      "dept": "2021 Single Audits",
+      "Year": 2022,
+      "document": "Financial/Compliance Audit",
+      "category": "City of Los Angeles",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
       "link": "/fy21-single-audit-reports/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FYouth-Program-Follow-Up-2022.png?alt=media&token=0c920bef-44c6-4c12-b1b4-c68ed02b332c",
       "name": "Follow-Up Audit—Room to Grow: A Framework for Youth Development in Los Angeles",
-      "year": "2022",
-      "dept": "CITY YOUTH PROGRAMS",
+      "Year": 2022,
+      "document": "Audit",
+      "category": "City Youth Programs",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FYouth-Program-Follow-Up-2022.png?alt=media&token=0c920bef-44c6-4c12-b1b4-c68ed02b332c",
       "link": "/youth-development-in-l-a-follow-up-audit/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FLADWP-IEA-2022.jpg?alt=media&token=4b86a82a-fe33-4898-b774-8e8f77ac3962",
       "name": "Industrial, Economic and Administrative Survey of the Los Angeles Department of Water and Power",
-      "year": "2022",
-      "dept": "CITY OF LOS ANGELES",
+      "Year": 2022,
+      "document": "Charter-mandated Assessment",
+      "category": "Department of Water and Power",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FLADWP-IEA-2022.jpg?alt=media&token=4b86a82a-fe33-4898-b774-8e8f77ac3962",
       "link": "/iea-survey-of-the-department-of-water-and-power/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FManagement-Audit-Report-of-LACERS.png?alt=media&token=b201a003-a297-4265-a966-7d712d6e933c",
       "name": "Management Audit Report of the Los Angeles City Employees’ Retirement System",
-      "year": "2022",
-      "dept": "CITY OF LOS ANGELES",
+      "Year": 2022,
+      "document": "Charter-mandated Assessment",
+      "category": "Los Angeles City Employees’ Retirement System",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FManagement-Audit-Report-of-LACERS.png?alt=media&token=b201a003-a297-4265-a966-7d712d6e933c",
       "link": "/management-audit-report-of-the-los-angeles-city-employees-retirement-system/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FManagement-Audit-Report-of-the-Los-Angeles-Fire-and-Police-Pensions.png?alt=media&token=c974861b-3e60-47e1-8d02-ad42828c1fc0",
       "name": "Management Audit Report of the Los Angeles Fire and Police Pensions",
-      "year": "2022",
-      "dept": "CITY OF LOS ANGELES",
+      "Year": 2022,
+      "document": "Charter-mandated Assessment",
+      "category": "Los Angeles Fire and Police Pensions",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FManagement-Audit-Report-of-the-Los-Angeles-Fire-and-Police-Pensions.png?alt=media&token=c974861b-3e60-47e1-8d02-ad42828c1fc0",
       "link": "/management-audit-report-of-the-los-angeles-fire-and-police-pensions/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FFWA-Annual-Report-Cover-2022.png?alt=media&token=6874b72b-6cac-451d-81f5-b3d1a54de21c",
       "name": "On the Lookout: Fraud, Waste and Abuse Annual Report",
-      "year": "2022",
-      "dept": "CITY OF LOS ANGELES",
-      "link": "/fwa-2021/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FHHH-Report-2022.png?alt=media&token=a72b7181-c714-494d-bdce-127eecfc0a80",
-      "name": "The Problems and Progress of Prop. HHH",
-      "year": "2022",
-      "dept": "PROPOSITION HHH",
-      "link": "/problems-and-progress-of-prop-hhh/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FCity-Properties-Report_2.png?alt=media&token=7a5eab1c-ebfb-4f3d-a13d-b41997519c83",
-      "name": "City Properties Available for Homeless Housing and Services",
-      "year": "2022",
-      "dept": "CITY ADMINISTRATIVE OFFICER",
-      "link": "/city-owned-properties/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FSidewalk-Report-Cover.png?alt=media&token=f12dc75e-5412-4dc4-a56c-c789e9de5c9d",
-      "name": "Repairing L.A.’s Broken Sidewalk Strategy",
-      "year": "2021",
-      "dept": "PUBLIC WORKS",
-      "link": "/sidewalks/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
-      "name": "FY20 Single Audit Reports",
-      "year": "2021",
-      "dept": "",
-      "link": "/fy20-single-audit-reports/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FLAFD-OT-Cover.jpg?alt=media&token=b33a7a3f-fd9f-4134-ab25-2894e59431e4",
-      "name": "Overtime Oversight: LAFD’s COVID-19 Labor Costs",
-      "year": "2021",
-      "dept": "LAFD",
-      "link": "/lafd-overtime-covid-testing/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FSmart-Cities-Cover-1.jpg?alt=media&token=a94382c3-c5c0-4c92-bc1a-0dbdcfbb74f7",
-      "name": "Protecting Privacy Makes a Smarter L.A.",
-      "year": "2021",
-      "dept": "CITY OF LOS ANGELES",
-      "link": "/protecting-privacy/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FTaxes-paid-cover-image.jpg?alt=media&token=1994d9c9-6a6b-4465-a0be-87d5c7cd6bb4",
-      "name": "Increasing Local Investment in Los Angeles",
-      "year": "2021",
-      "dept": "LA CONTROLLER",
-      "link": "/increasing-local-investment/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FFWA-Annual-Report-Cover-2020_241x312.jpg?alt=media&token=2c0ca0a2-84f0-476f-82fe-d61c807eed4d",
-      "name": "On the Lookout: Fraud, Waste and Abuse 2020 Annual Report",
-      "year": "2021",
-      "dept": "CITY OF LOS ANGELES",
-      "link": "/fwa-2020/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FIllegal-Dumping-Cover.jpg?alt=media&token=51217c04-114d-46f5-a4db-63fc389e0039",
-      "name": "Piling Up: Addressing L.A.’s Illegal Dumping Problem",
-      "year": "2021",
-      "dept": "BUREAU OF SANITATION",
-      "link": "/illegaldumping/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2F411-on-311-Cover_2-brick.jpg?alt=media&token=b8e35ee6-1b04-4fc9-af71-9da564c7cc37",
-      "name": "The 411 on 311: Calling for a Customer-First Approach",
-      "year": "2021",
-      "dept": "INFORMATION TECHNOLOGY AGENCY",
-      "link": "/311/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FPayroll-Equity-Report_Ethnicity-Cover_241.jpg?alt=media&token=cdfdba53-d90e-43da-bbc1-c2a6c8f0f180",
-      "name": "Diversity with Equity: Achieving Fairness at the City of Los Angeles",
-      "year": "2021",
-      "dept": "CITY OF LOS ANGELES",
-      "link": "/diversitywithequity/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FStronger-Connection-Digital-Services-Report-Cover.jpg?alt=media&token=ce927a01-5a8b-494a-9642-c4d1a8dbb566",
-      "name": "A  Stronger Connection: Expanding Digital Government Services",
-      "year": "2020",
-      "dept": "CITY OF LOS ANGELES",
-      "link": "/digitalservices/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FBeacon-Cover.png?alt=media&token=779d2c85-3f27-418d-8cd8-9f4360ff8f99",
-      "name": "Economic Development and Land Use in Los Angeles",
-      "year": "2020",
-      "dept": "ASSET MANAGEMENT",
-      "link": "/economic-development-and-land-use-in-los-angeles/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FHHH-2020-Report-Cover-2.jpg?alt=media&token=a6d07ecd-3c57-445d-b46b-3172657150f0",
-      "name": "Meeting the Moment: An Action Plan to Advance Prop. HHH",
-      "year": "2020",
-      "dept": "PROPOSITION HHH",
-      "link": "/hhhactionplan/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FGender-Equity-Report-Cover-1.jpg?alt=media&token=4a2cc608-4108-45db-a687-8e7408064663",
-      "name": "Closing the Gap: Women’s Pay and Representation at the City of L.A.",
-      "year": "2020",
-      "dept": "CITY OF LOS ANGELES",
-      "link": "/genderequity/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FBusiness-Inclusion-Program-Review-Cover-e1593631461403.png?alt=media&token=717613f4-d8ac-4062-b712-145b8100d96e",
-      "name": "Seizing the Opportunity to Advance City Contracting Equity",
-      "year": "2020",
-      "dept": "BUREAU OF CONTRACT ADMINISTRATION",
-      "link": "/contractingequity/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FCity-Art-Cover.png?alt=media&token=6c7c9398-d115-4f7a-9a47-efa557d04216",
-      "name": "A More Modern Approach to City-Owned Art",
-      "year": "2020",
-      "dept": "CULTURAL AFFAIRS",
-      "link": "/cityart/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FFWA-Quarterly-Report-Thumbnail.jpg?alt=media&token=1ee10dfb-6947-4535-80b7-3c6d8e1aefe0",
-      "name": "On the Lookout: Fraud, Waste and Abuse Q1 Report",
-      "year": "2020",
-      "dept": "LA CONTROLLER",
-      "link": "/fraud-waste-and-abuse-q1-2020/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
-      "name": "FY19 Single Audit Reports",
-      "year": "2020",
-      "dept": "",
-      "link": "/fy19-single-audit-reports/"
-    },
-    {
+      "Year": 2022,
+      "document": "FWA Investigative Report",
+      "category": "City of Los Angeles",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FFWA-Annual-Report-Cover-2.png?alt=media&token=3cc222b8-e2e7-4bdc-941f-28648015dc41",
-      "name": "On the Lookout: Fraud, Waste and Abuse Annual Report",
-      "year": "2020",
-      "dept": "LA CONTROLLER",
       "link": "/fwa-2019/"
     },
     {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FUtility-Discount-Programs-Cover-e1578945071730.png?alt=media&token=2ba4225c-9adf-4c55-81bf-391cde075ceb",
-      "name": "Powering Up the City’s Utility Discount Programs",
-      "year": "2020",
-      "dept": "CITY UTILITY DISCOUNT PROGRAMS",
-      "link": "/utility-discount-programs/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FWildfire-cover_2.jpg?alt=media&token=99511903-3081-4f6b-b54b-3410ecc785dc",
-      "name": "It Only Takes a Spark: Enhancing DWP’s Wildfire Prevention Strategy",
-      "year": "2019",
-      "dept": "DWP WILDFIRE PREVENTION",
-      "link": "/dwps-wildfire-prevention/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FFWA-Quarterly-Report-Thumbnail.jpg?alt=media&token=1ee10dfb-6947-4535-80b7-3c6d8e1aefe0",
-      "name": "On the Lookout: Fraud, Waste and Abuse Q3 Report",
-      "year": "2019",
-      "dept": "LA CONTROLLER",
-      "link": "/on-the-lookout-fraud-waste-and-abuse-q3-report/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FOvertime-Report-e1572555571188.jpg?alt=media&token=1b827184-df08-43ee-9c04-26d0658aa410",
-      "name": "On the Clock: Review of City Employee Overtime",
-      "year": "2019",
-      "dept": "CITY OVERTIME",
-      "link": "/overtime/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FAudit-and-Report-Cover-HHH-e1570221867133.jpg?alt=media&token=67728c5c-e089-4df5-9037-1cdc075e640a",
-      "name": "The High Cost of Homeless Housing: Review of Proposition HHH",
-      "year": "2019",
-      "dept": "PROPOSITION HHH",
-      "link": "/high-cost-of-homeless-housing-hhh/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FPurchase-Review-Cover-ThumbnIL.png?alt=media&token=af4bb6a7-7e34-4e5c-a942-656292c07496",
-      "name": "Los Angeles World Airports P-Card Purchasing Review",
-      "year": "2019",
-      "dept": "Airports (LAWA)",
-      "link": "/los-angeles-world-airports-p-card-purchasing-review/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2019-08-30.jpg?alt=media&token=a79b3b46-18e1-446b-a929-2d32794afa92",
-      "name": "Strategy on the Streets: Improving LAHSA’s Outreach Program",
-      "year": "2019",
-      "dept": "LAHSA",
-      "link": "/strategy-on-the-streets/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FAsset-Managment-Cover_2-e1565649200631.jpg?alt=media&token=05c170cf-6fed-4ce0-bb93-635f5f1e8988",
-      "name": "Los Angeles Municipal Development Corporation",
-      "year": "2019",
-      "dept": "ASSET MANAGEMENT",
-      "link": "/real-estate-asset-management/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review: Los Angeles Fire Department IT Commodity Procurement",
-      "year": "2019",
-      "dept": "Los Angeles Fire Department",
-      "link": "/compliance-review-los-angeles-fire-department-it-commodity-procurement/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FFWA-Quarterly-Report-Thumbnail.jpg?alt=media&token=1ee10dfb-6947-4535-80b7-3c6d8e1aefe0",
-      "name": "On the Lookout: Fraud, Waste and Abuse Q2 Report",
-      "year": "2019",
-      "dept": "LA CONTROLLER",
-      "link": "/on-the-lookout-fraud-waste-and-abuse-q2-report/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FAUDIT-Thumbnail-Room-to-Grow.png?alt=media&token=aaf30078-089f-4d76-891c-71675ae459e6",
-      "name": "Room to Grow: A Framework for Youth Development in Los Angeles",
-      "year": "2019",
-      "dept": "CITY YOUTH PROGRAMS",
-      "link": "/youthprogramsreport/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review: HCIDLA IT Commodity Procurement",
-      "year": "2019",
-      "dept": "HCIDLA",
-      "link": "/compliance-review-hcidla-it-commodity-procurement/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review: HCIDLA IT Professional Services Contracting",
-      "year": "2019",
-      "dept": "HCIDLA",
-      "link": "/compliance-review-hcidla-it-professional-services-contracting-review/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2020%2FFWA-Quarterly-Report-Thumbnail.jpg?alt=media&token=1ee10dfb-6947-4535-80b7-3c6d8e1aefe0",
-      "name": "On the Lookout: Fraud, Waste and Abuse Q1 Report",
-      "year": "2019",
-      "dept": "LA CONTROLLER",
-      "link": "/on-the-lookout-fraud-waste-and-abuse-unit-quarterly-report/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLADBS-Report-Cover-Thumbnail-1.jpg?alt=media&token=25eb823d-96ab-4a39-a2e2-52a85f299515",
-      "name": "Strengthening Oversight of the City’s IT Contracts",
-      "year": "2019",
-      "dept": "LA CONTROLLER",
-      "link": "/itcontracts/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FTUMBCover_On-the-Lookout_Review-of-the-Fraud-Waste-and-Abuse-Unit_3.27.jpg?alt=media&token=42a31b59-f824-4088-9439-144e42aa677c",
-      "name": "On the Lookout: Review of the Fraud, Waste and Abuse Unit",
-      "year": "2019",
-      "dept": "LA CONTROLLER",
-      "link": "/on-the-lookout-review-of-the-fraud-waste-and-abuse-unit/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2019_TurningNewLeaf_sm.png?alt=media&token=a7e6cdcd-607a-4649-8991-921a5daa6809",
-      "name": "Turning Over A New Leaf: L.A.’s Tree Trimming And Maintenance Program",
-      "year": "2019",
-      "dept": "DEPARTMENT OF PUBLIC WORKS",
-      "link": "/turning-over-a-new-leaf-l-a-s-tree-trimming-and-maintenance-program/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review: Payroll for the Los Angeles Department of Water and Power",
-      "year": "2019",
-      "dept": "LADWP",
-      "link": "/compliance-review-payroll-for-the-los-angeles-department-of-water-and-power/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2019_LosAngelesHarbor_sm.png?alt=media&token=a73bbf4e-17a1-46e2-987a-088a4f35b1ad",
-      "name": "Industrial, Economic and Administrative Survey of the Los Angeles Harbor Department",
-      "year": "2019",
-      "dept": "HARBOR DEPARTMENT",
-      "link": "/industrial-economic-and-administrative-survey-of-the-los-angeles-harbor-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2019_InCaseofEmergency_sm.png?alt=media&token=55825d27-c3b5-4da8-8b17-4e3371233717",
-      "name": "In Case of Emergency: The City’s Disaster Service Worker Program",
-      "year": "2019",
-      "dept": "EMERGENCY MANAGEMENT; PERSONNEL DEPT",
-      "link": "/in-case-of-emergency-the-citys-disaster-service-worker-program/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2019_ShiftingGears_sm.png?alt=media&token=483a06e7-f38d-4576-9245-b13c89896cd5",
-      "name": "Shifting Gears: A Review of the City’s Passenger Vehicle Motor Pool",
-      "year": "2019",
-      "dept": "GENERAL SERVICES DEPARTMENT",
-      "link": "/shifting-gears-a-review-of-the-citys-passenger-vehicle-motor-pool/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-engaging-older-angelenos.jpg?alt=media&token=de1c3d15-3b0a-4dee-b36c-1d69f89b4a8f",
-      "name": "Engaging Older Angelenos",
-      "year": "2018",
-      "dept": "DEPARTMENT OF AGING",
-      "link": "/engaging-older-angelenos/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-alert-and-aware.jpg?alt=media&token=6d7f950f-c0fb-4b3c-ba2f-59e11f587448",
-      "name": "Alert and Aware: Review of NotifyLA, the City’s Mass Notification System",
-      "year": "2018",
-      "dept": "EMERGENCY MANAGEMENT DEPARTMENT",
-      "link": "/alert-and-aware-review-of-notifyla-the-citys-mass/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review of Department of Transportation",
-      "year": "2018",
-      "dept": "DEPARTMENT OF TRANSPORTATION",
-      "link": "/compliance-review-of-department-of-transportation/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Fsubventions-e1580837201576.jpeg?alt=media&token=ee1d990b-a997-47ed-930c-105bb8c3893a",
-      "name": "Incentive Agreements: Tax Breaks and Subvention Deals",
-      "year": "2018",
-      "dept": "EWDD",
-      "link": "/incentive-agreements-tax-abatements-subvention-agreements-cf-15-0850-s2/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-A-hire-calling.jpg?alt=media&token=d39c0100-c712-4fea-9534-4d9b3fbd5007",
-      "name": "A Hire Calling: Modernizing Recruitment and Hiring in Los Angeles",
-      "year": "2018",
-      "dept": "PERSONNEL DEPT",
-      "link": "/a-hire-calling-modernizing-recruitment-and-hiring-in-los-angeles/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review of Purchasing Cards for General Services Department",
-      "year": "2018",
-      "dept": "GENERAL SERVICES DEPARTMENT",
-      "link": "/compliance-review-of-purchasing-cards-for-general-services-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
-      "name": "FY18 Single Audit Reports",
-      "year": "2018",
-      "dept": "",
-      "link": "/fy18-single-audit-reports/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-review-of-city-of-los-angeles-oil.jpg?alt=media&token=6d3132f2-c2c7-4573-b522-8ef766419263",
-      "name": "Review of Oil and Gas Drilling Sites in the City of Los Angeles",
-      "year": "2018",
-      "dept": "OFFICE OF PETROLEUM &amp; NATURAL GAS ADMINISTRATION AND SAFETY",
-      "link": "/review-of-the-city-of-los-angeles-oil-and-gas-drilling/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review of Purchasing Cards for Department of Recreation and Parks",
-      "year": "2018",
-      "dept": "RECREATION AND PARKS",
-      "link": "/compliance-review-of-purchasing-cards-for-department-of-recreation-and-parks/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review of Payroll for the Los Angeles Bureau of Sanitation",
-      "year": "2018",
-      "dept": "BUREAU OF SANITATION",
-      "link": "/compliance-review-of-payroll-for-the-los-angeles-bureau-of-sanitation/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review of Payroll for the Los Angeles Department of Building and Safety",
-      "year": "2018",
-      "dept": "DEPARTMENT OF BUILDING AND SAFETY",
-      "link": "/compliance-review-of-payroll-for-the-los-angeles-department-of-building-and-safety/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-Housing-and-Community.png?alt=media&token=a5e20998-f2c8-47ca-9918-97e22308b654",
-      "name": "Audit on Systematic Code Enforcement Program",
-      "year": "2018",
-      "dept": "HOUSING AND COMMUNITY INVESTMENT DEPARTMENT",
-      "link": "/audit-on-systematic-code-enforcement-program/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Compliance Review of Purchasing Cards for Los Angeles Fire Department",
-      "year": "2018",
-      "dept": "LOS ANGELES FIRE DEPARTMENT",
-      "link": "/compliance-review-of-purchasing-cards-for-los-angeles-fire-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-LA-Zoo-.png?alt=media&token=934f18ac-7512-46c3-8fe0-855ee662d47e",
-      "name": "Greater Transparency & Accountability at L.A. Zoo",
-      "year": "2018",
-      "dept": "ZOO DEPARTMENT",
-      "link": "/greater-transparency-accountability-at-l-a-zoo/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCompliance-Reivew-Cover.jpg?alt=media&token=b98e0225-6ff7-4b83-a572-00bdf4b33094",
-      "name": "Los Angeles City Harbor Department Compliance Review",
-      "year": "2018",
-      "dept": "HARBOR DEPARTMENT",
-      "link": "/los-angeles-city-harbor-department-compliance-review/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Los Angeles Police Department",
-      "year": "2018",
-      "dept": "LOS ANGELES POLICE DEPARTMENT",
-      "link": "/limited-scope-fiscal-audit-at-the-los-angeles-police-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-Dept-of-Disability.png?alt=media&token=9aeab3c9-87bb-4950-93a0-200c5ed1be5f",
-      "name": "A More Accessible Los Angeles: Audit of the Department on Disability",
-      "year": "2018",
-      "dept": "DEPARTMENT ON DISABILITY",
-      "link": "/a-more-accessible-los-angeles-audit-of-the-department-on-disability/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2Faudit-2018-Building-Safety-Elevator.png?alt=media&token=224cd477-fc84-43fd-bf50-2d061bb7da16",
-      "name": "Elevating Safety: Audit of the City’s Elevator Inspection Program",
-      "year": "2018",
-      "dept": "DEPARTMENT OF BUILDING &amp; SAFETY",
-      "link": "/elevating-safety-audit-of-the-department-of-building-safetys-elevator-inspection-program/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit of the General Services Department",
-      "year": "2018",
-      "dept": "GENERAL SERVICES DEPARTMENT",
-      "link": "/limited-scope-fiscal-audit-of-the-general-services-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FBSS-Street-Sweeping-102517-4-e1551379547361.jpg?alt=media&token=8bf56ce8-b3ec-452e-8fea-28ae6d28d95a",
-      "name": "Audit on a More Dynamic, Efficient Approach to Street Sweeping",
-      "year": "2017",
-      "dept": "BUREAU OF STREET SERVICES",
-      "link": "/audit-on-a-more-dynamic-efficient-approach-to-street-sweeping/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Report_Homeless_Encampments.png?alt=media&token=f97a4e43-fdef-448a-9132-2be7adbc3765",
-      "name": "Homeless Encampments",
-      "year": "2017",
-      "dept": "HOMELESSNESS",
-      "link": "/homeless-encampments/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSun-Valley-Park-01-17-4.jpg?alt=media&token=619fa6d3-74b0-4267-b8b4-97b1b3b46583",
-      "name": "Park Grade LA",
-      "year": "2015",
-      "dept": "PARK GRADE LA",
-      "link": "/park-grade-la/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Bureau of Contract Administration",
-      "year": "2017",
-      "dept": "BUREAU OF CONTRACT ADMINISTRATION",
-      "link": "/limited-scope-fiscal-audit-at-the-bureau-of-contract-administration/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Audit_IT_Disaster_Preparedness_Recovery_Continuity.png?alt=media&token=cdff871b-1f82-45aa-b715-6f4fb9788f38",
-      "name": "Audit of Information Technology Disaster Preparedness, Recovery, and Continuity",
-      "year": "2017",
-      "dept": "INFORMATION TECHNOLOGY",
-      "link": "/audit-of-information-technology-disaster-preparedness-recovery-and-continuity/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Audit_Employee_Health_Benefits.png?alt=media&token=2c6ca3cb-403d-4d35-ac65-d98fbe4765c7",
-      "name": "Audit of Employee Healthcare Benefits",
-      "year": "2017",
-      "dept": "",
-      "link": "/audit-of-employee-healthcare-benefits/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit of the Office of the City Clerk",
-      "year": "2017",
-      "dept": "CITY CLERK",
-      "link": "/limited-scope-fiscal-audit-of-the-office-of-the-city-clerk/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Condition_All_Funds_City_Treasury_June302016.png?alt=media&token=5d91b7de-f4b7-43ac-a96e-272d4f8cfbb5",
-      "name": "Condition of All Funds in the City Treasury as of June 30, 2016",
-      "year": "2017",
-      "dept": "",
-      "link": "/condition-of-all-funds-in-the-city-treasury-as-of-june-30-2016/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Management_Audit_LA_Water_Power_Employees_Retirement_Plan.png?alt=media&token=711469cd-b55a-4571-a695-30a9a15b18d1",
-      "name": "Management Audit of the Los Angeles Water and Power Employees’ Retirement Plan",
-      "year": "2017",
-      "dept": "DEPARTMENT OF WATER AND POWER",
-      "link": "/management-audit-of-the-los-angeles-water-and-power-employees-retirement-plan/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
-      "name": "FY17 Single Audit Reports",
-      "year": "2017",
-      "dept": "",
-      "link": "/fy17-single-audit-reports/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Audit_Business_Permits_Issued_Police_Commission.png?alt=media&token=1b43a4f8-1ffa-44bb-bdc6-8d38e31ce415",
-      "name": "Audit of Business Permits Issued by the Police Commission",
-      "year": "2017",
-      "dept": "",
-      "link": "/audit-of-business-permits-issued-by-the-police-commission/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Audit – Dept. of Convention & Tourism Development",
-      "year": "2017",
-      "dept": "DEPARTMENT OF CONVENTION TOURISM AND DEVELOPMENT",
-      "link": "/limited-scope-fiscal-audit-at-the-department-of-convention-and-tourism-development/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Audit_LADWP_Training_Programs.png?alt=media&token=af2f431c-c422-4b4e-b837-48e5582e1bbc",
-      "name": "Audit of the Department of Water and Power’s Training Programs",
-      "year": "2017",
-      "dept": "DEPARTMENT OF WATER AND POWER",
-      "link": "/audit-of-the-department-of-water-and-powers-training-programs/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Department on Disability",
-      "year": "2017",
-      "dept": "DISABILITY",
-      "link": "/limited-scope-fiscal-audit-at-the-department-on-disability/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Personnel Department",
-      "year": "2017",
-      "dept": "PERSONNEL",
-      "link": "/limited-scope-fiscal-audit-at-the-personnel-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Department of Recreation and Parks",
-      "year": "2017",
-      "dept": "RECREATION AND PARKS",
-      "link": "/limited-scope-fiscal-audit-at-the-department-of-recreation-and-parks/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Audit_Income-restricted_Affordable_Housing_Units_LA_A_Review_Citys.png?alt=media&token=fa9f39e5-c01a-4cd9-93fa-ded9c85b1a7b",
-      "name": "A Review of the City’s Density Bonus Program and Overall Oversight",
-      "year": "2017",
-      "dept": "HOUSING AND COMMUNITY INVESTMENT DEPARTMENT",
-      "link": "/a-review-of-the-citys-density-bonus-program-and-overall-oversight/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FCOVER_2017_Special_Review_Econ_Workforce_Dev_Dept_Selection.png?alt=media&token=aaeb9dad-5473-4081-aee7-908fc1346d97",
-      "name": "Special Review: EWDD Selection and Monitoring of WorkSource Center Service Providers",
-      "year": "2017",
-      "dept": "EWDD",
-      "link": "/special-review-ewdd-selection-and-monitoring-of-worksource-center-service-providers/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Department of Neighborhood Empowerment",
-      "year": "2016",
-      "dept": "DEPARTMENT OF NEIGHBORHOOD EMPOWERMENT",
-      "link": "/limited-scope-fiscal-audit-at-the-department-of-neighborhood-empowerment/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at Emergency Management Department",
-      "year": "2016",
-      "dept": "EMERGENCY MANAGEMENT DEPARTMENT",
-      "link": "/limited-scope-fiscal-audit-at-emergency-management-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at Department of City Planning",
-      "year": "2016",
-      "dept": "PLANNING",
-      "link": "/limited-scope-fiscal-audit-at-department-of-city-planning/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/audits%2F2020%2F2016_Bureau_Sanitations_Recycled_Water_Programs.png?alt=media&token=8fa9b244-5b32-404e-bdaa-d75a42b28191",
-      "name": "Bureau of Sanitation’s Recycled Water Programs",
-      "year": "2016",
-      "dept": "BUREAU OF SANITATION",
-      "link": "/bureau-of-sanitations-recycled-water-programs/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2016_Audit_Citys_Oversight_Management_Natural_Gas_Utility_Franchise_Agreement.png?alt=media&token=231a6b08-4a07-4388-901b-72c856d44ab5",
-      "name": "Audit of the City’s Natural Gas Utility Franchise Agreement",
-      "year": "2016",
-      "dept": "OFFICE OF PETROLEUM AND NATURAL GAS",
-      "link": "/audit-of-the-citys-oversight-and-management-of-its-natural-gas-utility-franchise-agreement/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Office of Finance",
-      "year": "2016",
-      "dept": "OFFICE OF FINANCE",
-      "link": "/limited-scope-fiscal-audit-at-the-office-of-finance/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Fiscal Audit at the Los Angeles Fire Department",
-      "year": "2016",
-      "dept": "LOS ANGELES FIRE DEPARTMENT",
-      "link": "/limited-scope-fiscal-audit-at-the-los-angeles-fire-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
-      "name": "FY16 Single Audit Reports",
-      "year": "2016",
-      "dept": "",
-      "link": "/fy16-single-audit-reports/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2016_Audit_Prop_O_Clean_Water_Projects.png?alt=media&token=96431f89-4dab-4e88-8c7a-d5755bd3e3ca",
-      "name": "Audit of Prop O Clean Water Program",
-      "year": "2017",
-      "dept": "HOUSING AND COMMUNITY INVESTMENT DEPARTMENT",
-      "link": "/audit-of-prop-o-clean-water-program-good-projects-but-a-poor-financial-practice/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FLimited-Scope-Fiscal-Audit-Report-Cover.png?alt=media&token=ecab2c0c-2b47-4a40-ac46-c3a8d3c40339",
-      "name": "Limited Scope Audit at Housing & Community Investment",
-      "year": "2016",
-      "dept": "HOUSING AND COMMUNITY INVESTMENT DEPARTMENT",
-      "link": "/limited-scope-fiscal-audit-at-the-housing-and-community-investment-department/"
-    },
-    {
-      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2F2016_Conditions_All_Funds_City_Treasury_Review_Cash_Investment_Activities.png?alt=media&token=03cd8bcc-f33b-40c1-8918-1c5aed3621e8",
-      "name": "Condition of All Funds and Review of Cash and Investment Activities as of June 30, 2015",
-      "year": "2016",
-      "dept": "OFFICE OF FINANCE",
-      "link": "/condition-of-all-funds-in-the-city-treasury-and-review-of-cash-and-investment-activities-as-of-june-30-2015/"
+      "name": "The Problems and Progress of Prop. HHH",
+      "Year": 2022,
+      "document": "Audit",
+      "category": "Housing",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FHHH-Report-2022.png?alt=media&token=a72b7181-c714-494d-bdce-127eecfc0a80",
+      "link": "/problems-and-progress-of-prop-hhh/"
+    },
+    {
+      "name": "City Properties Available for Homeless Housing and Services",
+      "Year": 2022,
+      "document": "Special Report",
+      "category": "City Administrative Officer",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FCity-Properties-Report_2.png?alt=media&token=7a5eab1c-ebfb-4f3d-a13d-b41997519c83",
+      "link": "/city-owned-properties/"
     }
   ]
 }
