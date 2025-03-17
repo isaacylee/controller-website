@@ -35,6 +35,7 @@ interface bigcardprops {
   link: string;
   image: string;
   year: string;
+  document: string;
   dept?: any;
   name: string;
   alt: string;
@@ -52,7 +53,7 @@ function LineCard(props: any) {
       <a href={`${props.link}`} className=' dark:text-gray-50'>
         <div className=' px-2 py-2  dark:text-gray-50'>
           <p>
-            {props.year} | <span>{props.dept}</span>
+            {props.year}  <span>{props.dept}</span>
           </p>
           <p className='font-semibold'>{props.name}</p>
         </div>
@@ -73,7 +74,7 @@ function BigCard(props: bigcardprops) {
         <img src={props.image} className='w-full' alt={props.alt}></img>
         <div className=' px-2 py-2  dark:text-gray-100'>
           <p>
-            {props.year} | <span>{props.dept}</span>
+            {props.year}  <span>{props.dept}</span>
           </p>
           <p className='font-semibold'>{props.name}</p>
         </div>
@@ -198,51 +199,49 @@ export default function HomePage(props: any) {
             </Link>
           </div>
         </div>
-        <div className='container mx-auto px-4  '>
-          <h2 className='frontpageh2section'> Oversight</h2>
+        <div className='container mx-auto px-4'>
+          <h2 className='frontpageh2section'>Oversight</h2>
 
-          <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid  md:grid-cols-4 lg:grid-cols-5'>
+          <div className='hidden grid-cols-3 gap-x-4 gap-y-4 md:grid md:grid-cols-4 lg:grid-cols-5'>
             {audits.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
-                link={`${eachaudit.pre === false ? '' : '/audits/'}${
-                  eachaudit.link
-                }`}
+                link={`${eachaudit.pre === false ? '' : ''}${eachaudit.link}`}
                 image={eachaudit.image}
-                year={eachaudit.year}
-                dept={titleCase(eachaudit.dept)}
-                name={eachaudit.name}
-                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
-              />
+                // year={eachaudit.Year}
+                // document={eachaudit.document}
+                // dept={eachaudit.category}
+                name={`${eachaudit.Year} | ${eachaudit.document} | ${eachaudit.category} | ${eachaudit.name}  `} // Updated text format
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} year={''} document={''} />
             ))}
             <div className='hidden lg:block'>
               {audits.slice(4, 5).map((eachaudit: any, key: number) => (
                 <BigCard
                   key={key}
-                  link={`${eachaudit.pre === false ? '' : '/audits/'}${
-                    eachaudit.link
-                  }`}
+                  link={`${eachaudit.pre === false ? '' : ''}${eachaudit.link}`}
                   image={eachaudit.image}
-                  year={eachaudit.year}
-                  dept={titleCase(eachaudit.dept)}
-                  name={eachaudit.name}
-                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
-                />
+                  // year={eachaudit.Year}
+                  // document={eachaudit.document}
+                  // dept={eachaudit.category}
+                  name={`${eachaudit.Year} | ${eachaudit.document} | ${eachaudit.category} | ${eachaudit.name}`}
+
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} year={''} document={''} />
               ))}
             </div>
           </div>
           <div>
-            <div className='rounded-lg  md:hidden'>
+            <div className='rounded-lg md:hidden'>
               {audits.slice(0, 6).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachaudit.pre === false ? '' : '/audits/'}${
-                    eachaudit.link
-                  }`}
+                  link={`${eachaudit.pre === false ? '' : ''}${eachaudit.link}`}
                   image={eachaudit.image}
-                  year={eachaudit.year}
-                  dept={titleCase(eachaudit.dept)}
-                  name={eachaudit.name}
+                  // year={eachaudit.Year}
+                  // document={eachaudit.document}
+                  // dept={eachaudit.category}
+                  name={`${eachaudit.Year} | ${eachaudit.document} | ${eachaudit.category} | ${eachaudit.name}`}
+                  // Updated text format
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
                 />
               ))}
             </div>
@@ -255,6 +254,7 @@ export default function HomePage(props: any) {
             </div>
           </div>
         </div>
+
 
         <div className='container mx-auto px-4  '>
           <h2 className='frontpageh2section'> Upcoming Audits & Reports</h2>
@@ -269,8 +269,7 @@ export default function HomePage(props: any) {
                 dept={titleCase(eachupcoming.dept)}
                 name={eachupcoming.name}
                 alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
-                image=''
-              />
+                image='' document={''} />
             ))}
             <div className='hidden lg:block'>
               {upcoming.slice(4, 5).map((eachupcoming: any, key: number) => (
@@ -282,8 +281,7 @@ export default function HomePage(props: any) {
                   dept={titleCase(eachupcoming.dept)}
                   name={eachupcoming.name}
                   alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
-                  image=''
-                />
+                  image='' document={''} />
               ))}
             </div>
           </div>
@@ -292,9 +290,8 @@ export default function HomePage(props: any) {
               {upcoming.slice(0, 6).map((eachupcoming: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachupcoming.pre === false ? '' : '/upcoming/'}${
-                    eachupcoming.link
-                  }`}
+                  link={`${eachupcoming.pre === false ? '' : '/upcoming/'}${eachupcoming.link
+                    }`}
                   // image={eachupcoming.image}
                   year={eachupcoming.year}
                   dept={titleCase(eachupcoming.dept)}
@@ -321,29 +318,23 @@ export default function HomePage(props: any) {
             {finance.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
-                link={`${eachaudit.pre === false ? '' : '/reports/'}${
-                  eachaudit.link
-                }`}
+                link={`${eachaudit.pre === false ? '' : '/reports/'}${eachaudit.link}`}
                 image={eachaudit.image}
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
-                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
-              />
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
             ))}
             <div className='hidden lg:block'>
               {finance.slice(4, 5).map((eachaudit: any, key: number) => (
                 <BigCard
                   key={key}
-                  link={`${eachaudit.pre === false ? '' : '/reports/'}${
-                    eachaudit.link
-                  }`}
+                  link={`${eachaudit.pre === false ? '' : '/reports/'}${eachaudit.link}`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
-                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
-                />
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
               ))}
             </div>
           </div>
@@ -352,9 +343,8 @@ export default function HomePage(props: any) {
               {finance.slice(0, 6).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachaudit.pre === false ? '' : '/reports/'}${
-                    eachaudit.link
-                  }`}
+                  link={`${eachaudit.pre === false ? '' : '/reports/'}${eachaudit.link
+                    }`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
@@ -420,8 +410,7 @@ export default function HomePage(props: any) {
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
-                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
-              />
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
             ))}
             <div className='hidden lg:block'>
               {data.slice(4, 5).map((eachaudit: any, key: number) => (
@@ -432,8 +421,7 @@ export default function HomePage(props: any) {
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
-                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
-                />
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
               ))}
             </div>
           </div>
