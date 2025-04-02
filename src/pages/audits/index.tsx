@@ -126,7 +126,6 @@
 //   };
 // }
 import * as React from 'react';
-import { titleCase } from 'true-case';
 
 import '@/styles/aboutstyles.module.css';
 
@@ -142,7 +141,10 @@ export default function Audits(props: any) {
     <>
       <Navbar />
       <Layout>
-        <Seo title='Audits' description='Audits performed by the Controller since 2016.' />
+        <Seo
+          title='Audits'
+          description='Audits performed by the Controller since 2016.'
+        />
 
         <div className='flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
           <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -191,7 +193,11 @@ export default function Audits(props: any) {
                   className='mb-2 w-full max-w-xs rounded-lg bg-gray-200 dark:bg-zinc-800 dark:text-white'
                 >
                   <a href={`${audit.pre === false ? '' : ''}${audit.link}`}>
-                    <img src={audit.image} className='w-full' alt='Card images' />
+                    <img
+                      src={audit.image}
+                      className='w-full'
+                      alt='Card images'
+                    />
                     <div className='px-2 py-2'>
                       <p className='dark:text-white'>
                         {audit.Year} | {audit.document} | {audit.category} |
@@ -199,7 +205,6 @@ export default function Audits(props: any) {
                       <p className='font-bold dark:text-white'>{audit.name}</p>
                     </div>
                   </a>
-
                 </div>
               ))}
             </div>
@@ -218,4 +223,3 @@ export async function getStaticProps() {
     },
   };
 }
-

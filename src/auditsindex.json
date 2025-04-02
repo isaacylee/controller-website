@@ -1,7 +1,6 @@
 {
   "audits": [
-     {
-        
+    {
       "name": "FY 2024 Single Audit Reports",
       "Year": 2025,
       "document": "Financial/Compliance Audit",
@@ -111,7 +110,7 @@
       "document": "Charter-mandated Assessment",
       "category": "Los Angeles World Airports",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FLAWA-IEA-Thumbnail-scaled.jpg?alt=media&token=7565ccb6-dbc4-4f90-895f-8d4edc3d219c",
-      "link": "/industrial-economic-and-administrative-survey-of-the-los-angeles-world-airports/"
+      "link": "audits/industrial-economic-and-administrative-survey-of-the-los-angeles-world-airports/"
     },
     {
       "name": "High Maintenance: Review of the City’s Cannabis Regulation Efforts",
@@ -119,7 +118,7 @@
       "document": "Audit",
       "category": "Cannabis Regulation",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FDCR-Cover-scaled.jpg?alt=media&token=4db30924-7ea1-453a-a54b-cd6e6244c06c",
-      "link": "/review-of-the-citys-cannabis-regulation-efforts/"
+      "link": "audits/review-of-the-citys-cannabis-regulation-efforts/"
     },
     {
       "name": "Follow-Up Audit — Alert and Aware: Modernizations to Improve NotifyLA, the City’s Emergency Mass Notification System",
@@ -127,7 +126,7 @@
       "document": "Audit",
       "category": "Emergency Management",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FNotify-LA-Thumbnail-scaled.jpg?alt=media&token=a8d9a5f1-82fb-4b50-bd06-23192e62da9c",
-      "link": "/follow-up-audit-alert-and-aware-modernizations-to-improve-notifyla-the-citys-emergency-mass-notification-system/"
+      "link": "audits/follow-up-audit-alert-and-aware-modernizations-to-improve-notifyla-the-citys-emergency-mass-notification-system/"
     },
     {
       "name": "Follow-Up Audit — In Case of Emergency: The City’s Disaster Service Worker Program",
@@ -135,7 +134,7 @@
       "document": "Audit",
       "category": "Disaster Service Worker Program",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FDSW-Thumbnail-scaled.jpg?alt=media&token=20b8ee88-3d81-474b-ab2d-2697b6c67b2a",
-      "link": "/follow-up-audit-in-case-of-emergency-the-citys-disaster-service-worker-program/"
+      "link": "audits/follow-up-audit-in-case-of-emergency-the-citys-disaster-service-worker-program/"
     },
     {
       "name": "A Better Plan to Get L.A. Ready for Emergencies",
@@ -143,7 +142,7 @@
       "document": "Audit",
       "category": "Emergency Management",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FEmergency-Management-Department-Audit-Cover-scaled.jpg?alt=media&token=ac0b19f5-ab6d-49bf-b88b-8cde7e45775c",
-      "link": "/a-better-plan-to-get-l-a-ready-for-emergencies/"
+      "link": "audits/a-better-plan-to-get-l-a-ready-for-emergencies/"
     },
     {
       "name": "FY21 Single Audit Reports",
@@ -151,7 +150,7 @@
       "document": "Financial/Compliance Audit",
       "category": "City of Los Angeles",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FSingle-Audit-Report-Cover.png?alt=media&token=5a26d1aa-aa4a-43b1-b74c-abfd84f5a03a",
-      "link": "/fy21-single-audit-reports/"
+      "link": "audits/fy21-single-audit-reports/"
     },
     {
       "name": "Follow-Up Audit—Room to Grow: A Framework for Youth Development in Los Angeles",
@@ -159,7 +158,7 @@
       "document": "Audit",
       "category": "City Youth Programs",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FYouth-Program-Follow-Up-2022.png?alt=media&token=0c920bef-44c6-4c12-b1b4-c68ed02b332c",
-      "link": "/youth-development-in-l-a-follow-up-audit/"
+      "link": "audits/youth-development-in-l-a-follow-up-audit/"
     },
     {
       "name": "Industrial, Economic and Administrative Survey of the Los Angeles Department of Water and Power",
@@ -167,7 +166,7 @@
       "document": "Charter-mandated Assessment",
       "category": "Department of Water and Power",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FLADWP-IEA-2022.jpg?alt=media&token=4b86a82a-fe33-4898-b774-8e8f77ac3962",
-      "link": "/iea-survey-of-the-department-of-water-and-power/"
+      "link": "audits/iea-survey-of-the-department-of-water-and-power/"
     },
     {
       "name": "Management Audit Report of the Los Angeles City Employees’ Retirement System",
@@ -175,7 +174,7 @@
       "document": "Charter-mandated Assessment",
       "category": "Los Angeles City Employees’ Retirement System",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FManagement-Audit-Report-of-LACERS.png?alt=media&token=b201a003-a297-4265-a966-7d712d6e933c",
-      "link": "/management-audit-report-of-the-los-angeles-city-employees-retirement-system/"
+      "link": "audits/management-audit-report-of-the-los-angeles-city-employees-retirement-system/"
     },
     {
       "name": "Management Audit Report of the Los Angeles Fire and Police Pensions",
@@ -183,7 +182,7 @@
       "document": "Charter-mandated Assessment",
       "category": "Los Angeles Fire and Police Pensions",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FManagement-Audit-Report-of-the-Los-Angeles-Fire-and-Police-Pensions.png?alt=media&token=c974861b-3e60-47e1-8d02-ad42828c1fc0",
-      "link": "/management-audit-report-of-the-los-angeles-fire-and-police-pensions/"
+      "link": "audits/management-audit-report-of-the-los-angeles-fire-and-police-pensions/"
     },
     {
       "name": "On the Lookout: Fraud, Waste and Abuse Annual Report",
@@ -191,7 +190,7 @@
       "document": "FWA Investigative Report",
       "category": "City of Los Angeles",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2019%2FFWA-Annual-Report-Cover-2.png?alt=media&token=3cc222b8-e2e7-4bdc-941f-28648015dc41",
-      "link": "/fwa-2019/"
+      "link": "audits/fwa-2019/"
     },
     {
       "name": "The Problems and Progress of Prop. HHH",
@@ -199,7 +198,7 @@
       "document": "Audit",
       "category": "Housing",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2022%2FHHH-Report-2022.png?alt=media&token=a72b7181-c714-494d-bdce-127eecfc0a80",
-      "link": "/problems-and-progress-of-prop-hhh/"
+      "link": "audits/problems-and-progress-of-prop-hhh/"
     },
     {
       "name": "City Properties Available for Homeless Housing and Services",
@@ -207,10 +206,9 @@
       "document": "Special Report",
       "category": "City Administrative Officer",
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FCity-Properties-Report_2.png?alt=media&token=7a5eab1c-ebfb-4f3d-a13d-b41997519c83",
-      "link": "/city-owned-properties/"
+      "link": "audits/city-owned-properties/"
     },
-     {
-        
+    {
       "name": "FY 2021 Single Audit Reports",
       "Year": 2022,
       "document": "Financial/Compliance Audit",
@@ -218,8 +216,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2FScreenshot%202025-04-02%20at%209.56.31%E2%80%AFAM.png?alt=media&token=3b20053d-5c5d-4e05-9744-57473ab1b298",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2021_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2021.pdf?alt=media&token=98605365-ed4f-4e80-9ce9-2066a552f48f"
     },
-     {
-        
+    {
       "name": "FY 2020 Single Audit Reports",
       "Year": 2021,
       "document": "Financial/Compliance Audit",
@@ -227,8 +224,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2FScreenshot%202025-04-02%20at%209.56.31%E2%80%AFAM.png?alt=media&token=3b20053d-5c5d-4e05-9744-57473ab1b298",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2020_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2020.pdf?alt=media&token=e4f0a432-6eac-4e28-9123-3608d716c352"
     },
-     {
-        
+    {
       "name": "FY 2019 Single Audit Reports",
       "Year": 2020,
       "document": "Financial/Compliance Audit",
@@ -236,8 +232,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2FScreenshot%202025-04-02%20at%209.56.31%E2%80%AFAM.png?alt=media&token=3b20053d-5c5d-4e05-9744-57473ab1b298",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2019_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2019.pdf?alt=media&token=681675b1-e273-411a-b42c-23c6cb0734b5"
     },
-      {
-        
+    {
       "name": "FY 2018 Single Audit Reports",
       "Year": 2019,
       "document": "Financial/Compliance Audit",
@@ -245,8 +240,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2FScreenshot%202025-04-02%20at%209.56.31%E2%80%AFAM.png?alt=media&token=3b20053d-5c5d-4e05-9744-57473ab1b298",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2018_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2018.pdf?alt=media&token=a0fe0047-f576-4e37-8b9a-26dca5317719"
     },
-      {
-        
+    {
       "name": "FY 2017 Single Audit Reports",
       "Year": 2018,
       "document": "Financial/Compliance Audit",
@@ -254,8 +248,7 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2FScreenshot%202025-04-02%20at%209.56.31%E2%80%AFAM.png?alt=media&token=3b20053d-5c5d-4e05-9744-57473ab1b298",
       "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2017_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2017.pdf?alt=media&token=44d11a85-9d0c-4d6b-8776-a7931c11cd64"
     },
-      {
-        
+    {
       "name": "FY 2016 Single Audit Reports",
       "Year": 2017,
       "document": "Financial/Compliance Audit",

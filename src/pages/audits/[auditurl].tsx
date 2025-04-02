@@ -110,7 +110,6 @@ export async function getServerSideProps(context: any) {
 
   //illegally cast to any type because nextjs doesnt recognize it
   const auditsfullbroken: any = auditsfull;
-
   const returnedaudit: any = auditsfullbroken[auditurl];
 
   const dom = new jsdom.JSDOM(returnedaudit.htmlofpage);
