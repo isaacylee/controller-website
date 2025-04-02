@@ -1,5 +1,14 @@
 {
   "audits": [
+     {
+      "name": "Audit of the City's Implementation of the Tenant Anti-Harassment Ordinance",
+      "Year": 2025,
+      "document": "Audit",
+      "category": " LAHD ",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/audits%2Ftaho-cover.jpg?alt=media&token=821ab3a5-722b-490c-860e-c34f507742a0",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/audits%2FImplementation%20of%20TAHO_FINAL_4.3.25.pdf?alt=media&token=3f7910e9-afe4-423a-818a-609690e97897"
+    },
+    
     {
       "name": "FY 2024 Single Audit Reports",
       "Year": 2025,
