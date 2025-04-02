@@ -209,5 +209,59 @@
       "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/photos%2F2021%2FCity-Properties-Report_2.png?alt=media&token=7a5eab1c-ebfb-4f3d-a13d-b41997519c83",
       "link": "/city-owned-properties/"
     }
+     {
+        
+      "name": "FY 2021 Single Audit Reports",
+      "Year": 2022,
+      "document": "Financial/Compliance Audit",
+      "category": " City of Los Angeles ",
+      "image": "",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2021_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2021.pdf?alt=media&token=98605365-ed4f-4e80-9ce9-2066a552f48f"
+    },
+     {
+        
+      "name": "FY 2020 Single Audit Reports",
+      "Year": 2021,
+      "document": "Financial/Compliance Audit",
+      "category": " City of Los Angeles ",
+      "image": "",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2020_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2020.pdf?alt=media&token=e4f0a432-6eac-4e28-9123-3608d716c352"
+    },
+     {
+        
+      "name": "FY 2019 Single Audit Reports",
+      "Year": 2020,
+      "document": "Financial/Compliance Audit",
+      "category": " City of Los Angeles ",
+      "image": "",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2019_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2019.pdf?alt=media&token=681675b1-e273-411a-b42c-23c6cb0734b5"
+    },
+      {
+        
+      "name": "FY 2018 Single Audit Reports",
+      "Year": 2019,
+      "document": "Financial/Compliance Audit",
+      "category": " City of Los Angeles ",
+      "image": "",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2018_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2018.pdf?alt=media&token=a0fe0047-f576-4e37-8b9a-26dca5317719"
+    },
+      {
+        
+      "name": "FY 2017 Single Audit Reports",
+      "Year": 2018,
+      "document": "Financial/Compliance Audit",
+      "category": " City of Los Angeles ",
+      "image": "",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2017_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2017.pdf?alt=media&token=44d11a85-9d0c-4d6b-8776-a7931c11cd64"
+    },
+      {
+        
+      "name": "FY 2016 Single Audit Reports",
+      "Year": 2017,
+      "document": "Financial/Compliance Audit",
+      "category": " City of Los Angeles ",
+      "image": "",
+      "link": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/old%20oversights%20pds%2F2016_City%20of%20Los%20Angeles%20Single%20Audit%20Report%20-%20FYE%206.30.2016.pdf?alt=media&token=6fcd7fd1-5205-473c-b3f5-dc5b802cf1b4"
+    },
   ]
 }
