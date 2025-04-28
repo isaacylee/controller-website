@@ -5,8 +5,8 @@ import { Button } from './ui/button';
 
 const Hero = () => {
   return (
-    <div className='relative flex min-h-screen items-center overflow-hidden bg-[#1a1a1a]'>
-      <div className='container mx-auto flex flex-col items-start gap-20 px-4 lg:flex-row'>
+    <div className='relative mb-12 flex min-h-screen items-center overflow-hidden bg-[#1a1a1a]'>
+      <div className='container mx-auto flex max-w-7xl flex-col items-start gap-20 px-4 lg:flex-row'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
