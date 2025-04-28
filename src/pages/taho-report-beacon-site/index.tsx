@@ -1,0 +1,17 @@
+import Hero from '../../components/taho/Hero';
+import KeyFindings from '../../components/taho/KeyFindings';
+import Recommendations from '../../components/taho/Recommendations';
+
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-[#1a1a1a] font-['Inter'] text-white">
+      {/* <Navbar /> */}
+      <Hero />
+      <KeyFindings />
+      <Recommendations />
+      {/* <Footer /> */}
+    </div>
+  );
+};
+
+export default Index;
