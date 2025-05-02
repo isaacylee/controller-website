@@ -13,14 +13,14 @@ export default function CashForKeys() {
   return (
     <>
       <Head>
-        <title>Cash for Keys (Jan 2019 - Jul 2024)</title>
+        <title>Cash for Keys (Jan 2019 - Mar 2025)</title>
       </Head>
       <Navbar />
       <body className='container mx-auto px-4 sm:container lg:max-w-3xl xl:max-w-4xl'>
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
-            <h1 className='pt-8 pb-4 text-center text-3xl font-bold dark:text-white'>
-              Cash For Keys (Jan 2019 - Jul 2024)
+            <h1 className='pb-4 pt-8 text-center text-3xl font-bold dark:text-white'>
+              Cash For Keys (Jan 2019 - Mar 2025)
             </h1>
           </div>
           <div>
@@ -30,7 +30,7 @@ export default function CashForKeys() {
               target='_blank'
             >
               <button
-                className='mb-4 rounded py-2 px-4 font-bold text-black'
+                className='mb-4 rounded px-4 py-2 font-bold text-black'
                 style={{
                   backgroundColor: '#41ffca',
                 }}
@@ -49,18 +49,18 @@ export default function CashForKeys() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-4'>
-              [September 2024 Update] We analyzed updated data from the Los Angeles
-              Housing Department (LAHD) through the month of July 2024.
+              [May 2025 Update] We analyzed updated data from the Los Angeles
+              Housing Department (LAHD) through the month of March 2025.
             </p>
             <p className='mb-4'>
-              The data reveals that from January 2019 through July 2024, LAHD
-              received a total of <b>5,253</b> Tenant Buyout Agreements (also
-              known as “Cash for Keys” agreements). <b>$24,890</b> was the
+              The data reveals that from January 2019 through March 2025, LAHD
+              received a total of <b>5,771</b> Tenant Buyout Agreements (also
+              known as “Cash for Keys” agreements). <b>$25,051</b> was the
               average buyout amount.
             </p>
             <p className='mb-4'>
-              <b>342</b> Tenant Buyout agreements were filed this year so far,
-              from January to July 2024.
+              <b>175</b> Tenant Buyout agreements were filed this year so far,
+              from January to March 2025.
             </p>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
@@ -83,8 +83,8 @@ export default function CashForKeys() {
             </h3>
             <p className='mb-4 text-left dark:text-white'>
               Units located within Council District <b>10</b> had the highest
-              number of tenant buyouts <b>(1,049)</b>, followed by Council
-              District <b>13 (1,038)</b>.
+              number of tenant buyouts <b>(1,131)</b>, followed by Council
+              District <b>13 (1,123)</b>.
             </p>
           </div>
           <div className='mb-16'>
@@ -100,7 +100,7 @@ export default function CashForKeys() {
             <p className='mb-4 text-left dark:text-white'>
               Units located within <b>90004</b> (Koreatown, Mid-Wilshire area)
               had the highest number of buyout agreements (<b>380</b>), followed
-              by <b>90026</b> (Echo Park area) with <b>264</b>.
+              by <b>90026</b> (Echo Park area) with <b>280</b>.
             </p>
           </div>
           <div className='mb-12'>
@@ -112,14 +112,15 @@ export default function CashForKeys() {
               <b>Tenant Buyouts by $ Range</b>
             </h3>
             <p className='mb-4 text-left'>
-              The total dollar amount of tenant buyouts was <b>$128,756,099</b>{' '}
-              with an average tenant buyout amount of <b>$24,890 per unit</b>.
+              The total dollar amount of tenant buyouts was{' '}
+              <b>$142,567,459.29</b> with an average tenant buyout amount of{' '}
+              <b>$25,051 per unit</b>.
             </p>
           </div>
           <div className='mb-16'>
             {' '}
             <BuyoutsByDollars />
-            <p className='dark:text-white text-left mt-4'>
+            <p className='mt-4 text-left dark:text-white'>
               *Note: Some tenant buyouts may have received both rent credit and
               monetary compensation. However, those receiving both are not
               included in the total for the Rent Credits section of this table.
