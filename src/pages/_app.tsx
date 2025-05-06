@@ -146,7 +146,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Script
         src='https://website-widgets.pages.dev/dist/sienna.min.js'
-        defer
+        strategy='beforeInteractive'
       ></Script>
 
       <Component {...pageProps} />

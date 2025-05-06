@@ -53,7 +53,7 @@ function LineCard(props: any) {
       <a href={`${props.link}`} className=' dark:text-gray-50'>
         <div className=' px-2 py-2  dark:text-gray-50'>
           <p>
-            {props.year}  <span>{props.dept}</span>
+            {props.year} <span>{props.dept}</span>
           </p>
           <p className='font-semibold'>{props.name}</p>
         </div>
@@ -74,7 +74,7 @@ function BigCard(props: bigcardprops) {
         <img src={props.image} className='w-full' alt={props.alt}></img>
         <div className=' px-2 py-2  dark:text-gray-100'>
           <p>
-            {props.year}  <span>{props.dept}</span>
+            {props.year} <span>{props.dept}</span>
           </p>
           <p className='font-semibold'>{props.name}</p>
         </div>
@@ -155,36 +155,6 @@ export default function HomePage(props: any) {
             </div>
           </div>
         </div>
-
-        {/* <div className='bgColorHeader relative px-4 pt-8 text-base text-sm md:px-32 md:px-0 md:pt-24 md:text-white'>
-          <div className='background-1'>
-            <div className='z-10 mx-auto pl-2 pr-0 text-white md:px-4 lg:max-w-6xl lg:px-16 xl:max-w-7xl'>
-              <div className='flex flex-row'>
-                <div className='my-auto'>
-                  {' '}
-                  <h2>Kenneth Mejia, CPA</h2>
-                  <h2>City Controller of Los Angeles</h2>
-                </div>
-
-                <SocialPageSeries />
-
-                <div className='ml-auto'>
-                  <Image
-                    src='/images/ken-new-blob-big.png'
-                    alt='Portrait of Kenneth Mejia'
-                    className='w-96 lg:w-[500px]'
-                    sizes='(max-width: 1023px) 24rem,
-              500px'
-                    priority={true}
-                    unoptimized={true}
-                    height={440}
-                    width={500}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <br></br>
         <div className='container mx-auto px-4 '>
           <h2 className='frontpageh2section'>Financial Data</h2>
@@ -212,7 +182,10 @@ export default function HomePage(props: any) {
                 // document={eachaudit.document}
                 // dept={eachaudit.category}
                 name={`${eachaudit.Year} | ${eachaudit.document} | ${eachaudit.category} | ${eachaudit.name}  `} // Updated text format
-                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} year={''} document={''} />
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
+                year=''
+                document=''
+              />
             ))}
             <div className='hidden lg:block'>
               {audits.slice(4, 5).map((eachaudit: any, key: number) => (
@@ -224,8 +197,10 @@ export default function HomePage(props: any) {
                   // document={eachaudit.document}
                   // dept={eachaudit.category}
                   name={`${eachaudit.Year} | ${eachaudit.document} | ${eachaudit.category} | ${eachaudit.name}`}
-
-                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} year={''} document={''} />
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
+                  year=''
+                  document=''
+                />
               ))}
             </div>
           </div>
@@ -255,7 +230,6 @@ export default function HomePage(props: any) {
           </div>
         </div>
 
-
         <div className='container mx-auto px-4  '>
           <h2 className='frontpageh2section'> Upcoming Audits & Reports</h2>
 
@@ -269,7 +243,9 @@ export default function HomePage(props: any) {
                 dept={titleCase(eachupcoming.dept)}
                 name={eachupcoming.name}
                 alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
-                image='' document={''} />
+                image=''
+                document=''
+              />
             ))}
             <div className='hidden lg:block'>
               {upcoming.slice(4, 5).map((eachupcoming: any, key: number) => (
@@ -281,7 +257,9 @@ export default function HomePage(props: any) {
                   dept={titleCase(eachupcoming.dept)}
                   name={eachupcoming.name}
                   alt={eachupcoming.alt ? eachupcoming.alt : eachupcoming.name}
-                  image='' document={''} />
+                  image=''
+                  document=''
+                />
               ))}
             </div>
           </div>
@@ -290,8 +268,9 @@ export default function HomePage(props: any) {
               {upcoming.slice(0, 6).map((eachupcoming: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachupcoming.pre === false ? '' : '/upcoming/'}${eachupcoming.link
-                    }`}
+                  link={`${eachupcoming.pre === false ? '' : '/upcoming/'}${
+                    eachupcoming.link
+                  }`}
                   // image={eachupcoming.image}
                   year={eachupcoming.year}
                   dept={titleCase(eachupcoming.dept)}
@@ -318,23 +297,31 @@ export default function HomePage(props: any) {
             {finance.slice(0, 4).map((eachaudit: any, key: number) => (
               <BigCard
                 key={key}
-                link={`${eachaudit.pre === false ? '' : '/reports/'}${eachaudit.link}`}
+                link={`${eachaudit.pre === false ? '' : '/reports/'}${
+                  eachaudit.link
+                }`}
                 image={eachaudit.image}
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
-                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
+                document=''
+              />
             ))}
             <div className='hidden lg:block'>
               {finance.slice(4, 5).map((eachaudit: any, key: number) => (
                 <BigCard
                   key={key}
-                  link={`${eachaudit.pre === false ? '' : '/reports/'}${eachaudit.link}`}
+                  link={`${eachaudit.pre === false ? '' : '/reports/'}${
+                    eachaudit.link
+                  }`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
-                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
+                  document=''
+                />
               ))}
             </div>
           </div>
@@ -343,8 +330,9 @@ export default function HomePage(props: any) {
               {finance.slice(0, 6).map((eachaudit: any, key: number) => (
                 <LineCard
                   key={key}
-                  link={`${eachaudit.pre === false ? '' : '/reports/'}${eachaudit.link
-                    }`}
+                  link={`${eachaudit.pre === false ? '' : '/reports/'}${
+                    eachaudit.link
+                  }`}
                   image={eachaudit.image}
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
@@ -410,7 +398,9 @@ export default function HomePage(props: any) {
                 year={eachaudit.year}
                 dept={titleCase(eachaudit.dept)}
                 name={eachaudit.name}
-                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
+                alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
+                document=''
+              />
             ))}
             <div className='hidden lg:block'>
               {data.slice(4, 5).map((eachaudit: any, key: number) => (
@@ -421,7 +411,9 @@ export default function HomePage(props: any) {
                   year={eachaudit.year}
                   dept={titleCase(eachaudit.dept)}
                   name={eachaudit.name}
-                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name} document={''} />
+                  alt={eachaudit.alt ? eachaudit.alt : eachaudit.name}
+                  document=''
+                />
               ))}
             </div>
           </div>
