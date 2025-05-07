@@ -177,7 +177,7 @@ export default function Audits(props: any) {
               <LineItem
                 key={index}
                 dept={audit.city_category}
-                link={`${audit.pre === false ? '' : '/audits/'}${audit.link}`}
+                link={`${audit.pre === false ? '' : ''}${audit.link}`}
                 name={audit.name}
                 year={audit.year}
                 document_type={audit.document_type}
