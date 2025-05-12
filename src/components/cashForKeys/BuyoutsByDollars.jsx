@@ -32,19 +32,19 @@ export default function BuyoutsByDollars() {
           >
             <tr>
               <th
-                className='p-2 text-black text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl'
+                className='p-2 text-base text-black sm:text-base md:text-lg lg:text-xl xl:text-2xl'
                 style={{ border: '1px solid black' }}
               >
                 Buyout Range
               </th>
               <th
-                className='p-2 text-black text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl'
+                className='p-2 text-base text-black sm:text-base md:text-lg lg:text-xl xl:text-2xl'
                 style={{ border: '1px solid black' }}
               >
                 # of Buyouts
               </th>
               <th
-                className='p-2 text-black text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl'
+                className='p-2 text-base text-black sm:text-base md:text-lg lg:text-xl xl:text-2xl'
                 style={{ border: '1px solid black' }}
               >
                 Amount
@@ -52,26 +52,41 @@ export default function BuyoutsByDollars() {
             </tr>
           </thead>
           <tbody className='text-black' style={{ border: '1px solid black' }}>
-            {dollarBuyout.map((row, index) => (
-              <tr
-                key={row.id}
-                style={
-                  index === dollarBuyout.length - 1
-                    ? {fontWeight:'bold', backgroundColor: '#41ffca', border: '1px solid black' }
-                    : { border: '1px solid black' }
-                }
-              >
-                <td className='p-2 font-bold text-black text-base sm:text-base md:text-lg lg:text-xl xl:text-xl' style={{ border: '1px solid black' }}>
-                  {row.buyoutRange}
-                </td>
-                <td className='p-2 text-black text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl' style={{ border: '1px solid black' }}>
-                  {row['#OfBuyouts'].toLocaleString()}
-                </td>
-                <td className='p-2 text-right text-black text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl' style={{ border: '1px solid black' }}>
-                  ${row.amount.toLocaleString()}
-                </td>
-              </tr>
-            ))}
+            {dollarBuyout.map((row, index) => {
+              const isTotalRow = index === dollarBuyout.length - 1;
+              const buyouts = Number(row['#OfBuyouts']);
+              const amount = Number(row.amount);
+
+              return (
+                <tr
+                  key={row.id}
+                  style={{
+                    fontWeight: isTotalRow ? 'bold' : 'normal',
+                    backgroundColor: isTotalRow ? '#41ffca' : 'transparent',
+                    border: '1px solid black',
+                  }}
+                >
+                  <td
+                    className='p-2 text-base font-bold text-black sm:text-base md:text-lg lg:text-xl xl:text-xl'
+                    style={{ border: '1px solid black' }}
+                  >
+                    {row.buyoutRange}
+                  </td>
+                  <td
+                    className='p-2 text-base text-black sm:text-base md:text-lg lg:text-xl xl:text-2xl'
+                    style={{ border: '1px solid black' }}
+                  >
+                    {!isNaN(buyouts) ? buyouts.toLocaleString() : '-'}
+                  </td>
+                  <td
+                    className='p-2 text-right text-base text-black sm:text-base md:text-lg lg:text-xl xl:text-2xl'
+                    style={{ border: '1px solid black' }}
+                  >
+                    {!isNaN(amount) ? `$${amount.toLocaleString()}` : '-'}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
