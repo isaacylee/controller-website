@@ -35,11 +35,11 @@ export default function FairMarketRent() {
   fairMarketSum();
 
   return (
-    <div>
-      <div className='bg-white p-2'>
+    <div className='w-full overflow-x-auto'>
+      <div className='min-w-5xl inline-block bg-white p-2'>
         <table className='w-full table-auto'>
           <thead
-            className=' text-3xl font-bold text-black'
+            className='text-3xl font-bold text-black'
             style={{ border: '1px solid black', backgroundColor: '#41ffca' }}
           >
             <tr>
