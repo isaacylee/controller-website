@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     let tosetcolour = 'system';
 
     if (typeof document !== 'undefined') {
-      console.log('inside document');
+      // console.log('inside document');
       const bodySelected = document.querySelector('body');
       const htmlSelected = document.querySelector('html');
 
@@ -93,7 +93,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
 
   function makeLight() {
-    console.log('make light');
+    // console.log('make light');
     // Whenever the user explicitly chooses light mode
     localStorage.theme = 'light';
     updateSystem();
@@ -102,14 +102,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   function makeDark() {
     // Whenever the user explicitly chooses dark mode
-    console.log('make dark');
+    // console.log('make dark');
     localStorage.theme = 'dark';
     updateSystem();
   }
 
   function makeSystem() {
     // Whenever the user explicitly chooses to respect the OS preference
-    console.log('make sys');
+    // console.log('make sys');
     localStorage.removeItem('theme');
     updateSystem();
     dontburnmyeyes();

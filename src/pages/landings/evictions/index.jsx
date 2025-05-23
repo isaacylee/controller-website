@@ -23,7 +23,7 @@ export default function Evictions() {
         <center>
           <div className='mx-2 flex w-full flex-col px-4 py-2 sm:mx-4 md:px-0 lg:mx-auto lg:max-w-3xl xl:max-w-4xl'>
             <h1 className='pb-4 pt-8 text-center text-3xl font-bold dark:text-white'>
-              Eviction Notices (February 2023 - November 17, 2024)
+              Eviction Notices (February 2023 - April 2025)
             </h1>
           </div>
           <div>
@@ -52,29 +52,27 @@ export default function Evictions() {
             style={{ fontFamily: 'Helvetica' }}
           >
             <p className='mb-2'>
-              [December 2024 Update] We analyzed updated data from the Los
-              Angeles Housing Department (LAHD) from February 2023 through
-              November 17, 2024.
+              [May 2025 Update] We analyzed updated data from the Los Angeles
+              Housing Department (LAHD) from February 2023 through April 2025.
             </p>
             <p className='mb-4'>
-              The data reveals that from February 2023 to November 17, 2024,
-              LAHD received a total of
-              <b> 166,433</b> eviction notices. <b>5,136</b> notices were filed
-              for November 2024 (as of 11/17/2024).
+              The data reveals that from February 2023 to April 2025, LAHD
+              received a total of
+              <b> 210,901</b> eviction notices. <b>5,429</b> notices were filed
+              for April 2025.
             </p>
-            <ul className='mb-10 ml-10'>
+            <ul className='mb-10 ml-10 list-outside list-disc'>
               <li>
-                &bull; <b>166,433 eviction notices were filed</b>
+                <b>210,901 eviction notices were filed</b>
               </li>
               <li>
-                &bull;{' '}
                 <b>94% of eviction notices were for “non-payment of rent”</b>
               </li>
               <li>
-                &bull; <b>90% came with a 3-day notice</b>
+                <b>89% came with a 3-day notice</b>
               </li>
               <li>
-                &bull; <b>$3,960 is the average amount of rent owed</b>
+                <b>$3,987.85 is the average amount of rent owed</b>
               </li>
             </ul>
 
@@ -119,27 +117,15 @@ export default function Evictions() {
             <p className='mb-4'>
               The table above shows the top 20 Zip Codes with the highest number
               of eviction notices filed with the City from February 2023 to
-              November 17, 2024.
+              April 2025.
             </p>
             <p className='mb-4'>
               Units located within <b>90028 </b>(Hollywood area) had the highest
-              number of eviction notices filed with <b>10,239</b> followed by{' '}
-              <b>90012</b> (Downtown LA, Chinatown area) with <b>8,078</b>.
+              number of eviction notices filed from February 2023 to April 2025
+              with <b>12,651</b> followed by <b>90012</b> (Downtown LA,
+              Chinatown area) with <b>10,053</b>.
             </p>
           </div>
-          {/* <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h4 className='mb-4 text-xl font-bold dark:text-white'>
-              <b>Rent Owed</b>
-            </h4>
-            <p className='mb-4 text-left'>
-              The total amount of rent owed due to <b>Non-Payment of Rent</b> is{' '}
-              <b>$186,491,100.99</b>.
-            </p>
-          </div>
-          <div className='mb-16'>
-            {' '}
-            <RentOwed />
-          </div> */}
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
               <b>Fair Market Rent</b>
@@ -150,10 +136,6 @@ export default function Evictions() {
                 a landlord can evict a tenant only if the amount due exceeds one
                 month of fair market rent for the Los Angeles metro area.
               </p>
-              <p>
-                <b>28,352 </b> eviction notices were filed where the amount of
-                rent owed is below the Fair Market Rent (FMR) Limit.
-              </p>
             </div>
           </div>
           <div className='mb-16'>
@@ -161,7 +143,7 @@ export default function Evictions() {
             <FairMarketRent />
             <p className='italic dark:text-white'>
               Note: The Fair Market Rent (FMR) amounts are adjusted each Fiscal
-              Year (July to June).
+              Year (October to September).
             </p>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
@@ -185,74 +167,79 @@ export default function Evictions() {
             <h4 className='mb-4 text-xl font-bold dark:text-white'>
               <b>Tenant Protection Deadlines</b>
             </h4>
-            <ul className='list-disc'>
+            <ul className='ml-7 list-disc'>
               <li className='mb-4 text-left'>
-                Effective <b>February 1, 2024</b>:
+                <b>Allowable Rent Increases for RSO Units</b>:
               </li>
               <ul className='ml-10 list-[circle]'>
                 <li className='mb-4 text-left'>
-                  <p className='mb-4 text-left'>
-                    Rent owed from October 1, 2021 to January 31, 2023 is due.
-                    If a tenant returned the Declaration of COVID-19-Related
-                    Financial Distress form to the landlord within 15 days of
-                    rent being due AND paid 25% of rent owed from this period,
-                    they cannot be evicted for nonpayment of rent.
-                  </p>
-                  <p>
-                    However, since <b>March 27, 2023</b> landlords may not evict
-                    a tenant who falls behind in rent unless the tenant owes an
-                    amount higher than the <b>Fair Market Rent (FMR)</b>. The
-                    FMR depends on the bedroom size of the rental unit.
-                  </p>
+                  RSO annual rent increases are allowed only once every 12
+                  months.
                 </li>
                 <li className='mb-4 text-left'>
-                  <p className='mb-4'>
-                    As amended by City Council, annual rent increases will
-                    resume for rental units subject to the City’s Rent
-                    Stabilization Ordinance (RSO) with the allowable rent
-                    increase at 4% starting <b>February 1, 2024</b> through{' '}
-                    <b>June 30, 2024</b>. If the tenant is provided with
-                    electric service and/or gas by the landlord, rent can be
-                    increased an additional 1-2% with a total increase of 5% or
-                    6%.
-                  </p>
-                  <p className='mb-4'>
-                    The allowable rent increase of 4% is still in effect
-                    starting on <b>July 1, 2024</b> through <b>June 30, 2025</b>
-                    . The additional 1-2% is still applicable if the tenant is
-                    provided with electric service and/or gas by the landlord,
-                    totaling 5-6%.
+                  The allowable rent increase of 4% still in effect started on{' '}
+                  <b>July 1, 2024</b> through <b>June 30, 2025</b>. The
+                  additional 1-2% is still applicable if the tenant is provided
+                  with electric service and/or gas by the landlord, totaling
+                  5-6%.
+                </li>
+              </ul>
+              <li className='mb-4 text-left'>
+                Protections for Tenants Impacted by the January 2025 Wildfires
+              </li>
+              <ul className='ml-10 list-[circle]'>
+                <li className='mb-4 text-left'>
+                  Tenants are protected from eviction between February 1, 2025
+                  and July 31, 2025 if they lost actual wages due to one of the
+                  following:
+                </li>
+                <ul className='ml-10 list-[circle]'>
+                  <li className='mb-2 text-left'>
+                    Your place of employment or business was destroyed or
+                    rendered uninhabitable due to the Wildfires
+                  </li>
+                  <p className='mb-2 text-left'>OR</p>
+                  <li className='mb-2 text-left'>
+                    Your employer has laid you off or reduced your working hours
+                  </li>
+                  <p className='mb-2 text-left'>OR</p>
+                  <li className='mb-4 text-left'>
+                    You had clients located in the Wildfires, which resulted in
+                    a loss of income.
+                  </li>
+                </ul>
+                <p className='mb-4 text-left'>
+                  Rent not paid during this time must be paid to the landlord on
+                  or before July 31, 2025.
+                </p>
+                <li className='mb-4 text-left'>
+                  <p className='mb-2'>
+                    Effective <b>February 24, 2025</b>, eviction protections
+                    were approved for those that have unauthorized persons or
+                    pets that were displaced due to the fires. The tenant must
+                    have notified their landlord in writing by{' '}
+                    <b>March 25, 2025</b>.
                   </p>
                   <p>
-                    State law requires that the landlord must provide an advance
-                    30-day written notice for all rent increases of less than
-                    10%.
+                    Rent for rental units covered under the RSO cannot be
+                    increased for additional tenants and/or pets added to a
+                    tenancy if displaced due to the wildfires.
                   </p>
                 </li>
               </ul>
               <li className='mb-4 text-left'>
-                Effective <b>February 5, 2024</b>:
-              </li>
-              <ul className='ml-10 list-[circle]'>
-                <li className='mb-4 text-left'>
-                  Eviction protections will continue for tenants with
-                  unauthorized pets obtained during the COVID-19 emergency.
-                  Tenants had until <b>March 5, 2024</b> to inform their
-                  landlord of their unauthorized pet if they had not yet done so
-                  already. This protection does not apploy to unauthorized pets
-                  that began residing in the rental until after{' '}
-                  <b>January 31, 2024</b>.
-                </li>
-              </ul>
-              <li className='text-left'>
-                If an eviction notice is not provided to LAHD, a tenant may
-                raise an affirmative defense in an Unlawful Detainer case.
+                Eviction notices are required to be filed with the Los Angeles
+                Housing Department within (3) business days of service. If not
+                filed, a tenant may raise an affirmative defense in an Unlawful
+                Detainer (UD) case.
               </li>
             </ul>
             <br></br>
             <p className='text-left'>
-              For future updates on eviction notices, please visit LAHD’s{' '}
+              For continuous updates on eviction notices, please visit LAHD’s{' '}
               <b>Eviction Notices Filed</b> dashboard:
+            </p>
+            <p className='mt-2 text-left'>
               <a
                 href='https://housing2.lacity.org/residents/renters/eviction-notices-filed'
                 target='_blank'
@@ -262,7 +249,6 @@ export default function Evictions() {
                 {' '}
                 https://housing2.lacity.org/residents/renters/eviction-notices-filed
               </a>
-              .
             </p>
           </div>
         </center>
