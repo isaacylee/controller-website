@@ -57,7 +57,7 @@ export default function Evictions() {
             <p className='mb-4'>
               The data reveals that from February 2023 to April 2025, LAHD
               received a total of
-              <b> 210,901</b> eviction notices. <b>5,429</b> notices were filed
+              <b> 210,901</b> eviction notices. <b>5,427</b> notices were filed
               for April 2025.
             </p>
             <ul className='mb-10 ml-10 list-outside list-disc'>
