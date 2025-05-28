@@ -14,8 +14,7 @@ export default function Evictions() {
     <>
       <Head>
         <title>
-          Eviction Notices (February 2023 - November 17, 2024) Summary and
-          Analysis
+          Eviction Notices (February 2023 - April 2025) Summary and Analysis
         </title>
       </Head>
       <Navbar />
