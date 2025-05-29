@@ -42,9 +42,9 @@ export default function Evictions() {
             </Link>
           </div>
           <div className='dark:text-white' style={{ fontFamily: 'Helvetica' }}>
-            <h3 className='mb-12 text-2xl font-bold'>
+            <h2 className='mb-12 text-2xl font-bold'>
               <b>Summary and Analysis</b>
-            </h3>
+            </h2>
           </div>
           <div
             className='text-left dark:text-white'
