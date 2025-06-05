@@ -1,5 +1,13 @@
 {
   "audits": [
+      {
+      "name": "Affordable Housing Oversight Audit",
+      "Year": 2025,
+      "document": "Audit",
+      "category": "LAHD",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lacontroller-2b7de.appspot.com/o/affhousing-cover%20(1)%20(1).jpg?alt=media&token=bd40ffc4-ba17-4f36-a186-c8153bdd20c5",
+      "link": "https://controller.lacity.gov/af-housing-audit"
+    },
     {
       "name": "LADOT Red Zone Parking Tickets",
       "Year": 2025,
