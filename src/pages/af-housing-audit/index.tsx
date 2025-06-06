@@ -25,7 +25,7 @@ const Index = () => {
         <nav
           className='flex items-center justify-between border-b border-gray-800 px-8 py-4'
           role='navigation'
-          aria-label='Main navigation'
+          aria-label='affordable housing oversight audit page navigation'
         >
           <div></div>
           <ul className='flex items-center space-x-8' role='menubar'>
