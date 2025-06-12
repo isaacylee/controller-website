@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import Image from 'next/image';
 import Script from 'next/script';
 import { useEffect, useState } from 'react';
 import * as React from 'react';
@@ -135,12 +136,21 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div className='mx-auto flex max-w-7xl flex-wrap items-center justify-between px-3 py-2'>
           {/* Left Side */}
           <div className='flex items-center space-x-2'>
+            {/* City Seal */}
+            <Image
+              src='/Seal_of_Los_Angeles.svg.png'
+              alt='City of Los Angeles Seal'
+              width={20}
+              height={20}
+              className='object-contain'
+            />
             <div className='text-white'>
-              <span className='block sm:inline'>An Official Website of </span>
+              <span className='block sm:inline'>An Official Website of</span>
               <br className='block sm:hidden' />
               <span>
-                the City of <span className='inline sm:hidden'>L.A.</span>
-                <span className='hidden sm:inline'>Los Angeles</span>
+                the City of
+                <span className='inline sm:hidden'> L.A.</span>
+                <span className='hidden sm:inline'> Los Angeles</span>
               </span>
             </div>
           </div>
