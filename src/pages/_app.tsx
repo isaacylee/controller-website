@@ -145,7 +145,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               className='object-contain'
             />
             <div className='text-white'>
-              <span className='block sm:inline'>An Official Website of</span>
+              <span className='block sm:inline'>An Official Website of </span>
               <br className='block sm:hidden' />
               <span>
                 the City of
