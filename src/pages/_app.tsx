@@ -130,27 +130,65 @@ function MyApp({ Component, pageProps }: AppProps) {
   });
 
   return (
-    <ThemeContext.Provider value={themeChanger}>
-      <Script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-DF7TCXWPKS'
-      ></Script>
-      <Script id='google-analytics' strategy='afterInteractive'>
-        {`
+    <>
+      <div className='z-[9999999999] w-full bg-[#0f2940] text-xs leading-none text-white'>
+        <div className='mx-auto flex max-w-7xl flex-wrap items-center justify-between px-3 py-2'>
+          {/* Left Side */}
+          <div className='flex items-center space-x-2'>
+            <div className='text-white'>
+              <span className='block sm:inline'>An Official Website of </span>
+              <br className='block sm:hidden' />
+              <span>
+                the City of <span className='inline sm:hidden'>L.A.</span>
+                <span className='hidden sm:inline'>Los Angeles</span>
+              </span>
+            </div>
+          </div>
+
+          {/* Right Side */}
+          <div className='flex gap-2'>
+            <a
+              href='https://myla311.lacity.org/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='rounded border border-[#A7CEEC] px-2 py-1 hover:outline-white focus:outline-2 focus:outline-white'
+            >
+              City Services
+            </a>
+            <a
+              href='https://lacity.gov/directory'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='rounded border border-[#A7CEEC] px-2 py-1 hover:outline-white focus:outline-2 focus:outline-white'
+            >
+              City Directory
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <ThemeContext.Provider value={themeChanger}>
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-DF7TCXWPKS'
+        ></Script>
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
     window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-DF7TCXWPKS');
   `}
-      </Script>
+        </Script>
 
-      <Script
-        src='https://website-widgets.pages.dev/dist/sienna.min.js'
-        strategy='beforeInteractive'
-      ></Script>
+        <Script
+          src='https://website-widgets.pages.dev/dist/sienna.min.js'
+          strategy='beforeInteractive'
+        ></Script>
 
-      <Component {...pageProps} />
-    </ThemeContext.Provider>
+        <Component {...pageProps} />
+      </ThemeContext.Provider>
+    </>
   );
 }
 
