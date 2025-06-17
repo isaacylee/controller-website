@@ -30,12 +30,11 @@ export default function BuyoutsByYear() {
       'Bar chart of number of tenant buyouts by year from 2019 to 2023. 1209 buyouts in 2019. 1100 buyouts in 2020. 878 buyouts in 2021. 893 buyouts in 2022. 789 buyouts in 2023.',
       'Bar chart of number of tenant buyouts by council district. CD 1 had 569 buyouts. CD 2 had 171 buyouts. CD 3 had 41 buyouts. CD 4 had 188 buyouts. CD 5 had 362 buyouts. CD 6 had 104 buyouts. CD 7 had 56 buyouts. CD 8 had 302 buyouts. CD 9 had 388 buyouts. CD 10 had 997 buyouts. CD 11 had 383 buyouts. CD 12 had 4 buyouts. CD 13 had 970 buyouts. CD 14 had 246 buyouts. CD 15 had 87 buyouts.',
     ];
-  
+
     canvases.forEach((canvas, index) => {
       canvas.setAttribute('aria-label', labels[index]);
     });
   }, []);
-  
 
   var data = {
     labels: buyoutYears.map((x) => x.year),
@@ -50,6 +49,8 @@ export default function BuyoutsByYear() {
   };
 
   var options = {
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         display: false,
@@ -90,8 +91,13 @@ export default function BuyoutsByYear() {
   };
 
   return (
-    <div className='mt-4 bg-zinc-900 py-4 px-1 sm:px-5 md:px-9 lg:px-20 xl:px-24'>
-      <Bar data={data} height={100} width={150} options={options} />
+    <div className='relative mt-4 h-96 w-full bg-zinc-900 px-1 py-4 sm:px-5 md:px-9 lg:px-20 xl:px-24'>
+      {/* <Bar data={data} height={100} width={150} options={options} /> */}
+      {data && data.datasets.length > 0 ? (
+        <Bar data={data} height={100} width={150} options={options} />
+      ) : (
+        <p>Loading chart…</p>
+      )}
     </div>
   );
 }
