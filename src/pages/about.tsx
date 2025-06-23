@@ -388,7 +388,7 @@ export default function About(props: any) {
                   />
                   <ProfileCard
                     name='Naon Chun'
-                    title='Deputy Director of Technology'
+                    title='Director of Technology'
                     picture='/images/staff/NaonChun-TechDeputy.jpg'
                   />
                 </div>
