@@ -284,9 +284,13 @@ export default function About(props: any) {
                   picture='/images/staff/JaneNguyen-ChiefofStaff.jpg'
                 />
                 <ProfileCard
-                  name='Rick Cole'
+                  name='Vincent de Vera'
+                  picture='/images/staff/VincentdeVera-ExecAide.jpg'
+                  i18noptions={{
+                    ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                    'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
+                  }}
                   title='Chief Deputy Controller'
-                  picture='/images/staff/RickCole-ChiefDeputyController.jpg'
                 />
                 <ProfileCard
                   name='Deborah Mitrenga'
@@ -338,15 +342,6 @@ export default function About(props: any) {
               <div className='flex flex-col gap-y-2'>
                 <div className='flex flex-col gap-y-2'>
                   <p className='text-xl'>Working Groups</p>
-                  <ProfileCard
-                    name='Vincent de Vera'
-                    picture='/images/staff/VincentdeVera-ExecAide.jpg'
-                    i18noptions={{
-                      ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
-                      'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
-                    }}
-                    title='Director of Accounting Projects & Executive Aide'
-                  />
                   <ProfileCard
                     name='Ashley Bennett'
                     title='Director of Homelessness'
