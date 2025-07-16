@@ -21,6 +21,7 @@ import { SocialPageSeries } from '@/components/SocialPageSeries';
 interface profilecardprops {
   name: string;
   title: string;
+  subtitle: string;
   picture?: string;
   i18noptions?: any;
   notranslate?: boolean;
@@ -162,6 +163,7 @@ function ProfileCard(props: profilecardprops) {
           {pickStringToUseForName()}
         </p>
         <p className='text-black dark:text-white'>{props.title}</p>
+        <p className='text-black dark:text-white'>{props.subtitle}</p>
       </div>
     </div>
   );
@@ -275,12 +277,14 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Kenneth Mejia'
                   title='LA City Controller'
+                  subtitle=''
                   picture='/images/staff/KennethMejia.jpg'
                 />
 
                 <ProfileCard
                   name='Jane Nguyen'
                   title='Chief of Staff'
+                  subtitle=''
                   picture='/images/staff/JaneNguyen-ChiefofStaff.jpg'
                 />
                 <ProfileCard
@@ -290,16 +294,19 @@ export default function About(props: any) {
                     ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                     'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                   }}
-                  title='Chief Deputy Controller / Executive Officer / Aide to Controller Mejia'
+                  title='Chief Deputy Controller'
+                  subtitle='Executive Officer / Aide to Controller Mejia'
                 />
                 <ProfileCard
                   name='Deborah Mitrenga'
                   title='Chief Assistant Controller'
+                  subtitle=''
                   picture='/images/staff/DeborahMitrenga-ChiefAssistantController.jpg'
                 />
                 <ProfileCard
                   name='Dinah M. Manning'
                   title='Chief of Strategic Initiatives & Senior Advisor'
+                  subtitle=''
                   picture='/images/staff/DinahManning-DirectorPublicSafety.jpg'
                 />
               </div>
@@ -310,6 +317,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Rahoof (Wally) Oyewole'
                   title='Director of Financial Analysis and Reporting'
+                  subtitle=''
                   picture='/images/staff/WallyOyewole-CFO.jpg'
                 />
               </div>
@@ -318,6 +326,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='James Robinson'
                   title='Chief Operations Officer/Principal Deputy Controller'
+                  subtitle=''
                   picture='/images/staff/JamesRobinson-PrincipalDeputyController.jpeg'
                 />
               </div>
@@ -326,6 +335,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Devang Panchal'
                   title='Director of Auditing'
+                  subtitle=''
                   picture='/images/staff/DevangPanchal-DirectorAuditing.jpg'
                 />
               </div>
@@ -334,6 +344,7 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Shane Min'
                   title='Chief Management Analyst'
+                  subtitle=''
                   picture='/images/staff/ShaneMin-ChiefManagementAnalyst.jpg'
                 />
               </div>
@@ -345,11 +356,13 @@ export default function About(props: any) {
                   <ProfileCard
                     name='Ashley Bennett'
                     title='Director of Homelessness'
+                    subtitle=''
                     picture='/images/staff/AshleyBennett-DirectorHomelessness.jpg'
                   />
                   <ProfileCard
                     name='Maria Rosas'
                     title='Deputy Controller of Finance'
+                    subtitle=''
                     picture='/images/staff/MariaRosas-DeputyControllerFinance.JPG'
                   />
                 </div>
@@ -359,6 +372,7 @@ export default function About(props: any) {
                   <ProfileCard
                     name='Diana Chang'
                     title='Director of Communications'
+                    subtitle=''
                     picture='/images/staff/DianaChang-DirComms.jpg'
                     i18noptions={{
                       'zh-CN': '张良美 (Diana Chang)',
@@ -379,11 +393,13 @@ export default function About(props: any) {
                   <ProfileCard
                     name='Vartan Arzumanyan'
                     title='Director of Technology'
+                    subtitle=''
                     picture='/images/staff/VartanArzumanyan_TechDeputy.jpg'
                   />
                   <ProfileCard
                     name='Naon Chun'
                     title='Director of Technology'
+                    subtitle=''
                     picture='/images/staff/NaonChun-TechDeputy.jpg'
                   />
                 </div>
@@ -394,11 +410,13 @@ export default function About(props: any) {
                 <ProfileCard
                   name='Michael Shear'
                   title='Director of Research & Government Affairs'
+                  subtitle=''
                   picture='/images/staff/MikeShear-DirectorOfResearch.jpg'
                 />
                 <ProfileCard
                   name='Jacky Rodarte'
                   title='Research Analyst'
+                  subtitle=''
                   picture='/images/staff/JackyRodarte-ResearchAnalyst.jpg'
                 />
               </div>
