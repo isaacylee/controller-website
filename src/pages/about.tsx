@@ -290,7 +290,7 @@ export default function About(props: any) {
                     ja: 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                     'ja-JP': 'ヴィンセント・デ・ベラ (Vincent de Vera)',
                   }}
-                  title='Chief Deputy Controller'
+                  title='Chief Deputy Controller / Executive Officer / Aide to Controller Mejia'
                 />
                 <ProfileCard
                   name='Deborah Mitrenga'
