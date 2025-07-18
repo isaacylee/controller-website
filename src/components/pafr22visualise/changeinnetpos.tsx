@@ -180,7 +180,7 @@ export function Changeinnetpos() {
             'Water',
             'Sewer',
           ],
-          label: '',
+          label: 'Business Type',
         },
         x: {
           label: '$ Change',
