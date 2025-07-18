@@ -408,6 +408,7 @@ export default function pafr22(props: any) {
           </div>
 
           <div className='container mx-0 px-4 pb-3 pt-3  dark:text-gray-100 lg:mx-auto lg:max-w-7xl'>
+            <h2>FY 22 Financial Overview</h2>
             <h3 className='mt-3'>FY 22 Total Revenues: $20.0 billion</h3>
             {/* Add Visual - City Revenues */}
             <CityRevenue />
@@ -448,7 +449,7 @@ export default function pafr22(props: any) {
               <br />
             </p>
 
-            <h2> Business-Type Activities: Change in Net Position</h2>
+            <h3> Business-Type Activities: Change in Net Position</h3>
             <p className='mt-4 lg:max-w-5xl'>
               Enterprise funds are used to report the functions presented as
               business-type activities in the government-wide financial
@@ -615,7 +616,7 @@ export default function pafr22(props: any) {
                 million.
               </span>
             </p>
-            <h2 className='mt-3'>General Fund Revenues</h2>
+            <h3 className='mt-3'>General Fund Revenues</h3>
             <h4 className='font-bold'>
               FY 22 Total General Fund Revenues: $6.2 billion, $498.5 million
               8.8% increase from FY 21
@@ -683,7 +684,7 @@ export default function pafr22(props: any) {
             </ul>
 
             <br />
-            <h2 className='mt-3'>General Fund Expenses</h2>
+            <h3 className='mt-3'>General Fund Expenses</h3>
             <h4 className='font-bold'>
               FY 22 General Fund Expenses: $5.8 billion, $465.6 million (8.8%)
               increase over FY 21
