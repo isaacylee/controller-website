@@ -105,10 +105,26 @@ export function BondsOverTime() {
         ],
       });
 
+      const makePlotAccessible = (plotElement: HTMLElement): HTMLElement => {
+        const lineElement = plotElement.querySelector('g[aria-label="line"]');
+        const ruleElement = plotElement.querySelector('g[aria-label="rule"]');
+
+        if (lineElement) {
+          lineElement.setAttribute('role', 'img');
+        }
+        if (ruleElement) {
+          ruleElement.setAttribute('role', 'separator');
+        }
+
+        return plotElement;
+      };
+
       if (bondsovertimeref.current) {
         console.log('current ref', bondsovertimeref.current);
         bondsovertimeref.current.innerHTML = '';
-        bondsovertimeref.current.append(plotforbondsovertimeelem);
+        bondsovertimeref.current.append(
+          makePlotAccessible(plotforbondsovertimeelem)
+        );
       }
     }
   };
