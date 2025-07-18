@@ -40,7 +40,7 @@ export default function pafr22(props: any) {
               <div className='xl:mt-64'>
                 <span className='xl:py-1'></span>
               </div>
-              <h1 className='w-content mt-64 mb-64 ml-2 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
+              <h1 className='w-content mb-64 ml-2 mt-64 px-2 px-2  text-2xl text-white sm:px-4 sm:py-4 sm:text-3xl md:text-4xl lg:mb-96 lg:mt-96 xl:mb-32'>
                 <span className='rounded-lg bg-black bg-opacity-60 px-2 py-1'>
                   Popular Annual Financial Report FY22
                 </span>
@@ -83,7 +83,7 @@ export default function pafr22(props: any) {
                 <br />
                 <br />
                 <img
-                  className='float-right ml-2 mb-2 w-32 sm:ml-4 sm:mb-4 sm:w-64'
+                  className='float-right mb-2 ml-2 w-32 sm:mb-4 sm:ml-4 sm:w-64'
                   src='/images/cropped-kenneth.jpg'
                   alt='Portrait of Kenneth Mejia'
                 />
@@ -204,12 +204,14 @@ export default function pafr22(props: any) {
             <h2>About Popular Annual Financial Reporting</h2>
             <p className='mt-2  lg:max-w-5xl'>
               <img
-                className='float-left mr-1 mb-1 w-32 dark:hidden md:w-48 lg:w-64'
+                className='float-left mb-1 mr-1 w-32 dark:hidden md:w-48 lg:w-64'
                 src='/images/award21pafr.png'
+                alt='Certificate from the Government Finance Officers Association awarded to the City of Los Angeles for excellence in financial reporting, fiscal year ending June 30, 2021.'
               ></img>
               <img
-                className='float-left mr-1 mb-1 hidden w-32 dark:block md:w-48 lg:w-64'
+                className='float-left mb-1 mr-1 hidden w-32 dark:block md:w-48 lg:w-64'
                 src='/images/award21pafr-dark.png'
+                alt='Certificate from the Government Finance Officers Association awarded to the City of Los Angeles for excellence in financial reporting, fiscal year ending June 30, 2021.'
               />
               The Government Finance Officers Association of the United States
               and Canada (GFOA) has given an Award for Outstanding Achievement
@@ -354,6 +356,8 @@ export default function pafr22(props: any) {
               <img
                 src='/sherlockcorgi.png'
                 className='float-left mb-1 mr-1 w-32'
+                alt=''
+                role='presentation'
               />
               <p>
                 <h2 className='mt-3'>Key Terms</h2>
