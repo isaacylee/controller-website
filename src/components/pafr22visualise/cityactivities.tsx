@@ -230,6 +230,32 @@ export function CityActivities() {
               },
             });
 
+            const makePlotAccessible = (
+              plotElement: HTMLElement
+            ): HTMLElement => {
+              const lineElement = plotElement.querySelector(
+                'g[aria-label="line"]'
+              );
+              const ruleElement = plotElement.querySelector(
+                'g[aria-label="rule"]'
+              );
+              const dotElement = plotElement.querySelector(
+                'g[aria-label="dot"]'
+              );
+
+              if (lineElement) {
+                lineElement.setAttribute('role', 'img');
+              }
+              if (ruleElement) {
+                ruleElement.setAttribute('role', 'separator');
+              }
+              if (dotElement) {
+                dotElement.setAttribute('role', 'group');
+              }
+
+              return plotElement;
+            };
+
             //create p tag
             const ptag = document.createElement('p');
             ptag.innerHTML = eachMetric['OPERATING INDICATOR / ASSET'];
@@ -238,7 +264,7 @@ export function CityActivities() {
             ptag.className =
               'text-lg font-semibold dark:text-white px-4 sm:px-0';
             divforplots.append(ptag);
-            divforplots.append(theplotforthischart);
+            divforplots.append(makePlotAccessible(theplotforthischart));
 
             return true;
           });
