@@ -215,9 +215,28 @@ export function Changeinnetpos() {
           Plot.ruleX([0]),
         ],
       });
+
+      const makePlotAccessible = (plotElement: HTMLElement): HTMLElement => {
+        const barGroupElement = plotElement.querySelector(
+          'g[aria-label="bar"]'
+        );
+        const ruleElement = plotElement.querySelector('g[aria-label="rule"]');
+
+        if (barGroupElement) {
+          barGroupElement.setAttribute('role', 'group');
+        }
+        if (ruleElement) {
+          ruleElement.setAttribute('role', 'separator');
+        }
+
+        return plotElement;
+      };
+
       if (refOfBoxToChange.current) {
         refOfBoxToChange.current.innerHTML = '';
-        refOfBoxToChange.current.append(finishedPlotElement);
+        refOfBoxToChange.current.append(
+          makePlotAccessible(finishedPlotElement)
+        );
       }
     }
   };
